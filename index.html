@@ -8,29 +8,110 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <h1>集金管理アプリ <span id="loading-badge" class="badge">読込中...</span></h1>
-            <div class="controls">
-                <button onclick="openSettings()">⚙ 連携設定</button>
-            </div>
-        </header>
 
-        <div id="list-container">
+        <!-- ヘッダー -->
+        <div class="app-header">
+            <div class="header-top">
+                <h1>集金管理アプリ</h1>
+                <span class="month-badge" id="month-badge">—</span>
+                <span id="loading-badge" style="background:rgba(255,255,255,0.25);border-radius:20px;padding:3px 10px;font-size:13px;margin-left:auto">読込中...</span>
             </div>
+            <div id="header-summary" style="font-size:14px;opacity:0.88;margin-bottom:6px"></div>
+            <div class="route-stats" id="route-stats"></div>
+        </div>
+
+        <!-- コントロール -->
+        <div class="controls-bar">
+            <div class="filter-row">
+                <div class="search-wrap">
+                    <input id="search-input" type="text" placeholder="名前・住所で検索...">
+                </div>
+                <select id="filter-store"   class="sel-filter"></select>
+                <select id="filter-month"   class="sel-filter"></select>
+                <select id="filter-route"   class="sel-filter"></select>
+                <select id="filter-payment" class="sel-filter">
+                    <option value="">全支払</option>
+                    <option value="cash">現金</option>
+                    <option value="bank">口振</option>
+                </select>
+                <label class="toggle-label">
+                    <input id="toggle-uncollected" type="checkbox">
+                    未集金のみ
+                </label>
+            </div>
+            <div class="action-row">
+                <div class="action-wrap">
+                    <button class="btn btn-secondary" onclick="openSettings()">&#9881; 連携設定</button>
+                    <button class="btn btn-danger"    onclick="resetAll()">リセット</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 集金リスト タブ -->
+        <div id="tab-list">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-check">済</th>
+                            <th>ルート</th>
+                            <th class="col-month">月</th>
+                            <th class="col-name">名前</th>
+                            <th class="col-addr">住所</th>
+                            <th class="col-amount">金額</th>
+                            <th class="col-date">集金日</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 集計 タブ -->
+        <div id="tab-admin" class="hidden">
+            <div class="admin-wrap">
+                <div class="admin-section">
+                    <div class="admin-title">集計表（ルート × 月）</div>
+                    <div id="admin-content"></div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <!-- ボトムナビ -->
+    <div class="bottom-nav">
+        <button class="nav-btn active" id="nav-list" onclick="switchTab('list')">
+            <span class="nav-icon">&#128203;</span>
+            <span class="nav-label">集金リスト</span>
+        </button>
+        <button class="nav-btn" id="nav-admin" onclick="switchTab('admin')">
+            <span class="nav-icon">&#128202;</span>
+            <span class="nav-label">集計</span>
+        </button>
+    </div>
+
+    <!-- 連携設定ダイアログ -->
+    <dialog id="settings-dialog" class="settings-dialog">
+        <div class="settings-inner">
+            <div class="settings-title">&#9881; 連携設定</div>
+            <p class="settings-desc">
+                Google スプレッドシートの GAS ウェブアプリ URL を設定します。<br>
+                未設定でもローカルで使用できます（チェック状態はこの端末に保存）。
+            </p>
+            <label class="settings-label">
+                GAS URL
+                <input id="settings-url-input" class="settings-input" type="url" placeholder="https://script.google.com/...">
+            </label>
+            <div id="settings-status" class="settings-status"></div>
+            <div class="settings-actions">
+                <button class="btn btn-secondary" onclick="closeSettings()">キャンセル</button>
+                <button class="btn btn-primary"   onclick="saveSettings()">保存</button>
+            </div>
+        </div>
+    </dialog>
 
     <script src="data.js" defer></script>
     <script src="app.js" defer></script>
-
-    <script>
-        function openSettings() {
-            const current = localStorage.getItem('gas_url') || '';
-            const url = prompt('GoogleスプレッドシートのURLを貼り付けてください:', current);
-            if (url !== null) {
-                localStorage.setItem('gas_url', url);
-                location.reload();
-            }
-        }
-    </script>
 </body>
 </html>
