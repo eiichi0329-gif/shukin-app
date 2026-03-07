@@ -73,7 +73,11 @@ function filteredData() {
 
 // ─── Render Filters ──────────────────────────────────────────────
 function renderFilters() {
-    const stores  = [...new Set(allData.map(r => r.store))].sort();
+    const definedOrder = (window.DATA_META && window.DATA_META.stores) || [];
+    const dataStores   = new Set(allData.map(r => r.store));
+    const stores = definedOrder.length
+        ? definedOrder.filter(s => dataStores.has(s))
+        : [...dataStores].sort();
     const months  = [...new Set(allData.map(r => r.dataMonth))].sort();
     const routes  = [...new Set(allData.map(r => r.route))].sort((a, b) => a - b);
 
