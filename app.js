@@ -27,6 +27,18 @@ function getGasUrl() {
         : (localStorage.getItem('gas_url') || '');
 }
 
+// GAS への POST 送信（sendBeacon 優先、fallback は fetch）
+function postToGas(url, data) {
+    const body = JSON.stringify(data);
+    if (navigator.sendBeacon) {
+        const blob = new Blob([body], { type: 'text/plain' });
+        navigator.sendBeacon(url, blob);
+    } else {
+        fetch(url, { method: 'POST', mode: 'no-cors', body })
+            .catch(e => console.error('送信エラー', e));
+    }
+}
+
 // ─── Helpers ─────────────────────────────────────────────────────
 function getKey(r) {
     return r.key || `${r.store}|${r.dataMonth}|${r.code}|${r.name}`;
@@ -214,15 +226,11 @@ function onCheck(key, isChecked) {
     if (url) {
         const record = allData.find(r => getKey(r) === key);
         const state  = checked[key] || {};
-        fetch(url, {
-            method: 'POST',
-            mode:   'no-cors',
-            body:   JSON.stringify({
-                action:      isChecked ? 'add' : 'remove',
-                record:      { ...record, key, checkedAt: state.checkedAt || '' },
-                collectDate: state.collectDate || ''
-            })
-        }).catch(e => console.error('送信エラー', e));
+        postToGas(url, {
+            action:      isChecked ? 'add' : 'remove',
+            record:      { ...record, key, checkedAt: state.checkedAt || '' },
+            collectDate: state.collectDate || ''
+        });
 
         // 送信後に再同期して他端末への反映を確認
         setTimeout(syncCheckboxes, 3000);
@@ -253,15 +261,11 @@ function editDate(key, cell) {
         if (url) {
             const record = allData.find(r => getKey(r) === key);
             const state  = checked[key];
-            fetch(url, {
-                method: 'POST',
-                mode:   'no-cors',
-                body:   JSON.stringify({
-                    action:      'add',
-                    record:      { ...record, key, checkedAt: state.checkedAt || '' },
-                    collectDate: val
-                })
-            }).catch(e => console.error('送信エラー', e));
+            postToGas(url, {
+                action:      'add',
+                record:      { ...record, key, checkedAt: state.checkedAt || '' },
+                collectDate: val
+            });
         }
     }
     input.addEventListener('change', save);
