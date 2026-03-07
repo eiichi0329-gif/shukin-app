@@ -20,7 +20,7 @@
 //  - チェックを外す → 行が削除
 // ══════════════════════════════════════════════════════
 
-const HEADERS = ['店舗', 'ルート', '名前', '住所', '金額', '集金日時', 'キー'];
+const HEADERS = ['店舗', 'ルート', '名前', '住所', '金額', '集金日時', 'キー', '集金日'];
 
 function doPost(e) {
   try {
@@ -47,7 +47,8 @@ function doPost(e) {
         sheet.setColumnWidth(5, 90);   // 金額
         sheet.setColumnWidth(6, 160);  // 集金日時
         sheet.setColumnWidth(7, 1);    // キー（非表示用）
-        sheet.hideColumns(7);
+        sheet.setColumnWidth(8, 1);    // 集金日（非表示用）
+        sheet.hideColumns(7, 2);
       }
 
       // 既存行をキーで検索
@@ -59,9 +60,9 @@ function doPost(e) {
         if (idx >= 0) foundRow = idx + 2;
       }
 
-      const rowData = buildRow(record);
+      const rowData = buildRow(record, payload.collectDate || '');
       if (foundRow > 0) {
-        sheet.getRange(foundRow, 1, 1, 7).setValues([rowData]);
+        sheet.getRange(foundRow, 1, 1, HEADERS.length).setValues([rowData]);
       } else {
         sheet.appendRow(rowData);
       }
@@ -92,7 +93,7 @@ function doPost(e) {
   }
 }
 
-function buildRow(r) {
+function buildRow(r, collectDate) {
   // 集金日時を JST の読みやすい形式に変換
   let dateStr = r.checkedAt || '';
   if (dateStr) {
@@ -102,14 +103,39 @@ function buildRow(r) {
     } catch (_) {}
   }
   return [
-    r.store     || '',
-    r.route     || '',
-    r.name      || '',
-    r.address   || '',
-    r.amount    || 0,
+    r.store       || '',
+    r.route       || '',
+    r.name        || '',
+    r.address     || '',
+    r.amount      || 0,
     dateStr,
-    r.key       || '',
+    r.key         || '',
+    collectDate   || '',
   ];
+}
+
+function doGet(e) {
+  try {
+    const ss      = SpreadsheetApp.getActiveSpreadsheet();
+    const sheets  = ss.getSheets();
+    const checkedData = {};
+    for (const sheet of sheets) {
+      const lastRow = sheet.getLastRow();
+      if (lastRow < 2) continue;
+      // col7=キー, col8=集金日
+      const data = sheet.getRange(2, 7, lastRow - 1, 2).getValues();
+      for (const [key, collectDate] of data) {
+        if (key) checkedData[key] = { collectDate: collectDate || '' };
+      }
+    }
+    return ContentService
+      .createTextOutput(JSON.stringify({ ok: true, checkedData }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ ok: false, error: err.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
 }
 
 function formatSheetName(dataMonth) {

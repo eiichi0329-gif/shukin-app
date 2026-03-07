@@ -193,7 +193,11 @@ function onCheck(key, isChecked) {
         fetch(url, {
             method: 'POST',
             mode:   'no-cors',
-            body:   JSON.stringify({ action: isChecked ? 'add' : 'remove', record: { ...record, key } })
+            body:   JSON.stringify({
+                action:      isChecked ? 'add' : 'remove',
+                record:      { ...record, key },
+                collectDate: (checked[key] || {}).collectDate || ''
+            })
         }).catch(e => console.error('送信エラー', e));
     }
 }
@@ -424,14 +428,27 @@ async function syncCheckboxes() {
     try {
         const res  = await fetch(url);
         const json = await res.json();
-        if (!json.checkedKeys) return;
+        // 新形式（checkedData）と旧形式（checkedKeys）の両方に対応
+        if (!json.checkedData && !json.checkedKeys) return;
 
-        // リモート優先でマージ
-        const remote = new Set(json.checkedKeys);
-        remote.forEach(key => {
-            if (!checked[key]) checked[key] = { checkedAt: new Date().toISOString(), collectDate: '' };
-        });
-        Object.keys(checked).forEach(key => { if (!remote.has(key)) delete checked[key]; });
+        if (json.checkedData) {
+            // リモート優先でマージ（collectDate も復元）
+            const remote = json.checkedData;
+            Object.entries(remote).forEach(([key, val]) => {
+                if (!checked[key]) {
+                    checked[key] = { checkedAt: new Date().toISOString(), collectDate: val.collectDate || '' };
+                } else if (!checked[key].collectDate && val.collectDate) {
+                    checked[key].collectDate = val.collectDate;
+                }
+            });
+            Object.keys(checked).forEach(key => { if (!remote[key]) delete checked[key]; });
+        } else {
+            const remote = new Set(json.checkedKeys);
+            remote.forEach(key => {
+                if (!checked[key]) checked[key] = { checkedAt: new Date().toISOString(), collectDate: '' };
+            });
+            Object.keys(checked).forEach(key => { if (!remote.has(key)) delete checked[key]; });
+        }
 
         saveChecked();
         renderTable();
