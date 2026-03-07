@@ -20,7 +20,7 @@
 //  - チェックを外す → 行が削除
 // ══════════════════════════════════════════════════════
 
-const HEADERS = ['店舗', 'ルート', '名前', '住所', '金額', '集金日時', 'キー', '集金日'];
+const HEADERS = ['店舗', 'ルート', '名前', '住所', '金額', '集金日', '集金日時', 'キー'];
 
 function doPost(e) {
   try {
@@ -45,17 +45,17 @@ function doPost(e) {
         sheet.setColumnWidth(3, 160);  // 名前
         sheet.setColumnWidth(4, 260);  // 住所
         sheet.setColumnWidth(5, 90);   // 金額
-        sheet.setColumnWidth(6, 160);  // 集金日時
-        sheet.setColumnWidth(7, 1);    // キー（非表示用）
-        sheet.setColumnWidth(8, 1);    // 集金日（非表示用）
-        sheet.hideColumns(7, 2);
+        sheet.setColumnWidth(6, 100);  // 集金日
+        sheet.setColumnWidth(7, 160);  // 集金日時
+        sheet.setColumnWidth(8, 1);    // キー（非表示用）
+        sheet.hideColumns(8, 1);
       }
 
-      // 既存行をキーで検索
+      // 既存行をキーで検索（col8=キー）
       const lastRow = sheet.getLastRow();
       let foundRow  = -1;
       if (lastRow > 1) {
-        const keys = sheet.getRange(2, 7, lastRow - 1, 1).getValues().flat();
+        const keys = sheet.getRange(2, 8, lastRow - 1, 1).getValues().flat();
         const idx  = keys.indexOf(record.key);
         if (idx >= 0) foundRow = idx + 2;
       }
@@ -79,7 +79,7 @@ function doPost(e) {
       if (!sheet) return ok();
       const lastRow = sheet.getLastRow();
       if (lastRow < 2) return ok();
-      const keys = sheet.getRange(2, 7, lastRow - 1, 1).getValues().flat();
+      const keys = sheet.getRange(2, 8, lastRow - 1, 1).getValues().flat();
       const idx  = keys.indexOf(record.key);
       if (idx >= 0) sheet.deleteRow(idx + 2);
     }
@@ -108,9 +108,9 @@ function buildRow(r, collectDate) {
     r.name        || '',
     r.address     || '',
     r.amount      || 0,
+    collectDate   || '',
     dateStr,
     r.key         || '',
-    collectDate   || '',
   ];
 }
 
@@ -122,9 +122,9 @@ function doGet(e) {
     for (const sheet of sheets) {
       const lastRow = sheet.getLastRow();
       if (lastRow < 2) continue;
-      // col7=キー, col8=集金日
-      const data = sheet.getRange(2, 7, lastRow - 1, 2).getValues();
-      for (const [key, collectDate] of data) {
+      // col6=集金日, col8=キー
+      const data = sheet.getRange(2, 6, lastRow - 1, 3).getValues();
+      for (const [collectDate, , key] of data) {
         if (key) checkedData[key] = { collectDate: collectDate || '' };
       }
     }

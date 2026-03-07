@@ -32,6 +32,10 @@ OUTPUT_FILE    = r"C:\Users\USER\collection-app\data.js"
 SHEET_NAME     = "顧客リスト"
 MIN_DATA_MONTH = "2026-02"          # 2026年2月分以降を対象
 
+# GAS ウェブアプリ URL（設定するとどの端末からでも自動で同期されます）
+# 空文字のままにするとアプリ内の「連携設定」画面で端末ごとに設定できます
+GAS_URL        = "https://script.google.com/macros/s/AKfycbyeQ_PsvxDzXCU70sAxw6TG4u36hNANsRk_Bh5vT-rLaG1H8ss6VYjg9v2Lq45oc5gU/exec"
+
 # 店舗キーワード → 正式店舗名
 # フォルダ名・ファイル名のどちらに含まれていても識別します
 STORE_KEYWORDS = {
@@ -334,11 +338,13 @@ def main():
         'totalRecords': len(merged),
         'totalAmount':  grand_total,
     }
+    gas_url_line = f'window.GAS_URL = {json.dumps(GAS_URL)};\n\n' if GAS_URL else ''
     js_out = (
         "// ══════════════════════════════════════════════════════\n"
         f"// 自動生成: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
         f"// 件数: {len(merged)} 件  合計: {grand_total:,}円\n"
         "// ══════════════════════════════════════════════════════\n"
+        f"{gas_url_line}"
         f"window.COLLECTION_DATA = {json.dumps(merged, ensure_ascii=False, indent=2)};\n\n"
         f"window.DATA_META = {json.dumps(meta, ensure_ascii=False, indent=2)};\n"
     )

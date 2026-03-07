@@ -1,6 +1,7 @@
 // 集金管理アプリ v3
 
 const LS_KEY = 'coll-state-v3';
+const DIRTY_GRACE_MS = 35000; // ローカル変更を守る猶予時間（ms）
 
 // ─── State ───────────────────────────────────────────────────────
 let allData = [];
@@ -8,6 +9,23 @@ let checked = {};   // key → { checkedAt, collectDate }
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'list';
 let expandedCell = null;  // { route, month } for admin detail
+
+// ローカルで変更した直後のキーを追跡（同期による上書きを防ぐ）
+const dirtyKeys = new Map(); // key → timestamp
+
+function markDirty(key) { dirtyKeys.set(key, Date.now()); }
+
+function cleanDirty() {
+    const cutoff = Date.now() - DIRTY_GRACE_MS;
+    for (const [k, t] of dirtyKeys) { if (t < cutoff) dirtyKeys.delete(k); }
+}
+
+// GAS URL: data.js に埋め込まれた値を優先し、なければ端末の設定を使う
+function getGasUrl() {
+    return (typeof window.GAS_URL === 'string' && window.GAS_URL)
+        ? window.GAS_URL
+        : (localStorage.getItem('gas_url') || '');
+}
 
 // ─── Helpers ─────────────────────────────────────────────────────
 function getKey(r) {
@@ -183,11 +201,12 @@ function onCheck(key, isChecked) {
         if (dateCell) dateCell.textContent = fmtDate((checked[key] || {}).collectDate);
     }
 
+    markDirty(key);
     saveChecked();
     renderHeader(filteredData());
 
     // GAS 送信
-    const url = localStorage.getItem('gas_url');
+    const url = getGasUrl();
     if (url) {
         const record = allData.find(r => getKey(r) === key);
         const state  = checked[key] || {};
@@ -200,6 +219,9 @@ function onCheck(key, isChecked) {
                 collectDate: state.collectDate || ''
             })
         }).catch(e => console.error('送信エラー', e));
+
+        // 送信後に再同期して他端末への反映を確認
+        setTimeout(syncCheckboxes, 3000);
     }
 }
 
@@ -218,11 +240,12 @@ function editDate(key, cell) {
         const val = input.value;
         if (!checked[key]) checked[key] = { checkedAt: new Date().toISOString() };
         checked[key].collectDate = val;
+        markDirty(key);
         saveChecked();
         cell.textContent = fmtDate(val);
 
         // GAS 同期
-        const url = localStorage.getItem('gas_url');
+        const url = getGasUrl();
         if (url) {
             const record = allData.find(r => getKey(r) === key);
             const state  = checked[key];
@@ -440,7 +463,7 @@ function renderAdmin() {
 
 // ─── GAS Sync ────────────────────────────────────────────────────
 async function syncCheckboxes() {
-    const url = localStorage.getItem('gas_url');
+    const url = getGasUrl();
     if (!url) return;
     try {
         const res  = await fetch(url);
@@ -448,23 +471,33 @@ async function syncCheckboxes() {
         // 新形式（checkedData）と旧形式（checkedKeys）の両方に対応
         if (!json.checkedData && !json.checkedKeys) return;
 
+        // 期限切れのdirtyキーをクリア
+        cleanDirty();
+
         if (json.checkedData) {
-            // リモート優先でマージ（collectDate も復元）
+            // リモート優先でマージ（ただしdirtyキーはローカル変更を優先）
             const remote = json.checkedData;
             Object.entries(remote).forEach(([key, val]) => {
+                if (dirtyKeys.has(key)) return; // 送信直後のキーは上書きしない
                 if (!checked[key]) {
                     checked[key] = { checkedAt: new Date().toISOString(), collectDate: val.collectDate || '' };
                 } else if (!checked[key].collectDate && val.collectDate) {
                     checked[key].collectDate = val.collectDate;
                 }
             });
-            Object.keys(checked).forEach(key => { if (!remote[key]) delete checked[key]; });
+            // リモートにないキーを削除（dirtyキーは保護）
+            Object.keys(checked).forEach(key => {
+                if (!remote[key] && !dirtyKeys.has(key)) delete checked[key];
+            });
         } else {
             const remote = new Set(json.checkedKeys);
             remote.forEach(key => {
+                if (dirtyKeys.has(key)) return;
                 if (!checked[key]) checked[key] = { checkedAt: new Date().toISOString(), collectDate: '' };
             });
-            Object.keys(checked).forEach(key => { if (!remote.has(key)) delete checked[key]; });
+            Object.keys(checked).forEach(key => {
+                if (!remote.has(key) && !dirtyKeys.has(key)) delete checked[key];
+            });
         }
 
         saveChecked();
@@ -474,8 +507,14 @@ async function syncCheckboxes() {
 
 // ─── Settings Dialog ─────────────────────────────────────────────
 function openSettings() {
-    document.getElementById('settings-url-input').value = localStorage.getItem('gas_url') || '';
-    document.getElementById('settings-status').textContent = '';
+    const embeddedUrl = (typeof window.GAS_URL === 'string' && window.GAS_URL) ? window.GAS_URL : '';
+    const input = document.getElementById('settings-url-input');
+    input.value = embeddedUrl || localStorage.getItem('gas_url') || '';
+    input.readOnly = !!embeddedUrl;
+    input.style.opacity = embeddedUrl ? '0.6' : '';
+    const status = document.getElementById('settings-status');
+    status.textContent = embeddedUrl ? 'data.js に URL が設定されています（変更はデータ更新スクリプトで行ってください）' : '';
+    status.style.color = embeddedUrl ? '#2196F3' : '';
     document.getElementById('settings-dialog').showModal();
 }
 
@@ -484,9 +523,15 @@ function closeSettings() {
 }
 
 function saveSettings() {
+    if (typeof window.GAS_URL === 'string' && window.GAS_URL) {
+        // data.js に埋め込まれている場合は保存不要
+        setTimeout(closeSettings, 400);
+        return;
+    }
     const url = document.getElementById('settings-url-input').value.trim();
     localStorage.setItem('gas_url', url);
     document.getElementById('settings-status').textContent = url ? '保存しました' : 'URLを削除しました';
+    document.getElementById('settings-status').style.color = '';
     setTimeout(closeSettings, 800);
     if (url) syncCheckboxes();
 }

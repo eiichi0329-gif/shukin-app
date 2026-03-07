@@ -1,7 +1,9 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-03-07 16:31:40
+// 自動生成: 2026-03-08 06:45:24
 // 件数: 2828 件  合計: 24,608,111円
 // ══════════════════════════════════════════════════════
+window.GAS_URL = "https://script.google.com/macros/s/AKfycbyeQ_PsvxDzXCU70sAxw6TG4u36hNANsRk_Bh5vT-rLaG1H8ss6VYjg9v2Lq45oc5gU/exec";
+
 window.COLLECTION_DATA = [
   {
     "store": "下関店",
@@ -39598,7 +39600,7 @@ window.COLLECTION_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-03-07T16:31:40.026205",
+  "generatedAt": "2026-03-08T06:45:24.378765",
   "stores": [
     "下関店",
     "北九州店",
