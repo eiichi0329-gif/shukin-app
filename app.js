@@ -1,79 +1,78 @@
-// 集金管理アプリ メインプログラム（変数名修正版）
+// 集金管理アプリ - 超・頑丈版（大量データ対応）
 
-function renderApp() {
+async function initApp() {
+    console.log("アプリ起動...");
     const container = document.getElementById('list-container');
-    const loadingMsg = document.querySelector('.読込中...');
-    if (!container) return;
+    const loadingBtn = document.querySelector('button.読込中...') || document.querySelector('.読込中...');
 
-    // data.js の名簿データ（COLLECTION_DATA）が存在するか確認
-    if (typeof COLLECTION_DATA === 'undefined') {
-        container.innerHTML = '<div style="color:red; padding:20px;">エラー：名簿データ(COLLECTION_DATA)が見つかりません。</div>';
+    // 1. データの存在確認（window.COLLECTION_DATA を探す）
+    const data = window.COLLECTION_DATA;
+    
+    if (!data || !Array.isArray(data)) {
+        console.error("データが見つかりません。1秒後に再試行します。");
+        setTimeout(initApp, 1000); // データが届くまで待機
         return;
     }
 
-    container.innerHTML = '';
-    
-    // 名簿を表示
-    COLLECTION_DATA.forEach(record => {
-        // キーがない場合は、店舗-名前-seqを組み合わせて作成
-        const key = record.key || `${record.store}-${record.name}-${record.seq}`;
-        
-        const div = document.createElement('div');
-        div.className = 'list-item';
-        div.innerHTML = `
-            <label style="display: flex; align-items: center; gap: 10px; padding: 12px; border-bottom: 1px solid #eee;">
-                <input type="checkbox" data-key="${key}" onchange="toggleCheck(this, '${key}')" style="width: 24px; height: 24px;">
-                <div>
-                    <div style="font-weight: bold; font-size: 1.1em;">${record.name}</div>
-                    <div style="font-size: 0.85em; color: #666;">${record.store} / ${record.address} / ¥${(record.amount || 0).toLocaleString()}</div>
-                </div>
-            </label>
-        `;
-        container.appendChild(div);
-    });
+    console.log(`${data.length}件のデータを表示します...`);
 
-    // リストが表示されたら「読込中」表示を消す
-    if (loadingMsg) loadingMsg.style.display = 'none';
-    
-    syncStatus(); // 同期開始
+    // 2. 画面を組み立てる（大量データなので、まずは枠だけ作る）
+    let html = '';
+    for (const record of data) {
+        const key = record.key || `${record.store}-${record.name}-${record.seq}`;
+        const amount = (record.amount || 0).toLocaleString();
+        
+        html += `
+            <div class="list-item" style="border-bottom: 1px solid #eee; padding: 10px;">
+                <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                    <input type="checkbox" data-key="${key}" onchange="toggleCheck(this, '${key}')" style="width: 25px; height: 25px;">
+                    <div style="flex: 1;">
+                        <div style="font-weight: bold; font-size: 16px;">${record.name}</div>
+                        <div style="font-size: 12px; color: #666;">${record.store} / ${record.address}</div>
+                    </div>
+                    <div style="font-weight: bold; color: #c2410c;">¥${amount}</div>
+                </label>
+            </div>
+        `;
+    }
+
+    // 3. 一気に画面に流し込む（これが一番速い）
+    container.innerHTML = html;
+
+    // 4. 「読込中」を消す
+    if (loadingBtn) loadingBtn.style.display = 'none';
+
+    // 5. チェック状態を同期
+    syncStatus();
 }
 
+// チェック操作の送信
 async function toggleCheck(el, key) {
     const url = localStorage.getItem('gas_url');
-    if (!url) { alert('⚙設定からURLを貼り付けてください'); return; }
-
-    const record = COLLECTION_DATA.find(r => (r.key || `${r.store}-${r.name}-${r.seq}`) === key);
-    const action = el.checked ? 'add' : 'remove';
-
+    if (!url) return;
+    const record = window.COLLECTION_DATA.find(r => (r.key || `${r.store}-${r.name}-${r.seq}`) === key);
     try {
         await fetch(url, {
             method: 'POST',
-            body: JSON.stringify({ action, record: { ...record, key, checkedAt: new Date().toISOString() } })
+            mode: 'no-cors', // エラー回避のため
+            body: JSON.stringify({ action: el.checked ? 'add' : 'remove', record: { ...record, key, checkedAt: new Date().toISOString() } })
         });
-    } catch (err) {
-        console.error("送信エラー:", err);
-    }
+    } catch (e) { console.error(e); }
 }
 
+// 同期処理
 async function syncStatus() {
     const url = localStorage.getItem('gas_url');
     if (!url) return;
-
     try {
-        const response = await fetch(url);
-        const data = await response.json();
-        
+        const res = await fetch(url);
+        const json = await res.json();
         document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-            const key = cb.getAttribute('data-key');
-            cb.checked = data.checkedKeys.includes(key);
+            cb.checked = json.checkedKeys.includes(cb.getAttribute('data-key'));
         });
-    } catch (err) {
-        console.error("同期エラー:", err);
-    }
+    } catch (e) { console.error("同期失敗", e); }
 }
 
-// 30秒ごとに自動同期
-setInterval(syncStatus, 30000);
-
 // 起動
-document.addEventListener('DOMContentLoaded', renderApp);
+window.onload = initApp;
+setInterval(syncStatus, 30000);
