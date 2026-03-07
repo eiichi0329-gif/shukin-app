@@ -32,7 +32,13 @@ function filteredData() {
         if (filters.route   && String(r.route)  !== filters.route)   return false;
         if (filters.payment && r.paymentType    !== filters.payment) return false;
         if ((r.amount || 0) === 0)                                     return false;
-        if (filters.uncollectedOnly && checked[getKey(r)])           return false;
+        if (filters.uncollectedOnly && checked[getKey(r)]) {
+            // 当日チェックしたものは終日リストに残す
+            const state      = checked[getKey(r)];
+            const checkedDay = new Date(state.checkedAt).toDateString();
+            const today      = new Date().toDateString();
+            if (checkedDay !== today) return false;
+        }
         if (filters.search) {
             const q = filters.search.toLowerCase();
             if (!r.name.toLowerCase().includes(q) && !(r.address || '').toLowerCase().includes(q)) return false;
@@ -221,119 +227,182 @@ function switchTab(tab) {
 }
 
 // ─── Admin Tab ───────────────────────────────────────────────────
-function renderAdmin() {
-    const routes = [...new Set(allData.map(r => r.route))].sort((a, b) => a - b);
-    const months = [...new Set(allData.map(r => r.dataMonth))].sort();
+function escHtml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
 
-    // matrix[route][month] = { total, collected, items }
-    const matrix = {};
-    routes.forEach(route => {
-        matrix[route] = {};
-        months.forEach(mo => {
-            const items     = allData.filter(r => r.route === route && r.dataMonth === mo);
-            const total     = items.reduce((s, r) => s + (r.amount || 0), 0);
-            const collected = items.filter(r => checked[getKey(r)]).reduce((s, r) => s + (r.amount || 0), 0);
-            matrix[route][mo] = { total, collected, items };
-        });
-    });
+function toJSTDate(isoStr) {
+    if (!isoStr) return null;
+    if (isoStr.length === 10) return isoStr;
+    return new Date(new Date(isoStr).getTime() + 9 * 60 * 60 * 1000).toISOString().substring(0, 10);
+}
 
-    const colTotals = {};
-    months.forEach(mo => {
-        colTotals[mo] = {
-            total:     routes.reduce((s, r) => s + matrix[r][mo].total,     0),
-            collected: routes.reduce((s, r) => s + matrix[r][mo].collected, 0),
-        };
-    });
-    const grandTotal     = months.reduce((s, mo) => s + colTotals[mo].total,     0);
-    const grandCollected = months.reduce((s, mo) => s + colTotals[mo].collected, 0);
+const CHANGE_KEY = 'coll-change-v1';
+function getChangeAmounts() {
+    try { return JSON.parse(localStorage.getItem(CHANGE_KEY) || '{}'); } catch { return {}; }
+}
 
-    let html = `<div class="excel-wrap"><table class="excel-table"><thead><tr>
-        <th class="corner-cell">ルート</th>`;
-    months.forEach(mo => { html += `<th>${mo.slice(5)}月分</th>`; });
+function toggleMonthDetail(safeId) {
+    const detailRows = document.querySelectorAll(`[data-month-group="${safeId}"]`);
+    const headerTh   = document.querySelector(`[data-toggle-id="${safeId}"]`);
+    if (!detailRows.length) return;
+    const anyVisible = [...detailRows].some(r => !r.classList.contains('hidden'));
+    detailRows.forEach(r => r.classList.toggle('hidden', anyVisible));
+    if (headerTh) headerTh.innerHTML = headerTh.innerHTML.replace(anyVisible ? '▼' : '▶', anyVisible ? '▶' : '▼');
+}
+
+function toggleRouteDetail(safeRouteId) {
+    const detailRow  = document.querySelector(`[data-detail-id="${safeRouteId}"]`);
+    const headerCell = document.querySelector(`[data-toggle-id="${safeRouteId}"]`);
+    if (!detailRow || !headerCell) return;
+    const hidden = detailRow.classList.toggle('hidden');
+    headerCell.innerHTML = headerCell.innerHTML.replace(hidden ? '▼' : '▶', hidden ? '▶' : '▼');
+}
+
+function buildDailySection(date, routes, routeMonthData, dateItems) {
+    const [, m, day] = date.split('-');
+    const dateLabel  = `${parseInt(m)}月${parseInt(day)}日`;
+
+    const monthSet = new Set();
+    for (const r of routes) {
+        for (const mo of Object.keys(routeMonthData[r] || {})) monthSet.add(mo);
+    }
+    const months = [...monthSet].sort();
+    const changeAmounts = getChangeAmounts();
+
+    let html = `<div class="admin-section">`;
+    html += `<h2 class="admin-title">${dateLabel}　集金分</h2>`;
+    html += `<div class="excel-wrap"><table class="excel-table">`;
+    html += `<thead><tr><th class="corner-cell">項目</th>`;
+    for (const r of routes) html += `<th>ルート ${r}</th>`;
     html += `<th class="total-col">合計</th></tr></thead><tbody>`;
 
-    routes.forEach(route => {
-        const rowTotal     = months.reduce((s, mo) => s + matrix[route][mo].total,     0);
+    for (const mo of months) {
+        const [, mm] = mo.split('-');
+        const moLabel = `${parseInt(mm)}月分小計`;
+        const safeId  = `${date.replace(/-/g, '')}${mo.replace(/-/g, '')}`;
+        let moRowTotal = 0;
 
-        html += `<tr><th class="row-header">R${route}</th>`;
-        months.forEach(mo => {
-            const cell       = matrix[route][mo];
-            const isExpanded = expandedCell && expandedCell.route === route && expandedCell.month === mo;
-            const cellClass  = cell.total > 0 ? 'clickable-cell' : '';
-            html += `<td class="${cellClass}${isExpanded ? ' active' : ''}"
-                data-route="${route}" data-month="${mo}">
-                ${cell.total > 0 ? `¥${fmt(cell.total)}` : '<span style="color:var(--g300)">—</span>'}
-            </td>`;
-        });
-        html += `<td class="total-cell">¥${fmt(rowTotal)}</td></tr>`;
+        const moItems = dateItems.filter(({ record: r }) => r.dataMonth === mo && r.route > 0);
 
-        // 詳細展開行
-        if (expandedCell && expandedCell.route === route) {
-            html += `<tr class="detail-row"><td></td>`;
-            months.forEach(mo => {
-                if (expandedCell.month === mo) {
-                    const items = matrix[route][mo].items;
+        html += `<tr class="month-subtotal-row">`;
+        html += `<th class="row-header clickable-row" data-toggle-id="${safeId}" onclick="toggleMonthDetail('${safeId}')">${moLabel} ▶</th>`;
+        for (const r of routes) {
+            const amt     = (routeMonthData[r]?.[mo]) || 0;
+            moRowTotal   += amt;
+            const rItems  = moItems.filter(({ record }) => record.route === r);
+            const safeRId = `${safeId}r${r}`;
+            if (amt > 0 && rItems.length > 0) {
+                html += `<td class="has-value clickable-cell" data-toggle-id="${safeRId}" onclick="toggleRouteDetail('${safeRId}')">${fmt(amt)} ▶</td>`;
+            } else {
+                html += `<td class="${amt > 0 ? 'has-value' : 'empty-cell'}">${amt > 0 ? fmt(amt) : '-'}</td>`;
+            }
+        }
+        html += `<td class="total-cell">${fmt(moRowTotal)}</td></tr>`;
+
+        for (const r of routes) {
+            const rItems = moItems.filter(({ record }) => record.route === r);
+            if (rItems.length === 0) continue;
+            const safeRId = `${safeId}r${r}`;
+            html += `<tr class="detail-row hidden" data-detail-id="${safeRId}" data-month-group="${safeId}">`;
+            html += `<td class="detail-empty"></td>`;
+            for (const rr of routes) {
+                if (rr === r) {
                     html += `<td class="detail-cell-col"><div class="detail-list">`;
-                    items.forEach(r => {
-                        const isCk = !!checked[getKey(r)];
-                        html += `<div class="detail-item">
-                            <span class="detail-name" style="${isCk ? 'text-decoration:line-through;color:var(--g400)' : ''}">${r.name}</span>
-                            <span class="detail-amount">¥${fmt(r.amount)}</span>
-                        </div>`;
-                    });
+                    for (const { record } of rItems) {
+                        html += `<div class="detail-item"><span class="detail-name">${escHtml(record.name)}</span><span class="detail-amount">${fmt(record.amount)}</span></div>`;
+                    }
                     html += `</div></td>`;
                 } else {
                     html += `<td class="detail-empty"></td>`;
                 }
-            });
+            }
             html += `<td class="detail-empty"></td></tr>`;
         }
-    });
+    }
 
-    // 釣銭行
-    html += `<tr class="change-row"><th class="row-header">釣銭</th>`;
-    months.forEach(mo => {
-        const val = localStorage.getItem(`change-${mo}`) || '';
-        html += `<td class="change-cell"><input class="change-input" type="number" placeholder="0"
-            value="${val}" data-month="${mo}"></td>`;
-    });
-    html += `<td class="change-cell"></td></tr>`;
+    // 集金合計行
+    const routeTotals = {};
+    let grandTotal = 0;
+    html += `<tr class="grand-row"><th class="row-header">集金合計</th>`;
+    for (const r of routes) {
+        let rTotal = 0;
+        for (const mo of months) rTotal += (routeMonthData[r]?.[mo]) || 0;
+        routeTotals[r] = rTotal;
+        grandTotal += rTotal;
+        html += `<td class="total-cell${rTotal === 0 ? ' empty-cell' : ''}">${rTotal > 0 ? fmt(rTotal) : '-'}</td>`;
+    }
+    html += `<td class="total-cell grand-total">${fmt(grandTotal)}</td></tr>`;
+
+    // 釣銭持ち出し行
+    let changeTotalSum = 0;
+    html += `<tr class="change-row"><th class="row-header">釣銭持ち出し</th>`;
+    for (const r of routes) {
+        const ck = `${date}|${r}`;
+        const ca = changeAmounts[ck] !== undefined ? changeAmounts[ck] : 12220;
+        changeTotalSum += ca;
+        html += `<td class="change-cell"><input type="text" inputmode="numeric" class="change-input" data-date="${date}" data-route="${r}" value="${ca.toLocaleString('ja-JP')}"></td>`;
+    }
+    html += `<td class="total-cell" data-change-total="${date}">${fmt(changeTotalSum)}</td></tr>`;
 
     // 手持ち現金行
+    let cashTotal = 0;
     html += `<tr class="cash-row"><th class="row-header">手持ち現金</th>`;
-    months.forEach(mo => {
-        const change = parseInt(localStorage.getItem(`change-${mo}`) || '0') || 0;
-        const cash   = colTotals[mo].collected + change;
-        html += `<td class="cash-cell">¥${fmt(cash)}</td>`;
-    });
-    html += `<td class="grand-total">¥${fmt(grandCollected)}</td></tr>`;
+    for (const r of routes) {
+        const ck = `${date}|${r}`;
+        const ca = changeAmounts[ck] !== undefined ? changeAmounts[ck] : 12220;
+        const cash = (routeTotals[r] || 0) + ca;
+        cashTotal += cash;
+        html += `<td class="cash-cell" data-cash-key="${ck}" data-base="${routeTotals[r] || 0}">${fmt(cash)}</td>`;
+    }
+    html += `<td class="total-cell grand-total" data-cash-total="${date}">${fmt(cashTotal)}</td></tr>`;
 
-    // 合計行
-    html += `<tr class="grand-row"><th class="row-header">合計</th>`;
-    months.forEach(mo => { html += `<td class="total-cell">¥${fmt(colTotals[mo].total)}</td>`; });
-    html += `<td class="grand-total">¥${fmt(grandTotal)}</td></tr>`;
+    html += `</tbody></table></div></div>`;
+    return html;
+}
 
-    html += `</tbody></table></div>`;
-    document.getElementById('admin-content').innerHTML = html;
+function renderAdmin() {
+    const content  = document.getElementById('admin-content');
+    const storeVal = filters.store;
 
-    // イベント登録（詳細展開）
-    document.querySelectorAll('#admin-content td.clickable-cell').forEach(td => {
-        td.addEventListener('click', () => {
-            const route = parseInt(td.dataset.route);
-            const mo    = td.dataset.month;
-            expandedCell = (expandedCell && expandedCell.route === route && expandedCell.month === mo)
-                ? null : { route, month: mo };
-            renderAdmin();
-        });
-    });
+    const checkedItems = [];
+    for (const [key, state] of Object.entries(checked)) {
+        if (!state?.checkedAt) continue;
+        const record = allData.find(r => getKey(r) === key);
+        if (!record) continue;
+        if (storeVal && record.store !== storeVal) continue;
+        checkedItems.push({ key, record, state });
+    }
 
-    // イベント登録（釣銭入力）
-    document.querySelectorAll('#admin-content .change-input').forEach(inp => {
-        inp.addEventListener('change', () => {
-            localStorage.setItem(`change-${inp.dataset.month}`, inp.value);
-            renderAdmin();
-        });
-    });
+    if (checkedItems.length === 0) {
+        content.innerHTML = '<p class="empty-msg">集金済みデータがありません</p>';
+        return;
+    }
+
+    const srcRecords = storeVal ? allData.filter(r => r.store === storeVal) : allData;
+    const routes = [...new Set(srcRecords.map(r => r.route).filter(r => r > 0))].sort((a, b) => a - b);
+
+    const byDateRouteMonth = {};
+    const byDate = {};
+    for (const item of checkedItems) {
+        const { record, state } = item;
+        const d  = toJSTDate(state.checkedAt) || '不明';
+        const r  = record.route > 0 ? record.route : null;
+        const mo = record.dataMonth || '不明';
+        if (!r) continue;
+        if (!byDateRouteMonth[d]) byDateRouteMonth[d] = {};
+        if (!byDateRouteMonth[d][r]) byDateRouteMonth[d][r] = {};
+        byDateRouteMonth[d][r][mo] = (byDateRouteMonth[d][r][mo] || 0) + (record.amount || 0);
+        if (!byDate[d]) byDate[d] = [];
+        byDate[d].push(item);
+    }
+    const dates = Object.keys(byDate).sort().reverse();
+
+    let html = '';
+    for (const d of dates) {
+        html += buildDailySection(d, routes, byDateRouteMonth[d] || {}, byDate[d]);
+    }
+    content.innerHTML = html;
 }
 
 // ─── GAS Sync ────────────────────────────────────────────────────
@@ -425,6 +494,50 @@ async function startApp() {
     document.getElementById('toggle-uncollected').addEventListener('change', e => {
         filters.uncollectedOnly = e.target.checked;
         renderTable();
+    });
+
+    // 釣銭持ち出し入力（イベント委譲）
+    const adminContent = document.getElementById('admin-content');
+    adminContent.addEventListener('focus', e => {
+        if (!e.target.classList.contains('change-input')) return;
+        e.target.value = e.target.value.replace(/,/g, '');
+    }, true);
+    adminContent.addEventListener('blur', e => {
+        if (!e.target.classList.contains('change-input')) return;
+        const v = parseInt(e.target.value.replace(/,/g, '')) || 0;
+        e.target.value = v.toLocaleString('ja-JP');
+    }, true);
+    adminContent.addEventListener('input', e => {
+        if (!e.target.classList.contains('change-input')) return;
+        const date  = e.target.dataset.date;
+        const route = e.target.dataset.route;
+        const val   = parseInt(e.target.value.replace(/,/g, '')) || 0;
+        const ck    = `${date}|${route}`;
+
+        const amounts = getChangeAmounts();
+        amounts[ck] = val;
+        localStorage.setItem(CHANGE_KEY, JSON.stringify(amounts));
+
+        const cashCell = adminContent.querySelector(`[data-cash-key="${ck}"]`);
+        if (cashCell) {
+            const base = parseInt(cashCell.dataset.base) || 0;
+            cashCell.textContent = fmt(base + val);
+        }
+
+        let changeTotal = 0;
+        adminContent.querySelectorAll(`.change-input[data-date="${date}"]`).forEach(inp => {
+            changeTotal += parseInt(inp.value.replace(/,/g, '')) || 0;
+        });
+        const ctCell = adminContent.querySelector(`[data-change-total="${date}"]`);
+        if (ctCell) ctCell.textContent = fmt(changeTotal);
+
+        let cashSum = 0;
+        adminContent.querySelectorAll(`.cash-cell[data-cash-key]`).forEach(cell => {
+            const [d] = cell.dataset.cashKey.split('|');
+            if (d === date) cashSum += parseInt(cell.textContent.replace(/,/g, '')) || 0;
+        });
+        const cashTotal = adminContent.querySelector(`[data-cash-total="${date}"]`);
+        if (cashTotal) cashTotal.textContent = fmt(cashSum);
     });
 
     // GAS 自動同期
