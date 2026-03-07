@@ -24,6 +24,12 @@ function saveChecked() {
 
 function fmt(n) { return (n || 0).toLocaleString(); }
 
+function fmtDate(d) {
+    if (!d) return '—';
+    const [, m, day] = d.split('-');
+    return `${parseInt(m)}月${parseInt(day)}日`;
+}
+
 // ─── Filter ──────────────────────────────────────────────────────
 function filteredData() {
     return allData.filter(r => {
@@ -133,7 +139,7 @@ function renderTable() {
             <td class="col-name"><div class="name-inner">${payBadge}${r.name}</div></td>
             <td class="col-addr">${r.address || ''}</td>
             <td class="col-amount">¥${fmt(r.amount)}</td>
-            <td class="col-date" data-key="${key}">${date || '—'}</td>
+            <td class="col-date" data-key="${key}">${fmtDate(date)}</td>
         </tr>`;
     });
 
@@ -162,14 +168,20 @@ function onCheck(key, isChecked) {
         }
         delete checked[key];
     } else {
+        const today = new Date();
+        const jstDate = new Date(today.getTime() + 9 * 60 * 60 * 1000).toISOString().substring(0, 10);
         checked[key] = {
-            checkedAt:   new Date().toISOString(),
-            collectDate: (checked[key] || {}).collectDate || ''
+            checkedAt:   today.toISOString(),
+            collectDate: (checked[key] || {}).collectDate || jstDate
         };
     }
 
     const row = document.querySelector(`tr[data-key="${key}"]`);
-    if (row) row.classList.toggle('row-checked', isChecked);
+    if (row) {
+        row.classList.toggle('row-checked', isChecked);
+        const dateCell = row.querySelector('td.col-date[data-key]');
+        if (dateCell) dateCell.textContent = fmtDate((checked[key] || {}).collectDate);
+    }
 
     saveChecked();
     renderHeader(filteredData());
@@ -202,7 +214,7 @@ function editDate(key, cell) {
         if (!checked[key]) checked[key] = { checkedAt: new Date().toISOString() };
         checked[key].collectDate = val;
         saveChecked();
-        cell.textContent = val || '—';
+        cell.textContent = fmtDate(val);
     }
     input.addEventListener('change', save);
     input.addEventListener('blur',   save);
