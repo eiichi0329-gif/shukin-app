@@ -34,7 +34,7 @@ MIN_DATA_MONTH = "2026-02"          # 2026年2月分以降を対象
 
 # GAS ウェブアプリ URL（設定するとどの端末からでも自動で同期されます）
 # 空文字のままにするとアプリ内の「連携設定」画面で端末ごとに設定できます
-GAS_URL        = "https://script.google.com/macros/s/AKfycbyeQ_PsvxDzXCU70sAxw6TG4u36hNANsRk_Bh5vT-rLaG1H8ss6VYjg9v2Lq45oc5gU/exec"
+GAS_URL        = "https://script.google.com/macros/s/AKfycbzG07vrxM-SCbXFlstI-UsvvJ3rn57znoMKKdeiFiDY_GWaViu7pzuWIJziD7_DhbQH/exec"
 
 # 店舗キーワード → 正式店舗名
 # フォルダ名・ファイル名のどちらに含まれていても識別します
