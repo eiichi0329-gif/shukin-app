@@ -1,78 +1,75 @@
-// 集金管理アプリ - 超・頑丈版（大量データ対応）
+// 集金管理アプリ - 最終完成版プログラム
 
-async function initApp() {
-    console.log("アプリ起動...");
+async function startApp() {
     const container = document.getElementById('list-container');
-    const loadingBtn = document.querySelector('button.読込中...') || document.querySelector('.読込中...');
+    const badge = document.getElementById('loading-badge');
 
-    // 1. データの存在確認（window.COLLECTION_DATA を探す）
-    const data = window.COLLECTION_DATA;
-    
-    if (!data || !Array.isArray(data)) {
-        console.error("データが見つかりません。1秒後に再試行します。");
-        setTimeout(initApp, 1000); // データが届くまで待機
+    // 1. データが届いているか確認（最大10秒間、0.5秒おきにチェック）
+    let retryCount = 0;
+    while (!window.COLLECTION_DATA && retryCount < 20) {
+        await new Promise(resolve => setTimeout(resolve, 500));
+        retryCount++;
+    }
+
+    if (!window.COLLECTION_DATA) {
+        container.innerHTML = '<div style="color:red; padding:20px;">データ(data.js)の読み込みに失敗しました。再読み込みしてください。</div>';
         return;
     }
 
-    console.log(`${data.length}件のデータを表示します...`);
-
-    // 2. 画面を組み立てる（大量データなので、まずは枠だけ作る）
+    // 2. 2800件超のデータを高速に組み立てる
     let html = '';
-    for (const record of data) {
-        const key = record.key || `${record.store}-${record.name}-${record.seq}`;
-        const amount = (record.amount || 0).toLocaleString();
-        
+    window.COLLECTION_DATA.forEach(r => {
+        const key = r.key || `${r.store}-${r.name}-${r.seq}`;
         html += `
-            <div class="list-item" style="border-bottom: 1px solid #eee; padding: 10px;">
-                <label style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
-                    <input type="checkbox" data-key="${key}" onchange="toggleCheck(this, '${key}')" style="width: 25px; height: 25px;">
-                    <div style="flex: 1;">
-                        <div style="font-weight: bold; font-size: 16px;">${record.name}</div>
-                        <div style="font-size: 12px; color: #666;">${record.store} / ${record.address}</div>
+            <div class="list-item">
+                <label>
+                    <input type="checkbox" data-key="${key}" onchange="sendCheck('${key}', this.checked)">
+                    <div class="info">
+                        <div class="name">${r.name}</div>
+                        <div class="addr">${r.store} / ${r.address}</div>
                     </div>
-                    <div style="font-weight: bold; color: #c2410c;">¥${amount}</div>
+                    <div class="price">¥${(r.amount || 0).toLocaleString()}</div>
                 </label>
             </div>
         `;
-    }
+    });
 
-    // 3. 一気に画面に流し込む（これが一番速い）
+    // 3. 画面に反映して「読込中」を消す
     container.innerHTML = html;
+    if (badge) badge.style.display = 'none';
 
-    // 4. 「読込中」を消す
-    if (loadingBtn) loadingBtn.style.display = 'none';
-
-    // 5. チェック状態を同期
-    syncStatus();
+    // 4. 同期を開始
+    syncCheckboxes();
 }
 
-// チェック操作の送信
-async function toggleCheck(el, key) {
+// チェック状態を送信
+async function sendCheck(key, isChecked) {
     const url = localStorage.getItem('gas_url');
     if (!url) return;
     const record = window.COLLECTION_DATA.find(r => (r.key || `${r.store}-${r.name}-${r.seq}`) === key);
     try {
         await fetch(url, {
             method: 'POST',
-            mode: 'no-cors', // エラー回避のため
-            body: JSON.stringify({ action: el.checked ? 'add' : 'remove', record: { ...record, key, checkedAt: new Date().toISOString() } })
+            mode: 'no-cors',
+            body: JSON.stringify({ action: isChecked ? 'add' : 'remove', record: { ...record, key } })
         });
-    } catch (e) { console.error(e); }
+    } catch (e) { console.error("送信エラー", e); }
 }
 
-// 同期処理
-async function syncStatus() {
+// スプレッドシートの状態と同期
+async function syncCheckboxes() {
     const url = localStorage.getItem('gas_url');
     if (!url) return;
     try {
         const res = await fetch(url);
         const json = await res.json();
-        document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(cb => {
             cb.checked = json.checkedKeys.includes(cb.getAttribute('data-key'));
         });
     } catch (e) { console.error("同期失敗", e); }
 }
 
-// 起動
-window.onload = initApp;
-setInterval(syncStatus, 30000);
+// 起動と30秒ごとの自動同期
+window.addEventListener('DOMContentLoaded', startApp);
+setInterval(syncCheckboxes, 30000);
