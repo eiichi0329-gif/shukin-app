@@ -41,8 +41,8 @@ function filteredData() {
         if (filters.uncollectedOnly && checked[getKey(r)]) {
             // 当日チェックしたものは終日リストに残す
             const state      = checked[getKey(r)];
-            const checkedDay = new Date(state.checkedAt).toDateString();
-            const today      = new Date().toDateString();
+            const checkedDay = new Date(state.checkedAt).toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+            const today      = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
             if (checkedDay !== today) return false;
         }
         if (filters.search) {
@@ -169,7 +169,7 @@ function onCheck(key, isChecked) {
         delete checked[key];
     } else {
         const today = new Date();
-        const jstDate = new Date(today.getTime() + 9 * 60 * 60 * 1000).toISOString().substring(0, 10);
+        const jstDate = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
         checked[key] = {
             checkedAt:   today.toISOString(),
             collectDate: (checked[key] || {}).collectDate || jstDate
@@ -190,13 +190,14 @@ function onCheck(key, isChecked) {
     const url = localStorage.getItem('gas_url');
     if (url) {
         const record = allData.find(r => getKey(r) === key);
+        const state  = checked[key] || {};
         fetch(url, {
             method: 'POST',
             mode:   'no-cors',
             body:   JSON.stringify({
                 action:      isChecked ? 'add' : 'remove',
-                record:      { ...record, key },
-                collectDate: (checked[key] || {}).collectDate || ''
+                record:      { ...record, key, checkedAt: state.checkedAt || '' },
+                collectDate: state.collectDate || ''
             })
         }).catch(e => console.error('送信エラー', e));
     }
@@ -219,6 +220,22 @@ function editDate(key, cell) {
         checked[key].collectDate = val;
         saveChecked();
         cell.textContent = fmtDate(val);
+
+        // GAS 同期
+        const url = localStorage.getItem('gas_url');
+        if (url) {
+            const record = allData.find(r => getKey(r) === key);
+            const state  = checked[key];
+            fetch(url, {
+                method: 'POST',
+                mode:   'no-cors',
+                body:   JSON.stringify({
+                    action:      'add',
+                    record:      { ...record, key, checkedAt: state.checkedAt || '' },
+                    collectDate: val
+                })
+            }).catch(e => console.error('送信エラー', e));
+        }
     }
     input.addEventListener('change', save);
     input.addEventListener('blur',   save);
@@ -250,7 +267,7 @@ function escHtml(s) {
 function toJSTDate(isoStr) {
     if (!isoStr) return null;
     if (isoStr.length === 10) return isoStr;
-    return new Date(new Date(isoStr).getTime() + 9 * 60 * 60 * 1000).toISOString().substring(0, 10);
+    return new Date(isoStr).toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
 }
 
 const CHANGE_KEY = 'coll-change-v1';

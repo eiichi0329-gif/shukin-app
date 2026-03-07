@@ -328,6 +328,8 @@ td.col-date[data-key] { cursor: pointer; color: var(--primary); text-decoration:
   .excel-table th.row-header, .excel-table td { padding: 10px 8px; }
   td.col-name { font-size: 14px; }
   .name-inner { max-width: 10em; }
+  th.col-month, td.col-month { font-size: 12px; padding-left: 3px; padding-right: 3px; }
+  td.col-date, th.col-date { font-size: 12px; min-width: 56px; }
 }
 
 @media (min-width: 641px) {
