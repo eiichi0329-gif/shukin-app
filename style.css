@@ -1,0 +1,378 @@
+:root {
+  --primary:      #ea580c;
+  --primary-dark: #c2410c;
+  --primary-bg:   #ffedd5;
+  --primary-mid:  #fed7aa;
+  /* backward compat */
+  --blue:         #ea580c;
+  --blue-light:   #ffedd5;
+  --green:        #16a34a;
+  --green-bg:     #f0fdf4;
+  --green-hover:  #dcfce7;
+  --red:          #dc2626;
+  --red-bg:       #fee2e2;
+  --g50:          #fafaf9;
+  --g100:         #f5f5f4;
+  --g200:         #e7e5e4;
+  --g300:         #d6d3d1;
+  --g400:         #a8a29e;
+  --g500:         #78716c;
+  --g600:         #57534e;
+  --g800:         #1c1917;
+  --bottom-nav-h: 64px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic UI', sans-serif;
+  background: #fff7ed;
+  color: var(--g800);
+  font-size: 17px;
+  min-height: 100vh;
+  padding-bottom: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
+}
+
+/* ── ヘッダー ─────────────────────────────────────────────── */
+.app-header {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: white;
+  padding: 14px 16px 16px;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 3px 12px rgba(194,65,12,0.35);
+}
+.header-top { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.header-top h1 { font-size: 20px; font-weight: 700; }
+.month-badge {
+  background: rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.45);
+  border-radius: 20px; padding: 3px 12px;
+  font-size: 14px; font-weight: 700;
+}
+
+/* ── コントロールバー ─────────────────────────────────────── */
+.controls-bar {
+  background: white; border-bottom: 3px solid var(--primary-mid);
+  padding: 10px 12px; display: flex; flex-direction: column; gap: 8px;
+}
+.filter-row, .action-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.search-wrap { flex: 1; min-width: 150px; }
+.search-wrap input {
+  width: 100%; padding: 10px 14px;
+  border: 2px solid var(--g200); border-radius: 10px;
+  font-size: 16px; outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.search-wrap input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-bg); }
+
+.sel-filter {
+  padding: 10px 12px; border: 2px solid var(--g200); border-radius: 10px;
+  font-size: 16px; background: white; color: var(--g800);
+  outline: none; cursor: pointer; min-width: 95px;
+}
+.sel-filter:focus { border-color: var(--primary); }
+
+.toggle-label {
+  display: flex; align-items: center; gap: 6px;
+  cursor: pointer; font-size: 16px; user-select: none; white-space: nowrap;
+}
+.toggle-label input { width: 22px; height: 22px; cursor: pointer; accent-color: var(--primary); }
+
+.action-wrap { display: flex; gap: 6px; margin-left: auto; }
+.btn {
+  padding: 10px 14px; border-radius: 10px; border: none;
+  font-size: 16px; font-weight: 700; cursor: pointer;
+  transition: opacity .18s, transform .1s; white-space: nowrap;
+  min-height: 46px;
+}
+.btn:hover  { opacity: 0.82; }
+.btn:active { transform: scale(0.96); }
+.btn-secondary { background: var(--g100); color: var(--g800); border: 2px solid var(--g300); }
+.btn-danger    { background: var(--red-bg); color: var(--red); border: 2px solid #fca5a5; }
+
+/* ── テーブル ──────────────────────────────────────────────── */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: white; }
+
+thead th {
+  background: #fff7ed; border-bottom: 2px solid var(--primary-mid);
+  padding: 12px 8px; text-align: left;
+  font-size: 14px; font-weight: 700; color: var(--primary-dark);
+  white-space: nowrap; position: sticky; top: 0;
+}
+thead th.col-check  { text-align: center; }
+thead th.col-amount { text-align: right; }
+
+tbody tr { border-bottom: 1px solid var(--g100); transition: background .12s; }
+tbody tr:hover, tbody tr:active { background: #fff7ed; }
+tbody tr.row-checked { background: var(--green-bg); }
+tbody tr.row-checked:hover { background: var(--green-hover); }
+tbody tr.row-checked td.col-name  { text-decoration: line-through; color: var(--g400); }
+tbody tr.row-checked td.col-amount { color: var(--green); }
+tbody tr.row-zero { opacity: 0.45; }
+
+td { padding: 14px 8px; vertical-align: middle; }
+td.col-check  { text-align: center; }
+td.col-route  { font-size: 15px; color: var(--primary); white-space: nowrap; font-weight: 700; }
+td.col-name   { font-weight: 600; font-size: 17px; }
+.name-inner {
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  max-width: 14em;
+}
+td.col-addr   { font-size: 14px; color: var(--g600); }
+td.col-amount {
+  text-align: right; font-weight: 700; font-size: 16px;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+td.col-month  { white-space: nowrap; font-size: 15px; color: var(--g800); font-weight: 700; text-align: center; }
+thead th.col-month { text-align: center; }
+td.col-date   { white-space: nowrap; font-size: 14px; color: var(--g500); min-width: 70px; }
+td.col-date[data-key] { cursor: pointer; color: var(--primary); text-decoration: underline dotted; }
+
+/* 集金日編集インプット */
+.date-edit {
+  border: 2px solid var(--primary); border-radius: 6px;
+  padding: 4px 6px; font-size: 15px;
+  width: 100%; min-width: 110px; color: var(--g800);
+  outline: none;
+}
+
+/* チェックボックス（タップしやすく） */
+.check-box { width: 28px; height: 28px; cursor: pointer; accent-color: var(--green); }
+
+/* 支払バッジ */
+.pay-badge {
+  display: inline-block; font-size: 12px; font-weight: 700;
+  border-radius: 5px; padding: 2px 6px; margin-right: 4px; vertical-align: middle;
+}
+.pay-cash { background: #fff7ed; color: #9a3412; border: 1px solid var(--primary-mid); }
+.pay-bank { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; }
+
+/* ── ルート×月 未集金サマリー ────────────────────────────── */
+.route-stats {
+  margin-top: 10px; padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  display: flex; flex-direction: column; gap: 4px;
+  max-height: 140px; overflow-y: auto;
+}
+.rs-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.rs-label { font-size: 12px; opacity: 0.8; white-space: nowrap; min-width: 56px; }
+.rs-pill {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.32);
+  border-radius: 20px; padding: 3px 9px;
+  display: flex; gap: 4px; align-items: center;
+}
+.rs-mo  { font-size: 11px; opacity: 0.85; }
+.rs-amt { font-size: 13px; font-weight: 700; }
+.rs-zero { opacity: 0.4; }
+
+/* ── 管理画面 ─────────────────────────────────────────────── */
+.admin-wrap { padding: 14px; }
+.admin-section { margin-bottom: 24px; }
+.admin-title {
+  font-size: 18px; font-weight: 700; margin-bottom: 10px;
+  color: var(--primary-dark);
+  border-left: 5px solid var(--primary); padding-left: 10px;
+}
+
+.excel-wrap {
+  overflow-x: auto; border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(194,65,12,.18);
+}
+.excel-table {
+  width: 100%; border-collapse: collapse; background: white;
+  font-size: 15px; min-width: 300px;
+}
+.excel-table thead th {
+  background: var(--primary-dark); color: white;
+  padding: 12px 14px; text-align: right;
+  font-size: 14px; font-weight: 700; white-space: nowrap;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.excel-table thead th.corner-cell,
+.excel-table thead th:first-child { text-align: left; }
+.excel-table thead th.total-col { background: var(--primary); }
+
+.excel-table tbody tr { border-bottom: 1px solid var(--g200); }
+.excel-table tbody tr:nth-child(even) { background: #fffbf7; }
+.excel-table tbody tr:hover { background: var(--primary-bg); }
+
+.excel-table th.row-header {
+  background: #fef3c7; font-weight: 700; text-align: left;
+  white-space: nowrap; color: var(--g800);
+  padding: 12px 14px; border: 1px solid var(--g200);
+  min-width: 90px; font-size: 15px;
+}
+.excel-table td {
+  text-align: right; white-space: nowrap;
+  padding: 12px 14px; border: 1px solid var(--g200);
+  color: var(--g400); font-size: 15px;
+}
+.excel-table td.has-value { color: var(--g800); font-weight: 600; }
+.excel-table td.empty-cell { color: var(--g300); }
+.excel-table td.total-cell {
+  background: var(--primary-bg); font-weight: 700; color: var(--primary-dark);
+}
+.excel-table .grand-row th.row-header {
+  background: var(--primary-dark); color: white;
+}
+.excel-table .grand-row td.total-cell {
+  background: var(--primary-dark); color: white;
+}
+.excel-table td.grand-total {
+  background: var(--primary-dark) !important; color: white !important; font-weight: 700;
+}
+
+/* ── 管理画面 新レイアウト ─────────────────────────────────── */
+/* ヘッダーセル（月分小計）クリック可能 */
+.clickable-row {
+  cursor: pointer; user-select: none;
+  color: var(--primary) !important;
+  background: var(--primary-bg) !important;
+}
+.clickable-row:hover { background: var(--primary-mid) !important; }
+
+/* ルート金額セル クリック可能 */
+.clickable-cell {
+  cursor: pointer; user-select: none;
+  color: var(--primary-dark) !important; font-weight: 700 !important;
+  background: var(--primary-bg) !important;
+}
+.clickable-cell:hover { background: var(--primary-mid) !important; }
+
+/* 詳細行 */
+.detail-row td { padding: 0 !important; }
+
+/* クリックしたルート列の直下に表示されるセル */
+.detail-cell-col {
+  text-align: left !important;
+  white-space: normal !important;
+  padding: 10px 8px !important;
+  background: #fffbf5;
+  border-top: 2px solid var(--primary-mid);
+  vertical-align: top;
+}
+
+/* 他のルート列（空白） */
+.detail-empty {
+  padding: 0 !important;
+  background: #fafaf8;
+  border-color: var(--g200) !important;
+}
+
+.detail-list { display: flex; flex-direction: column; gap: 0; }
+.detail-item {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 15px; padding: 7px 4px; border-bottom: 1px solid var(--g100);
+}
+.detail-item:last-child { border-bottom: none; }
+.detail-name  { color: var(--g800); flex: 1; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.detail-amount {
+  color: var(--primary-dark); font-weight: 700;
+  margin-left: 8px; white-space: nowrap; font-size: 15px;
+}
+
+/* 釣銭行 */
+.change-row th.row-header { background: #fef9c3; color: var(--g800); }
+.change-cell { padding: 6px 8px !important; text-align: center; }
+.change-input {
+  width: 94px; padding: 7px 8px; border: 2px solid var(--g300);
+  border-radius: 6px; font-size: 15px; text-align: right;
+  font-family: inherit; background: white; font-weight: 600;
+}
+.change-input:focus { outline: 2px solid var(--primary); border-color: transparent; }
+
+/* 手持ち現金行 */
+.cash-row th.row-header { background: #dcfce7; color: #14532d; font-weight: 700; }
+.cash-row td.cash-cell {
+  background: #f0fdf4 !important; color: #14532d !important;
+  font-weight: 700 !important; font-size: 16px !important;
+}
+.cash-row td.grand-total {
+  background: #16a34a !important; color: white !important;
+}
+
+.empty-msg { text-align: center; padding: 60px 20px; color: var(--g400); font-size: 17px; }
+.no-results { text-align: center; padding: 48px 20px; color: var(--g400); font-size: 17px; background: white; }
+.hidden { display: none !important; }
+
+/* ── ボトムナビ ────────────────────────────────────────────── */
+.bottom-nav {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  height: calc(var(--bottom-nav-h) + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
+  background: white; border-top: 2px solid var(--primary-mid);
+  display: flex; z-index: 200;
+  box-shadow: 0 -3px 14px rgba(194,65,12,.14);
+}
+.nav-btn {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 4px;
+  background: none; border: none; cursor: pointer;
+  color: var(--g400); transition: color .15s, background .15s;
+  padding: 6px 0; font-family: inherit;
+}
+.nav-btn.active { color: var(--primary); }
+.nav-btn:active { background: var(--primary-bg); }
+.nav-icon  { font-size: 26px; line-height: 1; }
+.nav-label { font-size: 13px; font-weight: 700; }
+
+/* ── レスポンシブ ──────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .header-top h1 { font-size: 18px; }
+  .col-addr { display: none; }
+  td { padding: 14px 6px; }
+  .check-box { width: 30px; height: 30px; }
+  .excel-table { font-size: 14px; }
+  .excel-table th.row-header, .excel-table td { padding: 10px 8px; }
+  td.col-name { font-size: 14px; }
+  .name-inner { max-width: 10em; }
+}
+
+@media (min-width: 641px) {
+  .controls-bar { flex-direction: row; align-items: center; }
+  .filter-row, .action-row { flex: 1; }
+}
+
+@media print {
+  .app-header { position: static; background: #fff; color: #000; }
+  .controls-bar, .bottom-nav { display: none; }
+}
+
+/* ── 連携設定ダイアログ ───────────────────────────────── */
+.btn-primary { background: var(--primary); color: white; border: none; }
+.btn-primary:hover { opacity: 0.85; }
+
+.settings-dialog {
+  border: none; border-radius: 16px;
+  padding: 0; width: min(480px, 92vw);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+}
+.settings-dialog::backdrop { background: rgba(0,0,0,0.45); }
+
+.settings-inner { padding: 24px 22px; display: flex; flex-direction: column; gap: 14px; }
+
+.settings-title { font-size: 18px; font-weight: 700; color: var(--primary-dark); }
+
+.settings-desc {
+  font-size: 14px; color: var(--g600); line-height: 1.6;
+}
+.settings-desc code {
+  background: var(--g100); border-radius: 4px;
+  padding: 1px 5px; font-size: 13px; color: var(--g800);
+}
+
+.settings-label { display: flex; flex-direction: column; gap: 6px; font-size: 15px; font-weight: 700; }
+
+.settings-input {
+  width: 100%; padding: 11px 13px;
+  border: 2px solid var(--g200); border-radius: 10px;
+  font-size: 14px; font-family: monospace;
+  outline: none; color: var(--g800);
+}
+.settings-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-bg); }
+
+.settings-status { font-size: 13px; min-height: 18px; }
+
+.settings-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }

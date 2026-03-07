@@ -1,0 +1,38 @@
+C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\reader\workbook.py:118: UserWarning: Print area cannot be set to Defined name: 配達表!$C:$P.
+  warn(f"Print area cannot be set to Defined name: {defn.value}.")
+C:\Users\USER\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\worksheet\_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+============================================================
+集金管理アプリ データ更新スクリプト
+============================================================
+スキャン先: C:\Users\USER\Dropbox\②顧客管理表\①うちくる下関店
+対象期間 : 2026年02月 以降
+
+対象ファイル: 4 件
+  [2025-12] うちくる顧客管理表(2025.12)下関店.xlsm  (2026-02-19)
+  [2026-01] うちくる顧客管理表(2026.1)下関店.xlsm  (2026-02-19)
+  [2026-02] うちくる顧客管理表(2026.2)下関店.xlsm  (2026-03-02)
+  [2026-03] うちくる顧客管理表(2026.3)下関店.xlsm  (2026-03-03)
+
+処理中: うちくる顧客管理表(2025.12)下関店.xlsm
+  → 390 件抽出
+処理中: うちくる顧客管理表(2026.1)下関店.xlsm
+  → 401 件抽出
+処理中: うちくる顧客管理表(2026.2)下関店.xlsm
+  → 317 件抽出
+処理中: うちくる顧客管理表(2026.3)下関店.xlsm
+  → 321 件抽出
+データ月フィルタ後: 638 件（除外: 791 件）
+
+名寄せ後: 603 件（元: 638 件）
+  2026-02分: 300 件 / 2,077,572円
+  2026-03分: 303 件 / 4,004,675円
+  合計  : 6,082,247円
+
+出力完了: C:\Users\USER\collection-app\data.js
+
+次の手順:
+  1. collection-app/index.html をブラウザで開いてください
+  2. データが自動的に読み込まれます
+
+データを更新するときは再度このスクリプトを実行してください。

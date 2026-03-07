@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>集金管理アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── ヘッダー ────────────────────────────────────── -->
+  <header class="app-header">
+    <div class="header-top">
+      <h1>集金管理アプリ</h1>
+      <span class="month-badge" id="monthBadge">読込中…</span>
+    </div>
+    <!-- ルート×月 未集金サマリー（現金のみ） -->
+    <div class="route-stats" id="routeStats"></div>
+  </header>
+
+  <!-- ── 集金リスト ─────────────────────────────────── -->
+  <div id="listView">
+
+    <div class="controls-bar">
+      <div class="filter-row">
+        <div class="search-wrap">
+          <input type="search" id="searchInput" placeholder="名前で検索…" autocomplete="off">
+        </div>
+        <select id="storeFilter" class="sel-filter">
+          <option value="">全店舗</option>
+        </select>
+        <select id="routeFilter" class="sel-filter">
+          <option value="">全ルート</option>
+        </select>
+        <select id="monthFilter" class="sel-filter">
+          <option value="">全月</option>
+        </select>
+        <select id="paymentFilter" class="sel-filter">
+          <option value="">現金・口座</option>
+          <option value="cash">現金のみ</option>
+          <option value="bank">口座のみ</option>
+        </select>
+        <input type="date" id="collDateFilter" class="sel-filter" title="集金日で絞り込み">
+      </div>
+      <div class="action-row">
+        <label class="toggle-label">
+          <input type="checkbox" id="filterUncollected">
+          <span>未集金のみ</span>
+        </label>
+        <div class="action-wrap">
+          <button class="btn btn-secondary" id="settingsBtn">⚙ 連携設定</button>
+          <button class="btn btn-secondary" id="loadCsvBtn">📂 CSV読込</button>
+          <button class="btn btn-danger"    id="resetBtn">↩ リセット</button>
+          <input type="file" id="csvFileInput" accept=".csv" style="display:none">
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table id="mainTable">
+        <thead>
+          <tr>
+            <th class="col-check">済</th>
+            <th class="col-month">月分</th>
+            <th class="col-route">ルート</th>
+            <th class="col-name">名前</th>
+            <th class="col-addr">住所</th>
+            <th class="col-amount">金額</th>
+            <th class="col-date">集金日</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <div class="no-results hidden" id="noResults">該当する件がありません。</div>
+    </div>
+  </div><!-- /listView -->
+
+  <!-- ── 管理画面 ─────────────────────────────────────── -->
+  <div id="historyView" class="hidden">
+    <div class="admin-wrap" id="historyContent">
+      <p class="empty-msg">集金済みデータがありません</p>
+    </div>
+  </div><!-- /historyView -->
+
+  <!-- ── ボトムナビ ────────────────────────────────────── -->
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-tab="list">
+      <span class="nav-icon">📋</span>
+      <span class="nav-label">集金リスト</span>
+    </button>
+    <button class="nav-btn" data-tab="history">
+      <span class="nav-icon">📊</span>
+      <span class="nav-label">管理画面</span>
+    </button>
+  </nav>
+
+  <!-- 連携設定ダイアログ -->
+  <dialog id="settingsDialog" class="settings-dialog">
+    <div class="settings-inner">
+      <h2 class="settings-title">📊 スプレッドシート連携設定</h2>
+      <p class="settings-desc">
+        Google Apps Script でデプロイした Web アプリの URL を入力してください。<br>
+        設定方法は <code>spreadsheet_script.js</code> の冒頭コメントを参照してください。
+      </p>
+      <label class="settings-label">
+        <span>Web アプリ URL</span>
+        <input type="text" id="gasUrlInput" class="settings-input"
+               placeholder="https://script.google.com/macros/s/...">
+      </label>
+      <p class="settings-status" id="gasUrlStatus"></p>
+      <div class="settings-actions">
+        <button class="btn btn-secondary" id="settingsCancelBtn">キャンセル</button>
+        <button class="btn btn-primary"   id="settingsSaveBtn">保存</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- data.js が存在すれば window.COLLECTION_DATA が定義される -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
