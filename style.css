@@ -89,6 +89,8 @@ body {
 .btn:active { transform: scale(0.96); }
 .btn-secondary { background: var(--g100); color: var(--g800); border: 2px solid var(--g300); }
 .btn-danger    { background: var(--red-bg); color: var(--red); border: 2px solid #fca5a5; }
+.btn-bulk          { background: #eff6ff; color: #1d4ed8; border: 2px solid #bfdbfe; }
+.btn-bulk-register { background: #f0fdf4; color: #15803d; border: 2px solid #86efac; }
 
 /* ── テーブル ──────────────────────────────────────────────── */
 .table-wrap { overflow-x: auto; }
@@ -129,6 +131,23 @@ thead th.col-month { text-align: center; }
 td.col-date   { white-space: nowrap; font-size: 14px; color: var(--g500); min-width: 70px; }
 td.col-date[data-key] { cursor: pointer; color: var(--primary); text-decoration: underline dotted; }
 
+/* 振込入金列 */
+th.col-transfer, td.col-transfer { white-space: nowrap; text-align: center; padding-left: 4px; padding-right: 4px; }
+.btn-transfer {
+  background: #f5f3ff; color: #6d28d9; border: 1.5px solid #c4b5fd;
+  border-radius: 7px; padding: 5px 9px; font-size: 13px; font-weight: 700;
+  cursor: pointer; white-space: nowrap; font-family: inherit;
+}
+.btn-transfer:hover  { background: #ede9fe; }
+.btn-transfer:active { transform: scale(0.95); }
+.transfer-done { font-size: 13px; color: #6d28d9; font-weight: 700; }
+
+/* 振込入金済み行 */
+tbody tr.row-transfer { background: #f5f3ff; }
+tbody tr.row-transfer:hover { background: #ede9fe; }
+tbody tr.row-transfer td.col-name   { text-decoration: line-through; color: var(--g400); }
+tbody tr.row-transfer td.col-amount { color: #6d28d9; }
+
 /* 集金日編集インプット */
 .date-edit {
   border: 2px solid var(--primary); border-radius: 6px;
@@ -138,15 +157,23 @@ td.col-date[data-key] { cursor: pointer; color: var(--primary); text-decoration:
 }
 
 /* チェックボックス（タップしやすく） */
-.check-box { width: 28px; height: 28px; cursor: pointer; accent-color: var(--green); }
+.check-box      { width: 28px; height: 28px; cursor: pointer; accent-color: var(--green); }
+.bank-check     { accent-color: #2563eb; }
 
 /* 支払バッジ */
 .pay-badge {
   display: inline-block; font-size: 12px; font-weight: 700;
   border-radius: 5px; padding: 2px 6px; margin-right: 4px; vertical-align: middle;
 }
-.pay-cash { background: #fff7ed; color: #9a3412; border: 1px solid var(--primary-mid); }
-.pay-bank { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; }
+.pay-cash        { background: #fff7ed; color: #9a3412; border: 1px solid var(--primary-mid); }
+.pay-bank        { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; }
+.pay-bank-failed { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+
+/* 口振完了行 */
+tbody tr.row-bank-completed { background: #eff6ff; }
+tbody tr.row-bank-completed:hover { background: #dbeafe; }
+tbody tr.row-bank-completed td.col-name   { text-decoration: line-through; color: var(--g400); }
+tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 
 /* ── ルート×月 未集金サマリー ────────────────────────────── */
 .route-stats {
@@ -330,6 +357,7 @@ td.col-date[data-key] { cursor: pointer; color: var(--primary); text-decoration:
   .name-inner { max-width: 10em; }
   th.col-month, td.col-month { font-size: 12px; padding-left: 3px; padding-right: 3px; }
   td.col-date, th.col-date { font-size: 12px; min-width: 56px; }
+  .btn-transfer { font-size: 12px; padding: 4px 6px; }
 }
 
 @media (min-width: 641px) {
@@ -341,6 +369,85 @@ td.col-date[data-key] { cursor: pointer; color: var(--primary); text-decoration:
   .app-header { position: static; background: #fff; color: #000; }
   .controls-bar, .bottom-nav { display: none; }
 }
+
+/* ── 連絡事項タブ ─────────────────────────────────────── */
+.msg-wrap { padding: 14px; display: flex; flex-direction: column; gap: 20px; }
+
+.msg-form-section {
+  background: white; border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(194,65,12,.12);
+  overflow: hidden;
+}
+.msg-form-title {
+  font-size: 16px; font-weight: 700; color: white;
+  background: var(--primary-dark);
+  padding: 10px 16px;
+}
+.msg-form-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+
+.msg-select {
+  width: 100%; padding: 11px 13px;
+  border: 2px solid var(--g200); border-radius: 10px;
+  font-size: 16px; background: white; color: var(--g800);
+  outline: none;
+}
+.msg-select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-bg); }
+
+.msg-textarea {
+  width: 100%; padding: 11px 13px;
+  border: 2px solid var(--g200); border-radius: 10px;
+  font-size: 16px; font-family: inherit; resize: vertical;
+  outline: none; color: var(--g800); min-height: 90px;
+}
+.msg-textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-bg); }
+
+.msg-submit-btn { width: 100%; font-size: 17px; padding: 13px; }
+
+.msg-list-section {
+  background: white; border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(194,65,12,.12);
+  overflow: hidden;
+}
+
+.msg-item {
+  padding: 12px 16px; border-bottom: 1px solid var(--g100);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.msg-item:last-child { border-bottom: none; }
+.msg-item-meta {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.msg-item-route { font-size: 13px; font-weight: 700; color: var(--primary); }
+.msg-item-name  { font-size: 14px; font-weight: 700; color: var(--g800); }
+.msg-item-date  { font-size: 12px; color: var(--g400); margin-left: auto; }
+.msg-item-text  { font-size: 15px; color: var(--g800); white-space: pre-wrap; }
+.msg-item-del   {
+  align-self: flex-end; background: none; border: none;
+  color: var(--g400); font-size: 13px; cursor: pointer; padding: 2px 6px;
+}
+.msg-item-del:hover { color: var(--red); }
+
+.msg-empty { text-align: center; padding: 32px 20px; color: var(--g400); font-size: 15px; }
+
+/* 管理画面 連絡事項セクション */
+.admin-msg-store {
+  margin-bottom: 24px; background: white; border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(194,65,12,.12); overflow: hidden;
+}
+.admin-msg-store-header {
+  background: var(--primary-dark); color: white;
+  padding: 10px 16px; font-size: 15px; font-weight: 700;
+}
+.admin-msg-item {
+  padding: 12px 16px; border-bottom: 1px solid var(--g100);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.admin-msg-item:last-child { border-bottom: none; }
+.admin-msg-item-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.admin-msg-item-route { font-size: 13px; font-weight: 700; color: var(--primary); }
+.admin-msg-item-name  { font-size: 14px; font-weight: 700; }
+.admin-msg-item-date  { font-size: 12px; color: var(--g400); margin-left: auto; }
+.admin-msg-item-text  { font-size: 15px; color: var(--g800); white-space: pre-wrap; }
 
 /* ── 連携設定ダイアログ ───────────────────────────────── */
 .btn-primary { background: var(--primary); color: white; border: none; }

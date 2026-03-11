@@ -21,6 +21,8 @@
 // ══════════════════════════════════════════════════════
 
 const HEADERS = ['店舗', 'ルート', '名前', '住所', '金額', '集金日', '集金日時', 'キー'];
+const MSG_SHEET  = '連絡事項';
+const MSG_HEADERS = ['ID', '店舗', 'ルート', '顧客名', '連絡内容', '送信日時'];
 
 function doPost(e) {
   try {
@@ -73,6 +75,50 @@ function doPost(e) {
         sheet.getRange(2, 1, dataRows, HEADERS.length)
           .sort([{ column: 1, ascending: true }, { column: 2, ascending: true }]);
       }
+
+    } else if (action === 'addMessage') {
+      const msg = payload.message;
+      if (!msg) return ok();
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      let sheet = ss.getSheetByName(MSG_SHEET);
+      if (!sheet) {
+        sheet = ss.insertSheet(MSG_SHEET);
+        const hRange = sheet.getRange(1, 1, 1, MSG_HEADERS.length);
+        hRange.setValues([MSG_HEADERS]);
+        hRange.setFontWeight('bold');
+        hRange.setBackground('#1e40af');
+        hRange.setFontColor('#ffffff');
+        sheet.setFrozenRows(1);
+        sheet.setColumnWidth(1, 80);
+        sheet.setColumnWidth(2, 100);
+        sheet.setColumnWidth(3, 60);
+        sheet.setColumnWidth(4, 160);
+        sheet.setColumnWidth(5, 320);
+        sheet.setColumnWidth(6, 160);
+      }
+      // 送信日時をJST文字列に
+      let createdStr = msg.createdAt || '';
+      if (createdStr) {
+        try {
+          const d = new Date(new Date(createdStr).getTime() + 9 * 60 * 60 * 1000);
+          createdStr = Utilities.formatDate(d, 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+        } catch (_) {}
+      }
+      sheet.appendRow([msg.id || '', msg.store || '', msg.route || '', msg.customerName || '', msg.text || '', createdStr]);
+      return ok();
+
+    } else if (action === 'removeMessage') {
+      const msgId = payload.messageId;
+      if (!msgId) return ok();
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sheet = ss.getSheetByName(MSG_SHEET);
+      if (!sheet) return ok();
+      const lastRow = sheet.getLastRow();
+      if (lastRow < 2) return ok();
+      const ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues().flat();
+      const idx = ids.indexOf(msgId);
+      if (idx >= 0) sheet.deleteRow(idx + 2);
+      return ok();
 
     } else if (action === 'remove') {
       const sheet = ss.getSheetByName(sheetName);
@@ -128,8 +174,19 @@ function doGet(e) {
         if (key) checkedData[key] = { collectDate: collectDate || '' };
       }
     }
+    // 連絡事項シートを読み込む
+    const msgSheet = ss.getSheetByName(MSG_SHEET);
+    const messages = [];
+    if (msgSheet && msgSheet.getLastRow() >= 2) {
+      const rows = msgSheet.getRange(2, 1, msgSheet.getLastRow() - 1, MSG_HEADERS.length).getValues();
+      for (const [id, store, route, customerName, text, createdAt] of rows) {
+        if (!id) continue;
+        messages.push({ id: String(id), store: String(store), route, customerName: String(customerName), text: String(text), createdAt: String(createdAt) });
+      }
+    }
+
     return ContentService
-      .createTextOutput(JSON.stringify({ ok: true, checkedData }))
+      .createTextOutput(JSON.stringify({ ok: true, checkedData, messages }))
       .setMimeType(ContentService.MimeType.JSON);
   } catch (err) {
     return ContentService

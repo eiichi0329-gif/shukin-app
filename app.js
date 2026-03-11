@@ -1,19 +1,51 @@
 // 集金管理アプリ v3
 
-const LS_KEY = 'coll-state-v3';
+const LS_KEY      = 'coll-state-v3';
+const BANK_KEY     = 'coll-bank-v1';
+const TRANSFER_KEY = 'coll-transfer-v1';
 const DIRTY_GRACE_MS = 35000; // ローカル変更を守る猶予時間（ms）
 
 // ─── State ───────────────────────────────────────────────────────
-let allData = [];
-let checked = {};   // key → { checkedAt, collectDate }
+let allData       = [];
+let checked       = {};   // key → { checkedAt, collectDate }
+let bankState     = {};   // key → { status: 'completed'|'failed', updatedAt }
+let transferState = {};   // key → { date: 'YYYY-MM-DD', recordedAt: ISO }
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'list';
 let expandedCell = null;  // { route, month } for admin detail
+
+// 口振一括チェックモード
+let bulkMode         = false;
+let bulkAffectedKeys = new Set(); // 一括チェックで対象になったキー
+let bulkUncheckedKeys = new Set(); // ユーザーが手動で外したキー
 
 // ローカルで変更した直後のキーを追跡（同期による上書きを防ぐ）
 const dirtyKeys = new Map(); // key → timestamp
 
 function markDirty(key) { dirtyKeys.set(key, Date.now()); }
+
+// ─── Bank State ───────────────────────────────────────────────────
+function loadBankState() {
+    try { return JSON.parse(localStorage.getItem(BANK_KEY) || '{}'); } catch { return {}; }
+}
+function saveBankState() {
+    localStorage.setItem(BANK_KEY, JSON.stringify(bankState));
+}
+
+// ─── Transfer State ───────────────────────────────────────────────
+function loadTransferState() {
+    try { return JSON.parse(localStorage.getItem(TRANSFER_KEY) || '{}'); } catch { return {}; }
+}
+function saveTransferState() {
+    localStorage.setItem(TRANSFER_KEY, JSON.stringify(transferState));
+}
+
+// 口振失敗した顧客は実効的に現金扱いにする
+function effectivePaymentType(r) {
+    const key = getKey(r);
+    if (bankState[key]?.status === 'failed') return 'cash';
+    return r.paymentType;
+}
 
 function cleanDirty() {
     const cutoff = Date.now() - DIRTY_GRACE_MS;
@@ -63,14 +95,24 @@ function fmtDate(d) {
 // ─── Filter ──────────────────────────────────────────────────────
 function filteredData() {
     return allData.filter(r => {
-        if (filters.store   && r.store          !== filters.store)   return false;
-        if (filters.month   && r.dataMonth      !== filters.month)   return false;
-        if (filters.route   && String(r.route)  !== filters.route)   return false;
-        if (filters.payment && r.paymentType    !== filters.payment) return false;
-        if ((r.amount || 0) === 0)                                     return false;
-        if (filters.uncollectedOnly && checked[getKey(r)]) {
+        const key        = getKey(r);
+        const effPayment = effectivePaymentType(r);
+
+        if (filters.store   && r.store         !== filters.store)   return false;
+        if (filters.month   && r.dataMonth     !== filters.month)   return false;
+        if (filters.route   && String(r.route) !== filters.route)   return false;
+        if (filters.payment && effPayment      !== filters.payment) return false;
+        if ((r.amount || 0) === 0)                                   return false;
+
+        // 口振完了：未集金フィルター ON のとき非表示
+        if (bankState[key]?.status === 'completed' && filters.uncollectedOnly) return false;
+
+        // 振込入金済み：未集金フィルター ON のとき非表示
+        if (transferState[key] && filters.uncollectedOnly) return false;
+
+        if (filters.uncollectedOnly && checked[key]) {
             // 当日チェックしたものは終日リストに残す
-            const state      = checked[getKey(r)];
+            const state      = checked[key];
             const checkedDay = new Date(state.checkedAt).toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
             const today      = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
             if (checkedDay !== today) return false;
@@ -109,9 +151,15 @@ function renderHeader(data) {
     document.getElementById('month-badge').textContent =
         months.length === 1 ? months[0] : months.join(' / ');
 
-    const total          = data.reduce((s, r) => s + (r.amount || 0), 0);
-    const checkedCount   = data.filter(r => checked[getKey(r)]).length;
-    const checkedAmount  = data.filter(r => checked[getKey(r)]).reduce((s, r) => s + (r.amount || 0), 0);
+    const total = data.reduce((s, r) => s + (r.amount || 0), 0);
+    const isDone = r => {
+        const key = getKey(r);
+        if (transferState[key]) return true;
+        if (effectivePaymentType(r) === 'bank') return bankState[key]?.status === 'completed';
+        return !!checked[key];
+    };
+    const checkedCount  = data.filter(isDone).length;
+    const checkedAmount = data.filter(isDone).reduce((s, r) => s + (r.amount || 0), 0);
 
     document.getElementById('header-summary').textContent =
         `${checkedCount} / ${data.length} 件   ¥${fmt(checkedAmount)} / ¥${fmt(total)}`;
@@ -148,46 +196,96 @@ function renderTable() {
     const tbody = document.getElementById('tbody');
 
     if (data.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="7" class="no-results">該当するデータがありません</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="8" class="no-results">該当するデータがありません</td></tr>';
         renderHeader(filteredData());
         return;
     }
 
     let html = '';
     data.forEach(r => {
-        const key       = getKey(r);
-        const isChecked = !!checked[key];
-        const state     = checked[key] || {};
-        const date      = state.collectDate || '';
+        const key            = getKey(r);
+        const isChecked      = !!checked[key];
+        const state          = checked[key] || {};
+        const date           = state.collectDate || '';
+        const effPayment     = effectivePaymentType(r);
+        const isBankCustomer  = effPayment === 'bank';
+        const isBankCompleted = isBankCustomer && bankState[key]?.status === 'completed';
+        const isBankFailed    = bankState[key]?.status === 'failed';
+        const isTransferred   = !!transferState[key];
 
-        const payBadge = r.paymentType === 'bank'
-            ? '<span class="pay-badge pay-bank">口振</span>'
-            : '<span class="pay-badge pay-cash">現金</span>';
+        let payBadge;
+        if (isBankFailed) {
+            payBadge = '<span class="pay-badge pay-bank-failed">口振失敗</span>';
+        } else if (isBankCustomer) {
+            payBadge = '<span class="pay-badge pay-bank">口振</span>';
+        } else {
+            payBadge = '<span class="pay-badge pay-cash">現金</span>';
+        }
 
-        html += `<tr class="${isChecked ? 'row-checked' : ''}${(r.amount || 0) === 0 ? ' row-zero' : ''}" data-key="${key}">
-            <td class="col-check">
-                <input type="checkbox" class="check-box" data-key="${key}" ${isChecked ? 'checked' : ''}>
-            </td>
+        let rowClass = '';
+        if (isTransferred)        rowClass = 'row-transfer';
+        else if (isBankCompleted) rowClass = 'row-bank-completed';
+        else if (isChecked)       rowClass = 'row-checked';
+        if ((r.amount || 0) === 0) rowClass += ' row-zero';
+
+        const checkboxHtml = isBankCustomer
+            ? `<input type="checkbox" class="check-box bank-check" data-key="${key}" ${isBankCompleted ? 'checked' : ''}>`
+            : `<input type="checkbox" class="check-box" data-key="${key}" ${isChecked ? 'checked' : ''}>`;
+
+        // 口振顧客は集金日セルは編集不要
+        const dateCellHtml = isBankCustomer
+            ? `<td class="col-date">—</td>`
+            : `<td class="col-date" data-key="${key}">${fmtDate(date)}</td>`;
+
+        // 振込入金セル（口振顧客には表示しない）
+        let transferCellHtml;
+        if (isBankCustomer) {
+            transferCellHtml = `<td class="col-transfer"></td>`;
+        } else if (isTransferred) {
+            transferCellHtml = `<td class="col-transfer transfer-done">${fmtDate(transferState[key].date)}</td>`;
+        } else {
+            transferCellHtml = `<td class="col-transfer"><button class="btn-transfer" data-key="${key}">振込入金</button></td>`;
+        }
+
+        html += `<tr class="${rowClass}" data-key="${key}">
+            <td class="col-check">${checkboxHtml}</td>
             <td class="col-route">R${r.route}</td>
             <td class="col-month">${r.dataMonth.slice(5)}月</td>
             <td class="col-name"><div class="name-inner">${payBadge}${r.name}</div></td>
             <td class="col-addr">${r.address || ''}</td>
             <td class="col-amount">¥${fmt(r.amount)}</td>
-            <td class="col-date" data-key="${key}">${fmtDate(date)}</td>
+            ${dateCellHtml}
+            ${transferCellHtml}
         </tr>`;
     });
 
     tbody.innerHTML = html;
 
-    // イベント登録（チェックボックス）
-    tbody.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    // イベント登録（現金チェックボックス）
+    tbody.querySelectorAll('input.check-box:not(.bank-check)').forEach(cb => {
         cb.addEventListener('change', () => onCheck(cb.dataset.key, cb.checked));
+    });
+
+    // イベント登録（口振完了チェックボックス）
+    tbody.querySelectorAll('input.bank-check').forEach(cb => {
+        cb.addEventListener('change', () => onBankCheck(cb.dataset.key, cb.checked));
     });
 
     // イベント登録（集金日）
     tbody.querySelectorAll('td.col-date[data-key]').forEach(cell => {
         cell.addEventListener('click', () => editDate(cell.dataset.key, cell));
     });
+
+    // イベント登録（振込入金ボタン）
+    tbody.querySelectorAll('button.btn-transfer').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const cell = btn.closest('td');
+            onTransferClick(btn.dataset.key, cell);
+        });
+    });
+
+    // 一括チェックモード中はチェック状態を復元
+    restoreBulkVisual();
 
     renderHeader(data);
 }
@@ -237,6 +335,36 @@ function onCheck(key, isChecked) {
     }
 }
 
+// ─── Bank Complete Action ─────────────────────────────────────────
+function onBankCheck(key, isChecked) {
+    // 一括チェックモード中は DOM 状態だけ追跡し、保存は「登録」ボタンで行う
+    if (bulkMode) {
+        if (!isChecked) {
+            bulkUncheckedKeys.add(key);
+        } else {
+            bulkUncheckedKeys.delete(key);
+        }
+        return;
+    }
+
+    if (isChecked) {
+        // 口振完了 → リストから削除（uncollectedOnly ON 時）
+        bankState[key] = { status: 'completed', updatedAt: new Date().toISOString() };
+        saveBankState();
+        renderTable();
+    } else {
+        // チェック解除 → 引き落とし失敗、現金集金に変更
+        if (!confirm('口座振替の引き落としができませんでした。\n現金集金に変更しますか？')) {
+            const cb = document.querySelector(`input.bank-check[data-key="${key}"]`);
+            if (cb) cb.checked = true;
+            return;
+        }
+        bankState[key] = { status: 'failed', updatedAt: new Date().toISOString() };
+        saveBankState();
+        renderTable();
+    }
+}
+
 // ─── Date Edit ───────────────────────────────────────────────────
 function editDate(key, cell) {
     const current = (checked[key] || {}).collectDate || '';
@@ -272,6 +400,90 @@ function editDate(key, cell) {
     input.addEventListener('blur',   save);
 }
 
+// ─── Bulk Bank Check ─────────────────────────────────────────────
+function checkAllBank() {
+    const data = filteredData();
+    const targets = data.filter(r =>
+        effectivePaymentType(r) === 'bank' && bankState[getKey(r)]?.status !== 'completed'
+    );
+    if (targets.length === 0) { alert('完了済みでない口振顧客がありません'); return; }
+
+    // 一括モード開始
+    bulkMode = true;
+    bulkAffectedKeys  = new Set(targets.map(r => getKey(r)));
+    bulkUncheckedKeys = new Set();
+
+    // 口振チェックボックスを全チェック（保存はまだしない）
+    targets.forEach(r => {
+        const cb = document.querySelector(`input.bank-check[data-key="${getKey(r)}"]`);
+        if (cb) cb.checked = true;
+    });
+
+    document.getElementById('btn-bulk-check').classList.add('hidden');
+    document.getElementById('btn-bulk-register').classList.remove('hidden');
+}
+
+function registerBulkBank() {
+    const failed  = [...bulkUncheckedKeys].filter(k => bulkAffectedKeys.has(k));
+    const success = [...bulkAffectedKeys].filter(k => !bulkUncheckedKeys.has(k));
+    const msg = `【完了】${success.length} 件　【現金集金へ変更】${failed.length} 件\n登録しますか？`;
+    if (!confirm(msg)) return;
+
+    const now = new Date();
+    success.forEach(key => {
+        bankState[key] = { status: 'completed', updatedAt: now.toISOString() };
+    });
+    failed.forEach(key => {
+        bankState[key] = { status: 'failed', updatedAt: now.toISOString() };
+    });
+
+    saveBankState();
+
+    // 一括モード終了
+    bulkMode = false;
+    bulkAffectedKeys.clear();
+    bulkUncheckedKeys.clear();
+
+    document.getElementById('btn-bulk-check').classList.remove('hidden');
+    document.getElementById('btn-bulk-register').classList.add('hidden');
+
+    renderTable();
+}
+
+// renderTable 後に一括チェック状態を DOM へ反映
+function restoreBulkVisual() {
+    if (!bulkMode) return;
+    bulkAffectedKeys.forEach(key => {
+        const cb = document.querySelector(`input.bank-check[data-key="${key}"]`);
+        if (cb) cb.checked = !bulkUncheckedKeys.has(key);
+    });
+}
+
+// ─── Transfer Payment ────────────────────────────────────────────
+function onTransferClick(key, cell) {
+    const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+    const input = document.createElement('input');
+    input.type      = 'date';
+    input.className = 'date-edit';
+    input.value     = today;
+    cell.innerHTML  = '';
+    cell.appendChild(input);
+    input.focus();
+
+    let saved = false;
+    function save() {
+        if (saved) return;
+        const val = input.value;
+        if (!val) { renderTable(); return; }
+        saved = true;
+        transferState[key] = { date: val, recordedAt: new Date().toISOString() };
+        saveTransferState();
+        renderTable();
+    }
+    input.addEventListener('change', save);
+    input.addEventListener('blur',   () => setTimeout(save, 150));
+}
+
 // ─── Reset ───────────────────────────────────────────────────────
 function resetAll() {
     if (!confirm('全てのチェックをリセットしますか？この操作は元に戻せません。')) return;
@@ -284,10 +496,13 @@ function resetAll() {
 function switchTab(tab) {
     currentTab = tab;
     document.getElementById('tab-list').classList.toggle('hidden', tab !== 'list');
+    document.getElementById('tab-msg').classList.toggle('hidden',  tab !== 'msg');
     document.getElementById('tab-admin').classList.toggle('hidden', tab !== 'admin');
     document.getElementById('nav-list').classList.toggle('active', tab === 'list');
+    document.getElementById('nav-msg').classList.toggle('active',  tab === 'msg');
     document.getElementById('nav-admin').classList.toggle('active', tab === 'admin');
     if (tab === 'admin') renderAdmin();
+    if (tab === 'msg')   renderMsgTab();
 }
 
 // ─── Admin Tab ───────────────────────────────────────────────────
@@ -466,7 +681,168 @@ function renderAdmin() {
     for (const d of dates) {
         html += buildDailySection(d, routes, byDateRouteMonth[d] || {}, byDate[d]);
     }
+    html += renderAdminMessages(storeVal);
     content.innerHTML = html;
+}
+
+// ─── Messages ────────────────────────────────────────────────
+const MSG_KEY = 'coll-messages-v1';
+
+function loadMessages() {
+    try {
+        const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+        const all   = JSON.parse(localStorage.getItem(MSG_KEY) || '[]');
+        // 当日分のみ返す（翌日以降は自動除外）
+        return all.filter(m => {
+            const d = m.createdAt ? m.createdAt.slice(0, 10) : '';
+            return d === today;
+        });
+    } catch { return []; }
+}
+
+function loadAllMessages() {
+    try { return JSON.parse(localStorage.getItem(MSG_KEY) || '[]'); } catch { return []; }
+}
+
+function saveMessages(msgs) {
+    localStorage.setItem(MSG_KEY, JSON.stringify(msgs));
+}
+
+function renderMsgTab() {
+    // 顧客セレクトを現在の店舗・ルートフィルターで絞り込み
+    const sel = document.getElementById('msg-customer-select');
+    const prevKey = sel.value;
+    const customers = allData.filter(r => {
+        if ((r.amount || 0) === 0) return false;
+        if (filters.store && r.store !== filters.store) return false;
+        if (filters.route && String(r.route) !== filters.route) return false;
+        return true;
+    });
+    // 重複除去（同名・同店・同ルート）— 月をまたいで同一顧客は1件のみ
+    const seen = new Set();
+    const unique = customers.filter(r => {
+        const k = `${r.store}|${r.route}|${r.name}`;
+        if (seen.has(k)) return false;
+        seen.add(k);
+        return true;
+    });
+
+    // 「その他」用に現在フィルター中の店舗・ルートを特定
+    const storeForOther = filters.store || '';
+    const routeForOther = filters.route || '';
+    const otherLabel = routeForOther ? `R${routeForOther} その他` : 'その他';
+
+    sel.innerHTML = '<option value="">顧客を選択してください</option>' +
+        unique.map(r => {
+            const k = getKey(r);
+            return `<option value="${k}" data-store="${escHtml(r.store)}" data-route="${r.route}" data-name="${escHtml(r.name)}">R${r.route} ${r.name}（${r.store}）</option>`;
+        }).join('') +
+        `<option value="__other__" data-store="${escHtml(storeForOther)}" data-route="${routeForOther}" data-name="その他">${otherLabel}</option>`;
+    if (prevKey) sel.value = prevKey;
+
+    // 送信済み一覧
+    const msgs = loadMessages();
+    const list = document.getElementById('msg-sent-list');
+    if (msgs.length === 0) {
+        list.innerHTML = '<div class="msg-empty">送信済みの連絡事項はありません</div>';
+        return;
+    }
+    const sorted = [...msgs].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    list.innerHTML = sorted.map(m => `
+        <div class="msg-item">
+            <div class="msg-item-meta">
+                <span class="msg-item-route">R${m.route}</span>
+                <span class="msg-item-name">${escHtml(m.customerName)}</span>
+                <span style="font-size:12px;color:var(--g500)">${escHtml(m.store)}</span>
+                <span class="msg-item-date">${fmtMsgDate(m.createdAt)}</span>
+            </div>
+            <div class="msg-item-text">${escHtml(m.text)}</div>
+            <button class="msg-item-del" onclick="deleteMessage('${m.id}')">削除</button>
+        </div>`).join('');
+}
+
+function fmtMsgDate(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    return d.toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric' }) + ' ' +
+           d.toLocaleTimeString('ja-JP', { timeZone: 'Asia/Tokyo', hour: '2-digit', minute: '2-digit' });
+}
+
+function submitMessage() {
+    const sel  = document.getElementById('msg-customer-select');
+    const text = document.getElementById('msg-textarea').value.trim();
+    if (!sel.value) { alert('顧客を選択してください'); return; }
+    if (!text)      { alert('連絡内容を入力してください'); return; }
+
+    const opt   = sel.selectedOptions[0];
+    const store = opt.dataset.store;
+    const route = opt.dataset.route;
+    const name  = opt.dataset.name;
+
+    const msg = {
+        id:           Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        store,
+        route:        parseInt(route),
+        customerKey:  sel.value,
+        customerName: name,
+        text,
+        createdAt:    new Date().toISOString(),
+    };
+
+    const msgs = loadMessages();
+    msgs.push(msg);
+    saveMessages(msgs);
+
+    document.getElementById('msg-textarea').value = '';
+
+    // GAS 送信
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'addMessage', message: msg });
+
+    renderMsgTab();
+}
+
+function deleteMessage(id) {
+    if (!confirm('この連絡事項を削除しますか？')) return;
+    const msgs = loadMessages().filter(m => m.id !== id);
+    saveMessages(msgs);
+
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'removeMessage', messageId: id });
+
+    renderMsgTab();
+}
+
+function renderAdminMessages(storeVal) {
+    const msgs = loadAllMessages();
+    const filtered = storeVal ? msgs.filter(m => m.store === storeVal) : msgs;
+    if (filtered.length === 0) return '';
+
+    const byStore = {};
+    filtered.forEach(m => {
+        if (!byStore[m.store]) byStore[m.store] = [];
+        byStore[m.store].push(m);
+    });
+
+    let html = '<div class="admin-section"><div class="admin-title" style="margin-top:8px">&#128172; 連絡事項</div>';
+    for (const [store, items] of Object.entries(byStore)) {
+        const sorted = [...items].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+        html += `<div class="admin-msg-store">
+            <div class="admin-msg-store-header">${escHtml(store)}</div>`;
+        sorted.forEach(m => {
+            html += `<div class="admin-msg-item">
+                <div class="admin-msg-item-meta">
+                    <span class="admin-msg-item-route">R${m.route}</span>
+                    <span class="admin-msg-item-name">${escHtml(m.customerName)}</span>
+                    <span class="admin-msg-item-date">${fmtMsgDate(m.createdAt)}</span>
+                </div>
+                <div class="admin-msg-item-text">${escHtml(m.text)}</div>
+            </div>`;
+        });
+        html += '</div>';
+    }
+    html += '</div>';
+    return html;
 }
 
 // ─── GAS Sync ────────────────────────────────────────────────────
@@ -510,6 +886,24 @@ async function syncCheckboxes() {
 
         saveChecked();
         renderTable();
+
+        // 連絡事項をリモートとマージ（自分のデータを正とし、リモートにしかないものを追加）
+        if (Array.isArray(json.messages) && json.messages.length > 0) {
+            const localMsgs = loadMessages();
+            const localIds  = new Set(localMsgs.map(m => m.id));
+            let changed = false;
+            json.messages.forEach(m => {
+                if (m.id && !localIds.has(m.id)) {
+                    // GASのcreatedAtはJST文字列なのでそのまま保持
+                    localMsgs.push({ ...m, createdAt: m.createdAt || new Date().toISOString() });
+                    changed = true;
+                }
+            });
+            if (changed) {
+                saveMessages(localMsgs);
+                if (currentTab === 'msg') renderMsgTab();
+            }
+        }
     } catch (e) { console.error('同期失敗', e); }
 }
 
@@ -554,13 +948,15 @@ async function startApp() {
 
     if (!window.COLLECTION_DATA) {
         document.getElementById('tbody').innerHTML =
-            '<tr><td colspan="7" style="color:red;padding:20px">データ(data.js)の読み込みに失敗しました。再読み込みしてください。</td></tr>';
+            '<tr><td colspan="8" style="color:red;padding:20px">データ(data.js)の読み込みに失敗しました。再読み込みしてください。</td></tr>';
         document.getElementById('loading-badge').textContent = 'エラー';
         return;
     }
 
-    allData = window.COLLECTION_DATA;
-    checked = loadChecked();
+    allData        = window.COLLECTION_DATA;
+    checked        = loadChecked();
+    bankState      = loadBankState();
+    transferState  = loadTransferState();
 
     renderFilters();
     document.getElementById('toggle-uncollected').checked = true;
@@ -577,6 +973,7 @@ async function startApp() {
     document.getElementById('filter-store').addEventListener('change', e => {
         filters.store = e.target.value;
         renderTable();
+        if (currentTab === 'msg') renderMsgTab();
     });
     document.getElementById('filter-month').addEventListener('change', e => {
         filters.month = e.target.value;
@@ -585,6 +982,7 @@ async function startApp() {
     document.getElementById('filter-route').addEventListener('change', e => {
         filters.route = e.target.value;
         renderTable();
+        if (currentTab === 'msg') renderMsgTab();
     });
     document.getElementById('filter-payment').addEventListener('change', e => {
         filters.payment = e.target.value;
