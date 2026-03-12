@@ -24,7 +24,7 @@
 // ══════════════════════════════════════════════════════
 
 // ─── シート定義 ───────────────────────────────────────
-const CASH_HEADERS = ['ルート', '月', '名前', '住所', '金額', '集金日', '集金日時', 'キー'];
+const CASH_HEADERS = ['ルート', '月', '名前', '住所', '金額', '集金日', '集金時刻', 'キー'];
 const CASH_COL_WIDTHS = [70, 70, 160, 260, 90, 100, 160, 1];
 
 const BANK_SHEET   = '口座振替';
@@ -132,7 +132,7 @@ function doGet(e) {
       const lastRow = sheet.getLastRow();
       if (lastRow < 2) continue;
 
-      // 現金集金シート: col6=集金日, col7=集金日時, col8=キー
+      // 現金集金シート: col6=集金日, col7=集金時刻, col8=キー
       const data = sheet.getRange(2, 6, lastRow - 1, 3).getValues();
       for (const [collectDate, , key] of data) {
         if (key) checkedData[key] = { collectDate: collectDate || '' };
@@ -233,7 +233,7 @@ function buildCashRow(r, collectDate) {
   let dateStr = r.checkedAt || '';
   if (dateStr) {
     try {
-      dateStr = Utilities.formatDate(new Date(dateStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+      dateStr = Utilities.formatDate(new Date(dateStr), 'Asia/Tokyo', 'HH:mm');
     } catch (_) {}
   }
   const [, m] = (r.dataMonth || '').split('-');

@@ -15,9 +15,10 @@ let currentTab = 'list';
 let expandedCell = null;  // { route, month } for admin detail
 
 // 口振一括チェックモード
-let bulkMode         = false;
-let bulkAffectedKeys = new Set(); // 一括チェックで対象になったキー
-let bulkUncheckedKeys = new Set(); // ユーザーが手動で外したキー
+let bulkMode               = false;
+let bulkAffectedKeys       = new Set(); // 一括チェックで対象になったキー
+let bulkUncheckedKeys      = new Set(); // ユーザーが手動で外したキー
+let bulkPreviouslyCompleted = new Set(); // 一括モード開始時点で完了済みだったキー
 
 // ローカルで変更した直後のキーを追跡（同期による上書きを防ぐ）
 const dirtyKeys = new Map(); // key → timestamp
@@ -104,8 +105,8 @@ function filteredData() {
         if (filters.payment && effPayment      !== filters.payment) return false;
         if ((r.amount || 0) === 0)                                   return false;
 
-        // 口振完了：未集金フィルター ON のとき非表示
-        if (bankState[key]?.status === 'completed' && filters.uncollectedOnly) return false;
+        // 口振完了：未集金フィルター ON のとき非表示（一括チェックモード中は取消のため表示）
+        if (!bulkMode && bankState[key]?.status === 'completed' && filters.uncollectedOnly) return false;
 
         // 振込入金済み：未集金フィルター ON のとき非表示
         if (transferState[key] && filters.uncollectedOnly) return false;
@@ -242,7 +243,7 @@ function renderTable() {
         if (isBankCustomer) {
             transferCellHtml = `<td class="col-transfer"></td>`;
         } else if (isTransferred) {
-            transferCellHtml = `<td class="col-transfer transfer-done">${fmtDate(transferState[key].date)}</td>`;
+            transferCellHtml = `<td class="col-transfer transfer-done" data-key="${key}" title="クリックで取消">${fmtDate(transferState[key].date)} ✕</td>`;
         } else {
             transferCellHtml = `<td class="col-transfer"><button class="btn-transfer" data-key="${key}">振込入金</button></td>`;
         }
@@ -282,6 +283,11 @@ function renderTable() {
             const cell = btn.closest('td');
             onTransferClick(btn.dataset.key, cell);
         });
+    });
+
+    // イベント登録（振込入金 取消）
+    tbody.querySelectorAll('td.transfer-done[data-key]').forEach(cell => {
+        cell.addEventListener('click', () => onTransferRevert(cell.dataset.key));
     });
 
     // 一括チェックモード中はチェック状態を復元
@@ -419,32 +425,50 @@ function editDate(key, cell) {
 
 // ─── Bulk Bank Check ─────────────────────────────────────────────
 function checkAllBank() {
-    const data = filteredData();
-    const targets = data.filter(r =>
-        effectivePaymentType(r) === 'bank' && bankState[getKey(r)]?.status !== 'completed'
-    );
-    if (targets.length === 0) { alert('完了済みでない口振顧客がありません'); return; }
-
-    // 一括モード開始
+    // 一括モード開始（完了済みも filteredData に含めるため先に設定）
     bulkMode = true;
-    bulkAffectedKeys  = new Set(targets.map(r => getKey(r)));
-    bulkUncheckedKeys = new Set();
+    bulkAffectedKeys.clear();
+    bulkPreviouslyCompleted.clear();
+    bulkUncheckedKeys.clear();
 
-    // 口振チェックボックスを全チェック（保存はまだしない）
-    targets.forEach(r => {
-        const cb = document.querySelector(`input.bank-check[data-key="${getKey(r)}"]`);
-        if (cb) cb.checked = true;
-    });
+    renderTable(); // 完了済み口振も含めて再描画
+
+    // 失敗（現金変更済み）以外の口振顧客を対象にする
+    const targets = filteredData().filter(r =>
+        r.paymentType === 'bank' && bankState[getKey(r)]?.status !== 'failed'
+    );
+
+    if (targets.length === 0) {
+        bulkMode = false;
+        renderTable();
+        alert('対象の口振顧客がありません');
+        return;
+    }
+
+    bulkAffectedKeys       = new Set(targets.map(r => getKey(r)));
+    bulkPreviouslyCompleted = new Set(
+        targets.filter(r => bankState[getKey(r)]?.status === 'completed').map(r => getKey(r))
+    );
+
+    restoreBulkVisual(); // チェックボックス状態を設定
 
     document.getElementById('btn-bulk-check').classList.add('hidden');
     document.getElementById('btn-bulk-register').classList.remove('hidden');
 }
 
 function registerBulkBank() {
-    const failed  = [...bulkUncheckedKeys].filter(k => bulkAffectedKeys.has(k));
-    const success = [...bulkAffectedKeys].filter(k => !bulkUncheckedKeys.has(k));
-    const msg = `【完了】${success.length} 件　【現金集金へ変更】${failed.length} 件\n登録しますか？`;
-    if (!confirm(msg)) return;
+    // 完了済み → チェックを外した → 取消
+    const revert  = [...bulkPreviouslyCompleted].filter(k => bulkUncheckedKeys.has(k));
+    // 未完了 → チェックを外した → 現金集金に変更
+    const failed  = [...bulkUncheckedKeys].filter(k => bulkAffectedKeys.has(k) && !bulkPreviouslyCompleted.has(k));
+    // 未完了 → チェックのまま → 完了
+    const success = [...bulkAffectedKeys].filter(k => !bulkPreviouslyCompleted.has(k) && !bulkUncheckedKeys.has(k));
+
+    const lines = [];
+    if (success.length > 0) lines.push(`【完了】${success.length} 件`);
+    if (failed.length  > 0) lines.push(`【現金集金へ変更】${failed.length} 件`);
+    if (revert.length  > 0) lines.push(`【取消】${revert.length} 件`);
+    if (!confirm(lines.join('　') + '\n登録しますか？')) return;
 
     const now = new Date();
     success.forEach(key => {
@@ -452,6 +476,9 @@ function registerBulkBank() {
     });
     failed.forEach(key => {
         bankState[key] = { status: 'failed', updatedAt: now.toISOString() };
+    });
+    revert.forEach(key => {
+        delete bankState[key]; // 完了状態を削除して未処理に戻す
     });
 
     saveBankState();
@@ -468,12 +495,17 @@ function registerBulkBank() {
             const record = allData.find(r => getKey(r) === key);
             if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
         });
+        revert.forEach(key => {
+            const record = allData.find(r => getKey(r) === key);
+            if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
+        });
     }
 
     // 一括モード終了
     bulkMode = false;
     bulkAffectedKeys.clear();
     bulkUncheckedKeys.clear();
+    bulkPreviouslyCompleted.clear();
 
     document.getElementById('btn-bulk-check').classList.remove('hidden');
     document.getElementById('btn-bulk-register').classList.add('hidden');
@@ -522,6 +554,21 @@ function onTransferClick(key, cell) {
     }
     input.addEventListener('change', save);
     input.addEventListener('blur',   () => setTimeout(save, 150));
+}
+
+// ─── Transfer Revert ─────────────────────────────────────────────
+function onTransferRevert(key) {
+    if (!confirm('振込入金の消し込みを取り消しますか？')) return;
+    delete transferState[key];
+    saveTransferState();
+
+    const url = getGasUrl();
+    if (url) {
+        const record = allData.find(r => getKey(r) === key);
+        if (record) postToGas(url, { action: 'removeTransfer', record: { ...record, key } });
+    }
+
+    renderTable();
 }
 
 // ─── Reset ───────────────────────────────────────────────────────
