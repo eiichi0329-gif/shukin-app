@@ -483,21 +483,18 @@ function registerBulkBank() {
 
     saveBankState();
 
-    // GAS 送信
+    // GAS 送信（全員分を1回のリクエストにまとめて送信）
     const url = getGasUrl();
     if (url) {
-        const completedAt = now.toISOString();
-        success.forEach(key => {
+        const toRecord = key => {
             const record = allData.find(r => getKey(r) === key);
-            if (record) postToGas(url, { action: 'bankComplete', record: { ...record, key }, completedAt });
-        });
-        failed.forEach(key => {
-            const record = allData.find(r => getKey(r) === key);
-            if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
-        });
-        revert.forEach(key => {
-            const record = allData.find(r => getKey(r) === key);
-            if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
+            return record ? { ...record, key } : null;
+        };
+        postToGas(url, {
+            action:      'bankCompleteBatch',
+            completedAt: now.toISOString(),
+            success:     success.map(toRecord).filter(Boolean),
+            remove:      [...failed, ...revert].map(toRecord).filter(Boolean),
         });
     }
 

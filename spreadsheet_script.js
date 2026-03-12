@@ -72,6 +72,18 @@ function doPost(e) {
       const sheet = ss.getSheetByName(BANK_SHEET);
       if (sheet) removeRow(sheet, record.key, BANK_HEADERS.length);
 
+    // ── 口座振替 一括登録（バッチ） ──
+    } else if (action === 'bankCompleteBatch') {
+      const sheet = getOrCreateSheet(ss, BANK_SHEET, BANK_HEADERS, '#1d4ed8', BANK_COL_WIDTHS);
+      const completedAt = payload.completedAt || '';
+      for (const rec of (payload.success || [])) {
+        upsertRow(sheet, rec.key, buildBankRow(rec, completedAt));
+      }
+      for (const rec of (payload.remove || [])) {
+        removeRow(sheet, rec.key, BANK_HEADERS.length);
+      }
+      if ((payload.success || []).length > 0) sortSheet(sheet);
+
     // ── 振込入金 追加 ──
     } else if (action === 'addTransfer') {
       const sheet = getOrCreateSheet(ss, TRANSFER_SHEET, TRANSFER_HEADERS, '#15803d', TRANSFER_COL_WIDTHS);
