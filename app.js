@@ -570,9 +570,13 @@ function onTransferRevert(key) {
 
 // ─── Reset ───────────────────────────────────────────────────────
 function resetAll() {
-    if (!confirm('全てのチェックをリセットしますか？この操作は元に戻せません。')) return;
-    checked = {};
+    if (!confirm('全てのチェック（現金・口座振替・振込）をリセットしますか？\nこの操作は元に戻せません。')) return;
+    checked       = {};
+    bankState     = {};
+    transferState = {};
     saveChecked();
+    saveBankState();
+    saveTransferState();
     renderTable();
 }
 
