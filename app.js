@@ -60,16 +60,16 @@ function getGasUrl() {
         : (localStorage.getItem('gas_url') || '');
 }
 
-// GAS への POST 送信（sendBeacon 優先、fallback は fetch）
+// GAS への POST 送信（sendBeacon 優先、サイズ超過や失敗時は fetch にフォールバック）
 function postToGas(url, data) {
     const body = JSON.stringify(data);
     if (navigator.sendBeacon) {
         const blob = new Blob([body], { type: 'text/plain' });
-        navigator.sendBeacon(url, blob);
-    } else {
-        fetch(url, { method: 'POST', mode: 'no-cors', body })
-            .catch(e => console.error('送信エラー', e));
+        if (navigator.sendBeacon(url, blob)) return; // 成功したらここで終了
+        // sendBeacon 失敗（64KB超過など）→ fetch にフォールバック
     }
+    fetch(url, { method: 'POST', mode: 'no-cors', body })
+        .catch(e => console.error('送信エラー', e));
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────

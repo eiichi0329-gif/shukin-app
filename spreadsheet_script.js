@@ -72,17 +72,41 @@ function doPost(e) {
       const sheet = ss.getSheetByName(BANK_SHEET);
       if (sheet) removeRow(sheet, record.key, BANK_HEADERS.length);
 
-    // ── 口座振替 一括登録（バッチ） ──
+    // ── 口座振替 一括登録（バッチ：一括読み書きでタイムアウト防止） ──
     } else if (action === 'bankCompleteBatch') {
-      const sheet = getOrCreateSheet(ss, BANK_SHEET, BANK_HEADERS, '#1d4ed8', BANK_COL_WIDTHS);
+      const sheet       = getOrCreateSheet(ss, BANK_SHEET, BANK_HEADERS, '#1d4ed8', BANK_COL_WIDTHS);
       const completedAt = payload.completedAt || '';
-      for (const rec of (payload.success || [])) {
-        upsertRow(sheet, rec.key, buildBankRow(rec, completedAt));
+      const successRecs = payload.success || [];
+      const removeKeys  = new Set((payload.remove || []).map(r => r.key));
+      const keyCol      = BANK_HEADERS.length; // キーは最終列（1始まり）
+      const lastRow     = sheet.getLastRow();
+
+      // 既存行を一括読み込み
+      let rows = lastRow > 1
+        ? sheet.getRange(2, 1, lastRow - 1, keyCol).getValues()
+        : [];
+
+      // 削除対象を除外
+      rows = rows.filter(row => !removeKeys.has(row[keyCol - 1]));
+
+      // 追加・更新（キーで検索してあれば上書き、なければ末尾追加）
+      const keyToIdx = {};
+      rows.forEach((row, i) => { keyToIdx[row[keyCol - 1]] = i; });
+      for (const rec of successRecs) {
+        const newRow = buildBankRow(rec, completedAt);
+        if (rec.key in keyToIdx) {
+          rows[keyToIdx[rec.key]] = newRow;
+        } else {
+          rows.push(newRow);
+        }
       }
-      for (const rec of (payload.remove || [])) {
-        removeRow(sheet, rec.key, BANK_HEADERS.length);
-      }
-      if ((payload.success || []).length > 0) sortSheet(sheet);
+
+      // メモリ上でソート（店舗 → ルート）
+      rows.sort((a, b) => String(a[0]).localeCompare(String(b[0])) || (Number(a[1]) - Number(b[1])));
+
+      // シートに一括書き込み（ヘッダー行以外を全書き換え）
+      if (lastRow > 1) sheet.getRange(2, 1, lastRow - 1, keyCol).clearContent();
+      if (rows.length > 0) sheet.getRange(2, 1, rows.length, keyCol).setValues(rows);
 
     // ── 振込入金 追加 ──
     } else if (action === 'addTransfer') {
