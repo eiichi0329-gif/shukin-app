@@ -14,119 +14,98 @@
 //  9. 集金管理アプリの「⚙ 連携設定」にその URL を貼り付けて保存
 //
 // 【シート構成】
-//  - 月分ごとにシートが自動作成されます（例：2026年3月）
-//  - 列: 店舗 / ルート / 名前 / 住所 / 金額 / 集金日時 / キー
-//  - 集金済みにチェック → 行が追加（店舗→ルート順で整列）
-//  - チェックを外す → 行が削除
+//  - 現金集金 : 店舗別シート（例: 下関店_2026年3月）
+//              列: 店舗 / ルート / 名前 / 住所 / 金額 / 集金日 / 集金日時 / キー
+//  - 口座振替 : 「口座振替」シート（全店統合）
+//              列: 店舗 / ルート / 月 / 名前 / 住所 / 金額 / 完了日時 / キー
+//  - 振込入金 : 「振込入金」シート（全店統合）
+//              列: 店舗 / ルート / 月 / 名前 / 住所 / 金額 / 振込日 / 記録日時 / キー
+//  - 連絡事項 : 「連絡事項」シート
 // ══════════════════════════════════════════════════════
 
-const HEADERS = ['店舗', 'ルート', '名前', '住所', '金額', '集金日', '集金日時', 'キー'];
-const MSG_SHEET  = '連絡事項';
+// ─── シート定義 ───────────────────────────────────────
+const CASH_HEADERS = ['ルート', '月', '名前', '住所', '金額', '集金日', '集金日時', 'キー'];
+const CASH_COL_WIDTHS = [70, 70, 160, 260, 90, 100, 160, 1];
+
+const BANK_SHEET   = '口座振替';
+const BANK_HEADERS = ['店舗', 'ルート', '月', '名前', '住所', '金額', '完了日時', 'キー'];
+const BANK_COL_WIDTHS = [100, 70, 70, 160, 260, 90, 160, 1];
+
+const TRANSFER_SHEET   = '振込入金';
+const TRANSFER_HEADERS = ['店舗', 'ルート', '月', '名前', '住所', '金額', '振込日', '記録日時', 'キー'];
+const TRANSFER_COL_WIDTHS = [100, 70, 70, 160, 260, 90, 100, 160, 1];
+
+const MSG_SHEET   = '連絡事項';
 const MSG_HEADERS = ['ID', '店舗', 'ルート', '顧客名', '連絡内容', '送信日時'];
 
+// doGet でチェックデータ読み取りをスキップするシート名
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET]);
+
+// ─── メインハンドラ ───────────────────────────────────
 function doPost(e) {
   try {
     const payload = JSON.parse(e.postData.contents);
     const { action, record } = payload;
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
 
-    const ss        = SpreadsheetApp.getActiveSpreadsheet();
-    const sheetName = formatSheetName(record.dataMonth);
-
+    // ── 現金集金 追加／更新 ──
     if (action === 'add') {
-      let sheet = ss.getSheetByName(sheetName);
-      if (!sheet) {
-        sheet = ss.insertSheet(sheetName);
-        const hRange = sheet.getRange(1, 1, 1, HEADERS.length);
-        hRange.setValues([HEADERS]);
-        hRange.setFontWeight('bold');
-        hRange.setBackground('#c2410c');
-        hRange.setFontColor('#ffffff');
-        sheet.setFrozenRows(1);
-        sheet.setColumnWidth(1, 100);  // 店舗
-        sheet.setColumnWidth(2, 70);   // ルート
-        sheet.setColumnWidth(3, 160);  // 名前
-        sheet.setColumnWidth(4, 260);  // 住所
-        sheet.setColumnWidth(5, 90);   // 金額
-        sheet.setColumnWidth(6, 100);  // 集金日
-        sheet.setColumnWidth(7, 160);  // 集金日時
-        sheet.setColumnWidth(8, 1);    // キー（非表示用）
-        sheet.hideColumns(8, 1);
-      }
+      const sheetName = formatCashSheetName(record.store, record.dataMonth);
+      const sheet = getOrCreateSheet(ss, sheetName, CASH_HEADERS, '#c2410c', CASH_COL_WIDTHS);
+      upsertRow(sheet, record.key, buildCashRow(record, payload.collectDate || ''));
+      sortSheet(sheet);
 
-      // 既存行をキーで検索（col8=キー）
-      const lastRow = sheet.getLastRow();
-      let foundRow  = -1;
-      if (lastRow > 1) {
-        const keys = sheet.getRange(2, 8, lastRow - 1, 1).getValues().flat();
-        const idx  = keys.indexOf(record.key);
-        if (idx >= 0) foundRow = idx + 2;
-      }
+    // ── 現金集金 削除 ──
+    } else if (action === 'remove') {
+      const sheetName = formatCashSheetName(record.store, record.dataMonth);
+      const sheet = ss.getSheetByName(sheetName);
+      if (sheet) removeRow(sheet, record.key, CASH_HEADERS.length);
 
-      const rowData = buildRow(record, payload.collectDate || '');
-      if (foundRow > 0) {
-        sheet.getRange(foundRow, 1, 1, HEADERS.length).setValues([rowData]);
-      } else {
-        sheet.appendRow(rowData);
-      }
+    // ── 口座振替 完了 ──
+    } else if (action === 'bankComplete') {
+      const sheet = getOrCreateSheet(ss, BANK_SHEET, BANK_HEADERS, '#1d4ed8', BANK_COL_WIDTHS);
+      upsertRow(sheet, record.key, buildBankRow(record, payload.completedAt || ''));
+      sortSheet(sheet);
 
-      // 店舗 → ルート順でソート
-      const dataRows = sheet.getLastRow() - 1;
-      if (dataRows > 1) {
-        sheet.getRange(2, 1, dataRows, HEADERS.length)
-          .sort([{ column: 1, ascending: true }, { column: 2, ascending: true }]);
-      }
+    // ── 口座振替 削除（引き落とし失敗 → 現金集金に変更） ──
+    } else if (action === 'bankRemove') {
+      const sheet = ss.getSheetByName(BANK_SHEET);
+      if (sheet) removeRow(sheet, record.key, BANK_HEADERS.length);
 
+    // ── 振込入金 追加 ──
+    } else if (action === 'addTransfer') {
+      const sheet = getOrCreateSheet(ss, TRANSFER_SHEET, TRANSFER_HEADERS, '#15803d', TRANSFER_COL_WIDTHS);
+      upsertRow(sheet, record.key, buildTransferRow(record, payload.transferDate || '', payload.recordedAt || ''));
+      sortSheet(sheet);
+
+    // ── 振込入金 削除 ──
+    } else if (action === 'removeTransfer') {
+      const sheet = ss.getSheetByName(TRANSFER_SHEET);
+      if (sheet) removeRow(sheet, record.key, TRANSFER_HEADERS.length);
+
+    // ── 連絡事項 追加 ──
     } else if (action === 'addMessage') {
       const msg = payload.message;
       if (!msg) return ok();
-      const ss = SpreadsheetApp.getActiveSpreadsheet();
-      let sheet = ss.getSheetByName(MSG_SHEET);
-      if (!sheet) {
-        sheet = ss.insertSheet(MSG_SHEET);
-        const hRange = sheet.getRange(1, 1, 1, MSG_HEADERS.length);
-        hRange.setValues([MSG_HEADERS]);
-        hRange.setFontWeight('bold');
-        hRange.setBackground('#1e40af');
-        hRange.setFontColor('#ffffff');
-        sheet.setFrozenRows(1);
-        sheet.setColumnWidth(1, 80);
-        sheet.setColumnWidth(2, 100);
-        sheet.setColumnWidth(3, 60);
-        sheet.setColumnWidth(4, 160);
-        sheet.setColumnWidth(5, 320);
-        sheet.setColumnWidth(6, 160);
-      }
-      // 送信日時をJST文字列に
+      const sheet = getOrCreateSheet(ss, MSG_SHEET, MSG_HEADERS, '#1e40af', [80, 100, 60, 160, 320, 160]);
       let createdStr = msg.createdAt || '';
       if (createdStr) {
         try {
-          const d = new Date(new Date(createdStr).getTime() + 9 * 60 * 60 * 1000);
-          createdStr = Utilities.formatDate(d, 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+          createdStr = Utilities.formatDate(new Date(createdStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
         } catch (_) {}
       }
       sheet.appendRow([msg.id || '', msg.store || '', msg.route || '', msg.customerName || '', msg.text || '', createdStr]);
-      return ok();
 
+    // ── 連絡事項 削除 ──
     } else if (action === 'removeMessage') {
       const msgId = payload.messageId;
       if (!msgId) return ok();
-      const ss = SpreadsheetApp.getActiveSpreadsheet();
       const sheet = ss.getSheetByName(MSG_SHEET);
       if (!sheet) return ok();
       const lastRow = sheet.getLastRow();
       if (lastRow < 2) return ok();
       const ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues().flat();
       const idx = ids.indexOf(msgId);
-      if (idx >= 0) sheet.deleteRow(idx + 2);
-      return ok();
-
-    } else if (action === 'remove') {
-      const sheet = ss.getSheetByName(sheetName);
-      if (!sheet) return ok();
-      const lastRow = sheet.getLastRow();
-      if (lastRow < 2) return ok();
-      const keys = sheet.getRange(2, 8, lastRow - 1, 1).getValues().flat();
-      const idx  = keys.indexOf(record.key);
       if (idx >= 0) sheet.deleteRow(idx + 2);
     }
 
@@ -139,41 +118,27 @@ function doPost(e) {
   }
 }
 
-function buildRow(r, collectDate) {
-  // 集金日時を JST の読みやすい形式に変換
-  let dateStr = r.checkedAt || '';
-  if (dateStr) {
-    try {
-      const d = new Date(new Date(dateStr).getTime() + 9 * 60 * 60 * 1000);
-      dateStr = Utilities.formatDate(d, 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
-    } catch (_) {}
-  }
-  return [
-    r.store       || '',
-    r.route       || '',
-    r.name        || '',
-    r.address     || '',
-    r.amount      || 0,
-    collectDate   || '',
-    dateStr,
-    r.key         || '',
-  ];
-}
-
+// ─── GET: チェック状態・連絡事項を返す ───────────────
 function doGet(e) {
   try {
-    const ss      = SpreadsheetApp.getActiveSpreadsheet();
-    const sheets  = ss.getSheets();
+    const ss     = SpreadsheetApp.getActiveSpreadsheet();
+    const sheets = ss.getSheets();
     const checkedData = {};
+
     for (const sheet of sheets) {
+      // 口座振替・振込入金・連絡事項シートは読み飛ばす
+      if (SKIP_SHEETS.has(sheet.getName())) continue;
+
       const lastRow = sheet.getLastRow();
       if (lastRow < 2) continue;
-      // col6=集金日, col8=キー
+
+      // 現金集金シート: col6=集金日, col7=集金日時, col8=キー
       const data = sheet.getRange(2, 6, lastRow - 1, 3).getValues();
       for (const [collectDate, , key] of data) {
         if (key) checkedData[key] = { collectDate: collectDate || '' };
       }
     }
+
     // 連絡事項シートを読み込む
     const msgSheet = ss.getSheetByName(MSG_SHEET);
     const messages = [];
@@ -181,13 +146,21 @@ function doGet(e) {
       const rows = msgSheet.getRange(2, 1, msgSheet.getLastRow() - 1, MSG_HEADERS.length).getValues();
       for (const [id, store, route, customerName, text, createdAt] of rows) {
         if (!id) continue;
-        messages.push({ id: String(id), store: String(store), route, customerName: String(customerName), text: String(text), createdAt: String(createdAt) });
+        messages.push({
+          id:           String(id),
+          store:        String(store),
+          route,
+          customerName: String(customerName),
+          text:         String(text),
+          createdAt:    String(createdAt),
+        });
       }
     }
 
     return ContentService
       .createTextOutput(JSON.stringify({ ok: true, checkedData, messages }))
       .setMimeType(ContentService.MimeType.JSON);
+
   } catch (err) {
     return ContentService
       .createTextOutput(JSON.stringify({ ok: false, error: err.message }))
@@ -195,12 +168,129 @@ function doGet(e) {
   }
 }
 
-function formatSheetName(dataMonth) {
-  if (!dataMonth) return '不明';
-  const [y, m] = dataMonth.split('-');
-  return `${y}年${parseInt(m)}月`;
+// ─── シート名 ─────────────────────────────────────────
+// 現金集金: "{店舗}"  例: 下関店
+function formatCashSheetName(store, dataMonth) {
+  return store || '不明';
 }
 
+// ─── シート取得 or 作成 ───────────────────────────────
+function getOrCreateSheet(ss, name, headers, headerBg, colWidths) {
+  let sheet = ss.getSheetByName(name);
+  if (!sheet) {
+    sheet = ss.insertSheet(name);
+    const hRange = sheet.getRange(1, 1, 1, headers.length);
+    hRange.setValues([headers]);
+    hRange.setFontWeight('bold');
+    hRange.setBackground(headerBg);
+    hRange.setFontColor('#ffffff');
+    sheet.setFrozenRows(1);
+    colWidths.forEach((w, i) => sheet.setColumnWidth(i + 1, w));
+    // キー列（最終列）を非表示
+    sheet.hideColumns(headers.length, 1);
+  }
+  return sheet;
+}
+
+// ─── 行の追加 or 更新（キーで重複チェック） ──────────
+// rowData の末尾要素がキーであること
+function upsertRow(sheet, key, rowData) {
+  const keyCol  = rowData.length;
+  const lastRow = sheet.getLastRow();
+  let foundRow  = -1;
+  if (lastRow > 1) {
+    const keys = sheet.getRange(2, keyCol, lastRow - 1, 1).getValues().flat();
+    const idx  = keys.indexOf(key);
+    if (idx >= 0) foundRow = idx + 2;
+  }
+  if (foundRow > 0) {
+    sheet.getRange(foundRow, 1, 1, rowData.length).setValues([rowData]);
+  } else {
+    sheet.appendRow(rowData);
+  }
+}
+
+// ─── 行の削除（キーで検索） ───────────────────────────
+function removeRow(sheet, key, keyCol) {
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) return;
+  const keys = sheet.getRange(2, keyCol, lastRow - 1, 1).getValues().flat();
+  const idx  = keys.indexOf(key);
+  if (idx >= 0) sheet.deleteRow(idx + 2);
+}
+
+// ─── 店舗→ルート順ソート ──────────────────────────────
+function sortSheet(sheet) {
+  const dataRows = sheet.getLastRow() - 1;
+  if (dataRows < 2) return;
+  const cols = sheet.getLastColumn();
+  sheet.getRange(2, 1, dataRows, cols)
+    .sort([{ column: 1, ascending: true }, { column: 2, ascending: true }]);
+}
+
+// ─── 行データ生成 ─────────────────────────────────────
+function buildCashRow(r, collectDate) {
+  let dateStr = r.checkedAt || '';
+  if (dateStr) {
+    try {
+      dateStr = Utilities.formatDate(new Date(dateStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+    } catch (_) {}
+  }
+  const [, m] = (r.dataMonth || '').split('-');
+  return [
+    r.route      || '',
+    m ? `${parseInt(m)}月` : '',
+    r.name       || '',
+    r.address    || '',
+    r.amount     || 0,
+    collectDate  || '',
+    dateStr,
+    r.key        || '',
+  ];
+}
+
+function buildBankRow(r, completedAt) {
+  let dateStr = completedAt || '';
+  if (dateStr) {
+    try {
+      dateStr = Utilities.formatDate(new Date(dateStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+    } catch (_) {}
+  }
+  const [, m] = (r.dataMonth || '').split('-');
+  return [
+    r.store    || '',
+    r.route    || '',
+    m ? `${parseInt(m)}月` : '',
+    r.name     || '',
+    r.address  || '',
+    r.amount   || 0,
+    dateStr,
+    r.key      || '',
+  ];
+}
+
+function buildTransferRow(r, transferDate, recordedAt) {
+  let recStr = recordedAt || '';
+  if (recStr) {
+    try {
+      recStr = Utilities.formatDate(new Date(recStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+    } catch (_) {}
+  }
+  const [, m] = (r.dataMonth || '').split('-');
+  return [
+    r.store       || '',
+    r.route       || '',
+    m ? `${parseInt(m)}月` : '',
+    r.name        || '',
+    r.address     || '',
+    r.amount      || 0,
+    transferDate  || '',
+    recStr,
+    r.key         || '',
+  ];
+}
+
+// ─── レスポンス ───────────────────────────────────────
 function ok() {
   return ContentService
     .createTextOutput(JSON.stringify({ ok: true }))

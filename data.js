@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-03-12 10:26:10
-// 件数: 2836 件  合計: 23,947,769円
+// 自動生成: 2026-03-12 11:07:22
+// 件数: 2836 件  合計: 23,942,878円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbz25BWRgnevAjMFbP_pT7EcpqlwhKpXcUUfaxqzKDd6WC-T80sXCldcC1UujRGY8Nj7/exec";
 
@@ -38022,7 +38022,7 @@ window.COLLECTION_DATA = [
     "name": "北　俊雄",
     "paymentType": "bank",
     "address": "直方市下新入１３１７－８８",
-    "amount": 9083,
+    "amount": 4192,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -39712,7 +39712,7 @@ window.COLLECTION_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-03-12T10:26:10.113355",
+  "generatedAt": "2026-03-12T11:07:22.234160",
   "stores": [
     "下関店",
     "北九州店",
@@ -39815,5 +39815,5 @@ window.DATA_META = {
     }
   ],
   "totalRecords": 2836,
-  "totalAmount": 23947769
+  "totalAmount": 23942878
 };

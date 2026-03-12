@@ -349,8 +349,17 @@ function onBankCheck(key, isChecked) {
 
     if (isChecked) {
         // 口振完了 → リストから削除（uncollectedOnly ON 時）
-        bankState[key] = { status: 'completed', updatedAt: new Date().toISOString() };
+        const completedAt = new Date().toISOString();
+        bankState[key] = { status: 'completed', updatedAt: completedAt };
         saveBankState();
+
+        // GAS 送信
+        const url = getGasUrl();
+        if (url) {
+            const record = allData.find(r => getKey(r) === key);
+            if (record) postToGas(url, { action: 'bankComplete', record: { ...record, key }, completedAt });
+        }
+
         renderTable();
     } else {
         // チェック解除 → 引き落とし失敗、現金集金に変更
@@ -361,6 +370,14 @@ function onBankCheck(key, isChecked) {
         }
         bankState[key] = { status: 'failed', updatedAt: new Date().toISOString() };
         saveBankState();
+
+        // GAS 送信（口座振替シートから削除）
+        const url = getGasUrl();
+        if (url) {
+            const record = allData.find(r => getKey(r) === key);
+            if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
+        }
+
         renderTable();
     }
 }
@@ -439,6 +456,20 @@ function registerBulkBank() {
 
     saveBankState();
 
+    // GAS 送信
+    const url = getGasUrl();
+    if (url) {
+        const completedAt = now.toISOString();
+        success.forEach(key => {
+            const record = allData.find(r => getKey(r) === key);
+            if (record) postToGas(url, { action: 'bankComplete', record: { ...record, key }, completedAt });
+        });
+        failed.forEach(key => {
+            const record = allData.find(r => getKey(r) === key);
+            if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
+        });
+    }
+
     // 一括モード終了
     bulkMode = false;
     bulkAffectedKeys.clear();
@@ -476,8 +507,17 @@ function onTransferClick(key, cell) {
         const val = input.value;
         if (!val) { renderTable(); return; }
         saved = true;
-        transferState[key] = { date: val, recordedAt: new Date().toISOString() };
+        const recordedAt = new Date().toISOString();
+        transferState[key] = { date: val, recordedAt };
         saveTransferState();
+
+        // GAS 送信
+        const url = getGasUrl();
+        if (url) {
+            const record = allData.find(r => getKey(r) === key);
+            if (record) postToGas(url, { action: 'addTransfer', record: { ...record, key }, transferDate: val, recordedAt });
+        }
+
         renderTable();
     }
     input.addEventListener('change', save);
