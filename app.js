@@ -560,7 +560,12 @@ function resetAll() {
     saveChecked();
     saveBankState();
     saveTransferState();
+    dirtyKeys.clear();
     renderTable();
+
+    // GAS のスプレッドシートも全件削除
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'resetAll' });
 }
 
 // ─── Tab Switch ──────────────────────────────────────────────────
@@ -827,6 +832,7 @@ function renderMsgTab() {
         }).join('') +
         `<option value="__other__" data-store="${escHtml(storeForOther)}" data-route="${routeForOther}" data-name="その他">${otherLabel}</option>`;
     if (prevKey) sel.value = prevKey;
+    onMsgCustomerChange();
 
     // 送信済み一覧（店舗フィルター適用 + 日付グループ化）
     const allMsgs = loadMessages();
@@ -877,16 +883,35 @@ function fmtMsgTime(iso) {
         { timeZone: 'Asia/Tokyo', hour: '2-digit', minute: '2-digit' });
 }
 
+function onMsgCustomerChange() {
+    const sel     = document.getElementById('msg-customer-select');
+    const typeSel = document.getElementById('msg-type-select');
+    if (sel.value) {
+        typeSel.classList.remove('hidden');
+    } else {
+        typeSel.classList.add('hidden');
+        typeSel.value = '';
+    }
+}
+
 function submitMessage() {
-    const sel  = document.getElementById('msg-customer-select');
-    const text = document.getElementById('msg-textarea').value.trim();
+    const sel      = document.getElementById('msg-customer-select');
+    const typeSel  = document.getElementById('msg-type-select');
+    const freeText = document.getElementById('msg-textarea').value.trim();
+    const typeVal  = typeSel.value;
+
     if (!sel.value) { alert('顧客を選択してください'); return; }
-    if (!text)      { alert('連絡内容を入力してください'); return; }
+    if (!typeVal && !freeText) { alert('報告内容を選択するか、自由入力欄に入力してください'); return; }
 
     const opt   = sel.selectedOptions[0];
     const store = opt.dataset.store;
     const route = opt.dataset.route;
     const name  = opt.dataset.name;
+
+    const parts = [];
+    if (typeVal)  parts.push(typeVal);
+    if (freeText) parts.push(freeText);
+    const text = parts.join('\n');
 
     const msg = {
         id:           Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
@@ -902,6 +927,7 @@ function submitMessage() {
     msgs.push(msg);
     saveMessages(msgs);
 
+    typeSel.value = '';
     document.getElementById('msg-textarea').value = '';
 
     // GAS 送信

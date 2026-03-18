@@ -143,6 +143,23 @@ function doPost(e) {
       const ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues().flat();
       const idx = ids.indexOf(msgId);
       if (idx >= 0) sheet.deleteRow(idx + 2);
+
+    // ── 全リセット ──
+    } else if (action === 'resetAll') {
+      // 現金集金シート（口座振替・振込入金・連絡事項以外）のデータ行を全削除
+      const sheets = ss.getSheets();
+      for (const sheet of sheets) {
+        const name = sheet.getName();
+        if (SKIP_SHEETS.has(name)) continue;
+        const lastRow = sheet.getLastRow();
+        if (lastRow > 1) sheet.deleteRows(2, lastRow - 1);
+      }
+      // 口座振替シートのデータ行を全削除
+      const bankSheet = ss.getSheetByName(BANK_SHEET);
+      if (bankSheet && bankSheet.getLastRow() > 1) bankSheet.deleteRows(2, bankSheet.getLastRow() - 1);
+      // 振込入金シートのデータ行を全削除
+      const transferSheet = ss.getSheetByName(TRANSFER_SHEET);
+      if (transferSheet && transferSheet.getLastRow() > 1) transferSheet.deleteRows(2, transferSheet.getLastRow() - 1);
     }
 
     return ok();
