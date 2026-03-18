@@ -16,30 +16,31 @@
                 <span class="month-badge" id="month-badge">—</span>
                 <span id="loading-badge" style="background:rgba(255,255,255,0.25);border-radius:20px;padding:3px 10px;font-size:13px;margin-left:auto">読込中...</span>
             </div>
-            <div id="header-summary" style="font-size:14px;opacity:0.88;margin-bottom:6px"></div>
-            <div class="route-stats" id="route-stats"></div>
         </div>
 
         <!-- コントロール -->
         <div class="controls-bar">
-            <div class="filter-row">
-                <div class="search-wrap">
-                    <input id="search-input" type="text" placeholder="名前・住所で検索...">
+            <div class="controls-top">
+                <div class="filter-row">
+                    <div class="search-wrap">
+                        <input id="search-input" type="text" placeholder="名前・住所で検索...">
+                    </div>
+                    <select id="filter-store"   class="sel-filter"></select>
+                    <select id="filter-month"   class="sel-filter"></select>
+                    <select id="filter-route"   class="sel-filter"></select>
+                    <select id="filter-payment" class="sel-filter">
+                        <option value="">全支払</option>
+                        <option value="cash">現金</option>
+                        <option value="bank">口振</option>
+                    </select>
+                    <label class="toggle-label">
+                        <input id="toggle-uncollected" type="checkbox">
+                        未集金のみ
+                    </label>
                 </div>
-                <select id="filter-store"   class="sel-filter"></select>
-                <select id="filter-month"   class="sel-filter"></select>
-                <select id="filter-route"   class="sel-filter"></select>
-                <select id="filter-payment" class="sel-filter">
-                    <option value="">全支払</option>
-                    <option value="cash">現金</option>
-                    <option value="bank">口振</option>
-                </select>
-                <label class="toggle-label">
-                    <input id="toggle-uncollected" type="checkbox">
-                    未集金のみ
-                </label>
+                <button class="btn btn-admin-toggle" id="btn-admin-toggle" onclick="toggleAdminActions()">&#9881;</button>
             </div>
-            <div class="action-row">
+            <div class="action-row hidden" id="action-row">
                 <div class="action-wrap">
                     <button class="btn btn-bulk"          id="btn-bulk-check"    onclick="checkAllBank()">&#10003; 一括チェック</button>
                     <button class="btn btn-bulk-register hidden" id="btn-bulk-register" onclick="registerBulkBank()">登録</button>

@@ -3,6 +3,7 @@
 const LS_KEY      = 'coll-state-v3';
 const BANK_KEY     = 'coll-bank-v1';
 const TRANSFER_KEY = 'coll-transfer-v1';
+const FILTER_KEY   = 'coll-filter-v1';
 const DIRTY_GRACE_MS = 35000; // ローカル変更を守る猶予時間（ms）
 
 // ─── State ───────────────────────────────────────────────────────
@@ -24,6 +25,14 @@ let bulkPreviouslyCompleted = new Set(); // 一括モード開始時点で完了
 const dirtyKeys = new Map(); // key → timestamp
 
 function markDirty(key) { dirtyKeys.set(key, Date.now()); }
+
+// ─── Filter State ────────────────────────────────────────────────
+function saveFilters() {
+    localStorage.setItem(FILTER_KEY, JSON.stringify(filters));
+}
+function loadFilterState() {
+    try { return JSON.parse(localStorage.getItem(FILTER_KEY) || 'null'); } catch { return null; }
+}
 
 // ─── Bank State ───────────────────────────────────────────────────
 function loadBankState() {
@@ -148,47 +157,13 @@ function renderFilters() {
 
 // ─── Render Header ───────────────────────────────────────────────
 function renderHeader(data) {
-    const months = [...new Set(allData.map(r => r.dataMonth))].sort();
-    document.getElementById('month-badge').textContent =
-        months.length === 1 ? months[0] : months.join(' / ');
-
-    const total = data.reduce((s, r) => s + (r.amount || 0), 0);
-    const isDone = r => {
-        const key = getKey(r);
-        if (transferState[key]) return true;
-        if (effectivePaymentType(r) === 'bank') return bankState[key]?.status === 'completed';
-        return !!checked[key];
-    };
-    const checkedCount  = data.filter(isDone).length;
-    const checkedAmount = data.filter(isDone).reduce((s, r) => s + (r.amount || 0), 0);
-
-    document.getElementById('header-summary').textContent =
-        `${checkedCount} / ${data.length} 件   ¥${fmt(checkedAmount)} / ¥${fmt(total)}`;
-
-    // ルート×月 未集金サマリー
-    const routeMap = {};
-    allData.forEach(r => {
-        if (checked[getKey(r)]) return;
-        if (!routeMap[r.route]) routeMap[r.route] = {};
-        routeMap[r.route][r.dataMonth] = (routeMap[r.route][r.dataMonth] || 0) + (r.amount || 0);
-    });
-
-    const allRoutes = [...new Set(allData.map(r => r.route))].sort((a, b) => a - b);
-    let html = '';
-    allRoutes.forEach(route => {
-        const byMonth = routeMap[route];
-        if (!byMonth) return;
-        html += `<div class="rs-row"><span class="rs-label">R${route}</span>`;
-        months.forEach(mo => {
-            const amt = (byMonth[mo] || 0);
-            html += `<span class="rs-pill${amt === 0 ? ' rs-zero' : ''}">
-                <span class="rs-mo">${mo.slice(5)}月</span>
-                <span class="rs-amt">¥${fmt(amt)}</span>
-            </span>`;
-        });
-        html += '</div>';
-    });
-    document.getElementById('route-stats').innerHTML = html;
+    const badge = document.getElementById('month-badge');
+    if (filters.month) {
+        badge.textContent = filters.month;
+    } else {
+        const months = [...new Set(allData.map(r => r.dataMonth))].sort();
+        badge.textContent = months.length === 1 ? months[0] : months.join(' / ');
+    }
 }
 
 // ─── Render Table ────────────────────────────────────────────────
@@ -566,6 +541,14 @@ function onTransferRevert(key) {
     }
 
     renderTable();
+}
+
+// ─── Admin Actions Toggle ────────────────────────────────────────
+function toggleAdminActions() {
+    const row = document.getElementById('action-row');
+    const btn = document.getElementById('btn-admin-toggle');
+    const isHidden = row.classList.toggle('hidden');
+    btn.classList.toggle('active', !isHidden);
 }
 
 // ─── Reset ───────────────────────────────────────────────────────
@@ -1047,8 +1030,27 @@ async function startApp() {
     transferState  = loadTransferState();
 
     renderFilters();
-    document.getElementById('toggle-uncollected').checked = true;
-    document.getElementById('filter-payment').value = 'cash';
+
+    // フィルター設定を復元（保存済みがあれば優先）
+    const savedFilters = loadFilterState();
+    if (savedFilters) {
+        filters.store          = savedFilters.store          || '';
+        filters.month          = savedFilters.month          || '';
+        filters.route          = savedFilters.route          || '';
+        filters.payment        = savedFilters.payment        ?? 'cash';
+        filters.search         = savedFilters.search         || '';
+        filters.uncollectedOnly = savedFilters.uncollectedOnly ?? true;
+    } else {
+        filters.payment        = 'cash';
+        filters.uncollectedOnly = true;
+    }
+    document.getElementById('filter-store').value        = filters.store;
+    document.getElementById('filter-month').value        = filters.month;
+    document.getElementById('filter-route').value        = filters.route;
+    document.getElementById('filter-payment').value      = filters.payment;
+    document.getElementById('search-input').value        = filters.search;
+    document.getElementById('toggle-uncollected').checked = filters.uncollectedOnly;
+
     renderTable();
 
     document.getElementById('loading-badge').style.display = 'none';
@@ -1056,28 +1058,34 @@ async function startApp() {
     // フィルターイベント
     document.getElementById('search-input').addEventListener('input', e => {
         filters.search = e.target.value;
+        saveFilters();
         renderTable();
     });
     document.getElementById('filter-store').addEventListener('change', e => {
         filters.store = e.target.value;
+        saveFilters();
         renderTable();
         if (currentTab === 'msg') renderMsgTab();
     });
     document.getElementById('filter-month').addEventListener('change', e => {
         filters.month = e.target.value;
+        saveFilters();
         renderTable();
     });
     document.getElementById('filter-route').addEventListener('change', e => {
         filters.route = e.target.value;
+        saveFilters();
         renderTable();
         if (currentTab === 'msg') renderMsgTab();
     });
     document.getElementById('filter-payment').addEventListener('change', e => {
         filters.payment = e.target.value;
+        saveFilters();
         renderTable();
     });
     document.getElementById('toggle-uncollected').addEventListener('change', e => {
         filters.uncollectedOnly = e.target.checked;
+        saveFilters();
         renderTable();
     });
 

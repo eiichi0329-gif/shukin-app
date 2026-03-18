@@ -37,11 +37,11 @@ body {
 .app-header {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
   color: white;
-  padding: 14px 16px 16px;
+  padding: 6px 12px;
   position: sticky; top: 0; z-index: 100;
   box-shadow: 0 3px 12px rgba(194,65,12,0.35);
 }
-.header-top { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.header-top { display: flex; align-items: center; gap: 10px; margin-bottom: 0; }
 .header-top h1 { font-size: 20px; font-weight: 700; }
 .month-badge {
   background: rgba(255,255,255,0.25);
@@ -53,9 +53,11 @@ body {
 /* ── コントロールバー ─────────────────────────────────────── */
 .controls-bar {
   background: white; border-bottom: 3px solid var(--primary-mid);
-  padding: 10px 12px; display: flex; flex-direction: column; gap: 8px;
+  padding: 8px 12px; display: flex; flex-direction: column; gap: 6px;
 }
-.filter-row, .action-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.controls-top { display: flex; align-items: center; gap: 8px; }
+.filter-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; flex: 1; }
+.action-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .search-wrap { flex: 1; min-width: 150px; }
 .search-wrap input {
   width: 100%; padding: 10px 14px;
@@ -78,6 +80,12 @@ body {
 }
 .toggle-label input { width: 22px; height: 22px; cursor: pointer; accent-color: var(--primary); }
 
+.action-toggle-row { display: flex; justify-content: flex-end; }
+.btn-admin-toggle {
+  background: var(--g100); color: var(--g500); border: 2px solid var(--g200);
+  padding: 5px 12px; font-size: 14px; min-height: 36px; border-radius: 8px;
+}
+.btn-admin-toggle.active { background: var(--primary-bg); color: var(--primary-dark); border-color: var(--primary-mid); }
 .action-wrap { display: flex; gap: 6px; margin-left: auto; }
 .btn {
   padding: 10px 14px; border-radius: 10px; border: none;
@@ -175,24 +183,6 @@ tbody tr.row-bank-completed:hover { background: #dbeafe; }
 tbody tr.row-bank-completed td.col-name   { text-decoration: line-through; color: var(--g400); }
 tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 
-/* ── ルート×月 未集金サマリー ────────────────────────────── */
-.route-stats {
-  margin-top: 10px; padding-top: 8px;
-  border-top: 1px solid rgba(255,255,255,0.25);
-  display: flex; flex-direction: column; gap: 4px;
-  max-height: 140px; overflow-y: auto;
-}
-.rs-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-.rs-label { font-size: 12px; opacity: 0.8; white-space: nowrap; min-width: 56px; }
-.rs-pill {
-  background: rgba(255,255,255,0.2);
-  border: 1px solid rgba(255,255,255,0.32);
-  border-radius: 20px; padding: 3px 9px;
-  display: flex; gap: 4px; align-items: center;
-}
-.rs-mo  { font-size: 11px; opacity: 0.85; }
-.rs-amt { font-size: 13px; font-weight: 700; }
-.rs-zero { opacity: 0.4; }
 
 /* ── 管理画面 ─────────────────────────────────────────────── */
 .admin-wrap { padding: 14px; }
