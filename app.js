@@ -898,7 +898,7 @@ function submitMessage() {
         createdAt:    new Date().toISOString(),
     };
 
-    const msgs = loadMessages();
+    const msgs = loadAllMessages();
     msgs.push(msg);
     saveMessages(msgs);
 
