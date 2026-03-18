@@ -715,6 +715,7 @@ function renderAdmin() {
     const content  = document.getElementById('admin-content');
     const storeVal = filters.store;
 
+    // 集金データを日付でグループ化
     const checkedItems = [];
     for (const [key, state] of Object.entries(checked)) {
         if (!state?.checkedAt) continue;
@@ -722,11 +723,6 @@ function renderAdmin() {
         if (!record) continue;
         if (storeVal && record.store !== storeVal) continue;
         checkedItems.push({ key, record, state });
-    }
-
-    if (checkedItems.length === 0) {
-        content.innerHTML = '<p class="empty-msg">集金済みデータがありません</p>';
-        return;
     }
 
     const srcRecords = storeVal ? allData.filter(r => r.store === storeVal) : allData;
@@ -746,13 +742,34 @@ function renderAdmin() {
         if (!byDate[d]) byDate[d] = [];
         byDate[d].push(item);
     }
-    const dates = Object.keys(byDate).sort().reverse();
+
+    // 連絡事項を日付でグループ化
+    const allMsgs = loadAllMessages();
+    const filteredMsgs = storeVal ? allMsgs.filter(m => m.store === storeVal) : allMsgs;
+    const msgsByDate = {};
+    filteredMsgs.forEach(m => {
+        const dk = m.createdAt.slice(0, 10);
+        if (!msgsByDate[dk]) msgsByDate[dk] = [];
+        msgsByDate[dk].push(m);
+    });
+
+    // 集金・連絡事項どちらかがある全日付を新しい順で列挙
+    const allDates = [...new Set([...Object.keys(byDate), ...Object.keys(msgsByDate)])].sort().reverse();
+
+    if (allDates.length === 0) {
+        content.innerHTML = '<p class="empty-msg">集金済みデータがありません</p>';
+        return;
+    }
 
     let html = '';
-    for (const d of dates) {
-        html += buildDailySection(d, routes, byDateRouteMonth[d] || {}, byDate[d]);
+    for (const d of allDates) {
+        if (byDate[d]) {
+            html += buildDailySection(d, routes, byDateRouteMonth[d] || {}, byDate[d]);
+        }
+        if (msgsByDate[d]) {
+            html += buildDailyMessages(d, msgsByDate[d]);
+        }
     }
-    html += renderAdminMessages(storeVal);
     content.innerHTML = html;
 }
 
@@ -905,35 +922,26 @@ function deleteMessage(id) {
     renderMsgTab();
 }
 
-function renderAdminMessages(storeVal) {
-    const msgs = loadAllMessages();
-    const filtered = storeVal ? msgs.filter(m => m.store === storeVal) : msgs;
-    if (filtered.length === 0) return '';
+function buildDailyMessages(date, msgs) {
+    const [, m, day] = date.split('-');
+    const dateLabel = `${parseInt(m)}月${parseInt(day)}日`;
+    const sorted = [...msgs].sort((a, b) => a.createdAt.localeCompare(b.createdAt));
 
-    const byStore = {};
-    filtered.forEach(m => {
-        if (!byStore[m.store]) byStore[m.store] = [];
-        byStore[m.store].push(m);
+    let html = `<div class="admin-section">`;
+    html += `<h2 class="admin-title">&#128172; ${dateLabel}の連絡事項</h2>`;
+    html += `<div class="admin-msg-store">`;
+    sorted.forEach(m => {
+        html += `<div class="admin-msg-item">
+            <div class="admin-msg-item-meta">
+                <span class="admin-msg-item-route">R${m.route}</span>
+                <span class="admin-msg-item-name">${escHtml(m.customerName)}</span>
+                <span style="font-size:12px;color:var(--g500)">${escHtml(m.store)}</span>
+                <span class="admin-msg-item-date">${fmtMsgTime(m.createdAt)}</span>
+            </div>
+            <div class="admin-msg-item-text">${escHtml(m.text)}</div>
+        </div>`;
     });
-
-    let html = '<div class="admin-section"><div class="admin-title" style="margin-top:8px">&#128172; 連絡事項</div>';
-    for (const [store, items] of Object.entries(byStore)) {
-        const sorted = [...items].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
-        html += `<div class="admin-msg-store">
-            <div class="admin-msg-store-header">${escHtml(store)}</div>`;
-        sorted.forEach(m => {
-            html += `<div class="admin-msg-item">
-                <div class="admin-msg-item-meta">
-                    <span class="admin-msg-item-route">R${m.route}</span>
-                    <span class="admin-msg-item-name">${escHtml(m.customerName)}</span>
-                    <span class="admin-msg-item-date">${fmtMsgDate(m.createdAt)}</span>
-                </div>
-                <div class="admin-msg-item-text">${escHtml(m.text)}</div>
-            </div>`;
-        });
-        html += '</div>';
-    }
-    html += '</div>';
+    html += '</div></div>';
     return html;
 }
 
