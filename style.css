@@ -417,6 +417,13 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 }
 .msg-item-del:hover { color: var(--red); }
 
+.msg-date-header {
+  background: var(--primary-bg); color: var(--primary-dark);
+  font-size: 13px; font-weight: 700;
+  padding: 6px 16px;
+  border-top: 2px solid var(--primary-mid);
+  border-bottom: 1px solid var(--primary-mid);
+}
 .msg-empty { text-align: center; padding: 32px 20px; color: var(--g400); font-size: 15px; }
 
 /* 管理画面 連絡事項セクション */

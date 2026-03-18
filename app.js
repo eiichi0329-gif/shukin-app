@@ -811,25 +811,40 @@ function renderMsgTab() {
         `<option value="__other__" data-store="${escHtml(storeForOther)}" data-route="${routeForOther}" data-name="その他">${otherLabel}</option>`;
     if (prevKey) sel.value = prevKey;
 
-    // 送信済み一覧
-    const msgs = loadMessages();
+    // 送信済み一覧（店舗フィルター適用 + 日付グループ化）
+    const allMsgs = loadMessages();
+    const msgs = filters.store ? allMsgs.filter(m => m.store === filters.store) : allMsgs;
     const list = document.getElementById('msg-sent-list');
     if (msgs.length === 0) {
         list.innerHTML = '<div class="msg-empty">送信済みの連絡事項はありません</div>';
         return;
     }
     const sorted = [...msgs].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
-    list.innerHTML = sorted.map(m => `
-        <div class="msg-item">
-            <div class="msg-item-meta">
-                <span class="msg-item-route">R${m.route}</span>
-                <span class="msg-item-name">${escHtml(m.customerName)}</span>
-                <span style="font-size:12px;color:var(--g500)">${escHtml(m.store)}</span>
-                <span class="msg-item-date">${fmtMsgDate(m.createdAt)}</span>
-            </div>
-            <div class="msg-item-text">${escHtml(m.text)}</div>
-            <button class="msg-item-del" onclick="deleteMessage('${m.id}')">削除</button>
-        </div>`).join('');
+
+    // 日付キーでグループ化
+    const groups = {};
+    sorted.forEach(m => {
+        const dk = m.createdAt.slice(0, 10);
+        if (!groups[dk]) groups[dk] = [];
+        groups[dk].push(m);
+    });
+
+    list.innerHTML = Object.keys(groups).sort((a, b) => b.localeCompare(a)).map(dk => {
+        const label = new Date(dk + 'T12:00:00').toLocaleDateString('ja-JP',
+            { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', weekday: 'short' });
+        const items = groups[dk].map(m => `
+            <div class="msg-item">
+                <div class="msg-item-meta">
+                    <span class="msg-item-route">R${m.route}</span>
+                    <span class="msg-item-name">${escHtml(m.customerName)}</span>
+                    <span style="font-size:12px;color:var(--g500)">${escHtml(m.store)}</span>
+                    <span class="msg-item-date">${fmtMsgTime(m.createdAt)}</span>
+                </div>
+                <div class="msg-item-text">${escHtml(m.text)}</div>
+                <button class="msg-item-del" onclick="deleteMessage('${m.id}')">削除</button>
+            </div>`).join('');
+        return `<div class="msg-date-header">${label}</div>${items}`;
+    }).join('');
 }
 
 function fmtMsgDate(iso) {
@@ -837,6 +852,12 @@ function fmtMsgDate(iso) {
     const d = new Date(iso);
     return d.toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric' }) + ' ' +
            d.toLocaleTimeString('ja-JP', { timeZone: 'Asia/Tokyo', hour: '2-digit', minute: '2-digit' });
+}
+
+function fmtMsgTime(iso) {
+    if (!iso) return '';
+    return new Date(iso).toLocaleTimeString('ja-JP',
+        { timeZone: 'Asia/Tokyo', hour: '2-digit', minute: '2-digit' });
 }
 
 function submitMessage() {
