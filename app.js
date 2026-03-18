@@ -1086,7 +1086,8 @@ async function startApp() {
         filters.store = e.target.value;
         saveFilters();
         renderTable();
-        if (currentTab === 'msg') renderMsgTab();
+        if (currentTab === 'msg')   renderMsgTab();
+        if (currentTab === 'admin') renderAdmin();
     });
     document.getElementById('filter-month').addEventListener('change', e => {
         filters.month = e.target.value;
