@@ -294,11 +294,20 @@ function onCheck(key, isChecked) {
         }
         delete checked[key];
     } else {
-        const today = new Date();
+        const today   = new Date();
         const jstDate = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+        const record  = allData.find(r => getKey(r) === key);
         checked[key] = {
             checkedAt:   today.toISOString(),
-            collectDate: (checked[key] || {}).collectDate || jstDate
+            collectDate: (checked[key] || {}).collectDate || jstDate,
+            // 管理画面の履歴表示用スナップショット（data.js が更新されても記録が消えないよう保持）
+            snapshot: record ? {
+                name:      record.name,
+                amount:    record.amount,
+                route:     record.route,
+                store:     record.store,
+                dataMonth: record.dataMonth,
+            } : (checked[key]?.snapshot || null)
         };
     }
 
@@ -782,7 +791,8 @@ function renderAdmin() {
     const checkedItems = [];
     for (const [key, state] of Object.entries(checked)) {
         if (!state?.checkedAt) continue;
-        const record = allData.find(r => getKey(r) === key);
+        // allData に存在しない場合はスナップショットで代替（data.js 更新後も履歴を保持）
+        const record = allData.find(r => getKey(r) === key) || state.snapshot || null;
         if (!record) continue;
         if (storeVal && record.store !== storeVal) continue;
         checkedItems.push({ key, record, state });
@@ -1048,9 +1058,13 @@ async function syncCheckboxes() {
             Object.entries(remote).forEach(([key, val]) => {
                 if (dirtyKeys.has(key)) return; // 送信直後のキーは上書きしない
                 if (!checked[key]) {
+                    // リモートから追加（スナップショットなし）
                     checked[key] = { checkedAt: new Date().toISOString(), collectDate: val.collectDate || '' };
-                } else if (!checked[key].collectDate && val.collectDate) {
-                    checked[key].collectDate = val.collectDate;
+                } else {
+                    // 既存エントリはスナップショットを保持しつつ、collectDate だけ補完
+                    if (!checked[key].collectDate && val.collectDate) {
+                        checked[key].collectDate = val.collectDate;
+                    }
                 }
             });
             // リモートにないキーを削除（dirtyキーは保護）
