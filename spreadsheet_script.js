@@ -144,6 +144,25 @@ function doPost(e) {
       const idx = ids.indexOf(msgId);
       if (idx >= 0) sheet.deleteRow(idx + 2);
 
+    // ── 金額修正 ──
+    } else if (action === 'updateAmount') {
+      const key    = payload.key;
+      const amount = Number(payload.amount);
+      const sheets = ss.getSheets();
+      for (const sheet of sheets) {
+        if (SKIP_SHEETS.has(sheet.getName())) continue;
+        const lastRow = sheet.getLastRow();
+        if (lastRow < 2) continue;
+        const keyCol  = CASH_HEADERS.length; // キーは最終列
+        const amtCol  = 5;                   // 金額列（ルート/月/名前/住所/金額/...）
+        const keys    = sheet.getRange(2, keyCol, lastRow - 1, 1).getValues().flat();
+        const idx     = keys.indexOf(key);
+        if (idx >= 0) {
+          sheet.getRange(idx + 2, amtCol).setValue(amount);
+          break;
+        }
+      }
+
     // ── 全リセット ──
     } else if (action === 'resetAll') {
       // 現金集金シート（口座振替・振込入金・連絡事項以外）のデータ行を全削除

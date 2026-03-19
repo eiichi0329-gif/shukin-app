@@ -1,16 +1,18 @@
 // 集金管理アプリ v3
 
-const LS_KEY      = 'coll-state-v3';
-const BANK_KEY     = 'coll-bank-v1';
-const TRANSFER_KEY = 'coll-transfer-v1';
-const FILTER_KEY   = 'coll-filter-v1';
+const LS_KEY             = 'coll-state-v3';
+const BANK_KEY           = 'coll-bank-v1';
+const TRANSFER_KEY       = 'coll-transfer-v1';
+const FILTER_KEY         = 'coll-filter-v1';
+const AMOUNT_OVERRIDE_KEY = 'coll-amount-override-v1';
 const DIRTY_GRACE_MS = 35000; // ローカル変更を守る猶予時間（ms）
 
 // ─── State ───────────────────────────────────────────────────────
-let allData       = [];
-let checked       = {};   // key → { checkedAt, collectDate }
-let bankState     = {};   // key → { status: 'completed'|'failed', updatedAt }
-let transferState = {};   // key → { date: 'YYYY-MM-DD', recordedAt: ISO }
+let allData         = [];
+let checked         = {};   // key → { checkedAt, collectDate }
+let bankState       = {};   // key → { status: 'completed'|'failed', updatedAt }
+let transferState   = {};   // key → { date: 'YYYY-MM-DD', recordedAt: ISO }
+let amountOverrides = {};   // key → number（管理画面で手修正した金額）
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'list';
 let expandedCell = null;  // { route, month } for admin detail
@@ -40,6 +42,17 @@ function loadBankState() {
 }
 function saveBankState() {
     localStorage.setItem(BANK_KEY, JSON.stringify(bankState));
+}
+
+// ─── Amount Override State ────────────────────────────────────────
+function loadAmountOverrides() {
+    try { return JSON.parse(localStorage.getItem(AMOUNT_OVERRIDE_KEY) || '{}'); } catch { return {}; }
+}
+function saveAmountOverrides() {
+    localStorage.setItem(AMOUNT_OVERRIDE_KEY, JSON.stringify(amountOverrides));
+}
+function effectiveAmount(key, record) {
+    return amountOverrides[key] !== undefined ? amountOverrides[key] : (record.amount || 0);
 }
 
 // ─── Transfer State ───────────────────────────────────────────────
@@ -664,8 +677,13 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
             for (const rr of routes) {
                 if (rr === r) {
                     html += `<td class="detail-cell-col"><div class="detail-list">`;
-                    for (const { record } of rItems) {
-                        html += `<div class="detail-item"><span class="detail-name">${escHtml(record.name)}</span><span class="detail-amount">${fmt(record.amount)}</span></div>`;
+                    for (const { key, record } of rItems) {
+                        const effAmt = effectiveAmount(key, record);
+                        const isModified = amountOverrides[key] !== undefined;
+                        html += `<div class="detail-item">`;
+                        html += `<span class="detail-name">${escHtml(record.name)}</span>`;
+                        html += `<span class="detail-amount editable-amount${isModified ? ' amount-modified' : ''}" data-key="${escHtml(key)}" title="タップして金額を修正" onclick="startAmountEdit(this)">${fmt(effAmt)}&#9998;</span>`;
+                        html += `</div>`;
                     }
                     html += `</div></td>`;
                 } else {
@@ -716,6 +734,46 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
     return html;
 }
 
+// ─── 管理画面 金額インライン編集 ─────────────────────────────────
+function startAmountEdit(span) {
+    if (span.querySelector('input')) return; // 二重起動防止
+    const key     = span.getAttribute('data-key');
+    const record  = allData.find(r => getKey(r) === key);
+    const current = amountOverrides[key] !== undefined
+        ? amountOverrides[key]
+        : (record?.amount || 0);
+
+    const input = document.createElement('input');
+    input.type        = 'text';
+    input.inputMode   = 'numeric';
+    input.className   = 'amount-edit-input';
+    input.value       = current;
+    input.setAttribute('data-key', key);
+
+    const finish = () => {
+        const raw = parseInt(input.value.replace(/[^\d]/g, ''), 10);
+        if (!isNaN(raw) && raw !== current) {
+            amountOverrides[key] = raw;
+            saveAmountOverrides();
+            const url = getGasUrl();
+            if (url && record) {
+                postToGas(url, { action: 'updateAmount', key, amount: raw, store: record.store });
+            }
+        }
+        renderAdmin();
+    };
+
+    input.addEventListener('blur', finish);
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter')  { input.blur(); }
+        if (e.key === 'Escape') { input.removeEventListener('blur', finish); renderAdmin(); }
+    });
+
+    span.replaceWith(input);
+    input.focus();
+    input.select();
+}
+
 function renderAdmin() {
     const content  = document.getElementById('admin-content');
     const storeVal = filters.store;
@@ -736,14 +794,14 @@ function renderAdmin() {
     const byDateRouteMonth = {};
     const byDate = {};
     for (const item of checkedItems) {
-        const { record, state } = item;
+        const { key, record, state } = item;
         const d  = toJSTDate(state.checkedAt) || '不明';
         const r  = record.route > 0 ? record.route : null;
         const mo = record.dataMonth || '不明';
         if (!r) continue;
         if (!byDateRouteMonth[d]) byDateRouteMonth[d] = {};
         if (!byDateRouteMonth[d][r]) byDateRouteMonth[d][r] = {};
-        byDateRouteMonth[d][r][mo] = (byDateRouteMonth[d][r][mo] || 0) + (record.amount || 0);
+        byDateRouteMonth[d][r][mo] = (byDateRouteMonth[d][r][mo] || 0) + effectiveAmount(key, record);
         if (!byDate[d]) byDate[d] = [];
         byDate[d].push(item);
     }
@@ -1079,10 +1137,11 @@ async function startApp() {
         return;
     }
 
-    allData        = window.COLLECTION_DATA;
-    checked        = loadChecked();
-    bankState      = loadBankState();
-    transferState  = loadTransferState();
+    allData         = window.COLLECTION_DATA;
+    checked         = loadChecked();
+    bankState       = loadBankState();
+    transferState   = loadTransferState();
+    amountOverrides = loadAmountOverrides();
 
     renderFilters();
 
