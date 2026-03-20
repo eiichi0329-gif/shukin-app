@@ -133,13 +133,9 @@ function doPost(e) {
       const msg = payload.message;
       if (!msg) return ok();
       const sheet = getOrCreateSheet(ss, MSG_SHEET, MSG_HEADERS, '#1e40af', [80, 100, 60, 160, 320, 160]);
-      let createdStr = msg.createdAt || '';
-      if (createdStr) {
-        try {
-          createdStr = Utilities.formatDate(new Date(createdStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
-        } catch (_) {}
-      }
-      sheet.appendRow([msg.id || '', msg.store || '', msg.route || '', msg.customerName || '', msg.text || '', createdStr]);
+      let createdDate = msg.createdAt ? new Date(msg.createdAt) : new Date();
+      sheet.appendRow([msg.id || '', msg.store || '', msg.route || '', msg.customerName || '', msg.text || '', createdDate]);
+      sheet.getRange(sheet.getLastRow(), 6).setNumberFormat('yyyy/MM/dd HH:mm');
       sortMsgSheet(sheet);
 
     // ── 連絡事項 削除 ──
@@ -371,9 +367,15 @@ function sortMsgSheet(sheet) {
   if (lastRow < 3) return; // データが1行以下はソート不要
   const cols = MSG_HEADERS.length;
   const rows = sheet.getRange(2, 1, lastRow - 1, cols).getValues();
+
+  // Date オブジェクト・文字列どちらでも "yyyy/MM/dd HH:mm" 文字列に変換
+  const toStr = v => v instanceof Date
+    ? Utilities.formatDate(v, 'Asia/Tokyo', 'yyyy/MM/dd HH:mm')
+    : String(v);
+
   rows.sort((a, b) => {
-    // 送信日時（index5）の日付部分（"yyyy/MM/dd"）で昇順
-    const dateCmp = String(a[5]).slice(0, 10).localeCompare(String(b[5]).slice(0, 10));
+    // 送信日（日付部分のみ）で昇順
+    const dateCmp = toStr(a[5]).slice(0, 10).localeCompare(toStr(b[5]).slice(0, 10));
     if (dateCmp !== 0) return dateCmp;
     // 店舗（index1）カスタム順
     const oa = MSG_STORE_ORDER.indexOf(String(a[1]));
@@ -383,7 +385,10 @@ function sortMsgSheet(sheet) {
     // ルート（index2）昇順
     return Number(a[2]) - Number(b[2]);
   });
+
   sheet.getRange(2, 1, lastRow - 1, cols).setValues(rows);
+  // setValues 後も送信日時列の書式を維持
+  sheet.getRange(2, 6, lastRow - 1, 1).setNumberFormat('yyyy/MM/dd HH:mm');
 }
 
 // ─── 店舗→月→ルート順ソート（口座振替・振込入金） ──
