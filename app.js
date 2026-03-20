@@ -766,7 +766,14 @@ function startAmountEdit(span) {
             saveAmountOverrides();
             const url = getGasUrl();
             if (url && record) {
-                postToGas(url, { action: 'updateAmount', key, amount: raw, store: record.store });
+                postToGas(url, {
+                    action:    'updateAmount',
+                    key,
+                    amount:    raw,
+                    oldAmount: current,
+                    record:    { ...record, key },
+                    updatedAt: new Date().toISOString(),
+                });
             }
         }
         renderAdmin();
@@ -952,14 +959,7 @@ function fmtMsgTime(iso) {
 }
 
 function onMsgCustomerChange() {
-    const sel     = document.getElementById('msg-customer-select');
-    const typeSel = document.getElementById('msg-type-select');
-    if (sel.value) {
-        typeSel.classList.remove('hidden');
-    } else {
-        typeSel.classList.add('hidden');
-        typeSel.value = '';
-    }
+    // 報告内容セレクトは常に表示（「連絡事項なし」は顧客選択不要）
 }
 
 function submitMessage() {
@@ -968,13 +968,22 @@ function submitMessage() {
     const freeText = document.getElementById('msg-textarea').value.trim();
     const typeVal  = typeSel.value;
 
-    if (!sel.value) { alert('顧客を選択してください'); return; }
     if (!typeVal && !freeText) { alert('報告内容を選択するか、自由入力欄に入力してください'); return; }
 
-    const opt   = sel.selectedOptions[0];
-    const store = opt.dataset.store;
-    const route = opt.dataset.route;
-    const name  = opt.dataset.name;
+    let store, route, name;
+    if (sel.value) {
+        const opt = sel.selectedOptions[0];
+        store = opt.dataset.store;
+        route = opt.dataset.route;
+        name  = opt.dataset.name;
+    } else if (typeVal === '連絡事項なし') {
+        store = filters.store || '';
+        route = filters.route || '';
+        name  = 'なし';
+    } else {
+        alert('顧客を選択してください');
+        return;
+    }
 
     const parts = [];
     if (typeVal)  parts.push(typeVal);
@@ -1019,7 +1028,9 @@ function deleteMessage(id) {
 function buildDailyMessages(date, msgs) {
     const [, m, day] = date.split('-');
     const dateLabel = `${parseInt(m)}月${parseInt(day)}日`;
-    const sorted = [...msgs].sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+    const sorted = [...msgs].sort((a, b) =>
+        (Number(a.route) - Number(b.route)) || a.createdAt.localeCompare(b.createdAt)
+    );
 
     let html = `<div class="admin-section">`;
     html += `<h2 class="admin-title">&#128172; ${dateLabel}の連絡事項</h2>`;

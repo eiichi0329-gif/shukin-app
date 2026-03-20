@@ -343,12 +343,18 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .nav-btn {
   flex: 1; display: flex; flex-direction: column; align-items: center;
   justify-content: center; gap: 4px;
-  background: none; border: none; cursor: pointer;
-  color: var(--g400); transition: color .15s, background .15s;
+  background: var(--g100); border: none; cursor: pointer;
+  color: var(--g500); transition: color .15s, background .15s;
   padding: 6px 0; font-family: inherit;
+  border-top: 3px solid transparent;
 }
-.nav-btn.active { color: var(--primary); }
-.nav-btn:active { background: var(--primary-bg); }
+.nav-btn + .nav-btn { border-left: 1px solid var(--g200); }
+.nav-btn.active {
+  color: var(--primary);
+  background: var(--primary-bg);
+  border-top-color: var(--primary);
+}
+.nav-btn:active { background: var(--primary-mid); }
 .nav-icon  { font-size: 26px; line-height: 1; }
 .nav-label { font-size: 13px; font-weight: 700; }
 

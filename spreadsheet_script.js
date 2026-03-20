@@ -38,8 +38,12 @@ const TRANSFER_COL_WIDTHS = [100, 70, 70, 160, 260, 90, 100, 160, 1];
 const MSG_SHEET   = '連絡事項';
 const MSG_HEADERS = ['ID', '店舗', 'ルート', '顧客名', '連絡内容', '送信日時'];
 
+const AMOUNT_LOG_SHEET   = '金額修正';
+const AMOUNT_LOG_HEADERS = ['店舗', 'ルート', '月', '名前', '修正前金額', '修正後金額', '修正日時', 'キー'];
+const AMOUNT_LOG_COL_WIDTHS = [100, 70, 70, 160, 100, 100, 160, 1];
+
 // doGet でチェックデータ読み取りをスキップするシート名
-const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET]);
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET]);
 
 // ─── メインハンドラ ───────────────────────────────────
 function doPost(e) {
@@ -146,8 +150,13 @@ function doPost(e) {
 
     // ── 金額修正 ──
     } else if (action === 'updateAmount') {
-      const key    = payload.key;
-      const amount = Number(payload.amount);
+      const key       = payload.key;
+      const amount    = Number(payload.amount);
+      const oldAmount = payload.oldAmount !== undefined ? Number(payload.oldAmount) : null;
+      const rec       = payload.record || {};
+      const updatedAt = payload.updatedAt || '';
+
+      // 現金集金シートの金額を更新
       const sheets = ss.getSheets();
       for (const sheet of sheets) {
         if (SKIP_SHEETS.has(sheet.getName())) continue;
@@ -162,6 +171,26 @@ function doPost(e) {
           break;
         }
       }
+
+      // 金額修正ログに記録
+      const logSheet = getOrCreateSheet(ss, AMOUNT_LOG_SHEET, AMOUNT_LOG_HEADERS, '#7c3aed', AMOUNT_LOG_COL_WIDTHS);
+      let updatedStr = updatedAt;
+      if (updatedStr) {
+        try {
+          updatedStr = Utilities.formatDate(new Date(updatedStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+        } catch (_) {}
+      }
+      const [, logM] = (rec.dataMonth || '').split('-');
+      logSheet.appendRow([
+        rec.store || '',
+        rec.route || '',
+        logM ? `${parseInt(logM)}月` : '',
+        rec.name  || '',
+        oldAmount !== null ? oldAmount : '',
+        amount,
+        updatedStr,
+        key,
+      ]);
 
     // ── 全リセット ──
     } else if (action === 'resetAll') {
