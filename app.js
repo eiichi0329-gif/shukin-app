@@ -1055,10 +1055,11 @@ async function syncCheckboxes() {
     const url = getGasUrl();
     if (!url) return;
     try {
-        const res  = await fetch(url);
+        const res  = await fetch(url + '?t=' + Date.now());
         const json = await res.json();
+        if (json.ok === false) { console.error('GAS同期エラー', json.error); return; }
         // 新形式（checkedData）と旧形式（checkedKeys）の両方に対応
-        if (!json.checkedData && !json.checkedKeys) return;
+        if (!json.checkedData && !json.checkedKeys && json.transferData === undefined) return;
 
         // 期限切れのdirtyキーをクリア
         cleanDirty();
