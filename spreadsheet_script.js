@@ -37,6 +37,7 @@ const TRANSFER_COL_WIDTHS = [100, 70, 70, 160, 260, 90, 100, 160, 1];
 
 const MSG_SHEET   = '連絡事項';
 const MSG_HEADERS = ['ID', '店舗', 'ルート', '顧客名', '連絡内容', '送信日時'];
+const MSG_STORE_ORDER = ['下関店', '北九州店', '宇部店', '宗像店', '飯塚店', '福岡東店'];
 
 const AMOUNT_LOG_SHEET   = '金額修正';
 const AMOUNT_LOG_HEADERS = ['店舗', 'ルート', '月', '名前', '修正前金額', '修正後金額', '修正日時', 'キー'];
@@ -139,6 +140,7 @@ function doPost(e) {
         } catch (_) {}
       }
       sheet.appendRow([msg.id || '', msg.store || '', msg.route || '', msg.customerName || '', msg.text || '', createdStr]);
+      sortMsgSheet(sheet);
 
     // ── 連絡事項 削除 ──
     } else if (action === 'removeMessage') {
@@ -361,6 +363,27 @@ function sortCashSheet(sheet) {
       { column: 1, ascending: true },  // ルート
       { column: 7, ascending: true },  // 集金時刻
     ]);
+}
+
+// ─── 連絡事項: 送信日順 → 店舗カスタム順 → ルート順 ─
+function sortMsgSheet(sheet) {
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 3) return; // データが1行以下はソート不要
+  const cols = MSG_HEADERS.length;
+  const rows = sheet.getRange(2, 1, lastRow - 1, cols).getValues();
+  rows.sort((a, b) => {
+    // 送信日時（index5）の日付部分（"yyyy/MM/dd"）で昇順
+    const dateCmp = String(a[5]).slice(0, 10).localeCompare(String(b[5]).slice(0, 10));
+    if (dateCmp !== 0) return dateCmp;
+    // 店舗（index1）カスタム順
+    const oa = MSG_STORE_ORDER.indexOf(String(a[1]));
+    const ob = MSG_STORE_ORDER.indexOf(String(b[1]));
+    const storeCmp = (oa === -1 ? 999 : oa) - (ob === -1 ? 999 : ob);
+    if (storeCmp !== 0) return storeCmp;
+    // ルート（index2）昇順
+    return Number(a[2]) - Number(b[2]);
+  });
+  sheet.getRange(2, 1, lastRow - 1, cols).setValues(rows);
 }
 
 // ─── 店舗→月→ルート順ソート（口座振替・振込入金） ──
