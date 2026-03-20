@@ -322,10 +322,25 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .cash-row td.cash-cell {
   background: #f0fdf4 !important; color: #14532d !important;
   font-weight: 700 !important; font-size: 16px !important;
+  vertical-align: top !important; text-align: center !important;
+  padding: 8px 6px !important;
 }
 .cash-row td.grand-total {
   background: #16a34a !important; color: white !important;
 }
+.cash-amount { font-weight: 700; font-size: 16px; color: #14532d; }
+.btn-seisa {
+  display: block; width: 100%; margin-top: 5px;
+  background: #dcfce7; color: #14532d; border: 2px solid #86efac;
+  border-radius: 7px; padding: 3px 4px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.btn-seisa:hover  { background: #bbf7d0; }
+.btn-seisa:active { transform: scale(0.96); }
+.seisa-status { margin-top: 4px; font-size: 11px; font-weight: 700; line-height: 1.4; }
+.seisa-diff   { font-size: 11px; }
+.seisa-ok { color: #16a34a; }
+.seisa-ng { color: var(--red); }
 
 .empty-msg { text-align: center; padding: 60px 20px; color: var(--g400); font-size: 17px; }
 .no-results { text-align: center; padding: 48px 20px; color: var(--g400); font-size: 17px; background: white; }
@@ -531,3 +546,59 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .settings-status { font-size: 13px; min-height: 18px; }
 
 .settings-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }
+
+/* ── 現金精査ダイアログ ───────────────────────────────────── */
+.denom-dialog {
+  border: none; border-radius: 16px; padding: 0;
+  width: min(500px, 96vw);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+}
+.denom-dialog::backdrop { background: rgba(0,0,0,0.45); }
+.denom-inner {
+  padding: 14px 12px; display: flex; flex-direction: column; gap: 10px;
+}
+.denom-title { font-size: 16px; font-weight: 700; color: var(--primary-dark); }
+.denom-expected-row {
+  font-size: 14px; background: var(--primary-bg);
+  border: 2px solid var(--primary-mid); border-radius: 8px;
+  padding: 7px 12px; color: var(--g800);
+}
+/* 紙幣・硬貨 2パネル */
+.denom-panels { display: flex; gap: 8px; }
+.denom-panel  { flex: 1; display: flex; flex-direction: column; }
+.denom-panel-title {
+  font-size: 12px; font-weight: 700; color: white;
+  background: var(--primary-dark); padding: 5px 10px;
+  border-radius: 6px 6px 0 0; text-align: center;
+}
+.denom-panel-body {
+  border: 1px solid var(--g200); border-top: none;
+  border-radius: 0 0 6px 6px; overflow: hidden;
+}
+.denom-item {
+  display: flex; align-items: center; gap: 4px;
+  padding: 6px 8px; border-bottom: 1px solid var(--g100);
+  background: white;
+}
+.denom-item:last-child { border-bottom: none; }
+.denom-lbl  { font-size: 13px; color: var(--g800); flex: 1; white-space: nowrap; }
+.denom-input {
+  width: 54px; padding: 5px 6px; border: 2px solid var(--g200); border-radius: 6px;
+  font-size: 14px; text-align: right; font-family: inherit;
+  background: white; font-weight: 600;
+}
+.denom-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary-bg); }
+.denom-sub  { font-size: 12px; color: var(--g600); white-space: nowrap; min-width: 52px; text-align: right; }
+/* 合計・差額 */
+.denom-summary {
+  background: var(--g50); border: 2px solid var(--g200);
+  border-radius: 10px; padding: 10px 14px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.denom-summary-row { display: flex; justify-content: space-between; align-items: center; font-size: 15px; }
+.denom-diff-row { border-top: 1px solid var(--g200); padding-top: 6px; }
+.denom-summary-label { font-weight: 700; color: var(--g600); }
+.denom-summary-value { font-weight: 700; font-size: 17px; color: var(--g800); font-variant-numeric: tabular-nums; }
+.denom-diff-ok { font-weight: 700; font-size: 17px; color: var(--green); }
+.denom-diff-ng { font-weight: 700; font-size: 17px; color: var(--red); }
+.denom-actions { display: flex; gap: 8px; justify-content: flex-end; }

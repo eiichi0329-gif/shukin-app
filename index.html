@@ -150,6 +150,41 @@
         </div>
     </dialog>
 
+    <!-- 現金精査ダイアログ -->
+    <dialog id="denom-dialog" class="denom-dialog">
+        <div class="denom-inner">
+            <div class="denom-title" id="denom-title">💰 現金精査</div>
+            <div class="denom-expected-row">
+                手持ち現金（目標）: <strong id="denom-expected-amount">—</strong>
+            </div>
+            <input type="hidden" id="denom-expected-val" value="0">
+            <div class="denom-panels">
+                <div class="denom-panel">
+                    <div class="denom-panel-title">紙幣</div>
+                    <div id="denom-bills" class="denom-panel-body"></div>
+                </div>
+                <div class="denom-panel">
+                    <div class="denom-panel-title">硬貨</div>
+                    <div id="denom-coins" class="denom-panel-body"></div>
+                </div>
+            </div>
+            <div class="denom-summary">
+                <div class="denom-summary-row">
+                    <span class="denom-summary-label">合計</span>
+                    <span id="denom-total" class="denom-summary-value">¥0</span>
+                </div>
+                <div class="denom-summary-row denom-diff-row">
+                    <span class="denom-summary-label">差額</span>
+                    <span id="denom-diff" class="denom-diff-ng">—</span>
+                </div>
+            </div>
+            <div class="denom-actions">
+                <button class="btn btn-secondary" onclick="closeDenomDialog()">キャンセル</button>
+                <button class="btn btn-primary"   onclick="saveDenomDialog()">保存</button>
+            </div>
+        </div>
+    </dialog>
+
     <script src="data.js" defer></script>
     <script src="app.js" defer></script>
 </body>

@@ -5,6 +5,7 @@ const BANK_KEY           = 'coll-bank-v1';
 const TRANSFER_KEY       = 'coll-transfer-v1';
 const FILTER_KEY         = 'coll-filter-v1';
 const AMOUNT_OVERRIDE_KEY = 'coll-amount-override-v1';
+const DENOM_KEY           = 'coll-denom-v1';
 const DIRTY_GRACE_MS = 35000; // ローカル変更を守る猶予時間（ms）
 
 // ─── State ───────────────────────────────────────────────────────
@@ -22,6 +23,21 @@ let bulkMode               = false;
 let bulkAffectedKeys       = new Set(); // 一括チェックで対象になったキー
 let bulkUncheckedKeys      = new Set(); // ユーザーが手動で外したキー
 let bulkPreviouslyCompleted = new Set(); // 一括モード開始時点で完了済みだったキー
+
+// 金種確認ダイアログ用
+let currentDenomDate  = null;
+let currentDenomRoute = null;
+const DENOMINATIONS = [
+    { value: 10000, label: '10,000円札' },
+    { value:  5000, label:  '5,000円札' },
+    { value:  1000, label:  '1,000円札' },
+    { value:   500, label:    '500円玉' },
+    { value:   100, label:    '100円玉' },
+    { value:    50, label:     '50円玉' },
+    { value:    10, label:     '10円玉' },
+    { value:     5, label:      '5円玉' },
+    { value:     1, label:      '1円玉' },
+];
 
 // ローカルで変更した直後のキーを追跡（同期による上書きを防ぐ）
 const dirtyKeys = new Map(); // key → timestamp
@@ -50,6 +66,17 @@ function loadAmountOverrides() {
 }
 function saveAmountOverrides() {
     localStorage.setItem(AMOUNT_OVERRIDE_KEY, JSON.stringify(amountOverrides));
+}
+
+// ─── Denom Storage ────────────────────────────────────────────────
+function loadDenomStorage() {
+    try { return JSON.parse(localStorage.getItem(DENOM_KEY) || '{}'); } catch { return {}; }
+}
+function saveDenomStorage(data) {
+    localStorage.setItem(DENOM_KEY, JSON.stringify(data));
+}
+function calcDenomTotal(counts) {
+    return DENOMINATIONS.reduce((sum, d) => sum + d.value * (counts[d.value] || 0), 0);
 }
 function effectiveAmount(key, record) {
     return amountOverrides[key] !== undefined ? amountOverrides[key] : (record.amount || 0);
@@ -727,15 +754,32 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
     }
     html += `<td class="total-cell" data-change-total="${date}">${fmt(changeTotalSum)}</td></tr>`;
 
-    // 手持ち現金行
+    // 手持ち現金行（現金精査ボタン付き）
     let cashTotal = 0;
+    const denomSt = loadDenomStorage();
     html += `<tr class="cash-row"><th class="row-header">手持ち現金</th>`;
     for (const r of routes) {
-        const ck = `${date}|${r}`;
-        const ca = changeAmounts[ck] !== undefined ? changeAmounts[ck] : 12220;
+        const ck   = `${date}|${r}`;
+        const ca   = changeAmounts[ck] !== undefined ? changeAmounts[ck] : 12220;
         const cash = (routeTotals[r] || 0) + ca;
         cashTotal += cash;
-        html += `<td class="cash-cell" data-cash-key="${ck}" data-base="${routeTotals[r] || 0}">${fmt(cash)}</td>`;
+        let seisaHtml = '';
+        if ((routeTotals[r] || 0) > 0) {
+            const dd = denomSt[`${date}|${r}`];
+            let seisaStatus = '';
+            if (dd) {
+                const denomTotal = calcDenomTotal(dd.counts);
+                const diff = denomTotal - cash;
+                if (diff === 0) {
+                    seisaStatus = `<div class="seisa-status seisa-ok">合致 ✓</div>`;
+                } else {
+                    const sign = diff > 0 ? '+' : '−';
+                    seisaStatus = `<div class="seisa-status seisa-ng">合致せず<br><span class="seisa-diff">${sign}${fmt(Math.abs(diff))}円</span></div>`;
+                }
+            }
+            seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r})">現金精査</button>${seisaStatus}`;
+        }
+        html += `<td class="cash-cell" data-cash-key="${ck}" data-base="${routeTotals[r] || 0}"><div class="cash-amount">${fmt(cash)}</div>${seisaHtml}</td>`;
     }
     html += `<td class="total-cell grand-total" data-cash-total="${date}">${fmt(cashTotal)}</td></tr>`;
 
@@ -851,6 +895,94 @@ function renderAdmin() {
         }
     }
     content.innerHTML = html;
+}
+
+// ─── Denomination Check Dialog ───────────────────────────────────
+function openDenomDialog(date, route) {
+    currentDenomDate  = date;
+    currentDenomRoute = route;
+
+    // ルートの手持ち現金を .cash-amount から取得
+    const cashKey  = `${date}|${route}`;
+    const amountEl = document.querySelector(`.cash-cell[data-cash-key="${cashKey}"] .cash-amount`);
+    const expected = amountEl ? (parseInt(amountEl.textContent.replace(/,/g, '')) || 0) : 0;
+
+    const [, m, day] = date.split('-');
+    document.getElementById('denom-title').textContent = `💰 現金精査（${parseInt(m)}月${parseInt(day)}日　R${route}）`;
+    document.getElementById('denom-expected-amount').textContent = '¥' + fmt(expected);
+    document.getElementById('denom-expected-val').value = expected;
+
+    // 保存済みの枚数を読み込む
+    const storage = loadDenomStorage();
+    const counts  = storage[cashKey]?.counts || {};
+
+    // 紙幣・硬貨パネルを描画
+    const renderPanel = (containerId, values) => {
+        document.getElementById(containerId).innerHTML = values.map(v => {
+            const d = DENOMINATIONS.find(d => d.value === v);
+            return `<div class="denom-item">
+                <span class="denom-lbl">${d.label}</span>
+                <input type="text" inputmode="numeric" class="denom-input"
+                    data-value="${v}" value="${counts[v] || ''}" placeholder="0">
+                <span class="denom-sub" id="denom-sub-${v}">${counts[v] ? '¥' + fmt(v * counts[v]) : '—'}</span>
+            </div>`;
+        }).join('');
+    };
+    renderPanel('denom-bills', [10000, 5000, 1000]);
+    renderPanel('denom-coins', [500, 100, 50, 10, 5, 1]);
+
+    document.querySelectorAll('.denom-input').forEach(inp => {
+        inp.addEventListener('input', updateDenomCalc);
+        inp.addEventListener('focus', () => { if (inp.value === '0') inp.value = ''; });
+    });
+
+    updateDenomCalc();
+    document.getElementById('denom-dialog').showModal();
+}
+
+function updateDenomCalc() {
+    let total = 0;
+    document.querySelectorAll('.denom-input').forEach(inp => {
+        const count = parseInt(inp.value.replace(/[^\d]/g, '')) || 0;
+        const denom = parseInt(inp.dataset.value);
+        const sub   = count * denom;
+        total += sub;
+        const subCell = document.getElementById(`denom-sub-${denom}`);
+        if (subCell) subCell.textContent = count > 0 ? '¥' + fmt(sub) : '—';
+    });
+    const expected = parseInt(document.getElementById('denom-expected-val').value) || 0;
+    const diff     = total - expected;
+    document.getElementById('denom-total').textContent = '¥' + fmt(total);
+    const diffEl = document.getElementById('denom-diff');
+    if (diff === 0) {
+        diffEl.textContent = '合致 ✓';
+        diffEl.className   = 'denom-diff-ok';
+    } else {
+        const sign = diff > 0 ? '+' : '−';
+        diffEl.textContent = `合致せず　${sign}${fmt(Math.abs(diff))}円`;
+        diffEl.className   = 'denom-diff-ng';
+    }
+}
+
+function closeDenomDialog() {
+    document.getElementById('denom-dialog').close();
+    currentDenomDate  = null;
+    currentDenomRoute = null;
+}
+
+function saveDenomDialog() {
+    const counts = {};
+    document.querySelectorAll('.denom-input').forEach(inp => {
+        const val = parseInt(inp.value.replace(/[^\d]/g, '')) || 0;
+        if (val > 0) counts[inp.dataset.value] = val;
+    });
+    const storage  = loadDenomStorage();
+    const expected = parseInt(document.getElementById('denom-expected-val').value) || 0;
+    const key = `${currentDenomDate}|${currentDenomRoute}`;
+    storage[key] = { counts, expected, savedAt: new Date().toISOString() };
+    saveDenomStorage(storage);
+    closeDenomDialog();
+    renderAdmin();
 }
 
 // ─── Messages ────────────────────────────────────────────────
@@ -1296,8 +1428,9 @@ async function startApp() {
 
         const cashCell = adminContent.querySelector(`[data-cash-key="${ck}"]`);
         if (cashCell) {
-            const base = parseInt(cashCell.dataset.base) || 0;
-            cashCell.textContent = fmt(base + val);
+            const base      = parseInt(cashCell.dataset.base) || 0;
+            const amountDiv = cashCell.querySelector('.cash-amount');
+            if (amountDiv) amountDiv.textContent = fmt(base + val);
         }
 
         let changeTotal = 0;
@@ -1310,7 +1443,10 @@ async function startApp() {
         let cashSum = 0;
         adminContent.querySelectorAll(`.cash-cell[data-cash-key]`).forEach(cell => {
             const [d] = cell.dataset.cashKey.split('|');
-            if (d === date) cashSum += parseInt(cell.textContent.replace(/,/g, '')) || 0;
+            if (d === date) {
+                const amountDiv = cell.querySelector('.cash-amount');
+                cashSum += parseInt((amountDiv ? amountDiv.textContent : cell.textContent).replace(/,/g, '')) || 0;
+            }
         });
         const cashTotal = adminContent.querySelector(`[data-cash-total="${date}"]`);
         if (cashTotal) cashTotal.textContent = fmt(cashSum);
