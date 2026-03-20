@@ -57,7 +57,7 @@ function doPost(e) {
       const sheetName = formatCashSheetName(record.store, record.dataMonth);
       const sheet = getOrCreateSheet(ss, sheetName, CASH_HEADERS, '#c2410c', CASH_COL_WIDTHS);
       upsertRow(sheet, record.key, buildCashRow(record, payload.collectDate || ''));
-      sortSheet(sheet);
+      sortCashSheet(sheet);
 
     // ── 現金集金 削除 ──
     } else if (action === 'remove') {
@@ -105,8 +105,12 @@ function doPost(e) {
         }
       }
 
-      // メモリ上でソート（店舗 → ルート）
-      rows.sort((a, b) => String(a[0]).localeCompare(String(b[0])) || (Number(a[1]) - Number(b[1])));
+      // メモリ上でソート（店舗 → 月 → ルート）
+      rows.sort((a, b) =>
+        String(a[0]).localeCompare(String(b[0])) ||   // 店舗
+        (parseInt(a[2]) - parseInt(b[2])) ||           // 月（"3月" → 3）
+        (Number(a[1]) - Number(b[1]))                  // ルート
+      );
 
       // シートに一括書き込み（ヘッダー行以外を全書き換え）
       if (lastRow > 1) sheet.getRange(2, 1, lastRow - 1, keyCol).clearContent();
@@ -320,13 +324,30 @@ function removeRow(sheet, key, keyCol) {
   if (idx >= 0) sheet.deleteRow(idx + 2);
 }
 
-// ─── 店舗→ルート順ソート ──────────────────────────────
+// ─── 現金集金: 集金日 → ルート → 集金時刻順ソート ────
+function sortCashSheet(sheet) {
+  const dataRows = sheet.getLastRow() - 1;
+  if (dataRows < 2) return;
+  const cols = sheet.getLastColumn();
+  sheet.getRange(2, 1, dataRows, cols)
+    .sort([
+      { column: 6, ascending: true },  // 集金日
+      { column: 1, ascending: true },  // ルート
+      { column: 7, ascending: true },  // 集金時刻
+    ]);
+}
+
+// ─── 店舗→月→ルート順ソート（口座振替・振込入金） ──
 function sortSheet(sheet) {
   const dataRows = sheet.getLastRow() - 1;
   if (dataRows < 2) return;
   const cols = sheet.getLastColumn();
   sheet.getRange(2, 1, dataRows, cols)
-    .sort([{ column: 1, ascending: true }, { column: 2, ascending: true }]);
+    .sort([
+      { column: 1, ascending: true },  // 店舗
+      { column: 3, ascending: true },  // 月
+      { column: 2, ascending: true },  // ルート
+    ]);
 }
 
 // ─── 行データ生成 ─────────────────────────────────────
