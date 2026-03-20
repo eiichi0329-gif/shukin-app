@@ -77,16 +77,21 @@
                 <div class="msg-form-section">
                     <div class="msg-form-title">&#128172; 連絡事項を入力</div>
                     <div class="msg-form-body">
-                        <select id="msg-customer-select" class="msg-select" onchange="onMsgCustomerChange()">
-                            <option value="">顧客を選択してください</option>
-                        </select>
-                        <select id="msg-type-select" class="msg-select msg-type-select">
-                            <option value="">報告内容を選択してください</option>
-                            <option value="連絡事項なし">連絡事項なし</option>
-                            <option value="別紙参照">別紙参照</option>
-                            <option value="口座振替依頼書提出">口座振替依頼書提出</option>
-                        </select>
-                        <textarea id="msg-textarea" class="msg-textarea" placeholder="自由記入（省略可）" rows="3"></textarea>
+                        <label class="msg-no-report-label">
+                            <input type="checkbox" id="msg-no-report-check" onchange="onNoReportChange()">
+                            <span>連絡事項なし</span>
+                        </label>
+                        <div id="msg-detail-fields">
+                            <select id="msg-customer-select" class="msg-select" onchange="onMsgCustomerChange()">
+                                <option value="">顧客を選択してください</option>
+                            </select>
+                            <select id="msg-type-select" class="msg-select msg-type-select">
+                                <option value="">報告内容を選択してください</option>
+                                <option value="別紙参照">別紙参照</option>
+                                <option value="口座振替依頼書提出">口座振替依頼書提出</option>
+                            </select>
+                            <textarea id="msg-textarea" class="msg-textarea" placeholder="自由記入（省略可）" rows="3"></textarea>
+                        </div>
                         <button class="btn btn-primary msg-submit-btn" onclick="submitMessage()">送信</button>
                     </div>
                 </div>

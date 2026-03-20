@@ -431,6 +431,17 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 
 .msg-submit-btn { width: 100%; font-size: 17px; padding: 13px; }
 
+.msg-no-report-label {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px;
+  background: var(--primary-bg); border: 2px solid var(--primary-mid);
+  border-radius: 10px; cursor: pointer; font-weight: 700; font-size: 16px;
+  color: var(--primary-dark);
+}
+.msg-no-report-label input[type="checkbox"] {
+  width: 22px; height: 22px; cursor: pointer; accent-color: var(--primary);
+}
+
 .msg-list-section {
   background: white; border-radius: 12px;
   box-shadow: 0 2px 12px rgba(194,65,12,.12);

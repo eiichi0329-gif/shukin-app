@@ -959,30 +959,35 @@ function fmtMsgTime(iso) {
 }
 
 function onMsgCustomerChange() {
-    // 報告内容セレクトは常に表示（「連絡事項なし」は顧客選択不要）
+    // 報告内容セレクトは常に表示
+}
+
+function onNoReportChange() {
+    const checked = document.getElementById('msg-no-report-check').checked;
+    document.getElementById('msg-detail-fields').classList.toggle('hidden', checked);
 }
 
 function submitMessage() {
+    const noReport = document.getElementById('msg-no-report-check').checked;
     const sel      = document.getElementById('msg-customer-select');
     const typeSel  = document.getElementById('msg-type-select');
     const freeText = document.getElementById('msg-textarea').value.trim();
-    const typeVal  = typeSel.value;
 
-    if (!typeVal && !freeText) { alert('報告内容を選択するか、自由入力欄に入力してください'); return; }
+    let store, route, name, typeVal;
 
-    let store, route, name;
-    if (sel.value) {
+    if (noReport) {
+        store   = filters.store || '';
+        route   = filters.route || '';
+        name    = 'なし';
+        typeVal = '連絡事項なし';
+    } else {
+        typeVal = typeSel.value;
+        if (!typeVal && !freeText) { alert('報告内容を選択するか、自由入力欄に入力してください'); return; }
+        if (!sel.value) { alert('顧客を選択してください'); return; }
         const opt = sel.selectedOptions[0];
         store = opt.dataset.store;
         route = opt.dataset.route;
         name  = opt.dataset.name;
-    } else if (typeVal === '連絡事項なし') {
-        store = filters.store || '';
-        route = filters.route || '';
-        name  = 'なし';
-    } else {
-        alert('顧客を選択してください');
-        return;
     }
 
     const parts = [];
@@ -1004,6 +1009,8 @@ function submitMessage() {
     msgs.push(msg);
     saveMessages(msgs);
 
+    document.getElementById('msg-no-report-check').checked = false;
+    document.getElementById('msg-detail-fields').classList.remove('hidden');
     typeSel.value = '';
     document.getElementById('msg-textarea').value = '';
 
