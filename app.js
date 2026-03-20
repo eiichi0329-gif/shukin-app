@@ -1093,6 +1093,41 @@ async function syncCheckboxes() {
             });
         }
 
+        // 振込入金の同期（スプレッドシート削除→アプリ側も取り消し）
+        if (json.transferData !== undefined) {
+            const remote = json.transferData;
+            let changed = false;
+            Object.entries(remote).forEach(([key, val]) => {
+                if (!transferState[key]) {
+                    transferState[key] = { date: val.date, recordedAt: '' };
+                    changed = true;
+                }
+            });
+            Object.keys(transferState).forEach(key => {
+                if (!remote[key]) { delete transferState[key]; changed = true; }
+            });
+            if (changed) saveTransferState();
+        }
+
+        // 口座振替の同期（スプレッドシート削除→アプリ側の完了を取り消し）
+        if (json.bankData !== undefined) {
+            const remote = json.bankData;
+            let changed = false;
+            Object.keys(remote).forEach(key => {
+                if (!bankState[key] || bankState[key].status !== 'completed') {
+                    bankState[key] = { status: 'completed', updatedAt: '' };
+                    changed = true;
+                }
+            });
+            Object.keys(bankState).forEach(key => {
+                // failed はローカル専用状態なので保持、completed のみ削除対象
+                if (bankState[key]?.status === 'completed' && !remote[key]) {
+                    delete bankState[key]; changed = true;
+                }
+            });
+            if (changed) saveBankState();
+        }
+
         saveChecked();
         renderTable();
 

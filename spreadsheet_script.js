@@ -244,6 +244,32 @@ function doGet(e) {
       }
     }
 
+    // 振込入金シートを読み込む（key → { date }）
+    // TRANSFER_HEADERS: 店舗/ルート/月/名前/住所/金額/振込日(col7)/記録日時(col8)/キー(col9)
+    const transferSheetR = ss.getSheetByName(TRANSFER_SHEET);
+    const transferData = {};
+    if (transferSheetR && transferSheetR.getLastRow() >= 2) {
+      const rows = transferSheetR.getRange(2, 7, transferSheetR.getLastRow() - 1, 3).getValues();
+      for (const [transferDate, , key] of rows) {
+        if (!key) continue;
+        const dateStr = (transferDate instanceof Date)
+          ? Utilities.formatDate(transferDate, 'Asia/Tokyo', 'yyyy-MM-dd')
+          : String(transferDate);
+        transferData[String(key)] = { date: dateStr };
+      }
+    }
+
+    // 口座振替シートを読み込む（key → { status: 'completed' }）
+    // BANK_HEADERS: 店舗/ルート/月/名前/住所/金額/完了日時(col7)/キー(col8)
+    const bankSheetR = ss.getSheetByName(BANK_SHEET);
+    const bankData = {};
+    if (bankSheetR && bankSheetR.getLastRow() >= 2) {
+      const keys = bankSheetR.getRange(2, 8, bankSheetR.getLastRow() - 1, 1).getValues().flat();
+      for (const key of keys) {
+        if (key) bankData[String(key)] = { status: 'completed' };
+      }
+    }
+
     // 連絡事項シートを読み込む
     const msgSheet = ss.getSheetByName(MSG_SHEET);
     const messages = [];
@@ -263,7 +289,7 @@ function doGet(e) {
     }
 
     return ContentService
-      .createTextOutput(JSON.stringify({ ok: true, checkedData, messages }))
+      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (err) {
