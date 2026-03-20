@@ -378,6 +378,21 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   .filter-row, .action-row { flex: 1; }
 }
 
+/* ── Pull to Refresh ─────────────────────────────────────────── */
+#ptr-indicator {
+  height: 0; overflow: hidden;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--primary-bg); color: var(--primary);
+  font-size: 14px; font-weight: 700;
+}
+#ptr-icon {
+  font-size: 22px; display: inline-block;
+  transition: transform 0.2s ease;
+}
+.ptr-ready #ptr-icon  { transform: rotate(180deg); }
+.ptr-loading #ptr-icon { animation: ptr-spin 0.7s linear infinite; }
+@keyframes ptr-spin { to { transform: rotate(360deg); } }
+
 @media print {
   .app-header { position: static; background: #fff; color: #000; }
   .controls-bar, .bottom-nav { display: none; }

@@ -1315,3 +1315,61 @@ async function startApp() {
 }
 
 window.addEventListener('DOMContentLoaded', startApp);
+
+// ─── Pull to Refresh ─────────────────────────────────────────────
+(function initPullToRefresh() {
+    const THRESHOLD = 65;
+    let startY = 0;
+    let currentY = 0;
+    let active = false;
+
+    const ind = document.createElement('div');
+    ind.id = 'ptr-indicator';
+    ind.innerHTML = '<span id="ptr-icon">↓</span><span id="ptr-text">引っ張って更新</span>';
+    document.querySelector('.app-header').insertAdjacentElement('afterend', ind);
+
+    document.addEventListener('touchstart', e => {
+        if (window.scrollY === 0) {
+            startY = e.touches[0].clientY;
+            currentY = startY;
+            active = true;
+        }
+    }, { passive: true });
+
+    document.addEventListener('touchmove', e => {
+        if (!active) return;
+        currentY = e.touches[0].clientY;
+        const delta = currentY - startY;
+        if (delta <= 0) { ind.style.height = '0px'; return; }
+        ind.style.height = Math.min(delta * 0.45, 56) + 'px';
+        const ready = delta >= THRESHOLD;
+        ind.classList.toggle('ptr-ready', ready);
+        document.getElementById('ptr-icon').textContent = ready ? '↑' : '↓';
+        document.getElementById('ptr-text').textContent = ready ? '離して更新' : '引っ張って更新';
+    }, { passive: true });
+
+    document.addEventListener('touchend', () => {
+        if (!active) return;
+        active = false;
+        const delta = currentY - startY;
+        if (delta >= THRESHOLD) {
+            ind.style.height = '50px';
+            ind.classList.add('ptr-loading');
+            document.getElementById('ptr-icon').textContent = '↻';
+            document.getElementById('ptr-text').textContent = '更新中...';
+            syncCheckboxes().finally(() => {
+                ind.style.transition = 'height 0.3s ease';
+                ind.style.height = '0px';
+                setTimeout(() => {
+                    ind.style.transition = '';
+                    ind.classList.remove('ptr-ready', 'ptr-loading');
+                }, 320);
+            });
+        } else {
+            ind.style.transition = 'height 0.3s ease';
+            ind.style.height = '0px';
+            setTimeout(() => { ind.style.transition = ''; }, 320);
+        }
+        currentY = 0;
+    }, { passive: true });
+})();
