@@ -125,7 +125,37 @@ function getGasUrl() {
         : (localStorage.getItem('gas_url') || '');
 }
 
-// GAS への POST 送信（sendBeacon 優先、サイズ超過や失敗時は fetch にフォールバック）
+// ─── GAS リトライキュー ───────────────────────────────────────────
+const RETRY_QUEUE_KEY    = 'coll-retry-queue-v1';
+const RETRY_MAX_AGE_MS   = 24 * 60 * 60 * 1000; // 24時間以上古いものは破棄
+
+function loadRetryQueue() {
+    try { return JSON.parse(localStorage.getItem(RETRY_QUEUE_KEY) || '[]'); } catch { return []; }
+}
+function saveRetryQueue(q) {
+    localStorage.setItem(RETRY_QUEUE_KEY, JSON.stringify(q));
+}
+
+async function flushRetryQueue() {
+    const url = getGasUrl();
+    if (!url || !navigator.onLine) return;
+    const now = Date.now();
+    const q = loadRetryQueue().filter(item => now - item.savedAt < RETRY_MAX_AGE_MS);
+    if (!q.length) { saveRetryQueue([]); return; }
+    const failed = [];
+    for (const item of q) {
+        try {
+            await fetch(item.url, { method: 'POST', mode: 'no-cors', body: item.body });
+        } catch {
+            failed.push(item);
+        }
+    }
+    saveRetryQueue(failed);
+    const sent = q.length - failed.length;
+    if (sent > 0) console.log(`[GASリトライ] ${sent}件 再送信成功`);
+}
+
+// GAS への POST 送信（sendBeacon 優先、失敗時は fetch → リトライキューにフォールバック）
 function postToGas(url, data) {
     const body = JSON.stringify(data);
     if (navigator.sendBeacon) {
@@ -134,7 +164,12 @@ function postToGas(url, data) {
         // sendBeacon 失敗（64KB超過など）→ fetch にフォールバック
     }
     fetch(url, { method: 'POST', mode: 'no-cors', body })
-        .catch(e => console.error('送信エラー', e));
+        .catch(() => {
+            // ネットワークエラー → リトライキューに保存
+            const q = loadRetryQueue();
+            q.push({ url, body, savedAt: Date.now() });
+            saveRetryQueue(q);
+        });
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────
@@ -334,21 +369,30 @@ function renderTable() {
 
 // ─── Check Action ────────────────────────────────────────────────
 function onCheck(key, isChecked) {
+    let gasKey    = key;
+    let incAmount = null;
+
     if (!isChecked) {
         if (!confirm('チェックを解除しますか？')) {
             const cb = document.querySelector(`input[data-key="${key}"]`);
             if (cb) cb.checked = true;
             return;
         }
+        gasKey = checked[key]?.gasKey || key; // 削除前に保存したキーで GAS 行を消す
         delete checked[key];
     } else {
-        const today   = new Date();
-        const jstDate = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
-        const record  = allData.find(r => getKey(r) === key);
+        const today          = new Date();
+        const jstDate        = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+        const record         = allData.find(r => getKey(r) === key);
+        const isReCollection = !!(checked[key]?.collectedAmount); // 再集金かどうか
+        incAmount = isReCollection ? displayAmount(key, record) : effectiveAmount(key, record);
+        gasKey    = isReCollection ? `${key}|${Date.now()}` : key; // 再集金は別キーで新規行
+
         checked[key] = {
             checkedAt:       today.toISOString(),
-            collectDate:     (checked[key] || {}).collectDate || jstDate,
+            collectDate:     isReCollection ? jstDate : ((checked[key] || {}).collectDate || jstDate),
             collectedAmount: effectiveAmount(key, record), // 集金時点のExcel金額を記録
+            gasKey,
             // 管理画面の履歴表示用スナップショット（data.js が更新されても記録が消えないよう保持）
             snapshot: record ? {
                 name:      record.name,
@@ -374,11 +418,12 @@ function onCheck(key, isChecked) {
     // GAS 送信
     const url = getGasUrl();
     if (url) {
-        const record = allData.find(r => getKey(r) === key);
-        const state  = checked[key] || {};
+        const record     = allData.find(r => getKey(r) === key);
+        const state      = checked[key] || {};
+        const sendAmount = incAmount !== null ? incAmount : effectiveAmount(key, record);
         postToGas(url, {
             action:      isChecked ? 'add' : 'remove',
-            record:      { ...record, key, checkedAt: state.checkedAt || '' },
+            record:      { ...record, key: gasKey, amount: sendAmount, checkedAt: state.checkedAt || '' },
             collectDate: state.collectDate || ''
         });
 
@@ -1480,6 +1525,10 @@ async function startApp() {
     // GAS 自動同期
     syncCheckboxes();
     setInterval(syncCheckboxes, 30000);
+
+    // 起動時にリトライキューを送信、オンライン復帰時も自動リトライ
+    flushRetryQueue();
+    window.addEventListener('online', flushRetryQueue);
 }
 
 window.addEventListener('DOMContentLoaded', startApp);
