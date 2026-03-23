@@ -44,7 +44,7 @@ const AMOUNT_LOG_HEADERS = ['店舗', 'ルート', '月', '名前', '修正前�
 const AMOUNT_LOG_COL_WIDTHS = [100, 70, 70, 160, 100, 100, 160, 1];
 
 const ALLOWED_USERS_SHEET   = '許可ユーザー';
-const ALLOWED_USERS_HEADERS = ['名前', 'メールアドレス'];
+const ALLOWED_USERS_HEADERS = ['店舗名', '名前', 'メールアドレス'];
 
 // doGet でチェックデータ読み取りをスキップするシート名
 const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET]);
@@ -239,7 +239,7 @@ function doGet(e) {
           .createTextOutput(JSON.stringify({ ok: true, allowed: true }))
           .setMimeType(ContentService.MimeType.JSON);
       }
-      const emails = sheet.getRange(2, 2, sheet.getLastRow() - 1, 1).getValues()
+      const emails = sheet.getRange(2, 3, sheet.getLastRow() - 1, 1).getValues()
         .flat().map(v => String(v).trim().toLowerCase()).filter(v => v);
       const allowed = emails.includes(email);
       return ContentService
