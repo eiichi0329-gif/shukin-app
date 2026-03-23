@@ -43,8 +43,11 @@ const AMOUNT_LOG_SHEET   = '金額修正';
 const AMOUNT_LOG_HEADERS = ['店舗', 'ルート', '月', '名前', '修正前金額', '修正後金額', '修正日時', 'キー'];
 const AMOUNT_LOG_COL_WIDTHS = [100, 70, 70, 160, 100, 100, 160, 1];
 
+const ALLOWED_USERS_SHEET   = '許可ユーザー';
+const ALLOWED_USERS_HEADERS = ['メールアドレス', '名前（メモ）'];
+
 // doGet でチェックデータ読み取りをスキップするシート名
-const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET]);
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET]);
 
 // ─── メインハンドラ ───────────────────────────────────
 function doPost(e) {
@@ -225,6 +228,24 @@ function doPost(e) {
 function doGet(e) {
   try {
     const ss     = SpreadsheetApp.getActiveSpreadsheet();
+
+    // ── 認証チェック ──
+    if (e?.parameter?.action === 'checkAuth') {
+      const email = (e?.parameter?.email || '').trim().toLowerCase();
+      const sheet = ss.getSheetByName(ALLOWED_USERS_SHEET);
+      if (!sheet || sheet.getLastRow() < 2) {
+        // シートが存在しない or 空 → 全員許可
+        return ContentService
+          .createTextOutput(JSON.stringify({ ok: true, allowed: true }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+      const emails = sheet.getRange(2, 1, sheet.getLastRow() - 1, 1).getValues()
+        .flat().map(v => String(v).trim().toLowerCase()).filter(v => v);
+      const allowed = emails.includes(email);
+      return ContentService
+        .createTextOutput(JSON.stringify({ ok: true, allowed }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
     const sheets = ss.getSheets();
     const checkedData = {};
 

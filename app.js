@@ -23,16 +23,45 @@ function decodeJwt(token) {
     } catch { return null; }
 }
 
-function onGoogleSignIn(response) {
+async function onGoogleSignIn(response) {
     const payload = decodeJwt(response.credential);
     if (!payload) {
-        document.getElementById('login-error').textContent = '認証に失敗しました。再度お試しください。';
-        document.getElementById('login-error').classList.remove('hidden');
+        showLoginError('認証に失敗しました。再度お試しください。');
         return;
     }
-    currentUser = { name: payload.name, email: payload.email, picture: payload.picture };
+    const user = { name: payload.name, email: payload.email, picture: payload.picture };
+
+    // GAS が設定済みの場合は許可ユーザーを確認
+    const gasUrl = (typeof window.GAS_URL === 'string' && window.GAS_URL)
+        ? window.GAS_URL
+        : (localStorage.getItem('gas_url') || '');
+
+    if (gasUrl) {
+        try {
+            showLoginError('確認中...', false);
+            const url = `${gasUrl}?action=checkAuth&email=${encodeURIComponent(user.email)}&t=${Date.now()}`;
+            const res = await fetch(url);
+            const json = await res.json();
+            if (!json.allowed) {
+                showLoginError(`${user.email} はアクセスが許可されていません。`);
+                google.accounts.id.disableAutoSelect();
+                return;
+            }
+        } catch {
+            // GAS に繋がらない場合は通過させる（ネットワークエラー時も使えるよう）
+        }
+    }
+
+    currentUser = user;
     saveAuth(currentUser);
     showApp();
+}
+
+function showLoginError(msg, isError = true) {
+    const el = document.getElementById('login-error');
+    el.textContent = msg;
+    el.style.color = isError ? 'var(--red)' : 'var(--g500)';
+    el.classList.remove('hidden');
 }
 
 function showApp() {
