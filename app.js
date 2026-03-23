@@ -82,6 +82,22 @@ function effectiveAmount(key, record) {
     return amountOverrides[key] !== undefined ? amountOverrides[key] : (record.amount || 0);
 }
 
+// 集金済み金額との差分（追加注文があった場合は差額を返す）
+function displayAmount(key, r) {
+    const base         = effectiveAmount(key, r);
+    const collectedAmt = checked[key]?.collectedAmount || 0;
+    if (collectedAmt > 0 && base > collectedAmt) return base - collectedAmt;
+    return base;
+}
+
+// 集金済み金額がExcel金額以上 → 完全集金済み
+function isFullyCollected(key, r) {
+    if (!checked[key]) return false;
+    const collectedAmt = checked[key].collectedAmount || 0;
+    if (collectedAmt === 0) return true; // 旧データ互換：金額未記録は集金済みとみなす
+    return effectiveAmount(key, r) <= collectedAmt;
+}
+
 // ─── Transfer State ───────────────────────────────────────────────
 function loadTransferState() {
     try { return JSON.parse(localStorage.getItem(TRANSFER_KEY) || '{}'); } catch { return {}; }
@@ -160,12 +176,17 @@ function filteredData() {
         // 振込入金済み：未集金フィルター ON のとき非表示
         if (transferState[key] && filters.uncollectedOnly) return false;
 
-        if (filters.uncollectedOnly && checked[key]) {
-            // 当日チェックしたものは終日リストに残す
-            const state      = checked[key];
-            const checkedDay = new Date(state.checkedAt).toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
-            const today      = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
-            if (checkedDay !== today) return false;
+        if (checked[key]) {
+            if (isFullyCollected(key, r)) {
+                // 完全集金済み：当日チェックしたものは終日リストに残す
+                if (filters.uncollectedOnly) {
+                    const state      = checked[key];
+                    const checkedDay = new Date(state.checkedAt).toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+                    const today      = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+                    if (checkedDay !== today) return false;
+                }
+            }
+            // 追加注文あり（差額が残っている）→ 未集金として表示
         }
         if (filters.search) {
             const q = filters.search.toLowerCase();
@@ -220,7 +241,7 @@ function renderTable() {
     let html = '';
     data.forEach(r => {
         const key            = getKey(r);
-        const isChecked      = !!checked[key];
+        const isChecked      = !!checked[key] && isFullyCollected(key, r);
         const state          = checked[key] || {};
         const date           = state.collectDate || '';
         const effPayment     = effectivePaymentType(r);
@@ -269,7 +290,7 @@ function renderTable() {
             <td class="col-month">${r.dataMonth.slice(5)}月</td>
             <td class="col-name"><div class="name-inner">${payBadge}${r.name}</div></td>
             <td class="col-addr">${r.address || ''}</td>
-            <td class="col-amount">¥${fmt(r.amount)}</td>
+            <td class="col-amount">¥${fmt(displayAmount(key, r))}</td>
             ${dateCellHtml}
             ${transferCellHtml}
         </tr>`;
@@ -325,8 +346,9 @@ function onCheck(key, isChecked) {
         const jstDate = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
         const record  = allData.find(r => getKey(r) === key);
         checked[key] = {
-            checkedAt:   today.toISOString(),
-            collectDate: (checked[key] || {}).collectDate || jstDate,
+            checkedAt:       today.toISOString(),
+            collectDate:     (checked[key] || {}).collectDate || jstDate,
+            collectedAmount: effectiveAmount(key, record), // 集金時点のExcel金額を記録
             // 管理画面の履歴表示用スナップショット（data.js が更新されても記録が消えないよう保持）
             snapshot: record ? {
                 name:      record.name,
@@ -1210,11 +1232,14 @@ async function syncCheckboxes() {
                 if (dirtyKeys.has(key)) return; // 送信直後のキーは上書きしない
                 if (!checked[key]) {
                     // リモートから追加（スナップショットなし）
-                    checked[key] = { checkedAt: new Date().toISOString(), collectDate: val.collectDate || '' };
+                    checked[key] = { checkedAt: new Date().toISOString(), collectDate: val.collectDate || '', collectedAmount: val.collectedAmount || 0 };
                 } else {
-                    // 既存エントリはスナップショットを保持しつつ、collectDate だけ補完
+                    // 既存エントリはスナップショットを保持しつつ、collectDate・collectedAmount を補完
                     if (!checked[key].collectDate && val.collectDate) {
                         checked[key].collectDate = val.collectDate;
+                    }
+                    if (val.collectedAmount && !checked[key].collectedAmount) {
+                        checked[key].collectedAmount = val.collectedAmount;
                     }
                 }
             });

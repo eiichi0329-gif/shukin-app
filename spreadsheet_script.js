@@ -235,10 +235,10 @@ function doGet(e) {
       const lastRow = sheet.getLastRow();
       if (lastRow < 2) continue;
 
-      // 現金集金シート: col6=集金日, col7=集金時刻, col8=キー
-      const data = sheet.getRange(2, 6, lastRow - 1, 3).getValues();
-      for (const [collectDate, , key] of data) {
-        if (key) checkedData[key] = { collectDate: collectDate || '' };
+      // 現金集金シート: col5=金額, col6=集金日, col7=集金時刻, col8=キー
+      const data = sheet.getRange(2, 5, lastRow - 1, 4).getValues();
+      for (const [amount, collectDate, , key] of data) {
+        if (key) checkedData[key] = { collectDate: collectDate || '', collectedAmount: Number(amount) || 0 };
       }
     }
 
