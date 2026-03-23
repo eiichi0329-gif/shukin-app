@@ -7,13 +7,13 @@ const AUTH_KEY = 'coll-auth-v1';
 let currentUser = null; // { name, email, picture }
 
 function loadAuth() {
-    try { return JSON.parse(sessionStorage.getItem(AUTH_KEY) || 'null'); } catch { return null; }
+    try { return JSON.parse(localStorage.getItem(AUTH_KEY) || 'null'); } catch { return null; }
 }
 function saveAuth(user) {
-    sessionStorage.setItem(AUTH_KEY, JSON.stringify(user));
+    localStorage.setItem(AUTH_KEY, JSON.stringify(user));
 }
 function clearAuth() {
-    sessionStorage.removeItem(AUTH_KEY);
+    localStorage.removeItem(AUTH_KEY);
 }
 
 function decodeJwt(token) {
