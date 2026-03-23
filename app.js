@@ -1,5 +1,97 @@
 // 集金管理アプリ v3
 
+// ─── Google OAuth 認証 ────────────────────────────────────────────
+const GOOGLE_CLIENT_ID = '774508511200-pgglmg87l7mjha2ktp4s48d30farec6p.apps.googleusercontent.com';
+const AUTH_KEY = 'coll-auth-v1';
+
+let currentUser = null; // { name, email, picture }
+
+function loadAuth() {
+    try { return JSON.parse(sessionStorage.getItem(AUTH_KEY) || 'null'); } catch { return null; }
+}
+function saveAuth(user) {
+    sessionStorage.setItem(AUTH_KEY, JSON.stringify(user));
+}
+function clearAuth() {
+    sessionStorage.removeItem(AUTH_KEY);
+}
+
+function decodeJwt(token) {
+    try {
+        const payload = token.split('.')[1];
+        return JSON.parse(atob(payload.replace(/-/g, '+').replace(/_/g, '/')));
+    } catch { return null; }
+}
+
+function onGoogleSignIn(response) {
+    const payload = decodeJwt(response.credential);
+    if (!payload) {
+        document.getElementById('login-error').textContent = '認証に失敗しました。再度お試しください。';
+        document.getElementById('login-error').classList.remove('hidden');
+        return;
+    }
+    currentUser = { name: payload.name, email: payload.email, picture: payload.picture };
+    saveAuth(currentUser);
+    showApp();
+}
+
+function showApp() {
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('app').classList.remove('hidden');
+
+    // ヘッダーにユーザー情報を反映
+    const avatar = document.getElementById('user-avatar');
+    if (avatar && currentUser?.picture) {
+        avatar.src = currentUser.picture;
+        avatar.title = currentUser.name + ' (' + currentUser.email + ')';
+    }
+
+    startApp();
+}
+
+function logout() {
+    if (!confirm('ログアウトしますか？')) return;
+    clearAuth();
+    google.accounts.id.disableAutoSelect();
+    currentUser = null;
+    document.getElementById('app').classList.add('hidden');
+    document.getElementById('login-screen').style.display = '';
+    // ログインボタンを再表示
+    initGoogleSignIn();
+}
+
+function initGoogleSignIn() {
+    google.accounts.id.initialize({
+        client_id: GOOGLE_CLIENT_ID,
+        callback: onGoogleSignIn,
+        auto_select: false,
+    });
+    google.accounts.id.renderButton(
+        document.getElementById('google-signin-btn'),
+        { theme: 'outline', size: 'large', locale: 'ja', width: 280 }
+    );
+}
+
+function initAuth() {
+    const saved = loadAuth();
+    if (saved) {
+        currentUser = saved;
+        showApp();
+        return;
+    }
+    // GIS ライブラリのロード待ち
+    const ready = () => {
+        if (typeof google !== 'undefined' && google.accounts) {
+            initGoogleSignIn();
+        } else {
+            setTimeout(ready, 100);
+        }
+    };
+    ready();
+}
+
+window.addEventListener('DOMContentLoaded', initAuth);
+
 const LS_KEY             = 'coll-state-v3';
 const BANK_KEY           = 'coll-bank-v1';
 const TRANSFER_KEY       = 'coll-transfer-v1';
@@ -1531,7 +1623,7 @@ async function startApp() {
     window.addEventListener('online', flushRetryQueue);
 }
 
-window.addEventListener('DOMContentLoaded', startApp);
+// startApp は initAuth → showApp から呼ばれる（直接 DOMContentLoaded では呼ばない）
 
 // ─── Pull to Refresh ─────────────────────────────────────────────
 (function initPullToRefresh() {

@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>集金管理アプリ</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async></script>
 </head>
 <body>
-    <div id="app">
+    <!-- ログイン画面 -->
+    <div id="login-screen">
+        <div class="login-card">
+            <div class="login-logo">&#128203;</div>
+            <h2 class="login-title">集金管理アプリ</h2>
+            <p class="login-desc">Googleアカウントでログインしてください</p>
+            <div id="google-signin-btn"></div>
+            <p id="login-error" class="login-error hidden"></p>
+        </div>
+    </div>
+
+    <div id="app" class="hidden">
 
         <!-- ヘッダー -->
         <div class="app-header">
@@ -15,6 +27,10 @@
                 <h1>集金管理アプリ</h1>
                 <span class="month-badge" id="month-badge">—</span>
                 <span id="loading-badge" style="background:rgba(255,255,255,0.25);border-radius:20px;padding:3px 10px;font-size:13px;margin-left:auto">読込中...</span>
+                <div class="header-user" id="header-user">
+                    <img id="user-avatar" class="user-avatar" src="" alt="">
+                    <button class="btn-logout" onclick="logout()" title="ログアウト">ログアウト</button>
+                </div>
             </div>
         </div>
 
