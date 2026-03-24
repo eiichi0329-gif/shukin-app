@@ -123,16 +123,20 @@ window.addEventListener('DOMContentLoaded', initAuth);
 
 const LS_KEY             = 'coll-state-v3';
 const BANK_KEY           = 'coll-bank-v1';
+const BANK_FAILED_KEY    = 'coll-bank-failed-v1'; // 口振失敗（現金変更）した顧客キーの永続セット
 const TRANSFER_KEY       = 'coll-transfer-v1';
 const FILTER_KEY         = 'coll-filter-v1';
 const AMOUNT_OVERRIDE_KEY = 'coll-amount-override-v1';
 const DENOM_KEY           = 'coll-denom-v1';
+const MANUAL_RECORDS_KEY  = 'coll-manual-v1';
 const DIRTY_GRACE_MS = 35000; // ローカル変更を守る猶予時間（ms）
 
 // ─── State ───────────────────────────────────────────────────────
 let allData         = [];
+let manualRecords   = [];   // 手動追加レコード
 let checked         = {};   // key → { checkedAt, collectDate }
 let bankState       = {};   // key → { status: 'completed'|'failed', updatedAt }
+let bankFailedKeys  = new Set(); // 口振失敗として手動確定したキー（同期で絶対に上書きしない）
 let transferState   = {};   // key → { date: 'YYYY-MM-DD', recordedAt: ISO }
 let amountOverrides = {};   // key → number（管理画面で手修正した金額）
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
@@ -181,6 +185,24 @@ function saveBankState() {
     localStorage.setItem(BANK_KEY, JSON.stringify(bankState));
 }
 
+// ─── Bank Failed Keys（口振失敗の永続セット） ───────────────────
+function loadBankFailedKeys() {
+    try { return new Set(JSON.parse(localStorage.getItem(BANK_FAILED_KEY) || '[]')); } catch { return new Set(); }
+}
+function saveBankFailedKeys() {
+    localStorage.setItem(BANK_FAILED_KEY, JSON.stringify([...bankFailedKeys]));
+}
+function markBankFailed(key) {
+    bankState[key] = { status: 'failed', updatedAt: new Date().toISOString() };
+    bankFailedKeys.add(key);
+    saveBankFailedKeys();
+    saveBankState();
+}
+function unmarkBankFailed(key) {
+    bankFailedKeys.delete(key);
+    saveBankFailedKeys();
+}
+
 // ─── Amount Override State ────────────────────────────────────────
 function loadAmountOverrides() {
     try { return JSON.parse(localStorage.getItem(AMOUNT_OVERRIDE_KEY) || '{}'); } catch { return {}; }
@@ -211,12 +233,13 @@ function displayAmount(key, r) {
     return base;
 }
 
-// 集金済み金額がExcel金額以上 → 完全集金済み
+// Excel金額 === 集金済み金額 → 完全集金済み
+// Excel金額が変わった（新規注文含む）場合は未集金として表示
 function isFullyCollected(key, r) {
     if (!checked[key]) return false;
     const collectedAmt = checked[key].collectedAmount || 0;
     if (collectedAmt === 0) return true; // 旧データ互換：金額未記録は集金済みとみなす
-    return effectiveAmount(key, r) <= collectedAmt;
+    return effectiveAmount(key, r) === collectedAmt;
 }
 
 // ─── Transfer State ───────────────────────────────────────────────
@@ -230,7 +253,7 @@ function saveTransferState() {
 // 口振失敗した顧客は実効的に現金扱いにする
 function effectivePaymentType(r) {
     const key = getKey(r);
-    if (bankState[key]?.status === 'failed') return 'cash';
+    if (bankState[key]?.status === 'failed' || bankFailedKeys.has(key)) return 'cash';
     return r.paymentType;
 }
 
@@ -586,8 +609,7 @@ function onBankCheck(key, isChecked) {
             if (cb) cb.checked = true;
             return;
         }
-        bankState[key] = { status: 'failed', updatedAt: new Date().toISOString() };
-        saveBankState();
+        markBankFailed(key); // bankState['failed'] + bankFailedKeys に永続保存
 
         // GAS 送信（口座振替シートから削除）
         const url = getGasUrl();
@@ -685,14 +707,18 @@ function registerBulkBank() {
     const now = new Date();
     success.forEach(key => {
         bankState[key] = { status: 'completed', updatedAt: now.toISOString() };
+        unmarkBankFailed(key); // 完了扱いに戻す場合は失敗セットから除外
     });
     failed.forEach(key => {
         bankState[key] = { status: 'failed', updatedAt: now.toISOString() };
+        bankFailedKeys.add(key); // 永続セットに追加
     });
     revert.forEach(key => {
         delete bankState[key]; // 完了状態を削除して未処理に戻す
+        unmarkBankFailed(key);
     });
 
+    saveBankFailedKeys();
     saveBankState();
 
     // GAS 送信（全員分を1回のリクエストにまとめて送信）
@@ -780,6 +806,94 @@ function onTransferRevert(key) {
     renderTable();
 }
 
+// ─── Manual Record Addition ──────────────────────────────────────
+function loadManualRecords() {
+    try { return JSON.parse(localStorage.getItem(MANUAL_RECORDS_KEY) || '[]'); } catch { return []; }
+}
+function saveManualRecords() {
+    localStorage.setItem(MANUAL_RECORDS_KEY, JSON.stringify(manualRecords));
+}
+
+function openManualAdd() {
+    const stores = (window.DATA_META?.stores) || [...new Set(allData.filter(r => !r.isManual).map(r => r.store))];
+    const months = [...new Set(allData.filter(r => !r.isManual).map(r => r.dataMonth))].sort().reverse();
+
+    document.getElementById('manual-store').innerHTML =
+        stores.map(s => `<option value="${s}">${s}</option>`).join('');
+    document.getElementById('manual-month').innerHTML =
+        months.map(m => `<option value="${m}">${m}</option>`).join('');
+
+    renderManualList();
+    document.getElementById('manual-add-dialog').showModal();
+}
+
+function closeManualAdd() {
+    document.getElementById('manual-add-dialog').close();
+}
+
+function addManualRecord() {
+    const store       = document.getElementById('manual-store').value;
+    const dataMonth   = document.getElementById('manual-month').value;
+    const route       = parseInt(document.getElementById('manual-route').value) || 0;
+    const name        = document.getElementById('manual-name').value.trim();
+    const address     = document.getElementById('manual-address').value.trim();
+    const amount      = parseInt(document.getElementById('manual-amount').value) || 0;
+    const paymentType = document.getElementById('manual-payment').value;
+
+    if (!name)    { alert('名前を入力してください');   return; }
+    if (amount <= 0) { alert('金額を入力してください（1円以上）'); return; }
+
+    const record = {
+        id: 'manual_' + Date.now(),
+        store, route, name, address, amount, dataMonth, paymentType,
+        code: 0, seq: 9999, isManual: true, sourceFiles: ['手動追加']
+    };
+
+    manualRecords.push(record);
+    saveManualRecords();
+    allData.push(record);
+
+    // フォームリセット
+    document.getElementById('manual-name').value    = '';
+    document.getElementById('manual-address').value = '';
+    document.getElementById('manual-amount').value  = '';
+    document.getElementById('manual-route').value   = '';
+
+    renderManualList();
+    renderFilters();
+    renderTable();
+}
+
+function deleteManualRecord(id) {
+    if (!confirm('この手動追加レコードを削除しますか？\nチェック状態も削除されます。')) return;
+    const rec = manualRecords.find(r => r.id === id);
+    manualRecords = manualRecords.filter(r => r.id !== id);
+    saveManualRecords();
+    allData = allData.filter(r => r.id !== id);
+    if (rec) {
+        const key = getKey(rec);
+        delete checked[key];
+        saveChecked();
+    }
+    renderManualList();
+    renderFilters();
+    renderTable();
+}
+
+function renderManualList() {
+    const list = document.getElementById('manual-list');
+    if (!manualRecords.length) {
+        list.innerHTML = '<p class="manual-empty">手動追加レコードはありません</p>';
+        return;
+    }
+    list.innerHTML = manualRecords.map(r => `
+        <div class="manual-record-item">
+            <span class="manual-record-info">${r.store}／${r.dataMonth}／R${r.route}／${r.name}／¥${fmt(r.amount)}</span>
+            <button class="btn btn-danger manual-delete-btn" onclick="deleteManualRecord('${r.id}')">削除</button>
+        </div>
+    `).join('');
+}
+
 // ─── Admin Actions Toggle ────────────────────────────────────────
 function toggleAdminActions() {
     const row = document.getElementById('action-row');
@@ -793,9 +907,11 @@ function resetAll() {
     if (!confirm('全てのチェック（現金・口座振替・振込）をリセットしますか？\nこの操作は元に戻せません。')) return;
     checked       = {};
     bankState     = {};
+    bankFailedKeys.clear();
     transferState = {};
     saveChecked();
     saveBankState();
+    saveBankFailedKeys();
     saveTransferState();
     dirtyKeys.clear();
     renderTable();
@@ -1445,6 +1561,8 @@ async function syncCheckboxes() {
             const remote = json.bankData;
             let changed = false;
             Object.keys(remote).forEach(key => {
+                // 失敗マーク済み（bankFailedKeys または bankState）は絶対に上書きしない
+                if (bankFailedKeys.has(key) || bankState[key]?.status === 'failed') return;
                 if (!bankState[key] || bankState[key].status !== 'completed') {
                     bankState[key] = { status: 'completed', updatedAt: '' };
                     changed = true;
@@ -1528,11 +1646,20 @@ async function startApp() {
         return;
     }
 
-    allData         = window.COLLECTION_DATA;
+    manualRecords   = loadManualRecords();
+    allData         = [...window.COLLECTION_DATA, ...manualRecords];
     checked         = loadChecked();
     bankState       = loadBankState();
+    bankFailedKeys  = loadBankFailedKeys();
     transferState   = loadTransferState();
     amountOverrides = loadAmountOverrides();
+
+    // bankFailedKeys に記録されているキーは bankState の状態に関わらず 'failed' を保証する
+    bankFailedKeys.forEach(key => {
+        if (!bankState[key] || bankState[key].status !== 'failed') {
+            bankState[key] = { status: 'failed', updatedAt: '' };
+        }
+    });
 
     renderFilters();
 

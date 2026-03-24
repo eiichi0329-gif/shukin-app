@@ -547,6 +547,33 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 
 .settings-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }
 
+/* ── 手動追加ダイアログ ───────────────────────────────────── */
+.manual-add-dialog { width: min(520px, 96vw); }
+
+.manual-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.manual-form-full { grid-column: 1 / -1; }
+
+.manual-list-section {
+  border-top: 1px solid var(--g200);
+  padding-top: 12px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.manual-list-title { font-size: 14px; font-weight: 700; color: var(--g600); }
+
+.manual-record-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  background: var(--g50); border: 1px solid var(--g200); border-radius: 8px;
+  padding: 8px 10px;
+}
+.manual-record-info { font-size: 13px; color: var(--g800); flex: 1; word-break: break-all; }
+.manual-delete-btn { padding: 4px 10px; font-size: 12px; }
+
+.manual-empty { font-size: 13px; color: var(--g400); text-align: center; padding: 8px 0; }
+
 /* ── 現金精査ダイアログ ───────────────────────────────────── */
 .denom-dialog {
   border: none; border-radius: 16px; padding: 0;

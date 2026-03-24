@@ -60,6 +60,7 @@
                 <div class="action-wrap">
                     <button class="btn btn-bulk"          id="btn-bulk-check"    onclick="checkAllBank()">&#10003; 一括チェック</button>
                     <button class="btn btn-bulk-register hidden" id="btn-bulk-register" onclick="registerBulkBank()">登録</button>
+                    <button class="btn btn-secondary" onclick="openManualAdd()">&#43; 手動追加</button>
                     <button class="btn btn-secondary" onclick="openSettings()">&#9881; 連携設定</button>
                     <button class="btn btn-danger"    onclick="resetAll()">リセット</button>
                 </div>
@@ -197,6 +198,58 @@
             <div class="denom-actions">
                 <button class="btn btn-secondary" onclick="closeDenomDialog()">キャンセル</button>
                 <button class="btn btn-primary"   onclick="saveDenomDialog()">保存</button>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- 手動追加ダイアログ -->
+    <dialog id="manual-add-dialog" class="settings-dialog manual-add-dialog">
+        <div class="settings-inner">
+            <div class="settings-title">&#43; 手動追加</div>
+            <p class="settings-desc">
+                読込データに存在しない未集金者を手動で登録します。<br>
+                登録したレコードは集金リストに表示されます。
+            </p>
+            <div class="manual-form-grid">
+                <label class="settings-label">
+                    店舗
+                    <select id="manual-store" class="settings-input"></select>
+                </label>
+                <label class="settings-label">
+                    月
+                    <select id="manual-month" class="settings-input"></select>
+                </label>
+                <label class="settings-label">
+                    ルート
+                    <input id="manual-route" class="settings-input" type="number" min="0" placeholder="0">
+                </label>
+                <label class="settings-label">
+                    支払方法
+                    <select id="manual-payment" class="settings-input">
+                        <option value="cash">現金</option>
+                        <option value="bank">口振</option>
+                    </select>
+                </label>
+                <label class="settings-label manual-form-full">
+                    名前
+                    <input id="manual-name" class="settings-input" type="text" placeholder="例：山田　太郎">
+                </label>
+                <label class="settings-label manual-form-full">
+                    住所
+                    <input id="manual-address" class="settings-input" type="text" placeholder="例：下関市○○町1-2-3">
+                </label>
+                <label class="settings-label manual-form-full">
+                    金額（円）
+                    <input id="manual-amount" class="settings-input" type="number" min="0" placeholder="例：1000">
+                </label>
+            </div>
+            <div class="settings-actions">
+                <button class="btn btn-secondary" onclick="closeManualAdd()">閉じる</button>
+                <button class="btn btn-primary"   onclick="addManualRecord()">追加</button>
+            </div>
+            <div class="manual-list-section">
+                <div class="manual-list-title">登録済み手動追加レコード</div>
+                <div id="manual-list"></div>
             </div>
         </div>
     </dialog>
