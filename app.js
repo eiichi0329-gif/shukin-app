@@ -816,7 +816,12 @@ function saveManualRecords() {
 
 function openManualAdd() {
     const stores = (window.DATA_META?.stores) || [...new Set(allData.filter(r => !r.isManual).map(r => r.store))];
-    const months = [...new Set(allData.filter(r => !r.isManual).map(r => r.dataMonth))].sort().reverse();
+    const now = new Date();
+    const months = [];
+    for (let i = 0; i < 24; i++) {
+        const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+        months.push(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`);
+    }
 
     document.getElementById('manual-store').innerHTML =
         stores.map(s => `<option value="${s}">${s}</option>`).join('');
