@@ -986,11 +986,17 @@ function openRowEdit(key) {
 
     const dlg = document.getElementById('row-edit-dialog');
     dlg.showModal();
-    dlg.querySelector('select, input')?.blur();
+    setTimeout(() => {
+        const focused = dlg.querySelector('select, input');
+        if (focused) { focused.blur(); focused.setAttribute('tabindex', '-1'); }
+        document.getElementById('row-edit-route')?.focus();
+    }, 50);
 }
 
 function closeRowEdit() {
-    document.getElementById('row-edit-dialog').close();
+    const dlg = document.getElementById('row-edit-dialog');
+    dlg.querySelectorAll('[tabindex="-1"]').forEach(el => el.removeAttribute('tabindex'));
+    dlg.close();
 }
 
 function saveRowEdit() {
