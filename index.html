@@ -254,6 +254,36 @@
         </div>
     </dialog>
 
+    <!-- 行編集ダイアログ -->
+    <dialog id="row-edit-dialog" class="settings-dialog">
+        <div class="settings-inner">
+            <div class="settings-title">&#9998; 情報修正</div>
+            <input type="hidden" id="row-edit-key">
+            <div class="manual-form-grid">
+                <label class="settings-label">
+                    月
+                    <select id="row-edit-month" class="settings-input"></select>
+                </label>
+                <label class="settings-label">
+                    ルート
+                    <input id="row-edit-route" class="settings-input" type="number" min="0">
+                </label>
+                <label class="settings-label manual-form-full">
+                    名前
+                    <input id="row-edit-name" class="settings-input" type="text">
+                </label>
+                <label class="settings-label manual-form-full">
+                    金額（円）
+                    <input id="row-edit-amount" class="settings-input" type="number" min="1">
+                </label>
+            </div>
+            <div class="settings-actions">
+                <button class="btn btn-secondary" onclick="closeRowEdit()">キャンセル</button>
+                <button class="btn btn-primary"   onclick="saveRowEdit()">保存</button>
+            </div>
+        </div>
+    </dialog>
+
     <script src="data.js" defer></script>
     <script src="app.js" defer></script>
 </body>

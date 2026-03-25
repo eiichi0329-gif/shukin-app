@@ -129,6 +129,7 @@ const FILTER_KEY         = 'coll-filter-v1';
 const AMOUNT_OVERRIDE_KEY = 'coll-amount-override-v1';
 const DENOM_KEY           = 'coll-denom-v1';
 const MANUAL_RECORDS_KEY  = 'coll-manual-v1';
+const RECORD_OVERRIDE_KEY = 'coll-record-override-v1';
 const DIRTY_GRACE_MS = 35000; // ローカル変更を守る猶予時間（ms）
 
 // ─── State ───────────────────────────────────────────────────────
@@ -139,6 +140,7 @@ let bankState       = {};   // key → { status: 'completed'|'failed', updatedAt
 let bankFailedKeys  = new Set(); // 口振失敗として手動確定したキー（同期で絶対に上書きしない）
 let transferState   = {};   // key → { date: 'YYYY-MM-DD', recordedAt: ISO }
 let amountOverrides = {};   // key → number（管理画面で手修正した金額）
+let recordOverrides = {};   // key → { route?, dataMonth?, name? }（行ダブルタップで修正）
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'list';
 let expandedCell = null;  // { route, month } for admin detail
@@ -211,6 +213,14 @@ function saveAmountOverrides() {
     localStorage.setItem(AMOUNT_OVERRIDE_KEY, JSON.stringify(amountOverrides));
 }
 
+// ─── Record Override State ─────────────────────────────────────────
+function loadRecordOverrides() {
+    try { return JSON.parse(localStorage.getItem(RECORD_OVERRIDE_KEY) || '{}'); } catch { return {}; }
+}
+function saveRecordOverrides() {
+    localStorage.setItem(RECORD_OVERRIDE_KEY, JSON.stringify(recordOverrides));
+}
+
 // ─── Denom Storage ────────────────────────────────────────────────
 function loadDenomStorage() {
     try { return JSON.parse(localStorage.getItem(DENOM_KEY) || '{}'); } catch { return {}; }
@@ -224,11 +234,16 @@ function calcDenomTotal(counts) {
 function effectiveAmount(key, record) {
     return amountOverrides[key] !== undefined ? amountOverrides[key] : (record.amount || 0);
 }
+function effectiveRoute(key, r) { return recordOverrides[key]?.route     ?? r.route; }
+function effectiveMonth(key, r) { return recordOverrides[key]?.dataMonth ?? r.dataMonth; }
+function effectiveName(key, r)  { return recordOverrides[key]?.name      ?? r.name; }
 
 // 集金済み金額との差分（追加注文があった場合は差額を返す）
 function displayAmount(key, r) {
     const base         = effectiveAmount(key, r);
     const collectedAmt = checked[key]?.collectedAmount || 0;
+    // リセット運用：集金後にExcelが0になった場合は差分計算せず全額表示
+    if (checked[key]?.cycleReset) return base;
     if (collectedAmt > 0 && base > collectedAmt) return base - collectedAmt;
     return base;
 }
@@ -239,7 +254,25 @@ function isFullyCollected(key, r) {
     if (!checked[key]) return false;
     const collectedAmt = checked[key].collectedAmount || 0;
     if (collectedAmt === 0) return true; // 旧データ互換：金額未記録は集金済みとみなす
+    // リセット運用：集金後にExcelが0にリセットされた状態は集金済みとみなす
+    if (checked[key].cycleReset && effectiveAmount(key, r) === 0) return true;
     return effectiveAmount(key, r) === collectedAmt;
+}
+
+// 集金後にExcelが0にリセットされた場合を検出し cycleReset フラグを立てる
+// （リセット運用：集金→Excel0→新注文の流れで差分計算を無効化するため）
+function updateCycleReset() {
+    let changed = false;
+    Object.keys(checked).forEach(key => {
+        if (checked[key].cycleReset) return; // 既にフラグ済み
+        const record = allData.find(r => getKey(r) === key);
+        if (!record) return;
+        if (effectiveAmount(key, record) === 0) {
+            checked[key].cycleReset = true;
+            changed = true;
+        }
+    });
+    if (changed) saveChecked();
 }
 
 // ─── Transfer State ───────────────────────────────────────────────
@@ -463,11 +496,11 @@ function renderTable() {
             transferCellHtml = `<td class="col-transfer"><button class="btn-transfer" data-key="${key}">振込入金</button></td>`;
         }
 
-        html += `<tr class="${rowClass}" data-key="${key}">
+        html += `<tr class="${rowClass}" data-key="${key}" title="ダブルタップで修正">
             <td class="col-check">${checkboxHtml}</td>
-            <td class="col-route">R${r.route}</td>
-            <td class="col-month">${r.dataMonth.slice(5)}月</td>
-            <td class="col-name"><div class="name-inner">${payBadge}${r.name}</div></td>
+            <td class="col-route">R${effectiveRoute(key, r)}</td>
+            <td class="col-month">${effectiveMonth(key, r).slice(5)}月</td>
+            <td class="col-name"><div class="name-inner">${payBadge}${effectiveName(key, r)}</div></td>
             <td class="col-addr">${r.address || ''}</td>
             <td class="col-amount">¥${fmt(displayAmount(key, r))}</td>
             ${dateCellHtml}
@@ -505,6 +538,28 @@ function renderTable() {
         cell.addEventListener('click', () => onTransferRevert(cell.dataset.key));
     });
 
+    // イベント登録（ダブルタップ／ダブルクリックで行編集）
+    let _lastTapKey = null, _lastTapTime = 0;
+    tbody.querySelectorAll('tr[data-key]').forEach(row => {
+        // PC: dblclick
+        row.addEventListener('dblclick', e => {
+            if (e.target.closest('input, button, td.col-check, td.col-date, td.col-transfer')) return;
+            openRowEdit(row.dataset.key);
+        });
+        // スマホ: 400ms以内の2タップ
+        row.addEventListener('click', e => {
+            if (e.target.closest('input, button, td.col-check, td.col-date, td.col-transfer')) return;
+            const now = Date.now();
+            if (_lastTapKey === row.dataset.key && now - _lastTapTime < 400) {
+                openRowEdit(row.dataset.key);
+                _lastTapKey = null;
+            } else {
+                _lastTapKey = row.dataset.key;
+                _lastTapTime = now;
+            }
+        });
+    });
+
     // 一括チェックモード中はチェック状態を復元
     restoreBulkVisual();
 
@@ -536,6 +591,7 @@ function onCheck(key, isChecked) {
             checkedAt:       today.toISOString(),
             collectDate:     isReCollection ? jstDate : ((checked[key] || {}).collectDate || jstDate),
             collectedAmount: effectiveAmount(key, record), // 集金時点のExcel金額を記録
+            cycleReset:      false, // 集金時点でリセットフラグをクリア
             gasKey,
             // 管理画面の履歴表示用スナップショット（data.js が更新されても記録が消えないよう保持）
             snapshot: record ? {
@@ -897,6 +953,76 @@ function renderManualList() {
             <button class="btn btn-danger manual-delete-btn" onclick="deleteManualRecord('${r.id}')">削除</button>
         </div>
     `).join('');
+}
+
+// ─── Row Edit ────────────────────────────────────────────────────
+function openRowEdit(key) {
+    const record = allData.find(r => getKey(r) === key);
+    if (!record) return;
+
+    const now = new Date();
+    const months = [];
+    for (let i = 0; i < 24; i++) {
+        const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+        months.push(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`);
+    }
+
+    document.getElementById('row-edit-key').value = key;
+    document.getElementById('row-edit-month').innerHTML =
+        months.map(m => `<option value="${m}">${m}</option>`).join('');
+    document.getElementById('row-edit-month').value  = effectiveMonth(key, record);
+    document.getElementById('row-edit-route').value  = effectiveRoute(key, record);
+    document.getElementById('row-edit-name').value   = effectiveName(key, record);
+    document.getElementById('row-edit-amount').value = effectiveAmount(key, record);
+
+    document.getElementById('row-edit-dialog').showModal();
+}
+
+function closeRowEdit() {
+    document.getElementById('row-edit-dialog').close();
+}
+
+function saveRowEdit() {
+    const key       = document.getElementById('row-edit-key').value;
+    const route     = parseInt(document.getElementById('row-edit-route').value) || 0;
+    const dataMonth = document.getElementById('row-edit-month').value;
+    const name      = document.getElementById('row-edit-name').value.trim();
+    const amount    = parseInt(document.getElementById('row-edit-amount').value) || 0;
+
+    if (!name)       { alert('名前を入力してください'); return; }
+    if (amount <= 0) { alert('金額を入力してください（1円以上）'); return; }
+
+    const record = allData.find(r => getKey(r) === key);
+    if (!record) { closeRowEdit(); return; }
+
+    if (record.isManual) {
+        // 手動追加レコード：直接更新。keyが変わる場合は各state を移行
+        const newKey = `${record.store}|${dataMonth}|${record.code}|${name}`;
+        if (newKey !== key) {
+            if (checked[key])                      { checked[newKey] = checked[key]; delete checked[key]; }
+            if (amountOverrides[key] !== undefined) { amountOverrides[newKey] = amountOverrides[key]; delete amountOverrides[key]; }
+            if (transferState[key])                { transferState[newKey] = transferState[key]; delete transferState[key]; }
+            if (bankState[key])                    { bankState[newKey] = bankState[key]; delete bankState[key]; }
+            if (recordOverrides[key])              { recordOverrides[newKey] = recordOverrides[key]; delete recordOverrides[key]; }
+            saveChecked(); saveTransferState(); saveBankState(); saveRecordOverrides();
+        }
+        record.route = route; record.dataMonth = dataMonth; record.name = name; record.amount = amount;
+        // amountOverrides を更新（amount直書きのため上書き不要だが念のため削除）
+        if (amountOverrides[newKey] !== undefined) { delete amountOverrides[newKey]; }
+        saveManualRecords(); saveAmountOverrides();
+    } else {
+        // 通常レコード：オーバーライドで管理
+        if (!recordOverrides[key]) recordOverrides[key] = {};
+        recordOverrides[key].route     = route;
+        recordOverrides[key].dataMonth = dataMonth;
+        recordOverrides[key].name      = name;
+        amountOverrides[key] = amount;
+        saveRecordOverrides(); saveAmountOverrides();
+    }
+
+    closeRowEdit();
+    renderFilters();
+    renderTable();
 }
 
 // ─── Admin Actions Toggle ────────────────────────────────────────
@@ -1658,6 +1784,10 @@ async function startApp() {
     bankFailedKeys  = loadBankFailedKeys();
     transferState   = loadTransferState();
     amountOverrides = loadAmountOverrides();
+    recordOverrides = loadRecordOverrides();
+
+    // 集金後にExcelが0にリセットされた場合を検出（リセット運用対応）
+    updateCycleReset();
 
     // bankFailedKeys に記録されているキーは bankState の状態に関わらず 'failed' を保証する
     bankFailedKeys.forEach(key => {
