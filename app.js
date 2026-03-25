@@ -976,10 +976,14 @@ function openRowEdit(key) {
         months.push(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`);
     }
 
+    const routes = [...new Set(allData.map(r => r.route))].sort((a, b) => a - b);
+
     document.getElementById('row-edit-key').value = key;
     document.getElementById('row-edit-month').innerHTML =
         months.map(m => `<option value="${m}">${m}</option>`).join('');
     document.getElementById('row-edit-month').value  = effectiveMonth(key, record);
+    document.getElementById('row-edit-route').innerHTML =
+        routes.map(r => `<option value="${r}">R${r}</option>`).join('');
     document.getElementById('row-edit-route').value  = effectiveRoute(key, record);
     document.getElementById('row-edit-name').value   = effectiveName(key, record);
     document.getElementById('row-edit-amount').value = effectiveAmount(key, record);
