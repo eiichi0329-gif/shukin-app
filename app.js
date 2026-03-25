@@ -975,7 +975,9 @@ function openRowEdit(key) {
     document.getElementById('row-edit-name').value   = effectiveName(key, record);
     document.getElementById('row-edit-amount').value = effectiveAmount(key, record);
 
-    document.getElementById('row-edit-dialog').showModal();
+    const dlg = document.getElementById('row-edit-dialog');
+    dlg.showModal();
+    dlg.querySelector('select, input')?.blur();
 }
 
 function closeRowEdit() {
