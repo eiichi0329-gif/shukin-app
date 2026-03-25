@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-03-26 07:31:03
-// 件数: 4238 件  合計: 39,059,002円
+// 自動生成: 2026-03-26 07:33:53
+// 件数: 4238 件  合計: 39,051,897円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbz25BWRgnevAjMFbP_pT7EcpqlwhKpXcUUfaxqzKDd6WC-T80sXCldcC1UujRGY8Nj7/exec";
 
@@ -4142,7 +4142,7 @@ window.COLLECTION_DATA = [
     "name": "万江　京子",
     "paymentType": "cash",
     "address": "下関市一の宮町５－８－２３",
-    "amount": 7750,
+    "amount": 645,
     "dataMonth": "2026-02",
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)下関店.xlsm"
@@ -59340,7 +59340,7 @@ window.COLLECTION_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-03-26T07:31:03.465019",
+  "generatedAt": "2026-03-26T07:33:53.034031",
   "stores": [
     "下関店",
     "北九州店",
@@ -59354,7 +59354,7 @@ window.DATA_META = {
       "store": "下関店",
       "name": "うちくる顧客管理表(2026.2)下関店.xlsm",
       "dataMonth": "2026-02",
-      "mtime": "2026-03-18",
+      "mtime": "2026-03-26",
       "count": 317
     },
     {
@@ -59485,5 +59485,5 @@ window.DATA_META = {
     }
   ],
   "totalRecords": 4238,
-  "totalAmount": 39059002
+  "totalAmount": 39051897
 };
