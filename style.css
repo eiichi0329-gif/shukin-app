@@ -646,7 +646,7 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .login-title { font-size: 20px; font-weight: 700; color: var(--g800); margin-bottom: 8px; }
 .login-desc  { font-size: 14px; color: var(--g500); margin-bottom: 24px; }
 #google-signin-btn { display: flex; justify-content: center; }
-.login-error { color: var(--red); font-size: 13px; margin-top: 12px; }
+.login-error { color: var(--red); font-size: 13px; margin-top: 12px; white-space: pre-line; text-align: center; line-height: 1.6; }
 
 /* ─── ヘッダーユーザー情報 ────────────────────────────────────── */
 .header-user {

@@ -108,12 +108,21 @@ function initAuth() {
         showApp();
         return;
     }
-    // GIS ライブラリのロード待ち
+    // 読込中メッセージを表示
+    const btn = document.getElementById('google-signin-btn');
+    btn.innerHTML = '<p style="color:#888;font-size:14px;margin-top:8px">読込中...</p>';
+
+    // GIS ライブラリのロード待ち（最大12秒）
+    let attempts = 0;
     const ready = () => {
         if (typeof google !== 'undefined' && google.accounts) {
+            btn.innerHTML = '';
             initGoogleSignIn();
-        } else {
+        } else if (attempts++ < 120) {
             setTimeout(ready, 100);
+        } else {
+            btn.innerHTML = '';
+            showLoginError('Googleログインの読込に失敗しました。\nChrome などの最新ブラウザからアクセスしてください。');
         }
     };
     ready();
