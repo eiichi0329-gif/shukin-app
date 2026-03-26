@@ -1347,8 +1347,9 @@ function renderDelivery() {
     });
 
     // ルートバッジ：ダブルクリック／ダブルタップでルート編集
-    let _lastRouteTapKey  = null;
-    let _lastRouteTapTime = 0;
+    let _lastRouteTapKey   = null;
+    let _lastRouteTapTime  = 0;
+    let _lastRouteTouchTime = 0; // touchend 発火時刻（合成 click を抑制するため）
     const handleRouteTap = (area, gk) => {
         const now = Date.now();
         if (_lastRouteTapKey === gk && now - _lastRouteTapTime < 500) {
@@ -1364,10 +1365,12 @@ function renderDelivery() {
         area.addEventListener('dblclick', () => openDeliveryRouteEdit(area, gk));
         area.addEventListener('touchend', e => {
             e.preventDefault();
+            _lastRouteTouchTime = Date.now();
             handleRouteTap(area, gk);
         }, { passive: false });
         area.addEventListener('click', e => {
-            if (e._fromTouch) return;
+            // touchend 直後（600ms以内）の合成 click は無視（スマホでの二重発火対策）
+            if (Date.now() - _lastRouteTouchTime < 600) return;
             handleRouteTap(area, gk);
         });
     });
@@ -1611,7 +1614,7 @@ function closeDeliveryCollectDialog() {
 
 // ─── Admin Tab ───────────────────────────────────────────────────
 function labelClass(label) {
-    const map = { '新規': 'cyan', '翌週注文確認': 'red', '再注文': 'beige' };
+    const map = { '新規': 'cyan', '翌週注文確認': 'red', '再注文': 'beige', '集金': 'yellow' };
     return map[label] || 'default';
 }
 
@@ -1999,15 +2002,17 @@ function renderMsgTab() {
     const customers = allData.filter(r => {
         if ((r.amount || 0) === 0) return false;
         if (filters.store && r.store !== filters.store) return false;
-        if (filters.route && String(r.route) !== filters.route) return false;
+        const k = getKey(r);
+        if (filters.route && String(effectiveRoute(k, r)) !== filters.route) return false;
         return true;
     });
     // 重複除去（同名・同店・同ルート）— 月をまたいで同一顧客は1件のみ
     const seen = new Set();
     const unique = customers.filter(r => {
-        const k = `${r.store}|${r.route}|${r.name}`;
-        if (seen.has(k)) return false;
-        seen.add(k);
+        const k = getKey(r);
+        const dedupeKey = `${r.store}|${effectiveRoute(k, r)}|${r.name}`;
+        if (seen.has(dedupeKey)) return false;
+        seen.add(dedupeKey);
         return true;
     });
 
@@ -2019,7 +2024,8 @@ function renderMsgTab() {
     sel.innerHTML = '<option value="">顧客を選択してください</option>' +
         unique.map(r => {
             const k = getKey(r);
-            return `<option value="${k}" data-store="${escHtml(r.store)}" data-route="${r.route}" data-name="${escHtml(r.name)}">R${r.route} ${r.name}（${r.store}）</option>`;
+            const rte = effectiveRoute(k, r);
+            return `<option value="${k}" data-store="${escHtml(r.store)}" data-route="${rte}" data-name="${escHtml(r.name)}">R${rte} ${r.name}（${r.store}）</option>`;
         }).join('') +
         `<option value="__other__" data-store="${escHtml(storeForOther)}" data-route="${routeForOther}" data-name="その他">${otherLabel}</option>`;
     if (prevKey) sel.value = prevKey;

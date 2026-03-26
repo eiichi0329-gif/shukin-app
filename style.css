@@ -726,11 +726,11 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .ds-item.dtype-green  strong { color: #15803d; }
 
 /* カード内アイテムへの適用（.delivery-meta-item より後に宣言して上書き） */
-.delivery-meta-item.dtype-black { color: var(--g800); background: var(--g100);  border-color: var(--g300); }
-.delivery-meta-item.dtype-cyan  { color: #0e7490;     background: #ecfeff;      border-color: #67e8f9; }
-.delivery-meta-item.dtype-pink  { color: #be185d;     background: #fdf2f8;      border-color: #fbcfe8; }
-.delivery-meta-item.dtype-red   { color: #dc2626;     background: #fef2f2;      border-color: #fca5a5; }
-.delivery-meta-item.dtype-green { color: #15803d;     background: #f0fdf4;      border-color: #86efac; }
+.delivery-meta-item.dtype-black { color: #1c1917;  background: #e7e5e4;  border-color: #a8a29e; }
+.delivery-meta-item.dtype-cyan  { color: #0c4a6e;  background: #bae6fd;  border-color: #38bdf8; }
+.delivery-meta-item.dtype-pink  { color: #9d174d;  background: #fce7f3;  border-color: #f9a8d4; }
+.delivery-meta-item.dtype-red   { color: #991b1b;  background: #fee2e2;  border-color: #f87171; }
+.delivery-meta-item.dtype-green { color: #14532d;  background: #dcfce7;  border-color: #4ade80; }
 
 /* ── 配達表タブ ───────────────────────────────────────────── */
 .delivery-list {
@@ -749,17 +749,17 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
 }
 .delivery-route-badge {
-  font-size: 14px; font-weight: 700; color: var(--primary);
+  font-size: 16px; font-weight: 700; color: var(--primary);
   white-space: nowrap;
 }
 .delivery-name {
-  font-size: 17px; font-weight: 700; color: var(--g800); flex: 1;
+  font-size: 20px; font-weight: 700; color: var(--g800); flex: 1;
 }
 
 .delivery-card-row { display: flex; }
 
 .delivery-address {
-  font-size: 14px; color: #1d4ed8;
+  font-size: 16px; color: #1e40af; font-weight: 600;
   text-decoration: none; display: flex; align-items: center; gap: 4px;
   word-break: break-all;
 }
@@ -769,8 +769,8 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   display: flex; flex-wrap: wrap; gap: 6px;
 }
 .delivery-meta-item {
-  font-size: 13px; background: var(--g100); color: var(--g800);
-  border: 1px solid var(--g200); border-radius: 6px;
+  font-size: 15px; background: var(--g100); color: var(--g800); font-weight: 600;
+  border: 1px solid var(--g300); border-radius: 6px;
   padding: 3px 8px; white-space: nowrap;
 }
 
@@ -779,8 +779,8 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 }
 .btn-contact {
   display: inline-flex; align-items: center; gap: 4px;
-  padding: 8px 12px; border-radius: 8px;
-  font-size: 14px; font-weight: 700; text-decoration: none;
+  padding: 10px 14px; border-radius: 8px;
+  font-size: 15px; font-weight: 700; text-decoration: none;
   white-space: nowrap;
 }
 .btn-contact-phone {
@@ -797,7 +797,7 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   border-top: 1px solid var(--g100); padding-top: 6px;
 }
 .delivery-note {
-  font-size: 13px; color: var(--g600); line-height: 1.5;
+  font-size: 15px; color: var(--g800); font-weight: 500; line-height: 1.6;
   word-break: break-all;
 }
 
@@ -841,12 +841,13 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 }
 /* 数量セル色ラベル */
 .count-label {
-  font-size: 11px; font-weight: 700; border-radius: 5px;
-  padding: 3px 8px; white-space: nowrap; border: 1.5px solid transparent;
+  font-size: 13px; font-weight: 700; border-radius: 5px;
+  padding: 4px 9px; white-space: nowrap; border: 1.5px solid transparent;
 }
 .count-label-cyan   { background: #cffafe; color: #0e7490; border-color: #a5f3fc; }
 .count-label-red    { background: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
 .count-label-beige  { background: #fef3c7; color: #92400e; border-color: #fde68a; }
+.count-label-yellow { background: #fef9c3; color: #854d0e; border-color: #fde047; }
 .count-label-default{ background: var(--g100); color: var(--g600); border-color: var(--g300); }
 
 /* 種類・数量行 + 配達済みボタン */
@@ -903,5 +904,5 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 @media (max-width: 640px) {
   .delivery-list { padding: 8px; gap: 8px; }
   .delivery-card { padding: 10px 12px; }
-  .delivery-name { font-size: 15px; }
+  .delivery-name { font-size: 18px; }
 }

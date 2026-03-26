@@ -218,7 +218,13 @@ function doPost(e) {
     // ── 配達時刻 記録 ──
     } else if (action === 'addDelivery') {
       const sheet   = getOrCreateSheet(ss, DELIVERY_SHEET, DELIVERY_HEADERS, '#0f766e', DELIVERY_COL_WIDTHS, false);
-      const dateStr = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy/MM/dd HH:mm');
+      let dateStr = '';
+      try {
+        dateStr = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy/MM/dd HH:mm');
+      } catch(e) {
+        dateStr = new Date().toISOString();
+      }
+      writeDebugLog(ss, 'addDelivery', `dateStr=${dateStr} cols=${sheet.getLastColumn()}`);
       sheet.appendRow([
         payload.store   || '',
         payload.route   || '',
