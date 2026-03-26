@@ -1268,7 +1268,7 @@ function renderDelivery() {
                 </div>
                 <div class="delivery-name-area">
                     <span class="delivery-name">${escHtml(m.name)}</span>
-                    ${m.countLabel ? `<span class="count-label count-label-${labelClass(m.countLabel)}">${escHtml(m.countLabel)}</span>` : ''}
+                    ${m.countLabel ? `<span class="count-label count-label-${labelClass(m.countLabel)}">${escHtml(m.countLabel === '\u96C6\u91D1' ? '\u8ACB\u6C42' : m.countLabel)}</span>` : ''}
                     ${compactMapHtml}
                     <button class="btn-delivery-msg-open" data-group-key="${safeKey}">&#128172; 連絡事項</button>
                     ${isBank
