@@ -614,6 +614,7 @@ function showToast(msg, type = 'success') {
 // ─── Check Action ────────────────────────────────────────────────
 function onCheck(key, isChecked) {
     showToast(`[診断] onCheck: ${isChecked ? 'チェック' : '解除'}`, 'info');
+    try {
     let gasKey    = key;
     let incAmount = null;
 
@@ -685,6 +686,7 @@ function onCheck(key, isChecked) {
         // 送信後に再同期して他端末への反映を確認
         setTimeout(syncCheckboxes, 3000);
     }
+    } catch(err) { showToast(`[致命的エラー] ${err.message}`, 'info'); }
 }
 
 // ─── Bank Complete Action ─────────────────────────────────────────
