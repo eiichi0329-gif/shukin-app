@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-03-26 12:20:47
-// 件数: 4238 件  合計: 39,058,756円
+// 自動生成: 2026-03-26 12:44:19
+// 件数: 4238 件  合計: 39,058,018円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbz25BWRgnevAjMFbP_pT7EcpqlwhKpXcUUfaxqzKDd6WC-T80sXCldcC1UujRGY8Nj7/exec";
 
@@ -56462,7 +56462,7 @@ window.COLLECTION_DATA = [
     "name": "武石　さちこ",
     "paymentType": "cash",
     "address": "飯塚市横田４５７－８－１－B４０４",
-    "amount": 14015,
+    "amount": 13277,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -75628,7 +75628,7 @@ window.DELIVERY_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-03-26T12:20:47.274205",
+  "generatedAt": "2026-03-26T12:44:19.228809",
   "stores": [
     "下関店",
     "北九州店",
@@ -75773,5 +75773,5 @@ window.DATA_META = {
     }
   ],
   "totalRecords": 4238,
-  "totalAmount": 39058756
+  "totalAmount": 39058018
 };
