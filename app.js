@@ -1882,7 +1882,7 @@ function renderAdmin() {
     const filteredMsgs = storeVal ? allMsgs.filter(m => m.store === storeVal) : allMsgs;
     const msgsByDate = {};
     filteredMsgs.forEach(m => {
-        const dk = m.createdAt.slice(0, 10);
+        const dk = m.createdAt ? m.createdAt.slice(0, 10).replace(/\//g, '-') : '';
         if (!msgsByDate[dk]) msgsByDate[dk] = [];
         msgsByDate[dk].push(m);
     });
@@ -2067,7 +2067,7 @@ function renderMsgTab() {
     // 日付キーでグループ化
     const groups = {};
     sorted.forEach(m => {
-        const dk = m.createdAt.slice(0, 10);
+        const dk = m.createdAt ? m.createdAt.slice(0, 10).replace(/\//g, '-') : '';
         if (!groups[dk]) groups[dk] = [];
         groups[dk].push(m);
     });
