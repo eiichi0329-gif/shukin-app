@@ -369,17 +369,11 @@ async function flushRetryQueue() {
     if (sent > 0) console.log(`[GASリトライ] ${sent}件 再送信成功`);
 }
 
-// GAS への POST 送信（sendBeacon 優先、失敗時は fetch → リトライキューにフォールバック）
+// GAS への POST 送信（fetch 固定、失敗時はリトライキューに保存）
 function postToGas(url, data) {
     const body = JSON.stringify(data);
-    if (navigator.sendBeacon) {
-        const blob = new Blob([body], { type: 'text/plain' });
-        if (navigator.sendBeacon(url, blob)) return; // 成功したらここで終了
-        // sendBeacon 失敗（64KB超過など）→ fetch にフォールバック
-    }
     fetch(url, { method: 'POST', mode: 'no-cors', body })
         .catch(() => {
-            // ネットワークエラー → リトライキューに保存
             const q = loadRetryQueue();
             q.push({ url, body, savedAt: Date.now() });
             saveRetryQueue(q);
