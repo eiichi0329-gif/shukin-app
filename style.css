@@ -583,6 +583,18 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
 }
 
+/* ── トースト通知 ────────────────────────────────────────── */
+.app-toast {
+  position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px);
+  padding: 10px 20px; border-radius: 24px; font-size: 14px; font-weight: 600;
+  white-space: nowrap; pointer-events: none; z-index: 9999;
+  opacity: 0; transition: opacity .2s, transform .2s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.app-toast-show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.app-toast-success { background: #16a34a; color: #fff; }
+.app-toast-info    { background: var(--g600); color: #fff; }
+
 /* ── 現金精査ダイアログ ───────────────────────────────────── */
 .denom-dialog {
   border: none; border-radius: 16px; padding: 0;

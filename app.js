@@ -603,6 +603,20 @@ function renderTable() {
     renderHeader(data);
 }
 
+// ─── Toast 通知 ──────────────────────────────────────────────────
+function showToast(msg, type = 'success') {
+    let el = document.getElementById('app-toast');
+    if (!el) {
+        el = document.createElement('div');
+        el.id = 'app-toast';
+        document.body.appendChild(el);
+    }
+    el.textContent = msg;
+    el.className = `app-toast app-toast-${type} app-toast-show`;
+    clearTimeout(el._t);
+    el._t = setTimeout(() => el.classList.remove('app-toast-show'), 2000);
+}
+
 // ─── Check Action ────────────────────────────────────────────────
 function onCheck(key, isChecked) {
     let gasKey    = key;
@@ -651,6 +665,9 @@ function onCheck(key, isChecked) {
     markDirty(key);
     saveChecked();
     renderHeader(filteredData());
+
+    const _toastRec = allData.find(r => getKey(r) === key);
+    if (isChecked) showToast(`✓ ${_toastRec?.name || ''} — 集金済みにしました`, 'success');
 
     // GAS 送信
     const url = getGasUrl();
@@ -1421,9 +1438,11 @@ function onDeliveryCheck(groupKey) {
 
     if (deliveryChecked[groupKey]) {
         delete deliveryChecked[groupKey];
+        showToast(`${record.name} — 配達済みを取消`, 'info');
     } else {
         const now = new Date().toISOString();
         deliveryChecked[groupKey] = { checkedAt: now };
+        showToast(`✓ ${record.name} — 配達済みにしました`, 'success');
 
         const url = getGasUrl();
         if (url) {
