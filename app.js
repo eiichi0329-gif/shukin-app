@@ -1352,7 +1352,7 @@ function renderDelivery() {
     let _lastRouteTouchTime = 0; // touchend 発火時刻（合成 click を抑制するため）
     const handleRouteTap = (area, gk) => {
         const now = Date.now();
-        if (_lastRouteTapKey === gk && now - _lastRouteTapTime < 500) {
+        if (_lastRouteTapKey === gk && now - _lastRouteTapTime < 600) {
             openDeliveryRouteEdit(area, gk);
             _lastRouteTapKey = null;
         } else {
@@ -1362,7 +1362,6 @@ function renderDelivery() {
     };
     container.querySelectorAll('.delivery-route-area').forEach(area => {
         const gk = area.dataset.groupKey;
-        area.addEventListener('dblclick', () => openDeliveryRouteEdit(area, gk));
         area.addEventListener('touchend', e => {
             e.preventDefault();
             _lastRouteTouchTime = Date.now();

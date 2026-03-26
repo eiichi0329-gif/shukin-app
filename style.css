@@ -749,17 +749,17 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
 }
 .delivery-route-badge {
-  font-size: 16px; font-weight: 700; color: var(--primary);
+  font-size: 18px; font-weight: 700; color: var(--primary);
   white-space: nowrap;
 }
 .delivery-name {
-  font-size: 20px; font-weight: 700; color: var(--g800); flex: 1;
+  font-size: 22px; font-weight: 700; color: var(--g800); flex: 1;
 }
 
 .delivery-card-row { display: flex; }
 
 .delivery-address {
-  font-size: 16px; color: #1e40af; font-weight: 600;
+  font-size: 18px; color: #1e40af; font-weight: 600;
   text-decoration: none; display: flex; align-items: center; gap: 4px;
   word-break: break-all;
 }
@@ -769,7 +769,7 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   display: flex; flex-wrap: wrap; gap: 6px;
 }
 .delivery-meta-item {
-  font-size: 15px; background: var(--g100); color: var(--g800); font-weight: 600;
+  font-size: 17px; background: var(--g100); color: var(--g800); font-weight: 600;
   border: 1px solid var(--g300); border-radius: 6px;
   padding: 3px 8px; white-space: nowrap;
 }
@@ -780,7 +780,7 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .btn-contact {
   display: inline-flex; align-items: center; gap: 4px;
   padding: 10px 14px; border-radius: 8px;
-  font-size: 15px; font-weight: 700; text-decoration: none;
+  font-size: 17px; font-weight: 700; text-decoration: none;
   white-space: nowrap;
 }
 .btn-contact-phone {
@@ -797,7 +797,7 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   border-top: 1px solid var(--g100); padding-top: 6px;
 }
 .delivery-note {
-  font-size: 15px; color: var(--g800); font-weight: 500; line-height: 1.6;
+  font-size: 17px; color: var(--g800); font-weight: 500; line-height: 1.6;
   word-break: break-all;
 }
 
@@ -828,20 +828,20 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .btn-delivery-msg-open,
 .btn-delivery-collect-open {
   padding: 4px 10px; border-radius: 6px; border: 1.5px solid var(--g300);
-  font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; white-space: nowrap;
+  font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; white-space: nowrap;
 }
 .btn-delivery-msg-open    { background: var(--g100); color: var(--g600); border-color: var(--g300); }
 .btn-delivery-msg-open:hover    { background: var(--g200); }
-.btn-delivery-collect-open { background: var(--green-bg); color: var(--green); border-color: #86efac; }
-.btn-delivery-collect-open:hover { background: var(--green-hover); }
+.btn-delivery-collect-open { background: #fef9c3; color: #854d0e; border-color: #fde047; }
+.btn-delivery-collect-open:hover { background: #fef08a; }
 .delivery-bank-label {
-  font-size: 12px; font-weight: 600; color: #2563eb;
+  font-size: 14px; font-weight: 600; color: #2563eb;
   background: #eff6ff; border: 1.5px solid #bfdbfe;
   border-radius: 6px; padding: 4px 10px; white-space: nowrap;
 }
 /* 数量セル色ラベル */
 .count-label {
-  font-size: 13px; font-weight: 700; border-radius: 5px;
+  font-size: 15px; font-weight: 700; border-radius: 5px;
   padding: 4px 9px; white-space: nowrap; border: 1.5px solid transparent;
 }
 .count-label-cyan   { background: #cffafe; color: #0e7490; border-color: #a5f3fc; }
@@ -904,5 +904,5 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 @media (max-width: 640px) {
   .delivery-list { padding: 8px; gap: 8px; }
   .delivery-card { padding: 10px 12px; }
-  .delivery-name { font-size: 18px; }
+  .delivery-name { font-size: 20px; }
 }
