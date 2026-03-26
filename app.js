@@ -1290,7 +1290,7 @@ function renderDelivery() {
         btn.addEventListener('click', () => openDeliveryCollectDialog(btn.dataset.groupKey));
     });
 
-    // カード：ダブルクリック／ダブルタップで同ルート全カードをコンパクト切替
+    // カード：ダブルタップ／ダブルクリックで同ルート全カードをコンパクト切替
     let _lastCardTapKey  = null;
     let _lastCardTapTime = 0;
     const toggleRouteCompact = (routeKey) => {
@@ -1301,42 +1301,61 @@ function renderDelivery() {
             c.classList.toggle('delivery-card-compact', isNowCompact);
         });
     };
+    const handleCardTap = (rk) => {
+        const now = Date.now();
+        if (_lastCardTapKey === rk && now - _lastCardTapTime < 500) {
+            toggleRouteCompact(rk);
+            _lastCardTapKey = null;
+        } else {
+            _lastCardTapKey  = rk;
+            _lastCardTapTime = now;
+        }
+    };
     container.querySelectorAll('.delivery-card').forEach(card => {
         const rk = card.dataset.routeKey;
+        // PC: dblclick
         card.addEventListener('dblclick', e => {
             if (e.target.closest('button, a, .delivery-route-area')) return;
+            _lastCardTapKey = null;
             toggleRouteCompact(rk);
         });
+        // スマホ: touchend で300ms遅延を回避
+        card.addEventListener('touchend', e => {
+            if (e.target.closest('button, a, .delivery-route-area')) return;
+            e.preventDefault(); // clickイベントの重複発火を防止
+            handleCardTap(rk);
+        }, { passive: false });
+        // PCフォールバック: touchend が発火しない環境向け
         card.addEventListener('click', e => {
             if (e.target.closest('button, a, .delivery-route-area')) return;
-            const now = Date.now();
-            if (_lastCardTapKey === rk && now - _lastCardTapTime < 400) {
-                toggleRouteCompact(rk);
-                _lastCardTapKey = null;
-            } else {
-                _lastCardTapKey  = rk;
-                _lastCardTapTime = now;
-            }
+            if (e._fromTouch) return; // touchend 処理済みならスキップ
+            handleCardTap(rk);
         });
     });
 
     // ルートバッジ：ダブルクリック／ダブルタップでルート編集
     let _lastRouteTapKey  = null;
     let _lastRouteTapTime = 0;
+    const handleRouteTap = (area, gk) => {
+        const now = Date.now();
+        if (_lastRouteTapKey === gk && now - _lastRouteTapTime < 500) {
+            openDeliveryRouteEdit(area, gk);
+            _lastRouteTapKey = null;
+        } else {
+            _lastRouteTapKey  = gk;
+            _lastRouteTapTime = now;
+        }
+    };
     container.querySelectorAll('.delivery-route-area').forEach(area => {
         const gk = area.dataset.groupKey;
-        // PC: dblclick
         area.addEventListener('dblclick', () => openDeliveryRouteEdit(area, gk));
-        // スマホ: 400ms以内の2タップ
-        area.addEventListener('click', () => {
-            const now = Date.now();
-            if (_lastRouteTapKey === gk && now - _lastRouteTapTime < 400) {
-                openDeliveryRouteEdit(area, gk);
-                _lastRouteTapKey = null;
-            } else {
-                _lastRouteTapKey  = gk;
-                _lastRouteTapTime = now;
-            }
+        area.addEventListener('touchend', e => {
+            e.preventDefault();
+            handleRouteTap(area, gk);
+        }, { passive: false });
+        area.addEventListener('click', e => {
+            if (e._fromTouch) return;
+            handleRouteTap(area, gk);
         });
     });
 }
