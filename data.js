@@ -2,7 +2,7 @@
 // 自動生成: 2026-03-26 12:46:44
 // 件数: 4238 件  合計: 39,058,018円
 // ══════════════════════════════════════════════════════
-window.GAS_URL = "https://script.google.com/macros/s/AKfycbz25BWRgnevAjMFbP_pT7EcpqlwhKpXcUUfaxqzKDd6WC-T80sXCldcC1UujRGY8Nj7/exec";
+window.GAS_URL = "https://script.google.com/macros/s/AKfycbwxZob7hslZkk6uhzNbHrLPWbv6nahDXCjrsnpNTK4rHvCwGWmU_tVrP-b8j5Fsojvl/exec";
 
 window.FEATURE_DELIVERY_ENABLED = true;
 
