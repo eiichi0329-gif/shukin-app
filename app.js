@@ -153,8 +153,30 @@ let recordOverrides = {};   // key → { route?, dataMonth?, name? }（行ダブ
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'list';
 let expandedCell = null;  // { route, month } for admin detail
-let deliveryData = [];
-let deliveryFilters = { store: '', route: '' };
+let deliveryData          = [];
+let deliveryChecked       = {};
+let deliveryRouteOverrides = {};
+
+const DELIVERY_CHECK_KEY          = 'coll-delivery-v1';
+const DELIVERY_ROUTE_OVERRIDE_KEY = 'coll-delivery-route-v1';
+
+function loadDeliveryChecked()  { try { return JSON.parse(localStorage.getItem(DELIVERY_CHECK_KEY) || '{}'); } catch { return {}; } }
+function saveDeliveryChecked()  { localStorage.setItem(DELIVERY_CHECK_KEY, JSON.stringify(deliveryChecked)); }
+function getDeliveryKey(r)      { return `${r.store}|${r.dataMonth}|${r.code}|${r.name}`; }
+
+function loadDeliveryRouteOverrides() {
+    try {
+        const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+        const raw   = JSON.parse(localStorage.getItem(DELIVERY_ROUTE_OVERRIDE_KEY) || '{}');
+        // 当日分のみ残す
+        const clean = {};
+        Object.entries(raw).forEach(([k, v]) => { if (v.date === today) clean[k] = v; });
+        return clean;
+    } catch { return {}; }
+}
+function saveDeliveryRouteOverrides() {
+    localStorage.setItem(DELIVERY_ROUTE_OVERRIDE_KEY, JSON.stringify(deliveryRouteOverrides));
+}
 
 // 口振一括チェックモード
 let bulkMode               = false;
@@ -1087,6 +1109,11 @@ function switchTab(tab) {
     document.getElementById('nav-list').classList.toggle('active', tab === 'list');
     document.getElementById('nav-msg').classList.toggle('active',  tab === 'msg');
     document.getElementById('nav-admin').classList.toggle('active', tab === 'admin');
+
+    // 配達タブ専用：不要フィルターを隠してサマリーを表示
+    document.querySelector('.controls-bar').classList.toggle('delivery-mode', tab === 'delivery');
+    document.getElementById('delivery-summary').classList.toggle('hidden', tab !== 'delivery');
+
     if (tab === 'admin')    renderAdmin();
     if (tab === 'msg')      renderMsgTab();
     if (tab === 'delivery') renderDelivery();
@@ -1095,49 +1122,67 @@ function switchTab(tab) {
 // ─── Delivery Tab ────────────────────────────────────────────────
 function renderDelivery() {
     const container = document.getElementById('delivery-list');
-    const filterBar = document.getElementById('delivery-filter-bar');
-    if (!container || !filterBar) return;
+    if (!container) return;
 
-    // フィルターバー構築（初回のみ）
-    if (!filterBar.dataset.built) {
-        filterBar.dataset.built = '1';
-        const definedOrder = (window.DATA_META && window.DATA_META.stores) || [];
-        const dataStores   = new Set(deliveryData.map(r => r.store));
-        const stores = definedOrder.length
-            ? definedOrder.filter(s => dataStores.has(s))
-            : [...dataStores].sort();
-        const routes = [...new Set(deliveryData.map(r => r.route))].sort((a, b) => a - b);
+    // 店舗フィルター（ルートはオーバーライド適用後に絞る）
+    const storeData = deliveryData.filter(r =>
+        !filters.store || r.store === filters.store
+    );
 
-        filterBar.innerHTML = `
-            <select id="del-filter-store" class="sel-filter">
-                <option value="">全店舗</option>
-                ${stores.map(s => `<option value="${s}">${s}</option>`).join('')}
-            </select>
-            <select id="del-filter-route" class="sel-filter">
-                <option value="">全ルート</option>
-                ${routes.map(r => `<option value="${r}">R${r}</option>`).join('')}
-            </select>
-            <span class="delivery-count" id="delivery-count"></span>`;
-
-        document.getElementById('del-filter-store').addEventListener('change', e => {
-            deliveryFilters.store = e.target.value;
-            renderDelivery();
-        });
-        document.getElementById('del-filter-route').addEventListener('change', e => {
-            deliveryFilters.route = e.target.value;
-            renderDelivery();
-        });
-    }
-
-    // フィルタリング
-    const data = deliveryData.filter(r => {
-        if (deliveryFilters.store && r.store  !== deliveryFilters.store)         return false;
-        if (deliveryFilters.route && String(r.route) !== deliveryFilters.route)  return false;
-        return true;
+    // 名前・住所が同じレコードをひとつにまとめる
+    const groupMap = new Map();
+    storeData.forEach(r => {
+        const gk = `${r.name}|||${r.address}`;
+        if (!groupMap.has(gk)) groupMap.set(gk, []);
+        groupMap.get(gk).push(r);
     });
 
-    const countEl = document.getElementById('delivery-count');
-    if (countEl) countEl.textContent = `${data.length}件`;
+    // 複数値フィールドの重複除去ヘルパー
+    function uniq(recs, field) {
+        return [...new Set(recs.map(r => r[field]).filter(Boolean))];
+    }
+
+    // マージ済みレコード配列を生成
+    const merged = [];
+    groupMap.forEach(recs => {
+        const base     = recs[0];
+        const groupKey = `${base.store}|${base.dataMonth}|${base.name}|${base.address}`;
+        const override = deliveryRouteOverrides[groupKey];
+        const routes   = override
+            ? [override.route]
+            : [...new Set(recs.map(r => r.route))].sort((a, b) => a - b);
+        merged.push({
+            routes,
+            name:        base.name,
+            address:     base.address,
+            store:       base.store,
+            dataMonth:   base.dataMonth,
+            paymentType: base.paymentType,
+            items:       recs.map(r => ({ type: r.type, count: r.count })).filter(i => i.type),
+            vessel:    uniq(recs, 'vessel').join(' / '),
+            weekly:    uniq(recs, 'weekly').join(' / '),
+            phone:     uniq(recs, 'phone').join(' / '),
+            emergency: uniq(recs, 'emergency').join(' / '),
+            notes:     uniq(recs, 'notes').join('\n'),
+            memo:      uniq(recs, 'memo').join('\n'),
+            absent:    uniq(recs, 'absent').join('\n'),
+            groupKey,
+        });
+    });
+
+    // ルートフィルター（オーバーライド適用後に判定）
+    const data = (filters.route
+        ? merged.filter(m => m.routes.some(r => String(r) === filters.route))
+        : merged
+    ).sort((a, b) => {
+        const ra = a.routes[0] ?? 0;
+        const rb = b.routes[0] ?? 0;
+        if (ra !== rb) return ra - rb;
+        // 同一ルート内：オーバーライド済みを先頭に
+        const aOv = deliveryRouteOverrides[a.groupKey] ? 0 : 1;
+        const bOv = deliveryRouteOverrides[b.groupKey] ? 0 : 1;
+        return aOv - bOv;
+    });
 
     if (data.length === 0) {
         container.innerHTML = '<div class="empty-msg">該当する配達先がありません</div>';
@@ -1145,53 +1190,207 @@ function renderDelivery() {
     }
 
     let html = '';
-    data.forEach(r => {
-        const payBadge = r.paymentType === 'bank'
+    data.forEach(m => {
+        const isDone   = !!deliveryChecked[m.groupKey];
+        const doneTime = isDone
+            ? new Date(deliveryChecked[m.groupKey].checkedAt).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Tokyo' })
+            : '';
+
+        const hasOverride = !!deliveryRouteOverrides[m.groupKey];
+        const routeBadges = m.routes.map(r =>
+            `<span class="delivery-route-badge${hasOverride ? ' route-overridden' : ''}">R${r}</span>`
+        ).join('');
+
+        const payBadge = m.paymentType === 'bank'
             ? '<span class="pay-badge pay-bank">口振</span>'
             : '<span class="pay-badge pay-cash">現金</span>';
 
-        const mapHref = r.address
-            ? `https://maps.google.com/?q=${encodeURIComponent(r.address)}`
-            : '';
-        const addrHtml = r.address
-            ? `<a class="delivery-address" href="${mapHref}" target="_blank" rel="noopener">&#128205; ${escHtml(r.address)}</a>`
+        const mapHref  = m.address ? `https://maps.google.com/?q=${encodeURIComponent(m.address)}` : '';
+        const addrHtml = m.address
+            ? `<a class="delivery-address" href="${mapHref}" target="_blank" rel="noopener">&#128205; ${escHtml(m.address)}</a>`
             : '';
 
-        const phoneHtml = r.phone
-            ? `<a class="btn-contact btn-contact-phone" href="tel:${r.phone.replace(/[^\d+\-]/g, '')}">&#128222; ${escHtml(r.phone)}</a>`
+        const phoneHtml     = m.phone
+            ? `<a class="btn-contact btn-contact-phone" href="tel:${m.phone.replace(/[^\d+\-]/g, '')}">&#128222; ${escHtml(m.phone)}</a>`
             : '';
-        const emergencyHtml = r.emergency
-            ? `<a class="btn-contact btn-contact-emergency" href="tel:${r.emergency.replace(/[^\d+\-]/g, '')}">&#128680; ${escHtml(r.emergency)}</a>`
+        const emergencyHtml = m.emergency
+            ? `<a class="btn-contact btn-contact-emergency" href="tel:${m.emergency.replace(/[^\d+\-]/g, '')}">&#128680; ${escHtml(m.emergency)}</a>`
             : '';
+
+        // 種類×数量をひとまとめに表示
+        const itemsHtml = m.items.map(i =>
+            `<span class="delivery-meta-item">&#127803; ${escHtml(i.type)}${i.count ? `&times;${escHtml(i.count)}` : ''}</span>`
+        ).join('');
 
         const metaParts = [
-            r.type    ? `<span class="delivery-meta-item">&#127803; ${escHtml(r.type)}</span>`    : '',
-            r.count   ? `<span class="delivery-meta-item">&#215;${escHtml(r.count)}</span>`       : '',
-            r.vessel  ? `<span class="delivery-meta-item">&#128230; ${escHtml(r.vessel)}</span>`  : '',
-            r.weekly  ? `<span class="delivery-meta-item">&#128197; ${escHtml(r.weekly)}</span>`  : '',
+            itemsHtml,
+            m.vessel ? `<span class="delivery-meta-item">&#128230; ${escHtml(m.vessel)}</span>` : '',
+            m.weekly ? `<span class="delivery-meta-item">&#128197; ${escHtml(m.weekly)}</span>` : '',
         ].filter(Boolean).join('');
 
         const notesHtml = [
-            r.notes  ? `<div class="delivery-note">&#9888; ${escHtml(r.notes)}</div>`  : '',
-            r.memo   ? `<div class="delivery-note">&#128172; ${escHtml(r.memo)}</div>` : '',
-            r.absent ? `<div class="delivery-note">&#128682; ${escHtml(r.absent)}</div>` : '',
+            m.notes  ? `<div class="delivery-note">&#9888; ${escHtml(m.notes)}</div>`    : '',
+            m.memo   ? `<div class="delivery-note">&#128172; ${escHtml(m.memo)}</div>`   : '',
+            m.absent ? `<div class="delivery-note">&#128682; ${escHtml(m.absent)}</div>` : '',
         ].filter(Boolean).join('');
 
+        const safeKey  = escHtml(m.groupKey);
+        const checkBtn = isDone
+            ? `<button class="btn-delivery-check btn-delivery-done" data-key="${safeKey}">&#10003; 配達済み ${doneTime}（取消）</button>`
+            : `<button class="btn-delivery-check" data-key="${safeKey}">配達済みにする</button>`;
+
         html += `
-        <div class="delivery-card">
+        <div class="delivery-card ${isDone ? 'delivery-card-done' : ''}">
             <div class="delivery-card-header">
-                <span class="col-route delivery-route-badge">R${r.route}</span>
-                <span class="delivery-name">${escHtml(r.name)}</span>
+                <div class="delivery-route-area" data-group-key="${safeKey}" title="ダブルタップでルート変更">
+                    ${routeBadges}
+                </div>
+                <span class="delivery-name">${escHtml(m.name)}</span>
                 ${payBadge}
             </div>
-            ${addrHtml ? `<div class="delivery-card-row">${addrHtml}</div>` : ''}
-            ${metaParts ? `<div class="delivery-card-meta">${metaParts}</div>` : ''}
+            ${addrHtml  ? `<div class="delivery-card-row">${addrHtml}</div>`                              : ''}
+            ${metaParts ? `<div class="delivery-card-meta">${metaParts}</div>`                            : ''}
             ${(phoneHtml || emergencyHtml) ? `<div class="delivery-card-contacts">${phoneHtml}${emergencyHtml}</div>` : ''}
-            ${notesHtml ? `<div class="delivery-card-notes-wrap">${notesHtml}</div>` : ''}
+            ${notesHtml ? `<div class="delivery-card-notes-wrap">${notesHtml}</div>`                      : ''}
+            <div class="delivery-check-row">${checkBtn}</div>
         </div>`;
     });
 
     container.innerHTML = html;
+
+    container.querySelectorAll('.btn-delivery-check').forEach(btn => {
+        btn.addEventListener('click', () => onDeliveryCheck(btn.dataset.key));
+    });
+
+    updateDeliverySummary(data);
+
+    // ルートバッジ：ダブルクリック／ダブルタップでルート編集
+    let _lastRouteTapKey  = null;
+    let _lastRouteTapTime = 0;
+    container.querySelectorAll('.delivery-route-area').forEach(area => {
+        const gk = area.dataset.groupKey;
+        // PC: dblclick
+        area.addEventListener('dblclick', () => openDeliveryRouteEdit(area, gk));
+        // スマホ: 400ms以内の2タップ
+        area.addEventListener('click', () => {
+            const now = Date.now();
+            if (_lastRouteTapKey === gk && now - _lastRouteTapTime < 400) {
+                openDeliveryRouteEdit(area, gk);
+                _lastRouteTapKey = null;
+            } else {
+                _lastRouteTapKey  = gk;
+                _lastRouteTapTime = now;
+            }
+        });
+    });
+}
+
+// 種類名 → カテゴリへのマッピング（1種類が複数カテゴリに加算される場合あり）
+const DELIVERY_CATEGORY_MAP = {
+    'おかず':     ['おかず'],
+    'セット':     ['おかず', 'ごはん'],
+    '小箱':       ['小箱'],
+    '小箱セット': ['小箱', 'ごはん'],
+    'ダブル':     ['ダブル'],
+    'ダブルセット':['ダブル', 'ごはん'],
+    'ご膳':       ['ご膳'],
+    'ごはん':     ['ごはん'],
+};
+
+function updateDeliverySummary(data) {
+    const counts = { おかず: 0, 小箱: 0, ダブル: 0, ご膳: 0, ごはん: 0 };
+
+    data.forEach(m => {
+        if (deliveryChecked[m.groupKey]) return; // 配達済みは除外
+        m.items.forEach(item => {
+            const cats = DELIVERY_CATEGORY_MAP[item.type];
+            if (!cats) return;
+            const n = parseInt(item.count) || 1;
+            cats.forEach(cat => { counts[cat] += n; });
+        });
+    });
+
+    [
+        ['ds-okazu',  'おかず'],
+        ['ds-kobox',  '小箱'],
+        ['ds-double', 'ダブル'],
+        ['ds-gozen',  'ご膳'],
+        ['ds-gohan',  'ごはん'],
+    ].forEach(([id, cat]) => {
+        const el   = document.getElementById(id);
+        const item = el?.closest('.ds-item');
+        if (!el) return;
+        el.textContent = counts[cat];
+        item?.classList.toggle('zero', counts[cat] === 0);
+    });
+}
+
+function onDeliveryCheck(groupKey) {
+    // グループキー（store|dataMonth|name|address）から代表レコードを取得
+    const record = deliveryData.find(r =>
+        `${r.store}|${r.dataMonth}|${r.name}|${r.address}` === groupKey
+    );
+    if (!record) return;
+
+    if (deliveryChecked[groupKey]) {
+        delete deliveryChecked[groupKey];
+    } else {
+        const now = new Date().toISOString();
+        deliveryChecked[groupKey] = { checkedAt: now };
+
+        const url = getGasUrl();
+        if (url) {
+            postToGas(url, {
+                action:      'addDelivery',
+                store:       record.store,
+                route:       record.route,
+                name:        record.name,
+                address:     record.address,
+                deliveredAt: now,
+            });
+        }
+    }
+
+    saveDeliveryChecked();
+    renderDelivery();
+}
+
+function openDeliveryRouteEdit(area, groupKey) {
+    // 利用可能なルート一覧（全配達データから取得）
+    const allRoutes = [...new Set(deliveryData.map(r => r.route))].sort((a, b) => a - b);
+    const override  = deliveryRouteOverrides[groupKey];
+    // 現在のルート（オーバーライドあれば優先、なければ元データの最初のルート）
+    const record    = deliveryData.find(r =>
+        `${r.store}|${r.dataMonth}|${r.name}|${r.address}` === groupKey
+    );
+    const currentRoute = override ? override.route : (record ? record.route : allRoutes[0]);
+
+    const select = document.createElement('select');
+    select.className = 'delivery-route-edit-select';
+    allRoutes.forEach(r => {
+        const opt = document.createElement('option');
+        opt.value = r;
+        opt.textContent = `R${r}`;
+        if (r === currentRoute) opt.selected = true;
+        select.appendChild(opt);
+    });
+
+    area.innerHTML = '';
+    area.appendChild(select);
+    select.focus();
+
+    select.addEventListener('change', () => {
+        const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+        deliveryRouteOverrides[groupKey] = { route: Number(select.value), date: today };
+        saveDeliveryRouteOverrides();
+        renderDelivery();
+    });
+
+    // 選択せずにフォーカスが外れたら元に戻す
+    select.addEventListener('blur', () => {
+        // change が先に発火していない場合のみ再描画
+        renderDelivery();
+    });
 }
 
 // ─── Admin Tab ───────────────────────────────────────────────────
@@ -1908,7 +2107,9 @@ async function startApp() {
 
     manualRecords   = loadManualRecords();
     allData         = [...window.COLLECTION_DATA, ...manualRecords];
-    deliveryData    = window.DELIVERY_DATA || [];
+    deliveryData           = window.DELIVERY_DATA || [];
+    deliveryChecked        = loadDeliveryChecked();
+    deliveryRouteOverrides = loadDeliveryRouteOverrides();
 
     // 配達表タブの表示/非表示（フィーチャーフラグ）
     const navDeliveryBtn = document.getElementById('nav-delivery');
@@ -1968,8 +2169,9 @@ async function startApp() {
         filters.store = e.target.value;
         saveFilters();
         renderTable();
-        if (currentTab === 'msg')   renderMsgTab();
-        if (currentTab === 'admin') renderAdmin();
+        if (currentTab === 'msg')      renderMsgTab();
+        if (currentTab === 'admin')    renderAdmin();
+        if (currentTab === 'delivery') renderDelivery();
     });
     document.getElementById('filter-month').addEventListener('change', e => {
         filters.month = e.target.value;
@@ -1980,7 +2182,8 @@ async function startApp() {
         filters.route = e.target.value;
         saveFilters();
         renderTable();
-        if (currentTab === 'msg') renderMsgTab();
+        if (currentTab === 'msg')      renderMsgTab();
+        if (currentTab === 'delivery') renderDelivery();
     });
     document.getElementById('filter-payment').addEventListener('change', e => {
         filters.payment = e.target.value;

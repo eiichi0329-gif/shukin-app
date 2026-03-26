@@ -664,15 +664,33 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 }
 .btn-logout:hover { background: rgba(255,255,255,0.35); }
 
-/* ── 配達表タブ ───────────────────────────────────────────── */
-.delivery-filter-bar {
-  background: white; border-bottom: 3px solid var(--primary-mid);
-  padding: 8px 12px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-}
-.delivery-count {
-  margin-left: auto; font-size: 14px; color: var(--g500); font-weight: 700;
-}
+/* ── 配達モード：不要フィルターを非表示 ───────────────────── */
+.controls-bar.delivery-mode .search-wrap,
+.controls-bar.delivery-mode #filter-month,
+.controls-bar.delivery-mode #filter-payment,
+.controls-bar.delivery-mode .toggle-label,
+.controls-bar.delivery-mode #btn-admin-toggle,
+.controls-bar.delivery-mode #action-row { display: none !important; }
 
+/* ── 配達サマリー ─────────────────────────────────────────── */
+.delivery-summary {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+}
+.ds-item {
+  display: flex; align-items: center; gap: 4px;
+  background: var(--primary-bg); border: 1.5px solid var(--primary-mid);
+  border-radius: 8px; padding: 4px 10px;
+  font-size: 14px; color: var(--g600); white-space: nowrap;
+}
+.ds-item strong {
+  font-size: 18px; font-weight: 800; color: var(--primary-dark);
+  min-width: 1.4em; text-align: right;
+}
+/* カウントがゼロのとき薄くする */
+.ds-item:has(strong:empty),
+.ds-item.zero { opacity: 0.4; }
+
+/* ── 配達表タブ ───────────────────────────────────────────── */
 .delivery-list {
   padding: 10px 12px;
   display: flex; flex-direction: column; gap: 10px;
@@ -740,6 +758,48 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   font-size: 13px; color: var(--g600); line-height: 1.5;
   word-break: break-all;
 }
+
+/* ルートエリア（ダブルタップで編集） */
+.delivery-route-area {
+  display: flex; align-items: center; gap: 4px;
+  cursor: pointer; border-radius: 6px; padding: 2px 4px;
+  transition: background .15s;
+}
+.delivery-route-area:hover { background: var(--primary-bg); }
+
+.delivery-route-badge.route-overridden {
+  background: #fef9c3; color: #854d0e; border-color: #fde68a;
+  border: 1.5px solid #fde68a; border-radius: 5px; padding: 1px 6px;
+}
+
+.delivery-route-edit-select {
+  padding: 4px 8px; border: 2px solid var(--primary); border-radius: 8px;
+  font-size: 15px; font-weight: 700; color: var(--primary-dark);
+  background: var(--primary-bg); outline: none; cursor: pointer;
+  font-family: inherit;
+}
+
+/* 配達済みチェック */
+.delivery-check-row { display: flex; justify-content: flex-end; margin-top: 2px; }
+.btn-delivery-check {
+  padding: 7px 14px; border-radius: 8px; border: 1.5px solid var(--g300);
+  background: var(--g100); color: var(--g600);
+  font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+.btn-delivery-check:hover  { background: var(--g200); }
+.btn-delivery-check:active { transform: scale(0.96); }
+.btn-delivery-done {
+  background: var(--green-bg); color: var(--green);
+  border-color: #86efac;
+}
+.btn-delivery-done:hover { background: var(--green-hover); }
+
+/* 配達済みカード */
+.delivery-card-done {
+  opacity: 0.5;
+  background: var(--g100);
+}
+.delivery-card-done .delivery-name { text-decoration: line-through; color: var(--g400); }
 
 @media (max-width: 640px) {
   .delivery-list { padding: 8px; gap: 8px; }

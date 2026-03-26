@@ -46,8 +46,12 @@ const AMOUNT_LOG_COL_WIDTHS = [100, 70, 70, 160, 100, 100, 160, 1];
 const ALLOWED_USERS_SHEET   = '許可ユーザー';
 const ALLOWED_USERS_HEADERS = ['店舗名', '名前', 'メールアドレス'];
 
+const DELIVERY_SHEET   = '配達時刻';
+const DELIVERY_HEADERS = ['店舗', 'ルート', '名前', '住所', '配達日時'];
+const DELIVERY_COL_WIDTHS = [100, 60, 160, 260, 160];
+
 // doGet でチェックデータ読み取りをスキップするシート名
-const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET]);
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET]);
 
 // ─── メインハンドラ ───────────────────────────────────
 function doPost(e) {
@@ -196,6 +200,24 @@ function doPost(e) {
         updatedStr,
         key,
       ]);
+
+    // ── 配達時刻 記録 ──
+    } else if (action === 'addDelivery') {
+      const sheet = getOrCreateSheet(ss, DELIVERY_SHEET, DELIVERY_HEADERS, '#0f766e', DELIVERY_COL_WIDTHS);
+      let dateStr = payload.deliveredAt || '';
+      if (dateStr) {
+        try {
+          dateStr = Utilities.formatDate(new Date(dateStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
+        } catch (_) {}
+      }
+      sheet.appendRow([
+        payload.store   || '',
+        payload.route   || '',
+        payload.name    || '',
+        payload.address || '',
+        dateStr,
+      ]);
+      sortDeliverySheet(sheet);
 
     // ── 全リセット ──
     } else if (action === 'resetAll') {
@@ -485,6 +507,19 @@ function buildTransferRow(r, transferDate, recordedAt) {
     recStr,
     r.key         || '',
   ];
+}
+
+// ─── 配達時刻: 配達日時 → 店舗 → ルート順ソート ────
+function sortDeliverySheet(sheet) {
+  const dataRows = sheet.getLastRow() - 1;
+  if (dataRows < 2) return;
+  const cols = sheet.getLastColumn();
+  sheet.getRange(2, 1, dataRows, cols)
+    .sort([
+      { column: 5, ascending: true },  // 配達日時
+      { column: 1, ascending: true },  // 店舗
+      { column: 2, ascending: true },  // ルート
+    ]);
 }
 
 // ─── レスポンス ───────────────────────────────────────

@@ -53,6 +53,13 @@
                         <input id="toggle-uncollected" type="checkbox">
                         未集金のみ
                     </label>
+                    <div id="delivery-summary" class="delivery-summary hidden">
+                        <span class="ds-item">おかず<strong id="ds-okazu">0</strong></span>
+                        <span class="ds-item">小箱<strong id="ds-kobox">0</strong></span>
+                        <span class="ds-item">ダブル<strong id="ds-double">0</strong></span>
+                        <span class="ds-item">ご膳<strong id="ds-gozen">0</strong></span>
+                        <span class="ds-item">ごはん<strong id="ds-gohan">0</strong></span>
+                    </div>
                 </div>
                 <button class="btn btn-admin-toggle" id="btn-admin-toggle" onclick="toggleAdminActions()">&#9881;</button>
             </div>
@@ -69,7 +76,6 @@
 
         <!-- 配達表 タブ -->
         <div id="tab-delivery" class="hidden">
-            <div id="delivery-filter-bar" class="delivery-filter-bar"></div>
             <div id="delivery-list" class="delivery-list"></div>
         </div>
 
