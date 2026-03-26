@@ -1,5 +1,5 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-03-27 07:30:45
+// 自動生成: 2026-03-27 07:32:25
 // 件数: 4240 件  合計: 43,140,473円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbzaN9MnPONOoSH8DzrjxZhYBPstdmWsxnG217x8HdE0CZ9Oxckzxx55RVCqDZgMcTQ/exec";
@@ -59378,7 +59378,7 @@ window.DELIVERY_DATA = [
     "name": "大和　忠晴",
     "type": "ご膳",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "新規",
     "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
@@ -59397,7 +59397,7 @@ window.DELIVERY_DATA = [
     "name": "永田　俊和",
     "type": "おかず",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
@@ -59416,7 +59416,7 @@ window.DELIVERY_DATA = [
     "name": "福戸　和子",
     "type": "ご膳",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "再注文",
     "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "開けやすい容器",
@@ -78316,7 +78316,7 @@ window.DELIVERY_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-03-27T07:30:45.854055",
+  "generatedAt": "2026-03-27T07:32:25.946605",
   "stores": [
     "下関店",
     "北九州店",
