@@ -1882,7 +1882,8 @@ function renderAdmin() {
     const filteredMsgs = storeVal ? allMsgs.filter(m => m.store === storeVal) : allMsgs;
     const msgsByDate = {};
     filteredMsgs.forEach(m => {
-        const dk = m.createdAt ? new Date(m.createdAt).toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' }) : '';
+        const parsed = m.createdAt ? new Date(m.createdAt) : null;
+        const dk = (parsed && !isNaN(parsed)) ? parsed.toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' }) : 'unknown';
         if (!msgsByDate[dk]) msgsByDate[dk] = [];
         msgsByDate[dk].push(m);
     });
@@ -2178,8 +2179,10 @@ function deleteMessage(id) {
 }
 
 function buildDailyMessages(date, msgs) {
-    const [, m, day] = date.split('-');
-    const dateLabel = `${parseInt(m)}月${parseInt(day)}日`;
+    const parts = date.split('-');
+    const dateLabel = (parts.length === 3 && parts[1] && parts[2])
+        ? `${parseInt(parts[1])}月${parseInt(parts[2])}日`
+        : '日時不明';
     const sorted = [...msgs].sort((a, b) =>
         (Number(a.route) - Number(b.route)) || a.createdAt.localeCompare(b.createdAt)
     );
