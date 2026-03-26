@@ -832,8 +832,8 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 }
 .btn-delivery-msg-open    { background: var(--g100); color: var(--g600); border-color: var(--g300); }
 .btn-delivery-msg-open:hover    { background: var(--g200); }
-.btn-delivery-collect-open { background: #dbeafe; color: #1e40af; border-color: #93c5fd; }
-.btn-delivery-collect-open:hover { background: #bfdbfe; }
+.btn-delivery-collect-open { background: #dcfce7; color: #166534; border-color: #86efac; }
+.btn-delivery-collect-open:hover { background: #bbf7d0; }
 .delivery-bank-label {
   font-size: 14px; font-weight: 600; color: #2563eb;
   background: #eff6ff; border: 1.5px solid #bfdbfe;
