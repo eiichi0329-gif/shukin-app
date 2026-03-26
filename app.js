@@ -613,6 +613,7 @@ function showToast(msg, type = 'success') {
 
 // ─── Check Action ────────────────────────────────────────────────
 function onCheck(key, isChecked) {
+    showToast(`[診断] onCheck: ${isChecked ? 'チェック' : '解除'}`, 'info');
     let gasKey    = key;
     let incAmount = null;
 
