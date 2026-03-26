@@ -1233,10 +1233,10 @@ function renderDelivery() {
             ? `<a class="btn-contact btn-contact-emergency" href="tel:${m.emergency.replace(/[^\d+\-]/g, '')}">&#128680; ${escHtml(m.emergency)}</a>`
             : '';
 
-        // 種類×数量をひとまとめに表示（種類ごとに色付き）
-        const itemsHtml = m.items.map(i => {
+        // 種類×数量をひとまとめに表示（セット系は構成要素に展開して表示）
+        const itemsHtml = expandDeliveryItems(m.items).map(i => {
             const colorClass = DELIVERY_TYPE_COLOR[i.type] || 'dtype-black';
-            return `<span class="delivery-meta-item ${colorClass}">&#127803; ${escHtml(i.type)}${i.count ? `&times;${escHtml(i.count)}` : ''}</span>`;
+            return `<span class="delivery-meta-item ${colorClass}">&#127803; ${escHtml(i.type)}&times;${escHtml(i.count)}</span>`;
         }).join('');
 
         const otherMetaParts = [
@@ -1373,6 +1373,25 @@ function renderDelivery() {
             handleRouteTap(area, gk);
         });
     });
+}
+
+// セット系を構成要素に展開して表示用アイテム配列を返す
+function expandDeliveryItems(items) {
+    const map = new Map();
+    items.forEach(i => {
+        const n = parseInt(i.count) || 1;
+        const parts = {
+            'セット':       [['おかず', n], ['ごはん', n]],
+            '小箱セット':   [['小箱',   n], ['ごはん', n]],
+            'ダブルセット': [['ダブル', n], ['ごはん', n]],
+        }[i.type];
+        if (parts) {
+            parts.forEach(([type, cnt]) => map.set(type, (map.get(type) || 0) + cnt));
+        } else {
+            map.set(i.type, (map.get(i.type) || 0) + n);
+        }
+    });
+    return [...map.entries()].map(([type, count]) => ({ type, count: String(count) }));
 }
 
 // 種類名 → CSS色クラス
