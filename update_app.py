@@ -74,6 +74,14 @@ DEL_COL_EMERGENCY = 13  # N列: 緊急連絡先
 DEL_COL_MEMO      = 14  # O列: 備考
 DEL_COL_ABSENT    = 15  # P列: 不在時の対応
 
+# 数量セルの背景色 → 表示ラベルのマッピング（空文字=表示しない）
+COUNT_COLOR_MAP = {
+    '#FFFF00':         '',            # 黄色: 集金 → 表示しない
+    '#FF0000':         '翌週注文確認',  # 赤
+    'theme:8:0.60':    '新規',         # 水色
+    'theme:9:0.60':    '再注文',       # ベージュ
+}
+
 # データ行としてスキップする名前
 SKIP_NAMES = {'None', 'nan', '名前', '顧客名', '氏名', 'お客様名', 'Name', '担当者名', ''}
 
@@ -249,6 +257,32 @@ def extract_from_excel(file_info):
     return records
 
 # ──────────────────────────────────────────────────────────────
+# セル背景色 → ラベル変換
+# ──────────────────────────────────────────────────────────────
+def get_count_color_label(cell):
+    try:
+        fill = cell.fill
+        if fill is None or fill.fill_type in (None, 'none'):
+            return ''
+        fg = fill.fgColor
+        if fg is None:
+            return ''
+        if fg.type == 'rgb':
+            rgb = fg.rgb or ''
+            if rgb == '00000000':
+                return ''
+            color = f"#{rgb[2:].upper()}" if len(rgb) == 8 else f"#{rgb.upper()}"
+            if color == '#FFFFFF':
+                return ''
+        elif fg.type == 'theme':
+            color = f"theme:{fg.theme}:{fg.tint:.2f}"
+        else:
+            return ''
+        return COUNT_COLOR_MAP.get(color, '')
+    except Exception:
+        return ''
+
+# ──────────────────────────────────────────────────────────────
 # 配達表シートからレコード抽出（今月分ファイルのみ対象）
 # ──────────────────────────────────────────────────────────────
 def extract_delivery_from_excel(file_info):
@@ -258,7 +292,8 @@ def extract_delivery_from_excel(file_info):
     store      = file_info['store']
 
     try:
-        wb = openpyxl.load_workbook(fpath, read_only=True, data_only=True)
+        # read_only=False にしないとセルの色情報が読み取れない
+        wb = openpyxl.load_workbook(fpath, read_only=False, data_only=True)
     except Exception as e:
         print(f"    [エラー] 開けませんでした: {e}")
         return []
@@ -278,24 +313,26 @@ def extract_delivery_from_excel(file_info):
         return '' if s in ('None', 'nan') else s
 
     def gcol(row, idx):
-        return safe_str(row[idx]) if len(row) > idx else ''
+        return safe_str(row[idx].value) if len(row) > idx else ''
 
-    for row in ws.iter_rows(min_row=2, values_only=True):
+    for row in ws.iter_rows(min_row=2):
         if not row or len(row) <= DEL_COL_NAME:
             continue
-        name = safe_str(row[DEL_COL_NAME])
+        name = safe_str(row[DEL_COL_NAME].value)
         if not name or name in SKIP_NAMES:
             continue
 
-        code_raw = row[DEL_COL_CODE] if len(row) > DEL_COL_CODE else None
+        code_raw = row[DEL_COL_CODE].value if len(row) > DEL_COL_CODE else None
         try:
             code = int(code_raw) if code_raw is not None else 0
         except (ValueError, TypeError):
             code = 0
         route = code_to_route(code)
 
-        pay_raw = row[DEL_COL_PAYMENT] if len(row) > DEL_COL_PAYMENT else None
+        pay_raw = row[DEL_COL_PAYMENT].value if len(row) > DEL_COL_PAYMENT else None
         is_bank = pay_raw is not None and safe_str(pay_raw) not in ('', '0')
+
+        count_label = get_count_color_label(row[DEL_COL_COUNT]) if len(row) > DEL_COL_COUNT else ''
 
         records.append({
             'store':       store,
@@ -305,6 +342,7 @@ def extract_delivery_from_excel(file_info):
             'name':        name,
             'type':        gcol(row, DEL_COL_TYPE),
             'count':       gcol(row, DEL_COL_COUNT),
+            'countLabel':  count_label,
             'weekly':      gcol(row, DEL_COL_WEEKLY),
             'paymentType': 'bank' if is_bank else 'cash',
             'vessel':      gcol(row, DEL_COL_VESSEL),

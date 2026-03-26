@@ -574,6 +574,15 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 
 .manual-empty { font-size: 13px; color: var(--g400); text-align: center; padding: 8px 0; }
 
+/* ── 配達表 連絡事項ダイアログ ───────────────────────────── */
+.delivery-msg-target {
+  background: var(--primary-bg); border: 2px solid var(--primary-mid);
+  border-radius: 10px; padding: 10px 14px;
+}
+.delivery-msg-target-info {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+
 /* ── 現金精査ダイアログ ───────────────────────────────────── */
 .denom-dialog {
   border: none; border-radius: 16px; padding: 0;
@@ -799,6 +808,63 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   background: var(--primary-bg); outline: none; cursor: pointer;
   font-family: inherit;
 }
+
+/* 名前＋アクションボタン */
+.delivery-name-area {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap; flex: 1; min-width: 0;
+}
+.btn-delivery-msg-open,
+.btn-delivery-collect-open {
+  padding: 4px 10px; border-radius: 6px; border: 1.5px solid var(--g300);
+  font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.btn-delivery-msg-open    { background: var(--g100); color: var(--g600); border-color: var(--g300); }
+.btn-delivery-msg-open:hover    { background: var(--g200); }
+.btn-delivery-collect-open { background: var(--green-bg); color: var(--green); border-color: #86efac; }
+.btn-delivery-collect-open:hover { background: var(--green-hover); }
+.delivery-bank-label {
+  font-size: 12px; font-weight: 600; color: #2563eb;
+  background: #eff6ff; border: 1.5px solid #bfdbfe;
+  border-radius: 6px; padding: 4px 10px; white-space: nowrap;
+}
+/* 数量セル色ラベル */
+.count-label {
+  font-size: 11px; font-weight: 700; border-radius: 5px;
+  padding: 3px 8px; white-space: nowrap; border: 1.5px solid transparent;
+}
+.count-label-cyan   { background: #cffafe; color: #0e7490; border-color: #a5f3fc; }
+.count-label-red    { background: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
+.count-label-beige  { background: #fef3c7; color: #92400e; border-color: #fde68a; }
+.count-label-default{ background: var(--g100); color: var(--g600); border-color: var(--g300); }
+
+/* 種類・数量行 + 配達済みボタン */
+.delivery-card-items-row {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.delivery-card-items { display: flex; flex-wrap: wrap; gap: 4px; flex: 1; }
+
+/* コンパクト表示マップアイコン */
+.delivery-compact-map {
+  display: none; font-size: 18px; text-decoration: none; line-height: 1;
+}
+/* コンパクトモード */
+.delivery-card-compact .delivery-card-row,
+.delivery-card-compact .delivery-card-other-meta,
+.delivery-card-compact .delivery-card-contacts,
+.delivery-card-compact .delivery-card-notes-wrap,
+.delivery-card-compact .delivery-card-other-meta { display: none !important; }
+.delivery-card-compact .delivery-compact-map { display: inline; }
+.delivery-card-compact { cursor: pointer; }
+
+/* 集金ダイアログ */
+.delivery-collect-row {
+  display: flex; align-items: center; gap: 10px; padding: 10px 0;
+  border-bottom: 1px solid var(--g200);
+}
+.delivery-collect-row:last-child { border-bottom: none; }
+.delivery-collect-month  { font-size: 14px; font-weight: 700; min-width: 60px; }
+.delivery-collect-amount { font-size: 16px; font-weight: 700; color: var(--primary); flex: 1; }
+.delivery-collect-empty  { font-size: 14px; color: var(--g400); text-align: center; padding: 16px 0; }
 
 /* 配達済みチェック */
 .delivery-check-row { display: flex; justify-content: flex-end; margin-top: 2px; }

@@ -153,9 +153,10 @@ let recordOverrides = {};   // key → { route?, dataMonth?, name? }（行ダブ
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'list';
 let expandedCell = null;  // { route, month } for admin detail
-let deliveryData          = [];
-let deliveryChecked       = {};
+let deliveryData           = [];
+let deliveryChecked        = {};
 let deliveryRouteOverrides = {};
+let deliveryCompactRoutes  = new Set(); // "store|route" keys currently in compact view
 
 const DELIVERY_CHECK_KEY          = 'coll-delivery-v1';
 const DELIVERY_ROUTE_OVERRIDE_KEY = 'coll-delivery-route-v1';
@@ -1162,6 +1163,7 @@ function renderDelivery() {
             dataMonth:   base.dataMonth,
             paymentType: base.paymentType,
             items:       recs.map(r => ({ type: r.type, count: r.count })).filter(i => i.type),
+            countLabel:  uniq(recs, 'countLabel').filter(Boolean).join(''),
             vessel:    uniq(recs, 'vessel').join(' / '),
             weekly:    uniq(recs, 'weekly').join(' / '),
             phone:     uniq(recs, 'phone').join(' / '),
@@ -1204,9 +1206,7 @@ function renderDelivery() {
             `<span class="delivery-route-badge${hasOverride ? ' route-overridden' : ''}">R${r}</span>`
         ).join('');
 
-        const payBadge = m.paymentType === 'bank'
-            ? '<span class="pay-badge pay-bank">口振</span>'
-            : '<span class="pay-badge pay-cash">現金</span>';
+        const isBank = m.paymentType === 'bank';
 
         const mapHref  = m.address ? `https://maps.google.com/?q=${encodeURIComponent(m.address)}` : '';
         const addrHtml = m.address
@@ -1226,8 +1226,7 @@ function renderDelivery() {
             return `<span class="delivery-meta-item ${colorClass}">&#127803; ${escHtml(i.type)}${i.count ? `&times;${escHtml(i.count)}` : ''}</span>`;
         }).join('');
 
-        const metaParts = [
-            itemsHtml,
+        const otherMetaParts = [
             m.vessel ? `<span class="delivery-meta-item">&#128230; ${escHtml(m.vessel)}</span>` : '',
             m.weekly ? `<span class="delivery-meta-item">&#128197; ${escHtml(m.weekly)}</span>` : '',
         ].filter(Boolean).join('');
@@ -1238,25 +1237,41 @@ function renderDelivery() {
             m.absent ? `<div class="delivery-note">&#128682; ${escHtml(m.absent)}</div>` : '',
         ].filter(Boolean).join('');
 
-        const safeKey  = escHtml(m.groupKey);
-        const checkBtn = isDone
-            ? `<button class="btn-delivery-check btn-delivery-done" data-key="${safeKey}">&#10003; 配達済み ${doneTime}（取消）</button>`
-            : `<button class="btn-delivery-check" data-key="${safeKey}">配達済みにする</button>`;
+        const safeKey    = escHtml(m.groupKey);
+        const routeKey   = `${m.store}|${m.routes[0]}`;
+        const isCompact  = deliveryCompactRoutes.has(routeKey);
+        const checkBtn  = isDone
+            ? `<button class="btn-delivery-check btn-delivery-done" data-key="${safeKey}">&#10003; 配達済み${doneTime ? ' ' + doneTime : ''}（取消）</button>`
+            : `<button class="btn-delivery-check" data-key="${safeKey}">配達済み</button>`;
+        const compactMapHtml = m.address
+            ? `<a class="delivery-compact-map" href="${mapHref}" target="_blank" rel="noopener">&#128205;</a>`
+            : '';
 
         html += `
-        <div class="delivery-card ${isDone ? 'delivery-card-done' : ''}">
+        <div class="delivery-card ${isDone ? 'delivery-card-done' : ''}${isCompact ? ' delivery-card-compact' : ''}" data-group-key="${safeKey}" data-route-key="${escHtml(routeKey)}">
             <div class="delivery-card-header">
                 <div class="delivery-route-area" data-group-key="${safeKey}" title="ダブルタップでルート変更">
                     ${routeBadges}
                 </div>
-                <span class="delivery-name">${escHtml(m.name)}</span>
-                ${payBadge}
+                <div class="delivery-name-area">
+                    <span class="delivery-name">${escHtml(m.name)}</span>
+                    ${m.countLabel ? `<span class="count-label count-label-${labelClass(m.countLabel)}">${escHtml(m.countLabel)}</span>` : ''}
+                    ${compactMapHtml}
+                    <button class="btn-delivery-msg-open" data-group-key="${safeKey}">&#128172; 連絡事項</button>
+                    ${isBank
+                        ? `<span class="delivery-bank-label">口座振替</span>`
+                        : `<button class="btn-delivery-collect-open" data-group-key="${safeKey}">&#128181; 集金</button>`
+                    }
+                </div>
             </div>
-            ${addrHtml  ? `<div class="delivery-card-row">${addrHtml}</div>`                              : ''}
-            ${metaParts ? `<div class="delivery-card-meta">${metaParts}</div>`                            : ''}
+            ${addrHtml      ? `<div class="delivery-card-row">${addrHtml}</div>`                                    : ''}
+            <div class="delivery-card-items-row">
+                <div class="delivery-card-items">${itemsHtml}</div>
+                ${checkBtn}
+            </div>
+            ${otherMetaParts? `<div class="delivery-card-other-meta">${otherMetaParts}</div>`                       : ''}
             ${(phoneHtml || emergencyHtml) ? `<div class="delivery-card-contacts">${phoneHtml}${emergencyHtml}</div>` : ''}
-            ${notesHtml ? `<div class="delivery-card-notes-wrap">${notesHtml}</div>`                      : ''}
-            <div class="delivery-check-row">${checkBtn}</div>
+            ${notesHtml     ? `<div class="delivery-card-notes-wrap">${notesHtml}</div>`                            : ''}
         </div>`;
     });
 
@@ -1267,6 +1282,43 @@ function renderDelivery() {
     });
 
     updateDeliverySummary(data);
+
+    container.querySelectorAll('.btn-delivery-msg-open').forEach(btn => {
+        btn.addEventListener('click', () => openDeliveryMsgDialog(btn.dataset.groupKey));
+    });
+    container.querySelectorAll('.btn-delivery-collect-open').forEach(btn => {
+        btn.addEventListener('click', () => openDeliveryCollectDialog(btn.dataset.groupKey));
+    });
+
+    // カード：ダブルクリック／ダブルタップで同ルート全カードをコンパクト切替
+    let _lastCardTapKey  = null;
+    let _lastCardTapTime = 0;
+    const toggleRouteCompact = (routeKey) => {
+        const isNowCompact = !deliveryCompactRoutes.has(routeKey);
+        if (isNowCompact) deliveryCompactRoutes.add(routeKey);
+        else              deliveryCompactRoutes.delete(routeKey);
+        container.querySelectorAll(`.delivery-card[data-route-key="${CSS.escape(routeKey)}"]`).forEach(c => {
+            c.classList.toggle('delivery-card-compact', isNowCompact);
+        });
+    };
+    container.querySelectorAll('.delivery-card').forEach(card => {
+        const rk = card.dataset.routeKey;
+        card.addEventListener('dblclick', e => {
+            if (e.target.closest('button, a, .delivery-route-area')) return;
+            toggleRouteCompact(rk);
+        });
+        card.addEventListener('click', e => {
+            if (e.target.closest('button, a, .delivery-route-area')) return;
+            const now = Date.now();
+            if (_lastCardTapKey === rk && now - _lastCardTapTime < 400) {
+                toggleRouteCompact(rk);
+                _lastCardTapKey = null;
+            } else {
+                _lastCardTapKey  = rk;
+                _lastCardTapTime = now;
+            }
+        });
+    });
 
     // ルートバッジ：ダブルクリック／ダブルタップでルート編集
     let _lastRouteTapKey  = null;
@@ -1410,7 +1462,125 @@ function openDeliveryRouteEdit(area, groupKey) {
     });
 }
 
+// ─── Delivery Message Dialog ─────────────────────────────────────
+let _deliveryMsgTarget = null; // { store, route, name, groupKey }
+
+function openDeliveryMsgDialog(groupKey) {
+    const record = deliveryData.find(r =>
+        `${r.store}|${r.dataMonth}|${r.name}|${r.address}` === groupKey
+    );
+    if (!record) return;
+
+    const override = deliveryRouteOverrides[groupKey];
+    const route    = override ? override.route : record.route;
+
+    _deliveryMsgTarget = { store: record.store, route, name: record.name, groupKey };
+
+    document.getElementById('delivery-msg-target').innerHTML =
+        `<div class="delivery-msg-target-info">
+            <span class="delivery-route-badge">R${route}</span>
+            <strong>${escHtml(record.name)}</strong>
+            <span style="font-size:13px;color:var(--g500)">${escHtml(record.store)}</span>
+        </div>`;
+    document.getElementById('delivery-msg-type').value = '';
+    document.getElementById('delivery-msg-text').value = '';
+    document.getElementById('delivery-msg-dialog').showModal();
+}
+
+function closeDeliveryMsgDialog() {
+    document.getElementById('delivery-msg-dialog').close();
+    _deliveryMsgTarget = null;
+}
+
+function submitDeliveryMsg() {
+    if (!_deliveryMsgTarget) return;
+    const typeVal  = document.getElementById('delivery-msg-type').value;
+    const freeText = document.getElementById('delivery-msg-text').value.trim();
+
+    if (!typeVal && !freeText) {
+        alert('報告内容を選択するか、自由入力欄に入力してください');
+        return;
+    }
+
+    const parts = [];
+    if (typeVal)  parts.push(typeVal);
+    if (freeText) parts.push(freeText);
+
+    const msg = {
+        id:           Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        store:        _deliveryMsgTarget.store,
+        route:        _deliveryMsgTarget.route,
+        customerKey:  _deliveryMsgTarget.groupKey,
+        customerName: _deliveryMsgTarget.name,
+        text:         parts.join('\n'),
+        createdAt:    new Date().toISOString(),
+    };
+
+    const msgs = loadAllMessages();
+    msgs.push(msg);
+    saveMessages(msgs);
+
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'addMessage', message: msg });
+
+    const sentName = _deliveryMsgTarget.name;
+    closeDeliveryMsgDialog();
+    alert(`「${sentName}」の連絡事項を送信しました`);
+}
+
+// ─── Delivery Collect Dialog ─────────────────────────────────────
+function openDeliveryCollectDialog(groupKey) {
+    const dRec = deliveryData.find(r =>
+        `${r.store}|${r.dataMonth}|${r.name}|${r.address}` === groupKey
+    );
+    if (!dRec) return;
+
+    document.getElementById('delivery-collect-name').textContent = dRec.name;
+
+    const personRecords = allData.filter(r => r.name === dRec.name && r.store === dRec.store);
+    const uncollected   = personRecords.filter(r => {
+        const key = getKey(r);
+        return !isFullyCollected(key, r) && effectiveAmount(key, r) > 0;
+    });
+
+    const list = document.getElementById('delivery-collect-list');
+    if (uncollected.length === 0) {
+        list.innerHTML = '<div class="delivery-collect-empty">未集金レコードはありません</div>';
+    } else {
+        list.innerHTML = uncollected.map(r => {
+            const key = getKey(r);
+            const amt = effectiveAmount(key, r);
+            return `<div class="delivery-collect-row" data-key="${escHtml(key)}">
+                <span class="delivery-collect-month">${escHtml(r.dataMonth)}月</span>
+                <span class="delivery-collect-amount">¥${amt.toLocaleString()}</span>
+                <button class="btn btn-primary btn-collect-month" data-key="${escHtml(key)}">集金済みにする</button>
+            </div>`;
+        }).join('');
+
+        list.querySelectorAll('.btn-collect-month').forEach(btn => {
+            btn.addEventListener('click', () => {
+                onCheck(btn.dataset.key, true);
+                btn.closest('.delivery-collect-row').remove();
+                if (!list.querySelector('.delivery-collect-row')) {
+                    list.innerHTML = '<div class="delivery-collect-empty">未集金レコードはありません</div>';
+                }
+            });
+        });
+    }
+
+    document.getElementById('delivery-collect-dialog').showModal();
+}
+
+function closeDeliveryCollectDialog() {
+    document.getElementById('delivery-collect-dialog').close();
+}
+
 // ─── Admin Tab ───────────────────────────────────────────────────
+function labelClass(label) {
+    const map = { '新規': 'cyan', '翌週注文確認': 'red', '再注文': 'beige' };
+    return map[label] || 'default';
+}
+
 function escHtml(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }

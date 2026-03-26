@@ -270,6 +270,35 @@
         </div>
     </dialog>
 
+    <!-- 配達表 集金ダイアログ -->
+    <dialog id="delivery-collect-dialog" class="settings-dialog">
+        <div class="settings-inner">
+            <div class="settings-title">&#128181; 集金 — <span id="delivery-collect-name"></span></div>
+            <div id="delivery-collect-list"></div>
+            <div class="settings-actions" style="margin-top:16px">
+                <button class="btn btn-secondary" onclick="closeDeliveryCollectDialog()">閉じる</button>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- 配達表 連絡事項ダイアログ -->
+    <dialog id="delivery-msg-dialog" class="settings-dialog">
+        <div class="settings-inner">
+            <div class="settings-title">&#128172; 連絡事項</div>
+            <div id="delivery-msg-target" class="delivery-msg-target"></div>
+            <select id="delivery-msg-type" class="msg-select">
+                <option value="">報告内容を選択してください</option>
+                <option value="別紙参照">別紙参照</option>
+                <option value="口座振替依頼書提出">口座振替依頼書提出</option>
+            </select>
+            <textarea id="delivery-msg-text" class="msg-textarea" placeholder="自由記入（省略可）" rows="3"></textarea>
+            <div class="settings-actions">
+                <button class="btn btn-secondary" onclick="closeDeliveryMsgDialog()">キャンセル</button>
+                <button class="btn btn-primary"   onclick="submitDeliveryMsg()">送信</button>
+            </div>
+        </div>
+    </dialog>
+
     <!-- 行編集ダイアログ -->
     <dialog id="row-edit-dialog" class="settings-dialog">
         <div class="settings-inner">
