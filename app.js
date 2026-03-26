@@ -153,6 +153,8 @@ let recordOverrides = {};   // key → { route?, dataMonth?, name? }（行ダブ
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'list';
 let expandedCell = null;  // { route, month } for admin detail
+let deliveryData = [];
+let deliveryFilters = { store: '', route: '' };
 
 // 口振一括チェックモード
 let bulkMode               = false;
@@ -1076,14 +1078,120 @@ function resetAll() {
 // ─── Tab Switch ──────────────────────────────────────────────────
 function switchTab(tab) {
     currentTab = tab;
+    document.getElementById('tab-delivery').classList.toggle('hidden', tab !== 'delivery');
     document.getElementById('tab-list').classList.toggle('hidden', tab !== 'list');
     document.getElementById('tab-msg').classList.toggle('hidden',  tab !== 'msg');
     document.getElementById('tab-admin').classList.toggle('hidden', tab !== 'admin');
+    const navDelivery = document.getElementById('nav-delivery');
+    if (navDelivery) navDelivery.classList.toggle('active', tab === 'delivery');
     document.getElementById('nav-list').classList.toggle('active', tab === 'list');
     document.getElementById('nav-msg').classList.toggle('active',  tab === 'msg');
     document.getElementById('nav-admin').classList.toggle('active', tab === 'admin');
-    if (tab === 'admin') renderAdmin();
-    if (tab === 'msg')   renderMsgTab();
+    if (tab === 'admin')    renderAdmin();
+    if (tab === 'msg')      renderMsgTab();
+    if (tab === 'delivery') renderDelivery();
+}
+
+// ─── Delivery Tab ────────────────────────────────────────────────
+function renderDelivery() {
+    const container = document.getElementById('delivery-list');
+    const filterBar = document.getElementById('delivery-filter-bar');
+    if (!container || !filterBar) return;
+
+    // フィルターバー構築（初回のみ）
+    if (!filterBar.dataset.built) {
+        filterBar.dataset.built = '1';
+        const definedOrder = (window.DATA_META && window.DATA_META.stores) || [];
+        const dataStores   = new Set(deliveryData.map(r => r.store));
+        const stores = definedOrder.length
+            ? definedOrder.filter(s => dataStores.has(s))
+            : [...dataStores].sort();
+        const routes = [...new Set(deliveryData.map(r => r.route))].sort((a, b) => a - b);
+
+        filterBar.innerHTML = `
+            <select id="del-filter-store" class="sel-filter">
+                <option value="">全店舗</option>
+                ${stores.map(s => `<option value="${s}">${s}</option>`).join('')}
+            </select>
+            <select id="del-filter-route" class="sel-filter">
+                <option value="">全ルート</option>
+                ${routes.map(r => `<option value="${r}">R${r}</option>`).join('')}
+            </select>
+            <span class="delivery-count" id="delivery-count"></span>`;
+
+        document.getElementById('del-filter-store').addEventListener('change', e => {
+            deliveryFilters.store = e.target.value;
+            renderDelivery();
+        });
+        document.getElementById('del-filter-route').addEventListener('change', e => {
+            deliveryFilters.route = e.target.value;
+            renderDelivery();
+        });
+    }
+
+    // フィルタリング
+    const data = deliveryData.filter(r => {
+        if (deliveryFilters.store && r.store  !== deliveryFilters.store)         return false;
+        if (deliveryFilters.route && String(r.route) !== deliveryFilters.route)  return false;
+        return true;
+    });
+
+    const countEl = document.getElementById('delivery-count');
+    if (countEl) countEl.textContent = `${data.length}件`;
+
+    if (data.length === 0) {
+        container.innerHTML = '<div class="empty-msg">該当する配達先がありません</div>';
+        return;
+    }
+
+    let html = '';
+    data.forEach(r => {
+        const payBadge = r.paymentType === 'bank'
+            ? '<span class="pay-badge pay-bank">口振</span>'
+            : '<span class="pay-badge pay-cash">現金</span>';
+
+        const mapHref = r.address
+            ? `https://maps.google.com/?q=${encodeURIComponent(r.address)}`
+            : '';
+        const addrHtml = r.address
+            ? `<a class="delivery-address" href="${mapHref}" target="_blank" rel="noopener">&#128205; ${escHtml(r.address)}</a>`
+            : '';
+
+        const phoneHtml = r.phone
+            ? `<a class="btn-contact btn-contact-phone" href="tel:${r.phone.replace(/[^\d+\-]/g, '')}">&#128222; ${escHtml(r.phone)}</a>`
+            : '';
+        const emergencyHtml = r.emergency
+            ? `<a class="btn-contact btn-contact-emergency" href="tel:${r.emergency.replace(/[^\d+\-]/g, '')}">&#128680; ${escHtml(r.emergency)}</a>`
+            : '';
+
+        const metaParts = [
+            r.type    ? `<span class="delivery-meta-item">&#127803; ${escHtml(r.type)}</span>`    : '',
+            r.count   ? `<span class="delivery-meta-item">&#215;${escHtml(r.count)}</span>`       : '',
+            r.vessel  ? `<span class="delivery-meta-item">&#128230; ${escHtml(r.vessel)}</span>`  : '',
+            r.weekly  ? `<span class="delivery-meta-item">&#128197; ${escHtml(r.weekly)}</span>`  : '',
+        ].filter(Boolean).join('');
+
+        const notesHtml = [
+            r.notes  ? `<div class="delivery-note">&#9888; ${escHtml(r.notes)}</div>`  : '',
+            r.memo   ? `<div class="delivery-note">&#128172; ${escHtml(r.memo)}</div>` : '',
+            r.absent ? `<div class="delivery-note">&#128682; ${escHtml(r.absent)}</div>` : '',
+        ].filter(Boolean).join('');
+
+        html += `
+        <div class="delivery-card">
+            <div class="delivery-card-header">
+                <span class="col-route delivery-route-badge">R${r.route}</span>
+                <span class="delivery-name">${escHtml(r.name)}</span>
+                ${payBadge}
+            </div>
+            ${addrHtml ? `<div class="delivery-card-row">${addrHtml}</div>` : ''}
+            ${metaParts ? `<div class="delivery-card-meta">${metaParts}</div>` : ''}
+            ${(phoneHtml || emergencyHtml) ? `<div class="delivery-card-contacts">${phoneHtml}${emergencyHtml}</div>` : ''}
+            ${notesHtml ? `<div class="delivery-card-notes-wrap">${notesHtml}</div>` : ''}
+        </div>`;
+    });
+
+    container.innerHTML = html;
 }
 
 // ─── Admin Tab ───────────────────────────────────────────────────
@@ -1800,6 +1908,13 @@ async function startApp() {
 
     manualRecords   = loadManualRecords();
     allData         = [...window.COLLECTION_DATA, ...manualRecords];
+    deliveryData    = window.DELIVERY_DATA || [];
+
+    // 配達表タブの表示/非表示（フィーチャーフラグ）
+    const navDeliveryBtn = document.getElementById('nav-delivery');
+    if (navDeliveryBtn) {
+        navDeliveryBtn.style.display = window.FEATURE_DELIVERY_ENABLED ? '' : 'none';
+    }
     checked         = loadChecked();
     bankState       = loadBankState();
     bankFailedKeys  = loadBankFailedKeys();

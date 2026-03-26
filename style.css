@@ -663,3 +663,86 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   font-size: 12px; cursor: pointer; white-space: nowrap;
 }
 .btn-logout:hover { background: rgba(255,255,255,0.35); }
+
+/* ── 配達表タブ ───────────────────────────────────────────── */
+.delivery-filter-bar {
+  background: white; border-bottom: 3px solid var(--primary-mid);
+  padding: 8px 12px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.delivery-count {
+  margin-left: auto; font-size: 14px; color: var(--g500); font-weight: 700;
+}
+
+.delivery-list {
+  padding: 10px 12px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+
+.delivery-card {
+  background: white; border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(194,65,12,.12);
+  padding: 12px 14px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+
+.delivery-card-header {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.delivery-route-badge {
+  font-size: 14px; font-weight: 700; color: var(--primary);
+  white-space: nowrap;
+}
+.delivery-name {
+  font-size: 17px; font-weight: 700; color: var(--g800); flex: 1;
+}
+
+.delivery-card-row { display: flex; }
+
+.delivery-address {
+  font-size: 14px; color: #1d4ed8;
+  text-decoration: none; display: flex; align-items: center; gap: 4px;
+  word-break: break-all;
+}
+.delivery-address:hover { text-decoration: underline; }
+
+.delivery-card-meta {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.delivery-meta-item {
+  font-size: 13px; background: var(--g100); color: var(--g800);
+  border: 1px solid var(--g200); border-radius: 6px;
+  padding: 3px 8px; white-space: nowrap;
+}
+
+.delivery-card-contacts {
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+.btn-contact {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 8px 12px; border-radius: 8px;
+  font-size: 14px; font-weight: 700; text-decoration: none;
+  white-space: nowrap;
+}
+.btn-contact-phone {
+  background: #f0fdf4; color: #15803d; border: 1.5px solid #86efac;
+}
+.btn-contact-phone:hover { background: #dcfce7; }
+.btn-contact-emergency {
+  background: #fff7ed; color: #c2410c; border: 1.5px solid var(--primary-mid);
+}
+.btn-contact-emergency:hover { background: var(--primary-bg); }
+
+.delivery-card-notes-wrap {
+  display: flex; flex-direction: column; gap: 4px;
+  border-top: 1px solid var(--g100); padding-top: 6px;
+}
+.delivery-note {
+  font-size: 13px; color: var(--g600); line-height: 1.5;
+  word-break: break-all;
+}
+
+@media (max-width: 640px) {
+  .delivery-list { padding: 8px; gap: 8px; }
+  .delivery-card { padding: 10px 12px; }
+  .delivery-name { font-size: 15px; }
+}

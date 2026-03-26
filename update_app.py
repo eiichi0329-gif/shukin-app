@@ -29,8 +29,12 @@ except ImportError:
 # ──────────────────────────────────────────────────────────────
 ROOT_FOLDER    = r"C:\Users\USER\Dropbox\②顧客管理表"
 OUTPUT_FILE    = r"C:\Users\USER\collection-app\data.js"
-SHEET_NAME     = "顧客リスト"
-MIN_DATA_MONTH = "2026-02"          # 2026年2月分以降を対象
+SHEET_NAME          = "顧客リスト"
+DELIVERY_SHEET_NAME = "配達表"
+MIN_DATA_MONTH      = "2026-02"          # 2026年2月分以降を対象
+
+# 配達表を有効にするか（False=タブ非表示, True=タブ表示）
+FEATURE_DELIVERY_ENABLED = True
 
 # GAS ウェブアプリ URL（設定するとどの端末からでも自動で同期されます）
 # 空文字のままにするとアプリ内の「連携設定」画面で端末ごとに設定できます
@@ -47,12 +51,28 @@ STORE_KEYWORDS = {
     '福岡東': '福岡東店',
 }
 
-# Excel 列インデックス（0始まり）
+# 顧客リスト Excel 列インデックス（0始まり）
 COL_CODE    = 2   # C列: 顧客コード
 COL_NAME    = 3   # D列: 名前
 COL_PAYMENT = 8   # I列: 口座振替番号（数字あり=口座振替 / 空=現金）
 COL_ADDRESS = 10  # K列: 住所
 COL_AMOUNT  = 66  # BO列: 集金金額
+
+# 配達表 Excel 列インデックス（0始まり）
+DEL_COL_CODE      = 2   # C列: コード（ルート計算用）
+DEL_COL_NAME      = 3   # D列: 名前
+DEL_COL_TYPE      = 4   # E列: 種類
+DEL_COL_COUNT     = 5   # F列: 数
+DEL_COL_WEEKLY    = 6   # G列: 週間配達予定
+# H列 (index 7) はスキップ
+DEL_COL_PAYMENT   = 8   # I列: 支払（数字あり=口座振替 / 空=現金）
+DEL_COL_VESSEL    = 9   # J列: 容器
+DEL_COL_ADDRESS   = 10  # K列: 住所
+DEL_COL_NOTES     = 11  # L列: 注意事項
+DEL_COL_PHONE     = 12  # M列: 電話番号
+DEL_COL_EMERGENCY = 13  # N列: 緊急連絡先
+DEL_COL_MEMO      = 14  # O列: 備考
+DEL_COL_ABSENT    = 15  # P列: 不在時の対応
 
 # データ行としてスキップする名前
 SKIP_NAMES = {'None', 'nan', '名前', '顧客名', '氏名', 'お客様名', 'Name', '担当者名', ''}
@@ -229,6 +249,77 @@ def extract_from_excel(file_info):
     return records
 
 # ──────────────────────────────────────────────────────────────
+# 配達表シートからレコード抽出（今月分ファイルのみ対象）
+# ──────────────────────────────────────────────────────────────
+def extract_delivery_from_excel(file_info):
+    fpath      = file_info['path']
+    fname      = file_info['name']
+    data_month = file_info['dataMonth']
+    store      = file_info['store']
+
+    try:
+        wb = openpyxl.load_workbook(fpath, read_only=True, data_only=True)
+    except Exception as e:
+        print(f"    [エラー] 開けませんでした: {e}")
+        return []
+
+    if DELIVERY_SHEET_NAME not in wb.sheetnames:
+        print(f"    [警告] シート '{DELIVERY_SHEET_NAME}' が見つかりません（配達表）")
+        wb.close()
+        return []
+
+    ws = wb[DELIVERY_SHEET_NAME]
+    records = []
+
+    def safe_str(val):
+        if val is None:
+            return ''
+        s = str(val).strip()
+        return '' if s in ('None', 'nan') else s
+
+    def gcol(row, idx):
+        return safe_str(row[idx]) if len(row) > idx else ''
+
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        if not row or len(row) <= DEL_COL_NAME:
+            continue
+        name = safe_str(row[DEL_COL_NAME])
+        if not name or name in SKIP_NAMES:
+            continue
+
+        code_raw = row[DEL_COL_CODE] if len(row) > DEL_COL_CODE else None
+        try:
+            code = int(code_raw) if code_raw is not None else 0
+        except (ValueError, TypeError):
+            code = 0
+        route = code_to_route(code)
+
+        pay_raw = row[DEL_COL_PAYMENT] if len(row) > DEL_COL_PAYMENT else None
+        is_bank = pay_raw is not None and safe_str(pay_raw) not in ('', '0')
+
+        records.append({
+            'store':       store,
+            'dataMonth':   data_month,
+            'code':        code,
+            'route':       route,
+            'name':        name,
+            'type':        gcol(row, DEL_COL_TYPE),
+            'count':       gcol(row, DEL_COL_COUNT),
+            'weekly':      gcol(row, DEL_COL_WEEKLY),
+            'paymentType': 'bank' if is_bank else 'cash',
+            'vessel':      gcol(row, DEL_COL_VESSEL),
+            'address':     gcol(row, DEL_COL_ADDRESS),
+            'notes':       gcol(row, DEL_COL_NOTES),
+            'phone':       gcol(row, DEL_COL_PHONE),
+            'emergency':   gcol(row, DEL_COL_EMERGENCY),
+            'memo':        gcol(row, DEL_COL_MEMO),
+            'absent':      gcol(row, DEL_COL_ABSENT),
+        })
+
+    wb.close()
+    return records
+
+# ──────────────────────────────────────────────────────────────
 # 名寄せ（同一店舗・同一月・同一コード・同一名前の金額を合算）
 # ──────────────────────────────────────────────────────────────
 def merge_records(all_records):
@@ -296,6 +387,22 @@ def main():
             'count':     len(recs),
         })
 
+    # ── 配達表データ抽出（今月分のみ）──
+    current_month = datetime.now().strftime('%Y-%m')
+    current_month_files = [f for f in files if f['dataMonth'] == current_month]
+    print(f"配達表対象ファイル（{current_month}分）: {len(current_month_files)} 件")
+
+    all_delivery = []
+    for fi in current_month_files:
+        print(f"配達表処理中: [{fi['store']}] {fi['name']}")
+        drecs = extract_delivery_from_excel(fi)
+        all_delivery.extend(drecs)
+        print(f"  → 配達表 {len(drecs)} 件抽出")
+
+    all_delivery.sort(key=lambda x: (x['store'], x['route'], x['code'], x['name']))
+    print(f"配達表合計: {len(all_delivery)} 件")
+    print()
+
     print()
     print(f"抽出合計: {len(all_records)} 件")
 
@@ -338,14 +445,17 @@ def main():
         'totalRecords': len(merged),
         'totalAmount':  grand_total,
     }
-    gas_url_line = f'window.GAS_URL = {json.dumps(GAS_URL)};\n\n' if GAS_URL else ''
+    gas_url_line     = f'window.GAS_URL = {json.dumps(GAS_URL)};\n\n' if GAS_URL else ''
+    delivery_enabled = 'true' if FEATURE_DELIVERY_ENABLED else 'false'
     js_out = (
         "// ══════════════════════════════════════════════════════\n"
         f"// 自動生成: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
         f"// 件数: {len(merged)} 件  合計: {grand_total:,}円\n"
         "// ══════════════════════════════════════════════════════\n"
         f"{gas_url_line}"
+        f"window.FEATURE_DELIVERY_ENABLED = {delivery_enabled};\n\n"
         f"window.COLLECTION_DATA = {json.dumps(merged, ensure_ascii=False, indent=2)};\n\n"
+        f"window.DELIVERY_DATA = {json.dumps(all_delivery, ensure_ascii=False, indent=2)};\n\n"
         f"window.DATA_META = {json.dumps(meta, ensure_ascii=False, indent=2)};\n"
     )
 
