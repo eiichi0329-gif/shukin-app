@@ -1,4 +1,4 @@
-// 集金管理アプリ v3
+// 配達用アプリ v3
 
 // ─── Google OAuth 認証 ────────────────────────────────────────────
 const GOOGLE_CLIENT_ID = '774508511200-pgglmg87l7mjha2ktp4s48d30farec6p.apps.googleusercontent.com';
