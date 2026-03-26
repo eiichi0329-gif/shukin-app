@@ -53,12 +53,26 @@ const DELIVERY_COL_WIDTHS = [100, 60, 160, 260, 160];
 // doGet でチェックデータ読み取りをスキップするシート名
 const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET]);
 
+// ─── 診断ログ（デバッグ用）────────────────────────────
+function writeDebugLog(ss, action, note) {
+  try {
+    let sheet = ss.getSheetByName('デバッグログ');
+    if (!sheet) {
+      sheet = ss.insertSheet('デバッグログ');
+      sheet.getRange(1,1,1,3).setValues([['日時','action','note']]);
+    }
+    const d = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy/MM/dd HH:mm:ss');
+    sheet.appendRow([d, action || '', note || '']);
+  } catch(_) {}
+}
+
 // ─── メインハンドラ ───────────────────────────────────
 function doPost(e) {
   try {
     const payload = JSON.parse(e.postData.contents);
     const { action, record } = payload;
     const ss = SpreadsheetApp.getActiveSpreadsheet();
+    writeDebugLog(ss, action, JSON.stringify(record || {}).slice(0, 100));
 
     // ── 現金集金 追加／更新 ──
     if (action === 'add') {
@@ -203,13 +217,8 @@ function doPost(e) {
 
     // ── 配達時刻 記録 ──
     } else if (action === 'addDelivery') {
-      const sheet = getOrCreateSheet(ss, DELIVERY_SHEET, DELIVERY_HEADERS, '#0f766e', DELIVERY_COL_WIDTHS);
-      let dateStr = payload.deliveredAt || '';
-      if (dateStr) {
-        try {
-          dateStr = Utilities.formatDate(new Date(dateStr), 'Asia/Tokyo', 'yyyy/MM/dd HH:mm');
-        } catch (_) {}
-      }
+      const sheet   = getOrCreateSheet(ss, DELIVERY_SHEET, DELIVERY_HEADERS, '#0f766e', DELIVERY_COL_WIDTHS, false);
+      const dateStr = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy/MM/dd HH:mm');
       sheet.appendRow([
         payload.store   || '',
         payload.route   || '',
@@ -347,7 +356,7 @@ function formatCashSheetName(store, dataMonth) {
 }
 
 // ─── シート取得 or 作成 ───────────────────────────────
-function getOrCreateSheet(ss, name, headers, headerBg, colWidths) {
+function getOrCreateSheet(ss, name, headers, headerBg, colWidths, hideLastCol = true) {
   let sheet = ss.getSheetByName(name);
   if (!sheet) {
     sheet = ss.insertSheet(name);
@@ -358,8 +367,8 @@ function getOrCreateSheet(ss, name, headers, headerBg, colWidths) {
     hRange.setFontColor('#ffffff');
     sheet.setFrozenRows(1);
     colWidths.forEach((w, i) => sheet.setColumnWidth(i + 1, w));
-    // キー列（最終列）を非表示
-    sheet.hideColumns(headers.length, 1);
+    // キー列（最終列）を非表示（配達時刻シートなどキーなしの場合はスキップ）
+    if (hideLastCol) sheet.hideColumns(headers.length, 1);
   }
   return sheet;
 }
@@ -449,12 +458,10 @@ function sortSheet(sheet) {
 
 // ─── 行データ生成 ─────────────────────────────────────
 function buildCashRow(r, collectDate) {
-  let dateStr = r.checkedAt || '';
-  if (dateStr) {
-    try {
-      dateStr = Utilities.formatDate(new Date(dateStr), 'Asia/Tokyo', 'HH:mm');
-    } catch (_) {}
-  }
+  let dateStr = '';
+  try {
+    dateStr = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'HH:mm');
+  } catch (_) {}
   const [, m] = (r.dataMonth || '').split('-');
   return [
     r.route      || '',

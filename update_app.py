@@ -38,7 +38,7 @@ FEATURE_DELIVERY_ENABLED = True
 
 # GAS ウェブアプリ URL（設定するとどの端末からでも自動で同期されます）
 # 空文字のままにするとアプリ内の「連携設定」画面で端末ごとに設定できます
-GAS_URL        = "https://script.google.com/macros/s/AKfycbwxZob7hslZkk6uhzNbHrLPWbv6nahDXCjrsnpNTK4rHvCwGWmU_tVrP-b8j5Fsojvl/exec"
+GAS_URL        = "https://script.google.com/macros/s/AKfycbzaN9MnPONOoSH8DzrjxZhYBPstdmWsxnG217x8HdE0CZ9Oxckzxx55RVCqDZgMcTQ/exec"
 
 # 店舗キーワード → 正式店舗名
 # フォルダ名・ファイル名のどちらに含まれていても識別します
