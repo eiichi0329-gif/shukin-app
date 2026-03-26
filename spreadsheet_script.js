@@ -339,7 +339,9 @@ function doGet(e) {
           route,
           customerName: String(customerName),
           text:         String(text),
-          createdAt:    String(createdAt),
+          createdAt:    createdAt instanceof Date
+              ? Utilities.formatDate(createdAt, 'Asia/Tokyo', "yyyy-MM-dd'T'HH:mm:ss")
+              : String(createdAt),
         });
       }
     }
