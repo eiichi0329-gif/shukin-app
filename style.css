@@ -704,6 +704,13 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .ds-item.dtype-red    strong { color: #dc2626; }
 .ds-item.dtype-green  strong { color: #15803d; }
 
+/* カード内アイテムへの適用（.delivery-meta-item より後に宣言して上書き） */
+.delivery-meta-item.dtype-black { color: var(--g800); background: var(--g100);  border-color: var(--g300); }
+.delivery-meta-item.dtype-cyan  { color: #0e7490;     background: #ecfeff;      border-color: #67e8f9; }
+.delivery-meta-item.dtype-pink  { color: #be185d;     background: #fdf2f8;      border-color: #fbcfe8; }
+.delivery-meta-item.dtype-red   { color: #dc2626;     background: #fef2f2;      border-color: #fca5a5; }
+.delivery-meta-item.dtype-green { color: #15803d;     background: #f0fdf4;      border-color: #86efac; }
+
 /* ── 配達表タブ ───────────────────────────────────────────── */
 .delivery-list {
   padding: 10px 12px;
