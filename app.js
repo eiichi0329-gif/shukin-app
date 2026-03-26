@@ -1377,21 +1377,26 @@ function renderDelivery() {
 
 // セット系を構成要素に展開して表示用アイテム配列を返す
 function expandDeliveryItems(items) {
+    // \u30BB\u30C3\u30C8=セット \u304A\u304B\u305A=おかず \u3054\u306F\u3093=ごはん
+    // \u5C0F\u7B25=小箱 \u30C0\u30D6\u30EB=ダブル
+    var SET_EXPAND = {};
+    SET_EXPAND['\u30BB\u30C3\u30C8']       = ['\u304A\u304B\u305A', '\u3054\u306F\u3093'];
+    SET_EXPAND['\u5C0F\u7B25\u30BB\u30C3\u30C8'] = ['\u5C0F\u7B25',       '\u3054\u306F\u3093'];
+    SET_EXPAND['\u30C0\u30D6\u30EB\u30BB\u30C3\u30C8'] = ['\u30C0\u30D6\u30EB', '\u3054\u306F\u3093'];
+
     const map = new Map();
-    items.forEach(i => {
+    items.forEach(function(i) {
         const n = parseInt(i.count) || 1;
-        const parts = {
-            'セット':       [['おかず', n], ['ごはん', n]],
-            '小箱セット':   [['小箱',   n], ['ごはん', n]],
-            'ダブルセット': [['ダブル', n], ['ごはん', n]],
-        }[i.type];
-        if (parts) {
-            parts.forEach(([type, cnt]) => map.set(type, (map.get(type) || 0) + cnt));
+        const expanded = SET_EXPAND[i.type];
+        if (expanded) {
+            expanded.forEach(function(type) {
+                map.set(type, (map.get(type) || 0) + n);
+            });
         } else {
             map.set(i.type, (map.get(i.type) || 0) + n);
         }
     });
-    return [...map.entries()].map(([type, count]) => ({ type, count: String(count) }));
+    return Array.from(map.entries()).map(function(e) { return { type: e[0], count: String(e[1]) }; });
 }
 
 // 種類名 → CSS色クラス
