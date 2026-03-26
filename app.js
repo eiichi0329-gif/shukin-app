@@ -665,15 +665,21 @@ function onCheck(key, isChecked) {
 
     // GAS 送信
     const url = getGasUrl();
+    showToast(`[診断] URL:${url ? '設定済' : '未設定'} action:${isChecked ? 'add' : 'remove'}`, 'info');
     if (url) {
-        const record     = allData.find(r => getKey(r) === key);
-        const state      = checked[key] || {};
-        const sendAmount = incAmount !== null ? incAmount : effectiveAmount(key, record);
-        postToGas(url, {
-            action:      isChecked ? 'add' : 'remove',
-            record:      { ...record, key: gasKey, amount: sendAmount, checkedAt: state.checkedAt || '' },
-            collectDate: state.collectDate || ''
-        });
+        try {
+            const record     = allData.find(r => getKey(r) === key);
+            const state      = checked[key] || {};
+            const sendAmount = incAmount !== null ? incAmount : effectiveAmount(key, record);
+            showToast(`[診断] 送信中… ¥${sendAmount}`, 'info');
+            postToGas(url, {
+                action:      isChecked ? 'add' : 'remove',
+                record:      { ...record, key: gasKey, amount: sendAmount, checkedAt: state.checkedAt || '' },
+                collectDate: state.collectDate || ''
+            });
+        } catch(e) {
+            showToast(`[エラー] ${e.message}`, 'info');
+        }
 
         // 送信後に再同期して他端末への反映を確認
         setTimeout(syncCheckboxes, 3000);
