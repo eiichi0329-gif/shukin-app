@@ -690,6 +690,20 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .ds-item:has(strong:empty),
 .ds-item.zero { opacity: 0.4; }
 
+/* ── 配達種類カラー ───────────────────────────────────────── */
+.dtype-black  { color: var(--g800);  background: var(--g100);  border-color: var(--g300); }
+.dtype-cyan   { color: #0e7490;      background: #ecfeff;      border-color: #67e8f9; }
+.dtype-pink   { color: #be185d;      background: #fdf2f8;      border-color: #fbcfe8; }
+.dtype-red    { color: #dc2626;      background: #fef2f2;      border-color: #fca5a5; }
+.dtype-green  { color: #15803d;      background: #f0fdf4;      border-color: #86efac; }
+
+/* サマリーバッジへの適用 */
+.ds-item.dtype-black strong { color: var(--g800); }
+.ds-item.dtype-cyan   strong { color: #0e7490; }
+.ds-item.dtype-pink   strong { color: #be185d; }
+.ds-item.dtype-red    strong { color: #dc2626; }
+.ds-item.dtype-green  strong { color: #15803d; }
+
 /* ── 配達表タブ ───────────────────────────────────────────── */
 .delivery-list {
   padding: 10px 12px;

@@ -166,11 +166,14 @@ function getDeliveryKey(r)      { return `${r.store}|${r.dataMonth}|${r.code}|${
 
 function loadDeliveryRouteOverrides() {
     try {
-        const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
-        const raw   = JSON.parse(localStorage.getItem(DELIVERY_ROUTE_OVERRIDE_KEY) || '{}');
-        // 当日分のみ残す
+        const today     = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+        const dataGenAt = window.DATA_META?.generatedAt || '';
+        const raw       = JSON.parse(localStorage.getItem(DELIVERY_ROUTE_OVERRIDE_KEY) || '{}');
+        // 当日分 かつ 現在の data.js と同じ生成タイミングのもののみ有効
         const clean = {};
-        Object.entries(raw).forEach(([k, v]) => { if (v.date === today) clean[k] = v; });
+        Object.entries(raw).forEach(([k, v]) => {
+            if (v.date === today && v.dataGeneratedAt === dataGenAt) clean[k] = v;
+        });
         return clean;
     } catch { return {}; }
 }
@@ -1217,10 +1220,11 @@ function renderDelivery() {
             ? `<a class="btn-contact btn-contact-emergency" href="tel:${m.emergency.replace(/[^\d+\-]/g, '')}">&#128680; ${escHtml(m.emergency)}</a>`
             : '';
 
-        // 種類×数量をひとまとめに表示
-        const itemsHtml = m.items.map(i =>
-            `<span class="delivery-meta-item">&#127803; ${escHtml(i.type)}${i.count ? `&times;${escHtml(i.count)}` : ''}</span>`
-        ).join('');
+        // 種類×数量をひとまとめに表示（種類ごとに色付き）
+        const itemsHtml = m.items.map(i => {
+            const colorClass = DELIVERY_TYPE_COLOR[i.type] || 'dtype-black';
+            return `<span class="delivery-meta-item ${colorClass}">&#127803; ${escHtml(i.type)}${i.count ? `&times;${escHtml(i.count)}` : ''}</span>`;
+        }).join('');
 
         const metaParts = [
             itemsHtml,
@@ -1284,6 +1288,18 @@ function renderDelivery() {
         });
     });
 }
+
+// 種類名 → CSS色クラス
+const DELIVERY_TYPE_COLOR = {
+    'おかず':      'dtype-black',
+    'セット':      'dtype-green',
+    '小箱':        'dtype-cyan',
+    '小箱セット':  'dtype-cyan',
+    'ダブル':      'dtype-pink',
+    'ダブルセット':'dtype-pink',
+    'ご膳':        'dtype-red',
+    'ごはん':      'dtype-black',
+};
 
 // 種類名 → カテゴリへのマッピング（1種類が複数カテゴリに加算される場合あり）
 const DELIVERY_CATEGORY_MAP = {
@@ -1380,8 +1396,9 @@ function openDeliveryRouteEdit(area, groupKey) {
     select.focus();
 
     select.addEventListener('change', () => {
-        const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
-        deliveryRouteOverrides[groupKey] = { route: Number(select.value), date: today };
+        const today     = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+        const dataGenAt = window.DATA_META?.generatedAt || '';
+        deliveryRouteOverrides[groupKey] = { route: Number(select.value), date: today, dataGeneratedAt: dataGenAt };
         saveDeliveryRouteOverrides();
         renderDelivery();
     });
