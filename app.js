@@ -1542,9 +1542,11 @@ function openDeliveryMsgDialog(groupKey) {
             <strong>${escHtml(record.name)}</strong>
             <span style="font-size:13px;color:var(--g500)">${escHtml(record.store)}</span>
         </div>`;
-    document.getElementById('delivery-msg-type').value = '';
+    const msgType = document.getElementById('delivery-msg-type');
+    msgType.value = '';
     document.getElementById('delivery-msg-text').value = '';
     document.getElementById('delivery-msg-dialog').showModal();
+    msgType.blur();
 }
 
 function closeDeliveryMsgDialog() {
@@ -2040,6 +2042,14 @@ function renderMsgTab() {
         return true;
     });
 
+    // ルート番号の数値順にソート（集金リストと同じ法則）
+    unique.sort((a, b) => {
+        const ka = getKey(a), kb = getKey(b);
+        const ra = effectiveRoute(ka, a), rb = effectiveRoute(kb, b);
+        if (ra !== rb) return ra - rb;
+        return a.name.localeCompare(b.name, 'ja');
+    });
+
     // 「その他」用に現在フィルター中の店舗・ルートを特定
     const storeForOther = filters.store || '';
     const routeForOther = filters.route || '';
@@ -2292,21 +2302,29 @@ async function syncCheckboxes() {
         saveChecked();
         renderTable();
 
-        // 連絡事項をリモートとマージ（自分のデータを正とし、リモートにしかないものを追加）
-        if (Array.isArray(json.messages) && json.messages.length > 0) {
-            const localMsgs = loadMessages();
-            const localIds  = new Set(localMsgs.map(m => m.id));
+        // 連絡事項をリモートと完全同期（リモートを正とする）
+        if (Array.isArray(json.messages)) {
+            const localMsgs   = loadAllMessages();
+            const remoteIds   = new Set(json.messages.map(m => m.id).filter(Boolean));
+            const localIds    = new Set(localMsgs.map(m => m.id));
             let changed = false;
+
+            // リモートにしかないものをローカルに追加
             json.messages.forEach(m => {
                 if (m.id && !localIds.has(m.id)) {
-                    // GASのcreatedAtはJST文字列なのでそのまま保持
                     localMsgs.push({ ...m, createdAt: m.createdAt || new Date().toISOString() });
                     changed = true;
                 }
             });
+
+            // ローカルにしかないもの（スプレッドシートから削除済み）を削除
+            const synced = localMsgs.filter(m => remoteIds.has(m.id));
+            if (synced.length !== localMsgs.length) changed = true;
+
             if (changed) {
-                saveMessages(localMsgs);
-                if (currentTab === 'msg') renderMsgTab();
+                saveMessages(synced);
+                if (currentTab === 'msg')   renderMsgTab();
+                if (currentTab === 'admin') renderAdmin();
             }
         }
     } catch (e) { console.error('同期失敗', e); }
