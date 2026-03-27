@@ -2042,13 +2042,8 @@ function renderMsgTab() {
         return true;
     });
 
-    // ルート番号の数値順にソート（集金リストと同じ法則）
-    unique.sort((a, b) => {
-        const ka = getKey(a), kb = getKey(b);
-        const ra = effectiveRoute(ka, a), rb = effectiveRoute(kb, b);
-        if (ra !== rb) return ra - rb;
-        return a.name.localeCompare(b.name, 'ja');
-    });
+    // 集金リストと同じ順番（seqはallDataの並び順と一致）
+    unique.sort((a, b) => (a.seq || 0) - (b.seq || 0));
 
     // 「その他」用に現在フィルター中の店舗・ルートを特定
     const storeForOther = filters.store || '';
