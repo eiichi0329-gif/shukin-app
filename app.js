@@ -1119,12 +1119,10 @@ function switchTab(tab) {
     currentTab = tab;
     document.getElementById('tab-delivery').classList.toggle('hidden', tab !== 'delivery');
     document.getElementById('tab-list').classList.toggle('hidden', tab !== 'list');
-    document.getElementById('tab-msg').classList.toggle('hidden',  tab !== 'msg');
     document.getElementById('tab-admin').classList.toggle('hidden', tab !== 'admin');
     const navDelivery = document.getElementById('nav-delivery');
     if (navDelivery) navDelivery.classList.toggle('active', tab === 'delivery');
     document.getElementById('nav-list').classList.toggle('active', tab === 'list');
-    document.getElementById('nav-msg').classList.toggle('active',  tab === 'msg');
     document.getElementById('nav-admin').classList.toggle('active', tab === 'admin');
 
     // 配達タブ専用：不要フィルターを隠してサマリーを表示
@@ -1132,7 +1130,6 @@ function switchTab(tab) {
     document.getElementById('delivery-summary').classList.toggle('hidden', tab !== 'delivery');
 
     if (tab === 'admin')    renderAdmin();
-    if (tab === 'msg')      renderMsgTab();
     if (tab === 'delivery') renderDelivery();
 }
 
@@ -1236,7 +1233,7 @@ function renderDelivery() {
         // 種類×数量をひとまとめに表示（セット系は構成要素に展開して表示）
         const itemsHtml = expandDeliveryItems(m.items).map(i => {
             const colorClass = DELIVERY_TYPE_COLOR[i.type] || 'dtype-black';
-            return `<span class="delivery-meta-item ${colorClass}">&#127803; ${escHtml(i.type)}&times;${escHtml(i.count)}</span>`;
+            return `<span class="delivery-meta-item ${colorClass}">${escHtml(i.type)}&times;${escHtml(i.count)}</span>`;
         }).join('');
 
         const otherMetaParts = [
@@ -1268,12 +1265,12 @@ function renderDelivery() {
                 </div>
                 <div class="delivery-name-area">
                     <span class="delivery-name">${escHtml(m.name)}</span>
-                    ${m.countLabel ? `<span class="count-label count-label-${labelClass(m.countLabel)}">${escHtml(m.countLabel === '\u96C6\u91D1' ? '\u8ACB\u6C42' : m.countLabel)}</span>` : ''}
+                    ${m.countLabel ? `<span class="count-label count-label-${labelClass(m.countLabel)}">${escHtml(m.countLabel === '\u96C6\u91D1' ? '\u8ACB\u6C42' : m.countLabel === '\u7FCC\u9031\u6CE8\u6587\u78BA\u8A8D' ? '\u6CE8\u6587\u78BA\u8A8D' : m.countLabel)}</span>` : ''}
                     ${compactMapHtml}
-                    <button class="btn-delivery-msg-open" data-group-key="${safeKey}">&#128172; 連絡事項</button>
+                    <button class="btn-delivery-msg-open" data-group-key="${safeKey}">連絡事項</button>
                     ${isBank
                         ? `<span class="delivery-bank-label">口座振替</span>`
-                        : `<button class="btn-delivery-collect-open" data-group-key="${safeKey}">&#128181; 集金</button>`
+                        : `<button class="btn-delivery-collect-open" data-group-key="${safeKey}">集金</button>`
                     }
                 </div>
             </div>
@@ -1639,7 +1636,7 @@ function closeDeliveryCollectDialog() {
 
 // ─── Admin Tab ───────────────────────────────────────────────────
 function labelClass(label) {
-    const map = { '新規': 'cyan', '翌週注文確認': 'red', '再注文': 'beige', '集金': 'yellow' };
+    const map = { '新規': 'cyan', '翌週注文確認': 'red', '注文確認': 'red', '再注文': 'beige', '集金': 'yellow' };
     return map[label] || 'default';
 }
 
@@ -2116,6 +2113,29 @@ function onMsgCustomerChange() {
 function onNoReportChange() {
     const checked = document.getElementById('msg-no-report-check').checked;
     document.getElementById('msg-detail-fields').classList.toggle('hidden', checked);
+}
+
+function submitDeliveryNoReport() {
+    if (!document.getElementById('delivery-no-report-check').checked) {
+        alert('「連絡事項なし」にチェックを入れてください');
+        return;
+    }
+    const msg = {
+        id:           Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        store:        filters.store || '',
+        route:        parseInt(filters.route) || 0,
+        customerKey:  '',
+        customerName: 'なし',
+        text:         '連絡事項なし',
+        createdAt:    new Date().toISOString(),
+    };
+    const msgs = loadAllMessages();
+    msgs.push(msg);
+    saveMessages(msgs);
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'addMessage', message: msg });
+    document.getElementById('delivery-no-report-check').checked = false;
+    showToast('連絡事項なしを送信しました', 'success');
 }
 
 function submitMessage() {
