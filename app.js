@@ -1419,7 +1419,7 @@ const DELIVERY_TYPE_COLOR = {
     'ダブル':      'dtype-pink',
     'ダブルセット':'dtype-pink',
     'ご膳':        'dtype-red',
-    'ごはん':      'dtype-black',
+    'ごはん':      'dtype-orange',
 };
 
 // 種類名 → カテゴリへのマッピング（1種類が複数カテゴリに加算される場合あり）

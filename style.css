@@ -792,21 +792,24 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .dtype-pink   { color: #be185d;      background: #fdf2f8;      border-color: #fbcfe8; }
 .dtype-red    { color: #dc2626;      background: #fef2f2;      border-color: #fca5a5; }
 .dtype-green  { color: #15803d;      background: #f0fdf4;      border-color: #86efac; }
+.dtype-orange { color: #c2410c;      background: #fff7ed;      border-color: #fdba74; }
 
 /* サマリーバッジへの適用 */
-.ds-item.dtype-black strong { color: var(--g800); }
+.ds-item.dtype-black  strong { color: var(--g800); }
 .ds-item.dtype-cyan   strong { color: #0e7490; }
 .ds-item.dtype-pink   strong { color: #be185d; }
 .ds-item.dtype-red    strong { color: #dc2626; }
 .ds-item.dtype-green  strong { color: #15803d; }
+.ds-item.dtype-orange strong { color: #c2410c; }
 
 /* カード内アイテムへの適用（.delivery-meta-item より後に宣言して上書き） */
-.delivery-meta-item.dtype-black { color: #1c1917;  background: #e7e5e4;  border-color: #a8a29e; }
-.delivery-meta-item.dtype-cyan  { color: #0c4a6e;  background: #bae6fd;  border-color: #38bdf8; }
-.delivery-meta-item.dtype-pink  { color: #9d174d;  background: #fce7f3;  border-color: #f9a8d4; }
-.delivery-meta-item.dtype-red   { color: #991b1b;  background: #fee2e2;  border-color: #f87171; }
-.delivery-meta-item.dtype-green { color: #14532d;  background: #dcfce7;  border-color: #4ade80; }
-.delivery-meta-item.dtype-visit { color: #92400e;  background: #fef3c7;  border-color: #fcd34d; font-weight: 700; }
+.delivery-meta-item.dtype-black  { color: #1c1917;  background: #e7e5e4;  border-color: #a8a29e; }
+.delivery-meta-item.dtype-cyan   { color: #0c4a6e;  background: #bae6fd;  border-color: #38bdf8; }
+.delivery-meta-item.dtype-pink   { color: #9d174d;  background: #fce7f3;  border-color: #f9a8d4; }
+.delivery-meta-item.dtype-red    { color: #991b1b;  background: #fee2e2;  border-color: #f87171; }
+.delivery-meta-item.dtype-green  { color: #14532d;  background: #dcfce7;  border-color: #4ade80; }
+.delivery-meta-item.dtype-orange { color: #9a3412;  background: #ffedd5;  border-color: #fb923c; }
+.delivery-meta-item.dtype-visit  { color: #92400e;  background: #fef3c7;  border-color: #fcd34d; font-weight: 700; }
 
 /* ── 連絡事項なしバー ─────────────────────────────────────── */
 .delivery-no-report-bar {
