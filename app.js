@@ -68,6 +68,14 @@ function showApp() {
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('app').classList.remove('hidden');
 
+    // 今日の日付をヘッダーに表示
+    const todayBadge = document.getElementById('today-badge');
+    if (todayBadge) {
+        const now = new Date();
+        const wdays = ['日','月','火','水','木','金','土'];
+        todayBadge.textContent = `${now.getMonth()+1}/${now.getDate()}（${wdays[now.getDay()]}）`;
+    }
+
     // ヘッダーにユーザー情報を反映
     const avatar = document.getElementById('user-avatar');
     if (avatar && currentUser?.picture) {
@@ -151,7 +159,7 @@ let transferState   = {};   // key → { date: 'YYYY-MM-DD', recordedAt: ISO }
 let amountOverrides = {};   // key → number（管理画面で手修正した金額）
 let recordOverrides = {};   // key → { route?, dataMonth?, name? }（行ダブルタップで修正）
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
-let currentTab = 'list';
+let currentTab = 'delivery';
 let expandedCell = null;  // { route, month } for admin detail
 let deliveryData           = [];
 let deliveryChecked        = {};
@@ -1422,14 +1430,27 @@ const DELIVERY_CATEGORY_MAP = {
 
 function updateDeliverySummary(data) {
     const counts = { おかず: 0, 小箱: 0, ダブル: 0, ご膳: 0, ごはん: 0 };
+    // multiCounts[cat][n] = n個注文している人数（n=2〜4）
+    const multiCounts = { おかず: {}, 小箱: {}, ダブル: {}, ご膳: {}, ごはん: {} };
 
     data.forEach(m => {
         if (deliveryChecked[m.groupKey]) return; // 配達済みは除外
+        const groupCounts = { おかず: 0, 小箱: 0, ダブル: 0, ご膳: 0, ごはん: 0 };
         m.items.forEach(item => {
             const cats = DELIVERY_CATEGORY_MAP[item.type];
             if (!cats) return;
             const n = parseInt(item.count) || 1;
-            cats.forEach(cat => { counts[cat] += n; });
+            cats.forEach(cat => {
+                counts[cat] += n;
+                groupCounts[cat] += n;
+            });
+        });
+        // このグループの各カテゴリ合計が2〜4なら集計
+        Object.keys(groupCounts).forEach(cat => {
+            const n = groupCounts[cat];
+            if (n >= 2 && n <= 4) {
+                multiCounts[cat][n] = (multiCounts[cat][n] || 0) + 1;
+            }
         });
     });
 
@@ -1445,6 +1466,26 @@ function updateDeliverySummary(data) {
         if (!el) return;
         el.textContent = counts[cat];
         item?.classList.toggle('zero', counts[cat] === 0);
+
+        // 複数個バッジの更新
+        let badgeContainer = item?.querySelector('.ds-multi-badges');
+        if (!badgeContainer && item) {
+            badgeContainer = document.createElement('span');
+            badgeContainer.className = 'ds-multi-badges';
+            item.appendChild(badgeContainer);
+        }
+        if (badgeContainer) {
+            badgeContainer.innerHTML = '';
+            [2, 3, 4].forEach(n => {
+                const cnt = multiCounts[cat][n] || 0;
+                if (cnt > 0) {
+                    const badge = document.createElement('span');
+                    badge.className = 'ds-multi-badge';
+                    badge.textContent = `${n}個:${cnt}`;
+                    badgeContainer.appendChild(badge);
+                }
+            });
+        }
     });
 }
 
@@ -1521,6 +1562,7 @@ function openDeliveryRouteEdit(area, groupKey) {
 
 // ─── Delivery Message Dialog ─────────────────────────────────────
 let _deliveryMsgTarget = null; // { store, route, name, groupKey }
+let _deliveryMsgImageData = null; // base64 image data
 
 function openDeliveryMsgDialog(groupKey) {
     const record = deliveryData.find(r =>
@@ -1542,6 +1584,8 @@ function openDeliveryMsgDialog(groupKey) {
     const msgType = document.getElementById('delivery-msg-type');
     msgType.value = '';
     document.getElementById('delivery-msg-text').value = '';
+    resetMsgDatePicker();
+    _resetMsgImageArea();
     document.getElementById('delivery-msg-dialog').showModal();
     msgType.blur();
 }
@@ -1549,6 +1593,26 @@ function openDeliveryMsgDialog(groupKey) {
 function closeDeliveryMsgDialog() {
     document.getElementById('delivery-msg-dialog').close();
     _deliveryMsgTarget = null;
+    _resetMsgImageArea();
+}
+
+function _resetMsgImageArea() {
+    _deliveryMsgImageData = null;
+    document.getElementById('delivery-msg-image').value = '';
+    document.getElementById('msg-image-preview').innerHTML = '';
+    document.getElementById('msg-image-area').classList.add('hidden');
+}
+
+function onMsgImageChange(input) {
+    const file = input.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+        _deliveryMsgImageData = e.target.result; // base64 data URL
+        const preview = document.getElementById('msg-image-preview');
+        preview.innerHTML = `<img src="${_deliveryMsgImageData}" class="msg-image-thumb" alt="添付画像">`;
+    };
+    reader.readAsDataURL(file);
 }
 
 function submitDeliveryMsg() {
@@ -1556,13 +1620,33 @@ function submitDeliveryMsg() {
     const typeVal  = document.getElementById('delivery-msg-type').value;
     const freeText = document.getElementById('delivery-msg-text').value.trim();
 
-    if (!typeVal && !freeText) {
+    // 注文・キャンセル の場合、選択日付が必須
+    if ((typeVal === '注文' || typeVal === 'キャンセル') && _calSelectedDates.size === 0) {
+        alert('日付を1つ以上選択してください');
+        return;
+    }
+
+    if (typeVal === '画像添付') {
+        if (!_deliveryMsgImageData) {
+            alert('画像を撮影してください');
+            return;
+        }
+    } else if (!typeVal && !freeText) {
         alert('報告内容を選択するか、自由入力欄に入力してください');
         return;
     }
 
     const parts = [];
-    if (typeVal)  parts.push(typeVal);
+    if (typeVal === '注文' || typeVal === 'キャンセル') {
+        const sorted = [..._calSelectedDates].sort();
+        const dateStr = sorted.map(d => {
+            const [y, m, day] = d.split('-');
+            return `${parseInt(m)}/${parseInt(day)}`;
+        }).join('、');
+        parts.push(`${typeVal}（${dateStr}）`);
+    } else if (typeVal && typeVal !== '画像添付') {
+        parts.push(typeVal);
+    }
     if (freeText) parts.push(freeText);
 
     const msg = {
@@ -1571,7 +1655,8 @@ function submitDeliveryMsg() {
         route:        _deliveryMsgTarget.route,
         customerKey:  _deliveryMsgTarget.groupKey,
         customerName: _deliveryMsgTarget.name,
-        text:         parts.join('\n'),
+        text:         typeVal === '画像添付' ? (freeText || '画像添付') : parts.join('\n'),
+        imageData:    _deliveryMsgImageData || undefined,
         createdAt:    new Date().toISOString(),
     };
 
@@ -2078,7 +2163,11 @@ function renderMsgTab() {
     list.innerHTML = Object.keys(groups).sort((a, b) => b.localeCompare(a)).map(dk => {
         const label = new Date(dk + 'T12:00:00').toLocaleDateString('ja-JP',
             { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', weekday: 'short' });
-        const items = groups[dk].map(m => `
+        const items = groups[dk].map(m => {
+            const imgHtml = m.imageData
+                ? `<img src="${m.imageData}" class="msg-image-thumb" alt="添付画像">`
+                : '';
+            return `
             <div class="msg-item">
                 <div class="msg-item-meta">
                     <span class="msg-item-route">R${m.route}</span>
@@ -2086,9 +2175,10 @@ function renderMsgTab() {
                     <span style="font-size:12px;color:var(--g500)">${escHtml(m.store)}</span>
                     <span class="msg-item-date">${fmtMsgTime(m.createdAt)}</span>
                 </div>
-                <div class="msg-item-text">${escHtml(m.text)}</div>
+                <div class="msg-item-text">${escHtml(m.text)}${imgHtml}</div>
                 <button class="msg-item-del" onclick="deleteMessage('${m.id}')">削除</button>
-            </div>`).join('');
+            </div>`;
+        }).join('');
         return `<div class="msg-date-header">${label}</div>${items}`;
     }).join('');
 }
@@ -2194,13 +2284,14 @@ function submitMessage() {
 
 function deleteMessage(id) {
     if (!confirm('この連絡事項を削除しますか？')) return;
-    const msgs = loadMessages().filter(m => m.id !== id);
+    const msgs = loadAllMessages().filter(m => m.id !== id);
     saveMessages(msgs);
 
     const url = getGasUrl();
     if (url) postToGas(url, { action: 'removeMessage', messageId: id });
 
     renderMsgTab();
+    if (typeof renderAdmin === 'function') renderAdmin();
 }
 
 function buildDailyMessages(date, msgs) {
@@ -2216,14 +2307,18 @@ function buildDailyMessages(date, msgs) {
     html += `<h2 class="admin-title">&#128172; ${dateLabel}の連絡事項</h2>`;
     html += `<div class="admin-msg-store">`;
     sorted.forEach(m => {
+        const imgHtml = m.imageData
+            ? `<img src="${m.imageData}" class="msg-image-thumb" alt="添付画像" style="margin-top:6px">`
+            : '';
         html += `<div class="admin-msg-item">
             <div class="admin-msg-item-meta">
                 <span class="admin-msg-item-route">R${m.route}</span>
                 <span class="admin-msg-item-name">${escHtml(m.customerName)}</span>
                 <span style="font-size:12px;color:var(--g500)">${escHtml(m.store)}</span>
                 <span class="admin-msg-item-date">${fmtMsgTime(m.createdAt)}</span>
+                <button class="msg-item-del" onclick="deleteMessage('${m.id}')">削除</button>
             </div>
-            <div class="admin-msg-item-text">${escHtml(m.text)}</div>
+            <div class="admin-msg-item-text">${escHtml(m.text)}${imgHtml}</div>
         </div>`;
     });
     html += '</div></div>';
@@ -2442,6 +2537,7 @@ async function startApp() {
     document.getElementById('toggle-uncollected').checked = filters.uncollectedOnly;
 
     renderTable();
+    switchTab('delivery');
 
     document.getElementById('loading-badge').style.display = 'none';
 
@@ -2598,3 +2694,106 @@ async function startApp() {
         currentY = 0;
     }, { passive: true });
 })();
+
+// ─── 連絡事項 日付複数選択カレンダー ─────────────────────────────
+let _calYear  = 0;
+let _calMonth = 0; // 0-based
+let _calSelectedDates = new Set(); // 'YYYY-MM-DD'
+
+function onMsgTypeChange() {
+    const val = document.getElementById('delivery-msg-type').value;
+    const picker = document.getElementById('msg-date-picker');
+    const imageArea = document.getElementById('msg-image-area');
+
+    if (val === '注文' || val === 'キャンセル') {
+        _calSelectedDates.clear();
+        const today = new Date();
+        _calYear  = today.getFullYear();
+        _calMonth = today.getMonth();
+        renderMsgCal();
+        picker.classList.remove('hidden');
+        imageArea.classList.add('hidden');
+        _deliveryMsgImageData = null;
+    } else if (val === '画像添付') {
+        picker.classList.add('hidden');
+        _calSelectedDates.clear();
+        imageArea.classList.remove('hidden');
+        // カメラ起動
+        document.getElementById('delivery-msg-image').click();
+    } else {
+        picker.classList.add('hidden');
+        _calSelectedDates.clear();
+        imageArea.classList.add('hidden');
+        _deliveryMsgImageData = null;
+    }
+}
+
+function resetMsgDatePicker() {
+    document.getElementById('msg-date-picker').classList.add('hidden');
+    _calSelectedDates.clear();
+}
+
+function calNavMonth(delta) {
+    _calMonth += delta;
+    if (_calMonth > 11) { _calMonth = 0; _calYear++; }
+    if (_calMonth < 0)  { _calMonth = 11; _calYear--; }
+    renderMsgCal();
+}
+
+function renderMsgCal() {
+    const wdays = ['日','月','火','水','木','金','土'];
+    document.getElementById('msg-cal-title').textContent =
+        `${_calYear}年${_calMonth + 1}月`;
+
+    const firstDay = new Date(_calYear, _calMonth, 1).getDay();
+    const daysInMonth = new Date(_calYear, _calMonth + 1, 0).getDate();
+    const todayStr = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+
+    let html = '<div class="msg-cal-row msg-cal-weekdays">';
+    wdays.forEach((d, i) => {
+        html += `<div class="msg-cal-wday${i===0?' sun':i===6?' sat':''}">${d}</div>`;
+    });
+    html += '</div><div class="msg-cal-row">';
+
+    for (let i = 0; i < firstDay; i++) html += '<div class="msg-cal-cell empty"></div>';
+
+    for (let d = 1; d <= daysInMonth; d++) {
+        const key = `${_calYear}-${String(_calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+        const dow = (firstDay + d - 1) % 7;
+        const isSelected = _calSelectedDates.has(key);
+        const isToday    = key === todayStr;
+        let cls = 'msg-cal-cell';
+        if (dow === 0) cls += ' sun';
+        if (dow === 6) cls += ' sat';
+        if (isSelected) cls += ' selected';
+        if (isToday)    cls += ' today';
+        html += `<div class="${cls}" data-date="${key}" onclick="toggleCalDate('${key}')">${d}</div>`;
+    }
+    html += '</div>';
+
+    document.getElementById('msg-cal-grid').innerHTML = html;
+    renderSelectedDates();
+}
+
+function toggleCalDate(key) {
+    if (_calSelectedDates.has(key)) {
+        _calSelectedDates.delete(key);
+    } else {
+        _calSelectedDates.add(key);
+    }
+    renderMsgCal();
+}
+
+function renderSelectedDates() {
+    const el = document.getElementById('msg-selected-dates');
+    if (_calSelectedDates.size === 0) {
+        el.innerHTML = '<span class="msg-no-dates">日付を選択してください</span>';
+        return;
+    }
+    const sorted = [..._calSelectedDates].sort();
+    const chips = sorted.map(d => {
+        const [, m, day] = d.split('-');
+        return `<span class="msg-date-chip">${parseInt(m)}/${parseInt(day)}<button type="button" class="msg-date-chip-del" onclick="toggleCalDate('${d}')">×</button></span>`;
+    }).join('');
+    el.innerHTML = chips;
+}

@@ -97,6 +97,8 @@ body {
 .btn:active { transform: scale(0.96); }
 .btn-secondary { background: var(--g100); color: var(--g800); border: 2px solid var(--g300); }
 .btn-danger    { background: var(--red-bg); color: var(--red); border: 2px solid #fca5a5; }
+.btn-success   { background: #16a34a; color: white; border: none; }
+.btn-success:hover { opacity: 0.85; }
 .btn-bulk          { background: #eff6ff; color: #1d4ed8; border: 2px solid #bfdbfe; }
 .btn-bulk-register { background: #f0fdf4; color: #15803d; border: 2px solid #86efac; }
 
@@ -446,6 +448,67 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 
 .msg-submit-btn { width: 100%; font-size: 17px; padding: 13px; }
 
+/* ── 連絡事項 日付カレンダー ──────────────────────────────── */
+.msg-date-picker {
+  border: 2px solid var(--primary-mid); border-radius: 12px;
+  background: var(--primary-bg); padding: 10px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.msg-date-picker.hidden { display: none; }
+
+.msg-date-picker-header {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.msg-cal-title { font-weight: 700; font-size: 16px; color: var(--primary-dark); }
+.msg-cal-nav {
+  background: none; border: none; font-size: 22px; color: var(--primary);
+  cursor: pointer; padding: 0 8px; line-height: 1; font-weight: 700;
+}
+.msg-cal-nav:hover { color: var(--primary-dark); }
+
+.msg-cal-row {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px;
+}
+.msg-cal-weekdays { margin-bottom: 2px; }
+.msg-cal-wday {
+  text-align: center; font-size: 12px; font-weight: 700;
+  color: var(--g500); padding: 2px 0;
+}
+.msg-cal-wday.sun { color: var(--red); }
+.msg-cal-wday.sat { color: #2563eb; }
+
+.msg-cal-cell {
+  text-align: center; padding: 7px 2px; font-size: 15px; font-weight: 600;
+  border-radius: 8px; cursor: pointer; user-select: none;
+  transition: background .12s;
+}
+.msg-cal-cell:hover { background: var(--primary-mid); }
+.msg-cal-cell.empty { cursor: default; }
+.msg-cal-cell.sun { color: var(--red); }
+.msg-cal-cell.sat { color: #2563eb; }
+.msg-cal-cell.today { outline: 2px solid var(--primary); outline-offset: -2px; }
+.msg-cal-cell.selected {
+  background: var(--primary) !important; color: white !important;
+  border-radius: 8px;
+}
+
+.msg-selected-dates {
+  display: flex; flex-wrap: wrap; gap: 6px; min-height: 28px;
+  align-items: center; padding-top: 4px;
+}
+.msg-no-dates { font-size: 13px; color: var(--g400); }
+.msg-date-chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--primary); color: white;
+  border-radius: 20px; padding: 3px 10px; font-size: 14px; font-weight: 700;
+}
+.msg-date-chip-del {
+  background: none; border: none; color: rgba(255,255,255,0.8);
+  font-size: 15px; cursor: pointer; padding: 0; line-height: 1;
+  font-family: inherit;
+}
+.msg-date-chip-del:hover { color: white; }
+
 .msg-no-report-label {
   display: flex; align-items: center; gap: 10px;
   padding: 12px 14px;
@@ -480,6 +543,9 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   color: var(--g400); font-size: 13px; cursor: pointer; padding: 2px 6px;
 }
 .msg-item-del:hover { color: var(--red); }
+
+.msg-image-preview { margin-top: 8px; }
+.msg-image-thumb   { max-width: 100%; max-height: 240px; border-radius: 8px; display: block; }
 
 .msg-date-header {
   background: var(--primary-bg); color: var(--primary-dark);
@@ -710,6 +776,15 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 /* カウントがゼロのとき薄くする */
 .ds-item:has(strong:empty),
 .ds-item.zero { opacity: 0.4; }
+
+/* 複数個バッジ */
+.ds-multi-badges {
+  display: flex; align-items: center; gap: 3px; margin-left: 2px;
+}
+.ds-multi-badge {
+  font-size: 11px; font-weight: 700; opacity: 0.75;
+  background: rgba(0,0,0,0.07); border-radius: 4px; padding: 1px 4px;
+}
 
 /* ── 配達種類カラー ───────────────────────────────────────── */
 .dtype-black  { color: var(--g800);  background: var(--g100);  border-color: var(--g300); }
