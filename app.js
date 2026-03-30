@@ -1239,10 +1239,15 @@ function renderDelivery() {
             : '';
 
         // 種類×数量をひとまとめに表示（セット系は構成要素に展開して表示）
-        const itemsHtml = expandDeliveryItems(m.items).map(i => {
-            const colorClass = DELIVERY_TYPE_COLOR[i.type] || 'dtype-black';
-            return `<span class="delivery-meta-item ${colorClass}">${escHtml(i.type)}&times;${escHtml(i.count)}</span>`;
-        }).join('');
+        // count が全て "0" の場合はお弁当なし・訪問のみ
+        const expandedItems = expandDeliveryItems(m.items);
+        const isVisitOnly = m.items.length > 0 && expandedItems.length === 0;
+        const itemsHtml = isVisitOnly
+            ? `<span class="delivery-meta-item dtype-visit">訪問</span>`
+            : expandedItems.map(i => {
+                const colorClass = DELIVERY_TYPE_COLOR[i.type] || 'dtype-black';
+                return `<span class="delivery-meta-item ${colorClass}">${escHtml(i.type)}&times;${escHtml(i.count)}</span>`;
+            }).join('');
 
         const otherMetaParts = [
             m.vessel ? `<span class="delivery-meta-item">&#128230; ${escHtml(m.vessel)}</span>` : '',
@@ -1385,13 +1390,14 @@ function expandDeliveryItems(items) {
     // \u30BB\u30C3\u30C8=セット \u304A\u304B\u305A=おかず \u3054\u306F\u3093=ごはん
     // \u5C0F\u7B25=小箱 \u30C0\u30D6\u30EB=ダブル
     var SET_EXPAND = {};
-    SET_EXPAND['\u30BB\u30C3\u30C8']       = ['\u304A\u304B\u305A', '\u3054\u306F\u3093'];
-    SET_EXPAND['\u5C0F\u7B25\u30BB\u30C3\u30C8'] = ['\u5C0F\u7B25',       '\u3054\u306F\u3093'];
-    SET_EXPAND['\u30C0\u30D6\u30EB\u30BB\u30C3\u30C8'] = ['\u30C0\u30D6\u30EB', '\u3054\u306F\u3093'];
+    SET_EXPAND['セット']     = ['おかず', 'ごはん'];
+    SET_EXPAND['小箱セット'] = ['小箱',   'ごはん'];
+    SET_EXPAND['ダブルセット'] = ['ダブル', 'ごはん'];
 
     const map = new Map();
     items.forEach(function(i) {
-        const n = parseInt(i.count) || 1;
+        const n = parseInt(i.count);
+        if (!(n > 0)) return; // 個数0またはNaNはスキップ
         const expanded = SET_EXPAND[i.type];
         if (expanded) {
             expanded.forEach(function(type) {
@@ -1439,7 +1445,8 @@ function updateDeliverySummary(data) {
         m.items.forEach(item => {
             const cats = DELIVERY_CATEGORY_MAP[item.type];
             if (!cats) return;
-            const n = parseInt(item.count) || 1;
+            const n = parseInt(item.count);
+            if (!(n > 0)) return; // 個数0はスキップ
             cats.forEach(cat => {
                 counts[cat] += n;
                 groupCounts[cat] += n;

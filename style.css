@@ -806,6 +806,7 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .delivery-meta-item.dtype-pink  { color: #9d174d;  background: #fce7f3;  border-color: #f9a8d4; }
 .delivery-meta-item.dtype-red   { color: #991b1b;  background: #fee2e2;  border-color: #f87171; }
 .delivery-meta-item.dtype-green { color: #14532d;  background: #dcfce7;  border-color: #4ade80; }
+.delivery-meta-item.dtype-visit { color: #92400e;  background: #fef3c7;  border-color: #fcd34d; font-weight: 700; }
 
 /* ── 連絡事項なしバー ─────────────────────────────────────── */
 .delivery-no-report-bar {
