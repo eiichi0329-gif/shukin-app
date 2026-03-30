@@ -1407,7 +1407,13 @@ function expandDeliveryItems(items) {
             map.set(i.type, (map.get(i.type) || 0) + n);
         }
     });
-    return Array.from(map.entries()).map(function(e) { return { type: e[0], count: String(e[1]) }; });
+    return Array.from(map.entries())
+        .map(function(e) { return { type: e[0], count: String(e[1]) }; })
+        .sort(function(a, b) {
+            if (a.type === 'ごはん') return 1;
+            if (b.type === 'ごはん') return -1;
+            return 0;
+        });
 }
 
 // 種類名 → CSS色クラス
