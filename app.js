@@ -1105,15 +1105,18 @@ function toggleAdminActions() {
 
 // ─── Reset ───────────────────────────────────────────────────────
 function resetAll() {
-    if (!confirm('全てのチェック（現金・口座振替・振込）をリセットしますか？\nこの操作は元に戻せません。')) return;
+    if (!confirm('全てのチェック（現金・口座振替・振込）をリセットしますか？\n手動追加レコードも削除されます。\nこの操作は元に戻せません。')) return;
     checked       = {};
     bankState     = {};
     bankFailedKeys.clear();
     transferState = {};
+    manualRecords = [];
     saveChecked();
     saveBankState();
     saveBankFailedKeys();
     saveTransferState();
+    saveManualRecords();
+    allData = [...window.COLLECTION_DATA];
     dirtyKeys.clear();
     renderTable();
 
@@ -1270,8 +1273,9 @@ function renderDelivery() {
             ? `<a class="delivery-compact-map" href="${mapHref}" target="_blank" rel="noopener">&#128205;</a>`
             : '';
 
+        const cardLabelClass = m.countLabel ? ` delivery-card-label-${labelClass(m.countLabel)}` : '';
         html += `
-        <div class="delivery-card ${isDone ? 'delivery-card-done' : ''}${isCompact ? ' delivery-card-compact' : ''}" data-group-key="${safeKey}" data-route-key="${escHtml(routeKey)}">
+        <div class="delivery-card ${isDone ? 'delivery-card-done' : ''}${isCompact ? ' delivery-card-compact' : ''}${cardLabelClass}" data-group-key="${safeKey}" data-route-key="${escHtml(routeKey)}">
             <div class="delivery-card-header">
                 <div class="delivery-route-area" data-group-key="${safeKey}" title="ダブルタップでルート変更">
                     ${routeBadges}

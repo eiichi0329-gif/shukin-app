@@ -943,6 +943,13 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .count-label-yellow { background: #fef9c3; color: #854d0e; border-color: #fde047; }
 .count-label-default{ background: var(--g100); color: var(--g600); border-color: var(--g300); }
 
+/* countLabel ごとのカード枠線 */
+.delivery-card-label-cyan   { border: 2.5px solid #22d3ee; }
+.delivery-card-label-red    { border: 2.5px solid #f87171; }
+.delivery-card-label-beige  { border: 2.5px solid #fbbf24; }
+.delivery-card-label-yellow { border: 2.5px solid #facc15; }
+.delivery-card-label-default{ border: 2.5px solid var(--g300); }
+
 /* 種類・数量行 + 配達済みボタン */
 .delivery-card-items-row {
   display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
