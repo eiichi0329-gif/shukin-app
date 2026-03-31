@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-03-31 09:00:49
-// 件数: 4243 件  合計: 38,556,307円
+// 自動生成: 2026-03-31 18:58:12
+// 件数: 4245 件  合計: 36,553,801円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbzaN9MnPONOoSH8DzrjxZhYBPstdmWsxnG217x8HdE0CZ9Oxckzxx55RVCqDZgMcTQ/exec";
 
@@ -4256,7 +4256,7 @@ window.COLLECTION_DATA = [
     "name": "福戸　和子",
     "paymentType": "cash",
     "address": "下関市彦島迫町５－５－５",
-    "amount": 16228,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -4326,7 +4326,7 @@ window.COLLECTION_DATA = [
     "name": "杉村　幸生",
     "paymentType": "cash",
     "address": "下関市彦島西山町２－２－１１",
-    "amount": 6458,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -4340,7 +4340,7 @@ window.COLLECTION_DATA = [
     "name": "植田　芳幸",
     "paymentType": "cash",
     "address": "下関市彦島迫町２－６－１５",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -4564,7 +4564,7 @@ window.COLLECTION_DATA = [
     "name": "早川　米子",
     "paymentType": "cash",
     "address": "下関市彦島向井町１－１２－１７",
-    "amount": 14208,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -4578,7 +4578,7 @@ window.COLLECTION_DATA = [
     "name": "中村　幸夫",
     "paymentType": "cash",
     "address": "下関市彦島向井町２－１２－１０",
-    "amount": 13975,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -4746,7 +4746,7 @@ window.COLLECTION_DATA = [
     "name": "藤本　美千代",
     "paymentType": "cash",
     "address": "下関市彦島本村町７－９－９",
-    "amount": 35069,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5054,7 +5054,7 @@ window.COLLECTION_DATA = [
     "name": "野口　和夫",
     "paymentType": "cash",
     "address": "下関市梶栗町４－１－１６",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5166,7 +5166,7 @@ window.COLLECTION_DATA = [
     "name": "河村　熙",
     "paymentType": "cash",
     "address": "下関市横野町１－７－１８",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5250,7 +5250,7 @@ window.COLLECTION_DATA = [
     "name": "伊田　京",
     "paymentType": "cash",
     "address": "下関市安岡町６－５－４１",
-    "amount": 7686,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5446,7 +5446,7 @@ window.COLLECTION_DATA = [
     "name": "村地　修子",
     "paymentType": "cash",
     "address": "下関市一の宮住吉２－５－２６－５０１号",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5586,7 +5586,7 @@ window.COLLECTION_DATA = [
     "name": "谷　ヒロシ",
     "paymentType": "cash",
     "address": "下関市長府浜浦南町８－８",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5670,7 +5670,7 @@ window.COLLECTION_DATA = [
     "name": "貞本　秀雄",
     "paymentType": "cash",
     "address": "下関市長府侍町２－４－８－３０４号",
-    "amount": 12577,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5824,7 +5824,7 @@ window.COLLECTION_DATA = [
     "name": "本多　勇",
     "paymentType": "cash",
     "address": "下関市田倉町御殿町２－３－６",
-    "amount": 23250,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5852,7 +5852,7 @@ window.COLLECTION_DATA = [
     "name": "黒原　二郎",
     "paymentType": "cash",
     "address": "下関市長府中尾町１２－１５",
-    "amount": 17534,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -5964,7 +5964,7 @@ window.COLLECTION_DATA = [
     "name": "西田　鈴雄",
     "paymentType": "cash",
     "address": "下関市長府中六波８－２７",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6034,7 +6034,7 @@ window.COLLECTION_DATA = [
     "name": "山田　美智雄",
     "paymentType": "cash",
     "address": "下関市長府松小田中町１０－３１",
-    "amount": 30745,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6146,7 +6146,7 @@ window.COLLECTION_DATA = [
     "name": "藤井　真春",
     "paymentType": "cash",
     "address": "下関市細江町３－３－１（藤井メンタルクリニック）",
-    "amount": 11878,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6160,7 +6160,7 @@ window.COLLECTION_DATA = [
     "name": "吉村　幸夫",
     "paymentType": "cash",
     "address": "下関市上田中町８－１０",
-    "amount": 6318,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6230,7 +6230,7 @@ window.COLLECTION_DATA = [
     "name": "古川　洋",
     "paymentType": "cash",
     "address": "下関市上新地町３－２－１２",
-    "amount": 14015,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6300,7 +6300,7 @@ window.COLLECTION_DATA = [
     "name": "藤目　雄一",
     "paymentType": "cash",
     "address": "下関市上新地町１－１－２－９０２号",
-    "amount": 9083,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6342,7 +6342,7 @@ window.COLLECTION_DATA = [
     "name": "遠藤　綾",
     "paymentType": "cash",
     "address": "下関市藤附町３－４－２",
-    "amount": 9782,
+    "amount": 9083,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6356,7 +6356,7 @@ window.COLLECTION_DATA = [
     "name": "藤附　孝子",
     "paymentType": "cash",
     "address": "下関市藤附町１１－９",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6412,7 +6412,7 @@ window.COLLECTION_DATA = [
     "name": "古川　京子",
     "paymentType": "cash",
     "address": "下関市武久町２－３５－６",
-    "amount": 9083,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6454,7 +6454,7 @@ window.COLLECTION_DATA = [
     "name": "本𠮷　多津子",
     "paymentType": "cash",
     "address": "下関市武久町１－１２－１３",
-    "amount": 9083,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6734,7 +6734,7 @@ window.COLLECTION_DATA = [
     "name": "中山　孝志",
     "paymentType": "cash",
     "address": "門司区大久保１－６－２２",
-    "amount": 30745,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6748,7 +6748,7 @@ window.COLLECTION_DATA = [
     "name": "田中　伊三男",
     "paymentType": "cash",
     "address": "門司区鳴竹１－１－１３",
-    "amount": 12577,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6916,7 +6916,7 @@ window.COLLECTION_DATA = [
     "name": "土居　弘憲",
     "paymentType": "cash",
     "address": "門司区下二十町１ー３０ー１０１号",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -6944,7 +6944,7 @@ window.COLLECTION_DATA = [
     "name": "三好　康文",
     "paymentType": "cash",
     "address": "門司区永黒１－７－１３－２０４号",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -7000,7 +7000,7 @@ window.COLLECTION_DATA = [
     "name": "片山　民子",
     "paymentType": "cash",
     "address": "門司区上二十町９－１５－２０２号",
-    "amount": 27125,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -7014,7 +7014,7 @@ window.COLLECTION_DATA = [
     "name": "奈良　玲子",
     "paymentType": "cash",
     "address": "門司区大里戸ノ上１－１３－１４",
-    "amount": 16228,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -7154,7 +7154,7 @@ window.COLLECTION_DATA = [
     "name": "古野　小枝子",
     "paymentType": "cash",
     "address": "門司区泉ヶ丘３－２３－５０５号",
-    "amount": 30745,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -7210,7 +7210,7 @@ window.COLLECTION_DATA = [
     "name": "相場　昭",
     "paymentType": "cash",
     "address": "門司区小松町７－５",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -7392,7 +7392,7 @@ window.COLLECTION_DATA = [
     "name": "山中　新一",
     "paymentType": "cash",
     "address": "下関市貴船町１ー７―２０",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -7700,7 +7700,7 @@ window.COLLECTION_DATA = [
     "name": "山村　和子",
     "paymentType": "cash",
     "address": "下関市後田町１－１０－２",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -8190,7 +8190,7 @@ window.COLLECTION_DATA = [
     "name": "林　憲二",
     "paymentType": "cash",
     "address": "下関市竹崎町２－２－８",
-    "amount": 33358,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -8218,7 +8218,7 @@ window.COLLECTION_DATA = [
     "name": "西田　優",
     "paymentType": "cash",
     "address": "下関市関西町７－１５",
-    "amount": 13276,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -8246,7 +8246,7 @@ window.COLLECTION_DATA = [
     "name": "山下　恒子",
     "paymentType": "cash",
     "address": "下関市長崎中央町５－１５",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -8400,7 +8400,7 @@ window.COLLECTION_DATA = [
     "name": "秋本　純子",
     "paymentType": "cash",
     "address": "下関市上田中町２－１０－１５",
-    "amount": 32906,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -8428,7 +8428,7 @@ window.COLLECTION_DATA = [
     "name": "藤川　哲雄",
     "paymentType": "cash",
     "address": "下関市上田中町２－３－１０",
-    "amount": 15569,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -8526,7 +8526,7 @@ window.COLLECTION_DATA = [
     "name": "岡野　和子",
     "paymentType": "cash",
     "address": "下関市熊野町２－８－７",
-    "amount": 30745,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -8582,7 +8582,7 @@ window.COLLECTION_DATA = [
     "name": "金田　治美",
     "paymentType": "cash",
     "address": "下関市山の田東町６－４－６０３号",
-    "amount": 14208,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)下関店.xlsm"
@@ -8633,6 +8633,34 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "下関店",
+    "code": 0,
+    "route": 0,
+    "name": "山口　良一",
+    "paymentType": "bank",
+    "address": "下関市彦島塩浜町３－４－２５",
+    "amount": 13276,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)下関店.xlsm"
+    ],
+    "seq": 617
+  },
+  {
+    "store": "下関店",
+    "code": 0,
+    "route": 0,
+    "name": "成田　弘樹",
+    "paymentType": "cash",
+    "address": "下関市綾羅木本町８－１－１２",
+    "amount": 7280,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)下関店.xlsm"
+    ],
+    "seq": 618
+  },
+  {
+    "store": "下関店",
     "code": 150,
     "route": 1,
     "name": "大和　忠晴",
@@ -8643,7 +8671,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 617
+    "seq": 619
   },
   {
     "store": "下関店",
@@ -8657,7 +8685,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 618
+    "seq": 620
   },
   {
     "store": "下関店",
@@ -8671,7 +8699,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 619
+    "seq": 621
   },
   {
     "store": "下関店",
@@ -8685,7 +8713,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 620
+    "seq": 622
   },
   {
     "store": "下関店",
@@ -8699,7 +8727,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 621
+    "seq": 623
   },
   {
     "store": "下関店",
@@ -8713,7 +8741,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 622
+    "seq": 624
   },
   {
     "store": "下関店",
@@ -8727,7 +8755,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 623
+    "seq": 625
   },
   {
     "store": "下関店",
@@ -8736,12 +8764,12 @@ window.COLLECTION_DATA = [
     "name": "杉村　幸生",
     "paymentType": "cash",
     "address": "下関市彦島西山町２－２－１１",
-    "amount": 1937,
+    "amount": 4520,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 624
+    "seq": 626
   },
   {
     "store": "下関店",
@@ -8755,7 +8783,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 625
+    "seq": 627
   },
   {
     "store": "下関店",
@@ -8769,7 +8797,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 626
+    "seq": 628
   },
   {
     "store": "下関店",
@@ -8783,7 +8811,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 627
+    "seq": 629
   },
   {
     "store": "下関店",
@@ -8797,7 +8825,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 628
+    "seq": 630
   },
   {
     "store": "下関店",
@@ -8811,7 +8839,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 629
+    "seq": 631
   },
   {
     "store": "下関店",
@@ -8825,7 +8853,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 630
+    "seq": 632
   },
   {
     "store": "下関店",
@@ -8839,7 +8867,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 631
+    "seq": 633
   },
   {
     "store": "下関店",
@@ -8853,7 +8881,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 632
+    "seq": 634
   },
   {
     "store": "下関店",
@@ -8867,7 +8895,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 633
+    "seq": 635
   },
   {
     "store": "下関店",
@@ -8881,7 +8909,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 634
+    "seq": 636
   },
   {
     "store": "下関店",
@@ -8895,7 +8923,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 635
+    "seq": 637
   },
   {
     "store": "下関店",
@@ -8909,7 +8937,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 636
+    "seq": 638
   },
   {
     "store": "下関店",
@@ -8923,7 +8951,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 637
+    "seq": 639
   },
   {
     "store": "下関店",
@@ -8937,7 +8965,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 638
+    "seq": 640
   },
   {
     "store": "下関店",
@@ -8951,7 +8979,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 639
+    "seq": 641
   },
   {
     "store": "下関店",
@@ -8965,7 +8993,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 640
+    "seq": 642
   },
   {
     "store": "下関店",
@@ -8979,7 +9007,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 641
+    "seq": 643
   },
   {
     "store": "下関店",
@@ -8993,7 +9021,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 642
+    "seq": 644
   },
   {
     "store": "下関店",
@@ -9007,7 +9035,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 643
+    "seq": 645
   },
   {
     "store": "下関店",
@@ -9021,7 +9049,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 644
+    "seq": 646
   },
   {
     "store": "下関店",
@@ -9035,7 +9063,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 645
+    "seq": 647
   },
   {
     "store": "下関店",
@@ -9049,7 +9077,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 646
+    "seq": 648
   },
   {
     "store": "下関店",
@@ -9063,7 +9091,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 647
+    "seq": 649
   },
   {
     "store": "下関店",
@@ -9077,7 +9105,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 648
+    "seq": 650
   },
   {
     "store": "下関店",
@@ -9091,7 +9119,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 649
+    "seq": 651
   },
   {
     "store": "下関店",
@@ -9105,7 +9133,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 650
+    "seq": 652
   },
   {
     "store": "下関店",
@@ -9119,7 +9147,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 651
+    "seq": 653
   },
   {
     "store": "下関店",
@@ -9133,7 +9161,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 652
+    "seq": 654
   },
   {
     "store": "下関店",
@@ -9147,7 +9175,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 653
+    "seq": 655
   },
   {
     "store": "下関店",
@@ -9161,7 +9189,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 654
+    "seq": 656
   },
   {
     "store": "下関店",
@@ -9175,7 +9203,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 655
+    "seq": 657
   },
   {
     "store": "下関店",
@@ -9189,7 +9217,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 656
+    "seq": 658
   },
   {
     "store": "下関店",
@@ -9203,7 +9231,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 657
+    "seq": 659
   },
   {
     "store": "下関店",
@@ -9217,7 +9245,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 658
+    "seq": 660
   },
   {
     "store": "下関店",
@@ -9231,7 +9259,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 659
+    "seq": 661
   },
   {
     "store": "下関店",
@@ -9245,7 +9273,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 660
+    "seq": 662
   },
   {
     "store": "下関店",
@@ -9259,7 +9287,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 661
+    "seq": 663
   },
   {
     "store": "下関店",
@@ -9273,7 +9301,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 662
+    "seq": 664
   },
   {
     "store": "下関店",
@@ -9287,7 +9315,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 663
+    "seq": 665
   },
   {
     "store": "下関店",
@@ -9301,7 +9329,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 664
+    "seq": 666
   },
   {
     "store": "下関店",
@@ -9315,7 +9343,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 665
+    "seq": 667
   },
   {
     "store": "下関店",
@@ -9329,7 +9357,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 666
+    "seq": 668
   },
   {
     "store": "下関店",
@@ -9343,7 +9371,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 667
+    "seq": 669
   },
   {
     "store": "下関店",
@@ -9357,7 +9385,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 668
+    "seq": 670
   },
   {
     "store": "下関店",
@@ -9371,7 +9399,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 669
+    "seq": 671
   },
   {
     "store": "下関店",
@@ -9385,7 +9413,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 670
+    "seq": 672
   },
   {
     "store": "下関店",
@@ -9399,7 +9427,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 671
+    "seq": 673
   },
   {
     "store": "下関店",
@@ -9413,7 +9441,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 672
+    "seq": 674
   },
   {
     "store": "下関店",
@@ -9427,7 +9455,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 673
+    "seq": 675
   },
   {
     "store": "下関店",
@@ -9441,7 +9469,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 674
+    "seq": 676
   },
   {
     "store": "下関店",
@@ -9455,7 +9483,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 675
+    "seq": 677
   },
   {
     "store": "下関店",
@@ -9469,7 +9497,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 676
+    "seq": 678
   },
   {
     "store": "下関店",
@@ -9483,7 +9511,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 677
+    "seq": 679
   },
   {
     "store": "下関店",
@@ -9497,7 +9525,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 678
+    "seq": 680
   },
   {
     "store": "下関店",
@@ -9511,7 +9539,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 679
+    "seq": 681
   },
   {
     "store": "下関店",
@@ -9525,7 +9553,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 680
+    "seq": 682
   },
   {
     "store": "下関店",
@@ -9539,7 +9567,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 681
+    "seq": 683
   },
   {
     "store": "下関店",
@@ -9553,7 +9581,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 682
+    "seq": 684
   },
   {
     "store": "下関店",
@@ -9567,7 +9595,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 683
+    "seq": 685
   },
   {
     "store": "下関店",
@@ -9581,7 +9609,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 684
+    "seq": 686
   },
   {
     "store": "下関店",
@@ -9595,7 +9623,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 685
+    "seq": 687
   },
   {
     "store": "下関店",
@@ -9609,7 +9637,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 686
+    "seq": 688
   },
   {
     "store": "下関店",
@@ -9623,7 +9651,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 687
+    "seq": 689
   },
   {
     "store": "下関店",
@@ -9637,7 +9665,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 688
+    "seq": 690
   },
   {
     "store": "下関店",
@@ -9651,7 +9679,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 689
+    "seq": 691
   },
   {
     "store": "下関店",
@@ -9665,7 +9693,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 690
+    "seq": 692
   },
   {
     "store": "下関店",
@@ -9679,7 +9707,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 691
+    "seq": 693
   },
   {
     "store": "下関店",
@@ -9693,7 +9721,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 692
+    "seq": 694
   },
   {
     "store": "下関店",
@@ -9707,7 +9735,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 693
+    "seq": 695
   },
   {
     "store": "下関店",
@@ -9721,7 +9749,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 694
+    "seq": 696
   },
   {
     "store": "下関店",
@@ -9735,7 +9763,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 695
+    "seq": 697
   },
   {
     "store": "下関店",
@@ -9749,7 +9777,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 696
+    "seq": 698
   },
   {
     "store": "下関店",
@@ -9763,7 +9791,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 697
+    "seq": 699
   },
   {
     "store": "下関店",
@@ -9777,7 +9805,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 698
+    "seq": 700
   },
   {
     "store": "下関店",
@@ -9791,7 +9819,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 699
+    "seq": 701
   },
   {
     "store": "下関店",
@@ -9805,7 +9833,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 700
+    "seq": 702
   },
   {
     "store": "下関店",
@@ -9819,7 +9847,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 701
+    "seq": 703
   },
   {
     "store": "下関店",
@@ -9833,7 +9861,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 702
+    "seq": 704
   },
   {
     "store": "下関店",
@@ -9847,7 +9875,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 703
+    "seq": 705
   },
   {
     "store": "下関店",
@@ -9861,7 +9889,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 704
+    "seq": 706
   },
   {
     "store": "下関店",
@@ -9875,7 +9903,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 705
+    "seq": 707
   },
   {
     "store": "下関店",
@@ -9889,7 +9917,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 706
+    "seq": 708
   },
   {
     "store": "下関店",
@@ -9903,7 +9931,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 707
+    "seq": 709
   },
   {
     "store": "下関店",
@@ -9917,7 +9945,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 708
+    "seq": 710
   },
   {
     "store": "下関店",
@@ -9931,7 +9959,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 709
+    "seq": 711
   },
   {
     "store": "下関店",
@@ -9945,7 +9973,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 710
+    "seq": 712
   },
   {
     "store": "下関店",
@@ -9959,7 +9987,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 711
+    "seq": 713
   },
   {
     "store": "下関店",
@@ -9973,7 +10001,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 712
+    "seq": 714
   },
   {
     "store": "下関店",
@@ -9987,7 +10015,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 713
+    "seq": 715
   },
   {
     "store": "下関店",
@@ -10001,7 +10029,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 714
+    "seq": 716
   },
   {
     "store": "下関店",
@@ -10015,7 +10043,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 715
+    "seq": 717
   },
   {
     "store": "下関店",
@@ -10029,7 +10057,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 716
+    "seq": 718
   },
   {
     "store": "下関店",
@@ -10043,7 +10071,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 717
+    "seq": 719
   },
   {
     "store": "下関店",
@@ -10057,7 +10085,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 718
+    "seq": 720
   },
   {
     "store": "下関店",
@@ -10071,7 +10099,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 719
+    "seq": 721
   },
   {
     "store": "下関店",
@@ -10085,7 +10113,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 720
+    "seq": 722
   },
   {
     "store": "下関店",
@@ -10099,7 +10127,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 721
+    "seq": 723
   },
   {
     "store": "下関店",
@@ -10113,7 +10141,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 722
+    "seq": 724
   },
   {
     "store": "下関店",
@@ -10127,7 +10155,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 723
+    "seq": 725
   },
   {
     "store": "下関店",
@@ -10141,7 +10169,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 724
+    "seq": 726
   },
   {
     "store": "下関店",
@@ -10155,7 +10183,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 725
+    "seq": 727
   },
   {
     "store": "下関店",
@@ -10169,7 +10197,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 726
+    "seq": 728
   },
   {
     "store": "下関店",
@@ -10183,7 +10211,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 727
+    "seq": 729
   },
   {
     "store": "下関店",
@@ -10197,7 +10225,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 728
+    "seq": 730
   },
   {
     "store": "下関店",
@@ -10211,7 +10239,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 729
+    "seq": 731
   },
   {
     "store": "下関店",
@@ -10225,7 +10253,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 730
+    "seq": 732
   },
   {
     "store": "下関店",
@@ -10239,7 +10267,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 731
+    "seq": 733
   },
   {
     "store": "下関店",
@@ -10253,7 +10281,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 732
+    "seq": 734
   },
   {
     "store": "下関店",
@@ -10267,7 +10295,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 733
+    "seq": 735
   },
   {
     "store": "下関店",
@@ -10281,7 +10309,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 734
+    "seq": 736
   },
   {
     "store": "下関店",
@@ -10295,7 +10323,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 735
+    "seq": 737
   },
   {
     "store": "下関店",
@@ -10309,7 +10337,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 736
+    "seq": 738
   },
   {
     "store": "下関店",
@@ -10323,7 +10351,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 737
+    "seq": 739
   },
   {
     "store": "下関店",
@@ -10337,7 +10365,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 738
+    "seq": 740
   },
   {
     "store": "下関店",
@@ -10351,7 +10379,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 739
+    "seq": 741
   },
   {
     "store": "下関店",
@@ -10365,7 +10393,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 740
+    "seq": 742
   },
   {
     "store": "下関店",
@@ -10379,7 +10407,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 741
+    "seq": 743
   },
   {
     "store": "下関店",
@@ -10393,7 +10421,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 742
+    "seq": 744
   },
   {
     "store": "下関店",
@@ -10407,7 +10435,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 743
+    "seq": 745
   },
   {
     "store": "下関店",
@@ -10421,7 +10449,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 744
+    "seq": 746
   },
   {
     "store": "下関店",
@@ -10435,7 +10463,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 745
+    "seq": 747
   },
   {
     "store": "下関店",
@@ -10449,7 +10477,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 746
+    "seq": 748
   },
   {
     "store": "下関店",
@@ -10463,7 +10491,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 747
+    "seq": 749
   },
   {
     "store": "下関店",
@@ -10477,7 +10505,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 748
+    "seq": 750
   },
   {
     "store": "下関店",
@@ -10491,7 +10519,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 749
+    "seq": 751
   },
   {
     "store": "下関店",
@@ -10505,7 +10533,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 750
+    "seq": 752
   },
   {
     "store": "下関店",
@@ -10519,7 +10547,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 751
+    "seq": 753
   },
   {
     "store": "下関店",
@@ -10533,7 +10561,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 752
+    "seq": 754
   },
   {
     "store": "下関店",
@@ -10547,7 +10575,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 753
+    "seq": 755
   },
   {
     "store": "下関店",
@@ -10561,7 +10589,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 754
+    "seq": 756
   },
   {
     "store": "下関店",
@@ -10575,7 +10603,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 755
+    "seq": 757
   },
   {
     "store": "下関店",
@@ -10589,7 +10617,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 756
+    "seq": 758
   },
   {
     "store": "下関店",
@@ -10603,7 +10631,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 757
+    "seq": 759
   },
   {
     "store": "下関店",
@@ -10617,7 +10645,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 758
+    "seq": 760
   },
   {
     "store": "下関店",
@@ -10631,7 +10659,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 759
+    "seq": 761
   },
   {
     "store": "下関店",
@@ -10645,7 +10673,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 760
+    "seq": 762
   },
   {
     "store": "下関店",
@@ -10659,7 +10687,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 761
+    "seq": 763
   },
   {
     "store": "下関店",
@@ -10673,7 +10701,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 762
+    "seq": 764
   },
   {
     "store": "下関店",
@@ -10687,7 +10715,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 763
+    "seq": 765
   },
   {
     "store": "下関店",
@@ -10701,7 +10729,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 764
+    "seq": 766
   },
   {
     "store": "下関店",
@@ -10715,7 +10743,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 765
+    "seq": 767
   },
   {
     "store": "下関店",
@@ -10729,7 +10757,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 766
+    "seq": 768
   },
   {
     "store": "下関店",
@@ -10743,7 +10771,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 767
+    "seq": 769
   },
   {
     "store": "下関店",
@@ -10757,7 +10785,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 768
+    "seq": 770
   },
   {
     "store": "下関店",
@@ -10771,7 +10799,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 769
+    "seq": 771
   },
   {
     "store": "下関店",
@@ -10785,7 +10813,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 770
+    "seq": 772
   },
   {
     "store": "下関店",
@@ -10799,7 +10827,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 771
+    "seq": 773
   },
   {
     "store": "下関店",
@@ -10813,7 +10841,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 772
+    "seq": 774
   },
   {
     "store": "下関店",
@@ -10827,7 +10855,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 773
+    "seq": 775
   },
   {
     "store": "下関店",
@@ -10841,7 +10869,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 774
+    "seq": 776
   },
   {
     "store": "下関店",
@@ -10855,7 +10883,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 775
+    "seq": 777
   },
   {
     "store": "下関店",
@@ -10869,7 +10897,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 776
+    "seq": 778
   },
   {
     "store": "下関店",
@@ -10883,7 +10911,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 777
+    "seq": 779
   },
   {
     "store": "下関店",
@@ -10897,7 +10925,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 778
+    "seq": 780
   },
   {
     "store": "下関店",
@@ -10911,7 +10939,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 779
+    "seq": 781
   },
   {
     "store": "下関店",
@@ -10925,7 +10953,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 780
+    "seq": 782
   },
   {
     "store": "下関店",
@@ -10939,7 +10967,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 781
+    "seq": 783
   },
   {
     "store": "下関店",
@@ -10953,7 +10981,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 782
+    "seq": 784
   },
   {
     "store": "下関店",
@@ -10967,7 +10995,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 783
+    "seq": 785
   },
   {
     "store": "下関店",
@@ -10981,7 +11009,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 784
+    "seq": 786
   },
   {
     "store": "下関店",
@@ -10995,7 +11023,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 785
+    "seq": 787
   },
   {
     "store": "下関店",
@@ -11009,7 +11037,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 786
+    "seq": 788
   },
   {
     "store": "下関店",
@@ -11023,7 +11051,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 787
+    "seq": 789
   },
   {
     "store": "下関店",
@@ -11037,7 +11065,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 788
+    "seq": 790
   },
   {
     "store": "下関店",
@@ -11051,7 +11079,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 789
+    "seq": 791
   },
   {
     "store": "下関店",
@@ -11065,7 +11093,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 790
+    "seq": 792
   },
   {
     "store": "下関店",
@@ -11079,7 +11107,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 791
+    "seq": 793
   },
   {
     "store": "下関店",
@@ -11093,7 +11121,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 792
+    "seq": 794
   },
   {
     "store": "下関店",
@@ -11107,7 +11135,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 793
+    "seq": 795
   },
   {
     "store": "下関店",
@@ -11121,7 +11149,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 794
+    "seq": 796
   },
   {
     "store": "下関店",
@@ -11135,7 +11163,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 795
+    "seq": 797
   },
   {
     "store": "下関店",
@@ -11149,7 +11177,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 796
+    "seq": 798
   },
   {
     "store": "下関店",
@@ -11158,12 +11186,12 @@ window.COLLECTION_DATA = [
     "name": "田中　伊三男",
     "paymentType": "cash",
     "address": "門司区鳴竹１－１－１３",
-    "amount": 11878,
+    "amount": 4192,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 797
+    "seq": 799
   },
   {
     "store": "下関店",
@@ -11177,7 +11205,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 798
+    "seq": 800
   },
   {
     "store": "下関店",
@@ -11191,7 +11219,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 799
+    "seq": 801
   },
   {
     "store": "下関店",
@@ -11205,7 +11233,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 800
+    "seq": 802
   },
   {
     "store": "下関店",
@@ -11219,7 +11247,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 801
+    "seq": 803
   },
   {
     "store": "下関店",
@@ -11233,7 +11261,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 802
+    "seq": 804
   },
   {
     "store": "下関店",
@@ -11247,7 +11275,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 803
+    "seq": 805
   },
   {
     "store": "下関店",
@@ -11261,7 +11289,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 804
+    "seq": 806
   },
   {
     "store": "下関店",
@@ -11275,7 +11303,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 805
+    "seq": 807
   },
   {
     "store": "下関店",
@@ -11289,7 +11317,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 806
+    "seq": 808
   },
   {
     "store": "下関店",
@@ -11303,7 +11331,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 807
+    "seq": 809
   },
   {
     "store": "下関店",
@@ -11317,7 +11345,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 808
+    "seq": 810
   },
   {
     "store": "下関店",
@@ -11331,7 +11359,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 809
+    "seq": 811
   },
   {
     "store": "下関店",
@@ -11340,12 +11368,12 @@ window.COLLECTION_DATA = [
     "name": "山下　あゆみ",
     "paymentType": "cash",
     "address": "門司区大里東１－６－１８－９０２号",
-    "amount": 20148,
+    "amount": 2747,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 810
+    "seq": 812
   },
   {
     "store": "下関店",
@@ -11359,7 +11387,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 811
+    "seq": 813
   },
   {
     "store": "下関店",
@@ -11373,7 +11401,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 812
+    "seq": 814
   },
   {
     "store": "下関店",
@@ -11387,7 +11415,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 813
+    "seq": 815
   },
   {
     "store": "下関店",
@@ -11401,7 +11429,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 814
+    "seq": 816
   },
   {
     "store": "下関店",
@@ -11415,7 +11443,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 815
+    "seq": 817
   },
   {
     "store": "下関店",
@@ -11429,7 +11457,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 816
+    "seq": 818
   },
   {
     "store": "下関店",
@@ -11443,7 +11471,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 817
+    "seq": 819
   },
   {
     "store": "下関店",
@@ -11457,7 +11485,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 818
+    "seq": 820
   },
   {
     "store": "下関店",
@@ -11471,7 +11499,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 819
+    "seq": 821
   },
   {
     "store": "下関店",
@@ -11485,7 +11513,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 820
+    "seq": 822
   },
   {
     "store": "下関店",
@@ -11499,7 +11527,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 821
+    "seq": 823
   },
   {
     "store": "下関店",
@@ -11513,7 +11541,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 822
+    "seq": 824
   },
   {
     "store": "下関店",
@@ -11527,7 +11555,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 823
+    "seq": 825
   },
   {
     "store": "下関店",
@@ -11541,7 +11569,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 824
+    "seq": 826
   },
   {
     "store": "下関店",
@@ -11555,7 +11583,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 825
+    "seq": 827
   },
   {
     "store": "下関店",
@@ -11569,7 +11597,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 826
+    "seq": 828
   },
   {
     "store": "下関店",
@@ -11583,7 +11611,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 827
+    "seq": 829
   },
   {
     "store": "下関店",
@@ -11597,7 +11625,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 828
+    "seq": 830
   },
   {
     "store": "下関店",
@@ -11611,7 +11639,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 829
+    "seq": 831
   },
   {
     "store": "下関店",
@@ -11625,7 +11653,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 830
+    "seq": 832
   },
   {
     "store": "下関店",
@@ -11639,7 +11667,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 831
+    "seq": 833
   },
   {
     "store": "下関店",
@@ -11653,7 +11681,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 832
+    "seq": 834
   },
   {
     "store": "下関店",
@@ -11667,7 +11695,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 833
+    "seq": 835
   },
   {
     "store": "下関店",
@@ -11681,7 +11709,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 834
+    "seq": 836
   },
   {
     "store": "下関店",
@@ -11695,7 +11723,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 835
+    "seq": 837
   },
   {
     "store": "下関店",
@@ -11709,7 +11737,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 836
+    "seq": 838
   },
   {
     "store": "下関店",
@@ -11723,7 +11751,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 837
+    "seq": 839
   },
   {
     "store": "下関店",
@@ -11737,7 +11765,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 838
+    "seq": 840
   },
   {
     "store": "下関店",
@@ -11751,7 +11779,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 839
+    "seq": 841
   },
   {
     "store": "下関店",
@@ -11765,7 +11793,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 840
+    "seq": 842
   },
   {
     "store": "下関店",
@@ -11779,7 +11807,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 841
+    "seq": 843
   },
   {
     "store": "下関店",
@@ -11793,7 +11821,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 842
+    "seq": 844
   },
   {
     "store": "下関店",
@@ -11807,7 +11835,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 843
+    "seq": 845
   },
   {
     "store": "下関店",
@@ -11821,7 +11849,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 844
+    "seq": 846
   },
   {
     "store": "下関店",
@@ -11835,7 +11863,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 845
+    "seq": 847
   },
   {
     "store": "下関店",
@@ -11849,7 +11877,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 846
+    "seq": 848
   },
   {
     "store": "下関店",
@@ -11863,7 +11891,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 847
+    "seq": 849
   },
   {
     "store": "下関店",
@@ -11877,7 +11905,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 848
+    "seq": 850
   },
   {
     "store": "下関店",
@@ -11891,7 +11919,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 849
+    "seq": 851
   },
   {
     "store": "下関店",
@@ -11905,7 +11933,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 850
+    "seq": 852
   },
   {
     "store": "下関店",
@@ -11919,7 +11947,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 851
+    "seq": 853
   },
   {
     "store": "下関店",
@@ -11933,7 +11961,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 852
+    "seq": 854
   },
   {
     "store": "下関店",
@@ -11947,7 +11975,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 853
+    "seq": 855
   },
   {
     "store": "下関店",
@@ -11961,7 +11989,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 854
+    "seq": 856
   },
   {
     "store": "下関店",
@@ -11975,7 +12003,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 855
+    "seq": 857
   },
   {
     "store": "下関店",
@@ -11989,7 +12017,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 856
+    "seq": 858
   },
   {
     "store": "下関店",
@@ -12003,7 +12031,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 857
+    "seq": 859
   },
   {
     "store": "下関店",
@@ -12017,7 +12045,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 858
+    "seq": 860
   },
   {
     "store": "下関店",
@@ -12031,7 +12059,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 859
+    "seq": 861
   },
   {
     "store": "下関店",
@@ -12045,7 +12073,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 860
+    "seq": 862
   },
   {
     "store": "下関店",
@@ -12059,7 +12087,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 861
+    "seq": 863
   },
   {
     "store": "下関店",
@@ -12073,7 +12101,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 862
+    "seq": 864
   },
   {
     "store": "下関店",
@@ -12087,7 +12115,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 863
+    "seq": 865
   },
   {
     "store": "下関店",
@@ -12101,7 +12129,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 864
+    "seq": 866
   },
   {
     "store": "下関店",
@@ -12115,7 +12143,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 865
+    "seq": 867
   },
   {
     "store": "下関店",
@@ -12129,7 +12157,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 866
+    "seq": 868
   },
   {
     "store": "下関店",
@@ -12143,7 +12171,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 867
+    "seq": 869
   },
   {
     "store": "下関店",
@@ -12157,7 +12185,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 868
+    "seq": 870
   },
   {
     "store": "下関店",
@@ -12171,7 +12199,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 869
+    "seq": 871
   },
   {
     "store": "下関店",
@@ -12185,7 +12213,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 870
+    "seq": 872
   },
   {
     "store": "下関店",
@@ -12199,7 +12227,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 871
+    "seq": 873
   },
   {
     "store": "下関店",
@@ -12213,7 +12241,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 872
+    "seq": 874
   },
   {
     "store": "下関店",
@@ -12227,7 +12255,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 873
+    "seq": 875
   },
   {
     "store": "下関店",
@@ -12241,7 +12269,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 874
+    "seq": 876
   },
   {
     "store": "下関店",
@@ -12255,7 +12283,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 875
+    "seq": 877
   },
   {
     "store": "下関店",
@@ -12269,7 +12297,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 876
+    "seq": 878
   },
   {
     "store": "下関店",
@@ -12283,7 +12311,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 877
+    "seq": 879
   },
   {
     "store": "下関店",
@@ -12297,7 +12325,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 878
+    "seq": 880
   },
   {
     "store": "下関店",
@@ -12311,7 +12339,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 879
+    "seq": 881
   },
   {
     "store": "下関店",
@@ -12325,7 +12353,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 880
+    "seq": 882
   },
   {
     "store": "下関店",
@@ -12339,7 +12367,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 881
+    "seq": 883
   },
   {
     "store": "下関店",
@@ -12353,7 +12381,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 882
+    "seq": 884
   },
   {
     "store": "下関店",
@@ -12367,7 +12395,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 883
+    "seq": 885
   },
   {
     "store": "下関店",
@@ -12381,7 +12409,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 884
+    "seq": 886
   },
   {
     "store": "下関店",
@@ -12395,7 +12423,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 885
+    "seq": 887
   },
   {
     "store": "下関店",
@@ -12409,7 +12437,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 886
+    "seq": 888
   },
   {
     "store": "下関店",
@@ -12423,7 +12451,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 887
+    "seq": 889
   },
   {
     "store": "下関店",
@@ -12437,7 +12465,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 888
+    "seq": 890
   },
   {
     "store": "下関店",
@@ -12451,7 +12479,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 889
+    "seq": 891
   },
   {
     "store": "下関店",
@@ -12465,7 +12493,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 890
+    "seq": 892
   },
   {
     "store": "下関店",
@@ -12479,7 +12507,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 891
+    "seq": 893
   },
   {
     "store": "下関店",
@@ -12493,7 +12521,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 892
+    "seq": 894
   },
   {
     "store": "下関店",
@@ -12507,7 +12535,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 893
+    "seq": 895
   },
   {
     "store": "下関店",
@@ -12521,7 +12549,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 894
+    "seq": 896
   },
   {
     "store": "下関店",
@@ -12535,7 +12563,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 895
+    "seq": 897
   },
   {
     "store": "下関店",
@@ -12549,7 +12577,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 896
+    "seq": 898
   },
   {
     "store": "下関店",
@@ -12563,7 +12591,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 897
+    "seq": 899
   },
   {
     "store": "下関店",
@@ -12577,7 +12605,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 898
+    "seq": 900
   },
   {
     "store": "下関店",
@@ -12591,7 +12619,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 899
+    "seq": 901
   },
   {
     "store": "下関店",
@@ -12605,7 +12633,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 900
+    "seq": 902
   },
   {
     "store": "下関店",
@@ -12619,7 +12647,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 901
+    "seq": 903
   },
   {
     "store": "下関店",
@@ -12633,7 +12661,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 902
+    "seq": 904
   },
   {
     "store": "下関店",
@@ -12647,7 +12675,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 903
+    "seq": 905
   },
   {
     "store": "下関店",
@@ -12661,7 +12689,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 904
+    "seq": 906
   },
   {
     "store": "下関店",
@@ -12675,7 +12703,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 905
+    "seq": 907
   },
   {
     "store": "下関店",
@@ -12689,7 +12717,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 906
+    "seq": 908
   },
   {
     "store": "下関店",
@@ -12703,7 +12731,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 907
+    "seq": 909
   },
   {
     "store": "下関店",
@@ -12717,7 +12745,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 908
+    "seq": 910
   },
   {
     "store": "下関店",
@@ -12731,7 +12759,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 909
+    "seq": 911
   },
   {
     "store": "下関店",
@@ -12745,7 +12773,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 910
+    "seq": 912
   },
   {
     "store": "下関店",
@@ -12754,12 +12782,12 @@ window.COLLECTION_DATA = [
     "name": "伊藤　紀忠",
     "paymentType": "cash",
     "address": "下関市上田中町８－１０　Ｒ１－２１１号",
-    "amount": 23757,
+    "amount": 25657,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 911
+    "seq": 913
   },
   {
     "store": "下関店",
@@ -12773,7 +12801,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 912
+    "seq": 914
   },
   {
     "store": "下関店",
@@ -12787,7 +12815,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 913
+    "seq": 915
   },
   {
     "store": "下関店",
@@ -12801,7 +12829,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 914
+    "seq": 916
   },
   {
     "store": "下関店",
@@ -12815,7 +12843,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 915
+    "seq": 917
   },
   {
     "store": "下関店",
@@ -12829,7 +12857,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 916
+    "seq": 918
   },
   {
     "store": "下関店",
@@ -12843,7 +12871,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 917
+    "seq": 919
   },
   {
     "store": "下関店",
@@ -12857,7 +12885,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 918
+    "seq": 920
   },
   {
     "store": "下関店",
@@ -12871,7 +12899,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 919
+    "seq": 921
   },
   {
     "store": "下関店",
@@ -12885,7 +12913,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 920
+    "seq": 922
   },
   {
     "store": "下関店",
@@ -12899,7 +12927,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 921
+    "seq": 923
   },
   {
     "store": "下関店",
@@ -12913,7 +12941,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 922
+    "seq": 924
   },
   {
     "store": "下関店",
@@ -12927,7 +12955,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 923
+    "seq": 925
   },
   {
     "store": "下関店",
@@ -12941,7 +12969,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 924
+    "seq": 926
   },
   {
     "store": "下関店",
@@ -12955,7 +12983,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 925
+    "seq": 927
   },
   {
     "store": "下関店",
@@ -12969,7 +12997,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 926
+    "seq": 928
   },
   {
     "store": "下関店",
@@ -12983,7 +13011,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 927
+    "seq": 929
   },
   {
     "store": "下関店",
@@ -12997,7 +13025,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 928
+    "seq": 930
   },
   {
     "store": "下関店",
@@ -13011,7 +13039,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 929
+    "seq": 931
   },
   {
     "store": "下関店",
@@ -13025,7 +13053,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 930
+    "seq": 932
   },
   {
     "store": "下関店",
@@ -13039,7 +13067,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)下関店.xlsm"
     ],
-    "seq": 931
+    "seq": 933
   },
   {
     "store": "北九州店",
@@ -13053,7 +13081,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 932
+    "seq": 934
   },
   {
     "store": "北九州店",
@@ -13067,7 +13095,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 933
+    "seq": 935
   },
   {
     "store": "北九州店",
@@ -13081,7 +13109,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 934
+    "seq": 936
   },
   {
     "store": "北九州店",
@@ -13095,7 +13123,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 935
+    "seq": 937
   },
   {
     "store": "北九州店",
@@ -13109,7 +13137,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 936
+    "seq": 938
   },
   {
     "store": "北九州店",
@@ -13123,7 +13151,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 937
+    "seq": 939
   },
   {
     "store": "北九州店",
@@ -13137,7 +13165,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 938
+    "seq": 940
   },
   {
     "store": "北九州店",
@@ -13151,7 +13179,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 939
+    "seq": 941
   },
   {
     "store": "北九州店",
@@ -13165,7 +13193,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 940
+    "seq": 942
   },
   {
     "store": "北九州店",
@@ -13179,7 +13207,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 941
+    "seq": 943
   },
   {
     "store": "北九州店",
@@ -13193,7 +13221,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 942
+    "seq": 944
   },
   {
     "store": "北九州店",
@@ -13207,7 +13235,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 943
+    "seq": 945
   },
   {
     "store": "北九州店",
@@ -13221,7 +13249,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 944
+    "seq": 946
   },
   {
     "store": "北九州店",
@@ -13235,7 +13263,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 945
+    "seq": 947
   },
   {
     "store": "北九州店",
@@ -13249,7 +13277,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 946
+    "seq": 948
   },
   {
     "store": "北九州店",
@@ -13263,7 +13291,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 947
+    "seq": 949
   },
   {
     "store": "北九州店",
@@ -13277,7 +13305,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 948
+    "seq": 950
   },
   {
     "store": "北九州店",
@@ -13291,7 +13319,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 949
+    "seq": 951
   },
   {
     "store": "北九州店",
@@ -13305,7 +13333,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 950
+    "seq": 952
   },
   {
     "store": "北九州店",
@@ -13319,7 +13347,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 951
+    "seq": 953
   },
   {
     "store": "北九州店",
@@ -13333,7 +13361,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 952
+    "seq": 954
   },
   {
     "store": "北九州店",
@@ -13347,7 +13375,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 953
+    "seq": 955
   },
   {
     "store": "北九州店",
@@ -13361,7 +13389,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 954
+    "seq": 956
   },
   {
     "store": "北九州店",
@@ -13375,7 +13403,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 955
+    "seq": 957
   },
   {
     "store": "北九州店",
@@ -13389,7 +13417,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 956
+    "seq": 958
   },
   {
     "store": "北九州店",
@@ -13403,7 +13431,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 957
+    "seq": 959
   },
   {
     "store": "北九州店",
@@ -13417,7 +13445,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 958
+    "seq": 960
   },
   {
     "store": "北九州店",
@@ -13431,7 +13459,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 959
+    "seq": 961
   },
   {
     "store": "北九州店",
@@ -13445,7 +13473,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 960
+    "seq": 962
   },
   {
     "store": "北九州店",
@@ -13459,7 +13487,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 961
+    "seq": 963
   },
   {
     "store": "北九州店",
@@ -13473,7 +13501,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 962
+    "seq": 964
   },
   {
     "store": "北九州店",
@@ -13487,7 +13515,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 963
+    "seq": 965
   },
   {
     "store": "北九州店",
@@ -13501,7 +13529,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 964
+    "seq": 966
   },
   {
     "store": "北九州店",
@@ -13515,7 +13543,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 965
+    "seq": 967
   },
   {
     "store": "北九州店",
@@ -13529,7 +13557,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 966
+    "seq": 968
   },
   {
     "store": "北九州店",
@@ -13543,7 +13571,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 967
+    "seq": 969
   },
   {
     "store": "北九州店",
@@ -13557,7 +13585,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 968
+    "seq": 970
   },
   {
     "store": "北九州店",
@@ -13571,7 +13599,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 969
+    "seq": 971
   },
   {
     "store": "北九州店",
@@ -13585,7 +13613,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 970
+    "seq": 972
   },
   {
     "store": "北九州店",
@@ -13599,7 +13627,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 971
+    "seq": 973
   },
   {
     "store": "北九州店",
@@ -13613,7 +13641,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 972
+    "seq": 974
   },
   {
     "store": "北九州店",
@@ -13627,7 +13655,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 973
+    "seq": 975
   },
   {
     "store": "北九州店",
@@ -13641,7 +13669,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 974
+    "seq": 976
   },
   {
     "store": "北九州店",
@@ -13655,7 +13683,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 975
+    "seq": 977
   },
   {
     "store": "北九州店",
@@ -13669,7 +13697,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 976
+    "seq": 978
   },
   {
     "store": "北九州店",
@@ -13683,7 +13711,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 977
+    "seq": 979
   },
   {
     "store": "北九州店",
@@ -13697,7 +13725,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 978
+    "seq": 980
   },
   {
     "store": "北九州店",
@@ -13711,7 +13739,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 979
+    "seq": 981
   },
   {
     "store": "北九州店",
@@ -13725,7 +13753,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 980
+    "seq": 982
   },
   {
     "store": "北九州店",
@@ -13739,7 +13767,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 981
+    "seq": 983
   },
   {
     "store": "北九州店",
@@ -13753,7 +13781,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 982
+    "seq": 984
   },
   {
     "store": "北九州店",
@@ -13767,7 +13795,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 983
+    "seq": 985
   },
   {
     "store": "北九州店",
@@ -13781,7 +13809,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 984
+    "seq": 986
   },
   {
     "store": "北九州店",
@@ -13795,7 +13823,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 985
+    "seq": 987
   },
   {
     "store": "北九州店",
@@ -13809,7 +13837,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 986
+    "seq": 988
   },
   {
     "store": "北九州店",
@@ -13823,7 +13851,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 987
+    "seq": 989
   },
   {
     "store": "北九州店",
@@ -13837,7 +13865,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 988
+    "seq": 990
   },
   {
     "store": "北九州店",
@@ -13851,7 +13879,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 989
+    "seq": 991
   },
   {
     "store": "北九州店",
@@ -13865,7 +13893,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 990
+    "seq": 992
   },
   {
     "store": "北九州店",
@@ -13879,7 +13907,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 991
+    "seq": 993
   },
   {
     "store": "北九州店",
@@ -13893,7 +13921,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 992
+    "seq": 994
   },
   {
     "store": "北九州店",
@@ -13907,7 +13935,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 993
+    "seq": 995
   },
   {
     "store": "北九州店",
@@ -13921,7 +13949,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 994
+    "seq": 996
   },
   {
     "store": "北九州店",
@@ -13935,7 +13963,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 995
+    "seq": 997
   },
   {
     "store": "北九州店",
@@ -13949,7 +13977,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 996
+    "seq": 998
   },
   {
     "store": "北九州店",
@@ -13963,7 +13991,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 997
+    "seq": 999
   },
   {
     "store": "北九州店",
@@ -13977,7 +14005,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 998
+    "seq": 1000
   },
   {
     "store": "北九州店",
@@ -13991,7 +14019,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 999
+    "seq": 1001
   },
   {
     "store": "北九州店",
@@ -14005,7 +14033,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1000
+    "seq": 1002
   },
   {
     "store": "北九州店",
@@ -14019,7 +14047,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1001
+    "seq": 1003
   },
   {
     "store": "北九州店",
@@ -14033,7 +14061,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1002
+    "seq": 1004
   },
   {
     "store": "北九州店",
@@ -14047,7 +14075,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1003
+    "seq": 1005
   },
   {
     "store": "北九州店",
@@ -14061,7 +14089,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1004
+    "seq": 1006
   },
   {
     "store": "北九州店",
@@ -14075,7 +14103,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1005
+    "seq": 1007
   },
   {
     "store": "北九州店",
@@ -14089,7 +14117,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1006
+    "seq": 1008
   },
   {
     "store": "北九州店",
@@ -14103,7 +14131,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1007
+    "seq": 1009
   },
   {
     "store": "北九州店",
@@ -14117,7 +14145,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1008
+    "seq": 1010
   },
   {
     "store": "北九州店",
@@ -14131,7 +14159,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1009
+    "seq": 1011
   },
   {
     "store": "北九州店",
@@ -14145,7 +14173,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1010
+    "seq": 1012
   },
   {
     "store": "北九州店",
@@ -14159,7 +14187,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1011
+    "seq": 1013
   },
   {
     "store": "北九州店",
@@ -14173,7 +14201,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1012
+    "seq": 1014
   },
   {
     "store": "北九州店",
@@ -14187,7 +14215,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1013
+    "seq": 1015
   },
   {
     "store": "北九州店",
@@ -14201,7 +14229,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1014
+    "seq": 1016
   },
   {
     "store": "北九州店",
@@ -14215,7 +14243,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1015
+    "seq": 1017
   },
   {
     "store": "北九州店",
@@ -14229,7 +14257,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1016
+    "seq": 1018
   },
   {
     "store": "北九州店",
@@ -14243,7 +14271,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1017
+    "seq": 1019
   },
   {
     "store": "北九州店",
@@ -14257,7 +14285,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1018
+    "seq": 1020
   },
   {
     "store": "北九州店",
@@ -14271,7 +14299,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1019
+    "seq": 1021
   },
   {
     "store": "北九州店",
@@ -14285,7 +14313,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1020
+    "seq": 1022
   },
   {
     "store": "北九州店",
@@ -14299,7 +14327,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1021
+    "seq": 1023
   },
   {
     "store": "北九州店",
@@ -14313,7 +14341,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1022
+    "seq": 1024
   },
   {
     "store": "北九州店",
@@ -14327,7 +14355,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1023
+    "seq": 1025
   },
   {
     "store": "北九州店",
@@ -14341,7 +14369,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1024
+    "seq": 1026
   },
   {
     "store": "北九州店",
@@ -14355,7 +14383,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1025
+    "seq": 1027
   },
   {
     "store": "北九州店",
@@ -14369,7 +14397,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1026
+    "seq": 1028
   },
   {
     "store": "北九州店",
@@ -14383,7 +14411,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1027
+    "seq": 1029
   },
   {
     "store": "北九州店",
@@ -14397,7 +14425,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1028
+    "seq": 1030
   },
   {
     "store": "北九州店",
@@ -14411,7 +14439,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1029
+    "seq": 1031
   },
   {
     "store": "北九州店",
@@ -14425,7 +14453,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1030
+    "seq": 1032
   },
   {
     "store": "北九州店",
@@ -14439,7 +14467,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1031
+    "seq": 1033
   },
   {
     "store": "北九州店",
@@ -14453,7 +14481,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1032
+    "seq": 1034
   },
   {
     "store": "北九州店",
@@ -14467,7 +14495,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1033
+    "seq": 1035
   },
   {
     "store": "北九州店",
@@ -14481,7 +14509,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1034
+    "seq": 1036
   },
   {
     "store": "北九州店",
@@ -14495,7 +14523,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1035
+    "seq": 1037
   },
   {
     "store": "北九州店",
@@ -14509,7 +14537,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1036
+    "seq": 1038
   },
   {
     "store": "北九州店",
@@ -14523,7 +14551,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1037
+    "seq": 1039
   },
   {
     "store": "北九州店",
@@ -14537,7 +14565,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1038
+    "seq": 1040
   },
   {
     "store": "北九州店",
@@ -14551,7 +14579,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1039
+    "seq": 1041
   },
   {
     "store": "北九州店",
@@ -14565,7 +14593,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1040
+    "seq": 1042
   },
   {
     "store": "北九州店",
@@ -14579,7 +14607,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1041
+    "seq": 1043
   },
   {
     "store": "北九州店",
@@ -14593,7 +14621,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1042
+    "seq": 1044
   },
   {
     "store": "北九州店",
@@ -14607,7 +14635,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1043
+    "seq": 1045
   },
   {
     "store": "北九州店",
@@ -14621,7 +14649,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1044
+    "seq": 1046
   },
   {
     "store": "北九州店",
@@ -14635,7 +14663,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1045
+    "seq": 1047
   },
   {
     "store": "北九州店",
@@ -14649,7 +14677,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1046
+    "seq": 1048
   },
   {
     "store": "北九州店",
@@ -14663,7 +14691,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1047
+    "seq": 1049
   },
   {
     "store": "北九州店",
@@ -14677,7 +14705,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1048
+    "seq": 1050
   },
   {
     "store": "北九州店",
@@ -14691,7 +14719,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1049
+    "seq": 1051
   },
   {
     "store": "北九州店",
@@ -14705,7 +14733,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1050
+    "seq": 1052
   },
   {
     "store": "北九州店",
@@ -14719,7 +14747,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1051
+    "seq": 1053
   },
   {
     "store": "北九州店",
@@ -14733,7 +14761,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1052
+    "seq": 1054
   },
   {
     "store": "北九州店",
@@ -14747,7 +14775,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1053
+    "seq": 1055
   },
   {
     "store": "北九州店",
@@ -14761,7 +14789,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1054
+    "seq": 1056
   },
   {
     "store": "北九州店",
@@ -14775,7 +14803,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1055
+    "seq": 1057
   },
   {
     "store": "北九州店",
@@ -14789,7 +14817,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1056
+    "seq": 1058
   },
   {
     "store": "北九州店",
@@ -14803,7 +14831,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1057
+    "seq": 1059
   },
   {
     "store": "北九州店",
@@ -14817,7 +14845,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1058
+    "seq": 1060
   },
   {
     "store": "北九州店",
@@ -14831,7 +14859,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1059
+    "seq": 1061
   },
   {
     "store": "北九州店",
@@ -14845,7 +14873,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1060
+    "seq": 1062
   },
   {
     "store": "北九州店",
@@ -14859,7 +14887,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1061
+    "seq": 1063
   },
   {
     "store": "北九州店",
@@ -14873,7 +14901,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1062
+    "seq": 1064
   },
   {
     "store": "北九州店",
@@ -14887,7 +14915,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1063
+    "seq": 1065
   },
   {
     "store": "北九州店",
@@ -14901,7 +14929,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1064
+    "seq": 1066
   },
   {
     "store": "北九州店",
@@ -14915,7 +14943,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1065
+    "seq": 1067
   },
   {
     "store": "北九州店",
@@ -14929,7 +14957,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1066
+    "seq": 1068
   },
   {
     "store": "北九州店",
@@ -14943,7 +14971,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1067
+    "seq": 1069
   },
   {
     "store": "北九州店",
@@ -14957,7 +14985,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1068
+    "seq": 1070
   },
   {
     "store": "北九州店",
@@ -14971,7 +14999,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1069
+    "seq": 1071
   },
   {
     "store": "北九州店",
@@ -14985,7 +15013,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1070
+    "seq": 1072
   },
   {
     "store": "北九州店",
@@ -14999,7 +15027,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1071
+    "seq": 1073
   },
   {
     "store": "北九州店",
@@ -15013,7 +15041,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1072
+    "seq": 1074
   },
   {
     "store": "北九州店",
@@ -15027,7 +15055,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1073
+    "seq": 1075
   },
   {
     "store": "北九州店",
@@ -15041,7 +15069,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1074
+    "seq": 1076
   },
   {
     "store": "北九州店",
@@ -15055,7 +15083,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1075
+    "seq": 1077
   },
   {
     "store": "北九州店",
@@ -15069,7 +15097,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1076
+    "seq": 1078
   },
   {
     "store": "北九州店",
@@ -15083,7 +15111,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1077
+    "seq": 1079
   },
   {
     "store": "北九州店",
@@ -15097,7 +15125,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1078
+    "seq": 1080
   },
   {
     "store": "北九州店",
@@ -15111,7 +15139,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1079
+    "seq": 1081
   },
   {
     "store": "北九州店",
@@ -15125,7 +15153,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1080
+    "seq": 1082
   },
   {
     "store": "北九州店",
@@ -15139,7 +15167,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1081
+    "seq": 1083
   },
   {
     "store": "北九州店",
@@ -15153,7 +15181,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1082
+    "seq": 1084
   },
   {
     "store": "北九州店",
@@ -15167,7 +15195,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1083
+    "seq": 1085
   },
   {
     "store": "北九州店",
@@ -15181,7 +15209,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1084
+    "seq": 1086
   },
   {
     "store": "北九州店",
@@ -15195,7 +15223,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1085
+    "seq": 1087
   },
   {
     "store": "北九州店",
@@ -15209,7 +15237,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1086
+    "seq": 1088
   },
   {
     "store": "北九州店",
@@ -15223,7 +15251,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1087
+    "seq": 1089
   },
   {
     "store": "北九州店",
@@ -15237,7 +15265,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1088
+    "seq": 1090
   },
   {
     "store": "北九州店",
@@ -15251,7 +15279,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1089
+    "seq": 1091
   },
   {
     "store": "北九州店",
@@ -15265,7 +15293,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1090
+    "seq": 1092
   },
   {
     "store": "北九州店",
@@ -15279,7 +15307,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1091
+    "seq": 1093
   },
   {
     "store": "北九州店",
@@ -15293,7 +15321,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1092
+    "seq": 1094
   },
   {
     "store": "北九州店",
@@ -15307,7 +15335,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1093
+    "seq": 1095
   },
   {
     "store": "北九州店",
@@ -15321,7 +15349,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1094
+    "seq": 1096
   },
   {
     "store": "北九州店",
@@ -15335,7 +15363,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1095
+    "seq": 1097
   },
   {
     "store": "北九州店",
@@ -15349,7 +15377,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1096
+    "seq": 1098
   },
   {
     "store": "北九州店",
@@ -15363,7 +15391,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1097
+    "seq": 1099
   },
   {
     "store": "北九州店",
@@ -15377,7 +15405,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1098
+    "seq": 1100
   },
   {
     "store": "北九州店",
@@ -15391,7 +15419,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1099
+    "seq": 1101
   },
   {
     "store": "北九州店",
@@ -15405,7 +15433,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1100
+    "seq": 1102
   },
   {
     "store": "北九州店",
@@ -15419,7 +15447,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1101
+    "seq": 1103
   },
   {
     "store": "北九州店",
@@ -15433,7 +15461,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1102
+    "seq": 1104
   },
   {
     "store": "北九州店",
@@ -15447,7 +15475,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1103
+    "seq": 1105
   },
   {
     "store": "北九州店",
@@ -15461,7 +15489,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1104
+    "seq": 1106
   },
   {
     "store": "北九州店",
@@ -15475,7 +15503,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1105
+    "seq": 1107
   },
   {
     "store": "北九州店",
@@ -15489,7 +15517,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1106
+    "seq": 1108
   },
   {
     "store": "北九州店",
@@ -15503,7 +15531,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1107
+    "seq": 1109
   },
   {
     "store": "北九州店",
@@ -15517,7 +15545,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1108
+    "seq": 1110
   },
   {
     "store": "北九州店",
@@ -15531,7 +15559,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1109
+    "seq": 1111
   },
   {
     "store": "北九州店",
@@ -15545,7 +15573,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1110
+    "seq": 1112
   },
   {
     "store": "北九州店",
@@ -15559,7 +15587,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1111
+    "seq": 1113
   },
   {
     "store": "北九州店",
@@ -15573,7 +15601,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1112
+    "seq": 1114
   },
   {
     "store": "北九州店",
@@ -15587,7 +15615,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1113
+    "seq": 1115
   },
   {
     "store": "北九州店",
@@ -15601,7 +15629,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1114
+    "seq": 1116
   },
   {
     "store": "北九州店",
@@ -15615,7 +15643,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1115
+    "seq": 1117
   },
   {
     "store": "北九州店",
@@ -15629,7 +15657,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1116
+    "seq": 1118
   },
   {
     "store": "北九州店",
@@ -15643,7 +15671,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1117
+    "seq": 1119
   },
   {
     "store": "北九州店",
@@ -15657,7 +15685,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1118
+    "seq": 1120
   },
   {
     "store": "北九州店",
@@ -15671,7 +15699,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1119
+    "seq": 1121
   },
   {
     "store": "北九州店",
@@ -15685,7 +15713,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1120
+    "seq": 1122
   },
   {
     "store": "北九州店",
@@ -15699,7 +15727,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1121
+    "seq": 1123
   },
   {
     "store": "北九州店",
@@ -15713,7 +15741,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1122
+    "seq": 1124
   },
   {
     "store": "北九州店",
@@ -15727,7 +15755,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1123
+    "seq": 1125
   },
   {
     "store": "北九州店",
@@ -15741,7 +15769,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1124
+    "seq": 1126
   },
   {
     "store": "北九州店",
@@ -15755,7 +15783,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1125
+    "seq": 1127
   },
   {
     "store": "北九州店",
@@ -15769,7 +15797,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1126
+    "seq": 1128
   },
   {
     "store": "北九州店",
@@ -15783,7 +15811,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1127
+    "seq": 1129
   },
   {
     "store": "北九州店",
@@ -15797,7 +15825,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1128
+    "seq": 1130
   },
   {
     "store": "北九州店",
@@ -15811,7 +15839,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1129
+    "seq": 1131
   },
   {
     "store": "北九州店",
@@ -15825,7 +15853,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1130
+    "seq": 1132
   },
   {
     "store": "北九州店",
@@ -15839,7 +15867,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1131
+    "seq": 1133
   },
   {
     "store": "北九州店",
@@ -15853,7 +15881,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1132
+    "seq": 1134
   },
   {
     "store": "北九州店",
@@ -15867,7 +15895,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1133
+    "seq": 1135
   },
   {
     "store": "北九州店",
@@ -15881,7 +15909,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1134
+    "seq": 1136
   },
   {
     "store": "北九州店",
@@ -15895,7 +15923,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1135
+    "seq": 1137
   },
   {
     "store": "北九州店",
@@ -15909,7 +15937,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1136
+    "seq": 1138
   },
   {
     "store": "北九州店",
@@ -15923,7 +15951,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1137
+    "seq": 1139
   },
   {
     "store": "北九州店",
@@ -15937,7 +15965,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1138
+    "seq": 1140
   },
   {
     "store": "北九州店",
@@ -15951,7 +15979,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1139
+    "seq": 1141
   },
   {
     "store": "北九州店",
@@ -15965,7 +15993,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1140
+    "seq": 1142
   },
   {
     "store": "北九州店",
@@ -15979,7 +16007,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1141
+    "seq": 1143
   },
   {
     "store": "北九州店",
@@ -15993,7 +16021,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1142
+    "seq": 1144
   },
   {
     "store": "北九州店",
@@ -16007,7 +16035,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1143
+    "seq": 1145
   },
   {
     "store": "北九州店",
@@ -16021,7 +16049,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1144
+    "seq": 1146
   },
   {
     "store": "北九州店",
@@ -16035,7 +16063,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1145
+    "seq": 1147
   },
   {
     "store": "北九州店",
@@ -16049,7 +16077,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1146
+    "seq": 1148
   },
   {
     "store": "北九州店",
@@ -16063,7 +16091,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1147
+    "seq": 1149
   },
   {
     "store": "北九州店",
@@ -16077,7 +16105,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1148
+    "seq": 1150
   },
   {
     "store": "北九州店",
@@ -16091,7 +16119,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1149
+    "seq": 1151
   },
   {
     "store": "北九州店",
@@ -16105,7 +16133,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1150
+    "seq": 1152
   },
   {
     "store": "北九州店",
@@ -16119,7 +16147,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1151
+    "seq": 1153
   },
   {
     "store": "北九州店",
@@ -16133,7 +16161,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1152
+    "seq": 1154
   },
   {
     "store": "北九州店",
@@ -16147,7 +16175,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1153
+    "seq": 1155
   },
   {
     "store": "北九州店",
@@ -16161,7 +16189,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1154
+    "seq": 1156
   },
   {
     "store": "北九州店",
@@ -16175,7 +16203,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1155
+    "seq": 1157
   },
   {
     "store": "北九州店",
@@ -16189,7 +16217,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1156
+    "seq": 1158
   },
   {
     "store": "北九州店",
@@ -16203,7 +16231,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1157
+    "seq": 1159
   },
   {
     "store": "北九州店",
@@ -16217,7 +16245,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1158
+    "seq": 1160
   },
   {
     "store": "北九州店",
@@ -16231,7 +16259,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1159
+    "seq": 1161
   },
   {
     "store": "北九州店",
@@ -16245,7 +16273,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1160
+    "seq": 1162
   },
   {
     "store": "北九州店",
@@ -16259,7 +16287,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1161
+    "seq": 1163
   },
   {
     "store": "北九州店",
@@ -16273,7 +16301,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1162
+    "seq": 1164
   },
   {
     "store": "北九州店",
@@ -16287,7 +16315,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1163
+    "seq": 1165
   },
   {
     "store": "北九州店",
@@ -16301,7 +16329,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1164
+    "seq": 1166
   },
   {
     "store": "北九州店",
@@ -16315,7 +16343,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1165
+    "seq": 1167
   },
   {
     "store": "北九州店",
@@ -16329,7 +16357,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1166
+    "seq": 1168
   },
   {
     "store": "北九州店",
@@ -16343,7 +16371,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1167
+    "seq": 1169
   },
   {
     "store": "北九州店",
@@ -16357,7 +16385,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1168
+    "seq": 1170
   },
   {
     "store": "北九州店",
@@ -16371,7 +16399,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1169
+    "seq": 1171
   },
   {
     "store": "北九州店",
@@ -16385,7 +16413,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1170
+    "seq": 1172
   },
   {
     "store": "北九州店",
@@ -16399,7 +16427,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1171
+    "seq": 1173
   },
   {
     "store": "北九州店",
@@ -16413,7 +16441,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1172
+    "seq": 1174
   },
   {
     "store": "北九州店",
@@ -16427,7 +16455,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1173
+    "seq": 1175
   },
   {
     "store": "北九州店",
@@ -16441,7 +16469,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1174
+    "seq": 1176
   },
   {
     "store": "北九州店",
@@ -16455,7 +16483,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1175
+    "seq": 1177
   },
   {
     "store": "北九州店",
@@ -16469,7 +16497,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1176
+    "seq": 1178
   },
   {
     "store": "北九州店",
@@ -16483,7 +16511,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1177
+    "seq": 1179
   },
   {
     "store": "北九州店",
@@ -16497,7 +16525,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1178
+    "seq": 1180
   },
   {
     "store": "北九州店",
@@ -16511,7 +16539,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1179
+    "seq": 1181
   },
   {
     "store": "北九州店",
@@ -16525,7 +16553,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1180
+    "seq": 1182
   },
   {
     "store": "北九州店",
@@ -16539,7 +16567,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1181
+    "seq": 1183
   },
   {
     "store": "北九州店",
@@ -16553,7 +16581,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1182
+    "seq": 1184
   },
   {
     "store": "北九州店",
@@ -16567,7 +16595,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1183
+    "seq": 1185
   },
   {
     "store": "北九州店",
@@ -16581,7 +16609,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1184
+    "seq": 1186
   },
   {
     "store": "北九州店",
@@ -16595,7 +16623,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1185
+    "seq": 1187
   },
   {
     "store": "北九州店",
@@ -16609,7 +16637,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1186
+    "seq": 1188
   },
   {
     "store": "北九州店",
@@ -16623,7 +16651,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1187
+    "seq": 1189
   },
   {
     "store": "北九州店",
@@ -16637,7 +16665,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1188
+    "seq": 1190
   },
   {
     "store": "北九州店",
@@ -16651,7 +16679,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1189
+    "seq": 1191
   },
   {
     "store": "北九州店",
@@ -16665,7 +16693,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1190
+    "seq": 1192
   },
   {
     "store": "北九州店",
@@ -16679,7 +16707,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1191
+    "seq": 1193
   },
   {
     "store": "北九州店",
@@ -16693,7 +16721,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1192
+    "seq": 1194
   },
   {
     "store": "北九州店",
@@ -16707,7 +16735,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1193
+    "seq": 1195
   },
   {
     "store": "北九州店",
@@ -16721,7 +16749,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1194
+    "seq": 1196
   },
   {
     "store": "北九州店",
@@ -16735,7 +16763,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1195
+    "seq": 1197
   },
   {
     "store": "北九州店",
@@ -16749,7 +16777,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1196
+    "seq": 1198
   },
   {
     "store": "北九州店",
@@ -16763,7 +16791,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1197
+    "seq": 1199
   },
   {
     "store": "北九州店",
@@ -16777,7 +16805,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1198
+    "seq": 1200
   },
   {
     "store": "北九州店",
@@ -16791,7 +16819,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1199
+    "seq": 1201
   },
   {
     "store": "北九州店",
@@ -16805,7 +16833,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1200
+    "seq": 1202
   },
   {
     "store": "北九州店",
@@ -16819,7 +16847,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1201
+    "seq": 1203
   },
   {
     "store": "北九州店",
@@ -16833,7 +16861,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1202
+    "seq": 1204
   },
   {
     "store": "北九州店",
@@ -16847,7 +16875,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1203
+    "seq": 1205
   },
   {
     "store": "北九州店",
@@ -16861,7 +16889,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)北九州店.xlsm"
     ],
-    "seq": 1204
+    "seq": 1206
   },
   {
     "store": "北九州店",
@@ -16875,7 +16903,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1205
+    "seq": 1207
   },
   {
     "store": "北九州店",
@@ -16889,7 +16917,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1206
+    "seq": 1208
   },
   {
     "store": "北九州店",
@@ -16898,12 +16926,12 @@ window.COLLECTION_DATA = [
     "name": "宮本　一二",
     "paymentType": "cash",
     "address": "北九州市小倉北区大田町１０－２２ー２階",
-    "amount": 13277,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1207
+    "seq": 1209
   },
   {
     "store": "北九州店",
@@ -16917,7 +16945,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1208
+    "seq": 1210
   },
   {
     "store": "北九州店",
@@ -16931,7 +16959,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1209
+    "seq": 1211
   },
   {
     "store": "北九州店",
@@ -16945,7 +16973,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1210
+    "seq": 1212
   },
   {
     "store": "北九州店",
@@ -16959,7 +16987,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1211
+    "seq": 1213
   },
   {
     "store": "北九州店",
@@ -16973,7 +17001,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1212
+    "seq": 1214
   },
   {
     "store": "北九州店",
@@ -16987,7 +17015,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1213
+    "seq": 1215
   },
   {
     "store": "北九州店",
@@ -17001,7 +17029,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1214
+    "seq": 1216
   },
   {
     "store": "北九州店",
@@ -17010,12 +17038,12 @@ window.COLLECTION_DATA = [
     "name": "松尾　延治",
     "paymentType": "cash",
     "address": "北九州市戸畑区夜宮３－９－２－３０３",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1215
+    "seq": 1217
   },
   {
     "store": "北九州店",
@@ -17029,7 +17057,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1216
+    "seq": 1218
   },
   {
     "store": "北九州店",
@@ -17043,7 +17071,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1217
+    "seq": 1219
   },
   {
     "store": "北九州店",
@@ -17057,7 +17085,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1218
+    "seq": 1220
   },
   {
     "store": "北九州店",
@@ -17071,7 +17099,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1219
+    "seq": 1221
   },
   {
     "store": "北九州店",
@@ -17085,7 +17113,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1220
+    "seq": 1222
   },
   {
     "store": "北九州店",
@@ -17099,7 +17127,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1221
+    "seq": 1223
   },
   {
     "store": "北九州店",
@@ -17108,12 +17136,12 @@ window.COLLECTION_DATA = [
     "name": "斉藤　美砂子",
     "paymentType": "cash",
     "address": "北九州市戸畑区浅生２－７－２－５０２",
-    "amount": 13975,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1222
+    "seq": 1224
   },
   {
     "store": "北九州店",
@@ -17127,7 +17155,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1223
+    "seq": 1225
   },
   {
     "store": "北九州店",
@@ -17136,12 +17164,12 @@ window.COLLECTION_DATA = [
     "name": "岸川　俊一",
     "paymentType": "cash",
     "address": "北九州市戸畑区浅生２－１６－１３",
-    "amount": 13763,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1224
+    "seq": 1226
   },
   {
     "store": "北九州店",
@@ -17150,12 +17178,12 @@ window.COLLECTION_DATA = [
     "name": "緒方　良恵",
     "paymentType": "cash",
     "address": "北九州市戸畑区浅生１－１１－２５",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1225
+    "seq": 1227
   },
   {
     "store": "北九州店",
@@ -17169,7 +17197,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1226
+    "seq": 1228
   },
   {
     "store": "北九州店",
@@ -17183,7 +17211,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1227
+    "seq": 1229
   },
   {
     "store": "北九州店",
@@ -17197,7 +17225,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1228
+    "seq": 1230
   },
   {
     "store": "北九州店",
@@ -17211,7 +17239,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1229
+    "seq": 1231
   },
   {
     "store": "北九州店",
@@ -17225,7 +17253,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1230
+    "seq": 1232
   },
   {
     "store": "北九州店",
@@ -17239,7 +17267,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1231
+    "seq": 1233
   },
   {
     "store": "北九州店",
@@ -17253,7 +17281,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1232
+    "seq": 1234
   },
   {
     "store": "北九州店",
@@ -17267,7 +17295,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1233
+    "seq": 1235
   },
   {
     "store": "北九州店",
@@ -17281,7 +17309,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1234
+    "seq": 1236
   },
   {
     "store": "北九州店",
@@ -17295,7 +17323,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1235
+    "seq": 1237
   },
   {
     "store": "北九州店",
@@ -17309,7 +17337,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1236
+    "seq": 1238
   },
   {
     "store": "北九州店",
@@ -17318,12 +17346,12 @@ window.COLLECTION_DATA = [
     "name": "工藤　栄恵",
     "paymentType": "cash",
     "address": "北九州市小倉北区上富野３－１６－８",
-    "amount": 11878,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1237
+    "seq": 1239
   },
   {
     "store": "北九州店",
@@ -17332,12 +17360,12 @@ window.COLLECTION_DATA = [
     "name": "木戸口　政利",
     "paymentType": "cash",
     "address": "北九州市小倉北区上富野３－１２－１－１０５",
-    "amount": 7686,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1238
+    "seq": 1240
   },
   {
     "store": "北九州店",
@@ -17351,7 +17379,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1239
+    "seq": 1241
   },
   {
     "store": "北九州店",
@@ -17365,7 +17393,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1240
+    "seq": 1242
   },
   {
     "store": "北九州店",
@@ -17379,7 +17407,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1241
+    "seq": 1243
   },
   {
     "store": "北九州店",
@@ -17388,12 +17416,12 @@ window.COLLECTION_DATA = [
     "name": "畑野　美紀子",
     "paymentType": "cash",
     "address": "北九州市小倉北区紺屋町１４－２６",
-    "amount": 16228,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1242
+    "seq": 1244
   },
   {
     "store": "北九州店",
@@ -17407,7 +17435,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1243
+    "seq": 1245
   },
   {
     "store": "北九州店",
@@ -17421,7 +17449,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1244
+    "seq": 1246
   },
   {
     "store": "北九州店",
@@ -17435,7 +17463,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1245
+    "seq": 1247
   },
   {
     "store": "北九州店",
@@ -17449,7 +17477,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1246
+    "seq": 1248
   },
   {
     "store": "北九州店",
@@ -17463,7 +17491,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1247
+    "seq": 1249
   },
   {
     "store": "北九州店",
@@ -17477,7 +17505,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1248
+    "seq": 1250
   },
   {
     "store": "北九州店",
@@ -17491,7 +17519,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1249
+    "seq": 1251
   },
   {
     "store": "北九州店",
@@ -17500,12 +17528,12 @@ window.COLLECTION_DATA = [
     "name": "松本　文雄",
     "paymentType": "cash",
     "address": "北九州市小倉北区原町２－３－３",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1250
+    "seq": 1252
   },
   {
     "store": "北九州店",
@@ -17519,7 +17547,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1251
+    "seq": 1253
   },
   {
     "store": "北九州店",
@@ -17528,12 +17556,12 @@ window.COLLECTION_DATA = [
     "name": "美馬　幸子",
     "paymentType": "cash",
     "address": "北九州市小倉北区木町３－１０－２",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1252
+    "seq": 1254
   },
   {
     "store": "北九州店",
@@ -17547,7 +17575,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1253
+    "seq": 1255
   },
   {
     "store": "北九州店",
@@ -17561,7 +17589,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1254
+    "seq": 1256
   },
   {
     "store": "北九州店",
@@ -17575,7 +17603,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1255
+    "seq": 1257
   },
   {
     "store": "北九州店",
@@ -17589,7 +17617,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1256
+    "seq": 1258
   },
   {
     "store": "北九州店",
@@ -17598,12 +17626,12 @@ window.COLLECTION_DATA = [
     "name": "柴田　洋子",
     "paymentType": "cash",
     "address": "北九州市小倉北区熊谷１－２４－１１",
-    "amount": 17986,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1257
+    "seq": 1259
   },
   {
     "store": "北九州店",
@@ -17617,7 +17645,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1258
+    "seq": 1260
   },
   {
     "store": "北九州店",
@@ -17631,7 +17659,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1259
+    "seq": 1261
   },
   {
     "store": "北九州店",
@@ -17645,7 +17673,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1260
+    "seq": 1262
   },
   {
     "store": "北九州店",
@@ -17659,7 +17687,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1261
+    "seq": 1263
   },
   {
     "store": "北九州店",
@@ -17673,7 +17701,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1262
+    "seq": 1264
   },
   {
     "store": "北九州店",
@@ -17687,7 +17715,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1263
+    "seq": 1265
   },
   {
     "store": "北九州店",
@@ -17696,12 +17724,12 @@ window.COLLECTION_DATA = [
     "name": "水谷　栄作",
     "paymentType": "cash",
     "address": "北九州市小倉北区今町２－１４－１４",
-    "amount": 9083,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1264
+    "seq": 1266
   },
   {
     "store": "北九州店",
@@ -17715,7 +17743,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1265
+    "seq": 1267
   },
   {
     "store": "北九州店",
@@ -17729,7 +17757,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1266
+    "seq": 1268
   },
   {
     "store": "北九州店",
@@ -17743,7 +17771,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1267
+    "seq": 1269
   },
   {
     "store": "北九州店",
@@ -17757,7 +17785,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1268
+    "seq": 1270
   },
   {
     "store": "北九州店",
@@ -17771,7 +17799,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1269
+    "seq": 1271
   },
   {
     "store": "北九州店",
@@ -17785,7 +17813,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1270
+    "seq": 1272
   },
   {
     "store": "北九州店",
@@ -17799,7 +17827,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1271
+    "seq": 1273
   },
   {
     "store": "北九州店",
@@ -17808,12 +17836,12 @@ window.COLLECTION_DATA = [
     "name": "築村　国広",
     "paymentType": "cash",
     "address": "北九州市小倉北区泉台１－１０－２４",
-    "amount": 12577,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1272
+    "seq": 1274
   },
   {
     "store": "北九州店",
@@ -17822,12 +17850,12 @@ window.COLLECTION_DATA = [
     "name": "堀内　安致",
     "paymentType": "cash",
     "address": "北九州市小倉北区金鶏町６−１６−５０７号",
-    "amount": 13975,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1273
+    "seq": 1275
   },
   {
     "store": "北九州店",
@@ -17841,7 +17869,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1274
+    "seq": 1276
   },
   {
     "store": "北九州店",
@@ -17855,7 +17883,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1275
+    "seq": 1277
   },
   {
     "store": "北九州店",
@@ -17869,7 +17897,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1276
+    "seq": 1278
   },
   {
     "store": "北九州店",
@@ -17883,7 +17911,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1277
+    "seq": 1279
   },
   {
     "store": "北九州店",
@@ -17897,7 +17925,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1278
+    "seq": 1280
   },
   {
     "store": "北九州店",
@@ -17911,7 +17939,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1279
+    "seq": 1281
   },
   {
     "store": "北九州店",
@@ -17925,7 +17953,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1280
+    "seq": 1282
   },
   {
     "store": "北九州店",
@@ -17939,7 +17967,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1281
+    "seq": 1283
   },
   {
     "store": "北九州店",
@@ -17953,7 +17981,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1282
+    "seq": 1284
   },
   {
     "store": "北九州店",
@@ -17967,21 +17995,21 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1283
+    "seq": 1285
   },
   {
     "store": "北九州店",
     "code": 1107,
     "route": 2,
-    "name": "麓　常広",
+    "name": "麓　常宏",
     "paymentType": "cash",
     "address": "北九州市八幡東区勝山１－１１－３－５０５",
-    "amount": 17534,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1284
+    "seq": 1286
   },
   {
     "store": "北九州店",
@@ -17995,7 +18023,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1285
+    "seq": 1287
   },
   {
     "store": "北九州店",
@@ -18009,7 +18037,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1286
+    "seq": 1288
   },
   {
     "store": "北九州店",
@@ -18023,7 +18051,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1287
+    "seq": 1289
   },
   {
     "store": "北九州店",
@@ -18037,7 +18065,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1288
+    "seq": 1290
   },
   {
     "store": "北九州店",
@@ -18051,7 +18079,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1289
+    "seq": 1291
   },
   {
     "store": "北九州店",
@@ -18065,7 +18093,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1290
+    "seq": 1292
   },
   {
     "store": "北九州店",
@@ -18079,7 +18107,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1291
+    "seq": 1293
   },
   {
     "store": "北九州店",
@@ -18093,7 +18121,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1292
+    "seq": 1294
   },
   {
     "store": "北九州店",
@@ -18107,7 +18135,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1293
+    "seq": 1295
   },
   {
     "store": "北九州店",
@@ -18116,12 +18144,12 @@ window.COLLECTION_DATA = [
     "name": "後藤　英士",
     "paymentType": "cash",
     "address": "北九州市小倉北区板櫃町１０－１－２０２",
-    "amount": 17703,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1294
+    "seq": 1296
   },
   {
     "store": "北九州店",
@@ -18135,7 +18163,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1295
+    "seq": 1297
   },
   {
     "store": "北九州店",
@@ -18149,7 +18177,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1296
+    "seq": 1298
   },
   {
     "store": "北九州店",
@@ -18163,7 +18191,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1297
+    "seq": 1299
   },
   {
     "store": "北九州店",
@@ -18177,7 +18205,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1298
+    "seq": 1300
   },
   {
     "store": "北九州店",
@@ -18191,7 +18219,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1299
+    "seq": 1301
   },
   {
     "store": "北九州店",
@@ -18205,7 +18233,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1300
+    "seq": 1302
   },
   {
     "store": "北九州店",
@@ -18219,7 +18247,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1301
+    "seq": 1303
   },
   {
     "store": "北九州店",
@@ -18233,7 +18261,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1302
+    "seq": 1304
   },
   {
     "store": "北九州店",
@@ -18247,7 +18275,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1303
+    "seq": 1305
   },
   {
     "store": "北九州店",
@@ -18261,7 +18289,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1304
+    "seq": 1306
   },
   {
     "store": "北九州店",
@@ -18275,7 +18303,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1305
+    "seq": 1307
   },
   {
     "store": "北九州店",
@@ -18289,7 +18317,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1306
+    "seq": 1308
   },
   {
     "store": "北九州店",
@@ -18303,7 +18331,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1307
+    "seq": 1309
   },
   {
     "store": "北九州店",
@@ -18317,7 +18345,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1308
+    "seq": 1310
   },
   {
     "store": "北九州店",
@@ -18331,7 +18359,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1309
+    "seq": 1311
   },
   {
     "store": "北九州店",
@@ -18345,7 +18373,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1310
+    "seq": 1312
   },
   {
     "store": "北九州店",
@@ -18359,7 +18387,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1311
+    "seq": 1313
   },
   {
     "store": "北九州店",
@@ -18373,7 +18401,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1312
+    "seq": 1314
   },
   {
     "store": "北九州店",
@@ -18387,7 +18415,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1313
+    "seq": 1315
   },
   {
     "store": "北九州店",
@@ -18396,12 +18424,12 @@ window.COLLECTION_DATA = [
     "name": "三宅　俊博",
     "paymentType": "cash",
     "address": "北九州市小倉南区沼緑町１－１３－１０",
-    "amount": 17469,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1314
+    "seq": 1316
   },
   {
     "store": "北九州店",
@@ -18415,7 +18443,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1315
+    "seq": 1317
   },
   {
     "store": "北九州店",
@@ -18429,7 +18457,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1316
+    "seq": 1318
   },
   {
     "store": "北九州店",
@@ -18443,7 +18471,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1317
+    "seq": 1319
   },
   {
     "store": "北九州店",
@@ -18457,7 +18485,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1318
+    "seq": 1320
   },
   {
     "store": "北九州店",
@@ -18471,7 +18499,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1319
+    "seq": 1321
   },
   {
     "store": "北九州店",
@@ -18485,7 +18513,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1320
+    "seq": 1322
   },
   {
     "store": "北九州店",
@@ -18499,7 +18527,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1321
+    "seq": 1323
   },
   {
     "store": "北九州店",
@@ -18513,7 +18541,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1322
+    "seq": 1324
   },
   {
     "store": "北九州店",
@@ -18527,7 +18555,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1323
+    "seq": 1325
   },
   {
     "store": "北九州店",
@@ -18541,7 +18569,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1324
+    "seq": 1326
   },
   {
     "store": "北九州店",
@@ -18555,7 +18583,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1325
+    "seq": 1327
   },
   {
     "store": "北九州店",
@@ -18569,7 +18597,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1326
+    "seq": 1328
   },
   {
     "store": "北九州店",
@@ -18583,7 +18611,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1327
+    "seq": 1329
   },
   {
     "store": "北九州店",
@@ -18597,7 +18625,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1328
+    "seq": 1330
   },
   {
     "store": "北九州店",
@@ -18611,7 +18639,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1329
+    "seq": 1331
   },
   {
     "store": "北九州店",
@@ -18625,7 +18653,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1330
+    "seq": 1332
   },
   {
     "store": "北九州店",
@@ -18639,7 +18667,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1331
+    "seq": 1333
   },
   {
     "store": "北九州店",
@@ -18653,7 +18681,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1332
+    "seq": 1334
   },
   {
     "store": "北九州店",
@@ -18667,7 +18695,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1333
+    "seq": 1335
   },
   {
     "store": "北九州店",
@@ -18681,7 +18709,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1334
+    "seq": 1336
   },
   {
     "store": "北九州店",
@@ -18695,7 +18723,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1335
+    "seq": 1337
   },
   {
     "store": "北九州店",
@@ -18709,7 +18737,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1336
+    "seq": 1338
   },
   {
     "store": "北九州店",
@@ -18718,12 +18746,12 @@ window.COLLECTION_DATA = [
     "name": "小野　道夫",
     "paymentType": "cash",
     "address": "北九州市小倉北区片野３－１４－１８－５０２",
-    "amount": 5590,
+    "amount": 4891,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1337
+    "seq": 1339
   },
   {
     "store": "北九州店",
@@ -18732,12 +18760,12 @@ window.COLLECTION_DATA = [
     "name": "清水　翔太",
     "paymentType": "cash",
     "address": "北九州市小倉南区下城野１－１５－１－１０２",
-    "amount": 27950,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1338
+    "seq": 1340
   },
   {
     "store": "北九州店",
@@ -18751,7 +18779,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1339
+    "seq": 1341
   },
   {
     "store": "北九州店",
@@ -18765,7 +18793,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1340
+    "seq": 1342
   },
   {
     "store": "北九州店",
@@ -18779,7 +18807,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1341
+    "seq": 1343
   },
   {
     "store": "北九州店",
@@ -18788,12 +18816,12 @@ window.COLLECTION_DATA = [
     "name": "赤尾　寛悦",
     "paymentType": "cash",
     "address": "北九州市小倉北区東篠崎１－１６－９",
-    "amount": 23604,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1342
+    "seq": 1344
   },
   {
     "store": "北九州店",
@@ -18807,7 +18835,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1343
+    "seq": 1345
   },
   {
     "store": "北九州店",
@@ -18821,7 +18849,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1344
+    "seq": 1346
   },
   {
     "store": "北九州店",
@@ -18835,7 +18863,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1345
+    "seq": 1347
   },
   {
     "store": "北九州店",
@@ -18849,7 +18877,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1346
+    "seq": 1348
   },
   {
     "store": "北九州店",
@@ -18863,7 +18891,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1347
+    "seq": 1349
   },
   {
     "store": "北九州店",
@@ -18877,7 +18905,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1348
+    "seq": 1350
   },
   {
     "store": "北九州店",
@@ -18891,7 +18919,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1349
+    "seq": 1351
   },
   {
     "store": "北九州店",
@@ -18900,12 +18928,12 @@ window.COLLECTION_DATA = [
     "name": "平中　克己",
     "paymentType": "cash",
     "address": "北九州市小倉南区徳力団地１１５棟ー２０７",
-    "amount": 20599,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1350
+    "seq": 1352
   },
   {
     "store": "北九州店",
@@ -18919,7 +18947,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1351
+    "seq": 1353
   },
   {
     "store": "北九州店",
@@ -18933,7 +18961,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1352
+    "seq": 1354
   },
   {
     "store": "北九州店",
@@ -18947,7 +18975,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1353
+    "seq": 1355
   },
   {
     "store": "北九州店",
@@ -18961,7 +18989,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1354
+    "seq": 1356
   },
   {
     "store": "北九州店",
@@ -18970,12 +18998,12 @@ window.COLLECTION_DATA = [
     "name": "野見山　敏満",
     "paymentType": "cash",
     "address": "北九州市小倉南区長行東３－９－２",
-    "amount": 32456,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1355
+    "seq": 1357
   },
   {
     "store": "北九州店",
@@ -18984,12 +19012,12 @@ window.COLLECTION_DATA = [
     "name": "有満　綾子",
     "paymentType": "cash",
     "address": "北九州市小倉南区徳吉東４－１２－４５",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1356
+    "seq": 1358
   },
   {
     "store": "北九州店",
@@ -19003,7 +19031,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1357
+    "seq": 1359
   },
   {
     "store": "北九州店",
@@ -19017,7 +19045,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1358
+    "seq": 1360
   },
   {
     "store": "北九州店",
@@ -19026,12 +19054,12 @@ window.COLLECTION_DATA = [
     "name": "早川　八重子",
     "paymentType": "cash",
     "address": "北九州市小倉南区志徳２－１－３５－５０１",
-    "amount": 14208,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1359
+    "seq": 1361
   },
   {
     "store": "北九州店",
@@ -19045,7 +19073,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1360
+    "seq": 1362
   },
   {
     "store": "北九州店",
@@ -19054,12 +19082,12 @@ window.COLLECTION_DATA = [
     "name": "高下　重徳",
     "paymentType": "cash",
     "address": "北九州市小倉南区企救丘３－９－３６",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1361
+    "seq": 1363
   },
   {
     "store": "北九州店",
@@ -19073,7 +19101,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1362
+    "seq": 1364
   },
   {
     "store": "北九州店",
@@ -19082,12 +19110,12 @@ window.COLLECTION_DATA = [
     "name": "村松　啓子",
     "paymentType": "cash",
     "address": "北九州市小倉南区山手１－３－５",
-    "amount": 30745,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1363
+    "seq": 1365
   },
   {
     "store": "北九州店",
@@ -19096,12 +19124,12 @@ window.COLLECTION_DATA = [
     "name": "岸本　勉",
     "paymentType": "cash",
     "address": "北九州市小倉南区星和台２－４－２２",
-    "amount": 13277,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1364
+    "seq": 1366
   },
   {
     "store": "北九州店",
@@ -19115,7 +19143,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1365
+    "seq": 1367
   },
   {
     "store": "北九州店",
@@ -19124,12 +19152,12 @@ window.COLLECTION_DATA = [
     "name": "松本　玲子",
     "paymentType": "cash",
     "address": "北九州市小倉南区守恒３－３－６２",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1366
+    "seq": 1368
   },
   {
     "store": "北九州店",
@@ -19143,7 +19171,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1367
+    "seq": 1369
   },
   {
     "store": "北九州店",
@@ -19152,12 +19180,12 @@ window.COLLECTION_DATA = [
     "name": "有田　益次郎",
     "paymentType": "cash",
     "address": "北九州市小倉南区城野３－１－１６",
-    "amount": 17986,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1368
+    "seq": 1370
   },
   {
     "store": "北九州店",
@@ -19171,7 +19199,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1369
+    "seq": 1371
   },
   {
     "store": "北九州店",
@@ -19185,7 +19213,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1370
+    "seq": 1372
   },
   {
     "store": "北九州店",
@@ -19199,7 +19227,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1371
+    "seq": 1373
   },
   {
     "store": "北九州店",
@@ -19213,7 +19241,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1372
+    "seq": 1374
   },
   {
     "store": "北九州店",
@@ -19227,7 +19255,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1373
+    "seq": 1375
   },
   {
     "store": "北九州店",
@@ -19241,7 +19269,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1374
+    "seq": 1376
   },
   {
     "store": "北九州店",
@@ -19255,7 +19283,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1375
+    "seq": 1377
   },
   {
     "store": "北九州店",
@@ -19269,7 +19297,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1376
+    "seq": 1378
   },
   {
     "store": "北九州店",
@@ -19283,7 +19311,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1377
+    "seq": 1379
   },
   {
     "store": "北九州店",
@@ -19297,7 +19325,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1378
+    "seq": 1380
   },
   {
     "store": "北九州店",
@@ -19311,7 +19339,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1379
+    "seq": 1381
   },
   {
     "store": "北九州店",
@@ -19325,7 +19353,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1380
+    "seq": 1382
   },
   {
     "store": "北九州店",
@@ -19339,7 +19367,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1381
+    "seq": 1383
   },
   {
     "store": "北九州店",
@@ -19353,7 +19381,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1382
+    "seq": 1384
   },
   {
     "store": "北九州店",
@@ -19367,7 +19395,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1383
+    "seq": 1385
   },
   {
     "store": "北九州店",
@@ -19381,7 +19409,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1384
+    "seq": 1386
   },
   {
     "store": "北九州店",
@@ -19395,7 +19423,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1385
+    "seq": 1387
   },
   {
     "store": "北九州店",
@@ -19409,7 +19437,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1386
+    "seq": 1388
   },
   {
     "store": "北九州店",
@@ -19423,7 +19451,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1387
+    "seq": 1389
   },
   {
     "store": "北九州店",
@@ -19437,7 +19465,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1388
+    "seq": 1390
   },
   {
     "store": "北九州店",
@@ -19451,7 +19479,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1389
+    "seq": 1391
   },
   {
     "store": "北九州店",
@@ -19465,7 +19493,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1390
+    "seq": 1392
   },
   {
     "store": "北九州店",
@@ -19479,7 +19507,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1391
+    "seq": 1393
   },
   {
     "store": "北九州店",
@@ -19493,7 +19521,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1392
+    "seq": 1394
   },
   {
     "store": "北九州店",
@@ -19507,7 +19535,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1393
+    "seq": 1395
   },
   {
     "store": "北九州店",
@@ -19521,7 +19549,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1394
+    "seq": 1396
   },
   {
     "store": "北九州店",
@@ -19535,7 +19563,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1395
+    "seq": 1397
   },
   {
     "store": "北九州店",
@@ -19549,7 +19577,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1396
+    "seq": 1398
   },
   {
     "store": "北九州店",
@@ -19563,7 +19591,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1397
+    "seq": 1399
   },
   {
     "store": "北九州店",
@@ -19577,7 +19605,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1398
+    "seq": 1400
   },
   {
     "store": "北九州店",
@@ -19591,7 +19619,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1399
+    "seq": 1401
   },
   {
     "store": "北九州店",
@@ -19605,7 +19633,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1400
+    "seq": 1402
   },
   {
     "store": "北九州店",
@@ -19619,7 +19647,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1401
+    "seq": 1403
   },
   {
     "store": "北九州店",
@@ -19633,7 +19661,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1402
+    "seq": 1404
   },
   {
     "store": "北九州店",
@@ -19647,7 +19675,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1403
+    "seq": 1405
   },
   {
     "store": "北九州店",
@@ -19661,7 +19689,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1404
+    "seq": 1406
   },
   {
     "store": "北九州店",
@@ -19675,7 +19703,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1405
+    "seq": 1407
   },
   {
     "store": "北九州店",
@@ -19689,7 +19717,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1406
+    "seq": 1408
   },
   {
     "store": "北九州店",
@@ -19703,7 +19731,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1407
+    "seq": 1409
   },
   {
     "store": "北九州店",
@@ -19717,7 +19745,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1408
+    "seq": 1410
   },
   {
     "store": "北九州店",
@@ -19731,7 +19759,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1409
+    "seq": 1411
   },
   {
     "store": "北九州店",
@@ -19745,7 +19773,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1410
+    "seq": 1412
   },
   {
     "store": "北九州店",
@@ -19759,7 +19787,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1411
+    "seq": 1413
   },
   {
     "store": "北九州店",
@@ -19773,7 +19801,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1412
+    "seq": 1414
   },
   {
     "store": "北九州店",
@@ -19787,7 +19815,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1413
+    "seq": 1415
   },
   {
     "store": "北九州店",
@@ -19801,7 +19829,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1414
+    "seq": 1416
   },
   {
     "store": "北九州店",
@@ -19815,7 +19843,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1415
+    "seq": 1417
   },
   {
     "store": "北九州店",
@@ -19829,7 +19857,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1416
+    "seq": 1418
   },
   {
     "store": "北九州店",
@@ -19843,7 +19871,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1417
+    "seq": 1419
   },
   {
     "store": "北九州店",
@@ -19852,12 +19880,12 @@ window.COLLECTION_DATA = [
     "name": "檜垣　美代子",
     "paymentType": "cash",
     "address": "北九州市戸畑区中原西２－１２－１８",
-    "amount": 21256,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1418
+    "seq": 1420
   },
   {
     "store": "北九州店",
@@ -19871,7 +19899,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1419
+    "seq": 1421
   },
   {
     "store": "北九州店",
@@ -19885,7 +19913,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1420
+    "seq": 1422
   },
   {
     "store": "北九州店",
@@ -19899,7 +19927,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1421
+    "seq": 1423
   },
   {
     "store": "北九州店",
@@ -19913,7 +19941,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1422
+    "seq": 1424
   },
   {
     "store": "北九州店",
@@ -19927,7 +19955,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1423
+    "seq": 1425
   },
   {
     "store": "北九州店",
@@ -19941,7 +19969,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1424
+    "seq": 1426
   },
   {
     "store": "北九州店",
@@ -19955,7 +19983,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1425
+    "seq": 1427
   },
   {
     "store": "北九州店",
@@ -19969,7 +19997,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1426
+    "seq": 1428
   },
   {
     "store": "北九州店",
@@ -19983,7 +20011,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1427
+    "seq": 1429
   },
   {
     "store": "北九州店",
@@ -19997,7 +20025,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1428
+    "seq": 1430
   },
   {
     "store": "北九州店",
@@ -20011,7 +20039,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1429
+    "seq": 1431
   },
   {
     "store": "北九州店",
@@ -20025,7 +20053,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1430
+    "seq": 1432
   },
   {
     "store": "北九州店",
@@ -20039,7 +20067,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1431
+    "seq": 1433
   },
   {
     "store": "北九州店",
@@ -20053,7 +20081,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1432
+    "seq": 1434
   },
   {
     "store": "北九州店",
@@ -20067,7 +20095,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1433
+    "seq": 1435
   },
   {
     "store": "北九州店",
@@ -20081,7 +20109,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1434
+    "seq": 1436
   },
   {
     "store": "北九州店",
@@ -20095,7 +20123,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1435
+    "seq": 1437
   },
   {
     "store": "北九州店",
@@ -20109,7 +20137,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1436
+    "seq": 1438
   },
   {
     "store": "北九州店",
@@ -20123,7 +20151,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1437
+    "seq": 1439
   },
   {
     "store": "北九州店",
@@ -20137,7 +20165,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1438
+    "seq": 1440
   },
   {
     "store": "北九州店",
@@ -20151,7 +20179,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1439
+    "seq": 1441
   },
   {
     "store": "北九州店",
@@ -20165,7 +20193,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1440
+    "seq": 1442
   },
   {
     "store": "北九州店",
@@ -20179,7 +20207,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1441
+    "seq": 1443
   },
   {
     "store": "北九州店",
@@ -20193,7 +20221,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1442
+    "seq": 1444
   },
   {
     "store": "北九州店",
@@ -20202,12 +20230,12 @@ window.COLLECTION_DATA = [
     "name": "髙橋　勉",
     "paymentType": "cash",
     "address": "北九州市八幡西区浅川学園台２－１４－１",
-    "amount": 25155,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1443
+    "seq": 1445
   },
   {
     "store": "北九州店",
@@ -20221,7 +20249,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1444
+    "seq": 1446
   },
   {
     "store": "北九州店",
@@ -20235,7 +20263,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1445
+    "seq": 1447
   },
   {
     "store": "北九州店",
@@ -20249,7 +20277,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1446
+    "seq": 1448
   },
   {
     "store": "北九州店",
@@ -20263,7 +20291,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1447
+    "seq": 1449
   },
   {
     "store": "北九州店",
@@ -20277,7 +20305,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1448
+    "seq": 1450
   },
   {
     "store": "北九州店",
@@ -20291,7 +20319,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1449
+    "seq": 1451
   },
   {
     "store": "北九州店",
@@ -20305,7 +20333,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1450
+    "seq": 1452
   },
   {
     "store": "北九州店",
@@ -20319,7 +20347,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1451
+    "seq": 1453
   },
   {
     "store": "北九州店",
@@ -20333,7 +20361,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1452
+    "seq": 1454
   },
   {
     "store": "北九州店",
@@ -20347,7 +20375,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1453
+    "seq": 1455
   },
   {
     "store": "北九州店",
@@ -20361,7 +20389,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1454
+    "seq": 1456
   },
   {
     "store": "北九州店",
@@ -20375,7 +20403,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1455
+    "seq": 1457
   },
   {
     "store": "北九州店",
@@ -20389,21 +20417,35 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)北九州店.xlsm"
     ],
-    "seq": 1456
+    "seq": 1458
   },
   {
     "store": "北九州店",
     "code": 0,
     "route": 0,
-    "name": "中村　康子",
+    "name": "松田　真由美",
     "paymentType": "cash",
-    "address": "北九州市八幡西区光貞台３－８－５",
+    "address": "北九州市小倉北区竪林町１３－５－１０２",
     "amount": 7104,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1457
+    "seq": 1459
+  },
+  {
+    "store": "北九州店",
+    "code": 0,
+    "route": 0,
+    "name": "金子　信夫",
+    "paymentType": "cash",
+    "address": "北九州市小倉北区竪町１－１－２",
+    "amount": 2391,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1460
   },
   {
     "store": "北九州店",
@@ -20417,7 +20459,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1458
+    "seq": 1461
   },
   {
     "store": "北九州店",
@@ -20431,7 +20473,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1459
+    "seq": 1462
   },
   {
     "store": "北九州店",
@@ -20445,7 +20487,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1460
+    "seq": 1463
   },
   {
     "store": "北九州店",
@@ -20459,7 +20501,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1461
+    "seq": 1464
   },
   {
     "store": "北九州店",
@@ -20473,7 +20515,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1462
+    "seq": 1465
   },
   {
     "store": "北九州店",
@@ -20487,21 +20529,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1463
-  },
-  {
-    "store": "北九州店",
-    "code": 14,
-    "route": 1,
-    "name": "高橋　恵美子",
-    "paymentType": "cash",
-    "address": "北九州市戸畑区福柳木１－７－２１",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1464
+    "seq": 1466
   },
   {
     "store": "北九州店",
@@ -20515,7 +20543,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1465
+    "seq": 1467
   },
   {
     "store": "北九州店",
@@ -20529,21 +20557,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1466
-  },
-  {
-    "store": "北九州店",
-    "code": 19,
-    "route": 1,
-    "name": "上牧瀬　ヨシノ",
-    "paymentType": "bank",
-    "address": "北九州市戸畑区夜宮３－９－２－２０１",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1467
+    "seq": 1468
   },
   {
     "store": "北九州店",
@@ -20557,7 +20571,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1468
+    "seq": 1469
   },
   {
     "store": "北九州店",
@@ -20571,7 +20585,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1469
+    "seq": 1470
   },
   {
     "store": "北九州店",
@@ -20585,7 +20599,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1470
+    "seq": 1471
   },
   {
     "store": "北九州店",
@@ -20599,7 +20613,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1471
+    "seq": 1472
   },
   {
     "store": "北九州店",
@@ -20613,7 +20627,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1472
+    "seq": 1473
   },
   {
     "store": "北九州店",
@@ -20627,7 +20641,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1473
+    "seq": 1474
   },
   {
     "store": "北九州店",
@@ -20641,7 +20655,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1474
+    "seq": 1475
   },
   {
     "store": "北九州店",
@@ -20655,7 +20669,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1475
+    "seq": 1476
   },
   {
     "store": "北九州店",
@@ -20669,7 +20683,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1476
+    "seq": 1477
   },
   {
     "store": "北九州店",
@@ -20683,7 +20697,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1477
+    "seq": 1478
   },
   {
     "store": "北九州店",
@@ -20697,7 +20711,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1478
+    "seq": 1479
   },
   {
     "store": "北九州店",
@@ -20711,7 +20725,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1479
+    "seq": 1480
   },
   {
     "store": "北九州店",
@@ -20725,7 +20739,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1480
+    "seq": 1481
   },
   {
     "store": "北九州店",
@@ -20739,7 +20753,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1481
+    "seq": 1482
   },
   {
     "store": "北九州店",
@@ -20753,7 +20767,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1482
+    "seq": 1483
   },
   {
     "store": "北九州店",
@@ -20767,7 +20781,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1483
+    "seq": 1484
   },
   {
     "store": "北九州店",
@@ -20781,7 +20795,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1484
+    "seq": 1485
   },
   {
     "store": "北九州店",
@@ -20795,7 +20809,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1485
+    "seq": 1486
   },
   {
     "store": "北九州店",
@@ -20809,7 +20823,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1486
+    "seq": 1487
   },
   {
     "store": "北九州店",
@@ -20823,7 +20837,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1487
+    "seq": 1488
   },
   {
     "store": "北九州店",
@@ -20833,20 +20847,6 @@ window.COLLECTION_DATA = [
     "paymentType": "bank",
     "address": "北九州市小倉北区赤坂２ー９－４２",
     "amount": 9041,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1488
-  },
-  {
-    "store": "北九州店",
-    "code": 61,
-    "route": 1,
-    "name": "何松　文子",
-    "paymentType": "bank",
-    "address": "北九州市小倉北区上富野４－６－１３－２０７",
-    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
@@ -20911,20 +20911,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "北九州店",
-    "code": 66,
-    "route": 1,
-    "name": "内川　裕妃",
-    "paymentType": "cash",
-    "address": "北九州市小倉北区中津口１－１－４１ー１４１０",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1494
-  },
-  {
-    "store": "北九州店",
     "code": 67,
     "route": 1,
     "name": "畑野　美紀子",
@@ -20935,7 +20921,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1495
+    "seq": 1494
   },
   {
     "store": "北九州店",
@@ -20949,7 +20935,63 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
+    "seq": 1495
+  },
+  {
+    "store": "北九州店",
+    "code": 900,
+    "route": 1,
+    "name": "上牧瀬　ヨシノ",
+    "paymentType": "bank",
+    "address": "北九州市戸畑区夜宮３－９－２－２０１",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
     "seq": 1496
+  },
+  {
+    "store": "北九州店",
+    "code": 900,
+    "route": 1,
+    "name": "何松　文子",
+    "paymentType": "bank",
+    "address": "北九州市小倉北区上富野４－６－１３－２０７",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1497
+  },
+  {
+    "store": "北九州店",
+    "code": 900,
+    "route": 1,
+    "name": "内川　裕妃",
+    "paymentType": "cash",
+    "address": "北九州市小倉北区中津口１－１－４１ー１４１０",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1498
+  },
+  {
+    "store": "北九州店",
+    "code": 900,
+    "route": 1,
+    "name": "高橋　恵美子",
+    "paymentType": "cash",
+    "address": "北九州市戸畑区福柳木１－７－２１",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1499
   },
   {
     "store": "北九州店",
@@ -20963,7 +21005,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1497
+    "seq": 1500
   },
   {
     "store": "北九州店",
@@ -20977,7 +21019,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1498
+    "seq": 1501
   },
   {
     "store": "北九州店",
@@ -20986,12 +21028,12 @@ window.COLLECTION_DATA = [
     "name": "小田部　禮子",
     "paymentType": "cash",
     "address": "北九州市小倉北区黄金１－７－２２－７０３",
-    "amount": 4192,
+    "amount": 7686,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1499
+    "seq": 1502
   },
   {
     "store": "北九州店",
@@ -21005,7 +21047,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1500
+    "seq": 1503
   },
   {
     "store": "北九州店",
@@ -21019,7 +21061,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1501
+    "seq": 1504
   },
   {
     "store": "北九州店",
@@ -21033,7 +21075,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1502
+    "seq": 1505
   },
   {
     "store": "北九州店",
@@ -21047,7 +21089,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1503
+    "seq": 1506
   },
   {
     "store": "北九州店",
@@ -21061,7 +21103,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1504
+    "seq": 1507
   },
   {
     "store": "北九州店",
@@ -21075,7 +21117,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1505
+    "seq": 1508
   },
   {
     "store": "北九州店",
@@ -21089,35 +21131,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1506
-  },
-  {
-    "store": "北九州店",
-    "code": 1064,
-    "route": 2,
-    "name": "若松　直美",
-    "paymentType": "cash",
-    "address": "北九州市小倉北区木町３－７－２５",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1507
-  },
-  {
-    "store": "北九州店",
-    "code": 1065,
-    "route": 2,
-    "name": "中村　愛子",
-    "paymentType": "cash",
-    "address": "北九州市小倉北区木町３－１－３０－４階",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1508
+    "seq": 1509
   },
   {
     "store": "北九州店",
@@ -21131,7 +21145,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1509
+    "seq": 1510
   },
   {
     "store": "北九州店",
@@ -21145,7 +21159,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1510
+    "seq": 1511
   },
   {
     "store": "北九州店",
@@ -21159,7 +21173,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1511
+    "seq": 1512
   },
   {
     "store": "北九州店",
@@ -21173,7 +21187,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1512
+    "seq": 1513
   },
   {
     "store": "北九州店",
@@ -21187,7 +21201,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1513
+    "seq": 1514
   },
   {
     "store": "北九州店",
@@ -21196,12 +21210,12 @@ window.COLLECTION_DATA = [
     "name": "住野　弘行",
     "paymentType": "cash",
     "address": "北九州市小倉北区南丘１－１４－２２",
-    "amount": 8385,
+    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1514
+    "seq": 1515
   },
   {
     "store": "北九州店",
@@ -21215,7 +21229,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1515
+    "seq": 1516
   },
   {
     "store": "北九州店",
@@ -21229,7 +21243,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1516
+    "seq": 1517
   },
   {
     "store": "北九州店",
@@ -21243,7 +21257,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1517
+    "seq": 1518
   },
   {
     "store": "北九州店",
@@ -21257,7 +21271,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1518
+    "seq": 1519
   },
   {
     "store": "北九州店",
@@ -21271,7 +21285,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1519
+    "seq": 1520
   },
   {
     "store": "北九州店",
@@ -21281,20 +21295,6 @@ window.COLLECTION_DATA = [
     "paymentType": "bank",
     "address": "北九州市小倉北区今町１－２－４－２０１",
     "amount": 15372,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1520
-  },
-  {
-    "store": "北九州店",
-    "code": 1088,
-    "route": 2,
-    "name": "林　登美枝",
-    "paymentType": "cash",
-    "address": "北九州市小倉北区熊谷４－１４－６７",
-    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
@@ -21373,20 +21373,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "北九州店",
-    "code": 1096,
-    "route": 2,
-    "name": "刀根　照代",
-    "paymentType": "cash",
-    "address": "北九州市小倉北区泉台２－１－１３",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1527
-  },
-  {
-    "store": "北九州店",
     "code": 1097,
     "route": 2,
     "name": "高橋　朋子",
@@ -21397,7 +21383,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1528
+    "seq": 1527
   },
   {
     "store": "北九州店",
@@ -21411,7 +21397,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1529
+    "seq": 1528
   },
   {
     "store": "北九州店",
@@ -21425,7 +21411,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1530
+    "seq": 1529
   },
   {
     "store": "北九州店",
@@ -21439,7 +21425,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1531
+    "seq": 1530
   },
   {
     "store": "北九州店",
@@ -21453,7 +21439,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1532
+    "seq": 1531
   },
   {
     "store": "北九州店",
@@ -21467,7 +21453,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1533
+    "seq": 1532
   },
   {
     "store": "北九州店",
@@ -21481,7 +21467,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1534
+    "seq": 1533
   },
   {
     "store": "北九州店",
@@ -21495,7 +21481,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1535
+    "seq": 1534
   },
   {
     "store": "北九州店",
@@ -21509,13 +21495,13 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1536
+    "seq": 1535
   },
   {
     "store": "北九州店",
     "code": 1107,
     "route": 2,
-    "name": "麓　常広",
+    "name": "麓　常宏",
     "paymentType": "cash",
     "address": "北九州市八幡東区勝山１－１１－３－５０５",
     "amount": 17534,
@@ -21523,7 +21509,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1537
+    "seq": 1536
   },
   {
     "store": "北九州店",
@@ -21537,7 +21523,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1538
+    "seq": 1537
   },
   {
     "store": "北九州店",
@@ -21551,7 +21537,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1539
+    "seq": 1538
   },
   {
     "store": "北九州店",
@@ -21565,7 +21551,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1540
+    "seq": 1539
   },
   {
     "store": "北九州店",
@@ -21579,7 +21565,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1541
+    "seq": 1540
   },
   {
     "store": "北九州店",
@@ -21593,7 +21579,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1542
+    "seq": 1541
   },
   {
     "store": "北九州店",
@@ -21607,7 +21593,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1543
+    "seq": 1542
   },
   {
     "store": "北九州店",
@@ -21621,21 +21607,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1544
-  },
-  {
-    "store": "北九州店",
-    "code": 1124,
-    "route": 2,
-    "name": "原田　實",
-    "paymentType": "cash",
-    "address": "北九州市小倉北区緑ヶ丘１－９－１６",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1545
+    "seq": 1543
   },
   {
     "store": "北九州店",
@@ -21649,7 +21621,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1546
+    "seq": 1544
   },
   {
     "store": "北九州店",
@@ -21663,21 +21635,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1547
-  },
-  {
-    "store": "北九州店",
-    "code": 1127,
-    "route": 2,
-    "name": "高木　友枝",
-    "paymentType": "cash",
-    "address": "北九州市小倉北区菜園場２－６－２７",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1548
+    "seq": 1545
   },
   {
     "store": "北九州店",
@@ -21691,7 +21649,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1549
+    "seq": 1546
   },
   {
     "store": "北九州店",
@@ -21705,7 +21663,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1550
+    "seq": 1547
   },
   {
     "store": "北九州店",
@@ -21719,7 +21677,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1551
+    "seq": 1548
   },
   {
     "store": "北九州店",
@@ -21733,7 +21691,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1552
+    "seq": 1549
   },
   {
     "store": "北九州店",
@@ -21747,7 +21705,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1553
+    "seq": 1550
   },
   {
     "store": "北九州店",
@@ -21761,7 +21719,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1554
+    "seq": 1551
   },
   {
     "store": "北九州店",
@@ -21775,7 +21733,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1555
+    "seq": 1552
   },
   {
     "store": "北九州店",
@@ -21789,7 +21747,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1556
+    "seq": 1553
   },
   {
     "store": "北九州店",
@@ -21803,7 +21761,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1557
+    "seq": 1554
   },
   {
     "store": "北九州店",
@@ -21817,7 +21775,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1558
+    "seq": 1555
   },
   {
     "store": "北九州店",
@@ -21831,7 +21789,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1559
+    "seq": 1556
   },
   {
     "store": "北九州店",
@@ -21845,7 +21803,91 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
+    "seq": 1557
+  },
+  {
+    "store": "北九州店",
+    "code": 1900,
+    "route": 2,
+    "name": "中村　愛子",
+    "paymentType": "cash",
+    "address": "北九州市小倉北区木町３－１－３０－４階",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1558
+  },
+  {
+    "store": "北九州店",
+    "code": 1900,
+    "route": 2,
+    "name": "刀根　照代",
+    "paymentType": "cash",
+    "address": "北九州市小倉北区泉台２－１－１３",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1559
+  },
+  {
+    "store": "北九州店",
+    "code": 1900,
+    "route": 2,
+    "name": "原田　實",
+    "paymentType": "cash",
+    "address": "北九州市小倉北区緑ヶ丘１－９－１６",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
     "seq": 1560
+  },
+  {
+    "store": "北九州店",
+    "code": 1900,
+    "route": 2,
+    "name": "林　登美枝",
+    "paymentType": "cash",
+    "address": "北九州市小倉北区熊谷４－１４－６７",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1561
+  },
+  {
+    "store": "北九州店",
+    "code": 1900,
+    "route": 2,
+    "name": "若松　直美",
+    "paymentType": "cash",
+    "address": "北九州市小倉北区木町３－７－２５",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1562
+  },
+  {
+    "store": "北九州店",
+    "code": 1900,
+    "route": 2,
+    "name": "高木　友枝",
+    "paymentType": "cash",
+    "address": "北九州市小倉北区菜園場２－６－２７",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1563
   },
   {
     "store": "北九州店",
@@ -21859,7 +21901,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1561
+    "seq": 1564
   },
   {
     "store": "北九州店",
@@ -21873,7 +21915,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1562
+    "seq": 1565
   },
   {
     "store": "北九州店",
@@ -21887,7 +21929,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1563
+    "seq": 1566
   },
   {
     "store": "北九州店",
@@ -21901,7 +21943,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1564
+    "seq": 1567
   },
   {
     "store": "北九州店",
@@ -21915,7 +21957,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1565
+    "seq": 1568
   },
   {
     "store": "北九州店",
@@ -21929,7 +21971,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1566
+    "seq": 1569
   },
   {
     "store": "北九州店",
@@ -21943,7 +21985,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1567
+    "seq": 1570
   },
   {
     "store": "北九州店",
@@ -21957,7 +21999,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1568
+    "seq": 1571
   },
   {
     "store": "北九州店",
@@ -21971,7 +22013,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1569
+    "seq": 1572
   },
   {
     "store": "北九州店",
@@ -21985,7 +22027,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1570
+    "seq": 1573
   },
   {
     "store": "北九州店",
@@ -21999,7 +22041,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1571
+    "seq": 1574
   },
   {
     "store": "北九州店",
@@ -22013,7 +22055,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1572
+    "seq": 1575
   },
   {
     "store": "北九州店",
@@ -22027,7 +22069,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1573
+    "seq": 1576
   },
   {
     "store": "北九州店",
@@ -22041,7 +22083,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1574
+    "seq": 1577
   },
   {
     "store": "北九州店",
@@ -22055,7 +22097,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1575
+    "seq": 1578
   },
   {
     "store": "北九州店",
@@ -22069,7 +22111,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1576
+    "seq": 1579
   },
   {
     "store": "北九州店",
@@ -22083,7 +22125,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1577
+    "seq": 1580
   },
   {
     "store": "北九州店",
@@ -22097,7 +22139,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1578
+    "seq": 1581
   },
   {
     "store": "北九州店",
@@ -22111,7 +22153,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1579
+    "seq": 1582
   },
   {
     "store": "北九州店",
@@ -22125,7 +22167,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1580
+    "seq": 1583
   },
   {
     "store": "北九州店",
@@ -22139,7 +22181,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1581
+    "seq": 1584
   },
   {
     "store": "北九州店",
@@ -22153,7 +22195,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1582
+    "seq": 1585
   },
   {
     "store": "北九州店",
@@ -22167,7 +22209,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1583
+    "seq": 1586
   },
   {
     "store": "北九州店",
@@ -22181,7 +22223,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1584
+    "seq": 1587
   },
   {
     "store": "北九州店",
@@ -22195,7 +22237,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1585
+    "seq": 1588
   },
   {
     "store": "北九州店",
@@ -22209,21 +22251,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1586
-  },
-  {
-    "store": "北九州店",
-    "code": 2048,
-    "route": 3,
-    "name": "中村　カツ子",
-    "paymentType": "bank",
-    "address": "北九州市小倉南区若園１－９－１１",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1587
+    "seq": 1589
   },
   {
     "store": "北九州店",
@@ -22237,21 +22265,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1588
-  },
-  {
-    "store": "北九州店",
-    "code": 2050,
-    "route": 3,
-    "name": "宇都宮　隆",
-    "paymentType": "bank",
-    "address": "北九州市小倉北区高坊１－８－３６",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1589
+    "seq": 1590
   },
   {
     "store": "北九州店",
@@ -22265,7 +22279,35 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1590
+    "seq": 1591
+  },
+  {
+    "store": "北九州店",
+    "code": 2900,
+    "route": 3,
+    "name": "中村　カツ子",
+    "paymentType": "bank",
+    "address": "北九州市小倉南区若園１－９－１１",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1592
+  },
+  {
+    "store": "北九州店",
+    "code": 2900,
+    "route": 3,
+    "name": "宇都宮　隆",
+    "paymentType": "bank",
+    "address": "北九州市小倉北区高坊１－８－３６",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1593
   },
   {
     "store": "北九州店",
@@ -22274,26 +22316,12 @@ window.COLLECTION_DATA = [
     "name": "小野　道夫",
     "paymentType": "cash",
     "address": "北九州市小倉北区片野３－１４－１８－５０２",
-    "amount": 9083,
+    "amount": 11180,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1591
-  },
-  {
-    "store": "北九州店",
-    "code": 3005,
-    "route": 4,
-    "name": "清水　翔太",
-    "paymentType": "cash",
-    "address": "北九州市小倉南区下城野１－１５－１－１０２",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1592
+    "seq": 1594
   },
   {
     "store": "北九州店",
@@ -22307,7 +22335,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1593
+    "seq": 1595
   },
   {
     "store": "北九州店",
@@ -22321,7 +22349,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1594
+    "seq": 1596
   },
   {
     "store": "北九州店",
@@ -22335,7 +22363,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1595
+    "seq": 1597
   },
   {
     "store": "北九州店",
@@ -22349,7 +22377,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1596
+    "seq": 1598
   },
   {
     "store": "北九州店",
@@ -22363,7 +22391,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1597
+    "seq": 1599
   },
   {
     "store": "北九州店",
@@ -22377,7 +22405,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1598
+    "seq": 1600
   },
   {
     "store": "北九州店",
@@ -22391,7 +22419,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1599
+    "seq": 1601
   },
   {
     "store": "北九州店",
@@ -22405,7 +22433,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1600
+    "seq": 1602
   },
   {
     "store": "北九州店",
@@ -22419,7 +22447,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1601
+    "seq": 1603
   },
   {
     "store": "北九州店",
@@ -22433,7 +22461,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1602
+    "seq": 1604
   },
   {
     "store": "北九州店",
@@ -22447,7 +22475,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1603
+    "seq": 1605
   },
   {
     "store": "北九州店",
@@ -22461,7 +22489,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1604
+    "seq": 1606
   },
   {
     "store": "北九州店",
@@ -22475,7 +22503,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1605
+    "seq": 1607
   },
   {
     "store": "北九州店",
@@ -22489,7 +22517,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1606
+    "seq": 1608
   },
   {
     "store": "北九州店",
@@ -22503,7 +22531,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1607
+    "seq": 1609
   },
   {
     "store": "北九州店",
@@ -22517,7 +22545,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1608
+    "seq": 1610
   },
   {
     "store": "北九州店",
@@ -22531,7 +22559,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1609
+    "seq": 1611
   },
   {
     "store": "北九州店",
@@ -22545,7 +22573,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1610
+    "seq": 1612
   },
   {
     "store": "北九州店",
@@ -22559,7 +22587,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1611
+    "seq": 1613
   },
   {
     "store": "北九州店",
@@ -22573,7 +22601,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1612
+    "seq": 1614
   },
   {
     "store": "北九州店",
@@ -22587,7 +22615,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1613
+    "seq": 1615
   },
   {
     "store": "北九州店",
@@ -22601,7 +22629,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1614
+    "seq": 1616
   },
   {
     "store": "北九州店",
@@ -22615,7 +22643,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1615
+    "seq": 1617
   },
   {
     "store": "北九州店",
@@ -22629,7 +22657,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1616
+    "seq": 1618
   },
   {
     "store": "北九州店",
@@ -22643,7 +22671,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1617
+    "seq": 1619
   },
   {
     "store": "北九州店",
@@ -22657,7 +22685,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1618
+    "seq": 1620
   },
   {
     "store": "北九州店",
@@ -22671,7 +22699,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1619
+    "seq": 1621
   },
   {
     "store": "北九州店",
@@ -22685,7 +22713,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1620
+    "seq": 1622
   },
   {
     "store": "北九州店",
@@ -22699,7 +22727,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1621
+    "seq": 1623
   },
   {
     "store": "北九州店",
@@ -22713,7 +22741,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1622
+    "seq": 1624
   },
   {
     "store": "北九州店",
@@ -22727,7 +22755,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1623
+    "seq": 1625
   },
   {
     "store": "北九州店",
@@ -22741,35 +22769,35 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1624
+    "seq": 1626
   },
   {
     "store": "北九州店",
-    "code": 4005,
-    "route": 5,
-    "name": "八尋　せつ江",
+    "code": 3900,
+    "route": 4,
+    "name": "清水　翔太",
     "paymentType": "cash",
-    "address": "北九州市八幡西区山寺町３－２１",
+    "address": "北九州市小倉南区下城野１－１５－１－１０２",
     "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1625
+    "seq": 1627
   },
   {
     "store": "北九州店",
-    "code": 4010,
+    "code": 4001,
     "route": 5,
-    "name": "佐藤　和輝",
-    "paymentType": "cash",
-    "address": "北九州市八幡東区前田１－７－１８ー１００６",
-    "amount": 5495,
+    "name": "柴田　徳雄",
+    "paymentType": "bank",
+    "address": "北九州市八幡西区紅梅４－１－２７－５０３",
+    "amount": 11878,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1626
+    "seq": 1628
   },
   {
     "store": "北九州店",
@@ -22783,7 +22811,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1627
+    "seq": 1629
   },
   {
     "store": "北九州店",
@@ -22797,7 +22825,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1628
+    "seq": 1630
   },
   {
     "store": "北九州店",
@@ -22811,7 +22839,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1629
+    "seq": 1631
   },
   {
     "store": "北九州店",
@@ -22825,25 +22853,11 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1630
+    "seq": 1632
   },
   {
     "store": "北九州店",
-    "code": 4029,
-    "route": 5,
-    "name": "中嶋　紘子",
-    "paymentType": "cash",
-    "address": "北九州市八幡東区中央２－１０－１９　2階",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1631
-  },
-  {
-    "store": "北九州店",
-    "code": 4031,
+    "code": 4030,
     "route": 5,
     "name": "山野　裕二郎",
     "paymentType": "bank",
@@ -22853,7 +22867,21 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1632
+    "seq": 1633
+  },
+  {
+    "store": "北九州店",
+    "code": 4031,
+    "route": 5,
+    "name": "佐藤　和輝",
+    "paymentType": "cash",
+    "address": "北九州市八幡東区前田１－７－１８ー１００６",
+    "amount": 5495,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1634
   },
   {
     "store": "北九州店",
@@ -22867,21 +22895,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1633
-  },
-  {
-    "store": "北九州店",
-    "code": 4033,
-    "route": 5,
-    "name": "黒岩　恭子",
-    "paymentType": "cash",
-    "address": "北九州市八幡東区祇園３－６－７",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1634
+    "seq": 1635
   },
   {
     "store": "北九州店",
@@ -22891,20 +22905,6 @@ window.COLLECTION_DATA = [
     "paymentType": "cash",
     "address": "北九州市八幡東区祇園４－６－２２",
     "amount": 8395,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1635
-  },
-  {
-    "store": "北九州店",
-    "code": 4036,
-    "route": 5,
-    "name": "池上　つる美",
-    "paymentType": "cash",
-    "address": "北九州市八幡東区祇園４－８－３４",
-    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
@@ -23081,12 +23081,12 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "北九州店",
-    "code": 4066,
+    "code": 4057,
     "route": 5,
-    "name": "森川　公憲",
+    "name": "宇木　千枝子",
     "paymentType": "cash",
-    "address": "北九州市八幡西区萩原２－８－６－４０１",
-    "amount": 16822,
+    "address": "北九州市八幡西区若葉１－１９－８",
+    "amount": 44254,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
@@ -23095,63 +23095,7 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "北九州店",
-    "code": 4068,
-    "route": 5,
-    "name": "古瀬　智子",
-    "paymentType": "cash",
-    "address": "北九州市八幡西区紅梅２－９－１６－５０７",
-    "amount": 3875,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1650
-  },
-  {
-    "store": "北九州店",
-    "code": 4070,
-    "route": 5,
-    "name": "柴田　徳雄",
-    "paymentType": "bank",
-    "address": "北九州市八幡西区紅梅４－１－２７－５０３",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1651
-  },
-  {
-    "store": "北九州店",
-    "code": 4071,
-    "route": 5,
-    "name": "片村　一美",
-    "paymentType": "cash",
-    "address": "北九州市八幡東区西丸山町１－６－１００２",
-    "amount": 16228,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1652
-  },
-  {
-    "store": "北九州店",
-    "code": 4200,
-    "route": 5,
-    "name": "宇木　千枝子",
-    "paymentType": "cash",
-    "address": "北九州市八幡西区若葉１－１９－８",
-    "amount": 29580,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1653
-  },
-  {
-    "store": "北九州店",
-    "code": 4201,
+    "code": 4058,
     "route": 5,
     "name": "長埜　ひとみ",
     "paymentType": "cash",
@@ -23161,11 +23105,11 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1654
+    "seq": 1650
   },
   {
     "store": "北九州店",
-    "code": 4202,
+    "code": 4059,
     "route": 5,
     "name": "三丸　勇治",
     "paymentType": "bank",
@@ -23175,25 +23119,11 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1655
+    "seq": 1651
   },
   {
     "store": "北九州店",
-    "code": 4203,
-    "route": 5,
-    "name": "會田　憲義",
-    "paymentType": "bank",
-    "address": "北九州市八幡西区鉄竜１－１－４９－１１０３",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1656
-  },
-  {
-    "store": "北九州店",
-    "code": 4204,
+    "code": 4061,
     "route": 5,
     "name": "増田　昌裕",
     "paymentType": "bank",
@@ -23203,11 +23133,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1657
+    "seq": 1652
   },
   {
     "store": "北九州店",
-    "code": 4205,
+    "code": 4080,
+    "route": 5,
+    "name": "森川　公憲",
+    "paymentType": "cash",
+    "address": "北九州市八幡西区萩原２－８－６－４０１",
+    "amount": 16822,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1653
+  },
+  {
+    "store": "北九州店",
+    "code": 4081,
     "route": 5,
     "name": "酒井　安子",
     "paymentType": "cash",
@@ -23217,16 +23161,72 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
+    "seq": 1654
+  },
+  {
+    "store": "北九州店",
+    "code": 4085,
+    "route": 5,
+    "name": "古瀬　智子",
+    "paymentType": "cash",
+    "address": "北九州市八幡西区紅梅２－９－１６－５０７",
+    "amount": 3875,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1655
+  },
+  {
+    "store": "北九州店",
+    "code": 4090,
+    "route": 5,
+    "name": "片村　一美",
+    "paymentType": "cash",
+    "address": "北九州市八幡東区西丸山町１－６－１００２",
+    "amount": 16228,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1656
+  },
+  {
+    "store": "北九州店",
+    "code": 4900,
+    "route": 5,
+    "name": "中嶋　紘子",
+    "paymentType": "cash",
+    "address": "北九州市八幡東区中央２－１０－１９　2階",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1657
+  },
+  {
+    "store": "北九州店",
+    "code": 4900,
+    "route": 5,
+    "name": "八尋　せつ江",
+    "paymentType": "cash",
+    "address": "北九州市八幡西区山寺町３－２１",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
     "seq": 1658
   },
   {
     "store": "北九州店",
-    "code": 5001,
-    "route": 6,
-    "name": "新井　初美",
-    "paymentType": "cash",
-    "address": "北九州市若松区中畑町１４－２",
-    "amount": 30287,
+    "code": 4900,
+    "route": 5,
+    "name": "會田　憲義",
+    "paymentType": "bank",
+    "address": "北九州市八幡西区鉄竜１－１－４９－１１０３",
+    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
@@ -23235,11 +23235,11 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "北九州店",
-    "code": 5005,
-    "route": 6,
-    "name": "黒岩　和枝",
+    "code": 4900,
+    "route": 5,
+    "name": "池上　つる美",
     "paymentType": "cash",
-    "address": "北九州市若松区古前１－２３－３６－８",
+    "address": "北九州市八幡東区祇園４－８－３４",
     "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
@@ -23249,17 +23249,45 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "北九州店",
-    "code": 5010,
-    "route": 6,
-    "name": "香月　那美",
+    "code": 4900,
+    "route": 5,
+    "name": "黒岩　恭子",
     "paymentType": "cash",
-    "address": "北九州市八幡西区光明１－１０－１７",
+    "address": "北九州市八幡東区祇園３－６－７",
     "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
     "seq": 1661
+  },
+  {
+    "store": "北九州店",
+    "code": 5001,
+    "route": 6,
+    "name": "中村　康子",
+    "paymentType": "cash",
+    "address": "北九州市八幡西区光貞台３－８－５",
+    "amount": 7104,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1662
+  },
+  {
+    "store": "北九州店",
+    "code": 5010,
+    "route": 6,
+    "name": "新井　初美",
+    "paymentType": "cash",
+    "address": "北九州市若松区中畑町１４－２",
+    "amount": 30287,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1663
   },
   {
     "store": "北九州店",
@@ -23273,7 +23301,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1662
+    "seq": 1664
   },
   {
     "store": "北九州店",
@@ -23287,7 +23315,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1663
+    "seq": 1665
   },
   {
     "store": "北九州店",
@@ -23301,7 +23329,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1664
+    "seq": 1666
   },
   {
     "store": "北九州店",
@@ -23315,7 +23343,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1665
+    "seq": 1667
   },
   {
     "store": "北九州店",
@@ -23329,7 +23357,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1666
+    "seq": 1668
   },
   {
     "store": "北九州店",
@@ -23343,21 +23371,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1667
-  },
-  {
-    "store": "北九州店",
-    "code": 5055,
-    "route": 6,
-    "name": "山下　登",
-    "paymentType": "bank",
-    "address": "北九州市小倉北区上富野１−７−１６",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1668
+    "seq": 1669
   },
   {
     "store": "北九州店",
@@ -23371,7 +23385,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1669
+    "seq": 1670
   },
   {
     "store": "北九州店",
@@ -23385,7 +23399,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1670
+    "seq": 1671
   },
   {
     "store": "北九州店",
@@ -23399,7 +23413,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1671
+    "seq": 1672
   },
   {
     "store": "北九州店",
@@ -23413,7 +23427,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1672
+    "seq": 1673
   },
   {
     "store": "北九州店",
@@ -23427,7 +23441,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1673
+    "seq": 1674
   },
   {
     "store": "北九州店",
@@ -23437,20 +23451,6 @@ window.COLLECTION_DATA = [
     "paymentType": "cash",
     "address": "北九州市若松区大井戸町７－１１",
     "amount": 9589,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1674
-  },
-  {
-    "store": "北九州店",
-    "code": 5068,
-    "route": 6,
-    "name": "生田　義治",
-    "paymentType": "cash",
-    "address": "北九州市若松区白山２－９－１１",
-    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
@@ -23767,20 +23767,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "北九州店",
-    "code": 5250,
-    "route": 6,
-    "name": "永田　一美",
-    "paymentType": "cash",
-    "address": "北九州市八幡西区千代ケ崎１－１４－１７",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.4)北九州店.xlsm"
-    ],
-    "seq": 1698
-  },
-  {
-    "store": "北九州店",
     "code": 5300,
     "route": 6,
     "name": "堀江　かぎ",
@@ -23791,7 +23777,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1699
+    "seq": 1698
   },
   {
     "store": "北九州店",
@@ -23805,7 +23791,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1700
+    "seq": 1699
   },
   {
     "store": "北九州店",
@@ -23819,7 +23805,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1701
+    "seq": 1700
   },
   {
     "store": "北九州店",
@@ -23833,7 +23819,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1702
+    "seq": 1701
   },
   {
     "store": "北九州店",
@@ -23847,7 +23833,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1703
+    "seq": 1702
   },
   {
     "store": "北九州店",
@@ -23861,7 +23847,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1704
+    "seq": 1703
   },
   {
     "store": "北九州店",
@@ -23875,7 +23861,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1705
+    "seq": 1704
   },
   {
     "store": "北九州店",
@@ -23889,7 +23875,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1706
+    "seq": 1705
   },
   {
     "store": "北九州店",
@@ -23903,7 +23889,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1707
+    "seq": 1706
   },
   {
     "store": "北九州店",
@@ -23917,7 +23903,77 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
+    "seq": 1707
+  },
+  {
+    "store": "北九州店",
+    "code": 5900,
+    "route": 6,
+    "name": "山下　登",
+    "paymentType": "bank",
+    "address": "北九州市小倉北区上富野１−７−１６",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
     "seq": 1708
+  },
+  {
+    "store": "北九州店",
+    "code": 5900,
+    "route": 6,
+    "name": "永田　一美",
+    "paymentType": "cash",
+    "address": "北九州市八幡西区千代ケ崎１－１４－１７",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1709
+  },
+  {
+    "store": "北九州店",
+    "code": 5900,
+    "route": 6,
+    "name": "生田　義治",
+    "paymentType": "cash",
+    "address": "北九州市若松区白山２－９－１１",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1710
+  },
+  {
+    "store": "北九州店",
+    "code": 5900,
+    "route": 6,
+    "name": "香月　那美",
+    "paymentType": "cash",
+    "address": "北九州市八幡西区光明１－１０－１７",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1711
+  },
+  {
+    "store": "北九州店",
+    "code": 5900,
+    "route": 6,
+    "name": "黒岩　和枝",
+    "paymentType": "cash",
+    "address": "北九州市若松区古前１－２３－３６－８",
+    "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)北九州店.xlsm"
+    ],
+    "seq": 1712
   },
   {
     "store": "北九州店",
@@ -23931,7 +23987,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1709
+    "seq": 1713
   },
   {
     "store": "北九州店",
@@ -23945,7 +24001,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)北九州店.xlsm"
     ],
-    "seq": 1710
+    "seq": 1714
   },
   {
     "store": "宇部店",
@@ -23959,7 +24015,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1711
+    "seq": 1715
   },
   {
     "store": "宇部店",
@@ -23973,7 +24029,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1712
+    "seq": 1716
   },
   {
     "store": "宇部店",
@@ -23987,7 +24043,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1713
+    "seq": 1717
   },
   {
     "store": "宇部店",
@@ -24001,7 +24057,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1714
+    "seq": 1718
   },
   {
     "store": "宇部店",
@@ -24015,7 +24071,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1715
+    "seq": 1719
   },
   {
     "store": "宇部店",
@@ -24029,7 +24085,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1716
+    "seq": 1720
   },
   {
     "store": "宇部店",
@@ -24043,7 +24099,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1717
+    "seq": 1721
   },
   {
     "store": "宇部店",
@@ -24057,7 +24113,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1718
+    "seq": 1722
   },
   {
     "store": "宇部店",
@@ -24071,7 +24127,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1719
+    "seq": 1723
   },
   {
     "store": "宇部店",
@@ -24085,7 +24141,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1720
+    "seq": 1724
   },
   {
     "store": "宇部店",
@@ -24099,7 +24155,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1721
+    "seq": 1725
   },
   {
     "store": "宇部店",
@@ -24113,7 +24169,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1722
+    "seq": 1726
   },
   {
     "store": "宇部店",
@@ -24127,7 +24183,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1723
+    "seq": 1727
   },
   {
     "store": "宇部店",
@@ -24141,7 +24197,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1724
+    "seq": 1728
   },
   {
     "store": "宇部店",
@@ -24155,7 +24211,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1725
+    "seq": 1729
   },
   {
     "store": "宇部店",
@@ -24169,7 +24225,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1726
+    "seq": 1730
   },
   {
     "store": "宇部店",
@@ -24183,7 +24239,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1727
+    "seq": 1731
   },
   {
     "store": "宇部店",
@@ -24197,7 +24253,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1728
+    "seq": 1732
   },
   {
     "store": "宇部店",
@@ -24211,7 +24267,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1729
+    "seq": 1733
   },
   {
     "store": "宇部店",
@@ -24225,7 +24281,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1730
+    "seq": 1734
   },
   {
     "store": "宇部店",
@@ -24239,7 +24295,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1731
+    "seq": 1735
   },
   {
     "store": "宇部店",
@@ -24253,7 +24309,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1732
+    "seq": 1736
   },
   {
     "store": "宇部店",
@@ -24267,7 +24323,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1733
+    "seq": 1737
   },
   {
     "store": "宇部店",
@@ -24281,7 +24337,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1734
+    "seq": 1738
   },
   {
     "store": "宇部店",
@@ -24295,7 +24351,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1735
+    "seq": 1739
   },
   {
     "store": "宇部店",
@@ -24309,7 +24365,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1736
+    "seq": 1740
   },
   {
     "store": "宇部店",
@@ -24323,7 +24379,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1737
+    "seq": 1741
   },
   {
     "store": "宇部店",
@@ -24337,7 +24393,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1738
+    "seq": 1742
   },
   {
     "store": "宇部店",
@@ -24351,7 +24407,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1739
+    "seq": 1743
   },
   {
     "store": "宇部店",
@@ -24365,7 +24421,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1740
+    "seq": 1744
   },
   {
     "store": "宇部店",
@@ -24379,7 +24435,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1741
+    "seq": 1745
   },
   {
     "store": "宇部店",
@@ -24393,7 +24449,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1742
+    "seq": 1746
   },
   {
     "store": "宇部店",
@@ -24407,7 +24463,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1743
+    "seq": 1747
   },
   {
     "store": "宇部店",
@@ -24421,7 +24477,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1744
+    "seq": 1748
   },
   {
     "store": "宇部店",
@@ -24435,7 +24491,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1745
+    "seq": 1749
   },
   {
     "store": "宇部店",
@@ -24449,7 +24505,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1746
+    "seq": 1750
   },
   {
     "store": "宇部店",
@@ -24463,7 +24519,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1747
+    "seq": 1751
   },
   {
     "store": "宇部店",
@@ -24477,7 +24533,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1748
+    "seq": 1752
   },
   {
     "store": "宇部店",
@@ -24491,7 +24547,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1749
+    "seq": 1753
   },
   {
     "store": "宇部店",
@@ -24505,7 +24561,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1750
+    "seq": 1754
   },
   {
     "store": "宇部店",
@@ -24519,7 +24575,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1751
+    "seq": 1755
   },
   {
     "store": "宇部店",
@@ -24533,7 +24589,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1752
+    "seq": 1756
   },
   {
     "store": "宇部店",
@@ -24547,7 +24603,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1753
+    "seq": 1757
   },
   {
     "store": "宇部店",
@@ -24561,7 +24617,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1754
+    "seq": 1758
   },
   {
     "store": "宇部店",
@@ -24575,7 +24631,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1755
+    "seq": 1759
   },
   {
     "store": "宇部店",
@@ -24589,7 +24645,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1756
+    "seq": 1760
   },
   {
     "store": "宇部店",
@@ -24603,7 +24659,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1757
+    "seq": 1761
   },
   {
     "store": "宇部店",
@@ -24617,7 +24673,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1758
+    "seq": 1762
   },
   {
     "store": "宇部店",
@@ -24631,7 +24687,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1759
+    "seq": 1763
   },
   {
     "store": "宇部店",
@@ -24645,7 +24701,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1760
+    "seq": 1764
   },
   {
     "store": "宇部店",
@@ -24659,7 +24715,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1761
+    "seq": 1765
   },
   {
     "store": "宇部店",
@@ -24673,7 +24729,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1762
+    "seq": 1766
   },
   {
     "store": "宇部店",
@@ -24687,7 +24743,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1763
+    "seq": 1767
   },
   {
     "store": "宇部店",
@@ -24701,7 +24757,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1764
+    "seq": 1768
   },
   {
     "store": "宇部店",
@@ -24715,7 +24771,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1765
+    "seq": 1769
   },
   {
     "store": "宇部店",
@@ -24729,7 +24785,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1766
+    "seq": 1770
   },
   {
     "store": "宇部店",
@@ -24743,7 +24799,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1767
+    "seq": 1771
   },
   {
     "store": "宇部店",
@@ -24757,7 +24813,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1768
+    "seq": 1772
   },
   {
     "store": "宇部店",
@@ -24771,7 +24827,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1769
+    "seq": 1773
   },
   {
     "store": "宇部店",
@@ -24785,7 +24841,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1770
+    "seq": 1774
   },
   {
     "store": "宇部店",
@@ -24799,7 +24855,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1771
+    "seq": 1775
   },
   {
     "store": "宇部店",
@@ -24813,7 +24869,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1772
+    "seq": 1776
   },
   {
     "store": "宇部店",
@@ -24827,7 +24883,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1773
+    "seq": 1777
   },
   {
     "store": "宇部店",
@@ -24841,7 +24897,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1774
+    "seq": 1778
   },
   {
     "store": "宇部店",
@@ -24855,7 +24911,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1775
+    "seq": 1779
   },
   {
     "store": "宇部店",
@@ -24869,7 +24925,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1776
+    "seq": 1780
   },
   {
     "store": "宇部店",
@@ -24883,7 +24939,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1777
+    "seq": 1781
   },
   {
     "store": "宇部店",
@@ -24897,7 +24953,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1778
+    "seq": 1782
   },
   {
     "store": "宇部店",
@@ -24911,7 +24967,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1779
+    "seq": 1783
   },
   {
     "store": "宇部店",
@@ -24925,7 +24981,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1780
+    "seq": 1784
   },
   {
     "store": "宇部店",
@@ -24939,7 +24995,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1781
+    "seq": 1785
   },
   {
     "store": "宇部店",
@@ -24953,7 +25009,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1782
+    "seq": 1786
   },
   {
     "store": "宇部店",
@@ -24967,7 +25023,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1783
+    "seq": 1787
   },
   {
     "store": "宇部店",
@@ -24981,7 +25037,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1784
+    "seq": 1788
   },
   {
     "store": "宇部店",
@@ -24995,7 +25051,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1785
+    "seq": 1789
   },
   {
     "store": "宇部店",
@@ -25004,12 +25060,12 @@ window.COLLECTION_DATA = [
     "name": "藤永　悦子",
     "paymentType": "cash",
     "address": "宇部市亀浦4丁目９－２１－５",
-    "amount": 25833,
+    "amount": 0,
     "dataMonth": "2026-02",
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1786
+    "seq": 1790
   },
   {
     "store": "宇部店",
@@ -25023,7 +25079,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1787
+    "seq": 1791
   },
   {
     "store": "宇部店",
@@ -25037,7 +25093,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1788
+    "seq": 1792
   },
   {
     "store": "宇部店",
@@ -25051,7 +25107,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1789
+    "seq": 1793
   },
   {
     "store": "宇部店",
@@ -25065,7 +25121,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1790
+    "seq": 1794
   },
   {
     "store": "宇部店",
@@ -25079,7 +25135,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1791
+    "seq": 1795
   },
   {
     "store": "宇部店",
@@ -25093,7 +25149,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1792
+    "seq": 1796
   },
   {
     "store": "宇部店",
@@ -25107,7 +25163,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1793
+    "seq": 1797
   },
   {
     "store": "宇部店",
@@ -25121,7 +25177,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1794
+    "seq": 1798
   },
   {
     "store": "宇部店",
@@ -25135,7 +25191,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1795
+    "seq": 1799
   },
   {
     "store": "宇部店",
@@ -25149,7 +25205,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1796
+    "seq": 1800
   },
   {
     "store": "宇部店",
@@ -25163,7 +25219,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1797
+    "seq": 1801
   },
   {
     "store": "宇部店",
@@ -25177,7 +25233,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1798
+    "seq": 1802
   },
   {
     "store": "宇部店",
@@ -25191,7 +25247,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1799
+    "seq": 1803
   },
   {
     "store": "宇部店",
@@ -25205,7 +25261,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1800
+    "seq": 1804
   },
   {
     "store": "宇部店",
@@ -25219,7 +25275,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1801
+    "seq": 1805
   },
   {
     "store": "宇部店",
@@ -25233,7 +25289,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1802
+    "seq": 1806
   },
   {
     "store": "宇部店",
@@ -25247,7 +25303,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1803
+    "seq": 1807
   },
   {
     "store": "宇部店",
@@ -25261,7 +25317,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1804
+    "seq": 1808
   },
   {
     "store": "宇部店",
@@ -25275,7 +25331,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1805
+    "seq": 1809
   },
   {
     "store": "宇部店",
@@ -25289,7 +25345,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1806
+    "seq": 1810
   },
   {
     "store": "宇部店",
@@ -25303,7 +25359,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1807
+    "seq": 1811
   },
   {
     "store": "宇部店",
@@ -25317,7 +25373,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1808
+    "seq": 1812
   },
   {
     "store": "宇部店",
@@ -25331,7 +25387,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1809
+    "seq": 1813
   },
   {
     "store": "宇部店",
@@ -25345,7 +25401,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1810
+    "seq": 1814
   },
   {
     "store": "宇部店",
@@ -25359,7 +25415,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1811
+    "seq": 1815
   },
   {
     "store": "宇部店",
@@ -25373,7 +25429,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1812
+    "seq": 1816
   },
   {
     "store": "宇部店",
@@ -25387,7 +25443,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1813
+    "seq": 1817
   },
   {
     "store": "宇部店",
@@ -25401,7 +25457,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1814
+    "seq": 1818
   },
   {
     "store": "宇部店",
@@ -25415,7 +25471,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1815
+    "seq": 1819
   },
   {
     "store": "宇部店",
@@ -25429,7 +25485,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1816
+    "seq": 1820
   },
   {
     "store": "宇部店",
@@ -25443,7 +25499,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1817
+    "seq": 1821
   },
   {
     "store": "宇部店",
@@ -25457,7 +25513,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1818
+    "seq": 1822
   },
   {
     "store": "宇部店",
@@ -25471,7 +25527,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1819
+    "seq": 1823
   },
   {
     "store": "宇部店",
@@ -25485,7 +25541,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1820
+    "seq": 1824
   },
   {
     "store": "宇部店",
@@ -25499,7 +25555,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1821
+    "seq": 1825
   },
   {
     "store": "宇部店",
@@ -25513,7 +25569,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1822
+    "seq": 1826
   },
   {
     "store": "宇部店",
@@ -25527,7 +25583,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1823
+    "seq": 1827
   },
   {
     "store": "宇部店",
@@ -25541,7 +25597,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1824
+    "seq": 1828
   },
   {
     "store": "宇部店",
@@ -25555,7 +25611,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1825
+    "seq": 1829
   },
   {
     "store": "宇部店",
@@ -25569,7 +25625,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1826
+    "seq": 1830
   },
   {
     "store": "宇部店",
@@ -25583,7 +25639,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1827
+    "seq": 1831
   },
   {
     "store": "宇部店",
@@ -25597,7 +25653,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1828
+    "seq": 1832
   },
   {
     "store": "宇部店",
@@ -25611,7 +25667,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1829
+    "seq": 1833
   },
   {
     "store": "宇部店",
@@ -25625,7 +25681,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1830
+    "seq": 1834
   },
   {
     "store": "宇部店",
@@ -25639,7 +25695,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1831
+    "seq": 1835
   },
   {
     "store": "宇部店",
@@ -25653,7 +25709,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1832
+    "seq": 1836
   },
   {
     "store": "宇部店",
@@ -25667,7 +25723,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1833
+    "seq": 1837
   },
   {
     "store": "宇部店",
@@ -25681,7 +25737,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1834
+    "seq": 1838
   },
   {
     "store": "宇部店",
@@ -25695,7 +25751,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1835
+    "seq": 1839
   },
   {
     "store": "宇部店",
@@ -25709,7 +25765,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1836
+    "seq": 1840
   },
   {
     "store": "宇部店",
@@ -25723,7 +25779,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1837
+    "seq": 1841
   },
   {
     "store": "宇部店",
@@ -25737,7 +25793,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1838
+    "seq": 1842
   },
   {
     "store": "宇部店",
@@ -25751,7 +25807,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1839
+    "seq": 1843
   },
   {
     "store": "宇部店",
@@ -25765,7 +25821,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1840
+    "seq": 1844
   },
   {
     "store": "宇部店",
@@ -25779,7 +25835,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1841
+    "seq": 1845
   },
   {
     "store": "宇部店",
@@ -25793,7 +25849,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1842
+    "seq": 1846
   },
   {
     "store": "宇部店",
@@ -25807,7 +25863,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1843
+    "seq": 1847
   },
   {
     "store": "宇部店",
@@ -25821,7 +25877,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1844
+    "seq": 1848
   },
   {
     "store": "宇部店",
@@ -25835,7 +25891,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1845
+    "seq": 1849
   },
   {
     "store": "宇部店",
@@ -25849,7 +25905,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1846
+    "seq": 1850
   },
   {
     "store": "宇部店",
@@ -25863,7 +25919,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1847
+    "seq": 1851
   },
   {
     "store": "宇部店",
@@ -25877,7 +25933,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1848
+    "seq": 1852
   },
   {
     "store": "宇部店",
@@ -25891,7 +25947,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1849
+    "seq": 1853
   },
   {
     "store": "宇部店",
@@ -25905,7 +25961,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1850
+    "seq": 1854
   },
   {
     "store": "宇部店",
@@ -25919,7 +25975,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1851
+    "seq": 1855
   },
   {
     "store": "宇部店",
@@ -25933,7 +25989,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1852
+    "seq": 1856
   },
   {
     "store": "宇部店",
@@ -25947,7 +26003,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1853
+    "seq": 1857
   },
   {
     "store": "宇部店",
@@ -25961,7 +26017,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1854
+    "seq": 1858
   },
   {
     "store": "宇部店",
@@ -25975,7 +26031,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1855
+    "seq": 1859
   },
   {
     "store": "宇部店",
@@ -25989,7 +26045,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1856
+    "seq": 1860
   },
   {
     "store": "宇部店",
@@ -26003,7 +26059,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1857
+    "seq": 1861
   },
   {
     "store": "宇部店",
@@ -26017,7 +26073,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1858
+    "seq": 1862
   },
   {
     "store": "宇部店",
@@ -26031,7 +26087,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1859
+    "seq": 1863
   },
   {
     "store": "宇部店",
@@ -26045,7 +26101,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1860
+    "seq": 1864
   },
   {
     "store": "宇部店",
@@ -26059,7 +26115,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1861
+    "seq": 1865
   },
   {
     "store": "宇部店",
@@ -26073,7 +26129,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1862
+    "seq": 1866
   },
   {
     "store": "宇部店",
@@ -26087,7 +26143,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1863
+    "seq": 1867
   },
   {
     "store": "宇部店",
@@ -26101,7 +26157,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1864
+    "seq": 1868
   },
   {
     "store": "宇部店",
@@ -26115,7 +26171,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1865
+    "seq": 1869
   },
   {
     "store": "宇部店",
@@ -26129,7 +26185,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1866
+    "seq": 1870
   },
   {
     "store": "宇部店",
@@ -26143,7 +26199,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1867
+    "seq": 1871
   },
   {
     "store": "宇部店",
@@ -26157,7 +26213,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1868
+    "seq": 1872
   },
   {
     "store": "宇部店",
@@ -26171,7 +26227,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1869
+    "seq": 1873
   },
   {
     "store": "宇部店",
@@ -26185,7 +26241,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1870
+    "seq": 1874
   },
   {
     "store": "宇部店",
@@ -26199,7 +26255,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1871
+    "seq": 1875
   },
   {
     "store": "宇部店",
@@ -26213,7 +26269,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1872
+    "seq": 1876
   },
   {
     "store": "宇部店",
@@ -26227,7 +26283,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1873
+    "seq": 1877
   },
   {
     "store": "宇部店",
@@ -26241,7 +26297,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1874
+    "seq": 1878
   },
   {
     "store": "宇部店",
@@ -26255,7 +26311,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1875
+    "seq": 1879
   },
   {
     "store": "宇部店",
@@ -26269,7 +26325,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1876
+    "seq": 1880
   },
   {
     "store": "宇部店",
@@ -26283,7 +26339,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1877
+    "seq": 1881
   },
   {
     "store": "宇部店",
@@ -26297,7 +26353,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1878
+    "seq": 1882
   },
   {
     "store": "宇部店",
@@ -26311,7 +26367,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1879
+    "seq": 1883
   },
   {
     "store": "宇部店",
@@ -26325,7 +26381,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1880
+    "seq": 1884
   },
   {
     "store": "宇部店",
@@ -26339,7 +26395,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1881
+    "seq": 1885
   },
   {
     "store": "宇部店",
@@ -26353,7 +26409,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1882
+    "seq": 1886
   },
   {
     "store": "宇部店",
@@ -26367,7 +26423,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1883
+    "seq": 1887
   },
   {
     "store": "宇部店",
@@ -26381,7 +26437,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1884
+    "seq": 1888
   },
   {
     "store": "宇部店",
@@ -26395,7 +26451,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1885
+    "seq": 1889
   },
   {
     "store": "宇部店",
@@ -26409,7 +26465,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1886
+    "seq": 1890
   },
   {
     "store": "宇部店",
@@ -26423,7 +26479,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1887
+    "seq": 1891
   },
   {
     "store": "宇部店",
@@ -26437,7 +26493,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1888
+    "seq": 1892
   },
   {
     "store": "宇部店",
@@ -26451,7 +26507,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1889
+    "seq": 1893
   },
   {
     "store": "宇部店",
@@ -26465,7 +26521,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1890
+    "seq": 1894
   },
   {
     "store": "宇部店",
@@ -26479,7 +26535,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1891
+    "seq": 1895
   },
   {
     "store": "宇部店",
@@ -26493,7 +26549,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1892
+    "seq": 1896
   },
   {
     "store": "宇部店",
@@ -26507,7 +26563,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1893
+    "seq": 1897
   },
   {
     "store": "宇部店",
@@ -26521,7 +26577,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1894
+    "seq": 1898
   },
   {
     "store": "宇部店",
@@ -26535,7 +26591,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1895
+    "seq": 1899
   },
   {
     "store": "宇部店",
@@ -26549,7 +26605,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1896
+    "seq": 1900
   },
   {
     "store": "宇部店",
@@ -26563,7 +26619,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1897
+    "seq": 1901
   },
   {
     "store": "宇部店",
@@ -26577,7 +26633,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1898
+    "seq": 1902
   },
   {
     "store": "宇部店",
@@ -26591,7 +26647,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1899
+    "seq": 1903
   },
   {
     "store": "宇部店",
@@ -26605,7 +26661,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1900
+    "seq": 1904
   },
   {
     "store": "宇部店",
@@ -26619,7 +26675,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1901
+    "seq": 1905
   },
   {
     "store": "宇部店",
@@ -26633,7 +26689,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1902
+    "seq": 1906
   },
   {
     "store": "宇部店",
@@ -26647,7 +26703,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1903
+    "seq": 1907
   },
   {
     "store": "宇部店",
@@ -26661,7 +26717,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1904
+    "seq": 1908
   },
   {
     "store": "宇部店",
@@ -26675,7 +26731,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1905
+    "seq": 1909
   },
   {
     "store": "宇部店",
@@ -26689,7 +26745,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1906
+    "seq": 1910
   },
   {
     "store": "宇部店",
@@ -26703,7 +26759,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1907
+    "seq": 1911
   },
   {
     "store": "宇部店",
@@ -26717,7 +26773,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1908
+    "seq": 1912
   },
   {
     "store": "宇部店",
@@ -26731,7 +26787,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1909
+    "seq": 1913
   },
   {
     "store": "宇部店",
@@ -26745,7 +26801,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1910
+    "seq": 1914
   },
   {
     "store": "宇部店",
@@ -26759,7 +26815,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1911
+    "seq": 1915
   },
   {
     "store": "宇部店",
@@ -26773,7 +26829,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1912
+    "seq": 1916
   },
   {
     "store": "宇部店",
@@ -26787,7 +26843,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1913
+    "seq": 1917
   },
   {
     "store": "宇部店",
@@ -26801,7 +26857,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1914
+    "seq": 1918
   },
   {
     "store": "宇部店",
@@ -26815,7 +26871,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1915
+    "seq": 1919
   },
   {
     "store": "宇部店",
@@ -26829,7 +26885,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1916
+    "seq": 1920
   },
   {
     "store": "宇部店",
@@ -26843,7 +26899,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1917
+    "seq": 1921
   },
   {
     "store": "宇部店",
@@ -26857,7 +26913,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1918
+    "seq": 1922
   },
   {
     "store": "宇部店",
@@ -26871,7 +26927,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1919
+    "seq": 1923
   },
   {
     "store": "宇部店",
@@ -26885,7 +26941,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1920
+    "seq": 1924
   },
   {
     "store": "宇部店",
@@ -26899,7 +26955,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1921
+    "seq": 1925
   },
   {
     "store": "宇部店",
@@ -26913,7 +26969,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1922
+    "seq": 1926
   },
   {
     "store": "宇部店",
@@ -26927,7 +26983,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1923
+    "seq": 1927
   },
   {
     "store": "宇部店",
@@ -26941,7 +26997,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1924
+    "seq": 1928
   },
   {
     "store": "宇部店",
@@ -26955,7 +27011,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1925
+    "seq": 1929
   },
   {
     "store": "宇部店",
@@ -26969,7 +27025,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1926
+    "seq": 1930
   },
   {
     "store": "宇部店",
@@ -26983,7 +27039,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1927
+    "seq": 1931
   },
   {
     "store": "宇部店",
@@ -26997,7 +27053,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1928
+    "seq": 1932
   },
   {
     "store": "宇部店",
@@ -27011,7 +27067,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1929
+    "seq": 1933
   },
   {
     "store": "宇部店",
@@ -27025,7 +27081,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1930
+    "seq": 1934
   },
   {
     "store": "宇部店",
@@ -27039,7 +27095,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1931
+    "seq": 1935
   },
   {
     "store": "宇部店",
@@ -27053,7 +27109,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1932
+    "seq": 1936
   },
   {
     "store": "宇部店",
@@ -27067,7 +27123,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1933
+    "seq": 1937
   },
   {
     "store": "宇部店",
@@ -27081,7 +27137,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1934
+    "seq": 1938
   },
   {
     "store": "宇部店",
@@ -27095,7 +27151,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1935
+    "seq": 1939
   },
   {
     "store": "宇部店",
@@ -27109,7 +27165,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1936
+    "seq": 1940
   },
   {
     "store": "宇部店",
@@ -27123,7 +27179,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1937
+    "seq": 1941
   },
   {
     "store": "宇部店",
@@ -27137,7 +27193,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1938
+    "seq": 1942
   },
   {
     "store": "宇部店",
@@ -27151,7 +27207,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1939
+    "seq": 1943
   },
   {
     "store": "宇部店",
@@ -27165,7 +27221,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1940
+    "seq": 1944
   },
   {
     "store": "宇部店",
@@ -27179,7 +27235,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1941
+    "seq": 1945
   },
   {
     "store": "宇部店",
@@ -27193,7 +27249,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1942
+    "seq": 1946
   },
   {
     "store": "宇部店",
@@ -27207,7 +27263,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1943
+    "seq": 1947
   },
   {
     "store": "宇部店",
@@ -27221,7 +27277,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1944
+    "seq": 1948
   },
   {
     "store": "宇部店",
@@ -27235,7 +27291,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1945
+    "seq": 1949
   },
   {
     "store": "宇部店",
@@ -27249,7 +27305,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1946
+    "seq": 1950
   },
   {
     "store": "宇部店",
@@ -27263,7 +27319,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1947
+    "seq": 1951
   },
   {
     "store": "宇部店",
@@ -27277,7 +27333,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1948
+    "seq": 1952
   },
   {
     "store": "宇部店",
@@ -27291,7 +27347,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1949
+    "seq": 1953
   },
   {
     "store": "宇部店",
@@ -27305,7 +27361,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1950
+    "seq": 1954
   },
   {
     "store": "宇部店",
@@ -27319,7 +27375,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1951
+    "seq": 1955
   },
   {
     "store": "宇部店",
@@ -27333,7 +27389,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1952
+    "seq": 1956
   },
   {
     "store": "宇部店",
@@ -27347,7 +27403,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1953
+    "seq": 1957
   },
   {
     "store": "宇部店",
@@ -27361,7 +27417,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1954
+    "seq": 1958
   },
   {
     "store": "宇部店",
@@ -27375,7 +27431,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1955
+    "seq": 1959
   },
   {
     "store": "宇部店",
@@ -27389,7 +27445,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1956
+    "seq": 1960
   },
   {
     "store": "宇部店",
@@ -27403,7 +27459,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1957
+    "seq": 1961
   },
   {
     "store": "宇部店",
@@ -27417,7 +27473,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1958
+    "seq": 1962
   },
   {
     "store": "宇部店",
@@ -27431,7 +27487,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1959
+    "seq": 1963
   },
   {
     "store": "宇部店",
@@ -27445,7 +27501,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1960
+    "seq": 1964
   },
   {
     "store": "宇部店",
@@ -27459,7 +27515,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1961
+    "seq": 1965
   },
   {
     "store": "宇部店",
@@ -27473,7 +27529,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1962
+    "seq": 1966
   },
   {
     "store": "宇部店",
@@ -27487,7 +27543,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1963
+    "seq": 1967
   },
   {
     "store": "宇部店",
@@ -27501,7 +27557,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1964
+    "seq": 1968
   },
   {
     "store": "宇部店",
@@ -27515,7 +27571,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1965
+    "seq": 1969
   },
   {
     "store": "宇部店",
@@ -27529,7 +27585,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1966
+    "seq": 1970
   },
   {
     "store": "宇部店",
@@ -27543,7 +27599,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1967
+    "seq": 1971
   },
   {
     "store": "宇部店",
@@ -27557,7 +27613,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1968
+    "seq": 1972
   },
   {
     "store": "宇部店",
@@ -27571,7 +27627,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1969
+    "seq": 1973
   },
   {
     "store": "宇部店",
@@ -27585,7 +27641,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1970
+    "seq": 1974
   },
   {
     "store": "宇部店",
@@ -27599,7 +27655,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1971
+    "seq": 1975
   },
   {
     "store": "宇部店",
@@ -27613,7 +27669,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1972
+    "seq": 1976
   },
   {
     "store": "宇部店",
@@ -27627,7 +27683,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1973
+    "seq": 1977
   },
   {
     "store": "宇部店",
@@ -27641,7 +27697,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1974
+    "seq": 1978
   },
   {
     "store": "宇部店",
@@ -27655,7 +27711,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1975
+    "seq": 1979
   },
   {
     "store": "宇部店",
@@ -27669,7 +27725,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1976
+    "seq": 1980
   },
   {
     "store": "宇部店",
@@ -27683,7 +27739,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1977
+    "seq": 1981
   },
   {
     "store": "宇部店",
@@ -27697,7 +27753,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1978
+    "seq": 1982
   },
   {
     "store": "宇部店",
@@ -27711,7 +27767,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1979
+    "seq": 1983
   },
   {
     "store": "宇部店",
@@ -27725,7 +27781,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1980
+    "seq": 1984
   },
   {
     "store": "宇部店",
@@ -27739,7 +27795,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1981
+    "seq": 1985
   },
   {
     "store": "宇部店",
@@ -27753,7 +27809,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1982
+    "seq": 1986
   },
   {
     "store": "宇部店",
@@ -27767,7 +27823,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1983
+    "seq": 1987
   },
   {
     "store": "宇部店",
@@ -27781,7 +27837,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1984
+    "seq": 1988
   },
   {
     "store": "宇部店",
@@ -27795,7 +27851,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1985
+    "seq": 1989
   },
   {
     "store": "宇部店",
@@ -27809,7 +27865,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1986
+    "seq": 1990
   },
   {
     "store": "宇部店",
@@ -27823,7 +27879,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1987
+    "seq": 1991
   },
   {
     "store": "宇部店",
@@ -27837,7 +27893,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1988
+    "seq": 1992
   },
   {
     "store": "宇部店",
@@ -27851,7 +27907,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1989
+    "seq": 1993
   },
   {
     "store": "宇部店",
@@ -27865,7 +27921,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1990
+    "seq": 1994
   },
   {
     "store": "宇部店",
@@ -27879,7 +27935,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1991
+    "seq": 1995
   },
   {
     "store": "宇部店",
@@ -27893,7 +27949,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1992
+    "seq": 1996
   },
   {
     "store": "宇部店",
@@ -27907,7 +27963,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1993
+    "seq": 1997
   },
   {
     "store": "宇部店",
@@ -27921,7 +27977,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1994
+    "seq": 1998
   },
   {
     "store": "宇部店",
@@ -27935,7 +27991,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1995
+    "seq": 1999
   },
   {
     "store": "宇部店",
@@ -27949,7 +28005,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1996
+    "seq": 2000
   },
   {
     "store": "宇部店",
@@ -27963,7 +28019,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1997
+    "seq": 2001
   },
   {
     "store": "宇部店",
@@ -27977,7 +28033,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1998
+    "seq": 2002
   },
   {
     "store": "宇部店",
@@ -27991,7 +28047,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 1999
+    "seq": 2003
   },
   {
     "store": "宇部店",
@@ -28005,7 +28061,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2000
+    "seq": 2004
   },
   {
     "store": "宇部店",
@@ -28019,7 +28075,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2001
+    "seq": 2005
   },
   {
     "store": "宇部店",
@@ -28033,7 +28089,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2002
+    "seq": 2006
   },
   {
     "store": "宇部店",
@@ -28047,7 +28103,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2003
+    "seq": 2007
   },
   {
     "store": "宇部店",
@@ -28061,7 +28117,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2004
+    "seq": 2008
   },
   {
     "store": "宇部店",
@@ -28075,7 +28131,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2005
+    "seq": 2009
   },
   {
     "store": "宇部店",
@@ -28089,7 +28145,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2006
+    "seq": 2010
   },
   {
     "store": "宇部店",
@@ -28103,7 +28159,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2007
+    "seq": 2011
   },
   {
     "store": "宇部店",
@@ -28117,7 +28173,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2008
+    "seq": 2012
   },
   {
     "store": "宇部店",
@@ -28131,7 +28187,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2009
+    "seq": 2013
   },
   {
     "store": "宇部店",
@@ -28145,7 +28201,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2010
+    "seq": 2014
   },
   {
     "store": "宇部店",
@@ -28159,7 +28215,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2011
+    "seq": 2015
   },
   {
     "store": "宇部店",
@@ -28173,7 +28229,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2012
+    "seq": 2016
   },
   {
     "store": "宇部店",
@@ -28187,7 +28243,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2013
+    "seq": 2017
   },
   {
     "store": "宇部店",
@@ -28201,7 +28257,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2014
+    "seq": 2018
   },
   {
     "store": "宇部店",
@@ -28215,7 +28271,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2015
+    "seq": 2019
   },
   {
     "store": "宇部店",
@@ -28229,7 +28285,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2016
+    "seq": 2020
   },
   {
     "store": "宇部店",
@@ -28243,7 +28299,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2017
+    "seq": 2021
   },
   {
     "store": "宇部店",
@@ -28257,7 +28313,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2018
+    "seq": 2022
   },
   {
     "store": "宇部店",
@@ -28271,7 +28327,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2019
+    "seq": 2023
   },
   {
     "store": "宇部店",
@@ -28285,7 +28341,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2020
+    "seq": 2024
   },
   {
     "store": "宇部店",
@@ -28299,7 +28355,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2021
+    "seq": 2025
   },
   {
     "store": "宇部店",
@@ -28313,7 +28369,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2022
+    "seq": 2026
   },
   {
     "store": "宇部店",
@@ -28327,7 +28383,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 02)宇部店.xlsm"
     ],
-    "seq": 2023
+    "seq": 2027
   },
   {
     "store": "宇部店",
@@ -28341,7 +28397,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2024
+    "seq": 2028
   },
   {
     "store": "宇部店",
@@ -28355,7 +28411,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2025
+    "seq": 2029
   },
   {
     "store": "宇部店",
@@ -28369,7 +28425,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2026
+    "seq": 2030
   },
   {
     "store": "宇部店",
@@ -28383,7 +28439,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2027
+    "seq": 2031
   },
   {
     "store": "宇部店",
@@ -28397,7 +28453,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2028
+    "seq": 2032
   },
   {
     "store": "宇部店",
@@ -28411,7 +28467,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2029
+    "seq": 2033
   },
   {
     "store": "宇部店",
@@ -28425,7 +28481,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2030
+    "seq": 2034
   },
   {
     "store": "宇部店",
@@ -28439,7 +28495,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2031
+    "seq": 2035
   },
   {
     "store": "宇部店",
@@ -28453,7 +28509,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2032
+    "seq": 2036
   },
   {
     "store": "宇部店",
@@ -28467,7 +28523,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2033
+    "seq": 2037
   },
   {
     "store": "宇部店",
@@ -28481,7 +28537,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2034
+    "seq": 2038
   },
   {
     "store": "宇部店",
@@ -28495,7 +28551,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2035
+    "seq": 2039
   },
   {
     "store": "宇部店",
@@ -28509,7 +28565,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2036
+    "seq": 2040
   },
   {
     "store": "宇部店",
@@ -28523,7 +28579,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2037
+    "seq": 2041
   },
   {
     "store": "宇部店",
@@ -28537,7 +28593,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2038
+    "seq": 2042
   },
   {
     "store": "宇部店",
@@ -28551,7 +28607,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2039
+    "seq": 2043
   },
   {
     "store": "宇部店",
@@ -28565,7 +28621,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2040
+    "seq": 2044
   },
   {
     "store": "宇部店",
@@ -28579,7 +28635,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2041
+    "seq": 2045
   },
   {
     "store": "宇部店",
@@ -28593,7 +28649,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2042
+    "seq": 2046
   },
   {
     "store": "宇部店",
@@ -28607,7 +28663,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2043
+    "seq": 2047
   },
   {
     "store": "宇部店",
@@ -28621,7 +28677,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2044
+    "seq": 2048
   },
   {
     "store": "宇部店",
@@ -28635,7 +28691,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2045
+    "seq": 2049
   },
   {
     "store": "宇部店",
@@ -28649,7 +28705,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2046
+    "seq": 2050
   },
   {
     "store": "宇部店",
@@ -28663,7 +28719,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2047
+    "seq": 2051
   },
   {
     "store": "宇部店",
@@ -28677,7 +28733,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2048
+    "seq": 2052
   },
   {
     "store": "宇部店",
@@ -28691,7 +28747,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2049
+    "seq": 2053
   },
   {
     "store": "宇部店",
@@ -28705,7 +28761,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2050
+    "seq": 2054
   },
   {
     "store": "宇部店",
@@ -28719,7 +28775,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2051
+    "seq": 2055
   },
   {
     "store": "宇部店",
@@ -28733,7 +28789,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2052
+    "seq": 2056
   },
   {
     "store": "宇部店",
@@ -28747,7 +28803,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2053
+    "seq": 2057
   },
   {
     "store": "宇部店",
@@ -28761,7 +28817,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2054
+    "seq": 2058
   },
   {
     "store": "宇部店",
@@ -28775,7 +28831,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2055
+    "seq": 2059
   },
   {
     "store": "宇部店",
@@ -28789,7 +28845,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2056
+    "seq": 2060
   },
   {
     "store": "宇部店",
@@ -28803,7 +28859,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2057
+    "seq": 2061
   },
   {
     "store": "宇部店",
@@ -28817,7 +28873,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2058
+    "seq": 2062
   },
   {
     "store": "宇部店",
@@ -28831,7 +28887,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2059
+    "seq": 2063
   },
   {
     "store": "宇部店",
@@ -28845,7 +28901,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2060
+    "seq": 2064
   },
   {
     "store": "宇部店",
@@ -28859,7 +28915,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2061
+    "seq": 2065
   },
   {
     "store": "宇部店",
@@ -28873,7 +28929,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2062
+    "seq": 2066
   },
   {
     "store": "宇部店",
@@ -28887,7 +28943,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2063
+    "seq": 2067
   },
   {
     "store": "宇部店",
@@ -28901,7 +28957,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2064
+    "seq": 2068
   },
   {
     "store": "宇部店",
@@ -28915,7 +28971,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2065
+    "seq": 2069
   },
   {
     "store": "宇部店",
@@ -28929,7 +28985,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2066
+    "seq": 2070
   },
   {
     "store": "宇部店",
@@ -28943,7 +28999,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2067
+    "seq": 2071
   },
   {
     "store": "宇部店",
@@ -28957,7 +29013,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2068
+    "seq": 2072
   },
   {
     "store": "宇部店",
@@ -28971,7 +29027,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2069
+    "seq": 2073
   },
   {
     "store": "宇部店",
@@ -28985,7 +29041,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2070
+    "seq": 2074
   },
   {
     "store": "宇部店",
@@ -28999,7 +29055,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2071
+    "seq": 2075
   },
   {
     "store": "宇部店",
@@ -29013,7 +29069,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2072
+    "seq": 2076
   },
   {
     "store": "宇部店",
@@ -29027,7 +29083,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2073
+    "seq": 2077
   },
   {
     "store": "宇部店",
@@ -29041,7 +29097,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2074
+    "seq": 2078
   },
   {
     "store": "宇部店",
@@ -29055,7 +29111,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2075
+    "seq": 2079
   },
   {
     "store": "宇部店",
@@ -29069,7 +29125,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2076
+    "seq": 2080
   },
   {
     "store": "宇部店",
@@ -29083,7 +29139,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2077
+    "seq": 2081
   },
   {
     "store": "宇部店",
@@ -29097,7 +29153,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2078
+    "seq": 2082
   },
   {
     "store": "宇部店",
@@ -29111,7 +29167,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2079
+    "seq": 2083
   },
   {
     "store": "宇部店",
@@ -29125,7 +29181,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2080
+    "seq": 2084
   },
   {
     "store": "宇部店",
@@ -29139,7 +29195,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2081
+    "seq": 2085
   },
   {
     "store": "宇部店",
@@ -29153,7 +29209,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2082
+    "seq": 2086
   },
   {
     "store": "宇部店",
@@ -29167,7 +29223,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2083
+    "seq": 2087
   },
   {
     "store": "宇部店",
@@ -29181,7 +29237,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2084
+    "seq": 2088
   },
   {
     "store": "宇部店",
@@ -29195,7 +29251,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2085
+    "seq": 2089
   },
   {
     "store": "宇部店",
@@ -29209,7 +29265,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2086
+    "seq": 2090
   },
   {
     "store": "宇部店",
@@ -29223,7 +29279,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2087
+    "seq": 2091
   },
   {
     "store": "宇部店",
@@ -29237,7 +29293,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2088
+    "seq": 2092
   },
   {
     "store": "宇部店",
@@ -29251,7 +29307,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2089
+    "seq": 2093
   },
   {
     "store": "宇部店",
@@ -29265,7 +29321,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2090
+    "seq": 2094
   },
   {
     "store": "宇部店",
@@ -29279,7 +29335,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2091
+    "seq": 2095
   },
   {
     "store": "宇部店",
@@ -29293,7 +29349,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2092
+    "seq": 2096
   },
   {
     "store": "宇部店",
@@ -29307,7 +29363,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2093
+    "seq": 2097
   },
   {
     "store": "宇部店",
@@ -29321,7 +29377,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2094
+    "seq": 2098
   },
   {
     "store": "宇部店",
@@ -29335,7 +29391,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2095
+    "seq": 2099
   },
   {
     "store": "宇部店",
@@ -29349,7 +29405,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2096
+    "seq": 2100
   },
   {
     "store": "宇部店",
@@ -29363,7 +29419,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2097
+    "seq": 2101
   },
   {
     "store": "宇部店",
@@ -29377,7 +29433,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2098
+    "seq": 2102
   },
   {
     "store": "宇部店",
@@ -29391,7 +29447,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2099
+    "seq": 2103
   },
   {
     "store": "宇部店",
@@ -29405,7 +29461,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2100
+    "seq": 2104
   },
   {
     "store": "宇部店",
@@ -29419,7 +29475,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2101
+    "seq": 2105
   },
   {
     "store": "宇部店",
@@ -29433,7 +29489,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2102
+    "seq": 2106
   },
   {
     "store": "宇部店",
@@ -29447,7 +29503,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2103
+    "seq": 2107
   },
   {
     "store": "宇部店",
@@ -29461,7 +29517,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2104
+    "seq": 2108
   },
   {
     "store": "宇部店",
@@ -29475,7 +29531,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2105
+    "seq": 2109
   },
   {
     "store": "宇部店",
@@ -29489,7 +29545,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2106
+    "seq": 2110
   },
   {
     "store": "宇部店",
@@ -29503,7 +29559,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2107
+    "seq": 2111
   },
   {
     "store": "宇部店",
@@ -29517,7 +29573,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2108
+    "seq": 2112
   },
   {
     "store": "宇部店",
@@ -29531,7 +29587,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2109
+    "seq": 2113
   },
   {
     "store": "宇部店",
@@ -29540,12 +29596,12 @@ window.COLLECTION_DATA = [
     "name": "山下　安子",
     "paymentType": "cash",
     "address": "宇部市亀浦４－３－３１",
-    "amount": 32456,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2110
+    "seq": 2114
   },
   {
     "store": "宇部店",
@@ -29559,7 +29615,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2111
+    "seq": 2115
   },
   {
     "store": "宇部店",
@@ -29573,7 +29629,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2112
+    "seq": 2116
   },
   {
     "store": "宇部店",
@@ -29587,7 +29643,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2113
+    "seq": 2117
   },
   {
     "store": "宇部店",
@@ -29601,7 +29657,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2114
+    "seq": 2118
   },
   {
     "store": "宇部店",
@@ -29615,7 +29671,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2115
+    "seq": 2119
   },
   {
     "store": "宇部店",
@@ -29629,7 +29685,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2116
+    "seq": 2120
   },
   {
     "store": "宇部店",
@@ -29643,7 +29699,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2117
+    "seq": 2121
   },
   {
     "store": "宇部店",
@@ -29657,7 +29713,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2118
+    "seq": 2122
   },
   {
     "store": "宇部店",
@@ -29671,7 +29727,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2119
+    "seq": 2123
   },
   {
     "store": "宇部店",
@@ -29685,7 +29741,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2120
+    "seq": 2124
   },
   {
     "store": "宇部店",
@@ -29699,7 +29755,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2121
+    "seq": 2125
   },
   {
     "store": "宇部店",
@@ -29713,7 +29769,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2122
+    "seq": 2126
   },
   {
     "store": "宇部店",
@@ -29727,7 +29783,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2123
+    "seq": 2127
   },
   {
     "store": "宇部店",
@@ -29741,7 +29797,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2124
+    "seq": 2128
   },
   {
     "store": "宇部店",
@@ -29755,7 +29811,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2125
+    "seq": 2129
   },
   {
     "store": "宇部店",
@@ -29769,7 +29825,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2126
+    "seq": 2130
   },
   {
     "store": "宇部店",
@@ -29783,7 +29839,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2127
+    "seq": 2131
   },
   {
     "store": "宇部店",
@@ -29797,7 +29853,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2128
+    "seq": 2132
   },
   {
     "store": "宇部店",
@@ -29811,7 +29867,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2129
+    "seq": 2133
   },
   {
     "store": "宇部店",
@@ -29825,7 +29881,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2130
+    "seq": 2134
   },
   {
     "store": "宇部店",
@@ -29839,7 +29895,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2131
+    "seq": 2135
   },
   {
     "store": "宇部店",
@@ -29853,7 +29909,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2132
+    "seq": 2136
   },
   {
     "store": "宇部店",
@@ -29867,7 +29923,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2133
+    "seq": 2137
   },
   {
     "store": "宇部店",
@@ -29881,7 +29937,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2134
+    "seq": 2138
   },
   {
     "store": "宇部店",
@@ -29895,7 +29951,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2135
+    "seq": 2139
   },
   {
     "store": "宇部店",
@@ -29909,7 +29965,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2136
+    "seq": 2140
   },
   {
     "store": "宇部店",
@@ -29923,7 +29979,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2137
+    "seq": 2141
   },
   {
     "store": "宇部店",
@@ -29937,7 +29993,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2138
+    "seq": 2142
   },
   {
     "store": "宇部店",
@@ -29951,7 +30007,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2139
+    "seq": 2143
   },
   {
     "store": "宇部店",
@@ -29965,7 +30021,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2140
+    "seq": 2144
   },
   {
     "store": "宇部店",
@@ -29979,7 +30035,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2141
+    "seq": 2145
   },
   {
     "store": "宇部店",
@@ -29993,7 +30049,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2142
+    "seq": 2146
   },
   {
     "store": "宇部店",
@@ -30007,7 +30063,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2143
+    "seq": 2147
   },
   {
     "store": "宇部店",
@@ -30021,7 +30077,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2144
+    "seq": 2148
   },
   {
     "store": "宇部店",
@@ -30035,7 +30091,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2145
+    "seq": 2149
   },
   {
     "store": "宇部店",
@@ -30049,7 +30105,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2146
+    "seq": 2150
   },
   {
     "store": "宇部店",
@@ -30063,7 +30119,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2147
+    "seq": 2151
   },
   {
     "store": "宇部店",
@@ -30077,7 +30133,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2148
+    "seq": 2152
   },
   {
     "store": "宇部店",
@@ -30091,7 +30147,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2149
+    "seq": 2153
   },
   {
     "store": "宇部店",
@@ -30105,7 +30161,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2150
+    "seq": 2154
   },
   {
     "store": "宇部店",
@@ -30119,7 +30175,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2151
+    "seq": 2155
   },
   {
     "store": "宇部店",
@@ -30133,7 +30189,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2152
+    "seq": 2156
   },
   {
     "store": "宇部店",
@@ -30147,7 +30203,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2153
+    "seq": 2157
   },
   {
     "store": "宇部店",
@@ -30161,7 +30217,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2154
+    "seq": 2158
   },
   {
     "store": "宇部店",
@@ -30175,7 +30231,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2155
+    "seq": 2159
   },
   {
     "store": "宇部店",
@@ -30189,7 +30245,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2156
+    "seq": 2160
   },
   {
     "store": "宇部店",
@@ -30203,7 +30259,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2157
+    "seq": 2161
   },
   {
     "store": "宇部店",
@@ -30212,12 +30268,12 @@ window.COLLECTION_DATA = [
     "name": "大沢　サツキ",
     "paymentType": "cash",
     "address": "宇部市西岐波大沢西4-723",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2158
+    "seq": 2162
   },
   {
     "store": "宇部店",
@@ -30231,7 +30287,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2159
+    "seq": 2163
   },
   {
     "store": "宇部店",
@@ -30245,7 +30301,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2160
+    "seq": 2164
   },
   {
     "store": "宇部店",
@@ -30259,7 +30315,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2161
+    "seq": 2165
   },
   {
     "store": "宇部店",
@@ -30273,7 +30329,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2162
+    "seq": 2166
   },
   {
     "store": "宇部店",
@@ -30287,7 +30343,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2163
+    "seq": 2167
   },
   {
     "store": "宇部店",
@@ -30301,7 +30357,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2164
+    "seq": 2168
   },
   {
     "store": "宇部店",
@@ -30315,7 +30371,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2165
+    "seq": 2169
   },
   {
     "store": "宇部店",
@@ -30329,7 +30385,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2166
+    "seq": 2170
   },
   {
     "store": "宇部店",
@@ -30343,7 +30399,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2167
+    "seq": 2171
   },
   {
     "store": "宇部店",
@@ -30357,7 +30413,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2168
+    "seq": 2172
   },
   {
     "store": "宇部店",
@@ -30371,7 +30427,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2169
+    "seq": 2173
   },
   {
     "store": "宇部店",
@@ -30385,7 +30441,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2170
+    "seq": 2174
   },
   {
     "store": "宇部店",
@@ -30399,7 +30455,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2171
+    "seq": 2175
   },
   {
     "store": "宇部店",
@@ -30413,7 +30469,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2172
+    "seq": 2176
   },
   {
     "store": "宇部店",
@@ -30427,7 +30483,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2173
+    "seq": 2177
   },
   {
     "store": "宇部店",
@@ -30441,7 +30497,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2174
+    "seq": 2178
   },
   {
     "store": "宇部店",
@@ -30455,7 +30511,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2175
+    "seq": 2179
   },
   {
     "store": "宇部店",
@@ -30469,7 +30525,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2176
+    "seq": 2180
   },
   {
     "store": "宇部店",
@@ -30483,7 +30539,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2177
+    "seq": 2181
   },
   {
     "store": "宇部店",
@@ -30497,7 +30553,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2178
+    "seq": 2182
   },
   {
     "store": "宇部店",
@@ -30511,7 +30567,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2179
+    "seq": 2183
   },
   {
     "store": "宇部店",
@@ -30525,7 +30581,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2180
+    "seq": 2184
   },
   {
     "store": "宇部店",
@@ -30539,7 +30595,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2181
+    "seq": 2185
   },
   {
     "store": "宇部店",
@@ -30548,12 +30604,12 @@ window.COLLECTION_DATA = [
     "name": "原木　秀夫",
     "paymentType": "cash",
     "address": "山陽小野田市住吉本町２丁目７－３１",
-    "amount": 27125,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2182
+    "seq": 2186
   },
   {
     "store": "宇部店",
@@ -30567,7 +30623,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2183
+    "seq": 2187
   },
   {
     "store": "宇部店",
@@ -30581,7 +30637,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2184
+    "seq": 2188
   },
   {
     "store": "宇部店",
@@ -30595,7 +30651,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2185
+    "seq": 2189
   },
   {
     "store": "宇部店",
@@ -30609,7 +30665,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2186
+    "seq": 2190
   },
   {
     "store": "宇部店",
@@ -30623,7 +30679,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2187
+    "seq": 2191
   },
   {
     "store": "宇部店",
@@ -30637,7 +30693,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2188
+    "seq": 2192
   },
   {
     "store": "宇部店",
@@ -30651,7 +30707,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2189
+    "seq": 2193
   },
   {
     "store": "宇部店",
@@ -30665,7 +30721,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2190
+    "seq": 2194
   },
   {
     "store": "宇部店",
@@ -30679,7 +30735,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2191
+    "seq": 2195
   },
   {
     "store": "宇部店",
@@ -30693,7 +30749,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2192
+    "seq": 2196
   },
   {
     "store": "宇部店",
@@ -30707,7 +30763,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2193
+    "seq": 2197
   },
   {
     "store": "宇部店",
@@ -30721,7 +30777,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2194
+    "seq": 2198
   },
   {
     "store": "宇部店",
@@ -30735,7 +30791,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2195
+    "seq": 2199
   },
   {
     "store": "宇部店",
@@ -30749,7 +30805,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2196
+    "seq": 2200
   },
   {
     "store": "宇部店",
@@ -30763,7 +30819,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2197
+    "seq": 2201
   },
   {
     "store": "宇部店",
@@ -30777,7 +30833,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2198
+    "seq": 2202
   },
   {
     "store": "宇部店",
@@ -30791,7 +30847,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2199
+    "seq": 2203
   },
   {
     "store": "宇部店",
@@ -30805,7 +30861,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2200
+    "seq": 2204
   },
   {
     "store": "宇部店",
@@ -30819,7 +30875,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2201
+    "seq": 2205
   },
   {
     "store": "宇部店",
@@ -30833,7 +30889,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2202
+    "seq": 2206
   },
   {
     "store": "宇部店",
@@ -30842,12 +30898,12 @@ window.COLLECTION_DATA = [
     "name": "戸澤　こうじ",
     "paymentType": "cash",
     "address": "山陽小野田市有帆杵築４５５－１４",
-    "amount": 14673,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2203
+    "seq": 2207
   },
   {
     "store": "宇部店",
@@ -30861,7 +30917,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2204
+    "seq": 2208
   },
   {
     "store": "宇部店",
@@ -30875,7 +30931,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2205
+    "seq": 2209
   },
   {
     "store": "宇部店",
@@ -30889,7 +30945,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2206
+    "seq": 2210
   },
   {
     "store": "宇部店",
@@ -30903,7 +30959,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2207
+    "seq": 2211
   },
   {
     "store": "宇部店",
@@ -30917,7 +30973,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2208
+    "seq": 2212
   },
   {
     "store": "宇部店",
@@ -30931,7 +30987,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2209
+    "seq": 2213
   },
   {
     "store": "宇部店",
@@ -30945,7 +31001,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2210
+    "seq": 2214
   },
   {
     "store": "宇部店",
@@ -30959,7 +31015,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2211
+    "seq": 2215
   },
   {
     "store": "宇部店",
@@ -30973,7 +31029,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2212
+    "seq": 2216
   },
   {
     "store": "宇部店",
@@ -30987,7 +31043,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2213
+    "seq": 2217
   },
   {
     "store": "宇部店",
@@ -31001,7 +31057,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2214
+    "seq": 2218
   },
   {
     "store": "宇部店",
@@ -31015,7 +31071,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2215
+    "seq": 2219
   },
   {
     "store": "宇部店",
@@ -31029,7 +31085,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2216
+    "seq": 2220
   },
   {
     "store": "宇部店",
@@ -31043,7 +31099,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2217
+    "seq": 2221
   },
   {
     "store": "宇部店",
@@ -31057,7 +31113,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2218
+    "seq": 2222
   },
   {
     "store": "宇部店",
@@ -31071,7 +31127,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2219
+    "seq": 2223
   },
   {
     "store": "宇部店",
@@ -31085,7 +31141,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2220
+    "seq": 2224
   },
   {
     "store": "宇部店",
@@ -31099,7 +31155,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2221
+    "seq": 2225
   },
   {
     "store": "宇部店",
@@ -31113,7 +31169,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2222
+    "seq": 2226
   },
   {
     "store": "宇部店",
@@ -31127,7 +31183,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2223
+    "seq": 2227
   },
   {
     "store": "宇部店",
@@ -31141,7 +31197,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2224
+    "seq": 2228
   },
   {
     "store": "宇部店",
@@ -31155,7 +31211,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2225
+    "seq": 2229
   },
   {
     "store": "宇部店",
@@ -31169,7 +31225,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2226
+    "seq": 2230
   },
   {
     "store": "宇部店",
@@ -31183,7 +31239,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2227
+    "seq": 2231
   },
   {
     "store": "宇部店",
@@ -31197,7 +31253,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2228
+    "seq": 2232
   },
   {
     "store": "宇部店",
@@ -31211,7 +31267,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2229
+    "seq": 2233
   },
   {
     "store": "宇部店",
@@ -31225,7 +31281,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2230
+    "seq": 2234
   },
   {
     "store": "宇部店",
@@ -31239,7 +31295,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2231
+    "seq": 2235
   },
   {
     "store": "宇部店",
@@ -31253,7 +31309,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2232
+    "seq": 2236
   },
   {
     "store": "宇部店",
@@ -31267,7 +31323,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2233
+    "seq": 2237
   },
   {
     "store": "宇部店",
@@ -31281,7 +31337,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2234
+    "seq": 2238
   },
   {
     "store": "宇部店",
@@ -31295,7 +31351,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2235
+    "seq": 2239
   },
   {
     "store": "宇部店",
@@ -31309,7 +31365,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2236
+    "seq": 2240
   },
   {
     "store": "宇部店",
@@ -31323,7 +31379,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2237
+    "seq": 2241
   },
   {
     "store": "宇部店",
@@ -31337,7 +31393,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2238
+    "seq": 2242
   },
   {
     "store": "宇部店",
@@ -31351,7 +31407,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2239
+    "seq": 2243
   },
   {
     "store": "宇部店",
@@ -31365,7 +31421,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2240
+    "seq": 2244
   },
   {
     "store": "宇部店",
@@ -31379,7 +31435,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2241
+    "seq": 2245
   },
   {
     "store": "宇部店",
@@ -31393,7 +31449,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2242
+    "seq": 2246
   },
   {
     "store": "宇部店",
@@ -31407,7 +31463,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2243
+    "seq": 2247
   },
   {
     "store": "宇部店",
@@ -31421,7 +31477,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2244
+    "seq": 2248
   },
   {
     "store": "宇部店",
@@ -31435,7 +31491,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2245
+    "seq": 2249
   },
   {
     "store": "宇部店",
@@ -31449,7 +31505,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2246
+    "seq": 2250
   },
   {
     "store": "宇部店",
@@ -31463,7 +31519,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2247
+    "seq": 2251
   },
   {
     "store": "宇部店",
@@ -31477,7 +31533,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2248
+    "seq": 2252
   },
   {
     "store": "宇部店",
@@ -31491,7 +31547,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2249
+    "seq": 2253
   },
   {
     "store": "宇部店",
@@ -31505,7 +31561,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2250
+    "seq": 2254
   },
   {
     "store": "宇部店",
@@ -31519,7 +31575,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2251
+    "seq": 2255
   },
   {
     "store": "宇部店",
@@ -31533,7 +31589,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2252
+    "seq": 2256
   },
   {
     "store": "宇部店",
@@ -31547,7 +31603,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2253
+    "seq": 2257
   },
   {
     "store": "宇部店",
@@ -31561,7 +31617,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2254
+    "seq": 2258
   },
   {
     "store": "宇部店",
@@ -31575,7 +31631,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2255
+    "seq": 2259
   },
   {
     "store": "宇部店",
@@ -31589,7 +31645,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2256
+    "seq": 2260
   },
   {
     "store": "宇部店",
@@ -31603,7 +31659,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2257
+    "seq": 2261
   },
   {
     "store": "宇部店",
@@ -31617,7 +31673,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2258
+    "seq": 2262
   },
   {
     "store": "宇部店",
@@ -31631,7 +31687,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2259
+    "seq": 2263
   },
   {
     "store": "宇部店",
@@ -31645,7 +31701,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2260
+    "seq": 2264
   },
   {
     "store": "宇部店",
@@ -31659,7 +31715,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2261
+    "seq": 2265
   },
   {
     "store": "宇部店",
@@ -31673,7 +31729,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2262
+    "seq": 2266
   },
   {
     "store": "宇部店",
@@ -31687,7 +31743,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2263
+    "seq": 2267
   },
   {
     "store": "宇部店",
@@ -31701,7 +31757,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2264
+    "seq": 2268
   },
   {
     "store": "宇部店",
@@ -31715,7 +31771,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2265
+    "seq": 2269
   },
   {
     "store": "宇部店",
@@ -31729,7 +31785,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2266
+    "seq": 2270
   },
   {
     "store": "宇部店",
@@ -31743,7 +31799,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2267
+    "seq": 2271
   },
   {
     "store": "宇部店",
@@ -31757,7 +31813,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2268
+    "seq": 2272
   },
   {
     "store": "宇部店",
@@ -31771,7 +31827,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2269
+    "seq": 2273
   },
   {
     "store": "宇部店",
@@ -31785,7 +31841,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2270
+    "seq": 2274
   },
   {
     "store": "宇部店",
@@ -31799,7 +31855,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2271
+    "seq": 2275
   },
   {
     "store": "宇部店",
@@ -31813,7 +31869,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2272
+    "seq": 2276
   },
   {
     "store": "宇部店",
@@ -31827,7 +31883,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2273
+    "seq": 2277
   },
   {
     "store": "宇部店",
@@ -31841,7 +31897,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2274
+    "seq": 2278
   },
   {
     "store": "宇部店",
@@ -31855,7 +31911,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2275
+    "seq": 2279
   },
   {
     "store": "宇部店",
@@ -31869,7 +31925,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2276
+    "seq": 2280
   },
   {
     "store": "宇部店",
@@ -31883,7 +31939,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2277
+    "seq": 2281
   },
   {
     "store": "宇部店",
@@ -31897,7 +31953,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2278
+    "seq": 2282
   },
   {
     "store": "宇部店",
@@ -31911,7 +31967,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2279
+    "seq": 2283
   },
   {
     "store": "宇部店",
@@ -31925,7 +31981,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2280
+    "seq": 2284
   },
   {
     "store": "宇部店",
@@ -31939,7 +31995,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2281
+    "seq": 2285
   },
   {
     "store": "宇部店",
@@ -31953,7 +32009,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2282
+    "seq": 2286
   },
   {
     "store": "宇部店",
@@ -31967,7 +32023,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2283
+    "seq": 2287
   },
   {
     "store": "宇部店",
@@ -31981,7 +32037,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2284
+    "seq": 2288
   },
   {
     "store": "宇部店",
@@ -31995,7 +32051,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2285
+    "seq": 2289
   },
   {
     "store": "宇部店",
@@ -32009,7 +32065,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2286
+    "seq": 2290
   },
   {
     "store": "宇部店",
@@ -32023,7 +32079,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2287
+    "seq": 2291
   },
   {
     "store": "宇部店",
@@ -32037,7 +32093,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2288
+    "seq": 2292
   },
   {
     "store": "宇部店",
@@ -32051,7 +32107,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2289
+    "seq": 2293
   },
   {
     "store": "宇部店",
@@ -32065,7 +32121,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2290
+    "seq": 2294
   },
   {
     "store": "宇部店",
@@ -32079,7 +32135,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2291
+    "seq": 2295
   },
   {
     "store": "宇部店",
@@ -32093,7 +32149,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2292
+    "seq": 2296
   },
   {
     "store": "宇部店",
@@ -32107,7 +32163,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2293
+    "seq": 2297
   },
   {
     "store": "宇部店",
@@ -32121,7 +32177,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2294
+    "seq": 2298
   },
   {
     "store": "宇部店",
@@ -32135,7 +32191,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2295
+    "seq": 2299
   },
   {
     "store": "宇部店",
@@ -32149,7 +32205,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2296
+    "seq": 2300
   },
   {
     "store": "宇部店",
@@ -32163,7 +32219,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2297
+    "seq": 2301
   },
   {
     "store": "宇部店",
@@ -32177,7 +32233,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2298
+    "seq": 2302
   },
   {
     "store": "宇部店",
@@ -32191,7 +32247,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2299
+    "seq": 2303
   },
   {
     "store": "宇部店",
@@ -32205,7 +32261,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2300
+    "seq": 2304
   },
   {
     "store": "宇部店",
@@ -32219,7 +32275,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2301
+    "seq": 2305
   },
   {
     "store": "宇部店",
@@ -32233,7 +32289,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2302
+    "seq": 2306
   },
   {
     "store": "宇部店",
@@ -32247,7 +32303,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2303
+    "seq": 2307
   },
   {
     "store": "宇部店",
@@ -32261,7 +32317,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2304
+    "seq": 2308
   },
   {
     "store": "宇部店",
@@ -32275,7 +32331,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2305
+    "seq": 2309
   },
   {
     "store": "宇部店",
@@ -32289,7 +32345,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2306
+    "seq": 2310
   },
   {
     "store": "宇部店",
@@ -32303,7 +32359,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2307
+    "seq": 2311
   },
   {
     "store": "宇部店",
@@ -32317,7 +32373,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2308
+    "seq": 2312
   },
   {
     "store": "宇部店",
@@ -32331,7 +32387,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2309
+    "seq": 2313
   },
   {
     "store": "宇部店",
@@ -32345,7 +32401,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2310
+    "seq": 2314
   },
   {
     "store": "宇部店",
@@ -32359,7 +32415,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2311
+    "seq": 2315
   },
   {
     "store": "宇部店",
@@ -32373,7 +32429,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2312
+    "seq": 2316
   },
   {
     "store": "宇部店",
@@ -32387,7 +32443,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2313
+    "seq": 2317
   },
   {
     "store": "宇部店",
@@ -32401,7 +32457,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2314
+    "seq": 2318
   },
   {
     "store": "宇部店",
@@ -32415,7 +32471,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2315
+    "seq": 2319
   },
   {
     "store": "宇部店",
@@ -32429,7 +32485,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2316
+    "seq": 2320
   },
   {
     "store": "宇部店",
@@ -32443,7 +32499,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2317
+    "seq": 2321
   },
   {
     "store": "宇部店",
@@ -32457,7 +32513,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2318
+    "seq": 2322
   },
   {
     "store": "宇部店",
@@ -32471,7 +32527,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2319
+    "seq": 2323
   },
   {
     "store": "宇部店",
@@ -32485,7 +32541,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2320
+    "seq": 2324
   },
   {
     "store": "宇部店",
@@ -32499,7 +32555,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2321
+    "seq": 2325
   },
   {
     "store": "宇部店",
@@ -32513,7 +32569,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2322
+    "seq": 2326
   },
   {
     "store": "宇部店",
@@ -32527,7 +32583,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2323
+    "seq": 2327
   },
   {
     "store": "宇部店",
@@ -32541,7 +32597,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2324
+    "seq": 2328
   },
   {
     "store": "宇部店",
@@ -32555,7 +32611,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2325
+    "seq": 2329
   },
   {
     "store": "宇部店",
@@ -32569,7 +32625,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2326
+    "seq": 2330
   },
   {
     "store": "宇部店",
@@ -32583,7 +32639,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2327
+    "seq": 2331
   },
   {
     "store": "宇部店",
@@ -32597,7 +32653,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2328
+    "seq": 2332
   },
   {
     "store": "宇部店",
@@ -32611,7 +32667,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2329
+    "seq": 2333
   },
   {
     "store": "宇部店",
@@ -32625,7 +32681,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2330
+    "seq": 2334
   },
   {
     "store": "宇部店",
@@ -32639,7 +32695,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2331
+    "seq": 2335
   },
   {
     "store": "宇部店",
@@ -32653,7 +32709,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2332
+    "seq": 2336
   },
   {
     "store": "宇部店",
@@ -32667,7 +32723,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2333
+    "seq": 2337
   },
   {
     "store": "宇部店",
@@ -32681,7 +32737,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2334
+    "seq": 2338
   },
   {
     "store": "宇部店",
@@ -32695,7 +32751,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2335
+    "seq": 2339
   },
   {
     "store": "宇部店",
@@ -32709,7 +32765,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2336
+    "seq": 2340
   },
   {
     "store": "宇部店",
@@ -32723,7 +32779,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2337
+    "seq": 2341
   },
   {
     "store": "宇部店",
@@ -32737,7 +32793,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2338
+    "seq": 2342
   },
   {
     "store": "宇部店",
@@ -32751,7 +32807,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2339
+    "seq": 2343
   },
   {
     "store": "宇部店",
@@ -32765,7 +32821,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2340
+    "seq": 2344
   },
   {
     "store": "宇部店",
@@ -32779,7 +32835,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2341
+    "seq": 2345
   },
   {
     "store": "宇部店",
@@ -32793,7 +32849,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2342
+    "seq": 2346
   },
   {
     "store": "宇部店",
@@ -32807,7 +32863,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2343
+    "seq": 2347
   },
   {
     "store": "宇部店",
@@ -32821,7 +32877,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2344
+    "seq": 2348
   },
   {
     "store": "宇部店",
@@ -32835,7 +32891,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2345
+    "seq": 2349
   },
   {
     "store": "宇部店",
@@ -32849,7 +32905,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2346
+    "seq": 2350
   },
   {
     "store": "宇部店",
@@ -32863,7 +32919,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2347
+    "seq": 2351
   },
   {
     "store": "宇部店",
@@ -32877,7 +32933,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2348
+    "seq": 2352
   },
   {
     "store": "宇部店",
@@ -32891,7 +32947,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2349
+    "seq": 2353
   },
   {
     "store": "宇部店",
@@ -32905,7 +32961,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2350
+    "seq": 2354
   },
   {
     "store": "宇部店",
@@ -32919,7 +32975,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2351
+    "seq": 2355
   },
   {
     "store": "宇部店",
@@ -32933,7 +32989,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2352
+    "seq": 2356
   },
   {
     "store": "宇部店",
@@ -32947,7 +33003,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2353
+    "seq": 2357
   },
   {
     "store": "宇部店",
@@ -32961,7 +33017,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2354
+    "seq": 2358
   },
   {
     "store": "宇部店",
@@ -32975,7 +33031,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2355
+    "seq": 2359
   },
   {
     "store": "宇部店",
@@ -32989,7 +33045,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2356
+    "seq": 2360
   },
   {
     "store": "宇部店",
@@ -33003,7 +33059,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2357
+    "seq": 2361
   },
   {
     "store": "宇部店",
@@ -33017,7 +33073,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2358
+    "seq": 2362
   },
   {
     "store": "宇部店",
@@ -33031,7 +33087,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2359
+    "seq": 2363
   },
   {
     "store": "宇部店",
@@ -33045,7 +33101,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2360
+    "seq": 2364
   },
   {
     "store": "宇部店",
@@ -33059,7 +33115,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2361
+    "seq": 2365
   },
   {
     "store": "宇部店",
@@ -33073,7 +33129,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2362
+    "seq": 2366
   },
   {
     "store": "宇部店",
@@ -33087,7 +33143,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2363
+    "seq": 2367
   },
   {
     "store": "宇部店",
@@ -33101,7 +33157,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2364
+    "seq": 2368
   },
   {
     "store": "宇部店",
@@ -33115,7 +33171,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2365
+    "seq": 2369
   },
   {
     "store": "宇部店",
@@ -33129,7 +33185,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2366
+    "seq": 2370
   },
   {
     "store": "宇部店",
@@ -33143,7 +33199,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2367
+    "seq": 2371
   },
   {
     "store": "宇部店",
@@ -33157,7 +33213,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2368
+    "seq": 2372
   },
   {
     "store": "宇部店",
@@ -33171,7 +33227,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 03)宇部店.xlsm"
     ],
-    "seq": 2369
+    "seq": 2373
   },
   {
     "store": "宇部店",
@@ -33185,7 +33241,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2370
+    "seq": 2374
   },
   {
     "store": "宇部店",
@@ -33199,7 +33255,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2371
+    "seq": 2375
   },
   {
     "store": "宇部店",
@@ -33213,7 +33269,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2372
+    "seq": 2376
   },
   {
     "store": "宇部店",
@@ -33227,7 +33283,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2373
+    "seq": 2377
   },
   {
     "store": "宇部店",
@@ -33241,7 +33297,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2374
+    "seq": 2378
   },
   {
     "store": "宇部店",
@@ -33255,7 +33311,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2375
+    "seq": 2379
   },
   {
     "store": "宇部店",
@@ -33269,21 +33325,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2376
-  },
-  {
-    "store": "宇部店",
-    "code": 50,
-    "route": 1,
-    "name": "大村　清文",
-    "paymentType": "cash",
-    "address": "宇部市中村３－９８７",
-    "amount": 15372,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026 04)宇部店.xlsm"
-    ],
-    "seq": 2377
+    "seq": 2380
   },
   {
     "store": "宇部店",
@@ -33297,7 +33339,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2378
+    "seq": 2381
   },
   {
     "store": "宇部店",
@@ -33311,7 +33353,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2379
+    "seq": 2382
   },
   {
     "store": "宇部店",
@@ -33325,7 +33367,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2380
+    "seq": 2383
   },
   {
     "store": "宇部店",
@@ -33339,7 +33381,21 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2381
+    "seq": 2384
+  },
+  {
+    "store": "宇部店",
+    "code": 117,
+    "route": 1,
+    "name": "大村　清文",
+    "paymentType": "cash",
+    "address": "宇部市中村３－９８７",
+    "amount": 15372,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026 04)宇部店.xlsm"
+    ],
+    "seq": 2385
   },
   {
     "store": "宇部店",
@@ -33353,7 +33409,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2382
+    "seq": 2386
   },
   {
     "store": "宇部店",
@@ -33367,7 +33423,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2383
+    "seq": 2387
   },
   {
     "store": "宇部店",
@@ -33381,7 +33437,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2384
+    "seq": 2388
   },
   {
     "store": "宇部店",
@@ -33395,7 +33451,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2385
+    "seq": 2389
   },
   {
     "store": "宇部店",
@@ -33409,7 +33465,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2386
+    "seq": 2390
   },
   {
     "store": "宇部店",
@@ -33423,7 +33479,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2387
+    "seq": 2391
   },
   {
     "store": "宇部店",
@@ -33437,7 +33493,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2388
+    "seq": 2392
   },
   {
     "store": "宇部店",
@@ -33451,7 +33507,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2389
+    "seq": 2393
   },
   {
     "store": "宇部店",
@@ -33465,7 +33521,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2390
+    "seq": 2394
   },
   {
     "store": "宇部店",
@@ -33479,7 +33535,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2391
+    "seq": 2395
   },
   {
     "store": "宇部店",
@@ -33493,7 +33549,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2392
+    "seq": 2396
   },
   {
     "store": "宇部店",
@@ -33507,7 +33563,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2393
+    "seq": 2397
   },
   {
     "store": "宇部店",
@@ -33521,7 +33577,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2394
+    "seq": 2398
   },
   {
     "store": "宇部店",
@@ -33535,21 +33591,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2395
-  },
-  {
-    "store": "宇部店",
-    "code": 385,
-    "route": 1,
-    "name": "平佐　善英",
-    "paymentType": "bank",
-    "address": "宇部市海南町１３－２０－２",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026 04)宇部店.xlsm"
-    ],
-    "seq": 2396
+    "seq": 2399
   },
   {
     "store": "宇部店",
@@ -33563,7 +33605,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2397
+    "seq": 2400
   },
   {
     "store": "宇部店",
@@ -33577,7 +33619,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2398
+    "seq": 2401
   },
   {
     "store": "宇部店",
@@ -33591,7 +33633,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2399
+    "seq": 2402
   },
   {
     "store": "宇部店",
@@ -33605,7 +33647,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2400
+    "seq": 2403
   },
   {
     "store": "宇部店",
@@ -33619,7 +33661,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2401
+    "seq": 2404
   },
   {
     "store": "宇部店",
@@ -33633,7 +33675,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2402
+    "seq": 2405
   },
   {
     "store": "宇部店",
@@ -33647,7 +33689,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2403
+    "seq": 2406
   },
   {
     "store": "宇部店",
@@ -33661,7 +33703,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2404
+    "seq": 2407
   },
   {
     "store": "宇部店",
@@ -33675,7 +33717,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2405
+    "seq": 2408
   },
   {
     "store": "宇部店",
@@ -33689,7 +33731,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2406
+    "seq": 2409
   },
   {
     "store": "宇部店",
@@ -33703,7 +33745,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2407
+    "seq": 2410
   },
   {
     "store": "宇部店",
@@ -33717,7 +33759,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2408
+    "seq": 2411
   },
   {
     "store": "宇部店",
@@ -33731,7 +33773,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2409
+    "seq": 2412
   },
   {
     "store": "宇部店",
@@ -33745,7 +33787,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2410
+    "seq": 2413
   },
   {
     "store": "宇部店",
@@ -33759,7 +33801,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2411
+    "seq": 2414
   },
   {
     "store": "宇部店",
@@ -33773,7 +33815,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2412
+    "seq": 2415
   },
   {
     "store": "宇部店",
@@ -33787,7 +33829,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2413
+    "seq": 2416
   },
   {
     "store": "宇部店",
@@ -33801,7 +33843,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2414
+    "seq": 2417
   },
   {
     "store": "宇部店",
@@ -33815,7 +33857,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2415
+    "seq": 2418
   },
   {
     "store": "宇部店",
@@ -33829,7 +33871,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2416
+    "seq": 2419
   },
   {
     "store": "宇部店",
@@ -33843,7 +33885,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2417
+    "seq": 2420
   },
   {
     "store": "宇部店",
@@ -33857,7 +33899,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2418
+    "seq": 2421
   },
   {
     "store": "宇部店",
@@ -33871,21 +33913,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2419
-  },
-  {
-    "store": "宇部店",
-    "code": 1620,
-    "route": 2,
-    "name": "木村　精一",
-    "paymentType": "cash",
-    "address": "宇部市西際波上の原２４１９－３",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026 04)宇部店.xlsm"
-    ],
-    "seq": 2420
+    "seq": 2422
   },
   {
     "store": "宇部店",
@@ -33899,7 +33927,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2421
+    "seq": 2423
   },
   {
     "store": "宇部店",
@@ -33913,7 +33941,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2422
+    "seq": 2424
   },
   {
     "store": "宇部店",
@@ -33927,7 +33955,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2423
+    "seq": 2425
   },
   {
     "store": "宇部店",
@@ -33941,7 +33969,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2424
+    "seq": 2426
   },
   {
     "store": "宇部店",
@@ -33955,7 +33983,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2425
+    "seq": 2427
   },
   {
     "store": "宇部店",
@@ -33969,7 +33997,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2426
+    "seq": 2428
   },
   {
     "store": "宇部店",
@@ -33978,12 +34006,12 @@ window.COLLECTION_DATA = [
     "name": "宮木　ひろゆき",
     "paymentType": "bank",
     "address": "宇部市西岐波１２０３－６",
-    "amount": 9083,
+    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2427
+    "seq": 2429
   },
   {
     "store": "宇部店",
@@ -33997,7 +34025,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2428
+    "seq": 2430
   },
   {
     "store": "宇部店",
@@ -34011,7 +34039,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2429
+    "seq": 2431
   },
   {
     "store": "宇部店",
@@ -34025,7 +34053,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2430
+    "seq": 2432
   },
   {
     "store": "宇部店",
@@ -34039,7 +34067,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2431
+    "seq": 2433
   },
   {
     "store": "宇部店",
@@ -34053,7 +34081,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2432
+    "seq": 2434
   },
   {
     "store": "宇部店",
@@ -34067,7 +34095,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2433
+    "seq": 2435
   },
   {
     "store": "宇部店",
@@ -34081,7 +34109,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2434
+    "seq": 2436
   },
   {
     "store": "宇部店",
@@ -34095,7 +34123,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2435
+    "seq": 2437
   },
   {
     "store": "宇部店",
@@ -34109,7 +34137,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2436
+    "seq": 2438
   },
   {
     "store": "宇部店",
@@ -34123,7 +34151,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2437
+    "seq": 2439
   },
   {
     "store": "宇部店",
@@ -34137,7 +34165,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2438
+    "seq": 2440
   },
   {
     "store": "宇部店",
@@ -34151,7 +34179,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2439
+    "seq": 2441
   },
   {
     "store": "宇部店",
@@ -34165,7 +34193,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2440
+    "seq": 2442
   },
   {
     "store": "宇部店",
@@ -34179,7 +34207,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2441
+    "seq": 2443
   },
   {
     "store": "宇部店",
@@ -34193,7 +34221,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2442
+    "seq": 2444
   },
   {
     "store": "宇部店",
@@ -34207,7 +34235,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2443
+    "seq": 2445
   },
   {
     "store": "宇部店",
@@ -34221,7 +34249,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2444
+    "seq": 2446
   },
   {
     "store": "宇部店",
@@ -34235,7 +34263,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2445
+    "seq": 2447
   },
   {
     "store": "宇部店",
@@ -34249,7 +34277,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2446
+    "seq": 2448
   },
   {
     "store": "宇部店",
@@ -34263,7 +34291,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2447
+    "seq": 2449
   },
   {
     "store": "宇部店",
@@ -34277,7 +34305,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2448
+    "seq": 2450
   },
   {
     "store": "宇部店",
@@ -34291,7 +34319,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2449
+    "seq": 2451
   },
   {
     "store": "宇部店",
@@ -34305,7 +34333,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2450
+    "seq": 2452
   },
   {
     "store": "宇部店",
@@ -34319,7 +34347,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2451
+    "seq": 2453
   },
   {
     "store": "宇部店",
@@ -34333,7 +34361,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2452
+    "seq": 2454
   },
   {
     "store": "宇部店",
@@ -34347,7 +34375,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2453
+    "seq": 2455
   },
   {
     "store": "宇部店",
@@ -34361,7 +34389,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2454
+    "seq": 2456
   },
   {
     "store": "宇部店",
@@ -34375,7 +34403,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2455
+    "seq": 2457
   },
   {
     "store": "宇部店",
@@ -34389,7 +34417,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2456
+    "seq": 2458
   },
   {
     "store": "宇部店",
@@ -34403,7 +34431,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2457
+    "seq": 2459
   },
   {
     "store": "宇部店",
@@ -34417,7 +34445,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2458
+    "seq": 2460
   },
   {
     "store": "宇部店",
@@ -34431,7 +34459,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2459
+    "seq": 2461
   },
   {
     "store": "宇部店",
@@ -34445,7 +34473,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2460
+    "seq": 2462
   },
   {
     "store": "宇部店",
@@ -34459,7 +34487,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2461
+    "seq": 2463
   },
   {
     "store": "宇部店",
@@ -34473,7 +34501,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2462
+    "seq": 2464
   },
   {
     "store": "宇部店",
@@ -34487,21 +34515,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2463
-  },
-  {
-    "store": "宇部店",
-    "code": 2060,
-    "route": 3,
-    "name": "中山　とみゆき",
-    "paymentType": "cash",
-    "address": "宇部市草江1丁目２－１３（そうわ寮）",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026 04)宇部店.xlsm"
-    ],
-    "seq": 2464
+    "seq": 2465
   },
   {
     "store": "宇部店",
@@ -34515,7 +34529,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2465
+    "seq": 2466
   },
   {
     "store": "宇部店",
@@ -34529,7 +34543,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2466
+    "seq": 2467
   },
   {
     "store": "宇部店",
@@ -34543,7 +34557,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2467
+    "seq": 2468
   },
   {
     "store": "宇部店",
@@ -34557,7 +34571,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2468
+    "seq": 2469
   },
   {
     "store": "宇部店",
@@ -34571,7 +34585,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2469
+    "seq": 2470
   },
   {
     "store": "宇部店",
@@ -34585,7 +34599,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2470
+    "seq": 2471
   },
   {
     "store": "宇部店",
@@ -34599,7 +34613,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2471
+    "seq": 2472
   },
   {
     "store": "宇部店",
@@ -34613,7 +34627,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2472
+    "seq": 2473
   },
   {
     "store": "宇部店",
@@ -34627,7 +34641,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2473
+    "seq": 2474
   },
   {
     "store": "宇部店",
@@ -34641,7 +34655,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2474
+    "seq": 2475
   },
   {
     "store": "宇部店",
@@ -34655,7 +34669,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2475
+    "seq": 2476
   },
   {
     "store": "宇部店",
@@ -34669,7 +34683,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2476
+    "seq": 2477
   },
   {
     "store": "宇部店",
@@ -34683,7 +34697,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2477
+    "seq": 2478
   },
   {
     "store": "宇部店",
@@ -34692,12 +34706,12 @@ window.COLLECTION_DATA = [
     "name": "植田　喜子",
     "paymentType": "cash",
     "address": "宇部市笹山町2丁目７－２７",
-    "amount": 9083,
+    "amount": 1397,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2478
+    "seq": 2479
   },
   {
     "store": "宇部店",
@@ -34711,7 +34725,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2479
+    "seq": 2480
   },
   {
     "store": "宇部店",
@@ -34725,7 +34739,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2480
+    "seq": 2481
   },
   {
     "store": "宇部店",
@@ -34735,20 +34749,6 @@ window.COLLECTION_DATA = [
     "paymentType": "cash",
     "address": "宇部市昭和町2丁目７－２－１",
     "amount": 20962,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026 04)宇部店.xlsm"
-    ],
-    "seq": 2481
-  },
-  {
-    "store": "宇部店",
-    "code": 2210,
-    "route": 3,
-    "name": "渡壁　信一",
-    "paymentType": "cash",
-    "address": "宇部市明治町2丁目１１－２８",
-    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
@@ -34911,20 +34911,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宇部店",
-    "code": 2300,
-    "route": 3,
-    "name": "辻田　博満",
-    "paymentType": "cash",
-    "address": "宇部市東梶返2丁目１５－２７－５",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026 04)宇部店.xlsm"
-    ],
-    "seq": 2494
-  },
-  {
-    "store": "宇部店",
     "code": 2400,
     "route": 3,
     "name": "元木　義信",
@@ -34935,7 +34921,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2495
+    "seq": 2494
   },
   {
     "store": "宇部店",
@@ -34949,7 +34935,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2496
+    "seq": 2495
   },
   {
     "store": "宇部店",
@@ -34963,7 +34949,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2497
+    "seq": 2496
   },
   {
     "store": "宇部店",
@@ -34972,12 +34958,12 @@ window.COLLECTION_DATA = [
     "name": "日高　告",
     "paymentType": "cash",
     "address": "宇部市野中４丁目２－２７",
-    "amount": 19565,
+    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2498
+    "seq": 2497
   },
   {
     "store": "宇部店",
@@ -34991,7 +34977,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2499
+    "seq": 2498
   },
   {
     "store": "宇部店",
@@ -35005,7 +34991,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2500
+    "seq": 2499
   },
   {
     "store": "宇部店",
@@ -35019,7 +35005,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2501
+    "seq": 2500
   },
   {
     "store": "宇部店",
@@ -35033,7 +35019,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2502
+    "seq": 2501
   },
   {
     "store": "宇部店",
@@ -35047,7 +35033,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2503
+    "seq": 2502
   },
   {
     "store": "宇部店",
@@ -35061,7 +35047,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2504
+    "seq": 2503
   },
   {
     "store": "宇部店",
@@ -35075,7 +35061,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2505
+    "seq": 2504
   },
   {
     "store": "宇部店",
@@ -35089,7 +35075,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2506
+    "seq": 2505
   },
   {
     "store": "宇部店",
@@ -35103,7 +35089,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2507
+    "seq": 2506
   },
   {
     "store": "宇部店",
@@ -35117,7 +35103,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2508
+    "seq": 2507
   },
   {
     "store": "宇部店",
@@ -35131,7 +35117,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2509
+    "seq": 2508
   },
   {
     "store": "宇部店",
@@ -35145,7 +35131,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2510
+    "seq": 2509
   },
   {
     "store": "宇部店",
@@ -35159,7 +35145,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2511
+    "seq": 2510
   },
   {
     "store": "宇部店",
@@ -35173,7 +35159,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2512
+    "seq": 2511
   },
   {
     "store": "宇部店",
@@ -35187,7 +35173,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2513
+    "seq": 2512
   },
   {
     "store": "宇部店",
@@ -35201,7 +35187,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2514
+    "seq": 2513
   },
   {
     "store": "宇部店",
@@ -35215,7 +35201,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2515
+    "seq": 2514
   },
   {
     "store": "宇部店",
@@ -35229,7 +35215,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2516
+    "seq": 2515
   },
   {
     "store": "宇部店",
@@ -35243,7 +35229,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2517
+    "seq": 2516
   },
   {
     "store": "宇部店",
@@ -35257,7 +35243,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2518
+    "seq": 2517
   },
   {
     "store": "宇部店",
@@ -35271,7 +35257,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2519
+    "seq": 2518
   },
   {
     "store": "宇部店",
@@ -35285,7 +35271,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2520
+    "seq": 2519
   },
   {
     "store": "宇部店",
@@ -35299,7 +35285,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2521
+    "seq": 2520
   },
   {
     "store": "宇部店",
@@ -35313,7 +35299,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2522
+    "seq": 2521
   },
   {
     "store": "宇部店",
@@ -35327,7 +35313,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2523
+    "seq": 2522
   },
   {
     "store": "宇部店",
@@ -35341,7 +35327,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2524
+    "seq": 2523
   },
   {
     "store": "宇部店",
@@ -35355,7 +35341,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2525
+    "seq": 2524
   },
   {
     "store": "宇部店",
@@ -35369,7 +35355,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2526
+    "seq": 2525
   },
   {
     "store": "宇部店",
@@ -35383,7 +35369,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2527
+    "seq": 2526
   },
   {
     "store": "宇部店",
@@ -35392,12 +35378,12 @@ window.COLLECTION_DATA = [
     "name": "木村　進",
     "paymentType": "bank",
     "address": "山陽小野田市中川３－６－１",
-    "amount": 0,
+    "amount": 6458,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2528
+    "seq": 2527
   },
   {
     "store": "宇部店",
@@ -35411,7 +35397,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2529
+    "seq": 2528
   },
   {
     "store": "宇部店",
@@ -35425,7 +35411,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2530
+    "seq": 2529
   },
   {
     "store": "宇部店",
@@ -35439,7 +35425,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2531
+    "seq": 2530
   },
   {
     "store": "宇部店",
@@ -35453,7 +35439,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2532
+    "seq": 2531
   },
   {
     "store": "宇部店",
@@ -35467,7 +35453,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2533
+    "seq": 2532
   },
   {
     "store": "宇部店",
@@ -35481,7 +35467,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2534
+    "seq": 2533
   },
   {
     "store": "宇部店",
@@ -35495,7 +35481,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2535
+    "seq": 2534
   },
   {
     "store": "宇部店",
@@ -35509,7 +35495,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2536
+    "seq": 2535
   },
   {
     "store": "宇部店",
@@ -35523,7 +35509,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2537
+    "seq": 2536
   },
   {
     "store": "宇部店",
@@ -35537,7 +35523,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2538
+    "seq": 2537
   },
   {
     "store": "宇部店",
@@ -35551,7 +35537,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2539
+    "seq": 2538
   },
   {
     "store": "宇部店",
@@ -35565,7 +35551,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2540
+    "seq": 2539
   },
   {
     "store": "宇部店",
@@ -35579,7 +35565,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2541
+    "seq": 2540
   },
   {
     "store": "宇部店",
@@ -35593,7 +35579,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2542
+    "seq": 2541
   },
   {
     "store": "宇部店",
@@ -35607,7 +35593,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2543
+    "seq": 2542
   },
   {
     "store": "宇部店",
@@ -35621,7 +35607,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2544
+    "seq": 2543
   },
   {
     "store": "宇部店",
@@ -35635,7 +35621,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2545
+    "seq": 2544
   },
   {
     "store": "宇部店",
@@ -35649,7 +35635,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2546
+    "seq": 2545
   },
   {
     "store": "宇部店",
@@ -35663,7 +35649,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2547
+    "seq": 2546
   },
   {
     "store": "宇部店",
@@ -35677,7 +35663,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2548
+    "seq": 2547
   },
   {
     "store": "宇部店",
@@ -35691,7 +35677,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2549
+    "seq": 2548
   },
   {
     "store": "宇部店",
@@ -35705,7 +35691,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2550
+    "seq": 2549
   },
   {
     "store": "宇部店",
@@ -35719,7 +35705,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2551
+    "seq": 2550
   },
   {
     "store": "宇部店",
@@ -35733,7 +35719,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2552
+    "seq": 2551
   },
   {
     "store": "宇部店",
@@ -35747,7 +35733,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2553
+    "seq": 2552
   },
   {
     "store": "宇部店",
@@ -35761,7 +35747,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2554
+    "seq": 2553
   },
   {
     "store": "宇部店",
@@ -35775,7 +35761,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2555
+    "seq": 2554
   },
   {
     "store": "宇部店",
@@ -35789,7 +35775,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2556
+    "seq": 2555
   },
   {
     "store": "宇部店",
@@ -35803,7 +35789,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2557
+    "seq": 2556
   },
   {
     "store": "宇部店",
@@ -35817,7 +35803,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2558
+    "seq": 2557
   },
   {
     "store": "宇部店",
@@ -35831,7 +35817,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2559
+    "seq": 2558
   },
   {
     "store": "宇部店",
@@ -35845,7 +35831,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2560
+    "seq": 2559
   },
   {
     "store": "宇部店",
@@ -35859,7 +35845,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2561
+    "seq": 2560
   },
   {
     "store": "宇部店",
@@ -35873,7 +35859,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2562
+    "seq": 2561
   },
   {
     "store": "宇部店",
@@ -35887,7 +35873,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2563
+    "seq": 2562
   },
   {
     "store": "宇部店",
@@ -35901,7 +35887,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2564
+    "seq": 2563
   },
   {
     "store": "宇部店",
@@ -35915,7 +35901,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2565
+    "seq": 2564
   },
   {
     "store": "宇部店",
@@ -35929,7 +35915,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2566
+    "seq": 2565
   },
   {
     "store": "宇部店",
@@ -35943,7 +35929,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2567
+    "seq": 2566
   },
   {
     "store": "宇部店",
@@ -35957,7 +35943,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2568
+    "seq": 2567
   },
   {
     "store": "宇部店",
@@ -35971,7 +35957,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2569
+    "seq": 2568
   },
   {
     "store": "宇部店",
@@ -35985,7 +35971,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2570
+    "seq": 2569
   },
   {
     "store": "宇部店",
@@ -35994,12 +35980,12 @@ window.COLLECTION_DATA = [
     "name": "森本　光政",
     "paymentType": "cash",
     "address": "山口市江崎２２１２－１　Ａ－２０１号",
-    "amount": 46118,
+    "amount": 32841,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2571
+    "seq": 2570
   },
   {
     "store": "宇部店",
@@ -36013,7 +35999,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2572
+    "seq": 2571
   },
   {
     "store": "宇部店",
@@ -36027,7 +36013,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2573
+    "seq": 2572
   },
   {
     "store": "宇部店",
@@ -36041,7 +36027,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2574
+    "seq": 2573
   },
   {
     "store": "宇部店",
@@ -36055,7 +36041,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2575
+    "seq": 2574
   },
   {
     "store": "宇部店",
@@ -36069,7 +36055,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2576
+    "seq": 2575
   },
   {
     "store": "宇部店",
@@ -36083,7 +36069,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2577
+    "seq": 2576
   },
   {
     "store": "宇部店",
@@ -36092,12 +36078,12 @@ window.COLLECTION_DATA = [
     "name": "堀川　久幸",
     "paymentType": "cash",
     "address": "山口市小郡下郷１０６－６",
-    "amount": 15372,
+    "amount": 12577,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2578
+    "seq": 2577
   },
   {
     "store": "宇部店",
@@ -36111,7 +36097,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2579
+    "seq": 2578
   },
   {
     "store": "宇部店",
@@ -36125,7 +36111,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2580
+    "seq": 2579
   },
   {
     "store": "宇部店",
@@ -36139,7 +36125,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2581
+    "seq": 2580
   },
   {
     "store": "宇部店",
@@ -36153,7 +36139,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2582
+    "seq": 2581
   },
   {
     "store": "宇部店",
@@ -36167,7 +36153,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2583
+    "seq": 2582
   },
   {
     "store": "宇部店",
@@ -36181,7 +36167,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2584
+    "seq": 2583
   },
   {
     "store": "宇部店",
@@ -36195,7 +36181,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2585
+    "seq": 2584
   },
   {
     "store": "宇部店",
@@ -36209,7 +36195,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2586
+    "seq": 2585
   },
   {
     "store": "宇部店",
@@ -36223,7 +36209,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2587
+    "seq": 2586
   },
   {
     "store": "宇部店",
@@ -36237,7 +36223,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2588
+    "seq": 2587
   },
   {
     "store": "宇部店",
@@ -36251,7 +36237,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2589
+    "seq": 2588
   },
   {
     "store": "宇部店",
@@ -36265,7 +36251,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2590
+    "seq": 2589
   },
   {
     "store": "宇部店",
@@ -36279,7 +36265,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2591
+    "seq": 2590
   },
   {
     "store": "宇部店",
@@ -36293,7 +36279,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2592
+    "seq": 2591
   },
   {
     "store": "宇部店",
@@ -36307,7 +36293,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2593
+    "seq": 2592
   },
   {
     "store": "宇部店",
@@ -36321,7 +36307,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2594
+    "seq": 2593
   },
   {
     "store": "宇部店",
@@ -36335,7 +36321,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2595
+    "seq": 2594
   },
   {
     "store": "宇部店",
@@ -36349,7 +36335,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2596
+    "seq": 2595
   },
   {
     "store": "宇部店",
@@ -36363,7 +36349,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2597
+    "seq": 2596
   },
   {
     "store": "宇部店",
@@ -36377,7 +36363,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2598
+    "seq": 2597
   },
   {
     "store": "宇部店",
@@ -36391,7 +36377,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2599
+    "seq": 2598
   },
   {
     "store": "宇部店",
@@ -36405,7 +36391,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2600
+    "seq": 2599
   },
   {
     "store": "宇部店",
@@ -36419,7 +36405,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2601
+    "seq": 2600
   },
   {
     "store": "宇部店",
@@ -36433,7 +36419,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2602
+    "seq": 2601
   },
   {
     "store": "宇部店",
@@ -36447,7 +36433,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2603
+    "seq": 2602
   },
   {
     "store": "宇部店",
@@ -36461,7 +36447,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2604
+    "seq": 2603
   },
   {
     "store": "宇部店",
@@ -36475,7 +36461,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2605
+    "seq": 2604
   },
   {
     "store": "宇部店",
@@ -36489,7 +36475,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2606
+    "seq": 2605
   },
   {
     "store": "宇部店",
@@ -36503,7 +36489,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2607
+    "seq": 2606
   },
   {
     "store": "宇部店",
@@ -36517,7 +36503,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2608
+    "seq": 2607
   },
   {
     "store": "宇部店",
@@ -36531,7 +36517,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2609
+    "seq": 2608
   },
   {
     "store": "宇部店",
@@ -36545,7 +36531,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2610
+    "seq": 2609
   },
   {
     "store": "宇部店",
@@ -36559,7 +36545,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2611
+    "seq": 2610
   },
   {
     "store": "宇部店",
@@ -36573,7 +36559,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2612
+    "seq": 2611
   },
   {
     "store": "宇部店",
@@ -36587,7 +36573,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2613
+    "seq": 2612
   },
   {
     "store": "宇部店",
@@ -36601,7 +36587,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2614
+    "seq": 2613
   },
   {
     "store": "宇部店",
@@ -36615,7 +36601,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2615
+    "seq": 2614
   },
   {
     "store": "宇部店",
@@ -36629,7 +36615,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2616
+    "seq": 2615
   },
   {
     "store": "宇部店",
@@ -36643,7 +36629,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2617
+    "seq": 2616
   },
   {
     "store": "宇部店",
@@ -36657,7 +36643,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2618
+    "seq": 2617
   },
   {
     "store": "宇部店",
@@ -36671,7 +36657,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2619
+    "seq": 2618
   },
   {
     "store": "宇部店",
@@ -36685,7 +36671,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2620
+    "seq": 2619
   },
   {
     "store": "宇部店",
@@ -36699,7 +36685,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2621
+    "seq": 2620
   },
   {
     "store": "宇部店",
@@ -36713,7 +36699,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2622
+    "seq": 2621
   },
   {
     "store": "宇部店",
@@ -36727,7 +36713,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2623
+    "seq": 2622
   },
   {
     "store": "宇部店",
@@ -36741,7 +36727,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2624
+    "seq": 2623
   },
   {
     "store": "宇部店",
@@ -36755,7 +36741,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2625
+    "seq": 2624
   },
   {
     "store": "宇部店",
@@ -36769,7 +36755,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2626
+    "seq": 2625
   },
   {
     "store": "宇部店",
@@ -36783,7 +36769,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2627
+    "seq": 2626
   },
   {
     "store": "宇部店",
@@ -36797,7 +36783,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2628
+    "seq": 2627
   },
   {
     "store": "宇部店",
@@ -36811,7 +36797,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2629
+    "seq": 2628
   },
   {
     "store": "宇部店",
@@ -36825,7 +36811,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2630
+    "seq": 2629
   },
   {
     "store": "宇部店",
@@ -36839,7 +36825,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2631
+    "seq": 2630
   },
   {
     "store": "宇部店",
@@ -36853,7 +36839,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2632
+    "seq": 2631
   },
   {
     "store": "宇部店",
@@ -36867,7 +36853,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2633
+    "seq": 2632
   },
   {
     "store": "宇部店",
@@ -36881,7 +36867,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2634
+    "seq": 2633
   },
   {
     "store": "宇部店",
@@ -36895,7 +36881,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2635
+    "seq": 2634
   },
   {
     "store": "宇部店",
@@ -36909,7 +36895,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2636
+    "seq": 2635
   },
   {
     "store": "宇部店",
@@ -36923,7 +36909,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2637
+    "seq": 2636
   },
   {
     "store": "宇部店",
@@ -36937,7 +36923,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2638
+    "seq": 2637
   },
   {
     "store": "宇部店",
@@ -36951,7 +36937,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2639
+    "seq": 2638
   },
   {
     "store": "宇部店",
@@ -36965,7 +36951,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2640
+    "seq": 2639
   },
   {
     "store": "宇部店",
@@ -36979,7 +36965,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2641
+    "seq": 2640
   },
   {
     "store": "宇部店",
@@ -36993,7 +36979,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2642
+    "seq": 2641
   },
   {
     "store": "宇部店",
@@ -37007,7 +36993,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2643
+    "seq": 2642
   },
   {
     "store": "宇部店",
@@ -37021,7 +37007,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2644
+    "seq": 2643
   },
   {
     "store": "宇部店",
@@ -37035,7 +37021,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2645
+    "seq": 2644
   },
   {
     "store": "宇部店",
@@ -37049,7 +37035,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2646
+    "seq": 2645
   },
   {
     "store": "宇部店",
@@ -37063,7 +37049,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2647
+    "seq": 2646
   },
   {
     "store": "宇部店",
@@ -37077,7 +37063,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2648
+    "seq": 2647
   },
   {
     "store": "宇部店",
@@ -37091,7 +37077,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2649
+    "seq": 2648
   },
   {
     "store": "宇部店",
@@ -37105,7 +37091,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2650
+    "seq": 2649
   },
   {
     "store": "宇部店",
@@ -37119,7 +37105,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2651
+    "seq": 2650
   },
   {
     "store": "宇部店",
@@ -37133,7 +37119,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2652
+    "seq": 2651
   },
   {
     "store": "宇部店",
@@ -37147,7 +37133,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2653
+    "seq": 2652
   },
   {
     "store": "宇部店",
@@ -37161,7 +37147,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2654
+    "seq": 2653
   },
   {
     "store": "宇部店",
@@ -37175,7 +37161,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2655
+    "seq": 2654
   },
   {
     "store": "宇部店",
@@ -37189,7 +37175,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2656
+    "seq": 2655
   },
   {
     "store": "宇部店",
@@ -37203,7 +37189,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2657
+    "seq": 2656
   },
   {
     "store": "宇部店",
@@ -37217,7 +37203,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2658
+    "seq": 2657
   },
   {
     "store": "宇部店",
@@ -37231,7 +37217,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2659
+    "seq": 2658
   },
   {
     "store": "宇部店",
@@ -37245,7 +37231,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2660
+    "seq": 2659
   },
   {
     "store": "宇部店",
@@ -37259,7 +37245,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2661
+    "seq": 2660
   },
   {
     "store": "宇部店",
@@ -37273,7 +37259,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2662
+    "seq": 2661
   },
   {
     "store": "宇部店",
@@ -37287,7 +37273,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2663
+    "seq": 2662
   },
   {
     "store": "宇部店",
@@ -37301,7 +37287,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2664
+    "seq": 2663
   },
   {
     "store": "宇部店",
@@ -37315,7 +37301,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2665
+    "seq": 2664
   },
   {
     "store": "宇部店",
@@ -37329,7 +37315,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2666
+    "seq": 2665
   },
   {
     "store": "宇部店",
@@ -37343,7 +37329,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2667
+    "seq": 2666
   },
   {
     "store": "宇部店",
@@ -37357,7 +37343,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2668
+    "seq": 2667
   },
   {
     "store": "宇部店",
@@ -37371,7 +37357,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2669
+    "seq": 2668
   },
   {
     "store": "宇部店",
@@ -37385,7 +37371,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2670
+    "seq": 2669
   },
   {
     "store": "宇部店",
@@ -37399,7 +37385,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2671
+    "seq": 2670
   },
   {
     "store": "宇部店",
@@ -37413,7 +37399,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2672
+    "seq": 2671
   },
   {
     "store": "宇部店",
@@ -37427,7 +37413,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2673
+    "seq": 2672
   },
   {
     "store": "宇部店",
@@ -37441,7 +37427,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2674
+    "seq": 2673
   },
   {
     "store": "宇部店",
@@ -37455,7 +37441,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2675
+    "seq": 2674
   },
   {
     "store": "宇部店",
@@ -37469,7 +37455,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2676
+    "seq": 2675
   },
   {
     "store": "宇部店",
@@ -37478,12 +37464,12 @@ window.COLLECTION_DATA = [
     "name": "福田　ウメコ",
     "paymentType": "cash",
     "address": "宇部市厚南北1丁目５－１２",
-    "amount": 1397,
+    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2677
+    "seq": 2676
   },
   {
     "store": "宇部店",
@@ -37497,7 +37483,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2678
+    "seq": 2677
   },
   {
     "store": "宇部店",
@@ -37511,7 +37497,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2679
+    "seq": 2678
   },
   {
     "store": "宇部店",
@@ -37525,7 +37511,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2680
+    "seq": 2679
   },
   {
     "store": "宇部店",
@@ -37539,7 +37525,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2681
+    "seq": 2680
   },
   {
     "store": "宇部店",
@@ -37553,7 +37539,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2682
+    "seq": 2681
   },
   {
     "store": "宇部店",
@@ -37567,7 +37553,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2683
+    "seq": 2682
   },
   {
     "store": "宇部店",
@@ -37581,7 +37567,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2684
+    "seq": 2683
   },
   {
     "store": "宇部店",
@@ -37595,7 +37581,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2685
+    "seq": 2684
   },
   {
     "store": "宇部店",
@@ -37609,7 +37595,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2686
+    "seq": 2685
   },
   {
     "store": "宇部店",
@@ -37623,7 +37609,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2687
+    "seq": 2686
   },
   {
     "store": "宇部店",
@@ -37637,7 +37623,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2688
+    "seq": 2687
   },
   {
     "store": "宇部店",
@@ -37651,7 +37637,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2689
+    "seq": 2688
   },
   {
     "store": "宇部店",
@@ -37665,7 +37651,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2690
+    "seq": 2689
   },
   {
     "store": "宇部店",
@@ -37679,7 +37665,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2691
+    "seq": 2690
   },
   {
     "store": "宇部店",
@@ -37693,7 +37679,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2692
+    "seq": 2691
   },
   {
     "store": "宇部店",
@@ -37707,7 +37693,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2693
+    "seq": 2692
   },
   {
     "store": "宇部店",
@@ -37721,7 +37707,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2694
+    "seq": 2693
   },
   {
     "store": "宇部店",
@@ -37735,7 +37721,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2695
+    "seq": 2694
   },
   {
     "store": "宇部店",
@@ -37749,7 +37735,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2696
+    "seq": 2695
   },
   {
     "store": "宇部店",
@@ -37763,7 +37749,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2697
+    "seq": 2696
   },
   {
     "store": "宇部店",
@@ -37777,7 +37763,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2698
+    "seq": 2697
   },
   {
     "store": "宇部店",
@@ -37791,7 +37777,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2699
+    "seq": 2698
   },
   {
     "store": "宇部店",
@@ -37805,7 +37791,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2700
+    "seq": 2699
   },
   {
     "store": "宇部店",
@@ -37819,7 +37805,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2701
+    "seq": 2700
   },
   {
     "store": "宇部店",
@@ -37833,7 +37819,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2702
+    "seq": 2701
   },
   {
     "store": "宇部店",
@@ -37847,7 +37833,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2703
+    "seq": 2702
   },
   {
     "store": "宇部店",
@@ -37861,7 +37847,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2704
+    "seq": 2703
   },
   {
     "store": "宇部店",
@@ -37875,7 +37861,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2705
+    "seq": 2704
   },
   {
     "store": "宇部店",
@@ -37889,7 +37875,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2706
+    "seq": 2705
   },
   {
     "store": "宇部店",
@@ -37903,7 +37889,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2707
+    "seq": 2706
   },
   {
     "store": "宇部店",
@@ -37917,7 +37903,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2708
+    "seq": 2707
   },
   {
     "store": "宇部店",
@@ -37931,7 +37917,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2709
+    "seq": 2708
   },
   {
     "store": "宇部店",
@@ -37945,7 +37931,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2710
+    "seq": 2709
   },
   {
     "store": "宇部店",
@@ -37959,7 +37945,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2711
+    "seq": 2710
   },
   {
     "store": "宇部店",
@@ -37973,7 +37959,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2712
+    "seq": 2711
   },
   {
     "store": "宇部店",
@@ -37987,7 +37973,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026 04)宇部店.xlsm"
     ],
-    "seq": 2713
+    "seq": 2712
   },
   {
     "store": "宗像店",
@@ -38001,7 +37987,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2714
+    "seq": 2713
   },
   {
     "store": "宗像店",
@@ -38015,7 +38001,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2715
+    "seq": 2714
   },
   {
     "store": "宗像店",
@@ -38029,7 +38015,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2716
+    "seq": 2715
   },
   {
     "store": "宗像店",
@@ -38043,7 +38029,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2717
+    "seq": 2716
   },
   {
     "store": "宗像店",
@@ -38057,7 +38043,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2718
+    "seq": 2717
   },
   {
     "store": "宗像店",
@@ -38071,7 +38057,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2719
+    "seq": 2718
   },
   {
     "store": "宗像店",
@@ -38085,7 +38071,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2720
+    "seq": 2719
   },
   {
     "store": "宗像店",
@@ -38099,7 +38085,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2721
+    "seq": 2720
   },
   {
     "store": "宗像店",
@@ -38113,7 +38099,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2722
+    "seq": 2721
   },
   {
     "store": "宗像店",
@@ -38127,7 +38113,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2723
+    "seq": 2722
   },
   {
     "store": "宗像店",
@@ -38141,7 +38127,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2724
+    "seq": 2723
   },
   {
     "store": "宗像店",
@@ -38155,7 +38141,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2725
+    "seq": 2724
   },
   {
     "store": "宗像店",
@@ -38169,7 +38155,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2726
+    "seq": 2725
   },
   {
     "store": "宗像店",
@@ -38183,7 +38169,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2727
+    "seq": 2726
   },
   {
     "store": "宗像店",
@@ -38197,7 +38183,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2728
+    "seq": 2727
   },
   {
     "store": "宗像店",
@@ -38211,7 +38197,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2729
+    "seq": 2728
   },
   {
     "store": "宗像店",
@@ -38225,7 +38211,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2730
+    "seq": 2729
   },
   {
     "store": "宗像店",
@@ -38239,7 +38225,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2731
+    "seq": 2730
   },
   {
     "store": "宗像店",
@@ -38253,7 +38239,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2732
+    "seq": 2731
   },
   {
     "store": "宗像店",
@@ -38267,7 +38253,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2733
+    "seq": 2732
   },
   {
     "store": "宗像店",
@@ -38281,7 +38267,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2734
+    "seq": 2733
   },
   {
     "store": "宗像店",
@@ -38295,11 +38281,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2735
+    "seq": 2734
   },
   {
     "store": "宗像店",
     "code": 90,
+    "route": 1,
+    "name": "板野　登美子",
+    "paymentType": "cash",
+    "address": "宗像市泉ヶ丘1丁目９－７",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2735
+  },
+  {
+    "store": "宗像店",
+    "code": 100,
     "route": 1,
     "name": "板野　登美子",
     "paymentType": "cash",
@@ -38313,20 +38313,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 100,
-    "route": 1,
-    "name": "板野　登美子",
-    "paymentType": "cash",
-    "address": "宗像市泉ヶ丘1丁目９－７",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2737
-  },
-  {
-    "store": "宗像店",
     "code": 110,
     "route": 1,
     "name": "石飛　桃江",
@@ -38337,7 +38323,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2738
+    "seq": 2737
   },
   {
     "store": "宗像店",
@@ -38351,7 +38337,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2739
+    "seq": 2738
   },
   {
     "store": "宗像店",
@@ -38365,7 +38351,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2740
+    "seq": 2739
   },
   {
     "store": "宗像店",
@@ -38379,7 +38365,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2741
+    "seq": 2740
   },
   {
     "store": "宗像店",
@@ -38393,7 +38379,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2742
+    "seq": 2741
   },
   {
     "store": "宗像店",
@@ -38407,7 +38393,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2743
+    "seq": 2742
   },
   {
     "store": "宗像店",
@@ -38421,7 +38407,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2744
+    "seq": 2743
   },
   {
     "store": "宗像店",
@@ -38435,7 +38421,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2745
+    "seq": 2744
   },
   {
     "store": "宗像店",
@@ -38449,7 +38435,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2746
+    "seq": 2745
   },
   {
     "store": "宗像店",
@@ -38463,7 +38449,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2747
+    "seq": 2746
   },
   {
     "store": "宗像店",
@@ -38477,7 +38463,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2748
+    "seq": 2747
   },
   {
     "store": "宗像店",
@@ -38491,7 +38477,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2749
+    "seq": 2748
   },
   {
     "store": "宗像店",
@@ -38505,7 +38491,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2750
+    "seq": 2749
   },
   {
     "store": "宗像店",
@@ -38519,7 +38505,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2751
+    "seq": 2750
   },
   {
     "store": "宗像店",
@@ -38533,7 +38519,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2752
+    "seq": 2751
   },
   {
     "store": "宗像店",
@@ -38547,7 +38533,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2753
+    "seq": 2752
   },
   {
     "store": "宗像店",
@@ -38561,7 +38547,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2754
+    "seq": 2753
   },
   {
     "store": "宗像店",
@@ -38575,7 +38561,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2755
+    "seq": 2754
   },
   {
     "store": "宗像店",
@@ -38589,7 +38575,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2756
+    "seq": 2755
   },
   {
     "store": "宗像店",
@@ -38603,7 +38589,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2757
+    "seq": 2756
   },
   {
     "store": "宗像店",
@@ -38617,7 +38603,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2758
+    "seq": 2757
   },
   {
     "store": "宗像店",
@@ -38631,7 +38617,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2759
+    "seq": 2758
   },
   {
     "store": "宗像店",
@@ -38645,7 +38631,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2760
+    "seq": 2759
   },
   {
     "store": "宗像店",
@@ -38659,7 +38645,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2761
+    "seq": 2760
   },
   {
     "store": "宗像店",
@@ -38673,7 +38659,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2762
+    "seq": 2761
   },
   {
     "store": "宗像店",
@@ -38687,7 +38673,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2763
+    "seq": 2762
   },
   {
     "store": "宗像店",
@@ -38701,7 +38687,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2764
+    "seq": 2763
   },
   {
     "store": "宗像店",
@@ -38715,7 +38701,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2765
+    "seq": 2764
   },
   {
     "store": "宗像店",
@@ -38729,7 +38715,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2766
+    "seq": 2765
   },
   {
     "store": "宗像店",
@@ -38743,7 +38729,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2767
+    "seq": 2766
   },
   {
     "store": "宗像店",
@@ -38757,7 +38743,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2768
+    "seq": 2767
   },
   {
     "store": "宗像店",
@@ -38771,7 +38757,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2769
+    "seq": 2768
   },
   {
     "store": "宗像店",
@@ -38785,7 +38771,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2770
+    "seq": 2769
   },
   {
     "store": "宗像店",
@@ -38799,7 +38785,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2771
+    "seq": 2770
   },
   {
     "store": "宗像店",
@@ -38813,7 +38799,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2772
+    "seq": 2771
   },
   {
     "store": "宗像店",
@@ -38827,7 +38813,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2773
+    "seq": 2772
   },
   {
     "store": "宗像店",
@@ -38841,7 +38827,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2774
+    "seq": 2773
   },
   {
     "store": "宗像店",
@@ -38855,7 +38841,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2775
+    "seq": 2774
   },
   {
     "store": "宗像店",
@@ -38869,7 +38855,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2776
+    "seq": 2775
   },
   {
     "store": "宗像店",
@@ -38883,7 +38869,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2777
+    "seq": 2776
   },
   {
     "store": "宗像店",
@@ -38897,7 +38883,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2778
+    "seq": 2777
   },
   {
     "store": "宗像店",
@@ -38911,7 +38897,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2779
+    "seq": 2778
   },
   {
     "store": "宗像店",
@@ -38925,7 +38911,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2780
+    "seq": 2779
   },
   {
     "store": "宗像店",
@@ -38939,7 +38925,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2781
+    "seq": 2780
   },
   {
     "store": "宗像店",
@@ -38953,7 +38939,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2782
+    "seq": 2781
   },
   {
     "store": "宗像店",
@@ -38967,7 +38953,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2783
+    "seq": 2782
   },
   {
     "store": "宗像店",
@@ -38981,7 +38967,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2784
+    "seq": 2783
   },
   {
     "store": "宗像店",
@@ -38995,7 +38981,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2785
+    "seq": 2784
   },
   {
     "store": "宗像店",
@@ -39009,7 +38995,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2786
+    "seq": 2785
   },
   {
     "store": "宗像店",
@@ -39023,7 +39009,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2787
+    "seq": 2786
   },
   {
     "store": "宗像店",
@@ -39037,7 +39023,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2788
+    "seq": 2787
   },
   {
     "store": "宗像店",
@@ -39051,7 +39037,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2789
+    "seq": 2788
   },
   {
     "store": "宗像店",
@@ -39065,7 +39051,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2790
+    "seq": 2789
   },
   {
     "store": "宗像店",
@@ -39079,7 +39065,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2791
+    "seq": 2790
   },
   {
     "store": "宗像店",
@@ -39093,7 +39079,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2792
+    "seq": 2791
   },
   {
     "store": "宗像店",
@@ -39107,7 +39093,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2793
+    "seq": 2792
   },
   {
     "store": "宗像店",
@@ -39121,7 +39107,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2794
+    "seq": 2793
   },
   {
     "store": "宗像店",
@@ -39135,7 +39121,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2795
+    "seq": 2794
   },
   {
     "store": "宗像店",
@@ -39149,7 +39135,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2796
+    "seq": 2795
   },
   {
     "store": "宗像店",
@@ -39163,7 +39149,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2797
+    "seq": 2796
   },
   {
     "store": "宗像店",
@@ -39177,7 +39163,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2798
+    "seq": 2797
   },
   {
     "store": "宗像店",
@@ -39191,7 +39177,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2799
+    "seq": 2798
   },
   {
     "store": "宗像店",
@@ -39205,7 +39191,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2800
+    "seq": 2799
   },
   {
     "store": "宗像店",
@@ -39219,7 +39205,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2801
+    "seq": 2800
   },
   {
     "store": "宗像店",
@@ -39233,7 +39219,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2802
+    "seq": 2801
   },
   {
     "store": "宗像店",
@@ -39247,7 +39233,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2803
+    "seq": 2802
   },
   {
     "store": "宗像店",
@@ -39261,7 +39247,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2804
+    "seq": 2803
   },
   {
     "store": "宗像店",
@@ -39275,7 +39261,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2805
+    "seq": 2804
   },
   {
     "store": "宗像店",
@@ -39289,7 +39275,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2806
+    "seq": 2805
   },
   {
     "store": "宗像店",
@@ -39303,7 +39289,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2807
+    "seq": 2806
   },
   {
     "store": "宗像店",
@@ -39317,7 +39303,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2808
+    "seq": 2807
   },
   {
     "store": "宗像店",
@@ -39331,7 +39317,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2809
+    "seq": 2808
   },
   {
     "store": "宗像店",
@@ -39345,7 +39331,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2810
+    "seq": 2809
   },
   {
     "store": "宗像店",
@@ -39359,7 +39345,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2811
+    "seq": 2810
   },
   {
     "store": "宗像店",
@@ -39373,7 +39359,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2812
+    "seq": 2811
   },
   {
     "store": "宗像店",
@@ -39387,7 +39373,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2813
+    "seq": 2812
   },
   {
     "store": "宗像店",
@@ -39401,7 +39387,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2814
+    "seq": 2813
   },
   {
     "store": "宗像店",
@@ -39415,7 +39401,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2815
+    "seq": 2814
   },
   {
     "store": "宗像店",
@@ -39429,7 +39415,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2816
+    "seq": 2815
   },
   {
     "store": "宗像店",
@@ -39443,7 +39429,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2817
+    "seq": 2816
   },
   {
     "store": "宗像店",
@@ -39457,7 +39443,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2818
+    "seq": 2817
   },
   {
     "store": "宗像店",
@@ -39471,7 +39457,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2819
+    "seq": 2818
   },
   {
     "store": "宗像店",
@@ -39485,7 +39471,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2820
+    "seq": 2819
   },
   {
     "store": "宗像店",
@@ -39499,7 +39485,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2821
+    "seq": 2820
   },
   {
     "store": "宗像店",
@@ -39513,7 +39499,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2822
+    "seq": 2821
   },
   {
     "store": "宗像店",
@@ -39527,11 +39513,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2823
+    "seq": 2822
   },
   {
     "store": "宗像店",
     "code": 2030,
+    "route": 3,
+    "name": "倉内　ショウゴ",
+    "paymentType": "cash",
+    "address": "福津市若木台6丁目１７－６",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2823
+  },
+  {
+    "store": "宗像店",
+    "code": 2040,
     "route": 3,
     "name": "倉内　ショウゴ",
     "paymentType": "cash",
@@ -39545,7 +39545,7 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2040,
+    "code": 2050,
     "route": 3,
     "name": "倉内　ショウゴ",
     "paymentType": "cash",
@@ -39559,7 +39559,7 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2050,
+    "code": 2060,
     "route": 3,
     "name": "倉内　ショウゴ",
     "paymentType": "cash",
@@ -39573,20 +39573,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2060,
-    "route": 3,
-    "name": "倉内　ショウゴ",
-    "paymentType": "cash",
-    "address": "福津市若木台6丁目１７－６",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2827
-  },
-  {
-    "store": "宗像店",
     "code": 2061,
     "route": 3,
     "name": "若崎　サチコ",
@@ -39597,11 +39583,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2828
+    "seq": 2827
   },
   {
     "store": "宗像店",
     "code": 2070,
+    "route": 3,
+    "name": "中山　芳子",
+    "paymentType": "cash",
+    "address": "福津市若木台4丁目１７－１",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2828
+  },
+  {
+    "store": "宗像店",
+    "code": 2080,
     "route": 3,
     "name": "中山　芳子",
     "paymentType": "cash",
@@ -39615,20 +39615,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2080,
-    "route": 3,
-    "name": "中山　芳子",
-    "paymentType": "cash",
-    "address": "福津市若木台4丁目１７－１",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2830
-  },
-  {
-    "store": "宗像店",
     "code": 2085,
     "route": 3,
     "name": "森山　凡夫",
@@ -39639,7 +39625,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2831
+    "seq": 2830
   },
   {
     "store": "宗像店",
@@ -39653,7 +39639,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2832
+    "seq": 2831
   },
   {
     "store": "宗像店",
@@ -39667,7 +39653,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2833
+    "seq": 2832
   },
   {
     "store": "宗像店",
@@ -39681,7 +39667,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2834
+    "seq": 2833
   },
   {
     "store": "宗像店",
@@ -39695,7 +39681,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2835
+    "seq": 2834
   },
   {
     "store": "宗像店",
@@ -39709,7 +39695,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2836
+    "seq": 2835
   },
   {
     "store": "宗像店",
@@ -39723,7 +39709,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2837
+    "seq": 2836
   },
   {
     "store": "宗像店",
@@ -39737,11 +39723,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2838
+    "seq": 2837
   },
   {
     "store": "宗像店",
     "code": 2110,
+    "route": 3,
+    "name": "ニノミヤ　マサヒロ",
+    "paymentType": "cash",
+    "address": "古賀市中央5丁目１－１０",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2838
+  },
+  {
+    "store": "宗像店",
+    "code": 2120,
     "route": 3,
     "name": "ニノミヤ　マサヒロ",
     "paymentType": "cash",
@@ -39755,20 +39755,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2120,
-    "route": 3,
-    "name": "ニノミヤ　マサヒロ",
-    "paymentType": "cash",
-    "address": "古賀市中央5丁目１－１０",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2840
-  },
-  {
-    "store": "宗像店",
     "code": 2150,
     "route": 3,
     "name": "福永　美和",
@@ -39779,7 +39765,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2841
+    "seq": 2840
   },
   {
     "store": "宗像店",
@@ -39793,7 +39779,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2842
+    "seq": 2841
   },
   {
     "store": "宗像店",
@@ -39807,7 +39793,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2843
+    "seq": 2842
   },
   {
     "store": "宗像店",
@@ -39821,7 +39807,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2844
+    "seq": 2843
   },
   {
     "store": "宗像店",
@@ -39835,7 +39821,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2845
+    "seq": 2844
   },
   {
     "store": "宗像店",
@@ -39849,7 +39835,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2846
+    "seq": 2845
   },
   {
     "store": "宗像店",
@@ -39863,7 +39849,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2847
+    "seq": 2846
   },
   {
     "store": "宗像店",
@@ -39877,7 +39863,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2848
+    "seq": 2847
   },
   {
     "store": "宗像店",
@@ -39891,7 +39877,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2849
+    "seq": 2848
   },
   {
     "store": "宗像店",
@@ -39905,7 +39891,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2850
+    "seq": 2849
   },
   {
     "store": "宗像店",
@@ -39919,7 +39905,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2851
+    "seq": 2850
   },
   {
     "store": "宗像店",
@@ -39933,7 +39919,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2852
+    "seq": 2851
   },
   {
     "store": "宗像店",
@@ -39947,7 +39933,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2853
+    "seq": 2852
   },
   {
     "store": "宗像店",
@@ -39961,7 +39947,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2854
+    "seq": 2853
   },
   {
     "store": "宗像店",
@@ -39975,7 +39961,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2855
+    "seq": 2854
   },
   {
     "store": "宗像店",
@@ -39989,7 +39975,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2856
+    "seq": 2855
   },
   {
     "store": "宗像店",
@@ -40003,7 +39989,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2857
+    "seq": 2856
   },
   {
     "store": "宗像店",
@@ -40017,7 +40003,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2858
+    "seq": 2857
   },
   {
     "store": "宗像店",
@@ -40031,7 +40017,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2859
+    "seq": 2858
   },
   {
     "store": "宗像店",
@@ -40045,7 +40031,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2860
+    "seq": 2859
   },
   {
     "store": "宗像店",
@@ -40059,11 +40045,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2861
+    "seq": 2860
   },
   {
     "store": "宗像店",
     "code": 2340,
+    "route": 3,
+    "name": "増田　由香",
+    "paymentType": "cash",
+    "address": "古賀市花見東3丁目４－１５",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2861
+  },
+  {
+    "store": "宗像店",
+    "code": 2350,
     "route": 3,
     "name": "増田　由香",
     "paymentType": "cash",
@@ -40077,20 +40077,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2350,
-    "route": 3,
-    "name": "増田　由香",
-    "paymentType": "cash",
-    "address": "古賀市花見東3丁目４－１５",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2863
-  },
-  {
-    "store": "宗像店",
     "code": 2360,
     "route": 3,
     "name": "仙石　ユキコ",
@@ -40101,7 +40087,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2864
+    "seq": 2863
   },
   {
     "store": "宗像店",
@@ -40115,7 +40101,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2865
+    "seq": 2864
   },
   {
     "store": "宗像店",
@@ -40129,7 +40115,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2866
+    "seq": 2865
   },
   {
     "store": "宗像店",
@@ -40143,7 +40129,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2867
+    "seq": 2866
   },
   {
     "store": "宗像店",
@@ -40157,7 +40143,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2868
+    "seq": 2867
   },
   {
     "store": "宗像店",
@@ -40171,7 +40157,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2869
+    "seq": 2868
   },
   {
     "store": "宗像店",
@@ -40185,7 +40171,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2870
+    "seq": 2869
   },
   {
     "store": "宗像店",
@@ -40199,7 +40185,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2871
+    "seq": 2870
   },
   {
     "store": "宗像店",
@@ -40213,7 +40199,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2872
+    "seq": 2871
   },
   {
     "store": "宗像店",
@@ -40227,7 +40213,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2873
+    "seq": 2872
   },
   {
     "store": "宗像店",
@@ -40241,7 +40227,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2874
+    "seq": 2873
   },
   {
     "store": "宗像店",
@@ -40255,7 +40241,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2875
+    "seq": 2874
   },
   {
     "store": "宗像店",
@@ -40269,11 +40255,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2876
+    "seq": 2875
   },
   {
     "store": "宗像店",
     "code": 3040,
+    "route": 4,
+    "name": "池浦　レイコ",
+    "paymentType": "cash",
+    "address": "福津市日蒔野4丁目２－１０ーB棟２０６号",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2876
+  },
+  {
+    "store": "宗像店",
+    "code": 3050,
     "route": 4,
     "name": "池浦　レイコ",
     "paymentType": "cash",
@@ -40287,20 +40287,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 3050,
-    "route": 4,
-    "name": "池浦　レイコ",
-    "paymentType": "cash",
-    "address": "福津市日蒔野4丁目２－１０ーB棟２０６号",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2878
-  },
-  {
-    "store": "宗像店",
     "code": 3055,
     "route": 4,
     "name": "岡部　憲二",
@@ -40311,7 +40297,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2879
+    "seq": 2878
   },
   {
     "store": "宗像店",
@@ -40325,7 +40311,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2880
+    "seq": 2879
   },
   {
     "store": "宗像店",
@@ -40339,7 +40325,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2881
+    "seq": 2880
   },
   {
     "store": "宗像店",
@@ -40353,7 +40339,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2882
+    "seq": 2881
   },
   {
     "store": "宗像店",
@@ -40367,7 +40353,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2883
+    "seq": 2882
   },
   {
     "store": "宗像店",
@@ -40381,7 +40367,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2884
+    "seq": 2883
   },
   {
     "store": "宗像店",
@@ -40395,7 +40381,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2885
+    "seq": 2884
   },
   {
     "store": "宗像店",
@@ -40409,7 +40395,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2886
+    "seq": 2885
   },
   {
     "store": "宗像店",
@@ -40423,7 +40409,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2887
+    "seq": 2886
   },
   {
     "store": "宗像店",
@@ -40437,7 +40423,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2888
+    "seq": 2887
   },
   {
     "store": "宗像店",
@@ -40451,7 +40437,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2889
+    "seq": 2888
   },
   {
     "store": "宗像店",
@@ -40465,7 +40451,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2890
+    "seq": 2889
   },
   {
     "store": "宗像店",
@@ -40479,7 +40465,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2891
+    "seq": 2890
   },
   {
     "store": "宗像店",
@@ -40493,7 +40479,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2892
+    "seq": 2891
   },
   {
     "store": "宗像店",
@@ -40507,7 +40493,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2893
+    "seq": 2892
   },
   {
     "store": "宗像店",
@@ -40521,7 +40507,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2894
+    "seq": 2893
   },
   {
     "store": "宗像店",
@@ -40535,7 +40521,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2895
+    "seq": 2894
   },
   {
     "store": "宗像店",
@@ -40549,7 +40535,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2896
+    "seq": 2895
   },
   {
     "store": "宗像店",
@@ -40563,11 +40549,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2897
+    "seq": 2896
   },
   {
     "store": "宗像店",
     "code": 3190,
+    "route": 4,
+    "name": "内山　裕太",
+    "paymentType": "cash",
+    "address": "福津市津屋崎7丁目３－４５ー2棟203号",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2897
+  },
+  {
+    "store": "宗像店",
+    "code": 3200,
     "route": 4,
     "name": "内山　裕太",
     "paymentType": "cash",
@@ -40581,20 +40581,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 3200,
-    "route": 4,
-    "name": "内山　裕太",
-    "paymentType": "cash",
-    "address": "福津市津屋崎7丁目３－４５ー2棟203号",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2899
-  },
-  {
-    "store": "宗像店",
     "code": 3210,
     "route": 4,
     "name": "内山　裕太",
@@ -40605,7 +40591,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2900
+    "seq": 2899
   },
   {
     "store": "宗像店",
@@ -40619,7 +40605,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2901
+    "seq": 2900
   },
   {
     "store": "宗像店",
@@ -40633,7 +40619,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2902
+    "seq": 2901
   },
   {
     "store": "宗像店",
@@ -40647,7 +40633,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2903
+    "seq": 2902
   },
   {
     "store": "宗像店",
@@ -40661,7 +40647,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2904
+    "seq": 2903
   },
   {
     "store": "宗像店",
@@ -40675,7 +40661,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2905
+    "seq": 2904
   },
   {
     "store": "宗像店",
@@ -40689,7 +40675,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2906
+    "seq": 2905
   },
   {
     "store": "宗像店",
@@ -40703,7 +40689,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2907
+    "seq": 2906
   },
   {
     "store": "宗像店",
@@ -40717,11 +40703,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2908
+    "seq": 2907
   },
   {
     "store": "宗像店",
     "code": 3280,
+    "route": 4,
+    "name": "前田　直樹",
+    "paymentType": "cash",
+    "address": "福津市宮司2丁目735ー工事現場事務所",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2908
+  },
+  {
+    "store": "宗像店",
+    "code": 3290,
     "route": 4,
     "name": "前田　直樹",
     "paymentType": "cash",
@@ -40735,7 +40735,7 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 3290,
+    "code": 3300,
     "route": 4,
     "name": "前田　直樹",
     "paymentType": "cash",
@@ -40749,20 +40749,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 3300,
-    "route": 4,
-    "name": "前田　直樹",
-    "paymentType": "cash",
-    "address": "福津市宮司2丁目735ー工事現場事務所",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2911
-  },
-  {
-    "store": "宗像店",
     "code": 3305,
     "route": 4,
     "name": "牧　まさとし",
@@ -40773,7 +40759,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2912
+    "seq": 2911
   },
   {
     "store": "宗像店",
@@ -40787,7 +40773,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2913
+    "seq": 2912
   },
   {
     "store": "宗像店",
@@ -40801,7 +40787,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2914
+    "seq": 2913
   },
   {
     "store": "宗像店",
@@ -40815,7 +40801,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2915
+    "seq": 2914
   },
   {
     "store": "宗像店",
@@ -40829,7 +40815,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2916
+    "seq": 2915
   },
   {
     "store": "宗像店",
@@ -40843,7 +40829,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2917
+    "seq": 2916
   },
   {
     "store": "宗像店",
@@ -40857,11 +40843,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2918
+    "seq": 2917
   },
   {
     "store": "宗像店",
     "code": 3370,
+    "route": 4,
+    "name": "竹本　照子",
+    "paymentType": "cash",
+    "address": "福津市中央1丁目１７－１０ー１０１",
+    "amount": 0,
+    "dataMonth": "2026-02",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.２)宗像店.xlsm"
+    ],
+    "seq": 2918
+  },
+  {
+    "store": "宗像店",
+    "code": 3380,
     "route": 4,
     "name": "竹本　照子",
     "paymentType": "cash",
@@ -40875,20 +40875,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 3380,
-    "route": 4,
-    "name": "竹本　照子",
-    "paymentType": "cash",
-    "address": "福津市中央1丁目１７－１０ー１０１",
-    "amount": 0,
-    "dataMonth": "2026-02",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.２)宗像店.xlsm"
-    ],
-    "seq": 2920
-  },
-  {
-    "store": "宗像店",
     "code": 3390,
     "route": 4,
     "name": "西柳　トモノリ",
@@ -40899,7 +40885,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2921
+    "seq": 2920
   },
   {
     "store": "宗像店",
@@ -40913,7 +40899,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2922
+    "seq": 2921
   },
   {
     "store": "宗像店",
@@ -40927,7 +40913,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2923
+    "seq": 2922
   },
   {
     "store": "宗像店",
@@ -40941,7 +40927,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2924
+    "seq": 2923
   },
   {
     "store": "宗像店",
@@ -40955,7 +40941,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2925
+    "seq": 2924
   },
   {
     "store": "宗像店",
@@ -40969,7 +40955,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2926
+    "seq": 2925
   },
   {
     "store": "宗像店",
@@ -40983,7 +40969,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2927
+    "seq": 2926
   },
   {
     "store": "宗像店",
@@ -40997,7 +40983,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.２)宗像店.xlsm"
     ],
-    "seq": 2928
+    "seq": 2927
   },
   {
     "store": "宗像店",
@@ -41006,12 +40992,12 @@ window.COLLECTION_DATA = [
     "name": "大神　信幸",
     "paymentType": "cash",
     "address": "",
-    "amount": 1397,
+    "amount": 991,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2929
+    "seq": 2928
   },
   {
     "store": "宗像店",
@@ -41025,7 +41011,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2930
+    "seq": 2929
   },
   {
     "store": "宗像店",
@@ -41039,7 +41025,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2931
+    "seq": 2930
   },
   {
     "store": "宗像店",
@@ -41053,7 +41039,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2932
+    "seq": 2931
   },
   {
     "store": "宗像店",
@@ -41067,7 +41053,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2933
+    "seq": 2932
   },
   {
     "store": "宗像店",
@@ -41081,7 +41067,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2934
+    "seq": 2933
   },
   {
     "store": "宗像店",
@@ -41095,7 +41081,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2935
+    "seq": 2934
   },
   {
     "store": "宗像店",
@@ -41109,7 +41095,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2936
+    "seq": 2935
   },
   {
     "store": "宗像店",
@@ -41123,7 +41109,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2937
+    "seq": 2936
   },
   {
     "store": "宗像店",
@@ -41137,7 +41123,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2938
+    "seq": 2937
   },
   {
     "store": "宗像店",
@@ -41151,7 +41137,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2939
+    "seq": 2938
   },
   {
     "store": "宗像店",
@@ -41165,7 +41151,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2940
+    "seq": 2939
   },
   {
     "store": "宗像店",
@@ -41179,7 +41165,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2941
+    "seq": 2940
   },
   {
     "store": "宗像店",
@@ -41193,7 +41179,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2942
+    "seq": 2941
   },
   {
     "store": "宗像店",
@@ -41207,7 +41193,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2943
+    "seq": 2942
   },
   {
     "store": "宗像店",
@@ -41221,7 +41207,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2944
+    "seq": 2943
   },
   {
     "store": "宗像店",
@@ -41235,7 +41221,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2945
+    "seq": 2944
   },
   {
     "store": "宗像店",
@@ -41249,7 +41235,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2946
+    "seq": 2945
   },
   {
     "store": "宗像店",
@@ -41263,7 +41249,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2947
+    "seq": 2946
   },
   {
     "store": "宗像店",
@@ -41277,7 +41263,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2948
+    "seq": 2947
   },
   {
     "store": "宗像店",
@@ -41291,7 +41277,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2949
+    "seq": 2948
   },
   {
     "store": "宗像店",
@@ -41305,7 +41291,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2950
+    "seq": 2949
   },
   {
     "store": "宗像店",
@@ -41319,7 +41305,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2951
+    "seq": 2950
   },
   {
     "store": "宗像店",
@@ -41333,7 +41319,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2952
+    "seq": 2951
   },
   {
     "store": "宗像店",
@@ -41347,7 +41333,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2953
+    "seq": 2952
   },
   {
     "store": "宗像店",
@@ -41361,7 +41347,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2954
+    "seq": 2953
   },
   {
     "store": "宗像店",
@@ -41375,7 +41361,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2955
+    "seq": 2954
   },
   {
     "store": "宗像店",
@@ -41389,7 +41375,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2956
+    "seq": 2955
   },
   {
     "store": "宗像店",
@@ -41403,7 +41389,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2957
+    "seq": 2956
   },
   {
     "store": "宗像店",
@@ -41417,7 +41403,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2958
+    "seq": 2957
   },
   {
     "store": "宗像店",
@@ -41431,7 +41417,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2959
+    "seq": 2958
   },
   {
     "store": "宗像店",
@@ -41445,7 +41431,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2960
+    "seq": 2959
   },
   {
     "store": "宗像店",
@@ -41459,7 +41445,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2961
+    "seq": 2960
   },
   {
     "store": "宗像店",
@@ -41473,7 +41459,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2962
+    "seq": 2961
   },
   {
     "store": "宗像店",
@@ -41487,7 +41473,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2963
+    "seq": 2962
   },
   {
     "store": "宗像店",
@@ -41501,7 +41487,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2964
+    "seq": 2963
   },
   {
     "store": "宗像店",
@@ -41515,7 +41501,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2965
+    "seq": 2964
   },
   {
     "store": "宗像店",
@@ -41529,7 +41515,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2966
+    "seq": 2965
   },
   {
     "store": "宗像店",
@@ -41543,7 +41529,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2967
+    "seq": 2966
   },
   {
     "store": "宗像店",
@@ -41557,7 +41543,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2968
+    "seq": 2967
   },
   {
     "store": "宗像店",
@@ -41566,12 +41552,12 @@ window.COLLECTION_DATA = [
     "name": "牧山　末夫",
     "paymentType": "cash",
     "address": "宗像市冨地原１３４９－２",
-    "amount": 30745,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2969
+    "seq": 2968
   },
   {
     "store": "宗像店",
@@ -41585,7 +41571,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2970
+    "seq": 2969
   },
   {
     "store": "宗像店",
@@ -41599,7 +41585,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2971
+    "seq": 2970
   },
   {
     "store": "宗像店",
@@ -41613,7 +41599,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2972
+    "seq": 2971
   },
   {
     "store": "宗像店",
@@ -41627,7 +41613,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2973
+    "seq": 2972
   },
   {
     "store": "宗像店",
@@ -41641,7 +41627,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2974
+    "seq": 2973
   },
   {
     "store": "宗像店",
@@ -41655,7 +41641,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2975
+    "seq": 2974
   },
   {
     "store": "宗像店",
@@ -41669,7 +41655,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2976
+    "seq": 2975
   },
   {
     "store": "宗像店",
@@ -41683,7 +41669,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2977
+    "seq": 2976
   },
   {
     "store": "宗像店",
@@ -41692,12 +41678,12 @@ window.COLLECTION_DATA = [
     "name": "立石　優一",
     "paymentType": "cash",
     "address": "宗像市赤間１丁目1－8",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2978
+    "seq": 2977
   },
   {
     "store": "宗像店",
@@ -41711,7 +41697,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2979
+    "seq": 2978
   },
   {
     "store": "宗像店",
@@ -41725,7 +41711,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2980
+    "seq": 2979
   },
   {
     "store": "宗像店",
@@ -41739,7 +41725,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2981
+    "seq": 2980
   },
   {
     "store": "宗像店",
@@ -41753,7 +41739,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2982
+    "seq": 2981
   },
   {
     "store": "宗像店",
@@ -41767,7 +41753,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2983
+    "seq": 2982
   },
   {
     "store": "宗像店",
@@ -41781,7 +41767,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2984
+    "seq": 2983
   },
   {
     "store": "宗像店",
@@ -41795,7 +41781,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2985
+    "seq": 2984
   },
   {
     "store": "宗像店",
@@ -41809,7 +41795,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2986
+    "seq": 2985
   },
   {
     "store": "宗像店",
@@ -41823,7 +41809,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2987
+    "seq": 2986
   },
   {
     "store": "宗像店",
@@ -41837,7 +41823,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2988
+    "seq": 2987
   },
   {
     "store": "宗像店",
@@ -41851,7 +41837,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2989
+    "seq": 2988
   },
   {
     "store": "宗像店",
@@ -41865,7 +41851,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2990
+    "seq": 2989
   },
   {
     "store": "宗像店",
@@ -41874,12 +41860,12 @@ window.COLLECTION_DATA = [
     "name": "渡辺　章",
     "paymentType": "cash",
     "address": "宗像市大井台１８－１８",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2991
+    "seq": 2990
   },
   {
     "store": "宗像店",
@@ -41893,7 +41879,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2992
+    "seq": 2991
   },
   {
     "store": "宗像店",
@@ -41907,7 +41893,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2993
+    "seq": 2992
   },
   {
     "store": "宗像店",
@@ -41916,12 +41902,12 @@ window.COLLECTION_DATA = [
     "name": "近藤　モトイ",
     "paymentType": "cash",
     "address": "宗像市日の里2丁目１－９",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2994
+    "seq": 2993
   },
   {
     "store": "宗像店",
@@ -41935,7 +41921,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2995
+    "seq": 2994
   },
   {
     "store": "宗像店",
@@ -41949,7 +41935,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2996
+    "seq": 2995
   },
   {
     "store": "宗像店",
@@ -41963,7 +41949,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2997
+    "seq": 2996
   },
   {
     "store": "宗像店",
@@ -41977,7 +41963,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2998
+    "seq": 2997
   },
   {
     "store": "宗像店",
@@ -41991,7 +41977,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 2999
+    "seq": 2998
   },
   {
     "store": "宗像店",
@@ -42005,7 +41991,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3000
+    "seq": 2999
   },
   {
     "store": "宗像店",
@@ -42019,7 +42005,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3001
+    "seq": 3000
   },
   {
     "store": "宗像店",
@@ -42033,7 +42019,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3002
+    "seq": 3001
   },
   {
     "store": "宗像店",
@@ -42047,7 +42033,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3003
+    "seq": 3002
   },
   {
     "store": "宗像店",
@@ -42061,7 +42047,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3004
+    "seq": 3003
   },
   {
     "store": "宗像店",
@@ -42075,7 +42061,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3005
+    "seq": 3004
   },
   {
     "store": "宗像店",
@@ -42089,7 +42075,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3006
+    "seq": 3005
   },
   {
     "store": "宗像店",
@@ -42103,7 +42089,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3007
+    "seq": 3006
   },
   {
     "store": "宗像店",
@@ -42117,7 +42103,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3008
+    "seq": 3007
   },
   {
     "store": "宗像店",
@@ -42131,7 +42117,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3009
+    "seq": 3008
   },
   {
     "store": "宗像店",
@@ -42145,7 +42131,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3010
+    "seq": 3009
   },
   {
     "store": "宗像店",
@@ -42159,7 +42145,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3011
+    "seq": 3010
   },
   {
     "store": "宗像店",
@@ -42173,7 +42159,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3012
+    "seq": 3011
   },
   {
     "store": "宗像店",
@@ -42187,7 +42173,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3013
+    "seq": 3012
   },
   {
     "store": "宗像店",
@@ -42201,7 +42187,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3014
+    "seq": 3013
   },
   {
     "store": "宗像店",
@@ -42215,7 +42201,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3015
+    "seq": 3014
   },
   {
     "store": "宗像店",
@@ -42229,7 +42215,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3016
+    "seq": 3015
   },
   {
     "store": "宗像店",
@@ -42243,7 +42229,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3017
+    "seq": 3016
   },
   {
     "store": "宗像店",
@@ -42257,7 +42243,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3018
+    "seq": 3017
   },
   {
     "store": "宗像店",
@@ -42271,7 +42257,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3019
+    "seq": 3018
   },
   {
     "store": "宗像店",
@@ -42285,7 +42271,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3020
+    "seq": 3019
   },
   {
     "store": "宗像店",
@@ -42299,7 +42285,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3021
+    "seq": 3020
   },
   {
     "store": "宗像店",
@@ -42313,7 +42299,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3022
+    "seq": 3021
   },
   {
     "store": "宗像店",
@@ -42327,7 +42313,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3023
+    "seq": 3022
   },
   {
     "store": "宗像店",
@@ -42341,7 +42327,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3024
+    "seq": 3023
   },
   {
     "store": "宗像店",
@@ -42355,7 +42341,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3025
+    "seq": 3024
   },
   {
     "store": "宗像店",
@@ -42369,7 +42355,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3026
+    "seq": 3025
   },
   {
     "store": "宗像店",
@@ -42383,7 +42369,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3027
+    "seq": 3026
   },
   {
     "store": "宗像店",
@@ -42397,7 +42383,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3028
+    "seq": 3027
   },
   {
     "store": "宗像店",
@@ -42411,7 +42397,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3029
+    "seq": 3028
   },
   {
     "store": "宗像店",
@@ -42425,7 +42411,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3030
+    "seq": 3029
   },
   {
     "store": "宗像店",
@@ -42439,7 +42425,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3031
+    "seq": 3030
   },
   {
     "store": "宗像店",
@@ -42453,7 +42439,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3032
+    "seq": 3031
   },
   {
     "store": "宗像店",
@@ -42467,7 +42453,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3033
+    "seq": 3032
   },
   {
     "store": "宗像店",
@@ -42481,7 +42467,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3034
+    "seq": 3033
   },
   {
     "store": "宗像店",
@@ -42495,7 +42481,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3035
+    "seq": 3034
   },
   {
     "store": "宗像店",
@@ -42509,7 +42495,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3036
+    "seq": 3035
   },
   {
     "store": "宗像店",
@@ -42523,7 +42509,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3037
+    "seq": 3036
   },
   {
     "store": "宗像店",
@@ -42537,7 +42523,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3038
+    "seq": 3037
   },
   {
     "store": "宗像店",
@@ -42551,7 +42537,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3039
+    "seq": 3038
   },
   {
     "store": "宗像店",
@@ -42565,11 +42551,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3040
+    "seq": 3039
   },
   {
     "store": "宗像店",
     "code": 2030,
+    "route": 3,
+    "name": "倉内　ショウゴ",
+    "paymentType": "cash",
+    "address": "福津市若木台6丁目１７－６",
+    "amount": 0,
+    "dataMonth": "2026-03",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.３)宗像店.xlsm"
+    ],
+    "seq": 3040
+  },
+  {
+    "store": "宗像店",
+    "code": 2040,
     "route": 3,
     "name": "倉内　ショウゴ",
     "paymentType": "cash",
@@ -42583,7 +42583,7 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2040,
+    "code": 2050,
     "route": 3,
     "name": "倉内　ショウゴ",
     "paymentType": "cash",
@@ -42597,7 +42597,7 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2050,
+    "code": 2060,
     "route": 3,
     "name": "倉内　ショウゴ",
     "paymentType": "cash",
@@ -42611,20 +42611,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2060,
-    "route": 3,
-    "name": "倉内　ショウゴ",
-    "paymentType": "cash",
-    "address": "福津市若木台6丁目１７－６",
-    "amount": 0,
-    "dataMonth": "2026-03",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.３)宗像店.xlsm"
-    ],
-    "seq": 3044
-  },
-  {
-    "store": "宗像店",
     "code": 2061,
     "route": 3,
     "name": "若崎　サチコ",
@@ -42635,7 +42621,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3045
+    "seq": 3044
   },
   {
     "store": "宗像店",
@@ -42649,7 +42635,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3046
+    "seq": 3045
   },
   {
     "store": "宗像店",
@@ -42663,7 +42649,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3047
+    "seq": 3046
   },
   {
     "store": "宗像店",
@@ -42677,7 +42663,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3048
+    "seq": 3047
   },
   {
     "store": "宗像店",
@@ -42691,7 +42677,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3049
+    "seq": 3048
   },
   {
     "store": "宗像店",
@@ -42705,7 +42691,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3050
+    "seq": 3049
   },
   {
     "store": "宗像店",
@@ -42719,7 +42705,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3051
+    "seq": 3050
   },
   {
     "store": "宗像店",
@@ -42733,7 +42719,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3052
+    "seq": 3051
   },
   {
     "store": "宗像店",
@@ -42747,7 +42733,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3053
+    "seq": 3052
   },
   {
     "store": "宗像店",
@@ -42761,11 +42747,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3054
+    "seq": 3053
   },
   {
     "store": "宗像店",
     "code": 2110,
+    "route": 3,
+    "name": "ニノミヤ　マサヒロ",
+    "paymentType": "cash",
+    "address": "古賀市中央5丁目１－１０",
+    "amount": 0,
+    "dataMonth": "2026-03",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.３)宗像店.xlsm"
+    ],
+    "seq": 3054
+  },
+  {
+    "store": "宗像店",
+    "code": 2120,
     "route": 3,
     "name": "ニノミヤ　マサヒロ",
     "paymentType": "cash",
@@ -42779,20 +42779,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 2120,
-    "route": 3,
-    "name": "ニノミヤ　マサヒロ",
-    "paymentType": "cash",
-    "address": "古賀市中央5丁目１－１０",
-    "amount": 0,
-    "dataMonth": "2026-03",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.３)宗像店.xlsm"
-    ],
-    "seq": 3056
-  },
-  {
-    "store": "宗像店",
     "code": 2150,
     "route": 3,
     "name": "福永　美和",
@@ -42803,7 +42789,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3057
+    "seq": 3056
   },
   {
     "store": "宗像店",
@@ -42817,7 +42803,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3058
+    "seq": 3057
   },
   {
     "store": "宗像店",
@@ -42831,7 +42817,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3059
+    "seq": 3058
   },
   {
     "store": "宗像店",
@@ -42845,7 +42831,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3060
+    "seq": 3059
   },
   {
     "store": "宗像店",
@@ -42859,7 +42845,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3061
+    "seq": 3060
   },
   {
     "store": "宗像店",
@@ -42873,7 +42859,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3062
+    "seq": 3061
   },
   {
     "store": "宗像店",
@@ -42887,7 +42873,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3063
+    "seq": 3062
   },
   {
     "store": "宗像店",
@@ -42901,7 +42887,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3064
+    "seq": 3063
   },
   {
     "store": "宗像店",
@@ -42915,7 +42901,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3065
+    "seq": 3064
   },
   {
     "store": "宗像店",
@@ -42929,7 +42915,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3066
+    "seq": 3065
   },
   {
     "store": "宗像店",
@@ -42943,7 +42929,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3067
+    "seq": 3066
   },
   {
     "store": "宗像店",
@@ -42957,7 +42943,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3068
+    "seq": 3067
   },
   {
     "store": "宗像店",
@@ -42971,7 +42957,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3069
+    "seq": 3068
   },
   {
     "store": "宗像店",
@@ -42985,7 +42971,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3070
+    "seq": 3069
   },
   {
     "store": "宗像店",
@@ -42994,12 +42980,12 @@ window.COLLECTION_DATA = [
     "name": "中川　政美",
     "paymentType": "cash",
     "address": "古賀市日吉1丁目３２－２０",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3071
+    "seq": 3070
   },
   {
     "store": "宗像店",
@@ -43013,7 +42999,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3072
+    "seq": 3071
   },
   {
     "store": "宗像店",
@@ -43022,12 +43008,12 @@ window.COLLECTION_DATA = [
     "name": "奥　ノリ子",
     "paymentType": "cash",
     "address": "古賀市日吉2丁目４－１０",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3073
+    "seq": 3072
   },
   {
     "store": "宗像店",
@@ -43041,7 +43027,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3074
+    "seq": 3073
   },
   {
     "store": "宗像店",
@@ -43055,7 +43041,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3075
+    "seq": 3074
   },
   {
     "store": "宗像店",
@@ -43069,7 +43055,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3076
+    "seq": 3075
   },
   {
     "store": "宗像店",
@@ -43083,7 +43069,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3077
+    "seq": 3076
   },
   {
     "store": "宗像店",
@@ -43097,7 +43083,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3078
+    "seq": 3077
   },
   {
     "store": "宗像店",
@@ -43111,7 +43097,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3079
+    "seq": 3078
   },
   {
     "store": "宗像店",
@@ -43120,12 +43106,12 @@ window.COLLECTION_DATA = [
     "name": "石田　春代",
     "paymentType": "cash",
     "address": "古賀市花見東２丁目１２－１",
-    "amount": 6288,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3080
+    "seq": 3079
   },
   {
     "store": "宗像店",
@@ -43139,7 +43125,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3081
+    "seq": 3080
   },
   {
     "store": "宗像店",
@@ -43153,7 +43139,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3082
+    "seq": 3081
   },
   {
     "store": "宗像店",
@@ -43167,7 +43153,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3083
+    "seq": 3082
   },
   {
     "store": "宗像店",
@@ -43181,7 +43167,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3084
+    "seq": 3083
   },
   {
     "store": "宗像店",
@@ -43195,7 +43181,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3085
+    "seq": 3084
   },
   {
     "store": "宗像店",
@@ -43209,7 +43195,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3086
+    "seq": 3085
   },
   {
     "store": "宗像店",
@@ -43223,7 +43209,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3087
+    "seq": 3086
   },
   {
     "store": "宗像店",
@@ -43237,7 +43223,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3088
+    "seq": 3087
   },
   {
     "store": "宗像店",
@@ -43251,7 +43237,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3089
+    "seq": 3088
   },
   {
     "store": "宗像店",
@@ -43260,12 +43246,12 @@ window.COLLECTION_DATA = [
     "name": "吉田　茂",
     "paymentType": "cash",
     "address": "福津市東福間１丁目２－４ー５１３号",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3090
+    "seq": 3089
   },
   {
     "store": "宗像店",
@@ -43279,7 +43265,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3091
+    "seq": 3090
   },
   {
     "store": "宗像店",
@@ -43293,7 +43279,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3092
+    "seq": 3091
   },
   {
     "store": "宗像店",
@@ -43307,7 +43293,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3093
+    "seq": 3092
   },
   {
     "store": "宗像店",
@@ -43321,7 +43307,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3094
+    "seq": 3093
   },
   {
     "store": "宗像店",
@@ -43335,7 +43321,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3095
+    "seq": 3094
   },
   {
     "store": "宗像店",
@@ -43349,7 +43335,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3096
+    "seq": 3095
   },
   {
     "store": "宗像店",
@@ -43363,7 +43349,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3097
+    "seq": 3096
   },
   {
     "store": "宗像店",
@@ -43377,7 +43363,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3098
+    "seq": 3097
   },
   {
     "store": "宗像店",
@@ -43391,7 +43377,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3099
+    "seq": 3098
   },
   {
     "store": "宗像店",
@@ -43400,12 +43386,12 @@ window.COLLECTION_DATA = [
     "name": "新地　秋行",
     "paymentType": "cash",
     "address": "福津市福間南１丁目２５－１7",
-    "amount": 18167,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3100
+    "seq": 3099
   },
   {
     "store": "宗像店",
@@ -43419,7 +43405,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3101
+    "seq": 3100
   },
   {
     "store": "宗像店",
@@ -43433,7 +43419,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3102
+    "seq": 3101
   },
   {
     "store": "宗像店",
@@ -43447,7 +43433,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3103
+    "seq": 3102
   },
   {
     "store": "宗像店",
@@ -43461,7 +43447,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3104
+    "seq": 3103
   },
   {
     "store": "宗像店",
@@ -43475,7 +43461,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3105
+    "seq": 3104
   },
   {
     "store": "宗像店",
@@ -43489,7 +43475,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3106
+    "seq": 3105
   },
   {
     "store": "宗像店",
@@ -43503,7 +43489,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3107
+    "seq": 3106
   },
   {
     "store": "宗像店",
@@ -43517,7 +43503,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3108
+    "seq": 3107
   },
   {
     "store": "宗像店",
@@ -43531,7 +43517,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3109
+    "seq": 3108
   },
   {
     "store": "宗像店",
@@ -43545,7 +43531,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3110
+    "seq": 3109
   },
   {
     "store": "宗像店",
@@ -43559,7 +43545,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3111
+    "seq": 3110
   },
   {
     "store": "宗像店",
@@ -43573,7 +43559,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3112
+    "seq": 3111
   },
   {
     "store": "宗像店",
@@ -43587,7 +43573,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3113
+    "seq": 3112
   },
   {
     "store": "宗像店",
@@ -43601,7 +43587,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3114
+    "seq": 3113
   },
   {
     "store": "宗像店",
@@ -43615,7 +43601,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3115
+    "seq": 3114
   },
   {
     "store": "宗像店",
@@ -43629,11 +43615,25 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3116
+    "seq": 3115
   },
   {
     "store": "宗像店",
     "code": 3190,
+    "route": 4,
+    "name": "内山　裕太",
+    "paymentType": "cash",
+    "address": "福津市津屋崎7丁目３－４５ー2棟203号",
+    "amount": 0,
+    "dataMonth": "2026-03",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.３)宗像店.xlsm"
+    ],
+    "seq": 3116
+  },
+  {
+    "store": "宗像店",
+    "code": 3200,
     "route": 4,
     "name": "内山　裕太",
     "paymentType": "cash",
@@ -43647,20 +43647,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "宗像店",
-    "code": 3200,
-    "route": 4,
-    "name": "内山　裕太",
-    "paymentType": "cash",
-    "address": "福津市津屋崎7丁目３－４５ー2棟203号",
-    "amount": 0,
-    "dataMonth": "2026-03",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.３)宗像店.xlsm"
-    ],
-    "seq": 3118
-  },
-  {
-    "store": "宗像店",
     "code": 3210,
     "route": 4,
     "name": "内山　裕太",
@@ -43671,7 +43657,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3119
+    "seq": 3118
   },
   {
     "store": "宗像店",
@@ -43685,7 +43671,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3120
+    "seq": 3119
   },
   {
     "store": "宗像店",
@@ -43699,7 +43685,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3121
+    "seq": 3120
   },
   {
     "store": "宗像店",
@@ -43713,7 +43699,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3122
+    "seq": 3121
   },
   {
     "store": "宗像店",
@@ -43727,7 +43713,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3123
+    "seq": 3122
   },
   {
     "store": "宗像店",
@@ -43741,7 +43727,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3124
+    "seq": 3123
   },
   {
     "store": "宗像店",
@@ -43755,7 +43741,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3125
+    "seq": 3124
   },
   {
     "store": "宗像店",
@@ -43764,12 +43750,12 @@ window.COLLECTION_DATA = [
     "name": "渡辺　ヒサノリ",
     "paymentType": "cash",
     "address": "福津市宮司６－１８－１３",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3126
+    "seq": 3125
   },
   {
     "store": "宗像店",
@@ -43783,7 +43769,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3127
+    "seq": 3126
   },
   {
     "store": "宗像店",
@@ -43797,7 +43783,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3128
+    "seq": 3127
   },
   {
     "store": "宗像店",
@@ -43811,7 +43797,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3129
+    "seq": 3128
   },
   {
     "store": "宗像店",
@@ -43825,7 +43811,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3130
+    "seq": 3129
   },
   {
     "store": "宗像店",
@@ -43839,7 +43825,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3131
+    "seq": 3130
   },
   {
     "store": "宗像店",
@@ -43853,7 +43839,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3132
+    "seq": 3131
   },
   {
     "store": "宗像店",
@@ -43867,7 +43853,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3133
+    "seq": 3132
   },
   {
     "store": "宗像店",
@@ -43881,7 +43867,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3134
+    "seq": 3133
   },
   {
     "store": "宗像店",
@@ -43895,7 +43881,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3135
+    "seq": 3134
   },
   {
     "store": "宗像店",
@@ -43909,7 +43895,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3136
+    "seq": 3135
   },
   {
     "store": "宗像店",
@@ -43923,7 +43909,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3137
+    "seq": 3136
   },
   {
     "store": "宗像店",
@@ -43937,7 +43923,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3138
+    "seq": 3137
   },
   {
     "store": "宗像店",
@@ -43951,7 +43937,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3139
+    "seq": 3138
   },
   {
     "store": "宗像店",
@@ -43965,7 +43951,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3140
+    "seq": 3139
   },
   {
     "store": "宗像店",
@@ -43979,7 +43965,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3141
+    "seq": 3140
   },
   {
     "store": "宗像店",
@@ -43993,7 +43979,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3142
+    "seq": 3141
   },
   {
     "store": "宗像店",
@@ -44007,7 +43993,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3143
+    "seq": 3142
   },
   {
     "store": "宗像店",
@@ -44021,7 +44007,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3144
+    "seq": 3143
   },
   {
     "store": "宗像店",
@@ -44035,7 +44021,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3145
+    "seq": 3144
   },
   {
     "store": "宗像店",
@@ -44049,7 +44035,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3146
+    "seq": 3145
   },
   {
     "store": "宗像店",
@@ -44058,12 +44044,12 @@ window.COLLECTION_DATA = [
     "name": "淀川　茂雄",
     "paymentType": "cash",
     "address": "福津市東福間６－７－４",
-    "amount": 13303,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3147
+    "seq": 3146
   },
   {
     "store": "宗像店",
@@ -44077,7 +44063,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.３)宗像店.xlsm"
     ],
-    "seq": 3148
+    "seq": 3147
   },
   {
     "store": "宗像店",
@@ -44091,7 +44077,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3149
+    "seq": 3148
   },
   {
     "store": "宗像店",
@@ -44105,7 +44091,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3150
+    "seq": 3149
   },
   {
     "store": "宗像店",
@@ -44119,7 +44105,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3151
+    "seq": 3150
   },
   {
     "store": "宗像店",
@@ -44133,7 +44119,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3152
+    "seq": 3151
   },
   {
     "store": "宗像店",
@@ -44147,7 +44133,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3153
+    "seq": 3152
   },
   {
     "store": "宗像店",
@@ -44161,7 +44147,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3154
+    "seq": 3153
   },
   {
     "store": "宗像店",
@@ -44175,7 +44161,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3155
+    "seq": 3154
   },
   {
     "store": "宗像店",
@@ -44189,7 +44175,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3156
+    "seq": 3155
   },
   {
     "store": "宗像店",
@@ -44203,7 +44189,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3157
+    "seq": 3156
   },
   {
     "store": "宗像店",
@@ -44217,7 +44203,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3158
+    "seq": 3157
   },
   {
     "store": "宗像店",
@@ -44231,7 +44217,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3159
+    "seq": 3158
   },
   {
     "store": "宗像店",
@@ -44245,7 +44231,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3160
+    "seq": 3159
   },
   {
     "store": "宗像店",
@@ -44259,7 +44245,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3161
+    "seq": 3160
   },
   {
     "store": "宗像店",
@@ -44273,7 +44259,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3162
+    "seq": 3161
   },
   {
     "store": "宗像店",
@@ -44287,7 +44273,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3163
+    "seq": 3162
   },
   {
     "store": "宗像店",
@@ -44301,7 +44287,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3164
+    "seq": 3163
   },
   {
     "store": "宗像店",
@@ -44315,7 +44301,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3165
+    "seq": 3164
   },
   {
     "store": "宗像店",
@@ -44329,7 +44315,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3166
+    "seq": 3165
   },
   {
     "store": "宗像店",
@@ -44343,7 +44329,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3167
+    "seq": 3166
   },
   {
     "store": "宗像店",
@@ -44357,7 +44343,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3168
+    "seq": 3167
   },
   {
     "store": "宗像店",
@@ -44371,7 +44357,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3169
+    "seq": 3168
   },
   {
     "store": "宗像店",
@@ -44385,7 +44371,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3170
+    "seq": 3169
   },
   {
     "store": "宗像店",
@@ -44399,7 +44385,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3171
+    "seq": 3170
   },
   {
     "store": "宗像店",
@@ -44413,7 +44399,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3172
+    "seq": 3171
   },
   {
     "store": "宗像店",
@@ -44427,7 +44413,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3173
+    "seq": 3172
   },
   {
     "store": "宗像店",
@@ -44441,7 +44427,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3174
+    "seq": 3173
   },
   {
     "store": "宗像店",
@@ -44455,7 +44441,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3175
+    "seq": 3174
   },
   {
     "store": "宗像店",
@@ -44469,7 +44455,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3176
+    "seq": 3175
   },
   {
     "store": "宗像店",
@@ -44483,7 +44469,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3177
+    "seq": 3176
   },
   {
     "store": "宗像店",
@@ -44497,7 +44483,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3178
+    "seq": 3177
   },
   {
     "store": "宗像店",
@@ -44511,7 +44497,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3179
+    "seq": 3178
   },
   {
     "store": "宗像店",
@@ -44525,7 +44511,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3180
+    "seq": 3179
   },
   {
     "store": "宗像店",
@@ -44539,7 +44525,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3181
+    "seq": 3180
   },
   {
     "store": "宗像店",
@@ -44553,7 +44539,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3182
+    "seq": 3181
   },
   {
     "store": "宗像店",
@@ -44567,7 +44553,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3183
+    "seq": 3182
   },
   {
     "store": "宗像店",
@@ -44581,7 +44567,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3184
+    "seq": 3183
   },
   {
     "store": "宗像店",
@@ -44595,7 +44581,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3185
+    "seq": 3184
   },
   {
     "store": "宗像店",
@@ -44609,7 +44595,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3186
+    "seq": 3185
   },
   {
     "store": "宗像店",
@@ -44623,7 +44609,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3187
+    "seq": 3186
   },
   {
     "store": "宗像店",
@@ -44637,7 +44623,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3188
+    "seq": 3187
   },
   {
     "store": "宗像店",
@@ -44651,7 +44637,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3189
+    "seq": 3188
   },
   {
     "store": "宗像店",
@@ -44665,7 +44651,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3190
+    "seq": 3189
   },
   {
     "store": "宗像店",
@@ -44679,7 +44665,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3191
+    "seq": 3190
   },
   {
     "store": "宗像店",
@@ -44693,7 +44679,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3192
+    "seq": 3191
   },
   {
     "store": "宗像店",
@@ -44707,7 +44693,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3193
+    "seq": 3192
   },
   {
     "store": "宗像店",
@@ -44721,7 +44707,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3194
+    "seq": 3193
   },
   {
     "store": "宗像店",
@@ -44735,7 +44721,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3195
+    "seq": 3194
   },
   {
     "store": "宗像店",
@@ -44749,7 +44735,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3196
+    "seq": 3195
   },
   {
     "store": "宗像店",
@@ -44763,7 +44749,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3197
+    "seq": 3196
   },
   {
     "store": "宗像店",
@@ -44777,7 +44763,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3198
+    "seq": 3197
   },
   {
     "store": "宗像店",
@@ -44791,7 +44777,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3199
+    "seq": 3198
   },
   {
     "store": "宗像店",
@@ -44805,7 +44791,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3200
+    "seq": 3199
   },
   {
     "store": "宗像店",
@@ -44819,7 +44805,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3201
+    "seq": 3200
   },
   {
     "store": "宗像店",
@@ -44833,7 +44819,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3202
+    "seq": 3201
   },
   {
     "store": "宗像店",
@@ -44847,7 +44833,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3203
+    "seq": 3202
   },
   {
     "store": "宗像店",
@@ -44861,7 +44847,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3204
+    "seq": 3203
   },
   {
     "store": "宗像店",
@@ -44875,7 +44861,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3205
+    "seq": 3204
   },
   {
     "store": "宗像店",
@@ -44889,7 +44875,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3206
+    "seq": 3205
   },
   {
     "store": "宗像店",
@@ -44903,7 +44889,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3207
+    "seq": 3206
   },
   {
     "store": "宗像店",
@@ -44917,7 +44903,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3208
+    "seq": 3207
   },
   {
     "store": "宗像店",
@@ -44931,7 +44917,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3209
+    "seq": 3208
   },
   {
     "store": "宗像店",
@@ -44945,7 +44931,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3210
+    "seq": 3209
   },
   {
     "store": "宗像店",
@@ -44959,7 +44945,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3211
+    "seq": 3210
   },
   {
     "store": "宗像店",
@@ -44973,7 +44959,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3212
+    "seq": 3211
   },
   {
     "store": "宗像店",
@@ -44987,7 +44973,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3213
+    "seq": 3212
   },
   {
     "store": "宗像店",
@@ -45001,7 +44987,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3214
+    "seq": 3213
   },
   {
     "store": "宗像店",
@@ -45015,7 +45001,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3215
+    "seq": 3214
   },
   {
     "store": "宗像店",
@@ -45029,7 +45015,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3216
+    "seq": 3215
   },
   {
     "store": "宗像店",
@@ -45043,7 +45029,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3217
+    "seq": 3216
   },
   {
     "store": "宗像店",
@@ -45057,7 +45043,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3218
+    "seq": 3217
   },
   {
     "store": "宗像店",
@@ -45071,7 +45057,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3219
+    "seq": 3218
   },
   {
     "store": "宗像店",
@@ -45085,7 +45071,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3220
+    "seq": 3219
   },
   {
     "store": "宗像店",
@@ -45099,7 +45085,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3221
+    "seq": 3220
   },
   {
     "store": "宗像店",
@@ -45113,7 +45099,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3222
+    "seq": 3221
   },
   {
     "store": "宗像店",
@@ -45127,7 +45113,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3223
+    "seq": 3222
   },
   {
     "store": "宗像店",
@@ -45141,7 +45127,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3224
+    "seq": 3223
   },
   {
     "store": "宗像店",
@@ -45155,7 +45141,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3225
+    "seq": 3224
   },
   {
     "store": "宗像店",
@@ -45169,7 +45155,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3226
+    "seq": 3225
   },
   {
     "store": "宗像店",
@@ -45183,7 +45169,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3227
+    "seq": 3226
   },
   {
     "store": "宗像店",
@@ -45197,7 +45183,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3228
+    "seq": 3227
   },
   {
     "store": "宗像店",
@@ -45211,7 +45197,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3229
+    "seq": 3228
   },
   {
     "store": "宗像店",
@@ -45225,7 +45211,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3230
+    "seq": 3229
   },
   {
     "store": "宗像店",
@@ -45239,7 +45225,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3231
+    "seq": 3230
   },
   {
     "store": "宗像店",
@@ -45253,7 +45239,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3232
+    "seq": 3231
   },
   {
     "store": "宗像店",
@@ -45267,7 +45253,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3233
+    "seq": 3232
   },
   {
     "store": "宗像店",
@@ -45281,7 +45267,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3234
+    "seq": 3233
   },
   {
     "store": "宗像店",
@@ -45295,7 +45281,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3235
+    "seq": 3234
   },
   {
     "store": "宗像店",
@@ -45309,7 +45295,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3236
+    "seq": 3235
   },
   {
     "store": "宗像店",
@@ -45323,7 +45309,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3237
+    "seq": 3236
   },
   {
     "store": "宗像店",
@@ -45337,7 +45323,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3238
+    "seq": 3237
   },
   {
     "store": "宗像店",
@@ -45351,7 +45337,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3239
+    "seq": 3238
   },
   {
     "store": "宗像店",
@@ -45365,7 +45351,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3240
+    "seq": 3239
   },
   {
     "store": "宗像店",
@@ -45379,7 +45365,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3241
+    "seq": 3240
   },
   {
     "store": "宗像店",
@@ -45393,7 +45379,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3242
+    "seq": 3241
   },
   {
     "store": "宗像店",
@@ -45407,7 +45393,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3243
+    "seq": 3242
   },
   {
     "store": "宗像店",
@@ -45421,7 +45407,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3244
+    "seq": 3243
   },
   {
     "store": "宗像店",
@@ -45435,7 +45421,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3245
+    "seq": 3244
   },
   {
     "store": "宗像店",
@@ -45449,7 +45435,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3246
+    "seq": 3245
   },
   {
     "store": "宗像店",
@@ -45463,7 +45449,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3247
+    "seq": 3246
   },
   {
     "store": "宗像店",
@@ -45477,7 +45463,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3248
+    "seq": 3247
   },
   {
     "store": "宗像店",
@@ -45491,7 +45477,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3249
+    "seq": 3248
   },
   {
     "store": "宗像店",
@@ -45505,7 +45491,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3250
+    "seq": 3249
   },
   {
     "store": "宗像店",
@@ -45519,7 +45505,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3251
+    "seq": 3250
   },
   {
     "store": "宗像店",
@@ -45528,12 +45514,12 @@ window.COLLECTION_DATA = [
     "name": "津田　清美",
     "paymentType": "cash",
     "address": "宗像市田久１－６－２１ー２０１",
-    "amount": 11878,
+    "amount": 0,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3252
+    "seq": 3251
   },
   {
     "store": "宗像店",
@@ -45547,7 +45533,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3253
+    "seq": 3252
   },
   {
     "store": "宗像店",
@@ -45561,7 +45547,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3254
+    "seq": 3253
   },
   {
     "store": "宗像店",
@@ -45575,7 +45561,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3255
+    "seq": 3254
   },
   {
     "store": "宗像店",
@@ -45589,7 +45575,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3256
+    "seq": 3255
   },
   {
     "store": "宗像店",
@@ -45598,12 +45584,12 @@ window.COLLECTION_DATA = [
     "name": "松本　親行",
     "paymentType": "cash",
     "address": "宗像市稲元４丁目２３－８ー４０２",
-    "amount": 18167,
+    "amount": 2795,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3257
+    "seq": 3256
   },
   {
     "store": "宗像店",
@@ -45617,7 +45603,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3258
+    "seq": 3257
   },
   {
     "store": "宗像店",
@@ -45626,12 +45612,12 @@ window.COLLECTION_DATA = [
     "name": "金沖　和江",
     "paymentType": "cash",
     "address": "宗像市稲元２丁目１９－１５",
-    "amount": 2096,
+    "amount": 5590,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3259
+    "seq": 3258
   },
   {
     "store": "宗像店",
@@ -45645,7 +45631,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3260
+    "seq": 3259
   },
   {
     "store": "宗像店",
@@ -45659,7 +45645,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3261
+    "seq": 3260
   },
   {
     "store": "宗像店",
@@ -45673,7 +45659,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3262
+    "seq": 3261
   },
   {
     "store": "宗像店",
@@ -45687,7 +45673,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3263
+    "seq": 3262
   },
   {
     "store": "宗像店",
@@ -45701,7 +45687,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3264
+    "seq": 3263
   },
   {
     "store": "宗像店",
@@ -45715,7 +45701,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3265
+    "seq": 3264
   },
   {
     "store": "宗像店",
@@ -45729,7 +45715,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3266
+    "seq": 3265
   },
   {
     "store": "宗像店",
@@ -45743,7 +45729,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3267
+    "seq": 3266
   },
   {
     "store": "宗像店",
@@ -45757,7 +45743,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3268
+    "seq": 3267
   },
   {
     "store": "宗像店",
@@ -45771,7 +45757,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3269
+    "seq": 3268
   },
   {
     "store": "宗像店",
@@ -45785,7 +45771,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3270
+    "seq": 3269
   },
   {
     "store": "宗像店",
@@ -45799,7 +45785,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3271
+    "seq": 3270
   },
   {
     "store": "宗像店",
@@ -45813,7 +45799,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3272
+    "seq": 3271
   },
   {
     "store": "宗像店",
@@ -45827,7 +45813,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3273
+    "seq": 3272
   },
   {
     "store": "宗像店",
@@ -45841,7 +45827,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3274
+    "seq": 3273
   },
   {
     "store": "宗像店",
@@ -45855,7 +45841,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3275
+    "seq": 3274
   },
   {
     "store": "宗像店",
@@ -45869,7 +45855,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3276
+    "seq": 3275
   },
   {
     "store": "宗像店",
@@ -45883,7 +45869,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3277
+    "seq": 3276
   },
   {
     "store": "宗像店",
@@ -45897,7 +45883,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3278
+    "seq": 3277
   },
   {
     "store": "宗像店",
@@ -45911,7 +45897,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3279
+    "seq": 3278
   },
   {
     "store": "宗像店",
@@ -45925,7 +45911,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3280
+    "seq": 3279
   },
   {
     "store": "宗像店",
@@ -45939,7 +45925,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3281
+    "seq": 3280
   },
   {
     "store": "宗像店",
@@ -45953,7 +45939,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3282
+    "seq": 3281
   },
   {
     "store": "宗像店",
@@ -45967,7 +45953,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3283
+    "seq": 3282
   },
   {
     "store": "宗像店",
@@ -45981,7 +45967,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3284
+    "seq": 3283
   },
   {
     "store": "宗像店",
@@ -45995,7 +45981,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3285
+    "seq": 3284
   },
   {
     "store": "宗像店",
@@ -46009,7 +45995,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3286
+    "seq": 3285
   },
   {
     "store": "宗像店",
@@ -46023,7 +46009,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3287
+    "seq": 3286
   },
   {
     "store": "宗像店",
@@ -46037,7 +46023,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3288
+    "seq": 3287
   },
   {
     "store": "宗像店",
@@ -46051,7 +46037,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3289
+    "seq": 3288
   },
   {
     "store": "宗像店",
@@ -46065,7 +46051,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3290
+    "seq": 3289
   },
   {
     "store": "宗像店",
@@ -46079,7 +46065,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3291
+    "seq": 3290
   },
   {
     "store": "宗像店",
@@ -46093,7 +46079,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3292
+    "seq": 3291
   },
   {
     "store": "宗像店",
@@ -46107,7 +46093,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3293
+    "seq": 3292
   },
   {
     "store": "宗像店",
@@ -46121,7 +46107,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3294
+    "seq": 3293
   },
   {
     "store": "宗像店",
@@ -46135,7 +46121,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3295
+    "seq": 3294
   },
   {
     "store": "宗像店",
@@ -46149,7 +46135,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3296
+    "seq": 3295
   },
   {
     "store": "宗像店",
@@ -46163,7 +46149,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3297
+    "seq": 3296
   },
   {
     "store": "宗像店",
@@ -46177,7 +46163,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3298
+    "seq": 3297
   },
   {
     "store": "宗像店",
@@ -46191,7 +46177,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3299
+    "seq": 3298
   },
   {
     "store": "宗像店",
@@ -46205,7 +46191,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3300
+    "seq": 3299
   },
   {
     "store": "宗像店",
@@ -46214,12 +46200,12 @@ window.COLLECTION_DATA = [
     "name": "石田　春代",
     "paymentType": "cash",
     "address": "古賀市花見東２丁目１２－１",
-    "amount": 15372,
+    "amount": 2096,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3301
+    "seq": 3300
   },
   {
     "store": "宗像店",
@@ -46233,7 +46219,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3302
+    "seq": 3301
   },
   {
     "store": "宗像店",
@@ -46247,7 +46233,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3303
+    "seq": 3302
   },
   {
     "store": "宗像店",
@@ -46261,7 +46247,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3304
+    "seq": 3303
   },
   {
     "store": "宗像店",
@@ -46275,7 +46261,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3305
+    "seq": 3304
   },
   {
     "store": "宗像店",
@@ -46289,7 +46275,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3306
+    "seq": 3305
   },
   {
     "store": "宗像店",
@@ -46303,7 +46289,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3307
+    "seq": 3306
   },
   {
     "store": "宗像店",
@@ -46317,7 +46303,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3308
+    "seq": 3307
   },
   {
     "store": "宗像店",
@@ -46331,7 +46317,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3309
+    "seq": 3308
   },
   {
     "store": "宗像店",
@@ -46345,7 +46331,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3310
+    "seq": 3309
   },
   {
     "store": "宗像店",
@@ -46359,7 +46345,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3311
+    "seq": 3310
   },
   {
     "store": "宗像店",
@@ -46373,7 +46359,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3312
+    "seq": 3311
   },
   {
     "store": "宗像店",
@@ -46387,7 +46373,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3313
+    "seq": 3312
   },
   {
     "store": "宗像店",
@@ -46401,7 +46387,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3314
+    "seq": 3313
   },
   {
     "store": "宗像店",
@@ -46415,7 +46401,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3315
+    "seq": 3314
   },
   {
     "store": "宗像店",
@@ -46429,7 +46415,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3316
+    "seq": 3315
   },
   {
     "store": "宗像店",
@@ -46443,7 +46429,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3317
+    "seq": 3316
   },
   {
     "store": "宗像店",
@@ -46457,7 +46443,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3318
+    "seq": 3317
   },
   {
     "store": "宗像店",
@@ -46471,7 +46457,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3319
+    "seq": 3318
   },
   {
     "store": "宗像店",
@@ -46485,7 +46471,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3320
+    "seq": 3319
   },
   {
     "store": "宗像店",
@@ -46499,7 +46485,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3321
+    "seq": 3320
   },
   {
     "store": "宗像店",
@@ -46513,7 +46499,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3322
+    "seq": 3321
   },
   {
     "store": "宗像店",
@@ -46527,7 +46513,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3323
+    "seq": 3322
   },
   {
     "store": "宗像店",
@@ -46541,7 +46527,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3324
+    "seq": 3323
   },
   {
     "store": "宗像店",
@@ -46555,7 +46541,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3325
+    "seq": 3324
   },
   {
     "store": "宗像店",
@@ -46569,7 +46555,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3326
+    "seq": 3325
   },
   {
     "store": "宗像店",
@@ -46583,7 +46569,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3327
+    "seq": 3326
   },
   {
     "store": "宗像店",
@@ -46597,7 +46583,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3328
+    "seq": 3327
   },
   {
     "store": "宗像店",
@@ -46611,7 +46597,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3329
+    "seq": 3328
   },
   {
     "store": "宗像店",
@@ -46625,7 +46611,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3330
+    "seq": 3329
   },
   {
     "store": "宗像店",
@@ -46639,7 +46625,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3331
+    "seq": 3330
   },
   {
     "store": "宗像店",
@@ -46653,7 +46639,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3332
+    "seq": 3331
   },
   {
     "store": "宗像店",
@@ -46667,7 +46653,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3333
+    "seq": 3332
   },
   {
     "store": "宗像店",
@@ -46681,7 +46667,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3334
+    "seq": 3333
   },
   {
     "store": "宗像店",
@@ -46695,7 +46681,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3335
+    "seq": 3334
   },
   {
     "store": "宗像店",
@@ -46709,7 +46695,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3336
+    "seq": 3335
   },
   {
     "store": "宗像店",
@@ -46723,7 +46709,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3337
+    "seq": 3336
   },
   {
     "store": "宗像店",
@@ -46737,7 +46723,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3338
+    "seq": 3337
   },
   {
     "store": "宗像店",
@@ -46751,7 +46737,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3339
+    "seq": 3338
   },
   {
     "store": "宗像店",
@@ -46765,7 +46751,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3340
+    "seq": 3339
   },
   {
     "store": "宗像店",
@@ -46779,7 +46765,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3341
+    "seq": 3340
   },
   {
     "store": "宗像店",
@@ -46793,7 +46779,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3342
+    "seq": 3341
   },
   {
     "store": "宗像店",
@@ -46807,7 +46793,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3343
+    "seq": 3342
   },
   {
     "store": "宗像店",
@@ -46821,7 +46807,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3344
+    "seq": 3343
   },
   {
     "store": "宗像店",
@@ -46835,7 +46821,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3345
+    "seq": 3344
   },
   {
     "store": "宗像店",
@@ -46849,7 +46835,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3346
+    "seq": 3345
   },
   {
     "store": "宗像店",
@@ -46863,7 +46849,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3347
+    "seq": 3346
   },
   {
     "store": "宗像店",
@@ -46877,7 +46863,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3348
+    "seq": 3347
   },
   {
     "store": "宗像店",
@@ -46891,7 +46877,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3349
+    "seq": 3348
   },
   {
     "store": "宗像店",
@@ -46905,7 +46891,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3350
+    "seq": 3349
   },
   {
     "store": "宗像店",
@@ -46919,7 +46905,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3351
+    "seq": 3350
   },
   {
     "store": "宗像店",
@@ -46933,7 +46919,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3352
+    "seq": 3351
   },
   {
     "store": "宗像店",
@@ -46947,7 +46933,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3353
+    "seq": 3352
   },
   {
     "store": "宗像店",
@@ -46961,7 +46947,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3354
+    "seq": 3353
   },
   {
     "store": "宗像店",
@@ -46975,7 +46961,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3355
+    "seq": 3354
   },
   {
     "store": "宗像店",
@@ -46989,7 +46975,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3356
+    "seq": 3355
   },
   {
     "store": "宗像店",
@@ -47003,7 +46989,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3357
+    "seq": 3356
   },
   {
     "store": "宗像店",
@@ -47017,7 +47003,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3358
+    "seq": 3357
   },
   {
     "store": "宗像店",
@@ -47031,7 +47017,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3359
+    "seq": 3358
   },
   {
     "store": "宗像店",
@@ -47045,7 +47031,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3360
+    "seq": 3359
   },
   {
     "store": "宗像店",
@@ -47059,7 +47045,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3361
+    "seq": 3360
   },
   {
     "store": "宗像店",
@@ -47073,7 +47059,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3362
+    "seq": 3361
   },
   {
     "store": "宗像店",
@@ -47087,7 +47073,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3363
+    "seq": 3362
   },
   {
     "store": "宗像店",
@@ -47101,7 +47087,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3364
+    "seq": 3363
   },
   {
     "store": "宗像店",
@@ -47115,7 +47101,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3365
+    "seq": 3364
   },
   {
     "store": "宗像店",
@@ -47129,7 +47115,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3366
+    "seq": 3365
   },
   {
     "store": "宗像店",
@@ -47143,7 +47129,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3367
+    "seq": 3366
   },
   {
     "store": "宗像店",
@@ -47152,12 +47138,12 @@ window.COLLECTION_DATA = [
     "name": "淀川　茂雄",
     "paymentType": "cash",
     "address": "福津市東福間６－７－４",
-    "amount": 14240,
+    "amount": 13898,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3368
+    "seq": 3367
   },
   {
     "store": "宗像店",
@@ -47171,7 +47157,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.４)宗像店.xlsm"
     ],
-    "seq": 3369
+    "seq": 3368
   },
   {
     "store": "福岡東店",
@@ -47185,7 +47171,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3370
+    "seq": 3369
   },
   {
     "store": "福岡東店",
@@ -47199,7 +47185,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3371
+    "seq": 3370
   },
   {
     "store": "福岡東店",
@@ -47213,7 +47199,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3372
+    "seq": 3371
   },
   {
     "store": "福岡東店",
@@ -47227,7 +47213,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3373
+    "seq": 3372
   },
   {
     "store": "福岡東店",
@@ -47241,7 +47227,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3374
+    "seq": 3373
   },
   {
     "store": "福岡東店",
@@ -47255,7 +47241,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3375
+    "seq": 3374
   },
   {
     "store": "福岡東店",
@@ -47269,7 +47255,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3376
+    "seq": 3375
   },
   {
     "store": "福岡東店",
@@ -47283,7 +47269,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3377
+    "seq": 3376
   },
   {
     "store": "福岡東店",
@@ -47297,7 +47283,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3378
+    "seq": 3377
   },
   {
     "store": "福岡東店",
@@ -47311,7 +47297,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3379
+    "seq": 3378
   },
   {
     "store": "福岡東店",
@@ -47325,7 +47311,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3380
+    "seq": 3379
   },
   {
     "store": "福岡東店",
@@ -47339,7 +47325,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3381
+    "seq": 3380
   },
   {
     "store": "福岡東店",
@@ -47353,7 +47339,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3382
+    "seq": 3381
   },
   {
     "store": "福岡東店",
@@ -47367,7 +47353,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3383
+    "seq": 3382
   },
   {
     "store": "福岡東店",
@@ -47381,7 +47367,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3384
+    "seq": 3383
   },
   {
     "store": "福岡東店",
@@ -47395,7 +47381,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3385
+    "seq": 3384
   },
   {
     "store": "福岡東店",
@@ -47409,7 +47395,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3386
+    "seq": 3385
   },
   {
     "store": "福岡東店",
@@ -47423,7 +47409,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3387
+    "seq": 3386
   },
   {
     "store": "福岡東店",
@@ -47437,7 +47423,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3388
+    "seq": 3387
   },
   {
     "store": "福岡東店",
@@ -47451,7 +47437,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3389
+    "seq": 3388
   },
   {
     "store": "福岡東店",
@@ -47465,7 +47451,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3390
+    "seq": 3389
   },
   {
     "store": "福岡東店",
@@ -47479,7 +47465,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3391
+    "seq": 3390
   },
   {
     "store": "福岡東店",
@@ -47493,7 +47479,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3392
+    "seq": 3391
   },
   {
     "store": "福岡東店",
@@ -47507,7 +47493,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3393
+    "seq": 3392
   },
   {
     "store": "福岡東店",
@@ -47521,7 +47507,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3394
+    "seq": 3393
   },
   {
     "store": "福岡東店",
@@ -47535,7 +47521,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3395
+    "seq": 3394
   },
   {
     "store": "福岡東店",
@@ -47549,7 +47535,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3396
+    "seq": 3395
   },
   {
     "store": "福岡東店",
@@ -47563,7 +47549,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3397
+    "seq": 3396
   },
   {
     "store": "福岡東店",
@@ -47577,7 +47563,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3398
+    "seq": 3397
   },
   {
     "store": "福岡東店",
@@ -47591,7 +47577,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3399
+    "seq": 3398
   },
   {
     "store": "福岡東店",
@@ -47605,7 +47591,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3400
+    "seq": 3399
   },
   {
     "store": "福岡東店",
@@ -47619,7 +47605,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3401
+    "seq": 3400
   },
   {
     "store": "福岡東店",
@@ -47633,7 +47619,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3402
+    "seq": 3401
   },
   {
     "store": "福岡東店",
@@ -47647,7 +47633,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3403
+    "seq": 3402
   },
   {
     "store": "福岡東店",
@@ -47661,7 +47647,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3404
+    "seq": 3403
   },
   {
     "store": "福岡東店",
@@ -47675,7 +47661,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3405
+    "seq": 3404
   },
   {
     "store": "福岡東店",
@@ -47689,7 +47675,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3406
+    "seq": 3405
   },
   {
     "store": "福岡東店",
@@ -47703,7 +47689,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3407
+    "seq": 3406
   },
   {
     "store": "福岡東店",
@@ -47717,7 +47703,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3408
+    "seq": 3407
   },
   {
     "store": "福岡東店",
@@ -47731,7 +47717,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3409
+    "seq": 3408
   },
   {
     "store": "福岡東店",
@@ -47745,7 +47731,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3410
+    "seq": 3409
   },
   {
     "store": "福岡東店",
@@ -47759,7 +47745,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3411
+    "seq": 3410
   },
   {
     "store": "福岡東店",
@@ -47773,7 +47759,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3412
+    "seq": 3411
   },
   {
     "store": "福岡東店",
@@ -47787,7 +47773,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3413
+    "seq": 3412
   },
   {
     "store": "福岡東店",
@@ -47801,7 +47787,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3414
+    "seq": 3413
   },
   {
     "store": "福岡東店",
@@ -47815,7 +47801,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3415
+    "seq": 3414
   },
   {
     "store": "福岡東店",
@@ -47829,7 +47815,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3416
+    "seq": 3415
   },
   {
     "store": "福岡東店",
@@ -47843,7 +47829,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3417
+    "seq": 3416
   },
   {
     "store": "福岡東店",
@@ -47857,7 +47843,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3418
+    "seq": 3417
   },
   {
     "store": "福岡東店",
@@ -47871,7 +47857,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3419
+    "seq": 3418
   },
   {
     "store": "福岡東店",
@@ -47885,7 +47871,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3420
+    "seq": 3419
   },
   {
     "store": "福岡東店",
@@ -47899,7 +47885,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3421
+    "seq": 3420
   },
   {
     "store": "福岡東店",
@@ -47913,7 +47899,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3422
+    "seq": 3421
   },
   {
     "store": "福岡東店",
@@ -47927,7 +47913,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3423
+    "seq": 3422
   },
   {
     "store": "福岡東店",
@@ -47941,7 +47927,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3424
+    "seq": 3423
   },
   {
     "store": "福岡東店",
@@ -47955,7 +47941,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3425
+    "seq": 3424
   },
   {
     "store": "福岡東店",
@@ -47969,7 +47955,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3426
+    "seq": 3425
   },
   {
     "store": "福岡東店",
@@ -47983,7 +47969,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3427
+    "seq": 3426
   },
   {
     "store": "福岡東店",
@@ -47997,7 +47983,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3428
+    "seq": 3427
   },
   {
     "store": "福岡東店",
@@ -48011,7 +47997,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3429
+    "seq": 3428
   },
   {
     "store": "福岡東店",
@@ -48025,7 +48011,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3430
+    "seq": 3429
   },
   {
     "store": "福岡東店",
@@ -48039,7 +48025,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3431
+    "seq": 3430
   },
   {
     "store": "福岡東店",
@@ -48053,7 +48039,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3432
+    "seq": 3431
   },
   {
     "store": "福岡東店",
@@ -48067,7 +48053,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3433
+    "seq": 3432
   },
   {
     "store": "福岡東店",
@@ -48081,7 +48067,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3434
+    "seq": 3433
   },
   {
     "store": "福岡東店",
@@ -48095,7 +48081,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3435
+    "seq": 3434
   },
   {
     "store": "福岡東店",
@@ -48109,7 +48095,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3436
+    "seq": 3435
   },
   {
     "store": "福岡東店",
@@ -48123,7 +48109,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3437
+    "seq": 3436
   },
   {
     "store": "福岡東店",
@@ -48137,7 +48123,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3438
+    "seq": 3437
   },
   {
     "store": "福岡東店",
@@ -48151,7 +48137,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3439
+    "seq": 3438
   },
   {
     "store": "福岡東店",
@@ -48165,7 +48151,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3440
+    "seq": 3439
   },
   {
     "store": "福岡東店",
@@ -48179,7 +48165,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3441
+    "seq": 3440
   },
   {
     "store": "福岡東店",
@@ -48193,7 +48179,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3442
+    "seq": 3441
   },
   {
     "store": "福岡東店",
@@ -48207,7 +48193,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3443
+    "seq": 3442
   },
   {
     "store": "福岡東店",
@@ -48221,7 +48207,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3444
+    "seq": 3443
   },
   {
     "store": "福岡東店",
@@ -48235,7 +48221,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3445
+    "seq": 3444
   },
   {
     "store": "福岡東店",
@@ -48249,7 +48235,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3446
+    "seq": 3445
   },
   {
     "store": "福岡東店",
@@ -48263,7 +48249,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3447
+    "seq": 3446
   },
   {
     "store": "福岡東店",
@@ -48277,7 +48263,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3448
+    "seq": 3447
   },
   {
     "store": "福岡東店",
@@ -48291,7 +48277,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3449
+    "seq": 3448
   },
   {
     "store": "福岡東店",
@@ -48305,7 +48291,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3450
+    "seq": 3449
   },
   {
     "store": "福岡東店",
@@ -48319,7 +48305,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3451
+    "seq": 3450
   },
   {
     "store": "福岡東店",
@@ -48333,7 +48319,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3452
+    "seq": 3451
   },
   {
     "store": "福岡東店",
@@ -48347,7 +48333,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3453
+    "seq": 3452
   },
   {
     "store": "福岡東店",
@@ -48361,7 +48347,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3454
+    "seq": 3453
   },
   {
     "store": "福岡東店",
@@ -48375,7 +48361,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3455
+    "seq": 3454
   },
   {
     "store": "福岡東店",
@@ -48389,7 +48375,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3456
+    "seq": 3455
   },
   {
     "store": "福岡東店",
@@ -48403,7 +48389,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3457
+    "seq": 3456
   },
   {
     "store": "福岡東店",
@@ -48417,7 +48403,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3458
+    "seq": 3457
   },
   {
     "store": "福岡東店",
@@ -48431,7 +48417,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3459
+    "seq": 3458
   },
   {
     "store": "福岡東店",
@@ -48445,7 +48431,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3460
+    "seq": 3459
   },
   {
     "store": "福岡東店",
@@ -48459,7 +48445,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3461
+    "seq": 3460
   },
   {
     "store": "福岡東店",
@@ -48473,7 +48459,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3462
+    "seq": 3461
   },
   {
     "store": "福岡東店",
@@ -48487,7 +48473,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3463
+    "seq": 3462
   },
   {
     "store": "福岡東店",
@@ -48501,7 +48487,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3464
+    "seq": 3463
   },
   {
     "store": "福岡東店",
@@ -48515,7 +48501,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3465
+    "seq": 3464
   },
   {
     "store": "福岡東店",
@@ -48529,7 +48515,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3466
+    "seq": 3465
   },
   {
     "store": "福岡東店",
@@ -48543,7 +48529,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3467
+    "seq": 3466
   },
   {
     "store": "福岡東店",
@@ -48557,7 +48543,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3468
+    "seq": 3467
   },
   {
     "store": "福岡東店",
@@ -48571,7 +48557,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3469
+    "seq": 3468
   },
   {
     "store": "福岡東店",
@@ -48585,7 +48571,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3470
+    "seq": 3469
   },
   {
     "store": "福岡東店",
@@ -48599,7 +48585,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3471
+    "seq": 3470
   },
   {
     "store": "福岡東店",
@@ -48613,7 +48599,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3472
+    "seq": 3471
   },
   {
     "store": "福岡東店",
@@ -48627,7 +48613,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3473
+    "seq": 3472
   },
   {
     "store": "福岡東店",
@@ -48641,7 +48627,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3474
+    "seq": 3473
   },
   {
     "store": "福岡東店",
@@ -48655,7 +48641,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3475
+    "seq": 3474
   },
   {
     "store": "福岡東店",
@@ -48669,7 +48655,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3476
+    "seq": 3475
   },
   {
     "store": "福岡東店",
@@ -48683,7 +48669,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3477
+    "seq": 3476
   },
   {
     "store": "福岡東店",
@@ -48697,7 +48683,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3478
+    "seq": 3477
   },
   {
     "store": "福岡東店",
@@ -48711,7 +48697,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3479
+    "seq": 3478
   },
   {
     "store": "福岡東店",
@@ -48725,7 +48711,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3480
+    "seq": 3479
   },
   {
     "store": "福岡東店",
@@ -48739,7 +48725,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3481
+    "seq": 3480
   },
   {
     "store": "福岡東店",
@@ -48753,7 +48739,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3482
+    "seq": 3481
   },
   {
     "store": "福岡東店",
@@ -48767,7 +48753,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3483
+    "seq": 3482
   },
   {
     "store": "福岡東店",
@@ -48781,7 +48767,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3484
+    "seq": 3483
   },
   {
     "store": "福岡東店",
@@ -48795,7 +48781,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3485
+    "seq": 3484
   },
   {
     "store": "福岡東店",
@@ -48809,7 +48795,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3486
+    "seq": 3485
   },
   {
     "store": "福岡東店",
@@ -48823,7 +48809,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3487
+    "seq": 3486
   },
   {
     "store": "福岡東店",
@@ -48837,7 +48823,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3488
+    "seq": 3487
   },
   {
     "store": "福岡東店",
@@ -48851,7 +48837,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3489
+    "seq": 3488
   },
   {
     "store": "福岡東店",
@@ -48865,7 +48851,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3490
+    "seq": 3489
   },
   {
     "store": "福岡東店",
@@ -48879,7 +48865,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3491
+    "seq": 3490
   },
   {
     "store": "福岡東店",
@@ -48893,7 +48879,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3492
+    "seq": 3491
   },
   {
     "store": "福岡東店",
@@ -48907,7 +48893,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3493
+    "seq": 3492
   },
   {
     "store": "福岡東店",
@@ -48921,7 +48907,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3494
+    "seq": 3493
   },
   {
     "store": "福岡東店",
@@ -48935,7 +48921,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3495
+    "seq": 3494
   },
   {
     "store": "福岡東店",
@@ -48949,7 +48935,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3496
+    "seq": 3495
   },
   {
     "store": "福岡東店",
@@ -48963,7 +48949,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3497
+    "seq": 3496
   },
   {
     "store": "福岡東店",
@@ -48977,7 +48963,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3498
+    "seq": 3497
   },
   {
     "store": "福岡東店",
@@ -48991,7 +48977,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3499
+    "seq": 3498
   },
   {
     "store": "福岡東店",
@@ -49005,7 +48991,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.2)福岡東店.xlsm"
     ],
-    "seq": 3500
+    "seq": 3499
   },
   {
     "store": "福岡東店",
@@ -49019,7 +49005,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3501
+    "seq": 3500
   },
   {
     "store": "福岡東店",
@@ -49033,7 +49019,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3502
+    "seq": 3501
   },
   {
     "store": "福岡東店",
@@ -49047,7 +49033,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3503
+    "seq": 3502
   },
   {
     "store": "福岡東店",
@@ -49061,7 +49047,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3504
+    "seq": 3503
   },
   {
     "store": "福岡東店",
@@ -49075,7 +49061,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3505
+    "seq": 3504
   },
   {
     "store": "福岡東店",
@@ -49089,7 +49075,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3506
+    "seq": 3505
   },
   {
     "store": "福岡東店",
@@ -49103,7 +49089,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3507
+    "seq": 3506
   },
   {
     "store": "福岡東店",
@@ -49117,7 +49103,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3508
+    "seq": 3507
   },
   {
     "store": "福岡東店",
@@ -49131,7 +49117,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3509
+    "seq": 3508
   },
   {
     "store": "福岡東店",
@@ -49145,7 +49131,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3510
+    "seq": 3509
   },
   {
     "store": "福岡東店",
@@ -49159,7 +49145,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3511
+    "seq": 3510
   },
   {
     "store": "福岡東店",
@@ -49173,7 +49159,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3512
+    "seq": 3511
   },
   {
     "store": "福岡東店",
@@ -49187,7 +49173,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3513
+    "seq": 3512
   },
   {
     "store": "福岡東店",
@@ -49196,12 +49182,12 @@ window.COLLECTION_DATA = [
     "name": "山﨑　桂子",
     "paymentType": "cash",
     "address": "福岡市東区奈多団地１４－３０４号",
-    "amount": 27251,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3514
+    "seq": 3513
   },
   {
     "store": "福岡東店",
@@ -49215,7 +49201,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3515
+    "seq": 3514
   },
   {
     "store": "福岡東店",
@@ -49229,7 +49215,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3516
+    "seq": 3515
   },
   {
     "store": "福岡東店",
@@ -49243,7 +49229,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3517
+    "seq": 3516
   },
   {
     "store": "福岡東店",
@@ -49257,7 +49243,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3518
+    "seq": 3517
   },
   {
     "store": "福岡東店",
@@ -49266,12 +49252,12 @@ window.COLLECTION_DATA = [
     "name": "池田　重信",
     "paymentType": "cash",
     "address": "福岡市東区和白東１－３５－１１",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3519
+    "seq": 3518
   },
   {
     "store": "福岡東店",
@@ -49285,7 +49271,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3520
+    "seq": 3519
   },
   {
     "store": "福岡東店",
@@ -49299,7 +49285,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3521
+    "seq": 3520
   },
   {
     "store": "福岡東店",
@@ -49313,7 +49299,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3522
+    "seq": 3521
   },
   {
     "store": "福岡東店",
@@ -49327,7 +49313,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3523
+    "seq": 3522
   },
   {
     "store": "福岡東店",
@@ -49341,7 +49327,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3524
+    "seq": 3523
   },
   {
     "store": "福岡東店",
@@ -49355,7 +49341,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3525
+    "seq": 3524
   },
   {
     "store": "福岡東店",
@@ -49369,7 +49355,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3526
+    "seq": 3525
   },
   {
     "store": "福岡東店",
@@ -49383,7 +49369,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3527
+    "seq": 3526
   },
   {
     "store": "福岡東店",
@@ -49397,7 +49383,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3528
+    "seq": 3527
   },
   {
     "store": "福岡東店",
@@ -49411,7 +49397,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3529
+    "seq": 3528
   },
   {
     "store": "福岡東店",
@@ -49425,7 +49411,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3530
+    "seq": 3529
   },
   {
     "store": "福岡東店",
@@ -49434,12 +49420,12 @@ window.COLLECTION_DATA = [
     "name": "福地　雇",
     "paymentType": "cash",
     "address": "東区高美台１－１６－９",
-    "amount": 27865,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3531
+    "seq": 3530
   },
   {
     "store": "福岡東店",
@@ -49453,7 +49439,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3532
+    "seq": 3531
   },
   {
     "store": "福岡東店",
@@ -49467,7 +49453,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3533
+    "seq": 3532
   },
   {
     "store": "福岡東店",
@@ -49476,12 +49462,12 @@ window.COLLECTION_DATA = [
     "name": "籠島　憲子",
     "paymentType": "cash",
     "address": "福岡市東区高美台３丁目２６－４",
-    "amount": 11180,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3534
+    "seq": 3533
   },
   {
     "store": "福岡東店",
@@ -49495,7 +49481,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3535
+    "seq": 3534
   },
   {
     "store": "福岡東店",
@@ -49509,7 +49495,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3536
+    "seq": 3535
   },
   {
     "store": "福岡東店",
@@ -49523,7 +49509,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3537
+    "seq": 3536
   },
   {
     "store": "福岡東店",
@@ -49537,7 +49523,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3538
+    "seq": 3537
   },
   {
     "store": "福岡東店",
@@ -49551,7 +49537,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3539
+    "seq": 3538
   },
   {
     "store": "福岡東店",
@@ -49565,7 +49551,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3540
+    "seq": 3539
   },
   {
     "store": "福岡東店",
@@ -49579,7 +49565,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3541
+    "seq": 3540
   },
   {
     "store": "福岡東店",
@@ -49593,7 +49579,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3542
+    "seq": 3541
   },
   {
     "store": "福岡東店",
@@ -49607,7 +49593,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3543
+    "seq": 3542
   },
   {
     "store": "福岡東店",
@@ -49621,7 +49607,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3544
+    "seq": 3543
   },
   {
     "store": "福岡東店",
@@ -49635,7 +49621,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3545
+    "seq": 3544
   },
   {
     "store": "福岡東店",
@@ -49649,7 +49635,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3546
+    "seq": 3545
   },
   {
     "store": "福岡東店",
@@ -49663,7 +49649,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3547
+    "seq": 3546
   },
   {
     "store": "福岡東店",
@@ -49677,7 +49663,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3548
+    "seq": 3547
   },
   {
     "store": "福岡東店",
@@ -49691,7 +49677,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3549
+    "seq": 3548
   },
   {
     "store": "福岡東店",
@@ -49705,7 +49691,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3550
+    "seq": 3549
   },
   {
     "store": "福岡東店",
@@ -49719,7 +49705,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3551
+    "seq": 3550
   },
   {
     "store": "福岡東店",
@@ -49728,12 +49714,12 @@ window.COLLECTION_DATA = [
     "name": "松尾　能扶枝",
     "paymentType": "cash",
     "address": "東区美和台２－８－４",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3552
+    "seq": 3551
   },
   {
     "store": "福岡東店",
@@ -49747,7 +49733,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3553
+    "seq": 3552
   },
   {
     "store": "福岡東店",
@@ -49761,7 +49747,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3554
+    "seq": 3553
   },
   {
     "store": "福岡東店",
@@ -49770,12 +49756,12 @@ window.COLLECTION_DATA = [
     "name": "姫嶋　三男",
     "paymentType": "cash",
     "address": "東区和白丘4-2-1-202ガーデンライフ",
-    "amount": 9589,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3555
+    "seq": 3554
   },
   {
     "store": "福岡東店",
@@ -49789,7 +49775,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3556
+    "seq": 3555
   },
   {
     "store": "福岡東店",
@@ -49803,7 +49789,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3557
+    "seq": 3556
   },
   {
     "store": "福岡東店",
@@ -49817,7 +49803,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3558
+    "seq": 3557
   },
   {
     "store": "福岡東店",
@@ -49831,7 +49817,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3559
+    "seq": 3558
   },
   {
     "store": "福岡東店",
@@ -49845,7 +49831,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3560
+    "seq": 3559
   },
   {
     "store": "福岡東店",
@@ -49859,7 +49845,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3561
+    "seq": 3560
   },
   {
     "store": "福岡東店",
@@ -49873,7 +49859,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3562
+    "seq": 3561
   },
   {
     "store": "福岡東店",
@@ -49887,7 +49873,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3563
+    "seq": 3562
   },
   {
     "store": "福岡東店",
@@ -49901,7 +49887,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3564
+    "seq": 3563
   },
   {
     "store": "福岡東店",
@@ -49915,7 +49901,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3565
+    "seq": 3564
   },
   {
     "store": "福岡東店",
@@ -49929,7 +49915,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3566
+    "seq": 3565
   },
   {
     "store": "福岡東店",
@@ -49943,7 +49929,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3567
+    "seq": 3566
   },
   {
     "store": "福岡東店",
@@ -49957,7 +49943,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3568
+    "seq": 3567
   },
   {
     "store": "福岡東店",
@@ -49971,7 +49957,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3569
+    "seq": 3568
   },
   {
     "store": "福岡東店",
@@ -49985,7 +49971,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3570
+    "seq": 3569
   },
   {
     "store": "福岡東店",
@@ -49999,7 +49985,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3571
+    "seq": 3570
   },
   {
     "store": "福岡東店",
@@ -50013,7 +49999,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3572
+    "seq": 3571
   },
   {
     "store": "福岡東店",
@@ -50027,7 +50013,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3573
+    "seq": 3572
   },
   {
     "store": "福岡東店",
@@ -50041,7 +50027,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3574
+    "seq": 3573
   },
   {
     "store": "福岡東店",
@@ -50050,12 +50036,12 @@ window.COLLECTION_DATA = [
     "name": "小原　留美子",
     "paymentType": "bank",
     "address": "東区城浜団地３３－２０８号",
-    "amount": 797,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3575
+    "seq": 3574
   },
   {
     "store": "福岡東店",
@@ -50069,7 +50055,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3576
+    "seq": 3575
   },
   {
     "store": "福岡東店",
@@ -50083,7 +50069,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3577
+    "seq": 3576
   },
   {
     "store": "福岡東店",
@@ -50097,7 +50083,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3578
+    "seq": 3577
   },
   {
     "store": "福岡東店",
@@ -50111,7 +50097,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3579
+    "seq": 3578
   },
   {
     "store": "福岡東店",
@@ -50125,7 +50111,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3580
+    "seq": 3579
   },
   {
     "store": "福岡東店",
@@ -50139,7 +50125,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3581
+    "seq": 3580
   },
   {
     "store": "福岡東店",
@@ -50153,7 +50139,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3582
+    "seq": 3581
   },
   {
     "store": "福岡東店",
@@ -50167,7 +50153,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3583
+    "seq": 3582
   },
   {
     "store": "福岡東店",
@@ -50181,7 +50167,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3584
+    "seq": 3583
   },
   {
     "store": "福岡東店",
@@ -50195,7 +50181,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3585
+    "seq": 3584
   },
   {
     "store": "福岡東店",
@@ -50209,7 +50195,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3586
+    "seq": 3585
   },
   {
     "store": "福岡東店",
@@ -50223,7 +50209,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3587
+    "seq": 3586
   },
   {
     "store": "福岡東店",
@@ -50237,7 +50223,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3588
+    "seq": 3587
   },
   {
     "store": "福岡東店",
@@ -50246,12 +50232,12 @@ window.COLLECTION_DATA = [
     "name": "井上　京子",
     "paymentType": "cash",
     "address": "福岡市東区唐の原２丁目２２－４－２０２",
-    "amount": 4192,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3589
+    "seq": 3588
   },
   {
     "store": "福岡東店",
@@ -50265,7 +50251,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3590
+    "seq": 3589
   },
   {
     "store": "福岡東店",
@@ -50279,7 +50265,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3591
+    "seq": 3590
   },
   {
     "store": "福岡東店",
@@ -50293,7 +50279,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3592
+    "seq": 3591
   },
   {
     "store": "福岡東店",
@@ -50307,7 +50293,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3593
+    "seq": 3592
   },
   {
     "store": "福岡東店",
@@ -50321,7 +50307,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3594
+    "seq": 3593
   },
   {
     "store": "福岡東店",
@@ -50335,7 +50321,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3595
+    "seq": 3594
   },
   {
     "store": "福岡東店",
@@ -50349,7 +50335,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3596
+    "seq": 3595
   },
   {
     "store": "福岡東店",
@@ -50363,7 +50349,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3597
+    "seq": 3596
   },
   {
     "store": "福岡東店",
@@ -50377,7 +50363,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3598
+    "seq": 3597
   },
   {
     "store": "福岡東店",
@@ -50391,7 +50377,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3599
+    "seq": 3598
   },
   {
     "store": "福岡東店",
@@ -50405,7 +50391,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3600
+    "seq": 3599
   },
   {
     "store": "福岡東店",
@@ -50419,7 +50405,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3601
+    "seq": 3600
   },
   {
     "store": "福岡東店",
@@ -50433,7 +50419,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3602
+    "seq": 3601
   },
   {
     "store": "福岡東店",
@@ -50447,7 +50433,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3603
+    "seq": 3602
   },
   {
     "store": "福岡東店",
@@ -50461,7 +50447,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3604
+    "seq": 3603
   },
   {
     "store": "福岡東店",
@@ -50470,12 +50456,12 @@ window.COLLECTION_DATA = [
     "name": "仲　静子",
     "paymentType": "cash",
     "address": "福岡市東区香椎３－２５－１８－１０１",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3605
+    "seq": 3604
   },
   {
     "store": "福岡東店",
@@ -50489,7 +50475,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3606
+    "seq": 3605
   },
   {
     "store": "福岡東店",
@@ -50503,7 +50489,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3607
+    "seq": 3606
   },
   {
     "store": "福岡東店",
@@ -50517,7 +50503,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3608
+    "seq": 3607
   },
   {
     "store": "福岡東店",
@@ -50531,7 +50517,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3609
+    "seq": 3608
   },
   {
     "store": "福岡東店",
@@ -50545,7 +50531,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3610
+    "seq": 3609
   },
   {
     "store": "福岡東店",
@@ -50559,7 +50545,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3611
+    "seq": 3610
   },
   {
     "store": "福岡東店",
@@ -50568,12 +50554,12 @@ window.COLLECTION_DATA = [
     "name": "中村　敏夫",
     "paymentType": "cash",
     "address": "福岡市東区青葉1-5-20",
-    "amount": 17534,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3612
+    "seq": 3611
   },
   {
     "store": "福岡東店",
@@ -50587,7 +50573,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3613
+    "seq": 3612
   },
   {
     "store": "福岡東店",
@@ -50601,7 +50587,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3614
+    "seq": 3613
   },
   {
     "store": "福岡東店",
@@ -50615,7 +50601,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3615
+    "seq": 3614
   },
   {
     "store": "福岡東店",
@@ -50629,7 +50615,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3616
+    "seq": 3615
   },
   {
     "store": "福岡東店",
@@ -50643,7 +50629,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3617
+    "seq": 3616
   },
   {
     "store": "福岡東店",
@@ -50657,7 +50643,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3618
+    "seq": 3617
   },
   {
     "store": "福岡東店",
@@ -50671,7 +50657,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3619
+    "seq": 3618
   },
   {
     "store": "福岡東店",
@@ -50685,7 +50671,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3620
+    "seq": 3619
   },
   {
     "store": "福岡東店",
@@ -50699,7 +50685,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3621
+    "seq": 3620
   },
   {
     "store": "福岡東店",
@@ -50713,7 +50699,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3622
+    "seq": 3621
   },
   {
     "store": "福岡東店",
@@ -50727,7 +50713,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3623
+    "seq": 3622
   },
   {
     "store": "福岡東店",
@@ -50741,7 +50727,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3624
+    "seq": 3623
   },
   {
     "store": "福岡東店",
@@ -50755,7 +50741,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3625
+    "seq": 3624
   },
   {
     "store": "福岡東店",
@@ -50769,7 +50755,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3626
+    "seq": 3625
   },
   {
     "store": "福岡東店",
@@ -50783,7 +50769,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3627
+    "seq": 3626
   },
   {
     "store": "福岡東店",
@@ -50797,7 +50783,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3628
+    "seq": 3627
   },
   {
     "store": "福岡東店",
@@ -50811,7 +50797,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3629
+    "seq": 3628
   },
   {
     "store": "福岡東店",
@@ -50825,7 +50811,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3630
+    "seq": 3629
   },
   {
     "store": "福岡東店",
@@ -50839,7 +50825,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3631
+    "seq": 3630
   },
   {
     "store": "福岡東店",
@@ -50853,7 +50839,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3632
+    "seq": 3631
   },
   {
     "store": "福岡東店",
@@ -50867,7 +50853,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3633
+    "seq": 3632
   },
   {
     "store": "福岡東店",
@@ -50881,7 +50867,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.3)福岡東店.xlsm"
     ],
-    "seq": 3634
+    "seq": 3633
   },
   {
     "store": "福岡東店",
@@ -50895,7 +50881,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3635
+    "seq": 3634
   },
   {
     "store": "福岡東店",
@@ -50909,7 +50895,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3636
+    "seq": 3635
   },
   {
     "store": "福岡東店",
@@ -50923,7 +50909,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3637
+    "seq": 3636
   },
   {
     "store": "福岡東店",
@@ -50937,7 +50923,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3638
+    "seq": 3637
   },
   {
     "store": "福岡東店",
@@ -50951,7 +50937,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3639
+    "seq": 3638
   },
   {
     "store": "福岡東店",
@@ -50965,7 +50951,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3640
+    "seq": 3639
   },
   {
     "store": "福岡東店",
@@ -50979,7 +50965,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3641
+    "seq": 3640
   },
   {
     "store": "福岡東店",
@@ -50993,7 +50979,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3642
+    "seq": 3641
   },
   {
     "store": "福岡東店",
@@ -51007,7 +50993,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3643
+    "seq": 3642
   },
   {
     "store": "福岡東店",
@@ -51021,7 +51007,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3644
+    "seq": 3643
   },
   {
     "store": "福岡東店",
@@ -51035,7 +51021,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3645
+    "seq": 3644
   },
   {
     "store": "福岡東店",
@@ -51049,7 +51035,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3646
+    "seq": 3645
   },
   {
     "store": "福岡東店",
@@ -51063,7 +51049,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3647
+    "seq": 3646
   },
   {
     "store": "福岡東店",
@@ -51077,7 +51063,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3648
+    "seq": 3647
   },
   {
     "store": "福岡東店",
@@ -51091,7 +51077,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3649
+    "seq": 3648
   },
   {
     "store": "福岡東店",
@@ -51105,7 +51091,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3650
+    "seq": 3649
   },
   {
     "store": "福岡東店",
@@ -51119,7 +51105,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3651
+    "seq": 3650
   },
   {
     "store": "福岡東店",
@@ -51133,7 +51119,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
     ],
-    "seq": 3652
+    "seq": 3651
   },
   {
     "store": "福岡東店",
@@ -51143,6 +51129,20 @@ window.COLLECTION_DATA = [
     "paymentType": "cash",
     "address": "東区香椎駅東3丁目15-35-106ラセーヌ香椎駅東",
     "amount": 0,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.4)福岡東店.xlsm"
+    ],
+    "seq": 3652
+  },
+  {
+    "store": "福岡東店",
+    "code": 3,
+    "route": 1,
+    "name": "池田　春幸",
+    "paymentType": "cash",
+    "address": "糟屋郡新宮町下府7丁目７－６",
+    "amount": 2096,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
@@ -51702,7 +51702,7 @@ window.COLLECTION_DATA = [
     "name": "川上　舞",
     "paymentType": "bank",
     "address": "福岡市東区美和台3-36-31-205",
-    "amount": 9564,
+    "amount": 25505,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
@@ -52248,7 +52248,7 @@ window.COLLECTION_DATA = [
     "name": "稲元　由喜枝",
     "paymentType": "cash",
     "address": "東区大字上和白1334-1A棟111アーバン21",
-    "amount": 14752,
+    "amount": 11802,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
@@ -52514,7 +52514,7 @@ window.COLLECTION_DATA = [
     "name": "三上　柊子",
     "paymentType": "cash",
     "address": "福岡市東区八田４丁目8-10-303",
-    "amount": 9083,
+    "amount": 10481,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
@@ -52654,7 +52654,7 @@ window.COLLECTION_DATA = [
     "name": "藤家　真由美",
     "paymentType": "bank",
     "address": "福岡市東区多々良２－４１－１０",
-    "amount": 0,
+    "amount": 4192,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
@@ -55188,7 +55188,7 @@ window.COLLECTION_DATA = [
     "name": "吉光　国男",
     "paymentType": "cash",
     "address": "飯塚市勢田２４５５－５",
-    "amount": 10333,
+    "amount": 0,
     "dataMonth": "2026-02",
     "sourceFiles": [
       "うちくる顧客管理表(2026.02)飯塚店.xlsm"
@@ -55314,7 +55314,7 @@ window.COLLECTION_DATA = [
     "name": "山根　弘子",
     "paymentType": "cash",
     "address": "飯塚市佐與１４２９－１４",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55342,7 +55342,7 @@ window.COLLECTION_DATA = [
     "name": "森　みちこ",
     "paymentType": "cash",
     "address": "飯塚市鯰田７４９－１　(白の二階建て、森組看板あり",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55398,7 +55398,7 @@ window.COLLECTION_DATA = [
     "name": "渡辺　登",
     "paymentType": "cash",
     "address": "直方市上境１８０４－１",
-    "amount": 10979,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55454,7 +55454,7 @@ window.COLLECTION_DATA = [
     "name": "秋山　ちづ子",
     "paymentType": "cash",
     "address": "直方市頓野２１０４－７－９棟－３０５",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55496,7 +55496,7 @@ window.COLLECTION_DATA = [
     "name": "松尾　忠義",
     "paymentType": "cash",
     "address": "直方市頓野２２４８－４",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55552,7 +55552,7 @@ window.COLLECTION_DATA = [
     "name": "平松　栄明",
     "paymentType": "cash",
     "address": "直方市感田８９４－４７",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55678,7 +55678,7 @@ window.COLLECTION_DATA = [
     "name": "大内　香里奈",
     "paymentType": "cash",
     "address": "直方市植木１９５－５６　美容室",
-    "amount": 15940,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55720,7 +55720,7 @@ window.COLLECTION_DATA = [
     "name": "藤田　めぐみ",
     "paymentType": "cash",
     "address": "直方市植木１７０－３２",
-    "amount": 17534,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55832,7 +55832,7 @@ window.COLLECTION_DATA = [
     "name": "金澤　毅",
     "paymentType": "cash",
     "address": "直方市下新入３６７",
-    "amount": 20148,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55846,7 +55846,7 @@ window.COLLECTION_DATA = [
     "name": "小山　陸紀",
     "paymentType": "cash",
     "address": "直方市上新入２３８１－１ー５号(団地)",
-    "amount": 14208,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55888,7 +55888,7 @@ window.COLLECTION_DATA = [
     "name": "大庭(ｵｵﾊﾞ)芙美子",
     "paymentType": "cash",
     "address": "直方市直方６７０－１５０",
-    "amount": 8395,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55902,7 +55902,7 @@ window.COLLECTION_DATA = [
     "name": "鋤田　哲雄",
     "paymentType": "cash",
     "address": "直方市古町６－１３　アーケードの中",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -55930,7 +55930,7 @@ window.COLLECTION_DATA = [
     "name": "野上　千英子",
     "paymentType": "cash",
     "address": "直方市津田町５－２２セベラルフォート１－D",
-    "amount": 9041,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56014,7 +56014,7 @@ window.COLLECTION_DATA = [
     "name": "稲冨　ヒロ子",
     "paymentType": "cash",
     "address": "飯塚市楽市２１５－１",
-    "amount": 1397,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56028,7 +56028,7 @@ window.COLLECTION_DATA = [
     "name": "園　正美",
     "paymentType": "cash",
     "address": "飯塚市西徳前１５－１２－1棟－１３５",
-    "amount": 10481,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56042,7 +56042,7 @@ window.COLLECTION_DATA = [
     "name": "篠原　のぶたか",
     "paymentType": "cash",
     "address": "飯塚市枝国１６９－１２",
-    "amount": 7686,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56098,7 +56098,7 @@ window.COLLECTION_DATA = [
     "name": "佐藤　フミ子",
     "paymentType": "cash",
     "address": "飯塚市東徳前３－２",
-    "amount": 28416,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56126,7 +56126,7 @@ window.COLLECTION_DATA = [
     "name": "中嶋　政司",
     "paymentType": "cash",
     "address": "飯塚市忠隈４７２－１",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56294,7 +56294,7 @@ window.COLLECTION_DATA = [
     "name": "西牟田　修利",
     "paymentType": "cash",
     "address": "飯塚市長尾２２－７０",
-    "amount": 15372,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56434,7 +56434,7 @@ window.COLLECTION_DATA = [
     "name": "片岡　建雄",
     "paymentType": "cash",
     "address": "飯塚市大分１５９９－２",
-    "amount": 11625,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56742,7 +56742,7 @@ window.COLLECTION_DATA = [
     "name": "松岡　ふくみ",
     "paymentType": "cash",
     "address": "飯塚市伊川８２－７３－８－１０２",
-    "amount": 9782,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56784,7 +56784,7 @@ window.COLLECTION_DATA = [
     "name": "川上　博之",
     "paymentType": "cash",
     "address": "飯塚市花瀬１０２－５０",
-    "amount": 34272,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56840,7 +56840,7 @@ window.COLLECTION_DATA = [
     "name": "竹山　重夫",
     "paymentType": "cash",
     "address": "飯塚市片島２－１５－１９　相互不動産事務所",
-    "amount": 10326,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56854,7 +56854,7 @@ window.COLLECTION_DATA = [
     "name": "永松　英子",
     "paymentType": "cash",
     "address": "飯塚市新飯塚６－６花宅ビル６０２",
-    "amount": 10361,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -56896,7 +56896,7 @@ window.COLLECTION_DATA = [
     "name": "水上　美保",
     "paymentType": "cash",
     "address": "飯塚市川島１１－１０",
-    "amount": 28871,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -57232,7 +57232,7 @@ window.COLLECTION_DATA = [
     "name": "太田　浩",
     "paymentType": "cash",
     "address": "飯塚市吉北４２１３－７０",
-    "amount": 14673,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -57274,7 +57274,7 @@ window.COLLECTION_DATA = [
     "name": "水口　喜三夫",
     "paymentType": "cash",
     "address": "飯塚市相田９７６－１",
-    "amount": 8385,
+    "amount": 0,
     "dataMonth": "2026-03",
     "sourceFiles": [
       "うちくる顧客管理表(2026.03)飯塚店.xlsm"
@@ -57451,20 +57451,6 @@ window.COLLECTION_DATA = [
   },
   {
     "store": "飯塚店",
-    "code": 250,
-    "route": 1,
-    "name": "大塚　きよこ",
-    "paymentType": "cash",
-    "address": "飯塚市勢田１２２０－１",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.04)飯塚店.xlsm"
-    ],
-    "seq": 4104
-  },
-  {
-    "store": "飯塚店",
     "code": 300,
     "route": 1,
     "name": "國重　キクエ",
@@ -57475,7 +57461,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4105
+    "seq": 4104
   },
   {
     "store": "飯塚店",
@@ -57489,7 +57475,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4106
+    "seq": 4105
   },
   {
     "store": "飯塚店",
@@ -57503,7 +57489,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4107
+    "seq": 4106
   },
   {
     "store": "飯塚店",
@@ -57517,7 +57503,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4108
+    "seq": 4107
   },
   {
     "store": "飯塚店",
@@ -57531,7 +57517,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4109
+    "seq": 4108
   },
   {
     "store": "飯塚店",
@@ -57545,7 +57531,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4110
+    "seq": 4109
   },
   {
     "store": "飯塚店",
@@ -57559,7 +57545,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4111
+    "seq": 4110
   },
   {
     "store": "飯塚店",
@@ -57573,7 +57559,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4112
+    "seq": 4111
   },
   {
     "store": "飯塚店",
@@ -57587,7 +57573,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4113
+    "seq": 4112
   },
   {
     "store": "飯塚店",
@@ -57601,7 +57587,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4114
+    "seq": 4113
   },
   {
     "store": "飯塚店",
@@ -57615,7 +57601,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4115
+    "seq": 4114
   },
   {
     "store": "飯塚店",
@@ -57629,7 +57615,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4116
+    "seq": 4115
   },
   {
     "store": "飯塚店",
@@ -57643,7 +57629,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4117
+    "seq": 4116
   },
   {
     "store": "飯塚店",
@@ -57657,7 +57643,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4118
+    "seq": 4117
   },
   {
     "store": "飯塚店",
@@ -57671,7 +57657,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4119
+    "seq": 4118
   },
   {
     "store": "飯塚店",
@@ -57685,7 +57671,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4120
+    "seq": 4119
   },
   {
     "store": "飯塚店",
@@ -57699,7 +57685,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4121
+    "seq": 4120
   },
   {
     "store": "飯塚店",
@@ -57713,7 +57699,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4122
+    "seq": 4121
   },
   {
     "store": "飯塚店",
@@ -57727,7 +57713,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4123
+    "seq": 4122
   },
   {
     "store": "飯塚店",
@@ -57741,7 +57727,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4124
+    "seq": 4123
   },
   {
     "store": "飯塚店",
@@ -57755,7 +57741,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4125
+    "seq": 4124
   },
   {
     "store": "飯塚店",
@@ -57764,12 +57750,12 @@ window.COLLECTION_DATA = [
     "name": "大内　香里奈",
     "paymentType": "cash",
     "address": "直方市植木１９５－５６　美容室",
-    "amount": 16737,
+    "amount": 15940,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4126
+    "seq": 4125
   },
   {
     "store": "飯塚店",
@@ -57783,7 +57769,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4127
+    "seq": 4126
   },
   {
     "store": "飯塚店",
@@ -57797,7 +57783,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4128
+    "seq": 4127
   },
   {
     "store": "飯塚店",
@@ -57811,7 +57797,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4129
+    "seq": 4128
   },
   {
     "store": "飯塚店",
@@ -57825,7 +57811,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4130
+    "seq": 4129
   },
   {
     "store": "飯塚店",
@@ -57839,7 +57825,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4131
+    "seq": 4130
   },
   {
     "store": "飯塚店",
@@ -57853,7 +57839,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4132
+    "seq": 4131
   },
   {
     "store": "飯塚店",
@@ -57867,7 +57853,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4133
+    "seq": 4132
   },
   {
     "store": "飯塚店",
@@ -57881,7 +57867,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4134
+    "seq": 4133
   },
   {
     "store": "飯塚店",
@@ -57895,7 +57881,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4135
+    "seq": 4134
   },
   {
     "store": "飯塚店",
@@ -57909,7 +57895,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4136
+    "seq": 4135
   },
   {
     "store": "飯塚店",
@@ -57923,7 +57909,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4137
+    "seq": 4136
   },
   {
     "store": "飯塚店",
@@ -57937,7 +57923,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4138
+    "seq": 4137
   },
   {
     "store": "飯塚店",
@@ -57951,7 +57937,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4139
+    "seq": 4138
   },
   {
     "store": "飯塚店",
@@ -57965,7 +57951,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4140
+    "seq": 4139
   },
   {
     "store": "飯塚店",
@@ -57979,7 +57965,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4141
+    "seq": 4140
   },
   {
     "store": "飯塚店",
@@ -57993,7 +57979,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4142
+    "seq": 4141
   },
   {
     "store": "飯塚店",
@@ -58002,12 +57988,12 @@ window.COLLECTION_DATA = [
     "name": "野上　千英子",
     "paymentType": "cash",
     "address": "直方市津田町５－２２セベラルフォート１－D",
-    "amount": 8395,
+    "amount": 4520,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4143
+    "seq": 4142
   },
   {
     "store": "飯塚店",
@@ -58021,7 +58007,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4144
+    "seq": 4143
   },
   {
     "store": "飯塚店",
@@ -58035,7 +58021,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4145
+    "seq": 4144
   },
   {
     "store": "飯塚店",
@@ -58049,7 +58035,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4146
+    "seq": 4145
   },
   {
     "store": "飯塚店",
@@ -58063,7 +58049,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4147
+    "seq": 4146
   },
   {
     "store": "飯塚店",
@@ -58077,7 +58063,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4148
+    "seq": 4147
   },
   {
     "store": "飯塚店",
@@ -58091,7 +58077,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4149
+    "seq": 4148
   },
   {
     "store": "飯塚店",
@@ -58105,7 +58091,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4150
+    "seq": 4149
   },
   {
     "store": "飯塚店",
@@ -58119,7 +58105,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4151
+    "seq": 4150
   },
   {
     "store": "飯塚店",
@@ -58133,7 +58119,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4152
+    "seq": 4151
   },
   {
     "store": "飯塚店",
@@ -58147,7 +58133,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4153
+    "seq": 4152
   },
   {
     "store": "飯塚店",
@@ -58161,7 +58147,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4154
+    "seq": 4153
   },
   {
     "store": "飯塚店",
@@ -58175,7 +58161,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4155
+    "seq": 4154
   },
   {
     "store": "飯塚店",
@@ -58184,12 +58170,12 @@ window.COLLECTION_DATA = [
     "name": "稲冨　ヒロ子",
     "paymentType": "cash",
     "address": "飯塚市楽市２１５－１",
-    "amount": 11878,
+    "amount": 14791,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4156
+    "seq": 4155
   },
   {
     "store": "飯塚店",
@@ -58198,12 +58184,12 @@ window.COLLECTION_DATA = [
     "name": "内藤　あゆみ",
     "paymentType": "bank",
     "address": "飯塚市南尾１－３０１",
-    "amount": 2583,
+    "amount": 6458,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4157
+    "seq": 4156
   },
   {
     "store": "飯塚店",
@@ -58217,7 +58203,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4158
+    "seq": 4157
   },
   {
     "store": "飯塚店",
@@ -58231,7 +58217,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4159
+    "seq": 4158
   },
   {
     "store": "飯塚店",
@@ -58245,7 +58231,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4160
+    "seq": 4159
   },
   {
     "store": "飯塚店",
@@ -58259,7 +58245,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4161
+    "seq": 4160
   },
   {
     "store": "飯塚店",
@@ -58273,7 +58259,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4162
+    "seq": 4161
   },
   {
     "store": "飯塚店",
@@ -58287,7 +58273,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4163
+    "seq": 4162
   },
   {
     "store": "飯塚店",
@@ -58301,7 +58287,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4164
+    "seq": 4163
   },
   {
     "store": "飯塚店",
@@ -58315,7 +58301,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4165
+    "seq": 4164
   },
   {
     "store": "飯塚店",
@@ -58329,7 +58315,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4166
+    "seq": 4165
   },
   {
     "store": "飯塚店",
@@ -58343,7 +58329,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4167
+    "seq": 4166
   },
   {
     "store": "飯塚店",
@@ -58357,7 +58343,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4168
+    "seq": 4167
   },
   {
     "store": "飯塚店",
@@ -58371,7 +58357,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4169
+    "seq": 4168
   },
   {
     "store": "飯塚店",
@@ -58385,7 +58371,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4170
+    "seq": 4169
   },
   {
     "store": "飯塚店",
@@ -58399,7 +58385,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4171
+    "seq": 4170
   },
   {
     "store": "飯塚店",
@@ -58413,7 +58399,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4172
+    "seq": 4171
   },
   {
     "store": "飯塚店",
@@ -58427,7 +58413,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4173
+    "seq": 4172
   },
   {
     "store": "飯塚店",
@@ -58441,7 +58427,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4174
+    "seq": 4173
   },
   {
     "store": "飯塚店",
@@ -58455,7 +58441,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4175
+    "seq": 4174
   },
   {
     "store": "飯塚店",
@@ -58469,7 +58455,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4176
+    "seq": 4175
   },
   {
     "store": "飯塚店",
@@ -58483,7 +58469,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4177
+    "seq": 4176
   },
   {
     "store": "飯塚店",
@@ -58497,7 +58483,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4178
+    "seq": 4177
   },
   {
     "store": "飯塚店",
@@ -58506,12 +58492,12 @@ window.COLLECTION_DATA = [
     "name": "荒川　初子",
     "paymentType": "bank",
     "address": "飯塚市弁分５４７－１１－２０６角部屋",
-    "amount": 0,
+    "amount": 2096,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4179
+    "seq": 4178
   },
   {
     "store": "飯塚店",
@@ -58525,7 +58511,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4180
+    "seq": 4179
   },
   {
     "store": "飯塚店",
@@ -58539,7 +58525,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4181
+    "seq": 4180
   },
   {
     "store": "飯塚店",
@@ -58553,7 +58539,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4182
+    "seq": 4181
   },
   {
     "store": "飯塚店",
@@ -58567,7 +58553,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4183
+    "seq": 4182
   },
   {
     "store": "飯塚店",
@@ -58581,21 +58567,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4184
-  },
-  {
-    "store": "飯塚店",
-    "code": 1235,
-    "route": 2,
-    "name": "武石　さちこ",
-    "paymentType": "cash",
-    "address": "飯塚市横田４５７－８－１－B４０４",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.04)飯塚店.xlsm"
-    ],
-    "seq": 4185
+    "seq": 4183
   },
   {
     "store": "飯塚店",
@@ -58609,7 +58581,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4186
+    "seq": 4184
   },
   {
     "store": "飯塚店",
@@ -58623,7 +58595,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4187
+    "seq": 4185
   },
   {
     "store": "飯塚店",
@@ -58637,7 +58609,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4188
+    "seq": 4186
   },
   {
     "store": "飯塚店",
@@ -58646,12 +58618,12 @@ window.COLLECTION_DATA = [
     "name": "大塚　まさみ",
     "paymentType": "cash",
     "address": "飯塚市西町２－５９サテライト７０１",
-    "amount": 8385,
+    "amount": 7686,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4189
+    "seq": 4187
   },
   {
     "store": "飯塚店",
@@ -58665,21 +58637,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4190
-  },
-  {
-    "store": "飯塚店",
-    "code": 2020,
-    "route": 3,
-    "name": "古賀　やすこ",
-    "paymentType": "cash",
-    "address": "飯塚市本町１９－６０ー１３０２",
-    "amount": 0,
-    "dataMonth": "2026-04",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.04)飯塚店.xlsm"
-    ],
-    "seq": 4191
+    "seq": 4188
   },
   {
     "store": "飯塚店",
@@ -58693,7 +58651,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4192
+    "seq": 4189
   },
   {
     "store": "飯塚店",
@@ -58707,7 +58665,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4193
+    "seq": 4190
   },
   {
     "store": "飯塚店",
@@ -58721,7 +58679,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4194
+    "seq": 4191
   },
   {
     "store": "飯塚店",
@@ -58735,7 +58693,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4195
+    "seq": 4192
   },
   {
     "store": "飯塚店",
@@ -58749,7 +58707,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4196
+    "seq": 4193
   },
   {
     "store": "飯塚店",
@@ -58763,7 +58721,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4197
+    "seq": 4194
   },
   {
     "store": "飯塚店",
@@ -58777,7 +58735,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4198
+    "seq": 4195
   },
   {
     "store": "飯塚店",
@@ -58791,7 +58749,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4199
+    "seq": 4196
   },
   {
     "store": "飯塚店",
@@ -58805,7 +58763,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4200
+    "seq": 4197
   },
   {
     "store": "飯塚店",
@@ -58819,7 +58777,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4201
+    "seq": 4198
   },
   {
     "store": "飯塚店",
@@ -58833,7 +58791,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4202
+    "seq": 4199
   },
   {
     "store": "飯塚店",
@@ -58847,7 +58805,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4203
+    "seq": 4200
   },
   {
     "store": "飯塚店",
@@ -58861,7 +58819,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4204
+    "seq": 4201
   },
   {
     "store": "飯塚店",
@@ -58875,7 +58833,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4205
+    "seq": 4202
   },
   {
     "store": "飯塚店",
@@ -58889,7 +58847,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4206
+    "seq": 4203
   },
   {
     "store": "飯塚店",
@@ -58903,7 +58861,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4207
+    "seq": 4204
   },
   {
     "store": "飯塚店",
@@ -58917,7 +58875,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4208
+    "seq": 4205
   },
   {
     "store": "飯塚店",
@@ -58931,7 +58889,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4209
+    "seq": 4206
   },
   {
     "store": "飯塚店",
@@ -58945,7 +58903,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4210
+    "seq": 4207
   },
   {
     "store": "飯塚店",
@@ -58959,7 +58917,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4211
+    "seq": 4208
   },
   {
     "store": "飯塚店",
@@ -58973,7 +58931,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4212
+    "seq": 4209
   },
   {
     "store": "飯塚店",
@@ -58987,7 +58945,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4213
+    "seq": 4210
   },
   {
     "store": "飯塚店",
@@ -59001,7 +58959,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4214
+    "seq": 4211
   },
   {
     "store": "飯塚店",
@@ -59010,12 +58968,12 @@ window.COLLECTION_DATA = [
     "name": "太田　浩",
     "paymentType": "cash",
     "address": "飯塚市吉北４２１３－７０",
-    "amount": 15372,
+    "amount": 14673,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4215
+    "seq": 4212
   },
   {
     "store": "飯塚店",
@@ -59029,7 +58987,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4216
+    "seq": 4213
   },
   {
     "store": "飯塚店",
@@ -59043,7 +59001,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4217
+    "seq": 4214
   },
   {
     "store": "飯塚店",
@@ -59057,7 +59015,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4218
+    "seq": 4215
   },
   {
     "store": "飯塚店",
@@ -59071,7 +59029,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4219
+    "seq": 4216
   },
   {
     "store": "飯塚店",
@@ -59085,7 +59043,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4220
+    "seq": 4217
   },
   {
     "store": "飯塚店",
@@ -59099,7 +59057,77 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
+    "seq": 4218
+  },
+  {
+    "store": "飯塚店",
+    "code": 3001,
+    "route": 4,
+    "name": "小林　明男",
+    "paymentType": "cash",
+    "address": "飯塚市花瀬２３６－５－1棟１１３",
+    "amount": 7750,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.04)飯塚店.xlsm"
+    ],
+    "seq": 4219
+  },
+  {
+    "store": "飯塚店",
+    "code": 3001,
+    "route": 4,
+    "name": "森　有治",
+    "paymentType": "cash",
+    "address": "飯塚市伊川５０－４",
+    "amount": 7750,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.04)飯塚店.xlsm"
+    ],
+    "seq": 4220
+  },
+  {
+    "store": "飯塚店",
+    "code": 3001,
+    "route": 4,
+    "name": "美容室プールファム",
+    "paymentType": "cash",
+    "address": "飯塚市相田５０－３",
+    "amount": 1937,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.04)飯塚店.xlsm"
+    ],
     "seq": 4221
+  },
+  {
+    "store": "飯塚店",
+    "code": 3001,
+    "route": 4,
+    "name": "谷口　ひろみ",
+    "paymentType": "cash",
+    "address": "飯塚市相田５７３－１ケイハイツ１－１０１",
+    "amount": 11180,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.04)飯塚店.xlsm"
+    ],
+    "seq": 4222
+  },
+  {
+    "store": "飯塚店",
+    "code": 3001,
+    "route": 4,
+    "name": "高岡　ちえこ",
+    "paymentType": "cash",
+    "address": "飯塚市相田３０７－４－１棟２０９",
+    "amount": 8385,
+    "dataMonth": "2026-04",
+    "sourceFiles": [
+      "うちくる顧客管理表(2026.04)飯塚店.xlsm"
+    ],
+    "seq": 4223
   },
   {
     "store": "飯塚店",
@@ -59113,7 +59141,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4222
+    "seq": 4224
   },
   {
     "store": "飯塚店",
@@ -59127,7 +59155,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4223
+    "seq": 4225
   },
   {
     "store": "飯塚店",
@@ -59141,7 +59169,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4224
+    "seq": 4226
   },
   {
     "store": "飯塚店",
@@ -59155,7 +59183,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4225
+    "seq": 4227
   },
   {
     "store": "飯塚店",
@@ -59169,7 +59197,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4226
+    "seq": 4228
   },
   {
     "store": "飯塚店",
@@ -59183,7 +59211,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4227
+    "seq": 4229
   },
   {
     "store": "飯塚店",
@@ -59197,7 +59225,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4228
+    "seq": 4230
   },
   {
     "store": "飯塚店",
@@ -59211,7 +59239,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4229
+    "seq": 4231
   },
   {
     "store": "飯塚店",
@@ -59220,12 +59248,12 @@ window.COLLECTION_DATA = [
     "name": "松岡　ふくみ",
     "paymentType": "cash",
     "address": "飯塚市伊川８２－７３－８棟－１０２",
-    "amount": 6987,
+    "amount": 8385,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4230
+    "seq": 4232
   },
   {
     "store": "飯塚店",
@@ -59239,7 +59267,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4231
+    "seq": 4233
   },
   {
     "store": "飯塚店",
@@ -59253,7 +59281,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4232
+    "seq": 4234
   },
   {
     "store": "飯塚店",
@@ -59267,7 +59295,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4233
+    "seq": 4235
   },
   {
     "store": "飯塚店",
@@ -59281,7 +59309,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4234
+    "seq": 4236
   },
   {
     "store": "飯塚店",
@@ -59295,7 +59323,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4235
+    "seq": 4237
   },
   {
     "store": "飯塚店",
@@ -59309,7 +59337,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4236
+    "seq": 4238
   },
   {
     "store": "飯塚店",
@@ -59323,7 +59351,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4237
+    "seq": 4239
   },
   {
     "store": "飯塚店",
@@ -59337,7 +59365,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4238
+    "seq": 4240
   },
   {
     "store": "飯塚店",
@@ -59351,7 +59379,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4239
+    "seq": 4241
   },
   {
     "store": "飯塚店",
@@ -59365,7 +59393,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4240
+    "seq": 4242
   },
   {
     "store": "飯塚店",
@@ -59379,7 +59407,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4241
+    "seq": 4243
   },
   {
     "store": "飯塚店",
@@ -59393,7 +59421,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4242
+    "seq": 4244
   },
   {
     "store": "飯塚店",
@@ -59402,19 +59430,57 @@ window.COLLECTION_DATA = [
     "name": "高木　瑞穂",
     "paymentType": "cash",
     "address": "飯塚市横田３１１－２　細い坂を上って右側",
-    "amount": 32375,
+    "amount": 30977,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.04)飯塚店.xlsm"
     ],
-    "seq": 4243
+    "seq": 4245
   }
 ];
 
 window.DELIVERY_DATA = [
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 150,
+    "route": 1,
+    "name": "大和　忠晴",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市彦島本村町１－９－１４",
+    "notes": "置配　声掛けて玄関中に置く　回収は外のBOX",
+    "phone": "080-1646-3264",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 170,
+    "route": 1,
+    "name": "永田　俊和",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市彦島本村町１－９－１０",
+    "notes": "ピンポン鳴らして出て来るまで待つ・留守ならBOX",
+    "phone": "080-1646-3264",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 210,
     "route": 1,
     "name": "福戸　和子",
@@ -59433,14 +59499,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 225,
     "route": 1,
     "name": "勝亦　眞一",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "下関市彦島迫町５－６－１２－２０２号",
@@ -59452,7 +59518,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 280,
     "route": 1,
     "name": "渡辺　禎光",
@@ -59471,7 +59537,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 280,
     "route": 1,
     "name": "渡辺　禎光",
@@ -59490,7 +59556,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 300,
     "route": 1,
     "name": "林　昌子",
@@ -59509,7 +59575,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 310,
     "route": 1,
     "name": "杉村　幸生",
@@ -59528,7 +59594,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 320,
     "route": 1,
     "name": "植田　芳幸",
@@ -59547,7 +59613,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 360,
     "route": 1,
     "name": "磯部　雅之",
@@ -59566,7 +59632,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 370,
     "route": 1,
     "name": "岩崎　博征",
@@ -59585,7 +59651,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 380,
     "route": 1,
     "name": "内田　由起子",
@@ -59604,7 +59670,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 440,
     "route": 1,
     "name": "林　功",
@@ -59623,15 +59689,15 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 450,
     "route": 1,
     "name": "田中　将大",
     "type": "セット",
-    "count": "1",
-    "countLabel": "集金",
+    "count": "0",
+    "countLabel": "",
     "weekly": "",
-    "paymentType": "cash",
+    "paymentType": "bank",
     "vessel": "",
     "address": "下関市彦島杉田町１－６－１０－３４号",
     "notes": "置配　玄関前",
@@ -59642,7 +59708,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 465,
     "route": 1,
     "name": "長谷川　豪男",
@@ -59661,7 +59727,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 520,
     "route": 1,
     "name": "佐藤　藤徳",
@@ -59680,7 +59746,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 540,
     "route": 1,
     "name": "伊東　ヒシ子",
@@ -59699,7 +59765,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 545,
     "route": 1,
     "name": "木村　加代子",
@@ -59718,26 +59784,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 565,
-    "route": 1,
-    "name": "上原　学",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "下関市彦島向井町１－４－１０",
-    "notes": "",
-    "phone": "083-267-1812",
-    "emergency": "090-6773-0047",
-    "memo": "認知あり",
-    "absent": "玄関前のベンチに置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 570,
     "route": 1,
     "name": "早川　米子",
@@ -59756,7 +59803,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 595,
     "route": 1,
     "name": "中村　幸夫",
@@ -59775,7 +59822,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 600,
+    "route": 1,
+    "name": "仁田原　俊一",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市彦島向井町２－１８－１",
+    "notes": "置配　ブロックの上",
+    "phone": "083-266-9988",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関右手のフックに掛ける"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 605,
+    "route": 1,
+    "name": "髙﨑　由美",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市彦島山中町１－８－１０",
+    "notes": "",
+    "phone": "090-7995-4243",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 605,
+    "route": 1,
+    "name": "髙﨑　由美",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市彦島山中町１－８－１０",
+    "notes": "",
+    "phone": "090-7995-4243",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 617,
     "route": 1,
     "name": "髙橋　秀幸",
@@ -59794,26 +59898,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 620,
-    "route": 1,
-    "name": "島中　喜代子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "下関市彦島田の首町２－２８－４",
-    "notes": "置配　ヤクルトの上",
-    "phone": "080-3056-2463",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 640,
     "route": 1,
     "name": "西村　康子",
@@ -59832,7 +59917,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 645,
     "route": 1,
     "name": "小島　良三",
@@ -59851,7 +59936,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 650,
+    "route": 1,
+    "name": "松尾　遵子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市彦島塩浜町３－１１－１６",
+    "notes": "",
+    "phone": "090-8069-6962",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 660,
     "route": 1,
     "name": "立道　達也",
@@ -59870,7 +59974,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 675,
     "route": 1,
     "name": "嵯峨野　ヨシ子",
@@ -59889,7 +59993,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 705,
     "route": 1,
     "name": "藤本　美千代",
@@ -59908,14 +60012,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1010,
     "route": 2,
     "name": "石原　直美",
     "type": "小箱",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木",
+    "weekly": "",
     "paymentType": "cash",
     "vessel": "",
     "address": "下関市伊倉新町４－５－１－７０１号",
@@ -59927,7 +60031,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1050,
     "route": 2,
     "name": "小松　政枝",
@@ -59946,7 +60050,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1060,
+    "route": 2,
+    "name": "升野　和子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市古屋町１－５－３",
+    "notes": "【置配】　玄関前の牛乳ボックスの上に置く",
+    "phone": "083-254-0993",
+    "emergency": "",
+    "memo": "",
+    "absent": "牛乳ボックス上に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 1070,
     "route": 2,
     "name": "藤本　純子",
@@ -59965,7 +60088,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1100,
     "route": 2,
     "name": "太田　敏之",
@@ -59984,7 +60107,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1105,
     "route": 2,
     "name": "植野　恵美子",
@@ -60003,12 +60126,31 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1110,
+    "route": 2,
+    "name": "川口　みつ子",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市綾羅木本町７－２３－１１",
+    "notes": "【置配】　玄関前の牛乳ボックスの上に置く",
+    "phone": "",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 1120,
     "route": 2,
     "name": "青木　啓子",
     "type": "おかず",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
     "weekly": "火 水 金",
     "paymentType": "cash",
@@ -60022,7 +60164,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1120,
+    "route": 2,
+    "name": "青木　啓子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "火 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市綾羅木南町３－２－１０",
+    "notes": "",
+    "phone": "083-253-1127",
+    "emergency": "080-3881-6195",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 1130,
+    "route": 2,
+    "name": "佐藤　ノブ子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市綾羅木本町８－４－１４",
+    "notes": "勝手口の青い箱へ入れる　月末声掛け集金",
+    "phone": "083-255-5414",
+    "emergency": "083-254-0901",
+    "memo": "",
+    "absent": "右側の通路のボックスの中へ"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 1135,
     "route": 2,
     "name": "藤木　佐智子",
@@ -60041,7 +60221,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1170,
     "route": 2,
     "name": "大場　利江",
@@ -60060,13 +60240,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1185,
     "route": 2,
     "name": "永穂　奈央",
     "type": "おかず",
-    "count": "2",
-    "countLabel": "集金",
+    "count": "0",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "bank",
     "vessel": "",
@@ -60079,7 +60259,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1200,
     "route": 2,
     "name": "波多野　朗",
@@ -60098,26 +60278,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 1220,
-    "route": 2,
-    "name": "山口　仁",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 金",
-    "paymentType": "bank",
-    "vessel": "開けやすい容器",
-    "address": "下関市綾羅木本町１－６－３",
-    "notes": "玄関開けて下駄箱の上",
-    "phone": "083-252-3810",
-    "emergency": "0742-35-6007",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1320,
     "route": 2,
     "name": "河野　秀秋",
@@ -60136,7 +60297,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1350,
+    "route": 2,
+    "name": "江頭　尚子",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市梶栗町１－３－１２",
+    "notes": "【置配】　玄関前のカゴに置く",
+    "phone": "083-258-0186",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 1360,
     "route": 2,
     "name": "前寺　美和子",
@@ -60155,7 +60335,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1370,
     "route": 2,
     "name": "野口　和夫",
@@ -60174,7 +60354,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1380,
     "route": 2,
     "name": "阿部　敦子",
@@ -60193,7 +60373,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1410,
     "route": 2,
     "name": "西川　英喜",
@@ -60212,7 +60392,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1413,
     "route": 2,
     "name": "松本　由昭",
@@ -60231,7 +60411,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1420,
+    "route": 2,
+    "name": "矢口　義治",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市安岡駅前１－１２－３棟７０３号",
+    "notes": "チャイム鳴らして玄関の中",
+    "phone": "083-258-5921",
+    "emergency": "090-6416-9529",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 1430,
     "route": 2,
     "name": "藤井　昭義",
@@ -60250,7 +60449,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1450,
     "route": 2,
     "name": "栗田　隆",
@@ -60269,7 +60468,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1490,
     "route": 2,
     "name": "河村　熙",
@@ -60288,7 +60487,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1495,
     "route": 2,
     "name": "田上　文雄",
@@ -60307,45 +60506,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 1530,
-    "route": 2,
-    "name": "小笹　誠",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "下関市安岡町４－１１－２０",
-    "notes": "玄関中に置く",
-    "phone": "083-258-4980",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 1540,
-    "route": 2,
-    "name": "福富　一雄",
-    "type": "おかず",
-    "count": "0",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "下関市安岡町２－６－３５",
-    "notes": "チャイム鳴らして手渡し",
-    "phone": "083-258-4664",
-    "emergency": "080-1925-3908",
-    "memo": "",
-    "absent": "玄関前の発泡箱に入れる"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1545,
     "route": 2,
     "name": "西岡　ノブアキ",
@@ -60364,26 +60525,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 1550,
-    "route": 2,
-    "name": "伊田　京",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "下関市安岡町６－５－４１",
-    "notes": "チャイム鳴らして手渡し",
-    "phone": "083-258-5195",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1575,
     "route": 2,
     "name": "久保　辰夫",
@@ -60402,7 +60544,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1585,
+    "route": 2,
+    "name": "大賀　時子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市大字有冨２０９",
+    "notes": "",
+    "phone": "090-1684-5058",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 1600,
     "route": 2,
     "name": "中村　照子",
@@ -60421,7 +60582,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1620,
+    "route": 2,
+    "name": "磯部　リヨ",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市秋根新町２－９",
+    "notes": "チャイム2回鳴らして手渡し",
+    "phone": "083-256-7885",
+    "emergency": "娘：090-4657-3398",
+    "memo": "",
+    "absent": "玄関左のトレーの上"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 1625,
     "route": 2,
     "name": "木村　冨美恵",
@@ -60440,7 +60620,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1630,
     "route": 2,
     "name": "重本　周",
@@ -60459,7 +60639,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1640,
     "route": 2,
     "name": "富士原　奈緒",
@@ -60478,26 +60658,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 1670,
+    "dataMonth": "2026-04",
+    "code": 1665,
     "route": 2,
-    "name": "村江　茂考",
+    "name": "中嶋　裕",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "下関市秋根本町２－３－１０",
-    "notes": "同敷地内、小さい方の家の前に置く",
-    "phone": "083-256-2072",
-    "emergency": "◎080-3870-2624連絡は娘さんへ",
+    "address": "下関市秋根新町１２－２３",
+    "notes": "チャイム押して手渡し",
+    "phone": "070-4402-6852",
+    "emergency": "",
     "memo": "",
-    "absent": "玄関前のBOXに入れる"
+    "absent": "玄関前に置く"
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1680,
+    "route": 2,
+    "name": "石川　明伸",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市形山町１－４",
+    "notes": "",
+    "phone": "080-1933-2734",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 1690,
     "route": 2,
     "name": "久澄　典朗",
@@ -60516,7 +60715,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1700,
     "route": 2,
     "name": "安田　徳行",
@@ -60535,26 +60734,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 1710,
-    "route": 2,
-    "name": "村地　修子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "下関市一の宮住吉２－５－２６－５０１号",
-    "notes": "サーパス　一の宮住吉　インターホンで呼んで下で待つ",
-    "phone": "090-3378-1467",
-    "emergency": "",
-    "memo": "",
-    "absent": "本人に連絡"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1730,
     "route": 2,
     "name": "福原　勝則",
@@ -60573,7 +60753,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1750,
     "route": 2,
     "name": "永冨　成夫",
@@ -60592,7 +60772,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1760,
+    "route": 2,
+    "name": "伊藤　隆文",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市一の宮町１－２－１６",
+    "notes": "【置配】　チャイム押して玄関内に置く",
+    "phone": "090-3747-3650",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 2060,
+    "route": 3,
+    "name": "藤田　香純",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市観音崎町１４－１－９０５号",
+    "notes": "",
+    "phone": "080-3934-7198",
+    "emergency": "",
+    "memo": "",
+    "absent": "宅配ボックス使用"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 2080,
     "route": 3,
     "name": "畑尾　則子",
@@ -60611,7 +60829,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2085,
+    "route": 3,
+    "name": "森重　直治",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市みもすそ川町２４－１１－４０２号",
+    "notes": "",
+    "phone": "",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 2090,
     "route": 3,
     "name": "森　恵子",
@@ -60630,7 +60867,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2110,
     "route": 3,
     "name": "西本　巌",
@@ -60649,7 +60886,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2130,
     "route": 3,
     "name": "谷　ヒロシ",
@@ -60668,7 +60905,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2133,
     "route": 3,
     "name": "大和　久美",
@@ -60687,7 +60924,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2150,
     "route": 3,
     "name": "井上　多加子",
@@ -60706,7 +60943,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2160,
     "route": 3,
     "name": "千葉　潤一郎",
@@ -60725,7 +60962,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2170,
     "route": 3,
     "name": "五十嵐　直美",
@@ -60744,7 +60981,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2190,
     "route": 3,
     "name": "田澤　弘",
@@ -60763,7 +61000,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2192,
     "route": 3,
     "name": "貞本　秀雄",
@@ -60782,7 +61019,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2193,
+    "route": 3,
+    "name": "大木　裕子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市長府川端２－１２－８",
+    "notes": "",
+    "phone": "083-245-9727",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 2200,
     "route": 3,
     "name": "池田　美沙子",
@@ -60801,26 +61057,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 2223,
+    "dataMonth": "2026-04",
+    "code": 2220,
     "route": 3,
-    "name": "松本　美子",
+    "name": "内山　紀美男",
     "type": "おかず",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "下関市長府安養寺３－１－４９",
-    "notes": "置配　玄関前",
-    "phone": "080-6307-2072",
+    "address": "下関市長府安養寺３－１－５６",
+    "notes": "",
+    "phone": "090-7897-8182",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 2225,
+    "route": 3,
+    "name": "吉田　金昭",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市長府安養寺４－２－３２",
+    "notes": "",
+    "phone": "080-5613-3429",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2230,
     "route": 3,
     "name": "西田　文男",
@@ -60839,7 +61114,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2280,
+    "route": 3,
+    "name": "谷本　千代子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市勝谷新町４－１４－２５",
+    "notes": "",
+    "phone": "083-263-0985",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 2290,
     "route": 3,
     "name": "大上　宏",
@@ -60858,7 +61152,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2327,
     "route": 3,
     "name": "小野　淳子",
@@ -60877,7 +61171,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2327,
     "route": 3,
     "name": "小野　淳子",
@@ -60896,7 +61190,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2340,
     "route": 3,
     "name": "本多　勇",
@@ -60915,7 +61209,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2350,
+    "route": 3,
+    "name": "岡本　秀仁",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市長府安養寺１－７－８",
+    "notes": "発泡スチロールへ",
+    "phone": "083-245-3126",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関横のフックに掛ける"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 2355,
     "route": 3,
     "name": "黒原　二郎",
@@ -60934,7 +61247,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2367,
     "route": 3,
     "name": "松村　靖子",
@@ -60953,26 +61266,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 2410,
+    "dataMonth": "2026-04",
+    "code": 2375,
     "route": 3,
-    "name": "室　英男",
-    "type": "小箱",
+    "name": "河内　幸子",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "開けやすい容器",
-    "address": "下関市長府八幡町３－５１",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市長府中土居北町１１－４",
     "notes": "",
-    "phone": "080-3940-0832",
+    "phone": "080-1939-7798",
     "emergency": "",
     "memo": "",
-    "absent": "玄関前に置く"
+    "absent": "牛乳箱の上に置く"
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2380,
+    "route": 3,
+    "name": "藤田　真澄",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市長府中土居本町１３－８",
+    "notes": "",
+    "phone": "090-4803-6603",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 2422,
     "route": 3,
     "name": "國本　幸雄",
@@ -60991,7 +61323,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2430,
     "route": 3,
     "name": "伊藤　正樹",
@@ -61010,7 +61342,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2470,
     "route": 3,
     "name": "村上　久美子",
@@ -61029,7 +61361,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2480,
     "route": 3,
     "name": "西田　鈴雄",
@@ -61048,45 +61380,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 2485,
-    "route": 3,
-    "name": "一柳　育子",
-    "type": "ダブル",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "下関市長府中六波町７－２",
-    "notes": "置配　玄関内のボックスに置く",
-    "phone": "083-245-6071",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関内のボックスに置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 2485,
-    "route": 3,
-    "name": "一柳　育子",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "下関市長府中六波町７－２",
-    "notes": "置配　玄関内のボックスに置く",
-    "phone": "083-245-6071",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関内のボックスに置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2490,
     "route": 3,
     "name": "和田谷　章",
@@ -61105,7 +61399,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2515,
     "route": 3,
     "name": "秋山　京子",
@@ -61124,26 +61418,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 2520,
-    "route": 3,
-    "name": "下村　壽治",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "下関市長府松小田中町９－５０",
-    "notes": "",
-    "phone": "083--246-4313",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2530,
     "route": 3,
     "name": "山田　美智雄",
@@ -61162,7 +61437,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2570,
     "route": 3,
     "name": "井坂　敬宏",
@@ -61181,7 +61456,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2580,
     "route": 3,
     "name": "近重　清美",
@@ -61200,7 +61475,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2590,
     "route": 3,
     "name": "瓜生　和子",
@@ -61219,7 +61494,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2600,
     "route": 3,
     "name": "中澤　美代子",
@@ -61238,7 +61513,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2610,
     "route": 3,
     "name": "山崎　章成",
@@ -61257,26 +61532,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 2800,
+    "dataMonth": "2026-04",
+    "code": 2900,
     "route": 3,
-    "name": "藤井　真春",
-    "type": "おかず",
+    "name": "吉村　幸夫",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "下関市細江町３－３－１（藤井メンタルクリニック）",
+    "address": "下関市上田中町８－１０",
     "notes": "",
-    "phone": "083-234-0802",
-    "emergency": "090-3635-4866（奥さん）",
-    "memo": "病院が休みの時は秋本薬局の前に置いて奥さんに電話",
+    "phone": "090-8364-6250",
+    "emergency": "",
+    "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3050,
     "route": 4,
     "name": "安森　久枝",
@@ -61295,26 +61570,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 3070,
-    "route": 4,
-    "name": "庄司　統子",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "下関市大平町６－２４",
-    "notes": "メニュー表2枚",
-    "phone": "083-223-1656",
-    "emergency": "090-1184-5295",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3090,
     "route": 4,
     "name": "古川　洋",
@@ -61333,7 +61589,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3105,
+    "route": 4,
+    "name": "冨成　正憲",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "新規",
+    "weekly": "月 水",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市上新地町５－２－１２",
+    "notes": "",
+    "phone": "083-223-9048",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 3110,
+    "route": 4,
+    "name": "井上　香世子",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市伊崎町１－１１－２",
+    "notes": "",
+    "phone": "083-222-9726",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 3150,
+    "route": 4,
+    "name": "藤目　雄一",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市上新地町１－１－２－９０２号",
+    "notes": "",
+    "phone": "083-232-0290",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 3170,
     "route": 4,
     "name": "立石　晃",
@@ -61352,45 +61665,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 3180,
-    "route": 4,
-    "name": "津田　幸枝",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "下関市金比羅町２６－８－１０１号",
-    "notes": "",
-    "phone": "090-6410-0332",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 3190,
-    "route": 4,
-    "name": "遠藤　綾",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "下関市藤附町３－４－２",
-    "notes": "チャイム鳴らして手渡し",
-    "phone": "083-223-5709",
-    "emergency": "",
-    "memo": "",
-    "absent": "郵便受に入れる"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3210,
     "route": 4,
     "name": "藤附　孝子",
@@ -61409,7 +61684,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3230,
     "route": 4,
     "name": "笹尾　節",
@@ -61428,7 +61703,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3250,
     "route": 4,
     "name": "松谷　千春",
@@ -61447,7 +61722,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3270,
     "route": 4,
     "name": "後藤　喜代香",
@@ -61466,7 +61741,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3290,
+    "route": 4,
+    "name": "古川　京子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市武久町２－３５－６",
+    "notes": "",
+    "phone": "083-252-4494",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 3330,
     "route": 4,
     "name": "秋成　宇多子",
@@ -61485,7 +61779,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3350,
+    "route": 4,
+    "name": "本𠮷　多津子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市武久町１－１２－１３",
+    "notes": "ハイツ水野　202号",
+    "phone": "080-6329-1116",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 3410,
     "route": 4,
     "name": "秋山　芙美",
@@ -61504,7 +61817,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3450,
     "route": 4,
     "name": "山内　博志",
@@ -61523,7 +61836,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3470,
     "route": 4,
     "name": "東　スエコ",
@@ -61542,7 +61855,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3490,
     "route": 4,
     "name": "斉藤　公",
@@ -61561,7 +61874,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3505,
     "route": 4,
     "name": "西村　尚恵",
@@ -61580,7 +61893,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3510,
     "route": 4,
     "name": "田中　一衛",
@@ -61599,7 +61912,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3530,
     "route": 4,
     "name": "国村　忠",
@@ -61618,7 +61931,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3550,
+    "route": 4,
+    "name": "森山　勝子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市大学町３－５－２０",
+    "notes": "",
+    "phone": "080-1635-7197",
+    "emergency": "",
+    "memo": "",
+    "absent": "柱のフックに掛ける"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 3570,
     "route": 4,
     "name": "糸山　久憲",
@@ -61637,7 +61969,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3630,
     "route": 4,
     "name": "木村　和彦",
@@ -61656,7 +61988,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4001,
     "route": 5,
     "name": "紙谷　英次郎",
@@ -61675,45 +62007,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 4002,
+    "dataMonth": "2026-04",
+    "code": 4040,
     "route": 5,
-    "name": "上村　直明",
-    "type": "セット",
-    "count": "0",
+    "name": "中野　克子",
+    "type": "おかず",
+    "count": "2",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "門司区谷町１－１０－１６",
+    "address": "門司区大久保１－６－５",
     "notes": "",
-    "phone": "090-4350-4955",
+    "phone": "080-8123-7707",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 4002,
-    "route": 5,
-    "name": "山下　あゆみ",
-    "type": "ダブルセット",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "門司区大里東１－６－１８－９０２号",
-    "notes": "置配",
-    "phone": "080-5287-0803",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4050,
     "route": 5,
     "name": "中山　孝志",
@@ -61732,26 +62045,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 4070,
-    "route": 5,
-    "name": "田中　伊三男",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "門司区鳴竹１－１－１３",
-    "notes": "",
-    "phone": "093-331-3824",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4085,
     "route": 5,
     "name": "原　武士",
@@ -61770,7 +62064,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4110,
+    "route": 5,
+    "name": "遠藤　チトセ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "門司区浜町１－９－１０３号",
+    "notes": "ＶＩＰマンション",
+    "phone": "080-1772-1788",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 4120,
     "route": 5,
     "name": "中野　博司",
@@ -61789,7 +62102,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4130,
     "route": 5,
     "name": "飯田　猛",
@@ -61808,7 +62121,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4140,
+    "route": 5,
+    "name": "中島　尚子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "門司区錦町１０－１９",
+    "notes": "",
+    "phone": "070-8382-2362",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 4207,
     "route": 5,
     "name": "白石　秀敏",
@@ -61827,7 +62159,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4210,
     "route": 5,
     "name": "黒木　うみ江",
@@ -61846,7 +62178,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4215,
+    "route": 5,
+    "name": "矢田　玲子",
+    "type": "セット",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "門司区南本町８－２１",
+    "notes": "",
+    "phone": "080-1761-1712",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 4220,
     "route": 5,
     "name": "土居　弘憲",
@@ -61865,7 +62216,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4230,
+    "route": 5,
+    "name": "山下　あゆみ",
+    "type": "ダブルセット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "門司区大里東１－６－１８－９０２号",
+    "notes": "置配",
+    "phone": "080-5287-0803",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 4242,
     "route": 5,
     "name": "三好　康文",
@@ -61884,7 +62254,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4244,
+    "route": 5,
+    "name": "佐藤　光子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "門司区奥田２－８－３",
+    "notes": "",
+    "phone": "093-381-6930",
+    "emergency": "093-475-5910",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 4247,
     "route": 5,
     "name": "須浦　麻由",
@@ -61903,7 +62292,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4260,
     "route": 5,
     "name": "片山　民子",
@@ -61922,7 +62311,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4300,
     "route": 5,
     "name": "奈良　玲子",
@@ -61941,7 +62330,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4400,
     "route": 5,
     "name": "安部　弘美",
@@ -61960,26 +62349,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 4410,
+    "dataMonth": "2026-04",
+    "code": 4420,
     "route": 5,
-    "name": "吉村　敬二",
+    "name": "呰（あざかみ）　としゆき",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "門司区社ノ木１－１７－１０－４０２号",
+    "address": "門司区西新町１－７－１３",
     "notes": "",
-    "phone": "093-372-0847",
+    "phone": "080-5257-9558",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4470,
+    "route": 5,
+    "name": "古谷　美代子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "門司区青葉台１０－１０",
+    "notes": "",
+    "phone": "093-381-6845",
+    "emergency": "家族：053-449-3083",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 4480,
     "route": 5,
     "name": "坂本　英明",
@@ -61998,14 +62406,33 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4483,
+    "route": 5,
+    "name": "真島　邦司",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "門司区緑ヶ丘７－２７",
+    "notes": "",
+    "phone": "090-9652-6124",
+    "emergency": "090-5749-7580",
+    "memo": "",
+    "absent": "発泡スチロールの中に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 4523,
     "route": 5,
     "name": "出羽　テル子",
     "type": "ダブル",
-    "count": "0",
+    "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "門司区桃山台４－３",
@@ -62017,7 +62444,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4525,
     "route": 5,
     "name": "古野　小枝子",
@@ -62036,7 +62463,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4530,
     "route": 5,
     "name": "佐々木　テル子",
@@ -62055,7 +62482,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4535,
+    "route": 5,
+    "name": "青野　英子",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "門司区新原町12-25",
+    "notes": "",
+    "phone": "090-2508-3250",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 4543,
     "route": 5,
     "name": "日野　節子",
@@ -62074,14 +62520,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4560,
     "route": 5,
     "name": "相場　昭",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "",
     "paymentType": "cash",
     "vessel": "",
     "address": "門司区小松町７－５",
@@ -62093,26 +62539,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 4585,
+    "dataMonth": "2026-04",
+    "code": 4600,
     "route": 5,
-    "name": "橋本　セイ子",
+    "name": "川上　暁美",
     "type": "おかず",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "門司区柳町３－１５－５",
+    "address": "門司区柳町２－４－１０－５０５号",
     "notes": "",
-    "phone": "093-371-0015",
+    "phone": "090-7927-6193",
     "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
+    "memo": "駅前ビル",
+    "absent": ""
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4900,
     "route": 5,
     "name": "藤本　正",
@@ -62131,7 +62577,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4900,
     "route": 5,
     "name": "藤本　正",
@@ -62150,7 +62596,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5020,
     "route": 6,
     "name": "菱形　健一",
@@ -62169,7 +62615,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5021,
     "route": 6,
     "name": "室谷　貞幸",
@@ -62188,7 +62634,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5041,
+    "route": 6,
+    "name": "中藤　末子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市貴船町４－１０－８－４１２号",
+    "notes": "ゆっくり出るので待って手渡し",
+    "phone": "083-222-2441",
+    "emergency": "",
+    "memo": "",
+    "absent": "ドアノブに掛ける"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 5041,
+    "route": 6,
+    "name": "日吉",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市貴船町４－１０－８－６０３号",
+    "notes": "",
+    "phone": "083-231-5751",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 5070,
+    "route": 6,
+    "name": "(有)植木紙店",
+    "type": "小箱セット",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市貴船町１－１－３３　植木紙店",
+    "notes": "",
+    "phone": "083-231-0121",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 5073,
     "route": 6,
     "name": "奧村　タキ子",
@@ -62207,45 +62710,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 5074,
+    "dataMonth": "2026-04",
+    "code": 5080,
     "route": 6,
-    "name": "中村　政人",
-    "type": "おかず",
+    "name": "槇埜　幸治",
+    "type": "小箱セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "下関市宮田町２－５－５",
-    "notes": "",
+    "address": "下関市本町４－３－５－２０３号",
+    "notes": "起配　ドアノブに掛ける　村田ハイツ",
     "phone": "",
     "emergency": "",
-    "memo": "",
-    "absent": ""
+    "memo": "トンネル側からしか行けない",
+    "absent": "玄関前に置く"
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 5077,
-    "route": 6,
-    "name": "永添　祥多",
-    "type": "ご膳",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "下関市中之町８－３－１００１号",
-    "notes": "",
-    "phone": "080-3054-8538",
-    "emergency": "",
-    "memo": "",
-    "absent": "ドアノブに掛ける"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5110,
     "route": 6,
     "name": "山中　新一",
@@ -62264,7 +62748,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5160,
     "route": 6,
     "name": "有馬　美佐子",
@@ -62272,7 +62756,7 @@ window.DELIVERY_DATA = [
     "count": "1",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
+    "paymentType": "bank",
     "vessel": "",
     "address": "下関市貴船町２－１４－３４",
     "notes": "※Ｇｏｏｇｌｅマップ注意",
@@ -62283,13 +62767,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5200,
     "route": 6,
     "name": "泉　河明",
     "type": "セット",
-    "count": "2",
-    "countLabel": "集金",
+    "count": "0",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -62302,7 +62786,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5507,
+    "route": 6,
+    "name": "川下　満子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市丸山町４－５－３",
+    "notes": "足が悪いため声掛けする",
+    "phone": "090-2297-5249",
+    "emergency": "083-224-1043",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 5508,
     "route": 6,
     "name": "原田　信子",
@@ -62321,7 +62824,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5510,
     "route": 6,
     "name": "佐藤　隆",
@@ -62340,7 +62843,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5660,
+    "route": 6,
+    "name": "山村　学",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市細江町２－１－２５－１００４号",
+    "notes": "",
+    "phone": "070-9113-6261",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 5670,
     "route": 6,
     "name": "須田　アサミ",
@@ -62359,7 +62881,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5700,
+    "route": 6,
+    "name": "山本　正武",
+    "type": "ごはん",
+    "count": "6",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市彦島江の浦町６－１５－１６－１０３号",
+    "notes": "置配　集合ポスト下に置く",
+    "phone": "090-8066-5536",
+    "emergency": "",
+    "memo": "",
+    "absent": "オートロックのドアの前へ"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 5700,
+    "route": 6,
+    "name": "山本　正武",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市彦島江の浦町６－１５－１６－１０３号",
+    "notes": "置配　集合ポスト下に置く",
+    "phone": "090-8066-5536",
+    "emergency": "",
+    "memo": "",
+    "absent": "オートロックのドアの前へ"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 5710,
+    "route": 6,
+    "name": "永井　順子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市彦島江の浦町８－１１－１１",
+    "notes": "",
+    "phone": "083-267-0975",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 5715,
     "route": 6,
     "name": "畑村　幹",
@@ -62378,7 +62957,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5720,
+    "route": 6,
+    "name": "池永　隆行",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市彦島江の浦町９－１－１８",
+    "notes": "保冷バッグで渡す　置配だけどインターホン",
+    "phone": "083-266-1847　長男：090-6794-9947",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 5750,
     "route": 6,
     "name": "寺本　享二",
@@ -62397,7 +62995,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5780,
     "route": 6,
     "name": "中西　克己",
@@ -62416,7 +63014,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6010,
+    "route": 7,
+    "name": "木月　達雄",
+    "type": "セット",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市新地町２－２８",
+    "notes": "グローバル下関　707号",
+    "phone": "083-232-2642",
+    "emergency": "",
+    "memo": "",
+    "absent": "消火器BOX"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 6015,
     "route": 7,
     "name": "中川　弦",
@@ -62435,7 +63052,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6025,
+    "route": 7,
+    "name": "鷲谷　安子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市向山町８－７",
+    "notes": "",
+    "phone": "083-231-0362",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 6035,
     "route": 7,
     "name": "野沢　孝春",
@@ -62454,14 +63090,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6045,
     "route": 7,
     "name": "野坂　秀樹",
-    "type": "セット",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木",
+    "weekly": "月 水 金",
     "paymentType": "bank",
     "vessel": "",
     "address": "下関市栄町１０－１０－５０６号",
@@ -62473,7 +63109,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6047,
     "route": 7,
     "name": "赤井　優子",
@@ -62492,7 +63128,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6050,
     "route": 7,
     "name": "山村　和子",
@@ -62511,7 +63147,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6070,
+    "route": 7,
+    "name": "宮田　隆光",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市石神町５－１９",
+    "notes": "",
+    "phone": "083-231-2520",
+    "emergency": "",
+    "memo": "",
+    "absent": "椅子上の箱に入れる"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 6150,
     "route": 7,
     "name": "山中　ミホ子",
@@ -62530,7 +63185,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6155,
     "route": 7,
     "name": "森澤　春美",
@@ -62549,8 +63204,27 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6220,
+    "route": 7,
+    "name": "森川　京子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市山の田本町１６－１０－１０３号",
+    "notes": "",
+    "phone": "080-3872-2846",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 6225,
     "route": 7,
     "name": "山上　敏雄",
     "type": "おかず",
@@ -62568,33 +63242,33 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 6230,
+    "dataMonth": "2026-04",
+    "code": 6240,
     "route": 7,
-    "name": "中村　修",
-    "type": "ダブル",
+    "name": "中村　信行",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "下関市山の田北町１ー１４棟　２０６号",
-    "notes": "玄関前の引っ込んだ所",
-    "phone": "090-2009-7458",
+    "address": "下関市山の田北町２－１０－２０２号",
+    "notes": "",
+    "phone": "090-1867-6781",
     "emergency": "",
     "memo": "",
-    "absent": "玄関前に置く"
+    "absent": ""
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6251,
     "route": 7,
     "name": "下司　正孝",
     "type": "ご膳",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "下関市山の田北町３－１９－３０２号",
@@ -62606,7 +63280,83 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6273,
+    "route": 7,
+    "name": "三輪　吉克",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市稗田北町１０－５",
+    "notes": "置配　門扉故障　チャイム鳴らす　シールは道路側に見えるように",
+    "phone": "090-9501-1107",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 6275,
+    "route": 7,
+    "name": "原田　敬子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市稗田西町１７－２０",
+    "notes": "",
+    "phone": "083-252-5783",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 6280,
+    "route": 7,
+    "name": "江原　寛治",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市稗田西町１－２",
+    "notes": "",
+    "phone": "090-1189-5355",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 6300,
+    "route": 7,
+    "name": "大谷　明雄",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市川中本町１８－２８",
+    "notes": "インターン顔認証あり",
+    "phone": "083-252-1598",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 6305,
     "route": 7,
     "name": "大石　るみか",
@@ -62625,7 +63375,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6325,
     "route": 7,
     "name": "久原　木尚",
@@ -62644,7 +63394,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6400,
     "route": 7,
     "name": "水口　功一郎",
@@ -62663,26 +63413,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 6620,
-    "route": 7,
-    "name": "松原　喜久子",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "下関市川中豊町２－１－６",
-    "notes": "",
-    "phone": "083-254-2161",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6625,
     "route": 7,
     "name": "椎木　信吉",
@@ -62701,7 +63432,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6630,
     "route": 7,
     "name": "福島　勇",
@@ -62720,7 +63451,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6640,
     "route": 7,
     "name": "黒河　英彦",
@@ -62739,7 +63470,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6650,
+    "route": 7,
+    "name": "中村　美年子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市稗田南町１－２４",
+    "notes": "置配　玄関前に置く",
+    "phone": "090-5248-7622",
+    "emergency": "083-252-9101",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 6750,
     "route": 7,
     "name": "中島　克枝",
@@ -62758,7 +63508,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6760,
     "route": 7,
     "name": "船越　チエコ",
@@ -62777,7 +63527,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6770,
+    "route": 7,
+    "name": "末武　佳代子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "開けやすい容器",
+    "address": "下関市筋ケ浜町１３－３",
+    "notes": "置配　チャイム鳴らして声掛けして玄関内に置く",
+    "phone": "080-2940-7701",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 6810,
+    "route": 7,
+    "name": "萩原　さかえ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市伊崎町２－２－３１",
+    "notes": "玄関内に入り左側のドアを開けて机の上に置く",
+    "phone": "083-223-8638",
+    "emergency": "",
+    "memo": "同番地あり　郵便受けに名前あり",
+    "absent": "ポストに保冷で入れる"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 6820,
     "route": 7,
     "name": "小田　みつ子",
@@ -62796,7 +63584,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6850,
     "route": 7,
     "name": "林　憲二",
@@ -62815,7 +63603,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6850,
     "route": 7,
     "name": "林　憲二",
@@ -62834,26 +63622,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 6870,
+    "dataMonth": "2026-04",
+    "code": 6860,
     "route": 7,
-    "name": "西田　優",
+    "name": "内田　一恵",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "再注文",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市長門町１－１－３０１号",
+    "notes": "",
+    "phone": "070-5814-2093",
+    "emergency": "",
+    "memo": "クレーム人　請求書投函のみ",
+    "absent": "玄関前の段ボール上に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
+    "code": 6880,
+    "route": 7,
+    "name": "林　節子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "下関市関西町７－１５",
+    "address": "下関市長崎新町１５－７",
     "notes": "",
-    "phone": "083-231-1229",
+    "phone": "083-232-4316",
     "emergency": "",
     "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6880,
+    "route": 7,
+    "name": "林　節子",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市長崎新町１５－７",
+    "notes": "",
+    "phone": "083-232-4316",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 6890,
     "route": 7,
     "name": "山下　恒子",
@@ -62872,7 +63698,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6895,
     "route": 7,
     "name": "杠　明美",
@@ -62891,7 +63717,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6900,
+    "route": 7,
+    "name": "古嶋　愛子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市春日町１－１４－４０３号",
+    "notes": "",
+    "phone": "080-1922-4344",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 7050,
     "route": 8,
     "name": "佐藤　智可子",
@@ -62910,7 +63755,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7060,
     "route": 8,
     "name": "福冨　守",
@@ -62929,7 +63774,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7070,
     "route": 8,
     "name": "窪井　利彦",
@@ -62948,45 +63793,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 7075,
+    "dataMonth": "2026-04",
+    "code": 7095,
     "route": 8,
-    "name": "伊藤　紀忠",
+    "name": "戸塚　正己",
     "type": "おかず",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "下関市上田中町８－１０　Ｒ１－２１１号",
+    "address": "下関市上田中町６－５－１６",
     "notes": "",
-    "phone": "083-232-9766",
+    "phone": "090-4577-1404",
     "emergency": "",
     "memo": "",
-    "absent": "ドアノブに掛ける"
+    "absent": "玄関前に置く"
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
-    "code": 7080,
-    "route": 8,
-    "name": "菅　幸子",
-    "type": "おかず",
-    "count": "0",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "下関市上田中町４－９－７",
-    "notes": "置配　玄関前に置く",
-    "phone": "083-235-1563",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7100,
     "route": 8,
     "name": "小池　良子",
@@ -63005,7 +63831,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7110,
     "route": 8,
     "name": "秋本　純子",
@@ -63024,7 +63850,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7110,
     "route": 8,
     "name": "秋本　純子",
@@ -63043,7 +63869,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 7120,
+    "route": 8,
+    "name": "堀　洋三",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市上田中町２－８－５－９０１号",
+    "notes": "置配　玄関前の物置内に置く",
+    "phone": "083-233-1202",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前の物置内に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 7140,
     "route": 8,
     "name": "藤川　哲雄",
@@ -63062,7 +63907,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7200,
     "route": 8,
     "name": "五十嵐　正晴",
@@ -63081,7 +63926,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 7260,
+    "route": 8,
+    "name": "濱中　行雄",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "下関市生野町１－５－１７",
+    "notes": "保冷バッグで渡す",
+    "phone": "083-253-6732",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 7264,
     "route": 8,
     "name": "廣橋　奈奈",
@@ -63100,7 +63964,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7300,
     "route": 8,
     "name": "藤井　利夫",
@@ -63119,7 +63983,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 7310,
+    "route": 8,
+    "name": "福田　勇一",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "下関市宝町３６－３",
+    "notes": "",
+    "phone": "080-6317-3071",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "下関店",
+    "dataMonth": "2026-04",
     "code": 7420,
     "route": 8,
     "name": "岡野　和子",
@@ -63138,7 +64021,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7475,
     "route": 8,
     "name": "兵頭　勝彦",
@@ -63157,7 +64040,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7609,
     "route": 8,
     "name": "佐藤　涼子",
@@ -63165,7 +64048,7 @@ window.DELIVERY_DATA = [
     "count": "1",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
+    "paymentType": "bank",
     "vessel": "",
     "address": "下関市山の田東町６－４－６０４号",
     "notes": "",
@@ -63176,7 +64059,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7610,
     "route": 8,
     "name": "金田　治美",
@@ -63195,7 +64078,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8000,
     "route": 9,
     "name": "堀川",
@@ -63214,12 +64097,12 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "下関店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 10000,
     "route": 11,
     "name": "予備",
     "type": "おかず",
-    "count": "5",
+    "count": "2",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
     "paymentType": "cash",
@@ -63233,26 +64116,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5,
-    "route": 1,
-    "name": "下司　文子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市戸畑区夜宮３−６−４−３０３",
-    "notes": "在宅でも保冷バッグあり",
-    "phone": "090-4997-0934",
-    "emergency": "093-884-1991",
-    "memo": "空が出てない時はチャイム押す",
-    "absent": "ドアノブに掛ける"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 10,
     "route": 1,
     "name": "宮本　一二",
@@ -63271,7 +64135,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 11,
     "route": 1,
     "name": "三木　彩恵子",
@@ -63290,7 +64154,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 12,
     "route": 1,
     "name": "坂本　スミエ",
@@ -63309,7 +64173,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 13,
     "route": 1,
     "name": "吉田　紀代美",
@@ -63328,7 +64192,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 15,
     "route": 1,
     "name": "柘植　昭数",
@@ -63347,7 +64211,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 20,
     "route": 1,
     "name": "松尾　延治",
@@ -63366,26 +64230,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 22,
+    "dataMonth": "2026-04",
+    "code": 21,
     "route": 1,
-    "name": "森　香代",
-    "type": "小箱",
+    "name": "下司　文子",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市戸畑区夜宮２－５－１０－１０６",
-    "notes": "ドアノックして手渡しする　火金デイ不在",
-    "phone": "080-1707-3515",
-    "emergency": "090-7389-2140家族",
-    "memo": "在宅でも保冷バックあり",
-    "absent": "ドアノブにかける"
+    "address": "北九州市戸畑区夜宮３−６−４−３０３",
+    "notes": "在宅でも保冷バッグあり",
+    "phone": "090-4997-0934",
+    "emergency": "093-884-1991",
+    "memo": "空が出てない時はチャイム押す",
+    "absent": "ドアノブに掛ける"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 23,
     "route": 1,
     "name": "近藤　久子",
@@ -63404,7 +64268,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 30,
     "route": 1,
     "name": "髙木　裕佳子",
@@ -63423,7 +64287,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 31,
     "route": 1,
     "name": "植木　美直子",
@@ -63442,45 +64306,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 32,
+    "dataMonth": "2026-04",
+    "code": 33,
     "route": 1,
-    "name": "斉藤　美砂子",
+    "name": "中原　健二郎",
     "type": "おかず",
-    "count": "2",
-    "countLabel": "翌週注文確認",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市戸畑区浅生２－７－２－５０２",
-    "notes": "",
-    "phone": "090-1342-6787",
-    "emergency": "",
-    "memo": "在宅日に注文する",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 35,
-    "route": 1,
-    "name": "岸川　俊一",
-    "type": "小箱セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "北九州市戸畑区浅生２－１６－１３",
-    "notes": "チャイム鳴らして玄関開けて中に置く",
-    "phone": "093-871-1756",
+    "address": "北九州市戸畑区浅生２−１３−２２",
+    "notes": "置き配　車庫右奥のドアノブにかける",
+    "phone": "090-6633-1479",
     "emergency": "",
     "memo": "",
-    "absent": "車庫が開いている中に置いた後ｼｬｯﾀｰ下まで降ろす"
+    "absent": "ドアノブにかける"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 37,
     "route": 1,
     "name": "緒方　良恵",
@@ -63499,7 +64344,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 40,
     "route": 1,
     "name": "横尾　重信",
@@ -63518,26 +64363,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 47,
+    "dataMonth": "2026-04",
+    "code": 45,
     "route": 1,
-    "name": "山本　博子",
-    "type": "おかず",
-    "count": "2",
+    "name": "入江　由美子",
+    "type": "小箱",
+    "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市戸畑区中原東４－４－１－２０３号",
+    "notes": "置き配　ノブにかける",
+    "phone": "090-1366-1404",
+    "emergency": "093-287-4909",
+    "memo": "",
+    "absent": "ドアノブにかける"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 48,
+    "route": 1,
+    "name": "上鶴　輝子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市小倉北区日明１－１４－２４－４０５",
-    "notes": "玄関開けて左側くつ箱の上に置く",
-    "phone": "090-2964-4392",
-    "emergency": "090-2963-0679息子",
+    "address": "北九州市小倉北区長浜町１３－６-２０２号",
+    "notes": "置き配　ﾁｬｲﾑ押し在宅確認後、ﾋﾞﾆｰﾙで玄関前箱に入れる",
+    "phone": "093-551-2698",
+    "emergency": "",
+    "memo": "足悪い　長浜団地３棟",
+    "absent": "玄関前箱に入れる"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 49,
+    "route": 1,
+    "name": "角田　勤志",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区赤坂４－７－６－１００６",
+    "notes": "ノックして玄関開けた左に置く",
+    "phone": "090-2391-5728",
+    "emergency": "",
     "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 50,
     "route": 1,
     "name": "市川　スギ子",
@@ -63556,7 +64439,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 51,
     "route": 1,
     "name": "清水　富康",
@@ -63575,13 +64458,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 52,
     "route": 1,
     "name": "井地　英人",
     "type": "小箱",
     "count": "1",
-    "countLabel": "翌週注文確認",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -63594,7 +64477,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 60,
+    "route": 1,
+    "name": "山本　律子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市小倉北区赤坂２ー９－４２",
+    "notes": "",
+    "phone": "093-521-0658",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 62,
     "route": 1,
     "name": "工藤　栄恵",
@@ -63613,7 +64515,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 63,
     "route": 1,
     "name": "木戸口　政利",
@@ -63632,7 +64534,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 64,
     "route": 1,
     "name": "東木　ヨヲコ",
@@ -63651,7 +64553,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 65,
+    "route": 1,
+    "name": "菅野　忠年",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区小文字１－２－２０",
+    "notes": "置き配",
+    "phone": "090-4772-7655",
+    "emergency": "",
+    "memo": "",
+    "absent": "ドアノブにかける"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 67,
     "route": 1,
     "name": "畑野　美紀子",
@@ -63670,13 +64591,89 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 68,
+    "route": 1,
+    "name": "米谷　真紀",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区砂津３－４－４ー６０３",
+    "notes": "３月分は指定口座日入金希望",
+    "phone": "070-9452-3678",
+    "emergency": "解除後玄関の前に置く",
+    "memo": "ヨネヤ　ウイングス砂津",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1031,
+    "route": 2,
+    "name": "野上　すみ子",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区神岳１－３－３１",
+    "notes": "勝手口側ﾁｬｲﾑ押す　奥の勝手口で渡す",
+    "phone": "090-8406-7050",
+    "emergency": "集金は翌月初めの水曜日空の中にある",
+    "memo": "不在時寒い日は保冷剤いらない",
+    "absent": "勝手口奥の洗濯機横に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1031,
+    "route": 2,
+    "name": "野上　すみ子",
+    "type": "ごはん",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区神岳１－３－３１",
+    "notes": "勝手口側ﾁｬｲﾑ押す　奥の勝手口で渡す",
+    "phone": "090-8406-7050",
+    "emergency": "集金は翌月初めの水曜日空の中にある",
+    "memo": "不在時寒い日は保冷剤いらない",
+    "absent": "勝手口奥の洗濯機横に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1032,
+    "route": 2,
+    "name": "武田　恒明",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区三萩野１－９－６",
+    "notes": "",
+    "phone": "093-941-1600",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 1035,
     "route": 2,
     "name": "小田部　禮子",
     "type": "おかず",
     "count": "2",
-    "countLabel": "翌週注文確認",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -63689,26 +64686,83 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 1057,
+    "dataMonth": "2026-04",
+    "code": 1053,
     "route": 2,
-    "name": "松本　文雄",
+    "name": "久門　純子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市小倉北区原町２－３－３",
-    "notes": "",
-    "phone": "090-2851-5274",
+    "address": "北九州市小倉北区白銀１－８－２６－７０４",
+    "notes": "未収金あり　保冷剤2個　フタが開けやすいものを渡す",
+    "phone": "093-921-1368",
+    "emergency": "080-1792-8574",
+    "memo": "グレースヴィラ",
+    "absent": "玄関前に置く(ﾄﾞｱﾉﾌﾞかけない)"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1055,
+    "route": 2,
+    "name": "山外　容子",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区大手町１４－１－８０１",
+    "notes": "足が悪い　すぐ出れないｲﾝﾀｰﾌｫﾝ何度か押し待つ",
+    "phone": "093-581-2840/080-1712-7381(家族)",
     "emergency": "",
-    "memo": "",
+    "memo": "ﾌﾟﾚｽﾀｰﾀﾜｰ大手町ﾘｰﾓ",
+    "absent": "宅配ボックスに入れる"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1056,
+    "route": 2,
+    "name": "清水　義夫",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区大手町１３－１３－９２１",
+    "notes": "置き配",
+    "phone": "080-3180ｰ8987",
+    "emergency": "093-287-5314",
+    "memo": "ｸﾞﾗﾝﾄﾞﾊﾟﾚｽﾛｲﾔﾙｺｰﾄ",
     "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1060,
+    "route": 2,
+    "name": "宮本　一彦",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区木町４－３－10ー４０６",
+    "notes": "優先ｲﾝﾀｰﾌｫﾝ　対応可能　入室記録記入",
+    "phone": "090-6423-9258",
+    "emergency": "093-583-6601吉元",
+    "memo": "顧客と２階応答なければ吉元さんへ電話する",
+    "absent": "ドアノブにかける"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 1061,
     "route": 2,
     "name": "美馬　幸子",
@@ -63727,7 +64781,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1063,
     "route": 2,
     "name": "上條　俊治",
@@ -63746,7 +64800,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1070,
+    "route": 2,
+    "name": "永山　英敏",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区熊谷１－２－３３",
+    "notes": "",
+    "phone": "093-582-4924",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 1071,
     "route": 2,
     "name": "柴田　洋子",
@@ -63765,7 +64838,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1072,
+    "route": 2,
+    "name": "西村　榮子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市小倉北区熊谷１－１６－２",
+    "notes": "インターフォン鳴らし玄関の中に入る",
+    "phone": "090-6779-6658",
+    "emergency": "09067796658娘絹川さん",
+    "memo": "月曜日デイケア保冷剤増量",
+    "absent": "発泡スチロールの中に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 1073,
     "route": 2,
     "name": "久保　都",
@@ -63784,7 +64876,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1074,
     "route": 2,
     "name": "古江　幸男",
@@ -63803,7 +64895,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1076,
     "route": 2,
     "name": "伊美　吉信",
@@ -63822,7 +64914,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1077,
     "route": 2,
     "name": "中村　仲子",
@@ -63841,7 +64933,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1080,
     "route": 2,
     "name": "水谷　栄作",
@@ -63860,7 +64952,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1081,
     "route": 2,
     "name": "潮平　真",
@@ -63879,7 +64971,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1082,
     "route": 2,
     "name": "竹澤　稔",
@@ -63898,7 +64990,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1083,
     "route": 2,
     "name": "明石　康子",
@@ -63917,7 +65009,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1091,
     "route": 2,
     "name": "臼元　操",
@@ -63936,12 +65028,12 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1092,
     "route": 2,
     "name": "守口　光昭",
     "type": "おかず",
-    "count": "1",
+    "count": "2",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
     "paymentType": "bank",
@@ -63955,26 +65047,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 1093,
-    "route": 2,
-    "name": "築村　国広",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市小倉北区泉台１－１０－２４",
-    "notes": "",
-    "phone": "093-651-7396",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1095,
     "route": 2,
     "name": "堀内　安致",
@@ -63993,26 +65066,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 1097,
+    "dataMonth": "2026-04",
+    "code": 1098,
     "route": 2,
-    "name": "高橋　朋子",
-    "type": "おかず",
+    "name": "津々見　繁子",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市小倉北区泉台３－２９－１－５０１",
-    "notes": "置き配",
-    "phone": "080-6468-4919",
+    "address": "北九州市小倉北区泉台３－２－５-301",
+    "notes": "",
+    "phone": "093-652-9030",
     "emergency": "",
     "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1099,
     "route": 2,
     "name": "泉　健志",
@@ -64031,45 +65104,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 1100,
+    "dataMonth": "2026-04",
+    "code": 1102,
     "route": 2,
-    "name": "豊永　由香利",
+    "name": "太郎丸　サカエ",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 金",
     "paymentType": "bank",
     "vessel": "",
-    "address": "北九州市八幡東区茶屋町４－５",
-    "notes": "置き配",
-    "phone": "090-1343-4150",
+    "address": "北九州市小倉北区泉台４－９－８",
+    "notes": "置き配　玄関左のカゴの中に入れる　チャイム押さない",
+    "phone": "090-9600-6915",
     "emergency": "",
     "memo": "",
-    "absent": "ポスト下S字ﾌｯｸにかける"
+    "absent": "玄関左手のかごの中に入れる"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 1103,
+    "dataMonth": "2026-04",
+    "code": 1105,
     "route": 2,
-    "name": "小林　孝子",
-    "type": "おかず",
+    "name": "竹山　英喜",
+    "type": "小箱",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市八幡東区荒生田３－３－２３",
-    "notes": "",
-    "phone": "090-7447-5518",
-    "emergency": "093-651-2491",
-    "memo": "水は病院 ﾌｼﾞｹｱﾌﾟﾗﾝｾﾝﾀｰ八幡松浦さん09082720364",
-    "absent": ""
+    "address": "北九州市八幡東区勝山１－１１－５－８０７",
+    "notes": "口座用紙渡す",
+    "phone": "090-8229-4599娘",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1106,
     "route": 2,
     "name": "原　年生",
@@ -64088,10 +65161,10 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1107,
     "route": 2,
-    "name": "麓　常広",
+    "name": "麓　常宏",
     "type": "ダブル",
     "count": "1",
     "countLabel": "",
@@ -64107,7 +65180,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1108,
     "route": 2,
     "name": "田中　玲子",
@@ -64126,7 +65199,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1115,
     "route": 2,
     "name": "永富　数孝",
@@ -64145,7 +65218,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1120,
     "route": 2,
     "name": "杉　裕美子",
@@ -64164,7 +65237,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1121,
     "route": 2,
     "name": "木下　節子",
@@ -64183,7 +65256,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1122,
+    "route": 2,
+    "name": "白石　美恵子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区井堀１－１４－４",
+    "notes": "置き配　開けやすいフタにする",
+    "phone": "090-9564-3583娘山下さん",
+    "emergency": "093-592-1928",
+    "memo": "難聴　火金デイ　冬場は保冷剤不要",
+    "absent": "縁側白い箱の上に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1125,
+    "route": 2,
+    "name": "藤井　基世佳",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区緑ケ丘２－１２－３６－４０３",
+    "notes": "",
+    "phone": "090-3986-8619",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 1126,
     "route": 2,
     "name": "後藤　英士",
@@ -64202,26 +65313,121 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 1127,
+    "dataMonth": "2026-04",
+    "code": 1128,
     "route": 2,
-    "name": "高木　友枝",
+    "name": "髙橋　文子",
     "type": "おかず",
-    "count": "0",
+    "count": "1",
     "countLabel": "",
     "weekly": "",
-    "paymentType": "cash",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "北九州市小倉北区菜園場２－６－２７",
-    "notes": "",
-    "phone": "093-582-6247",
+    "address": "北九州市小倉北区弁天町１－１０－４０２",
+    "notes": "工事中ｵｰﾄﾛｯｸ開放　ｲﾝﾀｰﾌｫﾝは押す",
+    "phone": "090-1343-5152",
     "emergency": "",
-    "memo": "",
-    "absent": "傘立ての上に置く"
+    "memo": "エクレール清水",
+    "absent": "ドアノブにかける"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1129,
+    "route": 2,
+    "name": "久野　稔",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市小倉北区清水４－１－２６－４０９",
+    "notes": "置き配",
+    "phone": "090-2961-7214",
+    "emergency": "あおいｹｱﾌﾟﾗﾝ小倉南区守恒本町2-2-26-601担当牛田さん090-8660-5521",
+    "memo": "歯大前スカイマンション",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1130,
+    "route": 2,
+    "name": "伊原　一美",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区金田１－３－３２ーB棟１１１０",
+    "notes": "置き配　保冷剤２個　ポストの開けてふたのところに置く",
+    "phone": "093-582-4333",
+    "emergency": "090-8660-3536",
+    "memo": "盲目　ｻﾝｼﾃｨ金田",
+    "absent": "ドアノブ横の宅配受けに置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1131,
+    "route": 2,
+    "name": "中島　美佐子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区原町１－７－１２",
+    "notes": "",
+    "phone": "093-561-7214",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1132,
+    "route": 2,
+    "name": "岩本　勝子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区金田２－１２－１８－１１０１",
+    "notes": "保冷バッグは上を閉じない状態で渡す",
+    "phone": "090-4355-6064",
+    "emergency": "不在時管理人が玄関開ける",
+    "memo": "管理人不在時はｴﾝﾄﾗﾝｽに置く",
+    "absent": "保冷バッグ上を閉じない玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 1133,
+    "route": 2,
+    "name": "江口　泰弘",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市小倉北区田町５－１８ー５01",
+    "notes": "請求書は本人には渡さない！",
+    "phone": "090-5294-0003娘",
+    "emergency": "",
+    "memo": "江口智絵小倉北区昭和町1-5-602",
+    "absent": ""
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 1134,
     "route": 2,
     "name": "髙橋　倭文子",
@@ -64240,7 +65446,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1135,
+    "route": 2,
+    "name": "日田　邦夫",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区熊本３－１６－１－A棟２０３",
+    "notes": "家族よりLINE登録してほしい　A棟は管理人室がある",
+    "phone": "090-3326-0390",
+    "emergency": "090-7477-4688娘",
+    "memo": "ｱﾝﾋﾞｴﾝﾄ小倉　A棟(管理人室あり)",
+    "absent": "A棟のポストの下に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 1136,
     "route": 2,
     "name": "西村　和子",
@@ -64259,7 +65484,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1137,
     "route": 2,
     "name": "三浦　敏之",
@@ -64278,7 +65503,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2015,
     "route": 3,
     "name": "須藤　のぞみ",
@@ -64297,70 +65522,51 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 2023,
+    "dataMonth": "2026-04",
+    "code": 2020,
     "route": 3,
-    "name": "谷瀬　弘子",
+    "name": "内田　みち子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "北九州市小倉南区葛原４－１６－１４",
-    "notes": "",
-    "phone": "093-471-7042",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
+    "address": "北九州市小倉南区葛原３ー９ー１７",
+    "notes": "置き配　 角側空き家の庭側一番奥側の窓を開けて室内に置く",
+    "phone": "090-4774-6482",
+    "emergency": "庭側の破れた障子を開ける",
+    "memo": "同敷地２軒並び右側の室内へ置き配",
+    "absent": "隣の庭に面した窓破れた障子を開けて中に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 2023,
+    "dataMonth": "2026-04",
+    "code": 2024,
     "route": 3,
-    "name": "谷瀬　弘子",
+    "name": "田上　陽子",
     "type": "小箱",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市小倉南区葛原４－１６－１４",
-    "notes": "",
-    "phone": "093-471-7042",
+    "address": "北九州市小倉南区葛原本町２－４－５",
+    "notes": "置き配　チャイム押す　発泡スチロールに袋ごと入れる",
+    "phone": "093-471-0313/090-5089-8467",
     "emergency": "",
     "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 2025,
-    "route": 3,
-    "name": "伊藤　信威",
-    "type": "ダブル",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市小倉南区葛原本町５－１－３９",
-    "notes": "一方通行敷地内切り返し可能",
-    "phone": "093-471-0216",
-    "emergency": "090-6420-4628家族",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2027,
     "route": 3,
     "name": "三宅　俊博",
     "type": "おかず",
     "count": "1",
-    "countLabel": "翌週注文確認",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -64373,7 +65579,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2028,
     "route": 3,
     "name": "藤村　美智代",
@@ -64392,7 +65598,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2029,
     "route": 3,
     "name": "川﨑　卓生",
@@ -64411,7 +65617,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2030,
     "route": 3,
     "name": "中島　みゆき",
@@ -64430,7 +65636,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2031,
     "route": 3,
     "name": "村中　哲也",
@@ -64449,7 +65655,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2032,
     "route": 3,
     "name": "峯下　龍二",
@@ -64468,45 +65674,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 2033,
+    "dataMonth": "2026-04",
+    "code": 2035,
     "route": 3,
-    "name": "三井　孝子",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市小倉南区葛原元町１－１０－５６",
-    "notes": "",
-    "phone": "090-4516-6765",
-    "emergency": "093-471-4194",
-    "memo": "金デイ　青魚無理",
-    "absent": "玄関左ポスト後ろの切り株の上に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 2036,
-    "route": 3,
-    "name": "黒木　淳子",
+    "name": "川原　敏佐",
     "type": "ダブル",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市小倉南区中曾根東４－１５－１５",
-    "notes": "置き配",
-    "phone": "090-9473-0758娘ｼｹﾞﾄｳ",
+    "address": "北九州市小倉南区下曽根３－４－２６",
+    "notes": "",
+    "phone": "090-4343-7607",
     "emergency": "",
     "memo": "",
-    "absent": "玄関前のイスの上に置く"
+    "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2037,
     "route": 3,
     "name": "池田　優子",
@@ -64525,13 +65712,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2038,
     "route": 3,
     "name": "余宮　修",
     "type": "おかず",
     "count": "2",
-    "countLabel": "翌週注文確認",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -64544,7 +65731,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2039,
+    "route": 3,
+    "name": "窪　敬二",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉南区朽網西２－２６－１５",
+    "notes": "開けやすいフタ",
+    "phone": "093-473-0496",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前のS字にかける"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 2040,
+    "route": 3,
+    "name": "渡辺　久美子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉南区朽網西４ー２２ー２ー３０３",
+    "notes": "置き配　注意※袋に髪の毛入っている",
+    "phone": "090-3603-6445",
+    "emergency": "異臭汚れあり専用袋使用",
+    "memo": "２００棟",
+    "absent": "ドアノブにかける"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 2041,
     "route": 3,
     "name": "尾崎　みさお",
@@ -64563,7 +65788,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2042,
     "route": 3,
     "name": "森　健治",
@@ -64582,7 +65807,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2043,
     "route": 3,
     "name": "田中　かおる",
@@ -64601,7 +65826,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2044,
     "route": 3,
     "name": "荒木　克弥",
@@ -64620,7 +65845,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2047,
     "route": 3,
     "name": "吉田　浩",
@@ -64639,7 +65864,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2049,
     "route": 3,
     "name": "大久保　博厚",
@@ -64658,64 +65883,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 2050,
-    "route": 3,
-    "name": "宇都宮　隆",
-    "type": "セット",
-    "count": "0",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "北九州市小倉北区高坊１－８－３６",
-    "notes": "玄関開いていたらｲﾝﾀｰﾌｫﾝ押して中に置く",
-    "phone": "093-921-3552",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前の箱の中に入れる"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 2052,
-    "route": 3,
-    "name": "下田　謙治",
-    "type": "ダブル",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市小倉北区高坊２－２－５",
-    "notes": "",
-    "phone": "080-3187-8454",
-    "emergency": "093-921-7968",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 3001,
-    "route": 4,
-    "name": "小野　道夫",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市小倉北区片野３－１４－１８－５０２",
-    "notes": "",
-    "phone": "090-8627-1350",
-    "emergency": "",
-    "memo": "サンライフ片野　小田部さんの紹介",
-    "absent": "ｴﾝﾄﾗﾝｽに置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3020,
     "route": 4,
     "name": "岩谷　節子",
@@ -64734,7 +65902,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3026,
     "route": 4,
     "name": "新貝　博子",
@@ -64753,7 +65921,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3027,
     "route": 4,
     "name": "三好　鎮雄",
@@ -64772,7 +65940,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3028,
     "route": 4,
     "name": "赤尾　寛悦",
@@ -64791,7 +65959,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3029,
     "route": 4,
     "name": "百井　哲",
@@ -64810,7 +65978,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3030,
+    "route": 4,
+    "name": "香月　日菜子",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市小倉南区北方３－２３－５－４０２",
+    "notes": "在宅",
+    "phone": "080-9521-6305本人",
+    "emergency": "090-8350-1188(母佳代)",
+    "memo": "ｻﾆｰﾗｲﾄﾋﾞﾙ",
+    "absent": "集合ポストの上置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 3031,
+    "route": 4,
+    "name": "小松　淳子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市小倉南区北方３－３５－２２",
+    "notes": "必ず裏の勝手口のお客様準備の保冷ﾊﾞｯｸﾞに入れ替える。",
+    "phone": "093-931-6347",
+    "emergency": "保冷剤を入れる",
+    "memo": "認知の為、手渡し禁止",
+    "absent": "裏の勝手口の保冷バッグに入れる"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 3032,
+    "route": 4,
+    "name": "吉井　元",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市小倉南区北方２－１１-21",
+    "notes": "請求書は本人に渡さない！家手前に車停めて行く",
+    "phone": "093-931-3343/080-3958-0770",
+    "emergency": "080-3026-1684家族",
+    "memo": "空は玄関横の紙袋の中　須崎美穂154-0016世田谷区弦巻５丁目33-23-203",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 3055,
     "route": 4,
     "name": "小田　真司",
@@ -64829,7 +66054,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3055,
     "route": 4,
     "name": "小田　真司",
@@ -64848,7 +66073,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3060,
     "route": 4,
     "name": "岩井　里美",
@@ -64867,7 +66092,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3070,
     "route": 4,
     "name": "平中　克己",
@@ -64886,7 +66111,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3070,
     "route": 4,
     "name": "平中　克己",
@@ -64905,26 +66130,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 3080,
-    "route": 4,
-    "name": "畠山　博之",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "北九州市小倉南区南方３－１３－１－３０１号",
-    "notes": "置配　宅配ボックスの前に置く",
-    "phone": "070-5536-2456",
-    "emergency": "",
-    "memo": "",
-    "absent": "宅配ボックスに入れる"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3083,
     "route": 4,
     "name": "山本　和生",
@@ -64943,7 +66149,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3084,
     "route": 4,
     "name": "和田　信幸",
@@ -64962,7 +66168,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3090,
+    "route": 4,
+    "name": "菅　祥孝",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市小倉南区徳吉西３－１４－６",
+    "notes": "置き配　かごの中に入れる",
+    "phone": "080-8399-2844",
+    "emergency": "",
+    "memo": "",
+    "absent": "かごの中に入れる"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 3091,
     "route": 4,
     "name": "野見山　敏満",
@@ -64981,7 +66206,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3092,
     "route": 4,
     "name": "有満　綾子",
@@ -65000,7 +66225,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3097,
     "route": 4,
     "name": "上田　靖志",
@@ -65019,7 +66244,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3098,
     "route": 4,
     "name": "鈴岡　喜久子",
@@ -65038,7 +66263,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3099,
     "route": 4,
     "name": "早川　八重子",
@@ -65057,7 +66282,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3100,
     "route": 4,
     "name": "中原　裕行",
@@ -65076,7 +66301,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3101,
     "route": 4,
     "name": "高下　重徳",
@@ -65095,7 +66320,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3110,
     "route": 4,
     "name": "加倉　トモ子",
@@ -65114,7 +66339,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3111,
     "route": 4,
     "name": "村松　啓子",
@@ -65133,7 +66358,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3112,
     "route": 4,
     "name": "岸本　勉",
@@ -65152,7 +66377,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3113,
     "route": 4,
     "name": "河島　順子",
@@ -65171,7 +66396,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3114,
     "route": 4,
     "name": "松本　玲子",
@@ -65190,7 +66415,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3116,
+    "route": 4,
+    "name": "大久保　一久",
+    "type": "おかず",
+    "count": "3",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉南区守恒１－９－２０",
+    "notes": "",
+    "phone": "093-962-6980",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 3117,
     "route": 4,
     "name": "有田　益次郎",
@@ -65209,64 +66453,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 3119,
+    "dataMonth": "2026-04",
+    "code": 3118,
     "route": 4,
-    "name": "洲崎　友美",
+    "name": "佐藤　輝子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市小倉北区片野新町３－１－８ー２階",
-    "notes": "２階ビックベアーズフーズサービズ事務所へ",
-    "phone": "090-1877-0435",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
+    "address": "北九州市小倉南区富士見２－６－２ー２０４",
+    "notes": "置き配　箱の上に置く　チャイム押す",
+    "phone": "090-7453-9285",
+    "emergency": "家族息子09074539285",
+    "memo": "富士見ﾋﾞﾙ",
+    "absent": "箱の上に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4010,
+    "dataMonth": "2026-04",
+    "code": 4024,
     "route": 5,
-    "name": "佐藤　和輝",
-    "type": "ダブルセット",
-    "count": "3",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市八幡東区前田１－７－１８ー１００６",
-    "notes": "口座用紙渡す",
-    "phone": "090-6459-2841",
-    "emergency": "ｱﾋﾞﾘｵ八幡",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4025,
-    "route": 5,
-    "name": "泉　雅則",
-    "type": "セット",
+    "name": "品川　久美子",
+    "type": "ご膳",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "北九州市八幡東区日の出２－１４－３１",
-    "notes": "保冷剤２個",
-    "phone": "090-5280-430４",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
+    "address": "北九州市戸畑区金比羅町２－１ー２階",
+    "notes": "置き配　MINA左外階段で２階へ　請求書は本人に渡さない！",
+    "phone": "090-2718-2152（娘）",
+    "emergency": "書物送付先(戸畑区西鞘ヶ谷町１８－２０井上美香さん)",
+    "memo": "井堀５丁目交差点すぐ１階はインド料理店",
+    "absent": "２階に行けない時は１階のポストのところに置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4026,
     "route": 5,
     "name": "末吉　美千江",
@@ -65285,13 +66510,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4027,
     "route": 5,
     "name": "田中　英昭",
     "type": "ダブル",
     "count": "1",
-    "countLabel": "翌週注文確認",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -65304,8 +66529,8 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4031,
+    "dataMonth": "2026-04",
+    "code": 4030,
     "route": 5,
     "name": "山野　裕二郎",
     "type": "おかず",
@@ -65323,7 +66548,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4032,
     "route": 5,
     "name": "後藤　恵子",
@@ -65342,7 +66567,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4034,
     "route": 5,
     "name": "岡田　博司",
@@ -65361,7 +66586,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4037,
     "route": 5,
     "name": "寺町　和実",
@@ -65380,7 +66605,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4038,
     "route": 5,
     "name": "山本　絹子",
@@ -65391,7 +66616,7 @@ window.DELIVERY_DATA = [
     "paymentType": "cash",
     "vessel": "",
     "address": "北九州市八幡西区東鳴水１－７－５",
-    "notes": "",
+    "notes": "留守の時は空が外に置いてある",
     "phone": "093-645-4451",
     "emergency": "",
     "memo": "",
@@ -65399,7 +66624,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4039,
     "route": 5,
     "name": "池田　久恵",
@@ -65418,7 +66643,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4045,
     "route": 5,
     "name": "馬屋原　正夫",
@@ -65437,45 +66662,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4047,
+    "dataMonth": "2026-04",
+    "code": 4048,
     "route": 5,
-    "name": "小路島　寛子",
+    "name": "森山　多美子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "北九州市八幡西区上上津役５－１０－１９",
-    "notes": "玄関前の手前ｲﾝﾀｰﾌｫﾝ、白いボタンが本人専用",
-    "phone": "080-6442-7838",
+    "address": "北九州市八幡西区町上津役西１－８－２１",
+    "notes": "",
+    "phone": "080-1731-0826",
     "emergency": "",
-    "memo": "080-5204-1729家族",
+    "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4050,
+    "dataMonth": "2026-04",
+    "code": 4049,
     "route": 5,
-    "name": "神谷　雅美",
-    "type": "セット",
+    "name": "釼　捷岐",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市八幡西区三ケ森３－５－２１",
-    "notes": "置き配　保冷剤2個",
-    "phone": "090-2503-2697",
-    "emergency": "",
-    "memo": "空容器回収困難か？",
-    "absent": "玄関前に置く"
+    "address": "北九州市八幡西区的場町２０－２３",
+    "notes": "置き配",
+    "phone": "093-612-9297",
+    "emergency": "090-2397-0956",
+    "memo": "ツルガネショウキ",
+    "absent": "玄関横の格子に下げる"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4051,
     "route": 5,
     "name": "北原　トヨ子",
@@ -65494,7 +66719,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4053,
+    "route": 5,
+    "name": "鮫島　岩男",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市八幡西区鷹見台４－１８－３１",
+    "notes": "開きやすいフタ　玄関開けて青い箱の上に置く",
+    "phone": "080-3892-9287娘",
+    "emergency": "",
+    "memo": "すぐに動けない",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 4055,
     "route": 5,
     "name": "重谷　良子",
@@ -65505,21 +66749,21 @@ window.DELIVERY_DATA = [
     "paymentType": "cash",
     "vessel": "",
     "address": "北九州市八幡西区鷹見台３－９－１",
-    "notes": "チャイム何回か押す　耳が遠い",
+    "notes": "置き配",
     "phone": "093-602-7570",
     "emergency": "",
-    "memo": "火曜デイ",
+    "memo": "火曜デイ　耳が遠い",
     "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4056,
     "route": 5,
     "name": "中野瀬　隆弘",
     "type": "ダブルセット",
-    "count": "1",
-    "countLabel": "集金",
+    "count": "0",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "bank",
     "vessel": "",
@@ -65532,65 +66776,8 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4066,
-    "route": 5,
-    "name": "森川　公憲",
-    "type": "小箱セット",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市八幡西区萩原２－８－６－４０１",
-    "notes": "",
-    "phone": "093-622-4524",
-    "emergency": "",
-    "memo": "萩原公団",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4068,
-    "route": 5,
-    "name": "古瀬　智子",
-    "type": "小箱",
-    "count": "2",
-    "countLabel": "翌週注文確認",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市八幡西区紅梅２－９－１６－５０７",
-    "notes": "空容器は室外機と壁の間にある",
-    "phone": "080-5281-6068",
-    "emergency": "",
-    "memo": "",
-    "absent": "エアコン室外機の上に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4071,
-    "route": 5,
-    "name": "片村　一美",
-    "type": "ご膳",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市八幡東区西丸山町１－６－１００２",
-    "notes": "置き配　　保冷剤１個　玄関前保冷ボックスに入れる",
-    "phone": "093-661-6638",
-    "emergency": "090-1603-2629家族",
-    "memo": "コーポ野村",
-    "absent": "保冷ボックスに入れる"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4200,
+    "dataMonth": "2026-04",
+    "code": 4057,
     "route": 5,
     "name": "宇木　千枝子",
     "type": "おかず",
@@ -65608,14 +66795,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4200,
+    "dataMonth": "2026-04",
+    "code": 4057,
     "route": 5,
     "name": "宇木　千枝子",
     "type": "小箱",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "北九州市八幡西区若葉１－１９－８",
@@ -65627,27 +66814,8 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4201,
-    "route": 5,
-    "name": "長埜　ひとみ",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市八幡西区森下町２２－３－２Ｆ－２号室",
-    "notes": "置き配　インターフォン押さない",
-    "phone": "093-631-1036",
-    "emergency": "",
-    "memo": "月･木はﾃﾞｲｻｰﾋﾞｽ不在",
-    "absent": "洗濯機の前に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4202,
+    "dataMonth": "2026-04",
+    "code": 4059,
     "route": 5,
     "name": "三丸　勇治",
     "type": "セット",
@@ -65665,8 +66833,46 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 4205,
+    "dataMonth": "2026-04",
+    "code": 4061,
+    "route": 5,
+    "name": "増田　昌裕",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市八幡西区青山３－１４－２５",
+    "notes": "右側の事務所に配達　呼鈴押す",
+    "phone": "093-642-1731会社",
+    "emergency": "090-9794-0526家族",
+    "memo": "増栄工務店宛090-3735-0210弟",
+    "absent": "建物裏側の木の棚に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 4080,
+    "route": 5,
+    "name": "森川　公憲",
+    "type": "小箱セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市八幡西区萩原２－８－６－４０１",
+    "notes": "ﾁｬｲﾑ鳴らないドアたたき声かけする",
+    "phone": "093-622-4524",
+    "emergency": "",
+    "memo": "萩原公団",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
+    "code": 4081,
     "route": 5,
     "name": "酒井　安子",
     "type": "おかず",
@@ -65676,7 +66882,7 @@ window.DELIVERY_DATA = [
     "paymentType": "cash",
     "vessel": "",
     "address": "北九州市八幡西区山寺町３－４",
-    "notes": "不在時は箱が出ている",
+    "notes": "不在時は弁当と保冷剤１個のみボックスに入れる",
     "phone": "093-632-1006",
     "emergency": "貝アレルギーあり",
     "memo": "門入り右側の家(表札ﾔｽｱｷ)",
@@ -65684,64 +66890,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5001,
-    "route": 6,
-    "name": "新井　初美",
-    "type": "ダブル",
-    "count": "0",
-    "countLabel": "集金",
+    "dataMonth": "2026-04",
+    "code": 4085,
+    "route": 5,
+    "name": "古瀬　智子",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市若松区中畑町１４－２",
-    "notes": "口座用紙渡す",
-    "phone": "090-5284-8390",
+    "address": "北九州市八幡西区紅梅２－９－１６－５０７",
+    "notes": "空容器は室外機と壁の間にある",
+    "phone": "080-5281-6068",
     "emergency": "",
     "memo": "",
-    "absent": "玄関前に置く"
+    "absent": "エアコン室外機の上に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5033,
-    "route": 6,
-    "name": "脇　由里江",
-    "type": "セット",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市小倉北区砂津２－１１－２０－５０７",
-    "notes": "置き配　駐車場10番黒色軽の後ろの保冷ﾎﾞｯｸｽに入れる",
-    "phone": "090-5284-2949",
-    "emergency": "",
-    "memo": "ホワイトキャッスル砂津",
-    "absent": "駐車場１０番の保冷箱に入れる"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5033,
-    "route": 6,
-    "name": "脇　由里江",
-    "type": "ごはん",
+    "dataMonth": "2026-04",
+    "code": 4090,
+    "route": 5,
+    "name": "片村　一美",
+    "type": "ご膳",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市小倉北区砂津２－１１－２０－５０７",
-    "notes": "置き配　駐車場10番黒色軽の後ろの保冷ﾎﾞｯｸｽに入れる",
-    "phone": "090-5284-2949",
-    "emergency": "",
-    "memo": "ホワイトキャッスル砂津",
-    "absent": "駐車場１０番の保冷箱に入れる"
+    "address": "北九州市八幡東区西丸山町１－６－１００２",
+    "notes": "置き配　　弁当と保冷剤１個のみボックスに入れる",
+    "phone": "093-661-6638",
+    "emergency": "090-1603-2629家族",
+    "memo": "コーポ野村",
+    "absent": "保冷ボックスに入れる"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5030,
+    "route": 6,
+    "name": "大隈　敬二郎",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区大田町１－１８－７０１",
+    "notes": "置き配　玄関左横の箱の上に置く",
+    "phone": "090-1081ｰ0495",
+    "emergency": "",
+    "memo": "TDKビル",
+    "absent": "玄関左横の箱の上に置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 5034,
     "route": 6,
     "name": "佐藤　明",
@@ -65760,7 +66966,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5035,
     "route": 6,
     "name": "射馬　正敏",
@@ -65779,26 +66985,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5050,
+    "dataMonth": "2026-04",
+    "code": 5051,
     "route": 6,
-    "name": "井上　知子",
-    "type": "セット",
+    "name": "田村　三登",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市小倉北区上富野２－１１－１１",
-    "notes": "置き配　玄関右横ガスメーターの横にかける",
-    "phone": "093-541-2944",
-    "emergency": "本人電話なし",
-    "memo": "541-2944城元",
-    "absent": "向かいの家城元宅へ行く"
+    "address": "北九州市小倉北区小文字１－２－４５（２）",
+    "notes": "口座用紙渡す　同敷地住所あり左側の家　表札あり",
+    "phone": "090-4017-0002",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5057,
+    "route": 6,
+    "name": "山本　忠長",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市小倉北区砂津１－６－２５－１１０３号",
+    "notes": "置き配　玄関右下に置くｲﾝﾀｰﾌｫﾝ２回押す",
+    "phone": "093-533-6430/080-5200-0665",
+    "emergency": "090-8295-9169",
+    "memo": "オートロック小文字幹線ビル",
+    "absent": "エントランスに置く"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 5058,
     "route": 6,
     "name": "園木　ゆき美",
@@ -65817,7 +67042,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5059,
+    "route": 6,
+    "name": "水野　啓子",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市戸畑区中原東３－１３－４５－５０１",
+    "notes": "",
+    "phone": "093-871-7775",
+    "emergency": "",
+    "memo": "",
+    "absent": "ドアノブにかける"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 5063,
     "route": 6,
     "name": "檜垣　美代子",
@@ -65836,26 +67080,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5064,
+    "dataMonth": "2026-04",
+    "code": 5069,
     "route": 6,
-    "name": "古田　都",
+    "name": "南　次子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 金",
+    "weekly": "月 水 木",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市若松区古前２－１６－１５",
-    "notes": "",
-    "phone": "080-4275-6396",
+    "address": "北九州市若松区桜町９－１３",
+    "notes": "置き配　ｲﾝﾀｰﾌｫﾝ押す　美容室のドアノブにかける",
+    "phone": "093-761-0752",
     "emergency": "",
-    "memo": "金曜デイケア",
+    "memo": "若松区役所ｹｱﾏﾈ福田さん0937520227",
     "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5070,
     "route": 6,
     "name": "木下　アサエ",
@@ -65874,7 +67118,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5071,
     "route": 6,
     "name": "永元　民子",
@@ -65893,7 +67137,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5072,
+    "route": 6,
+    "name": "大門　正幸",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "北九州市若松区上原町３－１６",
+    "notes": "",
+    "phone": "093-761-5987",
+    "emergency": "",
+    "memo": "",
+    "absent": "ﾄﾞｱﾉﾌﾞにかける"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 5073,
     "route": 6,
     "name": "城田　裕子",
@@ -65912,7 +67175,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5077,
     "route": 6,
     "name": "竹森　伸雄",
@@ -65931,7 +67194,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5078,
     "route": 6,
     "name": "城戸　美奈子",
@@ -65950,7 +67213,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5079,
     "route": 6,
     "name": "竹本　豊",
@@ -65969,26 +67232,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5081,
+    "dataMonth": "2026-04",
+    "code": 5084,
     "route": 6,
-    "name": "高向　邦代",
-    "type": "ご膳",
+    "name": "松木　孝志",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市若松区畑谷町８－２０",
-    "notes": "口座用紙渡す",
-    "phone": "090-9567-3004",
-    "emergency": "",
+    "address": "北九州市若松区用勺町１２－３－１０２",
+    "notes": "",
+    "phone": "090-9234-3234",
+    "emergency": "093-791-2320樋口みすず",
     "memo": "",
-    "absent": "空が置いてある場所"
+    "absent": "玄関前に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5085,
     "route": 6,
     "name": "大庭　喜美子",
@@ -66007,7 +67270,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5087,
     "route": 6,
     "name": "伊藤　宏子",
@@ -66026,7 +67289,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5088,
     "route": 6,
     "name": "力丸　江美子",
@@ -66045,7 +67308,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5089,
     "route": 6,
     "name": "矢羽田　千種",
@@ -66064,45 +67327,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5090,
+    "dataMonth": "2026-04",
+    "code": 5100,
     "route": 6,
-    "name": "田中　一恵",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "集金",
-    "weekly": "",
+    "name": "宮原　茂",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市若松区大鳥居３４０",
-    "notes": "",
-    "phone": "090-3985-0865",
+    "address": "北九州市若松区高須北２－４－５",
+    "notes": "水曜の対応ﾃﾞｲｹｱ保冷剤2個指定の場所に置く",
+    "phone": "093-741-0405",
     "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
+    "memo": "水曜はデイケアの為夕方帰宅",
+    "absent": "左側棚一番下段右側に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5104,
+    "dataMonth": "2026-04",
+    "code": 5103,
     "route": 6,
-    "name": "原口　勝博",
+    "name": "藤岡　房子",
     "type": "ダブル",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "bank",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市若松区高須南１－４－１１",
-    "notes": "",
-    "phone": "080-4120-8317",
+    "address": "北九州市若松区高須南３－２－１０－１０１",
+    "notes": "置き配　牛乳箱に置く　インターホン２回押す",
+    "phone": "093-741-6083",
     "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
+    "memo": "県営１０棟",
+    "absent": "牛乳箱に置く"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5106,
     "route": 6,
     "name": "安永　芙美子",
@@ -66121,7 +67384,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5107,
     "route": 6,
     "name": "本山　政巳",
@@ -66140,7 +67403,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5108,
     "route": 6,
     "name": "馬場　三代治",
@@ -66159,7 +67422,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5108,
     "route": 6,
     "name": "馬場　三代治",
@@ -66178,45 +67441,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5110,
-    "route": 6,
-    "name": "髙橋　勉",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市八幡西区浅川学園台２－１４－１",
-    "notes": "不在時は箱が出ている",
-    "phone": "093－603-0769",
-    "emergency": "090-9499-2617",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5250,
-    "route": 6,
-    "name": "永田　一美",
-    "type": "小箱",
-    "count": "0",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "北九州市八幡西区千代ケ崎１－１４－１７",
-    "notes": "",
-    "phone": "090-7441-9468",
-    "emergency": "",
-    "memo": "火曜日習い事不在",
-    "absent": "玄関前傘立てに置く"
-  },
-  {
-    "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5300,
     "route": 6,
     "name": "堀江　かぎ",
@@ -66235,7 +67460,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5303,
     "route": 6,
     "name": "阿部　ツタ子",
@@ -66254,7 +67479,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5305,
     "route": 6,
     "name": "下田　冨久美",
@@ -66273,11 +67498,11 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5306,
     "route": 6,
     "name": "﨑長　生紹",
-    "type": "ご膳",
+    "type": "ダブル",
     "count": "1",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
@@ -66292,13 +67517,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5307,
     "route": 6,
     "name": "松井　真紀",
     "type": "おかず",
-    "count": "1",
-    "countLabel": "集金",
+    "count": "0",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -66311,7 +67536,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5310,
     "route": 6,
     "name": "原尾　和江",
@@ -66330,26 +67555,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
-    "code": 5320,
+    "dataMonth": "2026-04",
+    "code": 5311,
     "route": 6,
-    "name": "戸島　加八",
-    "type": "おかず",
+    "name": "砂原　一喜",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "北九州市八幡西区陣原３－１１－３",
-    "notes": "置き配 　玄関前発泡ｽﾁﾛｰﾙに弁当と上に保冷剤を入れる",
-    "phone": "090-9571-8328/093-631-0246",
-    "emergency": "",
-    "memo": "ｲﾝﾀｰﾌｫﾝ押す",
-    "absent": "玄関前に置く"
+    "address": "北九州市八幡西区本城東６－２－３",
+    "notes": "ｲﾝﾀｰﾌｫﾝ押し玄関の中に置く",
+    "phone": "093-691-3018",
+    "emergency": "090-5485-0433ケアマネ高田さん",
+    "memo": "サングリーンケアプラン",
+    "absent": "裏の冷蔵庫に入れる"
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5320,
+    "route": 6,
+    "name": "谷口　珠子",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "北九州市八幡西区本城４－５－７",
+    "notes": "ｲﾝﾀｰﾌｫﾝ押す　玄関左側の部屋をノックして渡す",
+    "phone": "090-6891-4381",
+    "emergency": "090-6891-4381家族菊地",
+    "memo": "基本在宅",
+    "absent": "玄関右側の壁の物置の中に入れる"
+  },
+  {
+    "store": "北九州店",
+    "dataMonth": "2026-04",
     "code": 5320,
     "route": 6,
     "name": "髙原　秀樹",
@@ -66368,7 +67612,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "北九州店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8000,
     "route": 9,
     "name": "予備",
@@ -66387,7 +67631,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 10,
     "route": 1,
     "name": "佐々木　忍",
@@ -66406,45 +67650,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 17,
+    "dataMonth": "2026-04",
+    "code": 20,
     "route": 1,
-    "name": "大西　保",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "集金",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市開６－１０－９",
-    "notes": "置配　玄関右側の細道から裏に回ったところの棚の上",
-    "phone": "090-9737-0683",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 18,
-    "route": 1,
-    "name": "佐々木　雅子",
+    "name": "宮生　圭子",
     "type": "おかず",
     "count": "2",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "宇部市上宇部開6丁目１０－４６ー１",
+    "address": "宇部市ひらき台１－１９－１５",
     "notes": "",
-    "phone": "090-1354-6757",
+    "phone": "090-7502-7412",
     "emergency": "",
     "memo": "",
-    "absent": ""
+    "absent": "玄関前に置く"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 25,
     "route": 1,
     "name": "渡辺　弘行",
@@ -66463,7 +67688,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 30,
     "route": 1,
     "name": "東　隆子",
@@ -66482,45 +67707,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 47,
-    "route": 1,
-    "name": "野崎　敏郎",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "宇部市大小路２丁目１－７－５",
-    "notes": "",
-    "phone": "090-6403-6221",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関先に置く"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 47,
-    "route": 1,
-    "name": "野崎　敏郎",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "宇部市大小路２丁目１－７－５",
-    "notes": "",
-    "phone": "090-6403-6221",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関先に置く"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 50,
     "route": 1,
     "name": "大村　清文",
@@ -66539,7 +67726,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 65,
+    "route": 1,
+    "name": "室井　省吾",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市中村２－５－２２－１",
+    "notes": "",
+    "phone": "0836-31-8060",
+    "emergency": "",
+    "memo": "",
+    "absent": "駐車場奥勝手口のドア前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 80,
     "route": 1,
     "name": "井村　泰一",
@@ -66558,7 +67764,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 100,
     "route": 1,
     "name": "河本　正治",
@@ -66577,7 +67783,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 200,
     "route": 1,
     "name": "熊谷　孝治",
@@ -66596,7 +67802,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 200,
     "route": 1,
     "name": "熊谷　孝治",
@@ -66615,7 +67821,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 250,
     "route": 1,
     "name": "中野　清子",
@@ -66634,7 +67840,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 260,
+    "route": 1,
+    "name": "米弥　竜昭",
+    "type": "小箱",
+    "count": "3",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山陽小野田市共和台１６－６",
+    "notes": "セントジェームズお届け",
+    "phone": "090-7991-0726",
+    "emergency": "",
+    "memo": "セントジェームズお届け",
+    "absent": "裏口ドア開けた給湯器の下"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 270,
+    "route": 1,
+    "name": "セントジェームズ",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市下條２丁目２－１９",
+    "notes": "セントジェームズお届け",
+    "phone": "0836-21-4889",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 280,
     "route": 1,
     "name": "小野　正夫",
@@ -66653,26 +67897,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 300,
+    "dataMonth": "2026-04",
+    "code": 310,
     "route": 1,
-    "name": "水島　秀男",
+    "name": "縄田　昭二",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "宇部市朝日町４－１１－７０３",
-    "notes": "呼出推して暗証番号3570",
-    "phone": "0836-32-9477",
+    "address": "宇部市西琴芝２－１５－１５",
+    "notes": "",
+    "phone": "060-1331-8446",
     "emergency": "",
     "memo": "",
-    "absent": "玄関前台の上"
+    "absent": "玄関横水槽の上"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 320,
     "route": 1,
     "name": "赤崎　カツミ",
@@ -66691,7 +67935,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 320,
+    "route": 1,
+    "name": "赤崎　憲一郎",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宇部市西琴2丁目４－６",
+    "notes": "",
+    "phone": "0836-31-9623",
+    "emergency": "",
+    "memo": "",
+    "absent": "自転車カゴ"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 325,
     "route": 1,
     "name": "石田　桂子",
@@ -66710,7 +67973,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 345,
+    "route": 1,
+    "name": "野津　孝",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市琴芝町２－３－１８",
+    "notes": "置配　玄関横のポストの下に置く",
+    "phone": "1番0836-21-8430",
+    "emergency": "2番080-4555-8430",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 360,
     "route": 1,
     "name": "米屋　拓己",
@@ -66729,7 +68011,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 365,
     "route": 1,
     "name": "脇坂　紀雄",
@@ -66748,7 +68030,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 390,
     "route": 1,
     "name": "山口　定男",
@@ -66767,7 +68049,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 392,
     "route": 1,
     "name": "渡部　孝子",
@@ -66786,7 +68068,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 395,
+    "route": 1,
+    "name": "花道　良枝",
+    "type": "ダブルセット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市開6丁目23番6棟１０２",
+    "notes": "インターホン鳴らしてドアノブに掛ける",
+    "phone": "080-7003-1568",
+    "emergency": "",
+    "memo": "",
+    "absent": "ドアノブに掛ける"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 395,
+    "route": 1,
+    "name": "花道　良枝",
+    "type": "ごはん",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市開6丁目23番6棟１０２",
+    "notes": "インターホン鳴らしてドアノブに掛ける",
+    "phone": "080-7003-1568",
+    "emergency": "",
+    "memo": "",
+    "absent": "ドアノブに掛ける"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1010,
     "route": 2,
     "name": "松尾　千秋",
@@ -66805,7 +68125,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1020,
     "route": 2,
     "name": "西田　八重子",
@@ -66824,7 +68144,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1060,
     "route": 2,
     "name": "藤波　膺祐",
@@ -66843,7 +68163,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1062,
     "route": 2,
     "name": "竹田　誠治",
@@ -66862,7 +68182,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1065,
     "route": 2,
     "name": "藤村　良男",
@@ -66881,7 +68201,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1070,
     "route": 2,
     "name": "岡　啓子",
@@ -66900,7 +68220,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1150,
+    "route": 2,
+    "name": "稲田　靖彦",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市今村北1丁目２１－５",
+    "notes": "",
+    "phone": "090-5693-9653（娘）",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関左勝手口テーブルの上"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1300,
     "route": 2,
     "name": "藤本　忠弘",
@@ -66919,7 +68258,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1570,
     "route": 2,
     "name": "尾添　信代",
@@ -66938,7 +68277,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1576,
+    "route": 2,
+    "name": "石川　意孫四",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市今村北2丁目２０－３６",
+    "notes": "",
+    "phone": "0836-51-1485",
+    "emergency": "",
+    "memo": "",
+    "absent": "車庫下洗濯機の中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 1578,
+    "route": 2,
+    "name": "西村　千代子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市今村北４丁目９－１５",
+    "notes": "",
+    "phone": "080-1636-2043",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1600,
     "route": 2,
     "name": "足立　敏子",
@@ -66957,14 +68334,33 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1605,
+    "route": 2,
+    "name": "吉野　照美",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市今村北３丁目１２－３０（東萩原）",
+    "notes": "",
+    "phone": "0836-51-3537",
+    "emergency": "090-6408-8276(妹）",
+    "memo": "",
+    "absent": "牛乳BOXの中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1610,
     "route": 2,
     "name": "古荘　晴幸",
     "type": "おかず",
     "count": "1",
-    "countLabel": "",
-    "weekly": "",
+    "countLabel": "翌週注文確認",
+    "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "宇部市あすとぴあ1丁目４－１４",
@@ -66976,7 +68372,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1634,
     "route": 2,
     "name": "木村　ひな子",
@@ -66995,7 +68391,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1641,
+    "route": 2,
+    "name": "井上　勝昌",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市西岐波１９３０－２",
+    "notes": "置配　裏側出入口冷蔵庫の中",
+    "phone": "0836-51-1633",
+    "emergency": "080-6336-1390",
+    "memo": "",
+    "absent": "車庫に袋下げているその中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1644,
     "route": 2,
     "name": "千葉　均",
@@ -67014,13 +68429,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1645,
     "route": 2,
     "name": "千葉　秀樹",
     "type": "おかず",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "",
     "paymentType": "bank",
     "vessel": "",
@@ -67033,7 +68448,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1670,
+    "route": 2,
+    "name": "阿美古　制生",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市西岐波柳ケ瀬１１６６－１",
+    "notes": "置配　車庫内",
+    "phone": "090-6838-3960",
+    "emergency": "",
+    "memo": "",
+    "absent": "車庫内たんすの上"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1700,
     "route": 2,
     "name": "児玉　憲夫",
@@ -67052,7 +68486,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1702,
     "route": 2,
     "name": "大石　久治",
@@ -67071,7 +68505,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1706,
+    "route": 2,
+    "name": "本田　美智子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市西岐波７０４－５",
+    "notes": "",
+    "phone": "0836-51-4650",
+    "emergency": "",
+    "memo": "耳が遠い",
+    "absent": "玄関の中に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1710,
     "route": 2,
     "name": "志馬　紀英",
@@ -67090,7 +68543,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1715,
     "route": 2,
     "name": "中島　雅恵",
@@ -67109,7 +68562,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1720,
     "route": 2,
     "name": "田原　豊子",
@@ -67128,7 +68581,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1722,
     "route": 2,
     "name": "林　信正",
@@ -67147,7 +68600,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1725,
     "route": 2,
     "name": "佐々木　久子",
@@ -67166,7 +68619,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1735,
     "route": 2,
     "name": "森重　信夫",
@@ -67185,7 +68638,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1800,
     "route": 2,
     "name": "垣田　信行",
@@ -67204,7 +68657,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1805,
     "route": 2,
     "name": "平野　武則",
@@ -67223,7 +68676,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1810,
+    "route": 2,
+    "name": "桝井　敦子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市東岐波４２１６",
+    "notes": "裏玄関横の窓から渡す",
+    "phone": "0836-58-3656",
+    "emergency": "090-8917-8765（次女）西岡",
+    "memo": "",
+    "absent": "納屋と倉庫の間玄関ポストの下"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1815,
     "route": 2,
     "name": "松井　薫",
@@ -67242,7 +68714,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1850,
+    "route": 2,
+    "name": "正井　博",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市西岐波５６６－６",
+    "notes": "",
+    "phone": "0836-51-0437",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 1860,
     "route": 2,
     "name": "重永　幸三",
@@ -67261,26 +68752,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 1900,
-    "route": 2,
-    "name": "原田　実",
-    "type": "ダブル",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市東岐波５５３３－１２",
-    "notes": "",
-    "phone": "0836-58-4712",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2000,
     "route": 3,
     "name": "久保　菊江",
@@ -67299,26 +68771,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2000,
     "route": 3,
-    "name": "河村　真由美",
+    "name": "黒川　タケスケ",
     "type": "おかず",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "宇部市沖宇部１８８－１５",
-    "notes": "Yahooマップで検索",
-    "phone": "0836-51-7995",
+    "address": "宇部市大字沖宇部２１３－５",
+    "notes": "インターホンして手渡し",
+    "phone": "090-5707-4425（娘）",
     "emergency": "",
     "memo": "",
-    "absent": "差し掛けの所自転車カゴ"
+    "absent": "玄関先に置く"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2002,
     "route": 3,
     "name": "森光　絹枝",
@@ -67337,7 +68809,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2004,
     "route": 3,
     "name": "山下　安子",
@@ -67356,7 +68828,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2006,
+    "route": 3,
+    "name": "中野　信作",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市亀浦４－７－２０",
+    "notes": "",
+    "phone": "0836-51-2578",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関牛乳BOXの上"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 2008,
     "route": 3,
     "name": "藤永　悦子",
@@ -67375,7 +68866,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2010,
     "route": 3,
     "name": "諸石　俊作",
@@ -67394,26 +68885,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 2015,
+    "dataMonth": "2026-04",
+    "code": 2020,
     "route": 3,
-    "name": "石川　修三",
+    "name": "原谷　清子",
     "type": "おかず",
     "count": "1",
-    "countLabel": "新規",
-    "weekly": "",
-    "paymentType": "cash",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "宇部市則貞４丁目１９－２８",
+    "address": "宇部市則貞5丁目１１－２０",
     "notes": "",
-    "phone": "0836-33-6987",
-    "emergency": "",
+    "phone": "0836-31-6958",
+    "emergency": "090-2298-8389（娘）",
     "memo": "",
-    "absent": "玄関前に置く"
+    "absent": "倉庫の中"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2045,
     "route": 3,
     "name": "中司　義則",
@@ -67432,7 +68923,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2050,
+    "route": 3,
+    "name": "小野　久子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宇部市則貞６－２－５",
+    "notes": "置配　玄関横の倉庫内の箱の中",
+    "phone": "0836-31-5632",
+    "emergency": "娘080-9437-5757娘家39-2833",
+    "memo": "",
+    "absent": "玄関横の箱の中に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 2070,
     "route": 3,
     "name": "矢田部　歌子",
@@ -67451,13 +68961,32 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2075,
+    "route": 3,
+    "name": "河野　幸恵",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宇部市草江１－７－５５－３",
+    "notes": "置配　玄関右の棚の上に置く",
+    "phone": "0836-32-7641",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 2076,
     "route": 3,
     "name": "寺尾　美江子",
     "type": "ダブル",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -67470,7 +68999,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2080,
+    "route": 3,
+    "name": "山本　裕",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市五十目山町１５－２２",
+    "notes": "置配　玄関前白い箱",
+    "phone": "0836-33-8889",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前白い箱"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 2085,
     "route": 3,
     "name": "大江　公哉",
@@ -67489,7 +69037,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2087,
     "route": 3,
     "name": "庵地　澄江",
@@ -67508,7 +69056,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2130,
     "route": 3,
     "name": "木下　勝巳",
@@ -67527,7 +69075,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2132,
     "route": 3,
     "name": "三隅　能久",
@@ -67546,7 +69094,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2135,
+    "route": 3,
+    "name": "小林　茂則",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市末広町２－２５",
+    "notes": "",
+    "phone": "090-1187-1104",
+    "emergency": "090-4576-5377（娘）",
+    "memo": "",
+    "absent": "駐車場側入り口横緑の箱"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 2142,
     "route": 3,
     "name": "松本　英介",
@@ -67565,33 +69132,52 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 2143,
+    "dataMonth": "2026-04",
+    "code": 2145,
     "route": 3,
-    "name": "河崎　正義",
+    "name": "植田　喜子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "宇部市笹山町1丁目５－５０－１１",
+    "address": "宇部市笹山町2丁目７－２７",
     "notes": "",
-    "phone": "0836-21-3829",
+    "phone": "0836-32-8959",
+    "emergency": "090-3745-5321（家族）",
+    "memo": "",
+    "absent": "自転車がある所に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 2200,
+    "route": 3,
+    "name": "伊藤　文子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市笹山町１－１５－２３",
+    "notes": "置配　声掛けし、玄関の中の椅子に置く",
+    "phone": "0836-31-4663",
     "emergency": "",
     "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2205,
     "route": 3,
     "name": "村重　宏",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "宇部市昭和町2丁目７－２－１",
@@ -67603,7 +69189,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2215,
     "route": 3,
     "name": "三尾　寿登",
@@ -67622,7 +69208,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2230,
+    "route": 3,
+    "name": "村上　浩昭",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宇部市中央町2丁目１０－６",
+    "notes": "",
+    "phone": "090-6776-0833",
+    "emergency": "",
+    "memo": "",
+    "absent": "シャッター横路地入った箱の中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 2260,
     "route": 3,
     "name": "井上　信正",
@@ -67641,7 +69246,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2270,
     "route": 3,
     "name": "伊世　輝子",
@@ -67660,7 +69265,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2280,
+    "route": 3,
+    "name": "福本　文枝",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市東梶返２－１７－２８",
+    "notes": "裏口の机の上",
+    "phone": "0836-32-4862",
+    "emergency": "",
+    "memo": "",
+    "absent": "裏口の机の上に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 2292,
     "route": 3,
     "name": "石川　冷子",
@@ -67679,7 +69303,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2295,
     "route": 3,
     "name": "寺田　ヨシ子",
@@ -67698,7 +69322,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2297,
     "route": 3,
     "name": "石原　孝子",
@@ -67717,7 +69341,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2400,
     "route": 3,
     "name": "元木　義信",
@@ -67736,7 +69360,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2520,
     "route": 3,
     "name": "山本　文昭",
@@ -67755,7 +69379,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2530,
     "route": 3,
     "name": "日高　茂子",
@@ -67774,26 +69398,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 2540,
-    "route": 3,
-    "name": "日高　告",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市野中４丁目２－２７",
-    "notes": "置配　玄関横段ボールの中",
-    "phone": "0836-31-8950",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2600,
     "route": 3,
     "name": "荻本　実",
@@ -67812,7 +69417,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2700,
     "route": 3,
     "name": "早田　義男",
@@ -67831,26 +69436,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 2900,
-    "route": 3,
-    "name": "大沢　サツキ",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市西岐波大沢西4-723",
-    "notes": "保冷剤2個",
-    "phone": "0836-51-2292",
-    "emergency": "090-1825-4047（娘）",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2910,
     "route": 3,
     "name": "山本　百合子",
@@ -67869,7 +69455,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3010,
     "route": 4,
     "name": "坂本　正明",
@@ -67888,7 +69474,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3020,
+    "route": 4,
+    "name": "東田　智子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市新天町1丁目２－１８　法興寺",
+    "notes": "入って左奥",
+    "phone": "0836-21-2880",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 3025,
+    "route": 4,
+    "name": "森本　八千代",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宇部市新町９－２６",
+    "notes": "メディカルエステ　暖都巣",
+    "phone": "0836-33-5224",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 3030,
     "route": 4,
     "name": "河野　幹子",
@@ -67907,7 +69531,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3035,
+    "route": 4,
+    "name": "岡田　健一",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市東須恵２６１８－２４",
+    "notes": "",
+    "phone": "090-4696-4122",
+    "emergency": "",
+    "memo": "",
+    "absent": "軒下に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 3040,
     "route": 4,
     "name": "早船　幸雄",
@@ -67926,32 +69569,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 3130,
-    "route": 4,
-    "name": "大岬　美穂",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "山陽小野田市大学通２－１４－８",
-    "notes": "置配　チャイムを鳴らし玄関の右側に置く",
-    "phone": "080-6265-8173",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3135,
     "route": 4,
     "name": "松崎　美由紀",
     "type": "おかず",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "",
     "paymentType": "bank",
     "vessel": "",
@@ -67964,7 +69588,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3165,
+    "route": 4,
+    "name": "山本　朝夫",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山陽小野田市赤崎４丁目７－３２",
+    "notes": "置配　車庫の中の台の上",
+    "phone": "090-4576-4555（娘）",
+    "emergency": "",
+    "memo": "",
+    "absent": "車庫の中の台の上"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 3170,
+    "route": 4,
+    "name": "渡辺　朋子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "山陽小野田市赤崎３－２－１１",
+    "notes": "",
+    "phone": "090-8248-3310",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関右奥の階段の上に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 3172,
     "route": 4,
     "name": "藤井　晃",
@@ -67983,7 +69645,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3175,
     "route": 4,
     "name": "川村　景子",
@@ -68002,7 +69664,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3185,
     "route": 4,
     "name": "河村　香代子",
@@ -68021,7 +69683,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3187,
+    "route": 4,
+    "name": "佐伯　桂子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山陽小野田市須恵2丁目２－４－３０８",
+    "notes": "駐車場46.47番",
+    "phone": "0836-84-2816",
+    "emergency": "090-6843--2047（娘）",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 3190,
     "route": 4,
     "name": "御手洗　泰彦",
@@ -68040,7 +69721,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3195,
     "route": 4,
     "name": "末岡　孝紀",
@@ -68059,7 +69740,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3205,
     "route": 4,
     "name": "永崎　孝次",
@@ -68078,7 +69759,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3208,
     "route": 4,
     "name": "大賀　宏",
@@ -68097,7 +69778,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3213,
     "route": 4,
     "name": "西村　節子",
@@ -68116,7 +69797,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3215,
     "route": 4,
     "name": "原木　秀夫",
@@ -68135,7 +69816,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3230,
+    "route": 4,
+    "name": "宮川　竜夫",
+    "type": "ご膳",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "山陽小野田市住吉本町２－１－２",
+    "notes": "",
+    "phone": "080-6303-4120",
+    "emergency": "",
+    "memo": "",
+    "absent": "一番奥の台所に置く同じ並びの一番奥"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 3237,
     "route": 4,
     "name": "南　菜緒子",
@@ -68154,7 +69854,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3238,
     "route": 4,
     "name": "佐伯　世津子",
@@ -68173,7 +69873,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3239,
     "route": 4,
     "name": "松崎　さとし",
@@ -68192,26 +69892,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 3240,
-    "route": 4,
-    "name": "村上　美里",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "山陽小野田市小野田１３１５－７　３－３３１５",
-    "notes": "労災病院官舎　置配　コープBOXの上",
-    "phone": "090-8362-2010",
-    "emergency": "",
-    "memo": "",
-    "absent": "コープBOXの上"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3245,
     "route": 4,
     "name": "真鍋　和子",
@@ -68230,26 +69911,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 3246,
+    "dataMonth": "2026-04",
+    "code": 3247,
     "route": 4,
-    "name": "長田　紀子",
-    "type": "小箱",
+    "name": "野村　絹恵",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "山陽小野田市旦西７１８６－５",
-    "notes": "玄関開けて床の所に置く",
-    "phone": "0836-83-1374",
+    "address": "山陽小野田市東高泊２００９",
+    "notes": "置配　玄関先置台の上",
+    "phone": "090-5269-3054（娘）",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関先置台の上"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 3255,
+    "route": 4,
+    "name": "松村　千鶴子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "山陽小野田市くし山１－２４－４０",
+    "notes": "認知あり　空容器玄関右側物置の中",
+    "phone": "090-3971-5705（息子）",
+    "emergency": "090-1686-7992（娘）",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 3265,
+    "route": 4,
+    "name": "山村　和子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山陽小野田市東高泊１２６７－４",
+    "notes": "",
+    "phone": "080-4268-8446",
     "emergency": "",
     "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3267,
     "route": 4,
     "name": "山本　俊子",
@@ -68268,7 +69987,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3285,
     "route": 4,
     "name": "吉次　弘子",
@@ -68287,7 +70006,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3285,
     "route": 4,
     "name": "吉次　弘子",
@@ -68306,7 +70025,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3290,
     "route": 4,
     "name": "村田　浩三",
@@ -68325,26 +70044,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 3295,
-    "route": 4,
-    "name": "岡田　節子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "山陽小野田市有帆１７７８－２",
-    "notes": "",
-    "phone": "0836-84-2408",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関右横室外機BOXの中"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3300,
     "route": 4,
     "name": "戸澤　こうじ",
@@ -68363,7 +70063,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3320,
     "route": 4,
     "name": "高田　育子",
@@ -68382,7 +70082,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "伊藤　恵美子",
@@ -68401,7 +70101,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "古谷　厚",
@@ -68420,7 +70120,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "坂本　郁也",
@@ -68439,33 +70139,52 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
-    "name": "山本　タエ子",
+    "name": "山田　晴恵",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "山口市大内矢田南１－１８－１８",
-    "notes": "",
-    "phone": "090-9065-5820",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
+    "address": "山口市小郡大正町１１－１０－３Ｆ",
+    "notes": "置配　玄関の右にある棚の上",
+    "phone": "083-973-3605",
+    "emergency": "携帯080-1915-0792",
+    "memo": "080-1645-4717（娘）",
+    "absent": "玄関前に置く"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4000,
+    "route": 5,
+    "name": "山野　敏夫",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "山口市小郡東津1丁目21番22号",
+    "notes": "旧　下郷２９４３－１２　玄関中保冷バックでお届け",
+    "phone": "083-972-7237",
+    "emergency": "070-1367-8878",
+    "memo": "",
+    "absent": "玄関開けた中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "岡崎　キヨシ",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "",
     "paymentType": "cash",
     "vessel": "",
     "address": "山口市大内御堀2丁目９－８",
@@ -68477,7 +70196,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "清水　春治",
@@ -68496,7 +70215,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "清水　栄子",
@@ -68515,26 +70234,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
-    "name": "石丸　サチコ",
-    "type": "セット",
+    "name": "鳴輪　理子",
+    "type": "おかず",
     "count": "1",
-    "countLabel": "",
-    "weekly": "火 木 金",
+    "countLabel": "新規",
+    "weekly": "",
     "paymentType": "cash",
     "vessel": "",
-    "address": "山口市阿知須岩西前８９５番地",
+    "address": "宇部市東岐波３３２５－３",
     "notes": "",
-    "phone": "0836-65-3473",
+    "phone": "080-2900-5170",
     "emergency": "",
     "memo": "",
-    "absent": "玄関横の箱の中に置く"
+    "absent": "玄関前に置く"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4003,
     "route": 5,
     "name": "板村　英二",
@@ -68553,7 +70272,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4003,
     "route": 5,
     "name": "浜戸　よしたか",
@@ -68572,7 +70291,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4005,
+    "route": 5,
+    "name": "金澤　紀一",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山口市阿知須４０４４－１",
+    "notes": "",
+    "phone": "090-3376-0584",
+    "emergency": "090-5370-4705（家族）",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 4020,
     "route": 5,
     "name": "古谷　幸子",
@@ -68591,7 +70329,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4022,
+    "route": 5,
+    "name": "冨田　淳二",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "山口市佐山２０９６－７",
+    "notes": "",
+    "phone": "083-989-3720",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 4025,
+    "route": 5,
+    "name": "戎谷　頼通",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山口市佐山１７２６－３",
+    "notes": "",
+    "phone": "090-1336-8121",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関の中に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 4035,
     "route": 5,
     "name": "森本　光政",
@@ -68610,45 +70386,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 4060,
+    "dataMonth": "2026-04",
+    "code": 4045,
     "route": 5,
-    "name": "田中　朱美",
-    "type": "小箱",
+    "name": "藤村　淳",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "山口市小郡下郷３１８５",
-    "notes": "置配　白いかごの中",
-    "phone": "083-972-6015",
-    "emergency": "083-976-5711（ケアマネ）",
-    "memo": "川西地域包括　ナガシマ",
-    "absent": ""
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 4085,
-    "route": 5,
-    "name": "田中　安子",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "山口市小郡山手上町７－２７",
+    "address": "山口市江崎３３０",
     "notes": "",
-    "phone": "080-6315-3474",
+    "phone": "083-989-4536",
     "emergency": "",
     "memo": "",
-    "absent": "玄関２ｍ先宅配ＢＯＸフックにかける"
+    "absent": "勝手口靴箱の上"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4065,
+    "route": 5,
+    "name": "坂田　勉",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "山口市小郡下郷５０５－１２",
+    "notes": "",
+    "phone": "090-2094-9358",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 4080,
+    "route": 5,
+    "name": "山川　康昌",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "山口市小郡山手上町１４－２",
+    "notes": "",
+    "phone": "083-972-1869",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 4090,
     "route": 5,
     "name": "堀川　久幸",
@@ -68667,7 +70462,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4110,
     "route": 5,
     "name": "浦野　玲子",
@@ -68686,7 +70481,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4115,
     "route": 5,
     "name": "亦野　富代",
@@ -68705,7 +70500,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 4130,
+    "route": 5,
+    "name": "大田　憲子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山口市大内千坊３丁目１７－２８",
+    "notes": "",
+    "phone": "083-924-2045",
+    "emergency": "",
+    "memo": "",
+    "absent": "小屋の中自転車のカゴの中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 4140,
     "route": 5,
     "name": "畑後　幸子",
@@ -68724,7 +70538,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4150,
     "route": 5,
     "name": "兼村　克男",
@@ -68743,64 +70557,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 4170,
+    "dataMonth": "2026-04",
+    "code": 4180,
     "route": 5,
-    "name": "山本　朝江",
+    "name": "上野　フミコ",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 金",
     "paymentType": "bank",
     "vessel": "",
-    "address": "山口市吉田２４４１",
+    "address": "山口市阿知須３２１",
     "notes": "",
-    "phone": "083-925-3498",
-    "emergency": "娘さん090-8901-6952",
+    "phone": "0836-65-3231",
+    "emergency": "090-6843-4998（娘）",
     "memo": "",
-    "absent": "玄関前に置く"
+    "absent": ""
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 4172,
+    "dataMonth": "2026-04",
+    "code": 4187,
     "route": 5,
-    "name": "藤井　文雄",
+    "name": "上野　誠",
     "type": "おかず",
     "count": "1",
-    "countLabel": "翌週注文確認",
-    "weekly": "",
-    "paymentType": "cash",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "山口市黒川１０１３－１５",
+    "address": "山口市阿知須３４１－５",
     "notes": "",
-    "phone": "083-923-7610",
+    "phone": "0836-65-4551",
     "emergency": "",
     "memo": "",
-    "absent": "玄関前に置く"
+    "absent": ""
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 4172,
+    "dataMonth": "2026-04",
+    "code": 4190,
     "route": 5,
-    "name": "藤井　文雄",
+    "name": "森　昌幸",
     "type": "小箱",
     "count": "1",
-    "countLabel": "翌週注文確認",
-    "weekly": "",
-    "paymentType": "cash",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "山口市黒川１０１３－１５",
+    "address": "宇部市東岐波２０９７－３",
     "notes": "",
-    "phone": "083-923-7610",
-    "emergency": "",
+    "phone": "090-7595-9541",
+    "emergency": "090-2007-7817（息子）",
     "memo": "",
-    "absent": "玄関前に置く"
+    "absent": "玄関前牛乳箱の辺り"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5010,
     "route": 6,
     "name": "関谷　寿子",
@@ -68819,7 +70633,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5030,
+    "route": 6,
+    "name": "竹内　貞雄",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山口市吉敷赤田３－８－２６",
+    "notes": "",
+    "phone": "083-923-4533",
+    "emergency": "",
+    "memo": "1週間ごと請求し支払希望",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 5050,
     "route": 6,
     "name": "田坂　智美",
@@ -68838,7 +70671,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5050,
     "route": 6,
     "name": "田坂　智美",
@@ -68857,7 +70690,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5060,
     "route": 6,
     "name": "小林　正夫",
@@ -68876,7 +70709,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5065,
     "route": 6,
     "name": "高橋　俊子",
@@ -68895,7 +70728,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5070,
+    "route": 6,
+    "name": "兼崎　文子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山口市赤妻町３－８５",
+    "notes": "",
+    "phone": "083-923-5347",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 5080,
     "route": 6,
     "name": "高橋　龍生",
@@ -68914,7 +70766,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5150,
+    "route": 6,
+    "name": "長岡　悦弘",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "山口市楠木町１１－１１コーポ楠木２０４",
+    "notes": "置配　ピンポン鳴らしてドアノブ",
+    "phone": "090-8257-0611",
+    "emergency": "083-924-284（5福祉擁護）",
+    "memo": "",
+    "absent": "ドアノブに掛ける"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 5160,
     "route": 6,
     "name": "本多　希良",
@@ -68933,7 +70804,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5210,
     "route": 6,
     "name": "杉　正満",
@@ -68952,7 +70823,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 5275,
     "route": 6,
     "name": "荒瀬　節子",
@@ -68971,26 +70842,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 5290,
+    "dataMonth": "2026-04",
+    "code": 5280,
     "route": 6,
-    "name": "野嶋　俊孝",
+    "name": "藤本　諒平",
     "type": "おかず",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 火 水 木 金",
     "paymentType": "bank",
     "vessel": "",
-    "address": "山口市泉都町１０－２３",
-    "notes": "開けやすい容器　出ない時はドアノック",
-    "phone": "083-925-8846",
+    "address": "山口市糸米１－１－２１",
+    "notes": "置配　玄関前の箱に入れる",
+    "phone": "090-3192-5895",
     "emergency": "",
     "memo": "",
-    "absent": "発泡スチロールの中に置く"
+    "absent": "玄関前に置く"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 5310,
+    "route": 6,
+    "name": "矢次　一夫",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "山口市泉都町１２－２２",
+    "notes": "置配　黄色のボックスの中に置く",
+    "phone": "090-7134-3465",
+    "emergency": "",
+    "memo": "動物病院の左側の道沿いの建物",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 5330,
     "route": 6,
     "name": "宮崎　敬子",
@@ -69009,26 +70899,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 5350,
-    "route": 6,
-    "name": "神徳　典子",
-    "type": "セット",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "山口市湯田温泉２－３－２６ー７０１",
-    "notes": "アルカディア湯田温泉　来客駐車場有",
-    "phone": "090-7500-9378",
-    "emergency": "",
-    "memo": "",
-    "absent": "♯２３２６で上がり玄関前に置く"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6035,
     "route": 7,
     "name": "澤井　厚",
@@ -69047,7 +70918,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6045,
     "route": 7,
     "name": "吉松　幸子",
@@ -69066,26 +70937,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 6065,
+    "dataMonth": "2026-04",
+    "code": 6055,
     "route": 7,
-    "name": "西山　弥生",
-    "type": "おかず",
+    "name": "片岡　圭子",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "防府市仁井令町１６－８",
-    "notes": "金曜日不在の為　玄関前レンガの上に置く　開けやすい蓋",
-    "phone": "0835-23-2833",
-    "emergency": "0835-24-6171",
-    "memo": "お肉がダメ",
-    "absent": "玄関前ブロックの上"
+    "address": "防府市伊佐江町２６－５",
+    "notes": "置き配　請求書発行時はベル　勝手口発泡スチロール中",
+    "phone": "0835-38-7690",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6085,
+    "route": 7,
+    "name": "柳　里律子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "防府市開出１４番３９号",
+    "notes": "",
+    "phone": "090-6839-3125",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 6090,
     "route": 7,
     "name": "村重　光子",
@@ -69104,7 +70994,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6095,
     "route": 7,
     "name": "長沼　潤治",
@@ -69123,26 +71013,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 6120,
+    "dataMonth": "2026-04",
+    "code": 6110,
     "route": 7,
-    "name": "佐鹿　昌子",
+    "name": "佐戸　寿子",
     "type": "おかず",
     "count": "1",
-    "countLabel": "集金",
-    "weekly": "",
+    "countLabel": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "防府市大崎漆１",
-    "notes": "置き配　手前倉庫にある木箱の中",
-    "phone": "0835-23-3032",
+    "address": "防府市大崎６４１",
+    "notes": "勝手口",
+    "phone": "0835-21-7608",
     "emergency": "",
     "memo": "",
-    "absent": ""
+    "absent": "勝手発泡スチロール"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6150,
+    "route": 7,
+    "name": "林　カツミ",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "防府市自由ケ丘4丁目３－５",
+    "notes": "車があればベランダ側から声掛け。",
+    "phone": "090-2828-8839",
+    "emergency": "",
+    "memo": "",
+    "absent": "ベランダにあるクーラーＢＯＸの中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 6160,
     "route": 7,
     "name": "中村　孝雄",
@@ -69161,7 +71070,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6190,
     "route": 7,
     "name": "藤井　康弘",
@@ -69180,7 +71089,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6197,
+    "route": 7,
+    "name": "深野　みどり",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "翌週注文確認",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "防府市上天神町９－１２",
+    "notes": "",
+    "phone": "090-8606-0808",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 6245,
     "route": 7,
     "name": "岩崎　悦子",
@@ -69199,7 +71127,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6250,
+    "route": 7,
+    "name": "原田　通義",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "防府市岩畠３丁目１６－５２",
+    "notes": "",
+    "phone": "0835-38-1704",
+    "emergency": "",
+    "memo": "",
+    "absent": "裏のドア付近の牛乳BOXの後ろ"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 6270,
     "route": 7,
     "name": "近棟　孟",
@@ -69218,7 +71165,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6270,
     "route": 7,
     "name": "近棟　孟",
@@ -69237,7 +71184,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6310,
     "route": 7,
     "name": "広瀬　宏子",
@@ -69256,7 +71203,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6320,
     "route": 7,
     "name": "吉松　幸子",
@@ -69275,7 +71222,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6340,
     "route": 7,
     "name": "福田　光江",
@@ -69294,7 +71241,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6350,
+    "route": 7,
+    "name": "田中　万由美",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "防府市警固町2丁目１－３８",
+    "notes": "",
+    "phone": "0835-38-4568",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関横黄色いカゴの中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 6355,
+    "route": 7,
+    "name": "町田　美代子",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "防府市警固町１－７－１６",
+    "notes": "",
+    "phone": "0825-22-8873",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 6365,
+    "route": 7,
+    "name": "あべ　かずこ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "防府市車塚１０－２５　アベ産婦人科",
+    "notes": "お弁当ですと言わない　受付不在なら待つ",
+    "phone": "0835-22-0385",
+    "emergency": "090-8992-9967",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 6380,
     "route": 7,
     "name": "嘉瀬　美代子",
@@ -69313,7 +71317,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6470,
+    "route": 7,
+    "name": "梅本　真由美",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "防府市新田５３５－２７",
+    "notes": "",
+    "phone": "090-4453-7707",
+    "emergency": "",
+    "memo": "",
+    "absent": "宅配ポスト"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 6480,
     "route": 7,
     "name": "杉岡　信義",
@@ -69332,7 +71355,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6490,
     "route": 7,
     "name": "原田　博子",
@@ -69351,45 +71374,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 6510,
-    "route": 7,
-    "name": "吉田　信男",
-    "type": "ご膳",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "防府市新田１３７４－１",
-    "notes": "横の入口から声掛け",
-    "phone": "0835-22-2753",
-    "emergency": "090-2003-7985",
-    "memo": "",
-    "absent": "裏口のレンガの上"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 6510,
-    "route": 7,
-    "name": "吉田　信男",
-    "type": "セット",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "防府市新田１３７４－１",
-    "notes": "横の入口から声掛け",
-    "phone": "0835-22-2753",
-    "emergency": "090-2003-7985",
-    "memo": "",
-    "absent": "裏口のレンガの上"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6540,
     "route": 7,
     "name": "國本　明茂",
@@ -69408,7 +71393,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6550,
     "route": 7,
     "name": "石川　ミドリ",
@@ -69427,7 +71412,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6575,
     "route": 7,
     "name": "若月　和子",
@@ -69446,7 +71431,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 6600,
     "route": 7,
     "name": "福澤　ヨシ子",
@@ -69465,7 +71450,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 6610,
+    "route": 7,
+    "name": "末富　佐恵子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "防府市西之浦２２０９－４",
+    "notes": "",
+    "phone": "0835-29-0218",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 6690,
     "route": 7,
     "name": "石川　拓朗",
@@ -69484,7 +71488,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 7005,
+    "route": 8,
+    "name": "藤原　幸恵",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宇部市朝日町７－２３－３０１号",
+    "notes": "エルコ朝日置配　ドアノブに掛ける　保冷剤2個",
+    "phone": "090-4807-0778",
+    "emergency": "",
+    "memo": "エルコ",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 7010,
     "route": 8,
     "name": "福島　節子",
@@ -69503,7 +71526,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7020,
     "route": 8,
     "name": "崎田　フミ子",
@@ -69522,7 +71545,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7020,
     "route": 8,
     "name": "崎田　フミ子",
@@ -69541,14 +71564,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7030,
     "route": 8,
     "name": "厚東　眞澄",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 水 金",
+    "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "宇部市南浜町2丁目７－５（有）中原鉄工所",
@@ -69560,14 +71583,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7030,
     "route": 8,
     "name": "厚東　眞澄",
     "type": "小箱セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 水 金",
+    "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "宇部市南浜町2丁目７－５（有）中原鉄工所",
@@ -69579,7 +71602,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7040,
     "route": 8,
     "name": "浜野　フミ子",
@@ -69598,7 +71621,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 7045,
+    "route": 8,
+    "name": "山下　弘子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市鍋倉町４－３－１０１",
+    "notes": "",
+    "phone": "0836-33-6138",
+    "emergency": "",
+    "memo": "",
+    "absent": "倉庫101に入れる"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 7050,
     "route": 8,
     "name": "松永　敏信",
@@ -69617,7 +71659,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 7060,
+    "route": 8,
+    "name": "鍋丁　洋二",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市居能町２－１０－３１",
+    "notes": "",
+    "phone": "090-9737-7214",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
+    "code": 7070,
+    "route": 8,
+    "name": "伊藤　和子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市妻崎開作１０３９－９",
+    "notes": "",
+    "phone": "0836-41-5423",
+    "emergency": "0836-44-0090（むべの里コウノ）",
+    "memo": "",
+    "absent": "玄関横小屋の中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 7080,
     "route": 8,
     "name": "山﨑　弘晃",
@@ -69636,7 +71716,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7090,
     "route": 8,
     "name": "関本　裕一",
@@ -69655,13 +71735,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7100,
     "route": 8,
     "name": "伊豆田　明宏",
     "type": "おかず",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "",
     "paymentType": "bank",
     "vessel": "",
@@ -69674,7 +71754,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7110,
     "route": 8,
     "name": "坂本　アイ子",
@@ -69693,7 +71773,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 7120,
+    "route": 8,
+    "name": "山田　千鶴子",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宇部市厚南中央５－４－１０",
+    "notes": "",
+    "phone": "0836-41-4558",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 7130,
     "route": 8,
     "name": "松尾　アヤコ",
@@ -69712,13 +71811,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7140,
     "route": 8,
     "name": "福田　ウメコ",
     "type": "おかず",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -69731,7 +71830,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7150,
     "route": 8,
     "name": "藤田　純子",
@@ -69750,7 +71849,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7160,
     "route": 8,
     "name": "入江　叔子",
@@ -69769,83 +71868,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 7180,
-    "route": 8,
-    "name": "絹笠　洋子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市際波２４４５－１１",
-    "notes": "",
-    "phone": "0836-44-5295",
-    "emergency": "090-7507-6262（娘）",
-    "memo": "",
-    "absent": "玄関先に置く"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 7180,
-    "route": 8,
-    "name": "絹笠　洋子",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市際波２４４５－１１",
-    "notes": "",
-    "phone": "0836-44-5295",
-    "emergency": "090-7507-6262（娘）",
-    "memo": "",
-    "absent": "玄関先に置く"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 7190,
-    "route": 8,
-    "name": "三明　進",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市東須恵１３１－３",
-    "notes": "",
-    "phone": "090-8604-1955",
-    "emergency": "",
-    "memo": "",
-    "absent": "裏の勝手口ドアノブに掛ける"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 7200,
-    "route": 8,
-    "name": "笹尾　豊子",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "集金",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市東須恵１３８番地２３（旭が丘）",
-    "notes": "ハンバーグ苦手",
-    "phone": "090-3172-9553",
-    "emergency": "",
-    "memo": "",
-    "absent": "車庫内段ボール中"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7210,
     "route": 8,
     "name": "向井　裕",
@@ -69864,7 +71887,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7220,
     "route": 8,
     "name": "池永　茂勝",
@@ -69883,26 +71906,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 7230,
-    "route": 8,
-    "name": "石津　博子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市東須恵７５１－１３",
-    "notes": "",
-    "phone": "0836-44-4418",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関右横倉庫の中"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 7900,
     "route": 8,
     "name": "柴崎　久江",
@@ -69921,13 +71925,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8010,
     "route": 9,
     "name": "山本　玲子",
     "type": "おかず",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -69940,45 +71944,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 8012,
-    "route": 9,
-    "name": "藤岡　昭和",
-    "type": "ご膳",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "宇部市北小羽山2丁目5-5-303　イチョウ棟",
-    "notes": "置配　インターホン鳴らして黒の椅子の上",
-    "phone": "090-9735-2905",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前に置く"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 8019,
-    "route": 9,
-    "name": "佐竹　達成",
-    "type": "ダブル",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宇部市北小羽山１丁目１－１４－４０１",
-    "notes": "118番の駐車場に止める",
-    "phone": "0836-32-8379",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関ドアノブに掛ける"
-  },
-  {
-    "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8024,
     "route": 9,
     "name": "高木　満洲雄",
@@ -69997,26 +71963,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
-    "code": 8029,
+    "dataMonth": "2026-04",
+    "code": 8025,
     "route": 9,
-    "name": "新井　武男",
-    "type": "セット",
+    "name": "安倍　照子",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "bank",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "宇部市大字広瀬（地番なし、広瀬901で検索）",
-    "notes": "置配　裏口のクーラーＢＯＸ　娘　軽トラ　保冷剤2個",
-    "phone": "090-8248-1151",
-    "emergency": "090-8248-1151",
-    "memo": "広瀬901の左側の家",
+    "address": "宇部市中宇部１７７４－８",
+    "notes": "表札は小松さん",
+    "phone": "0836-36-3993",
+    "emergency": "",
+    "memo": "",
     "absent": "玄関前に置く"
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8032,
     "route": 9,
     "name": "盛谷　悦子",
@@ -70035,7 +72001,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8035,
     "route": 9,
     "name": "白石　育恵",
@@ -70054,7 +72020,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8037,
     "route": 9,
     "name": "田中　美登里",
@@ -70073,7 +72039,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8040,
     "route": 9,
     "name": "片桐　道子",
@@ -70092,7 +72058,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8045,
     "route": 9,
     "name": "堀田　宏子",
@@ -70111,7 +72077,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 8060,
     "route": 9,
     "name": "田中　恵子",
@@ -70130,7 +72096,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 8090,
+    "route": 9,
+    "name": "伊是名　雄三",
+    "type": "ダブルセット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宇部市川上１６４",
+    "notes": "",
+    "phone": "0836-21-9387",
+    "emergency": "",
+    "memo": "いぜなさん",
+    "absent": "玄関背中側の箱の中"
+  },
+  {
+    "store": "宇部店",
+    "dataMonth": "2026-04",
     "code": 8120,
     "route": 9,
     "name": "末村　キサ子",
@@ -70149,12 +72134,12 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宇部店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 9010,
     "route": 10,
     "name": "予備",
     "type": "おかず",
-    "count": "2",
+    "count": "4",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
     "paymentType": "cash",
@@ -70168,7 +72153,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 15,
     "route": 1,
     "name": "渡辺　和雄",
@@ -70187,7 +72172,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 20,
     "route": 1,
     "name": "永野　秀男",
@@ -70206,7 +72191,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 25,
     "route": 1,
     "name": "大和　正俊",
@@ -70225,26 +72210,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 30,
-    "route": 1,
-    "name": "大江　博子",
-    "type": "セット",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宗像市城西ヶ丘2丁目１７－４",
-    "notes": "置き配",
-    "phone": "090-8224-4874",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関横ウッドデッキの上"
-  },
-  {
-    "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 39,
     "route": 1,
     "name": "廣瀬　智恵子",
@@ -70263,26 +72229,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 40,
-    "route": 1,
-    "name": "安藤　雅夫",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "宗像市稲元7丁目１４－１８ーB１０３号",
-    "notes": "※配達時間気にする※大幅に遅れる時は一言言ってあげる",
-    "phone": "0940-25-1957",
-    "emergency": "",
-    "memo": "フォレストステージB",
-    "absent": "玄関先に置く"
-  },
-  {
-    "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 60,
     "route": 1,
     "name": "藤園　軍一",
@@ -70301,7 +72248,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 65,
+    "route": 1,
+    "name": "宮地　宏",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市クリエイト2丁目１２－２ーB１０１号",
+    "notes": "",
+    "phone": "080-2716-9011",
+    "emergency": "",
+    "memo": "フルハウスB棟",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 70,
     "route": 1,
     "name": "田中　英一郎",
@@ -70320,26 +72286,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 90,
+    "dataMonth": "2026-04",
+    "code": 81,
     "route": 1,
-    "name": "板野　登美子",
+    "name": "遠座　ヤスユキ",
     "type": "おかず",
-    "count": "1",
+    "count": "2",
     "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "宗像市泉ヶ丘1丁目９－７",
-    "notes": "※置き配",
-    "phone": "080-1785-8540",
+    "address": "宗像市大谷５－２",
+    "notes": "",
+    "phone": "0940-32-6452",
     "emergency": "",
     "memo": "",
-    "absent": "自転車のかごに入れる"
+    "absent": "玄関先に置く"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 120,
+    "route": 1,
+    "name": "宮崎　葉子",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宗像市泉ヶ丘２丁目２３－９",
+    "notes": "置き配　※冬場は保冷剤1個",
+    "phone": "090-7298-8723",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関先のBOXの中に入れる"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 140,
     "route": 1,
     "name": "川原　喜代美",
@@ -70358,7 +72343,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 180,
     "route": 1,
     "name": "宮嶋　武幸",
@@ -70377,26 +72362,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 200,
+    "dataMonth": "2026-04",
+    "code": 190,
     "route": 1,
-    "name": "松下　博",
+    "name": "山本　ヒロカツ",
     "type": "おかず",
-    "count": "2",
-    "countLabel": "集金",
-    "weekly": "",
-    "paymentType": "bank",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "宗像市陵厳寺２丁目１５－１６",
-    "notes": "置き配、保冷剤常時3つ入れる",
-    "phone": "090-9566-7004",
+    "address": "宗像市三郎丸6丁目１１－６",
+    "notes": "",
+    "phone": "0940-32-0225",
     "emergency": "",
     "memo": "",
-    "absent": "車庫の奥青クーラーに入れる"
+    "absent": "玄関先に置く"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 230,
+    "route": 1,
+    "name": "緒方　章子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宗像市赤間4丁目６－１０ー２０１号",
+    "notes": "扉ノックする（チャイム壊れてる為）置き配の保冷剤は２個",
+    "phone": "090-7921-3271",
+    "emergency": "",
+    "memo": "（ロフト・コート・AKAMA）Gマップ注意",
+    "absent": "玄関ドア対面にクーラーに入れて設置"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 250,
+    "route": 1,
+    "name": "ナガセ　ヒロフミ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市石丸３丁目１－２－２０５号",
+    "notes": "駐車場に白ムーブない時は留守",
+    "phone": "080-9107-1458",
+    "emergency": "12時20分以降はいないかも",
+    "memo": "物件名：KMコート教育大前",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 260,
     "route": 1,
     "name": "葛西　ミチタダ",
@@ -70415,12 +72438,12 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 270,
     "route": 1,
     "name": "牧山　末夫",
     "type": "おかず",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
     "paymentType": "cash",
@@ -70434,7 +72457,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 275,
+    "route": 1,
+    "name": "丸山　直機",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "月・水・金",
+    "address": "宗像市冨地原１０１８－７",
+    "notes": "不在時保冷バッグごとクーラーに入れる",
+    "phone": "090-9495-8489",
+    "emergency": "0940-33-1425",
+    "memo": "",
+    "absent": "玄関先のクーラーBOXに入れる"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 290,
     "route": 1,
     "name": "大野　英夫",
@@ -70453,7 +72495,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 291,
+    "route": 1,
+    "name": "今村　浩之",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市広陵台1丁目３－２１",
+    "notes": "",
+    "phone": "0940-32-6198",
+    "emergency": "",
+    "memo": "2・13から　１食に変更",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 300,
     "route": 1,
     "name": "楢原　国博　（ナラハラ様）",
@@ -70472,7 +72533,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 320,
     "route": 1,
     "name": "森田　政喜",
@@ -70491,7 +72552,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 330,
+    "route": 1,
+    "name": "森実　ハツコ",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宗像市葉山２丁目１５－１５",
+    "notes": "※置き配（集金期間はチャイム押してあげる）",
+    "phone": "070-3112-6561",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関横の棚の上"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 340,
+    "route": 1,
+    "name": "河津　幹夫",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市緑町１６１",
+    "notes": "",
+    "phone": "090-2588-2124",
+    "emergency": "",
+    "memo": "表札あり、玄関ピンクレンガの家",
+    "absent": "玄関先のレンガの上に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 350,
     "route": 1,
     "name": "立石　優一",
@@ -70510,7 +72609,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 360,
     "route": 1,
     "name": "中島　タカオ",
@@ -70529,13 +72628,51 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 370,
+    "route": 1,
+    "name": "執行　一昭",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市赤間１ー８－２０",
+    "notes": "",
+    "phone": "080‐3969‐2906",
+    "emergency": "",
+    "memo": "",
+    "absent": "宅配ボックスへ"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 380,
+    "route": 1,
+    "name": "前坂　エイコ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市赤間駅前2丁目２ー２ー901号室",
+    "notes": "",
+    "phone": "090-8419-5873",
+    "emergency": "",
+    "memo": "アーペックス赤間　901号室",
+    "absent": "エントランスポスト横の台上"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 420,
     "route": 1,
     "name": "松崎　美峰",
     "type": "おかず",
     "count": "1",
-    "countLabel": "翌週注文確認",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -70548,7 +72685,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1103,
     "route": 2,
     "name": "吉田　シノブ",
@@ -70567,64 +72704,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 1105,
+    "dataMonth": "2026-04",
+    "code": 1107,
     "route": 2,
-    "name": "石橋　ユキノリ",
+    "name": "坂本　波子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "bank",
     "vessel": "",
-    "address": "宗像市大井台２－５",
-    "notes": "在宅時は氷抜きで保冷バッグに入れて渡す",
-    "phone": "090-8403-1059",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関先に置く"
-  },
-  {
-    "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 1106,
-    "route": 2,
-    "name": "渡辺　章",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宗像市大井台１８－１８",
+    "address": "宗像市平井1丁目８－４０",
     "notes": "",
-    "phone": "090-8299-9986",
-    "emergency": "",
-    "memo": "",
-    "absent": "発泡スチロール内"
-  },
-  {
-    "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 1200,
-    "route": 2,
-    "name": "近藤　モトイ",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宗像市日の里2丁目１－９",
-    "notes": "声掛けして置き配",
-    "phone": "0940-37-2304",
-    "emergency": "",
-    "memo": "17番駐車場停めていいです",
+    "phone": "0940-36-0237",
+    "emergency": "080-2695-4803",
+    "memo": "090-5081-8171",
     "absent": "玄関先に置く"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1108,
+    "route": 2,
+    "name": "宮田　宰子",
+    "type": "ダブルセット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市平井３丁目８－１６",
+    "notes": "置き配",
+    "phone": "0940-37-2666",
+    "emergency": "090-7454-3013",
+    "memo": "息子　埼玉県　０９０２４５２６７１２",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 1220,
     "route": 2,
     "name": "力丸　正弘",
@@ -70643,7 +72761,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1225,
+    "route": 2,
+    "name": "末光　イクオ",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市日の里5－1－7棟１０９号",
+    "notes": "チャイム押してから部屋に入ってお渡し",
+    "phone": "090-5284-7760",
+    "emergency": "",
+    "memo": "検索時、日の里団地７棟で調べる",
+    "absent": "ドアノブにかける"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 1260,
+    "route": 2,
+    "name": "折目　幹男",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宗像市日の里９丁目１６－９",
+    "notes": "置き配",
+    "phone": "0940-36-6529",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関の白トレーの上"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 1300,
     "route": 2,
     "name": "矢羽田　敏彦",
@@ -70662,26 +72818,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 1360,
-    "route": 2,
-    "name": "柴田　亜土子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "宗像市日の里5丁目1－24棟１０８号",
-    "notes": "置き配",
-    "phone": "0940-51-2238",
-    "emergency": "",
-    "memo": "",
-    "absent": "ドアノブにかける"
-  },
-  {
-    "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1400,
     "route": 2,
     "name": "吉岡　美保",
@@ -70700,7 +72837,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1420,
     "route": 2,
     "name": "岩崎　勝",
@@ -70719,26 +72856,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 1500,
-    "route": 2,
-    "name": "尾園　幸子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "宗像市東郷３５０－５",
-    "notes": "",
-    "phone": "090-8401‐3882",
-    "emergency": "",
-    "memo": "アパート（3パート）の奥の家",
-    "absent": "玄関先に置く"
-  },
-  {
-    "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1565,
     "route": 2,
     "name": "八波　カナメ",
@@ -70757,7 +72875,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1570,
+    "route": 2,
+    "name": "上ノ原　義広",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宗像市青葉台2－22－8－101",
+    "notes": "置き配",
+    "phone": "080-1544－0896",
+    "emergency": "",
+    "memo": "玄関前置き配",
+    "absent": ""
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 1680,
     "route": 2,
     "name": "橋本　正次",
@@ -70776,7 +72913,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1720,
     "route": 2,
     "name": "古賀　信子",
@@ -70795,45 +72932,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 1760,
+    "dataMonth": "2026-04",
+    "code": 1740,
     "route": 2,
-    "name": "高橋　美智子",
+    "name": "本川　秀子",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "宗像市自由ヶ丘5丁目１５－１１",
+    "notes": "",
+    "phone": "0940-33-6515",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 1830,
+    "route": 2,
+    "name": "中原　圭子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "bank",
     "vessel": "",
-    "address": "宗像市自由ヶ丘5丁目１０８６－１６３",
-    "notes": "",
-    "phone": "090-3987-8399",
+    "address": "宗像市自由ヶ丘西町3-６",
+    "notes": "足悪いので玄関開いてる",
+    "phone": "080-5607-7387",
     "emergency": "",
     "memo": "",
     "absent": "玄関先に置く"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 1865,
-    "route": 2,
-    "name": "津田　清美",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "宗像市田久１－６－２１ー２０１",
-    "notes": "オベールジュ宗像",
-    "phone": "090-2901－3983",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関前置き配"
-  },
-  {
-    "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2001,
     "route": 3,
     "name": "花田　知一",
@@ -70852,7 +72989,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2010,
     "route": 3,
     "name": "古川　ジュンコ",
@@ -70871,7 +73008,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2012,
+    "route": 3,
+    "name": "松本　親行",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "宗像市稲元４丁目２３－８ー４０２",
+    "notes": "駐車場あり　軽№３",
+    "phone": "0940－35－6389",
+    "emergency": "",
+    "memo": "アソシア赤間",
+    "absent": "郵便BOXの下"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 2020,
     "route": 3,
     "name": "金沖　和江",
@@ -70890,26 +73046,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 2081,
+    "dataMonth": "2026-04",
+    "code": 2025,
     "route": 3,
-    "name": "森山　凡夫",
-    "type": "小箱",
+    "name": "橋田　ヤスコ",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "福津市若木台4丁目１８－６",
-    "notes": "",
-    "phone": "090-2513-7639",
+    "address": "宗像市東郷5丁目３－５",
+    "notes": "置き配",
+    "phone": "090-9473-2118",
     "emergency": "",
-    "memo": "",
-    "absent": "玄関前クーラーの中"
+    "memo": "伽楠（かなん）の左隣の家",
+    "absent": "入り口入って右の椅子の上"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2085,
     "route": 3,
     "name": "芥川　由佳",
@@ -70928,7 +73084,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2085,
     "route": 3,
     "name": "芥川　由佳",
@@ -70947,7 +73103,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2095,
     "route": 3,
     "name": "山口　美智子",
@@ -70966,7 +73122,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2165,
+    "route": 3,
+    "name": "名越　美智子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "古賀市今の庄２丁目8－29",
+    "notes": "",
+    "phone": "092－943-0314",
+    "emergency": "",
+    "memo": "",
+    "absent": "裏の勝手口"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 2182,
     "route": 3,
     "name": "武藤　良生",
@@ -70985,7 +73160,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2185,
+    "route": 3,
+    "name": "内田　フジコ",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "古賀市花鶴丘３丁目１０－１５８",
+    "notes": "物件わかりづらい、表札確認　駐車場№１５８",
+    "phone": "090-3789-7335",
+    "emergency": "",
+    "memo": "少し認知　１５８番駐車可",
+    "absent": "玄関前倉庫内右側に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 2200,
     "route": 3,
     "name": "吉村　隆徳",
@@ -71004,7 +73198,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2205,
     "route": 3,
     "name": "許山　タダミ",
@@ -71023,7 +73217,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2210,
     "route": 3,
     "name": "五十嵐　聖子",
@@ -71042,26 +73236,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 2260,
+    "dataMonth": "2026-04",
+    "code": 2240,
     "route": 3,
-    "name": "中川　政美",
+    "name": "ヒグチ　ミエコ",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
+    "weekly": "月 水 木",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "古賀市日吉1丁目３２－２０",
-    "notes": "置き配",
-    "phone": "092-942-4727",
+    "address": "古賀市花鶴丘２丁目１－１０－１０６号",
+    "notes": "№３４番駐車可",
+    "phone": "092-944-3528",
     "emergency": "",
-    "memo": "玄関を勝手に開けない様に",
-    "absent": "玄関右、シルバーカーの近くに置く"
+    "memo": "物件名花鶴丘団地１０棟",
+    "absent": "玄関先に置く"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2270,
     "route": 3,
     "name": "田澤　チヨコ",
@@ -71080,7 +73274,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2280,
     "route": 3,
     "name": "奥　ノリ子",
@@ -71099,7 +73293,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2313,
     "route": 3,
     "name": "矢野　かつよ",
@@ -71118,7 +73312,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2315,
     "route": 3,
     "name": "西村　秀昭",
@@ -71137,7 +73331,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2320,
     "route": 3,
     "name": "杉本　有樹",
@@ -71156,18 +73350,18 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2335,
     "route": 3,
     "name": "石田　春代",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "",
     "paymentType": "cash",
     "vessel": "",
     "address": "古賀市花見東２丁目１２－１",
-    "notes": "置き配　勝手口からすぐのボイラーの上",
+    "notes": "置き配　勝手口から入りすぐのボイラーの上",
     "phone": "０９２－９４２－２６９７",
     "emergency": "",
     "memo": "",
@@ -71175,13 +73369,13 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2340,
     "route": 3,
     "name": "増田　由香",
     "type": "おかず",
     "count": "1",
-    "countLabel": "翌週注文確認",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -71189,12 +73383,31 @@ window.DELIVERY_DATA = [
     "notes": "在宅時は手渡し　表札が松林　Ｇマップ注意",
     "phone": "090-8400-1584",
     "emergency": "",
-    "memo": "3・25集金",
+    "memo": "",
     "absent": "玄関前の青い椅子の上"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2360,
+    "route": 3,
+    "name": "仙石　ユキコ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "古賀市花見東５丁目１－２３",
+    "notes": "",
+    "phone": "092-944-0179",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関左、エアコン室外機の上"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 2380,
     "route": 3,
     "name": "石川　裕人",
@@ -71213,7 +73426,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2380,
     "route": 3,
     "name": "石川　裕人",
@@ -71232,7 +73445,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2390,
+    "route": 3,
+    "name": "森山　タカユキ",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市花見ヶ浜2丁目１０－１４",
+    "notes": "",
+    "phone": "0940-43-5969",
+    "emergency": "080-8558-2595",
+    "memo": "",
+    "absent": "玄関先青クーラー内"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 3000,
     "route": 4,
     "name": "吉田　茂",
@@ -71251,7 +73483,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3010,
     "route": 4,
     "name": "古賀　紀子",
@@ -71270,7 +73502,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3015,
     "route": 4,
     "name": "古賀　ミサコ",
@@ -71289,7 +73521,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3030,
     "route": 4,
     "name": "力丸　ヒロアキ",
@@ -71308,7 +73540,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3050,
     "route": 4,
     "name": "池浦　レイコ",
@@ -71327,64 +73559,121 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 3061,
+    "dataMonth": "2026-04",
+    "code": 3060,
     "route": 4,
-    "name": "新地　秋行",
+    "name": "辛島　ユウジ",
     "type": "おかず",
     "count": "2",
     "countLabel": "",
-    "weekly": "火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "福津市福間南１丁目２５－１7",
-    "notes": "玄関前クーラーボックスに入れる",
-    "phone": "080-1737－7569",
-    "emergency": "0940－42－4573自宅",
+    "address": "福津市福間南１丁目２５－１８",
+    "notes": "置き配※向井に要確認　※スピード注意",
+    "phone": "0940-43-8020",
+    "emergency": "",
     "memo": "",
-    "absent": "玄関前に置く"
+    "absent": "玄関先の青クーラーに入れる"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 3070,
+    "dataMonth": "2026-04",
+    "code": 3079,
     "route": 4,
-    "name": "伊藤　博美",
+    "name": "吉本　友江",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "福津市日蒔野６－２６－１０",
-    "notes": "置き配",
-    "phone": "080-6443-8852",
+    "address": "福津市花見の里１丁目２－１０",
+    "notes": "置き配　玄関向かって右　ウッドデッキの上",
+    "phone": "080-5260－8478",
     "emergency": "",
     "memo": "",
-    "absent": "玄関先に置く"
+    "absent": ""
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 3070,
+    "dataMonth": "2026-04",
+    "code": 3090,
     "route": 4,
-    "name": "伊藤　博美",
-    "type": "小箱",
+    "name": "川原　ツギオ",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "福津市日蒔野６－２６－１０",
-    "notes": "置き配",
-    "phone": "080-6443-8852",
-    "emergency": "",
+    "address": "福津市福間南５丁目21－12",
+    "notes": "",
+    "phone": "092-943-3546",
+    "emergency": "090-1159－1977（奥さん奈良県）",
     "memo": "",
-    "absent": "玄関先に置く"
+    "absent": ""
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3100,
+    "route": 4,
+    "name": "坂田　リツコ",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市福間南４丁目１６－２７",
+    "notes": "",
+    "phone": "090-5941-9457",
+    "emergency": "0940-43-6996",
+    "memo": "",
+    "absent": "玄関先クーラーに入れる"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 3110,
+    "route": 4,
+    "name": "向井　カツノリ",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市花見ケ丘1丁目２１３－１１",
+    "notes": "",
+    "phone": "0940-43-8787",
+    "emergency": "",
+    "memo": "場所：花見ケ丘調剤薬局",
+    "absent": "常にだれかいる"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 3120,
+    "route": 4,
+    "name": "三輪　満子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福津市花見ケ丘２丁目１６－２５",
+    "notes": "置き配　※道が狭い※",
+    "phone": "090-5934-7139",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関の右側にある勝手口に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 3140,
     "route": 4,
     "name": "坂本　タダオ",
@@ -71403,14 +73692,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3143,
     "route": 4,
     "name": "藤野　好乃",
     "type": "おかず",
-    "count": "0",
-    "countLabel": "集金",
-    "weekly": "",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "福津市西福間1－26－2",
@@ -71422,7 +73711,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3145,
     "route": 4,
     "name": "児玉　洋子",
@@ -71441,7 +73730,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3150,
+    "route": 4,
+    "name": "黒川　靖司",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市宮司浜２丁目２６－５",
+    "notes": "二世帯住宅　三雲と玄関が別",
+    "phone": "0940－52－4618",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関左側"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 3220,
+    "route": 4,
+    "name": "津﨑　ヨシカズ",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市津屋崎２丁目４－１１",
+    "notes": "",
+    "phone": "090-3664-3108",
+    "emergency": "",
+    "memo": "",
+    "absent": "車庫の中に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 3245,
     "route": 4,
     "name": "柴田　トヨカズ",
@@ -71460,7 +73787,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3250,
+    "route": 4,
+    "name": "林　久子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福津市津屋崎2丁目１－７",
+    "notes": "",
+    "phone": "0940-52-2509",
+    "emergency": "",
+    "memo": "グーグルマップ微妙にずれてる",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 3260,
     "route": 4,
     "name": "渡辺　ヒサノリ",
@@ -71479,7 +73825,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3270,
+    "route": 4,
+    "name": "田代　進",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市宮司ヶ丘１６－１２",
+    "notes": "玄関空いているとき空箱の場所に保冷なしで置く",
+    "phone": "080-9055-0414",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関傘立ての上に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 3280,
     "route": 4,
     "name": "前田　直樹",
@@ -71498,7 +73863,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3300,
     "route": 4,
     "name": "前田　直樹",
@@ -71517,7 +73882,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3310,
     "route": 4,
     "name": "松山　博幸",
@@ -71536,7 +73901,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3320,
     "route": 4,
     "name": "石原　通子",
@@ -71555,7 +73920,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3330,
     "route": 4,
     "name": "吉武ナツ子",
@@ -71574,7 +73939,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 3340,
     "route": 4,
     "name": "井手　ハルキ",
@@ -71593,26 +73958,64 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 3440,
+    "dataMonth": "2026-04",
+    "code": 3360,
     "route": 4,
-    "name": "進　ミエコ",
+    "name": "深川　タエコ",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "福津市東福間２丁目１８－２",
-    "notes": "駐車場側の窓から配達　弁当のみ置く",
-    "phone": "090-9726-0377",
-    "emergency": "0940-42-2963",
-    "memo": "",
-    "absent": "庭の左側倉庫の中"
+    "address": "福津市中央3丁目７－２",
+    "notes": "在宅でも保冷バッグごとお渡し！※道狭い※素早く配達※",
+    "phone": "090-2954-5891",
+    "emergency": "",
+    "memo": "西銀の横、白いレンガ壁の家",
+    "absent": "玄関先に置く"
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 3370,
+    "route": 4,
+    "name": "竹本　照子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市中央1丁目１７－１０ー１０１",
+    "notes": "",
+    "phone": "0940-43-6431",
+    "emergency": "マットの下にお金あり",
+    "memo": "※窓から商品を渡す",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 3420,
+    "route": 4,
+    "name": "花田　和彦",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市高平１－７",
+    "notes": "※配達場所駐車場奥の家・誤配送注意※",
+    "phone": "0940-42-8503",
+    "emergency": "",
+    "memo": "玄関鍵空いてたら家の中に置く",
+    "absent": "門の前"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
     "code": 3450,
     "route": 4,
     "name": "力丸　トモミ",
@@ -71631,14 +74034,52 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
-    "code": 3505,
+    "dataMonth": "2026-04",
+    "code": 3500,
     "route": 4,
-    "name": "淀川　茂雄",
+    "name": "大舘　ケイコ",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "火",
+    "weekly": "月 水 木",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福津市東福間5丁目６－９",
+    "notes": "置き配",
+    "phone": "090-7924-6185",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 3504,
+    "route": 4,
+    "name": "谷川　安喜",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福津市東福間６丁目２－７",
+    "notes": "",
+    "phone": "0940－42－5056",
+    "emergency": "",
+    "memo": "4月24日まで　入院の為注文",
+    "absent": "玄関横のボックスの中"
+  },
+  {
+    "store": "宗像店",
+    "dataMonth": "2026-04",
+    "code": 3505,
+    "route": 4,
+    "name": "淀川　茂雄",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "福津市東福間６－７－４",
@@ -71650,7 +74091,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "宗像店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "予備",
@@ -71669,7 +74110,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 0,
+    "route": 0,
+    "name": "矢動丸　秀",
+    "type": "おかず",
+    "count": "0",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区高美台４－２９－１０",
+    "notes": "保冷バッグで渡す　火・金置き配",
+    "phone": "090-4587-2426",
+    "emergency": "",
+    "memo": "",
+    "absent": "発泡スチロール　保冷剤ない時は入れる"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
+    "code": 9,
+    "route": 1,
+    "name": "島雄　渉",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区三苫4-2-1-105",
+    "notes": "ドアノブに掛ける",
+    "phone": "080-7982-7495",
+    "emergency": "",
+    "memo": "ヤマゼンロイヤルパレス",
+    "absent": ""
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 15,
     "route": 1,
     "name": "笹栗　栄子",
@@ -71688,26 +74167,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 25,
+    "dataMonth": "2026-04",
+    "code": 20,
     "route": 1,
-    "name": "山﨑　桂子",
-    "type": "おかず",
-    "count": "0",
-    "countLabel": "",
-    "weekly": "",
+    "name": "新田　由紀子",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "集金",
+    "weekly": "月 水 木 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "福岡市東区奈多団地１４－３０４号",
-    "notes": "",
-    "phone": "092-607-1843",
-    "emergency": "",
+    "address": "福岡市東区奈多団地１３棟４０２号",
+    "notes": "空き容器だしている時は置き配",
+    "phone": "092-607-4203",
+    "emergency": "いきいき第一黒木さん",
     "memo": "",
-    "absent": ""
+    "absent": "玄関横"
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 30,
     "route": 1,
     "name": "木村　利行",
@@ -71726,7 +74205,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 35,
+    "route": 1,
+    "name": "右田",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "新規",
+    "weekly": "月 火 水",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区和白丘1丁目２３－１",
+    "notes": "東第２いきいきセンター",
+    "phone": "092-605-5411",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 42,
     "route": 1,
     "name": "山口　三夫",
@@ -71745,7 +74243,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 44,
     "route": 1,
     "name": "後藤　竜彦",
@@ -71764,7 +74262,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 48,
     "route": 1,
     "name": "髙橋　弥生",
@@ -71783,7 +74281,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 50,
     "route": 1,
     "name": "池田　重信",
@@ -71802,7 +74300,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 53,
+    "route": 1,
+    "name": "稲田　小夜子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "令和6年8月",
+    "address": "福岡市東区和白東３丁目１５－５",
+    "notes": "置配　クーラーボックスの中",
+    "phone": "092-606-0295",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 55,
     "route": 1,
     "name": "小松　綾香",
@@ -71821,7 +74338,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 60,
     "route": 1,
     "name": "中原　義則",
@@ -71840,7 +74357,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 75,
     "route": 1,
     "name": "遠藤　洋子",
@@ -71859,7 +74376,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 80,
     "route": 1,
     "name": "池田　騏一郎",
@@ -71878,7 +74395,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 85,
+    "route": 1,
+    "name": "三隅　清三郎",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福岡市東区香椎駅東4丁目２１－１",
+    "notes": "耳が遠いのでチャイムが聞こえない　置き配",
+    "phone": "",
+    "emergency": "ゆうこ（嫁）090-1080-7938",
+    "memo": "",
+    "absent": "下原２－４－１６"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 105,
     "route": 1,
     "name": "久木田　ミヨシ",
@@ -71897,7 +74433,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 115,
     "route": 1,
     "name": "合志　容子",
@@ -71916,7 +74452,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 120,
     "route": 1,
     "name": "秦　イサ子",
@@ -71935,45 +74471,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 123,
+    "dataMonth": "2026-04",
+    "code": 125,
     "route": 1,
-    "name": "福地　雇",
+    "name": "白石　麻利子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "東区高美台１－１６－９",
+    "address": "福岡市東区高美台１－２５－１２",
     "notes": "",
-    "phone": "092-982-7795",
+    "phone": "080-3187-4071",
     "emergency": "",
     "memo": "",
-    "absent": "発泡スチロールで置き配　保冷剤3個"
+    "absent": "玄関先の箱の中"
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 123,
-    "route": 1,
-    "name": "福地　雇",
-    "type": "小箱",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "東区高美台１－１６－９",
-    "notes": "",
-    "phone": "092-982-7795",
-    "emergency": "",
-    "memo": "",
-    "absent": "発泡スチロールで置き配　保冷剤4個"
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 130,
     "route": 1,
     "name": "荒木　正也",
@@ -71992,45 +74509,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 132,
-    "route": 1,
-    "name": "籠島　憲子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "発泡スチ",
-    "address": "福岡市東区高美台３丁目２６－４",
-    "notes": "置き配　メニュー表は２枚入れる（いらない日に〇）",
-    "phone": "092-608-4415",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 136,
-    "route": 1,
-    "name": "矢動丸　秀",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "集金",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "福岡市東区高美台４－２９－１０",
-    "notes": "保冷バッグで渡す　火・金置き配",
-    "phone": "090-4587-2426",
-    "emergency": "",
-    "memo": "",
-    "absent": "発泡スチロール　保冷剤ない時は入れる"
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 138,
     "route": 1,
     "name": "清松　澄子",
@@ -72049,7 +74528,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 140,
     "route": 1,
     "name": "松山　勉",
@@ -72068,7 +74547,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 144,
+    "route": 1,
+    "name": "小家　孝一",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "月水金",
+    "address": "福岡市東区和白東４丁目２０番３－１０８",
+    "notes": "インターホン押しドア開け入口椅子の上に置く！",
+    "phone": "090-5745-1029",
+    "emergency": "いきいき第２　飯尾さん",
+    "memo": "コーポサンロード",
+    "absent": "玄関ドアノブに掛ける"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 146,
     "route": 1,
     "name": "飯田　聖朗",
@@ -72087,7 +74585,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 148,
+    "route": 1,
+    "name": "八嶋　忠",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "糟屋郡新宮町新宮東１－１１－７",
+    "notes": "保冷バッグで渡す",
+    "phone": "092-963-2346",
+    "emergency": "",
+    "memo": "",
+    "absent": "保冷剤２個上下に　牛乳ボックスの上に"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 150,
     "route": 1,
     "name": "田中　恵冶",
@@ -72106,7 +74623,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 152,
     "route": 1,
     "name": "森園　明美",
@@ -72125,7 +74642,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 153,
+    "route": 1,
+    "name": "木下　忠和",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "東区和白丘1丁目19-29-202",
+    "notes": "",
+    "phone": "090-3664-5521",
+    "emergency": "",
+    "memo": "アーサー和白丘フォレスタ",
+    "absent": ""
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 156,
     "route": 1,
     "name": "吉村　真純",
@@ -72144,7 +74680,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 158,
     "route": 1,
     "name": "花村　玲子",
@@ -72163,7 +74699,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 160,
     "route": 1,
     "name": "今富　浄子",
@@ -72182,7 +74718,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 162,
     "route": 1,
     "name": "川上　舞",
@@ -72201,7 +74737,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 164,
+    "route": 1,
+    "name": "入江　梅雄",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "発泡スチ",
+    "address": "福岡市東区美和台３丁目２３－６",
+    "notes": "玄関前置き配　集金日はインターホン押す",
+    "phone": "090-1363-6403",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 166,
     "route": 1,
     "name": "松尾　能扶枝",
@@ -72220,7 +74775,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 168,
     "route": 1,
     "name": "福井　正睦",
@@ -72239,7 +74794,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 170,
+    "route": 1,
+    "name": "手島　利明",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区和白丘４－１－１０－１０２号",
+    "notes": "保冷バッグごと渡す",
+    "phone": "080-5606-1213",
+    "emergency": "包括605-5411　区役所平田648-1119",
+    "memo": "第二やよいコーポ",
+    "absent": "玄関ドアノブに掛ける"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 175,
     "route": 1,
     "name": "姫嶋　三男",
@@ -72258,26 +74832,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 180,
-    "route": 1,
-    "name": "榎本　善一",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "新宮町湊坂4-13-5",
-    "notes": "",
-    "phone": "092-962-6158",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 200,
     "route": 1,
     "name": "川原　朝子",
@@ -72296,26 +74851,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 1095,
+    "dataMonth": "2026-04",
+    "code": 1093,
     "route": 2,
-    "name": "荒木　章吾",
-    "type": "ダブル",
+    "name": "岡本　政幸",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 金",
-    "paymentType": "bank",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "福岡市東区香椎駅前1丁目24番28-201号",
+    "address": "福岡市東区香椎駅前３丁目5-20-103",
     "notes": "",
-    "phone": "080-6466-0169",
+    "phone": "092-410-4074",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1093,
+    "route": 2,
+    "name": "岡本　政幸",
+    "type": "ごはん",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区香椎駅前３丁目5-20-103",
+    "notes": "",
+    "phone": "092-410-4074",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 1100,
     "route": 2,
     "name": "秋吉　ひでこ",
@@ -72334,7 +74908,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1105,
+    "route": 2,
+    "name": "牛島　之博",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福岡市東区千早５－４－４－C-６０３号",
+    "notes": "置配　玄関前に置く",
+    "phone": "",
+    "emergency": "",
+    "memo": "サンライフ香椎",
+    "absent": "玄関前に置く"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 1110,
     "route": 2,
     "name": "川﨑　達磨",
@@ -72353,7 +74946,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1115,
     "route": 2,
     "name": "大下　由美子",
@@ -72372,7 +74965,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1115,
     "route": 2,
     "name": "大下　由美子",
@@ -72391,26 +74984,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 1125,
-    "route": 2,
-    "name": "北村　真樹子",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "福岡市東区名島3-19名島団地300棟316",
-    "notes": "請求書は娘の久米さんへ",
-    "phone": "090-6299-0015久米",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1130,
     "route": 2,
     "name": "平川　雅之",
@@ -72429,7 +75003,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1135,
     "route": 2,
     "name": "前田　祥",
@@ -72448,7 +75022,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1155,
     "route": 2,
     "name": "阿比留　弥生",
@@ -72467,7 +75041,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1158,
+    "route": 2,
+    "name": "藤原　弘子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "東区城浜団地４４番1005号",
+    "notes": "玄関ドア前置き配",
+    "phone": "090-7479-1303",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関ドア前"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 1159,
     "route": 2,
     "name": "渡辺　和義",
@@ -72486,7 +75079,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1161,
     "route": 2,
     "name": "稲益　政幸",
@@ -72505,7 +75098,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1211,
     "route": 2,
     "name": "貞木　千代子",
@@ -72524,83 +75117,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 1212,
-    "route": 2,
-    "name": "迫田　景子",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "福岡市東区香椎浜４－８－１－５１０",
-    "notes": "",
-    "phone": "090-6077-9740",
-    "emergency": "",
-    "memo": "ビレッジハウス香椎浜",
-    "absent": "玄関前置き配"
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 1213,
-    "route": 2,
-    "name": "宮崎　政利",
-    "type": "小箱",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "東区香椎団地１　２棟503号",
-    "notes": "",
-    "phone": "090-1975-9939",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 1231,
-    "route": 2,
-    "name": "大久保　京子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "福岡市東区千早６－８－２－２１０号",
-    "notes": "",
-    "phone": "",
-    "emergency": "",
-    "memo": "2100棟",
-    "absent": ""
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 1233,
-    "route": 2,
-    "name": "井桁　美恵",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "福岡市東区香住ケ丘6-37-33-407",
-    "notes": "宅配ボックスがいっぱい→郵便入れへ",
-    "phone": "090-7296-5096",
-    "emergency": "",
-    "memo": "ザグランデアベニュー",
-    "absent": "宅配ボックスに置く"
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1239,
     "route": 2,
     "name": "永石　寿美子",
@@ -72619,26 +75136,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 1643,
+    "dataMonth": "2026-04",
+    "code": 1645,
     "route": 2,
-    "name": "糸山　耕二",
-    "type": "おかず",
+    "name": "吉田　純子",
+    "type": "セット",
     "count": "0",
-    "countLabel": "",
+    "countLabel": "集金",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
-    "address": "福岡市東区香住ケ丘４丁目11-18",
-    "notes": "玄関開けて声かけて玄関内に置く",
-    "phone": "090-3707-4690",
+    "address": "東区唐の原2-22-3-404",
+    "notes": "",
+    "phone": "090-8061-5791",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1650,
     "route": 2,
     "name": "井上　京子",
@@ -72657,26 +75174,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 1700,
-    "route": 2,
-    "name": "田中　和代",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "東区香住ケ丘2丁目４３－７",
-    "notes": "",
-    "phone": "092-681-3223",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関横の木戸開け勝手口の取っ手に掛ける"
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1701,
     "route": 2,
     "name": "出原　敏隆",
@@ -72695,7 +75193,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1701,
     "route": 2,
     "name": "出原　敏隆",
@@ -72714,7 +75212,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1703,
+    "route": 2,
+    "name": "川岸　英二",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "発泡スチ",
+    "address": "福岡市東区唐の原６丁目1-31パピヨン２-201",
+    "notes": "",
+    "phone": "090-1362-3916",
+    "emergency": "",
+    "memo": "",
+    "absent": "ドアノブに掛ける"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 1710,
     "route": 2,
     "name": "髙橋　洋子",
@@ -72733,7 +75250,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1857,
+    "route": 2,
+    "name": "田中　勝行",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "発泡スチ",
+    "address": "福岡市東区和白２丁目４－３６",
+    "notes": "合鍵で門を開けて入る　置き配",
+    "phone": "090-3015-3858",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
+    "code": 1865,
+    "route": 2,
+    "name": "堀　雅彦",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福岡市東区和白4丁目15-24-103",
+    "notes": "置き配　消火器に掛ける",
+    "phone": "070-5695-4116",
+    "emergency": "月・水・金→火・水・木のサイクル",
+    "memo": "サンライズ和白",
+    "absent": "扉にかける"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 1870,
     "route": 2,
     "name": "椎野　英樹",
@@ -72752,7 +75307,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2242,
+    "route": 3,
+    "name": "野田　秀子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区香椎２丁目４３－２６",
+    "notes": "インターホン押さず置き配。保冷剤2個上下",
+    "phone": "092-661-6526",
+    "emergency": "請求書発行日集金OK",
+    "memo": "ボックスのロックをきちんと閉める",
+    "absent": "玄関先クーラーBOXの中。保冷剤2個"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 2249,
     "route": 3,
     "name": "酒井　友子",
@@ -72771,7 +75345,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2251,
+    "route": 3,
+    "name": "奥村　智子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区香椎2丁目１８－３３－６１７",
+    "notes": "不在時、空箱は宅配BOX横出前BOXに",
+    "phone": "090-9727-4008",
+    "emergency": "",
+    "memo": "",
+    "absent": "出前ボックス"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 2256,
     "route": 3,
     "name": "仲　静子",
@@ -72790,7 +75383,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2258,
     "route": 3,
     "name": "有吉　敏毅",
@@ -72809,7 +75402,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2258,
     "route": 3,
     "name": "有吉　敏毅",
@@ -72828,7 +75421,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2264,
     "route": 3,
     "name": "師岡　満",
@@ -72847,7 +75440,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2268,
+    "route": 3,
+    "name": "津守　晃子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福岡市東区香椎台3丁目３－６",
+    "notes": "置き配",
+    "phone": "090-6638-2448",
+    "emergency": "",
+    "memo": "",
+    "absent": "バッグ不要　玄関先の発泡スチロールに入れる"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 2292,
     "route": 3,
     "name": "中村　敏夫",
@@ -72866,7 +75478,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2293,
     "route": 3,
     "name": "中﨑　知子",
@@ -72885,7 +75497,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2295,
+    "route": 3,
+    "name": "三上　柊子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区八田４丁目8-10-303",
+    "notes": "置き配",
+    "phone": "090-1344-1499",
+    "emergency": "",
+    "memo": "",
+    "absent": "保冷剤２個"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 2296,
     "route": 3,
     "name": "渋田　喜代美",
@@ -72904,7 +75535,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2300,
+    "route": 3,
+    "name": "川野　和代",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "東区舞松原1-5-2-102エステート",
+    "notes": "",
+    "phone": "090-9405-0610",
+    "emergency": "",
+    "memo": "",
+    "absent": "傘立ての上に置く"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
+    "code": 2305,
+    "route": 3,
+    "name": "中村　洋子",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "若宮2丁目25-29",
+    "notes": "木曜日置き配",
+    "phone": "092-671-5636",
+    "emergency": "",
+    "memo": "",
+    "absent": "ドアノブにかける"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 2310,
     "route": 3,
     "name": "古賀　恵美子",
@@ -72923,7 +75592,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2315,
     "route": 3,
     "name": "金築　茂",
@@ -72942,7 +75611,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2426,
     "route": 3,
     "name": "德市　幸男",
@@ -72961,14 +75630,14 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2427,
     "route": 3,
     "name": "宮本　俊治",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "",
     "paymentType": "bank",
     "vessel": "",
     "address": "福岡市東区舞松原４－６－１０５８",
@@ -72980,7 +75649,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2440,
+    "route": 3,
+    "name": "吉武　冴子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区香椎5丁目２４－１１",
+    "notes": "",
+    "phone": "092-671-7653",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 2457,
     "route": 3,
     "name": "荒巻　千代子",
@@ -72999,26 +75687,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
-    "code": 2465,
-    "route": 3,
-    "name": "藤家　真由美",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "福岡市東区多々良２－４１－１０",
-    "notes": "置配　玄関前のベンチの箱の中へ",
-    "phone": "090-5947-3706",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2467,
     "route": 3,
     "name": "内田　久栄",
@@ -73037,7 +75706,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2470,
+    "route": 3,
+    "name": "井手口　紀水子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区松島1丁目４－２５",
+    "notes": "",
+    "phone": "092-611-5580",
+    "emergency": "息子さん090-6209-1970",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
+    "code": 2490,
+    "route": 3,
+    "name": "鳥山　昭",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区名島５－２－２１",
+    "notes": "",
+    "phone": "090-1977-1244",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関先に置く"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 2492,
     "route": 3,
     "name": "岩木　里美",
@@ -73056,7 +75763,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 2494,
+    "route": 3,
+    "name": "湯朝　麗子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "福岡市東区若宮５丁目21-4棟405",
+    "notes": "発泡スチロール出てる時は置き配",
+    "phone": "092-682-5253",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "予備",
@@ -73075,7 +75801,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "福岡東店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 4000,
     "route": 5,
     "name": "浜崎",
@@ -73094,7 +75820,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 0,
     "route": 0,
     "name": "予備",
@@ -73113,7 +75839,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 200,
     "route": 1,
     "name": "山根　弘子",
@@ -73132,7 +75858,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 210,
     "route": 1,
     "name": "西岡　康伸",
@@ -73151,7 +75877,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 220,
     "route": 1,
     "name": "森　みちこ",
@@ -73170,14 +75896,52 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 300,
+    "route": 1,
+    "name": "國重　キクエ",
+    "type": "おかず",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市勢田２５２５－８",
+    "notes": "",
+    "phone": "0948-92-5673",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 400,
+    "route": 1,
+    "name": "中倉　峯子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "直方市上境１４１６－１",
+    "notes": "勝手口をノック",
+    "phone": "090-8623-2184",
+    "emergency": "",
+    "memo": "",
+    "absent": "保冷バッグ出してある"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 410,
     "route": 1,
     "name": "渡辺　登",
     "type": "小箱",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "",
     "paymentType": "cash",
     "vessel": "",
     "address": "直方市上境１８０４－１",
@@ -73189,7 +75953,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 420,
     "route": 1,
     "name": "福永　慶子",
@@ -73208,33 +75972,52 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 440,
+    "dataMonth": "2026-04",
+    "code": 430,
     "route": 1,
-    "name": "秋山　ちづ子",
+    "name": "田中　セツ子",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
-    "paymentType": "cash",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "直方市頓野２１０４－７－９棟－３０５",
-    "notes": "不在時はリボンあり？",
-    "phone": "0949-23-1058",
+    "address": "直方市頓野２１０４－７－６棟－１０１",
+    "notes": "",
+    "phone": "080-9246-3583",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 430,
+    "route": 1,
+    "name": "田中　政之",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "直方市頓野２１０４－７－６棟－１０１",
+    "notes": "",
+    "phone": "090-3660-5011",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 460,
     "route": 1,
     "name": "小野澤　洋",
     "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "",
     "paymentType": "cash",
     "vessel": "",
     "address": "直方市頓野３５９１－４１－３６棟－１０３",
@@ -73246,7 +76029,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 470,
     "route": 1,
     "name": "松尾　忠義",
@@ -73265,7 +76048,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 480,
     "route": 1,
     "name": "上田　義信",
@@ -73284,7 +76067,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 490,
     "route": 1,
     "name": "上川　和美",
@@ -73303,7 +76086,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 500,
+    "route": 1,
+    "name": "井垣　スミ子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "直方市感田８９４－５６",
+    "notes": "チャイム鳴らして",
+    "phone": "0949-26-0112",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 510,
     "route": 1,
     "name": "平松　栄明",
@@ -73322,7 +76124,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 520,
     "route": 1,
     "name": "瀬川　善憲",
@@ -73341,12 +76143,12 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 530,
     "route": 1,
     "name": "市場　昭寿",
     "type": "おかず",
-    "count": "3",
+    "count": "2",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
     "paymentType": "bank",
@@ -73360,7 +76162,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 550,
+    "route": 1,
+    "name": "太田　俊之",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "火 水 木",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "直方市知古１－４－４",
+    "notes": "",
+    "phone": "080-3992-5628",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 570,
+    "route": 1,
+    "name": "小鶴　蓉子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "直方市須崎町１３－６",
+    "notes": "",
+    "phone": "小鶴てつや　090-3798-6322",
+    "emergency": "ケアマネ　080-7051-8364",
+    "memo": "090-1080-0589",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 580,
     "route": 1,
     "name": "河村　学",
@@ -73379,7 +76219,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 590,
     "route": 1,
     "name": "大野　美佐代",
@@ -73398,7 +76238,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 600,
+    "route": 1,
+    "name": "横井　真澄",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "翌週注文確認",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "直方市新知町２－２７ 表札は栗原",
+    "notes": "",
+    "phone": "0949-22-6250",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 610,
     "route": 1,
     "name": "大内　香里奈",
@@ -73417,7 +76276,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 620,
+    "route": 1,
+    "name": "山内　秀信",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "直方市植木１９５－９",
+    "notes": "",
+    "phone": "090-1971-7113",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 630,
+    "route": 1,
+    "name": "本山　修一",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "直方市植木１７１－７７",
+    "notes": "門が閉まっているときは不在",
+    "phone": "0949-28-0933",
+    "emergency": "090-9403-4295",
+    "memo": "",
+    "absent": "玄関横の戸を開けて中へ"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 640,
     "route": 1,
     "name": "藤田　めぐみ",
@@ -73436,26 +76333,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 660,
+    "dataMonth": "2026-04",
+    "code": 670,
     "route": 1,
-    "name": "川上　利美",
+    "name": "佐藤　かつと",
     "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "直方市植木２１４１－１",
-    "notes": "チャイム鳴らして開ける、不在でも開いてる",
-    "phone": "0949-28-1715",
-    "emergency": "090-8910-2696 息子さん",
+    "address": "直方市植木１０１９－３",
+    "notes": "",
+    "phone": "0949-23-2771",
+    "emergency": "",
     "memo": "",
-    "absent": "玄関入って右棚"
+    "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 680,
     "route": 1,
     "name": "今山　政二",
@@ -73474,7 +76371,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 690,
+    "route": 1,
+    "name": "松尾　やよい",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "直方市植木４８６－２",
+    "notes": "黒い箱　保冷バッグ留めないで",
+    "phone": "090-9605-9172",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 710,
+    "route": 1,
+    "name": "末安　美佐恵",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "再注文",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "直方市下新入４５４－１７",
+    "notes": "",
+    "phone": "090-3601-3169",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 720,
     "route": 1,
     "name": "権堂(ｺﾞﾝﾄﾞｳ)俊明",
@@ -73493,7 +76428,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 730,
     "route": 1,
     "name": "金澤　毅",
@@ -73512,7 +76447,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 740,
     "route": 1,
     "name": "小山　陸紀",
@@ -73531,7 +76466,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 750,
+    "route": 1,
+    "name": "芳賀　亮二",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "直方市上新入２５８１－２９８",
+    "notes": "勝手口、請求書は有馬さん宅へ渡す",
+    "phone": "090-2718-8021有馬さん",
+    "emergency": "0949-28-4018",
+    "memo": "娘　有馬さん　頓野４１２７",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 760,
     "route": 1,
     "name": "奥村　かずや",
@@ -73550,45 +76504,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 770,
+    "dataMonth": "2026-04",
+    "code": 790,
     "route": 1,
-    "name": "大庭(ｵｵﾊﾞ)芙美子",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "直方市直方６７０－１５０",
-    "notes": "置き配の時は電話する",
-    "phone": "090-9482-0539",
-    "emergency": "090-8832-0443葉山知美　090-3412-7468戸畑琴枝",
-    "memo": "",
-    "absent": "保冷剤２"
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 780,
-    "route": 1,
-    "name": "鋤田　哲雄",
+    "name": "伊田　聖一",
     "type": "おかず",
-    "count": "1",
+    "count": "2",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "直方市古町６－１３　アーケードの中",
-    "notes": "交差点に駐車して行く",
-    "phone": "080-1722-8428",
+    "address": "直方市津田町１－２９",
+    "notes": "チャイム2回、出るまで時間かかる",
+    "phone": "090-8228-0245",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 800,
     "route": 1,
     "name": "野上　千英子",
@@ -73607,70 +76542,32 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 830,
+    "dataMonth": "2026-04",
+    "code": 810,
     "route": 1,
-    "name": "早川　富士子",
-    "type": "おかず",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "直方市下境２５３２－１棟－７０１",
-    "notes": "駐車場３６番",
-    "phone": "0949-28-3779",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 1001,
-    "route": 2,
-    "name": "稲冨　ヒロ子",
-    "type": "おかず",
+    "name": "木内　勇",
+    "type": "小箱",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "飯塚市楽市２１５－１",
+    "address": "直方市新町１－３－２３トルーハート１０１",
     "notes": "",
-    "phone": "090-9404-5957",
+    "phone": "090-7942-9082",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 1005,
-    "route": 2,
-    "name": "園　正美",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市西徳前１５－１２－1棟－１３５",
-    "notes": "玄関中のイスの上",
-    "phone": "090-9400-6269",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1007,
     "route": 2,
     "name": "篠原　のぶたか",
     "type": "おかず",
     "count": "1",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -73683,26 +76580,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 1010,
+    "dataMonth": "2026-04",
+    "code": 1011,
     "route": 2,
-    "name": "秋本　真奈美",
-    "type": "小箱",
+    "name": "國丸　敬子",
+    "type": "ご膳",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 木",
     "paymentType": "bank",
     "vessel": "",
-    "address": "飯塚市菰田東２－７－４４",
-    "notes": "弁当の下に保冷剤",
-    "phone": "090-9583-1863",
-    "emergency": "",
+    "address": "飯塚市菰田東２－５－６２",
+    "notes": "",
+    "phone": "0948-22-9780",
+    "emergency": "息子さん　090-8830-7393",
     "memo": "",
-    "absent": "玄関先に掛ける"
+    "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1012,
+    "route": 2,
+    "name": "森山　瑠美",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市菰田西２－１－１３",
+    "notes": "フックに掛ける",
+    "phone": "080-3908-0367",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 1013,
     "route": 2,
     "name": "佐藤　フミ子",
@@ -73721,7 +76637,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1015,
     "route": 2,
     "name": "長崎　睦子",
@@ -73740,7 +76656,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1020,
     "route": 2,
     "name": "中嶋　政司",
@@ -73759,15 +76675,34 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1025,
+    "route": 2,
+    "name": "長野　哲男",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市忠隈６２－２１",
+    "notes": "",
+    "phone": "080-3229-8913",
+    "emergency": "",
+    "memo": "",
+    "absent": "車庫の灯油の上"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 1030,
     "route": 2,
     "name": "内藤　あゆみ",
     "type": "小箱",
     "count": "2",
-    "countLabel": "",
+    "countLabel": "翌週注文確認",
     "weekly": "",
-    "paymentType": "cash",
+    "paymentType": "bank",
     "vessel": "",
     "address": "飯塚市南尾１－３０１",
     "notes": "",
@@ -73778,7 +76713,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1035,
     "route": 2,
     "name": "山本　ひろき",
@@ -73788,7 +76723,7 @@ window.DELIVERY_DATA = [
     "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "飯塚市南尾１３３－５　たばこ自販機ある",
+    "address": "飯塚市南尾１３３－５自販機ある",
     "notes": "自販機横のシャッター開けて段ボールの中",
     "phone": "0948-22-6549",
     "emergency": "",
@@ -73797,7 +76732,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1040,
+    "route": 2,
+    "name": "蔵満　喜一",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市平恒１１５－６-３４号　外に洗濯機ある",
+    "notes": "公衆電話が目印",
+    "phone": "090-1368-6259　固定電話からなら出る",
+    "emergency": "",
+    "memo": "",
+    "absent": "洗濯機の中"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 1050,
+    "route": 2,
+    "name": "井上　隆恵",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市南尾１３３－３",
+    "notes": "",
+    "phone": "0948-22-5419",
+    "emergency": "080-3188-6619(娘) 080-3982-5918",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 1060,
     "route": 2,
     "name": "梅村　新一",
@@ -73816,7 +76789,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1062,
     "route": 2,
     "name": "岸　浩二",
@@ -73835,7 +76808,45 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1069,
+    "route": 2,
+    "name": "伊地知　ヨシエ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市太郎丸７４５",
+    "notes": "",
+    "phone": "0948-24-3222",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 1070,
+    "route": 2,
+    "name": "冨永　ひでかず",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市太郎丸５０２－３",
+    "notes": "",
+    "phone": "0948-23-1589",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 1075,
     "route": 2,
     "name": "辛島　賢",
@@ -73850,15 +76861,15 @@ window.DELIVERY_DATA = [
     "phone": "娘　090-5474-8465",
     "emergency": "",
     "memo": "",
-    "absent": "室外機の上"
+    "absent": "ウッドデッキにある箱"
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1080,
     "route": 2,
     "name": "西牟田　修利",
-    "type": "おかず",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
@@ -73873,7 +76884,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1100,
+    "route": 2,
+    "name": "仲野　美佐子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市長尾１２６５－１２　表札は神﨑",
+    "notes": "",
+    "phone": "0948-72-1151",
+    "emergency": "",
+    "memo": "",
+    "absent": "必ず在宅なので置配禁止"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 1120,
     "route": 2,
     "name": "田原　康摩",
@@ -73892,7 +76922,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1130,
     "route": 2,
     "name": "池上　知佑",
@@ -73911,7 +76941,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1132,
     "route": 2,
     "name": "竹田　博忠",
@@ -73930,7 +76960,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1140,
     "route": 2,
     "name": "渡部　紀子",
@@ -73949,7 +76979,26 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
+    "code": 1160,
+    "route": 2,
+    "name": "梅澤　雄二",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市大分２１５４",
+    "notes": "チャイム３回鳴らす",
+    "phone": "0948-72-1951",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 1170,
     "route": 2,
     "name": "松尾　トリ子",
@@ -73968,26 +77017,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 1175,
-    "route": 2,
-    "name": "片岡　建雄",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市大分１５９９－２",
-    "notes": "勝手口のチャイム鳴らして",
-    "phone": "0948-72-4788",
-    "emergency": "090-3735-7283",
-    "memo": "",
-    "absent": "勝手口の流し台"
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1180,
     "route": 2,
     "name": "平畑　悟諮",
@@ -74006,7 +77036,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1200,
     "route": 2,
     "name": "坂本　光明",
@@ -74025,7 +77055,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1210,
     "route": 2,
     "name": "山内　幸子",
@@ -74044,7 +77074,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1220,
     "route": 2,
     "name": "西園　邦彦",
@@ -74063,7 +77093,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1225,
     "route": 2,
     "name": "橋本　とみこ",
@@ -74082,7 +77112,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1230,
     "route": 2,
     "name": "藤田　浩二",
@@ -74101,7 +77131,7 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 1250,
     "route": 2,
     "name": "丸尾　節子",
@@ -74120,246 +77150,56 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 1260,
+    "dataMonth": "2026-04",
+    "code": 1250,
     "route": 2,
-    "name": "前山　ゆうこ",
-    "type": "小箱",
+    "name": "和多　光晴",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "飯塚市潤野１１２０－１４マ・メゾン２０７",
-    "notes": "雨の日はチャイム鳴らして",
-    "phone": "070-2405-0406　奥さん？",
-    "emergency": "070-2405-0777　旦那さん？",
+    "address": "飯塚市潤野１０８２－５",
+    "notes": "駐車注意",
+    "phone": "0948-24-1061",
+    "emergency": "090-9604-4504",
     "memo": "",
     "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
+    "dataMonth": "2026-04",
     "code": 2010,
     "route": 3,
-    "name": "浅倉　洋",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市川津２１６－１シャトー第２水江６０６",
-    "notes": "給湯器の下、保冷剤２",
-    "phone": "080-3963-2525",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2020,
-    "route": 3,
-    "name": "永末　真智子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市相田３－２２６",
-    "notes": "",
-    "phone": "090-9656-5923",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2050,
-    "route": 3,
-    "name": "田中　健",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市伊岐須２２３－１８　2世帯",
-    "notes": "二世帯で、左の方の玄関",
-    "phone": "0948-23-2760",
-    "emergency": "090-2096-6679",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2060,
-    "route": 3,
-    "name": "渡辺　イツエ",
+    "name": "渡辺　キヨ",
     "type": "小箱",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木 金",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "飯塚市伊岐須２２４－１－１０棟－１０４",
-    "notes": "ベランダから声かける",
-    "phone": "0948-24-1633",
-    "emergency": "",
+    "address": "飯塚市本町７－２２",
+    "notes": "駐車注意",
+    "phone": "0948-22-3199",
+    "emergency": "090-3732-6400",
     "memo": "",
-    "absent": "ベランダのフックに掛ける"
+    "absent": "電柱の下に置く"
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2080,
-    "route": 3,
-    "name": "江崎　紀子",
-    "type": "セット",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市伊岐須５１０－１４－１－１",
-    "notes": "不在多い",
-    "phone": "0948-28-8330",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2095,
-    "route": 3,
-    "name": "松岡　ふくみ",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市伊川８２－７３－８－１０２",
-    "notes": "",
-    "phone": "080-3975-7051",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2100,
-    "route": 3,
-    "name": "須尭　辰眞",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市伊川７７０－１",
-    "notes": "",
-    "phone": "0948-28-5853",
-    "emergency": "090-9656-8626",
-    "memo": "",
-    "absent": "右のシャッター冷蔵庫の中"
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2120,
-    "route": 3,
-    "name": "川上　博之",
-    "type": "ダブル",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市花瀬１０２－５０",
-    "notes": "裏口の室外機の上",
-    "phone": "090-3323-7464",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2130,
-    "route": 3,
-    "name": "城丸(ｼﾛﾏﾙ)慎二",
-    "type": "小箱",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市横田６６９－９２",
-    "notes": "",
-    "phone": "0948-23-2245",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2150,
-    "route": 3,
-    "name": "高木　瑞穂",
-    "type": "ご膳",
-    "count": "2",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市横田３１１－２　細い坂を上る",
-    "notes": "保冷剤２",
-    "phone": "090-2080-7896",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2160,
-    "route": 3,
-    "name": "竹山　重夫",
-    "type": "ご膳",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市片島２－１５－１９　相互不動産事務所",
-    "notes": "保冷バッグごと渡す　保冷剤１",
-    "phone": "0948-23-3315",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2170,
+    "dataMonth": "2026-04",
+    "code": 2040,
     "route": 3,
     "name": "永松　英子",
-    "type": "ダブル",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "火 水 金",
     "paymentType": "cash",
     "vessel": "",
     "address": "飯塚市新飯塚６－６花宅ビル６０２",
-    "notes": "",
+    "notes": "不在多い",
     "phone": "090-6890-2373",
     "emergency": "",
     "memo": "",
@@ -74367,103 +77207,8 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2180,
-    "route": 3,
-    "name": "溝口　隆代",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市新飯塚１９－１７エバーライフ新飯塚２０４",
-    "notes": "駐車場2番",
-    "phone": "090-2708-5973",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2190,
-    "route": 3,
-    "name": "田中　多賀子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市川島５６５ココフラワー１０３",
-    "notes": "",
-    "phone": "090-2716-7875",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2190,
-    "route": 3,
-    "name": "田中　多賀子",
-    "type": "ダブル",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市川島５６５ココフラワー１０３",
-    "notes": "",
-    "phone": "090-2716-7875",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2200,
-    "route": 3,
-    "name": "水上　美保",
-    "type": "おかず",
-    "count": "3",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市川島１１－１０",
-    "notes": "",
-    "phone": "090-1872-6445",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2210,
-    "route": 3,
-    "name": "今村　剛之",
-    "type": "ダブル",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市鯰田２５１７－５３",
-    "notes": "縁側のベンチ、請求書はポストへ",
-    "phone": "早野　美恵(娘)　090-5021-5413",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2230,
+    "dataMonth": "2026-04",
+    "code": 2050,
     "route": 3,
     "name": "山下　かずこ",
     "type": "ご膳",
@@ -74481,8 +77226,65 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2240,
+    "dataMonth": "2026-04",
+    "code": 2050,
+    "route": 3,
+    "name": "市橋　壽滿子",
+    "type": "小箱セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市飯塚３－３７　３階",
+    "notes": "娘さん　080-1762-6206",
+    "phone": "080-8376-3539",
+    "emergency": "青い鳥　中山　0948-24-4346",
+    "memo": "0948-22-5774",
+    "absent": "玄関前の棚"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2060,
+    "route": 3,
+    "name": "今泉　麻理子",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市柏の森６８－１　要確認",
+    "notes": "要確認",
+    "phone": "0948-22-7878",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2090,
+    "route": 3,
+    "name": "やまざき",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市下三緒９８２－５",
+    "notes": "",
+    "phone": "0948-28-5264",
+    "emergency": "",
+    "memo": "",
+    "absent": "赤ケースの上"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2100,
     "route": 3,
     "name": "高田　芳弘",
     "type": "小箱",
@@ -74500,27 +77302,65 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2260,
+    "dataMonth": "2026-04",
+    "code": 2110,
     "route": 3,
-    "name": "草場　美津枝",
-    "type": "小箱",
+    "name": "久保　善秋",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 木",
+    "weekly": "月 水 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "飯塚市柏の森１３－１２１",
-    "notes": "裏口ノック",
-    "phone": "0948-22-0893",
-    "emergency": "090-6776-9988",
+    "address": "飯塚市下三緒３５－７１９三井アーバン東ヶ丘１０２",
+    "notes": "",
+    "phone": "080-9140-2802",
+    "emergency": "",
     "memo": "",
-    "absent": "裏口"
+    "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2280,
+    "dataMonth": "2026-04",
+    "code": 2120,
+    "route": 3,
+    "name": "富松　輝",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市有安９６５－９１",
+    "notes": "保冷剤３",
+    "phone": "090-6425-5120",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2120,
+    "route": 3,
+    "name": "富松　輝",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市有安９６５－９１",
+    "notes": "保冷剤３",
+    "phone": "090-6425-5120",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2130,
     "route": 3,
     "name": "今福　国勝",
     "type": "小箱",
@@ -74538,46 +77378,27 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2290,
+    "dataMonth": "2026-04",
+    "code": 2140,
     "route": 3,
-    "name": "富松　輝",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市有安９６５－９１",
-    "notes": "保冷剤３",
-    "phone": "090-6425-5120",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2290,
-    "route": 3,
-    "name": "富松　輝",
+    "name": "小笠原　拓海",
     "type": "ダブル",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "水 木 金",
     "paymentType": "bank",
     "vessel": "",
-    "address": "飯塚市有安９６５－９１",
-    "notes": "保冷剤３",
-    "phone": "090-6425-5120",
-    "emergency": "",
+    "address": "飯塚市有安９６２－１９７－２０１号",
+    "notes": "",
+    "phone": "090-8168-5674　本人",
+    "emergency": "090-9170-6790　母",
     "memo": "",
     "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2310,
+    "dataMonth": "2026-04",
+    "code": 2160,
     "route": 3,
     "name": "鈴木　数枝",
     "type": "小箱セット",
@@ -74595,27 +77416,274 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 2320,
+    "dataMonth": "2026-04",
+    "code": 2170,
     "route": 3,
-    "name": "加世堂　並男",
-    "type": "小箱",
-    "count": "1",
+    "name": "長友　瑠梨奈",
+    "type": "おかず",
+    "count": "2",
     "countLabel": "",
-    "weekly": "月 火 金",
+    "weekly": "月 水 金",
     "paymentType": "bank",
     "vessel": "",
-    "address": "飯塚市下三緒５１６－１５",
-    "notes": "",
-    "phone": "0948-24-5599",
-    "emergency": "090-4772-3014",
+    "address": "飯塚市綱分１４６１－１－２０７",
+    "notes": "保冷剤３",
+    "phone": "080-6406-5844",
+    "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3030,
+    "dataMonth": "2026-04",
+    "code": 2190,
+    "route": 3,
+    "name": "今村　剛之",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市鯰田２５１７－５３",
+    "notes": "縁側のベンチ、請求書はポストへ",
+    "phone": "早野　美恵(娘)　090-5021-5413",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2210,
+    "route": 3,
+    "name": "首藤　誠治",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市鯰田１３６８－５",
+    "notes": "在宅でも空箱を出してる",
+    "phone": "090-2853-7941",
+    "emergency": "ケアマネ　080-9400-0866",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2220,
+    "route": 3,
+    "name": "中村　芳久",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市鯰田１７６６－４－B－202",
+    "notes": "保冷剤２",
+    "phone": "090-8392-1011",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2230,
+    "route": 3,
+    "name": "長谷川　彰",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市鯰田１３３７－２",
+    "notes": "手前の家",
+    "phone": "090-6424-0217",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2240,
+    "route": 3,
+    "name": "佐藤　和彦",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市鯰田２１０４　砂利に駐車",
+    "notes": "玄関横の台",
+    "phone": "0948-28-0120",
+    "emergency": "090-5475-6763　息子さん",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2270,
+    "route": 3,
+    "name": "太田　浩",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市吉北４２１３－７０",
+    "notes": "バックごとBOXに入れる、保冷剤２",
+    "phone": "090-7475-9284",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2280,
+    "route": 3,
+    "name": "佐藤　洋之介",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市吉北４２１３－８４",
+    "notes": "",
+    "phone": "090-3011-3102",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関横の郵便受けの中"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2310,
+    "route": 3,
+    "name": "田中　多賀子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市川島５６５ココフラワー１０３",
+    "notes": "",
+    "phone": "090-2716-7875",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2310,
+    "route": 3,
+    "name": "田中　多賀子",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市川島５６５ココフラワー１０３",
+    "notes": "",
+    "phone": "090-2716-7875",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2350,
+    "route": 3,
+    "name": "半田　珠江",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市幸袋２１１－１６",
+    "notes": "柵開けて裏口から渡す。月、金は不在",
+    "phone": "090-7384-4448",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2360,
+    "route": 3,
+    "name": "竹山　重夫",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市片島２－１５－１９　相互不動産事務所",
+    "notes": "保冷バッグごと渡す　保冷剤１",
+    "phone": "0948-23-3315",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 2370,
+    "route": 3,
+    "name": "浅倉　洋",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "火 水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市川津２１６－１シャトー第２水江６０６",
+    "notes": "給湯器の下、保冷剤２",
+    "phone": "080-3963-2525",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3150,
+    "route": 4,
+    "name": "杉山　澄子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "火 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市庄司２８－４",
+    "notes": "道狭い",
+    "phone": "0948-23-3204",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3170,
     "route": 4,
     "name": "永田　章",
     "type": "おかず",
@@ -74633,8 +77701,8 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3040,
+    "dataMonth": "2026-04",
+    "code": 3180,
     "route": 4,
     "name": "足立　晋一郎",
     "type": "セット",
@@ -74644,7 +77712,7 @@ window.DELIVERY_DATA = [
     "paymentType": "cash",
     "vessel": "",
     "address": "飯塚市庄司１４２－１２３",
-    "notes": "玄関の中",
+    "notes": "不在だが玄関あいてる、入った所に置く",
     "phone": "090-8398-0365",
     "emergency": "",
     "memo": "",
@@ -74652,84 +77720,27 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3050,
+    "dataMonth": "2026-04",
+    "code": 3200,
     "route": 4,
-    "name": "杉山　澄子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 水 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市庄司２８－４",
-    "notes": "",
-    "phone": "0948-23-3204",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3060,
-    "route": 4,
-    "name": "佐藤　洋之介",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市吉北４２１３－８４",
-    "notes": "",
-    "phone": "090-3011-3102",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄関横の郵便受けの中"
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3060,
-    "route": 4,
-    "name": "太田　浩",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市吉北４２１３－７０",
-    "notes": "バックごとBOXに入れる、保冷剤２",
-    "phone": "090-7475-9284",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3080,
-    "route": 4,
-    "name": "貞金　晶",
+    "name": "水口　喜三夫",
     "type": "おかず",
     "count": "0",
     "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
-    "address": "飯塚市目尾６９１－１",
-    "notes": "",
-    "phone": "0948-22-7049",
+    "address": "飯塚市相田９７６－１",
+    "notes": "認知症がひどくなってきた",
+    "phone": "080-1744-4995　娘さん",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3100,
+    "dataMonth": "2026-04",
+    "code": 3210,
     "route": 4,
     "name": "小畑　和広",
     "type": "小箱",
@@ -74739,7 +77750,7 @@ window.DELIVERY_DATA = [
     "paymentType": "cash",
     "vessel": "",
     "address": "飯塚市建花寺６３５",
-    "notes": "",
+    "notes": "マップでるけど少し奥",
     "phone": "090-8229-7631",
     "emergency": "",
     "memo": "",
@@ -74747,46 +77758,293 @@ window.DELIVERY_DATA = [
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3140,
+    "dataMonth": "2026-04",
+    "code": 3220,
     "route": 4,
-    "name": "中村　芳久",
-    "type": "小箱",
+    "name": "須尭　辰眞",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "月 火 水 木",
-    "paymentType": "cash",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "飯塚市鯰田１７６６－４－B－202",
-    "notes": "保冷剤２",
-    "phone": "090-8392-1011",
+    "address": "飯塚市伊川７７０－１",
+    "notes": "",
+    "phone": "0948-28-5853",
+    "emergency": "090-9656-8626",
+    "memo": "",
+    "absent": "右のシャッター冷蔵庫の中"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3230,
+    "route": 4,
+    "name": "多賀谷　晴美",
+    "type": "おかず",
+    "count": "4",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市伊川４１１－４",
+    "notes": "",
+    "phone": "090-3073-8165",
     "emergency": "",
     "memo": "",
     "absent": ""
   },
   {
     "store": "飯塚店",
-    "dataMonth": "2026-03",
-    "code": 3150,
+    "dataMonth": "2026-04",
+    "code": 3240,
     "route": 4,
-    "name": "首藤　誠治",
-    "type": "ダブル",
+    "name": "松岡　ふくみ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市伊川８２－７３－８棟－１０２",
+    "notes": "不在多い",
+    "phone": "080-3975-7051",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3250,
+    "route": 4,
+    "name": "武本　光",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市伊川８２－７３－１棟－１０１",
+    "notes": "月、水は不在多い",
+    "phone": "090-2087-2472",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3270,
+    "route": 4,
+    "name": "永末　真智子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市相田３－２２６",
+    "notes": "",
+    "phone": "090-9656-5923",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3280,
+    "route": 4,
+    "name": "長谷川　れい子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市伊岐須８５０－６",
+    "notes": "不在多い",
+    "phone": "090-2859-7484",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3290,
+    "route": 4,
+    "name": "東　洋志",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市伊岐須８６９－１２",
+    "notes": "階段あがる",
+    "phone": "090-3197-2411",
+    "emergency": "二瀬地域包括　21-5511",
+    "memo": "",
+    "absent": "玄関開いていれば中へ"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3300,
+    "route": 4,
+    "name": "田中　健",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
     "weekly": "月 火 水 木 金",
     "paymentType": "bank",
     "vessel": "",
-    "address": "飯塚市鯰田１３６８－５",
-    "notes": "在宅でも空箱を出してる",
-    "phone": "090-2853-7941",
-    "emergency": "ケアマネ　080-9400-0866",
+    "address": "飯塚市伊岐須２２３－１８　2世帯",
+    "notes": "左の方の玄関",
+    "phone": "0948-23-2760",
+    "emergency": "090-2096-6679",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3310,
+    "route": 4,
+    "name": "渡辺　イツエ",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市伊岐須２２４－１－１０棟－１０４",
+    "notes": "ベランダの方から声かける",
+    "phone": "0948-24-1633",
+    "emergency": "",
+    "memo": "",
+    "absent": "ベランダのフックに掛ける"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3320,
+    "route": 4,
+    "name": "宇野　せつこ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市伊岐須４１６－５５",
+    "notes": "不在多い",
+    "phone": "娘　吉原さん　090-7150-7300",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3330,
+    "route": 4,
+    "name": "江崎　紀子",
+    "type": "セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市伊岐須５１０－１４-1-1ランティス",
+    "notes": "不在多い",
+    "phone": "0948-28-8330",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3400,
+    "route": 4,
+    "name": "川上　博之",
+    "type": "ダブル",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市花瀬１０２－５０",
+    "notes": "車庫の奥の裏口の室外機の上",
+    "phone": "090-3323-7464",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3410,
+    "route": 4,
+    "name": "城丸(ｼﾛﾏﾙ)慎二",
+    "type": "小箱",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市横田６６９－９２",
+    "notes": "",
+    "phone": "0948-23-2245",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3420,
+    "route": 4,
+    "name": "木村　千雪",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市花瀬３０－３４",
+    "notes": "裏口ノックして開ける、在宅でも空箱出してる",
+    "phone": "0948-22-6311",
+    "emergency": "",
+    "memo": "",
+    "absent": "裏口の棚"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3430,
+    "route": 4,
+    "name": "高木　瑞穂",
+    "type": "ご膳",
+    "count": "2",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市横田３１１－２　細い坂を上って右側",
+    "notes": "保冷剤２",
+    "phone": "090-2080-7896",
+    "emergency": "",
     "memo": "",
     "absent": ""
   }
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-03-31T09:00:49.516342",
+  "generatedAt": "2026-03-31T18:58:12.991973",
   "stores": [
     "下関店",
     "北九州店",
@@ -74807,15 +78065,15 @@ window.DATA_META = {
       "store": "下関店",
       "name": "うちくる顧客管理表(2026.3)下関店.xlsm",
       "dataMonth": "2026-03",
-      "mtime": "2026-03-30",
+      "mtime": "2026-03-31",
       "count": 336
     },
     {
       "store": "下関店",
       "name": "うちくる顧客管理表(2026.4)下関店.xlsm",
       "dataMonth": "2026-04",
-      "mtime": "2026-03-30",
-      "count": 337
+      "mtime": "2026-03-31",
+      "count": 341
     },
     {
       "store": "北九州店",
@@ -74835,21 +78093,21 @@ window.DATA_META = {
       "store": "北九州店",
       "name": "うちくる顧客管理表(2026.4)北九州店.xlsm",
       "dataMonth": "2026-04",
-      "mtime": "2026-03-30",
-      "count": 261
+      "mtime": "2026-03-31",
+      "count": 263
     },
     {
       "store": "宇部店",
       "name": "うちくる顧客管理表(2026 02)宇部店.xlsm",
       "dataMonth": "2026-02",
-      "mtime": "2026-03-30",
+      "mtime": "2026-03-31",
       "count": 426
     },
     {
       "store": "宇部店",
       "name": "うちくる顧客管理表(2026 03)宇部店.xlsm",
       "dataMonth": "2026-03",
-      "mtime": "2026-03-30",
+      "mtime": "2026-03-31",
       "count": 470
     },
     {
@@ -74857,27 +78115,27 @@ window.DATA_META = {
       "name": "うちくる顧客管理表(2026 04)宇部店.xlsm",
       "dataMonth": "2026-04",
       "mtime": "2026-03-31",
-      "count": 467
+      "count": 459
     },
     {
       "store": "宗像店",
       "name": "うちくる顧客管理表(2026.２)宗像店.xlsm",
       "dataMonth": "2026-02",
-      "mtime": "2026-03-27",
+      "mtime": "2026-03-31",
       "count": 246
     },
     {
       "store": "宗像店",
       "name": "うちくる顧客管理表(2026.３)宗像店.xlsm",
       "dataMonth": "2026-03",
-      "mtime": "2026-03-30",
+      "mtime": "2026-03-31",
       "count": 255
     },
     {
       "store": "宗像店",
       "name": "うちくる顧客管理表(2026.４)宗像店.xlsm",
       "dataMonth": "2026-04",
-      "mtime": "2026-03-30",
+      "mtime": "2026-03-31",
       "count": 256
     },
     {
@@ -74891,28 +78149,28 @@ window.DATA_META = {
       "store": "福岡東店",
       "name": "うちくる顧客管理表(2026.3)福岡東店.xlsm",
       "dataMonth": "2026-03",
-      "mtime": "2026-03-30",
+      "mtime": "2026-03-31",
       "count": 153
     },
     {
       "store": "福岡東店",
       "name": "うちくる顧客管理表(2026.4)福岡東店.xlsm",
       "dataMonth": "2026-04",
-      "mtime": "2026-03-30",
-      "count": 154
+      "mtime": "2026-03-31",
+      "count": 155
     },
     {
       "store": "飯塚店",
       "name": "うちくる顧客管理表(2026.02)飯塚店.xlsm",
       "dataMonth": "2026-02",
-      "mtime": "2026-03-30",
+      "mtime": "2026-03-31",
       "count": 196
     },
     {
       "store": "飯塚店",
       "name": "うちくる顧客管理表(2026.03)飯塚店.xlsm",
       "dataMonth": "2026-03",
-      "mtime": "2026-03-30",
+      "mtime": "2026-03-31",
       "count": 156
     },
     {
@@ -74926,10 +78184,10 @@ window.DATA_META = {
       "store": "飯塚店",
       "name": "うちくる顧客管理表(2026.04)飯塚店.xlsm",
       "dataMonth": "2026-04",
-      "mtime": "2026-03-30",
-      "count": 148
+      "mtime": "2026-03-31",
+      "count": 151
     }
   ],
-  "totalRecords": 4243,
-  "totalAmount": 38556307
+  "totalRecords": 4245,
+  "totalAmount": 36553801
 };
