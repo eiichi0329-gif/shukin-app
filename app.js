@@ -169,6 +169,10 @@ let deliveryCompactRoutes  = new Set(); // "store|route" keys currently in compa
 
 const DELIVERY_CHECK_KEY          = 'coll-delivery-v1';
 const DELIVERY_ROUTE_OVERRIDE_KEY = 'coll-delivery-route-v1';
+const MSG_READ_KEY                = 'coll-msg-read-v1';
+
+function loadMsgRead() { try { return new Set(JSON.parse(localStorage.getItem(MSG_READ_KEY) || '[]')); } catch { return new Set(); } }
+function saveMsgRead(s) { localStorage.setItem(MSG_READ_KEY, JSON.stringify([...s])); }
 
 function loadDeliveryChecked()  { try { return JSON.parse(localStorage.getItem(DELIVERY_CHECK_KEY) || '{}'); } catch { return {}; } }
 function saveDeliveryChecked()  { localStorage.setItem(DELIVERY_CHECK_KEY, JSON.stringify(deliveryChecked)); }
@@ -2123,6 +2127,16 @@ function renderAdmin() {
         }
     }
     content.innerHTML = html;
+
+    // 連絡事項チェックボックス
+    content.querySelectorAll('.admin-msg-check').forEach(cb => {
+        cb.addEventListener('change', () => {
+            const s = loadMsgRead();
+            if (cb.checked) s.add(cb.dataset.msgId); else s.delete(cb.dataset.msgId);
+            saveMsgRead(s);
+            cb.closest('.admin-msg-item').classList.toggle('admin-msg-item-read', cb.checked);
+        });
+    });
 }
 
 // ─── Denomination Check Dialog ───────────────────────────────────
@@ -2447,22 +2461,27 @@ function buildDailyMessages(date, msgs) {
         (Number(a.route) - Number(b.route)) || a.createdAt.localeCompare(b.createdAt)
     );
 
+    const msgRead = loadMsgRead();
     let html = `<div class="admin-section">`;
     html += `<h2 class="admin-title">&#128172; ${dateLabel}の連絡事項</h2>`;
     html += `<div class="admin-msg-store">`;
     sorted.forEach(m => {
+        const isRead = msgRead.has(m.id);
         const imgHtml = m.imageData
             ? `<img src="${m.imageData}" class="msg-image-thumb" alt="添付画像" style="margin-top:6px">`
             : '';
-        html += `<div class="admin-msg-item">
-            <div class="admin-msg-item-meta">
-                <span class="admin-msg-item-route">R${m.route}</span>
-                <span class="admin-msg-item-name">${escHtml(m.customerName)}</span>
-                <span style="font-size:12px;color:var(--g500)">${escHtml(m.store)}</span>
-                <span class="admin-msg-item-date">${fmtMsgTime(m.createdAt)}</span>
-                <button class="msg-item-del" onclick="deleteMessage('${m.id}')">削除</button>
+        html += `<div class="admin-msg-item${isRead ? ' admin-msg-item-read' : ''}">
+            <input type="checkbox" class="admin-msg-check" data-msg-id="${escHtml(m.id)}"${isRead ? ' checked' : ''}>
+            <div class="admin-msg-item-body">
+                <div class="admin-msg-item-meta">
+                    <span class="admin-msg-item-route">R${m.route}</span>
+                    <span class="admin-msg-item-name">${escHtml(m.customerName)}</span>
+                    <span style="font-size:12px;color:var(--g500)">${escHtml(m.store)}</span>
+                    <span class="admin-msg-item-date">${fmtMsgTime(m.createdAt)}</span>
+                    <button class="msg-item-del" onclick="deleteMessage('${m.id}')">削除</button>
+                </div>
+                <div class="admin-msg-item-text">${escHtml(m.text)}${imgHtml}</div>
             </div>
-            <div class="admin-msg-item-text">${escHtml(m.text)}${imgHtml}</div>
         </div>`;
     });
     html += '</div></div>';
