@@ -1169,7 +1169,13 @@ function switchTab(tab) {
     document.getElementById('delivery-summary').classList.toggle('hidden', tab !== 'delivery');
 
     if (tab === 'admin')    renderAdmin();
-    if (tab === 'delivery') renderDelivery();
+    if (tab === 'delivery') {
+        renderDelivery();
+        const doneCards = document.querySelectorAll('#delivery-list .delivery-card-done');
+        if (doneCards.length > 0) {
+            doneCards[doneCards.length - 1].scrollIntoView({ block: 'center' });
+        }
+    }
 }
 
 // ─── Delivery Tab ────────────────────────────────────────────────
@@ -1333,7 +1339,7 @@ function renderDelivery() {
     container.innerHTML = html;
 
     container.querySelectorAll('.btn-delivery-check').forEach(btn => {
-        btn.addEventListener('click', () => onDeliveryCheck(btn.dataset.key));
+        btn.addEventListener('click', () => onDeliveryCheck(btn.dataset.key, btn));
     });
 
     updateDeliverySummary(data);
@@ -1532,9 +1538,70 @@ function updateDeliverySummary(data) {
             });
         }
     });
+
+    // 配達件数・進捗メッセージ（訪問のみは除外）
+    const deliveryTargets = data.filter(m => {
+        const expanded = expandDeliveryItems(m.items);
+        const isVisitOnly = m.items.length > 0 && expanded.length === 0;
+        return !isVisitOnly;
+    });
+    const totalDelivery = deliveryTargets.length;
+    const doneDelivery  = deliveryTargets.filter(m => !!deliveryChecked[m.groupKey]).length;
+    const remain        = totalDelivery - doneDelivery;
+
+    const totalEl = document.getElementById('ds-delivery-total');
+    if (totalEl) totalEl.textContent = totalDelivery;
 }
 
-function onDeliveryCheck(groupKey) {
+function getDeliveryProgress() {
+    const storeData = deliveryData.filter(r => !filters.store || r.store === filters.store);
+    const groupMap = new Map();
+    storeData.forEach(r => {
+        const gk = `${r.name}|||${r.address}`;
+        if (!groupMap.has(gk)) groupMap.set(gk, []);
+        groupMap.get(gk).push(r);
+    });
+    let total = 0, done = 0;
+    groupMap.forEach(recs => {
+        const base = recs[0];
+        const groupKey = `${base.store}|${base.dataMonth}|${base.name}|${base.address}`;
+        const override = deliveryRouteOverrides[groupKey];
+        const routes = override ? [override.route] : [...new Set(recs.map(r => r.route))].sort((a, b) => a - b);
+        if (filters.route && !routes.some(r => String(r) === filters.route)) return;
+        const items = recs.map(r => ({ type: r.type, count: r.count })).filter(i => i.type);
+        const isVisitOnly = items.length > 0 && expandDeliveryItems(items).length === 0;
+        if (isVisitOnly) return;
+        total++;
+        if (deliveryChecked[groupKey]) done++;
+    });
+    return { total, done, remain: total - done };
+}
+
+function showDeliveryProgressPopup(anchorEl, msg, type) {
+    let el = document.getElementById('delivery-progress-popup');
+    if (!el) {
+        el = document.createElement('div');
+        el.id = 'delivery-progress-popup';
+        document.body.appendChild(el);
+    }
+    el.textContent = msg;
+    el.className = `delivery-progress-popup delivery-progress-popup-${type}`;
+    const rect = anchorEl.getBoundingClientRect();
+    const above = rect.top > 60;
+    el.style.left = `${rect.left + rect.width / 2}px`;
+    el.style.top  = above ? `${rect.top - 44}px` : `${rect.bottom + 8}px`;
+    el.dataset.above = above ? '1' : '0';
+    requestAnimationFrame(() => {
+        const er = el.getBoundingClientRect();
+        if (er.right > window.innerWidth - 8)  el.style.left = `${window.innerWidth - er.width / 2 - 8}px`;
+        if (er.left  < 8)                       el.style.left = `${er.width / 2 + 8}px`;
+        el.classList.add('delivery-progress-popup-show');
+    });
+    clearTimeout(el._t);
+    el._t = setTimeout(() => el.classList.remove('delivery-progress-popup-show'), type === 'done' ? 3500 : 2200);
+}
+
+function onDeliveryCheck(groupKey, btnEl) {
     // グループキー（store|dataMonth|name|address）から代表レコードを取得
     const record = deliveryData.find(r =>
         `${r.store}|${r.dataMonth}|${r.name}|${r.address}` === groupKey
@@ -1564,6 +1631,20 @@ function onDeliveryCheck(groupKey) {
 
     saveDeliveryChecked();
     renderDelivery();
+
+    // 進捗ポップアップ（再描画後の新しいボタン要素に対して表示）
+    const newBtn = document.querySelector(`#delivery-list .btn-delivery-check[data-key="${CSS.escape(groupKey)}"]`);
+    const anchor = newBtn || btnEl;
+    if (anchor) {
+        const p = getDeliveryProgress();
+        if (p.total > 0) {
+            if (p.remain === 0) {
+                showDeliveryProgressPopup(anchor, '配達終了です。お疲れ様でした。', 'done');
+            } else {
+                showDeliveryProgressPopup(anchor, `あと${p.remain}件！頑張って`, 'remain');
+            }
+        }
+    }
 }
 
 function openDeliveryRouteEdit(area, groupKey) {
@@ -1736,13 +1817,16 @@ function openDeliveryCollectDialog(groupKey) {
     if (uncollected.length === 0) {
         list.innerHTML = '<div class="delivery-collect-empty">未集金レコードはありません</div>';
     } else {
+        // 表示されている月だけをソートしてインデックスで色を割り当て
+        const monthOrder = [...new Set(uncollected.map(r => r.dataMonth))].sort();
         list.innerHTML = uncollected.map(r => {
-            const key = getKey(r);
-            const amt = effectiveAmount(key, r);
-            return `<div class="delivery-collect-row" data-key="${escHtml(key)}">
+            const key      = getKey(r);
+            const amt      = effectiveAmount(key, r);
+            const colorIdx = monthOrder.indexOf(r.dataMonth);
+            return `<div class="delivery-collect-row dcm-row-${colorIdx}" data-key="${escHtml(key)}">
                 <span class="delivery-collect-month">${escHtml(r.dataMonth)}月</span>
                 <span class="delivery-collect-amount">¥${amt.toLocaleString()}</span>
-                <button class="btn btn-primary btn-collect-month" data-key="${escHtml(key)}">集金済みにする</button>
+                <button class="btn btn-collect-month dcm-btn-${colorIdx}" data-key="${escHtml(key)}">集金済みにする</button>
             </div>`;
         }).join('');
 
@@ -2515,20 +2599,21 @@ async function syncCheckboxes() {
             }
         }
 
-        // ルートオーバーライドをリモートと同期
+        // ルートオーバーライドをリモートと同期（GAS を正として常に上書き）
         if (json.routeOverrides) {
-            alert('[sync] routeOverrides受信: ' + Object.keys(json.routeOverrides).length + '件\n' + JSON.stringify(json.routeOverrides).slice(0, 200));
             const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
             let changed = false;
             Object.entries(json.routeOverrides).forEach(([gk, ov]) => {
-                if (ov.date === today && !deliveryRouteOverrides[gk]) {
+                if (ov.date !== today) return;
+                const local = deliveryRouteOverrides[gk];
+                if (!local || local.route !== ov.route) {
                     deliveryRouteOverrides[gk] = ov;
                     changed = true;
                 }
             });
             if (changed) {
                 localStorage.setItem(DELIVERY_ROUTE_OVERRIDE_KEY, JSON.stringify(deliveryRouteOverrides));
-                renderDelivery();
+                if (currentTab === 'delivery') renderDelivery();
             }
         }
     } catch (e) { console.error('同期失敗', e); }
