@@ -158,6 +158,7 @@ let bankFailedKeys  = new Set(); // 口振失敗として手動確定したキ�
 let transferState   = {};   // key → { date: 'YYYY-MM-DD', recordedAt: ISO }
 let amountOverrides = {};   // key → number（管理画面で手修正した金額）
 let recordOverrides = {};   // key → { route?, dataMonth?, name? }（行ダブルタップで修正）
+let currentRouteMap = {};  // "store|name" → 現在のルート番号（月をまたいでコード変更に対応）
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'delivery';
 let expandedCell = null;  // { route, month } for admin detail
@@ -188,6 +189,15 @@ function loadDeliveryRouteOverrides() {
 }
 function saveDeliveryRouteOverrides() {
     localStorage.setItem(DELIVERY_ROUTE_OVERRIDE_KEY, JSON.stringify(deliveryRouteOverrides));
+    const url = getGasUrl();
+    if (!url) return;
+    // no-cors ではGASのdoPostが動作しないため通常fetchを使用
+    const body = JSON.stringify({ action: 'setRouteOverrides', overrides: deliveryRouteOverrides });
+    fetch(url, { method: 'POST', body }).catch(() => {
+        const q = loadRetryQueue();
+        q.push({ url, body, savedAt: Date.now() });
+        saveRetryQueue(q);
+    });
 }
 
 // 口振一括チェックモード
@@ -279,7 +289,22 @@ function calcDenomTotal(counts) {
 function effectiveAmount(key, record) {
     return amountOverrides[key] !== undefined ? amountOverrides[key] : (record.amount || 0);
 }
-function effectiveRoute(key, r) { return recordOverrides[key]?.route     ?? r.route; }
+function effectiveRoute(key, r) { return recordOverrides[key]?.route ?? currentRouteMap[r.store + '|' + r.name] ?? r.route; }
+
+// Excelの顧客管理表（COLLECTION_DATA）の直近月のルートで「店舗|名前 → 現在ルート」マップを構築
+// 月をまたいで配達番号・ルートが変わっても、最新月のルートに全レコードを紐づける
+function buildCurrentRouteMap() {
+    const map = {};
+    allData.forEach(r => {
+        const k = r.store + '|' + r.name;
+        if (!map[k] || r.dataMonth > map[k].month) {
+            map[k] = { route: r.route, month: r.dataMonth };
+        }
+    });
+    const result = {};
+    for (const k of Object.keys(map)) result[k] = map[k].route;
+    return result;
+}
 function effectiveMonth(key, r) { return recordOverrides[key]?.dataMonth ?? r.dataMonth; }
 function effectiveName(key, r)  { return recordOverrides[key]?.name      ?? r.name; }
 
@@ -415,9 +440,9 @@ function filteredData() {
         const key        = getKey(r);
         const effPayment = effectivePaymentType(r);
 
-        if (filters.store   && r.store         !== filters.store)   return false;
-        if (filters.month   && r.dataMonth     !== filters.month)   return false;
-        if (filters.route   && String(r.route) !== filters.route)   return false;
+        if (filters.store   && r.store                                !== filters.store)   return false;
+        if (filters.month   && r.dataMonth                          !== filters.month)   return false;
+        if (filters.route   && String(effectiveRoute(key, r))       !== filters.route)   return false;
         if (filters.payment && effPayment      !== filters.payment) return false;
         if ((r.amount || 0) === 0)                                   return false;
 
@@ -622,7 +647,7 @@ function showToast(msg, type = 'success') {
 }
 
 // ─── Check Action ────────────────────────────────────────────────
-function onCheck(key, isChecked) {
+function onCheck(key, isChecked, routeOverride = null) {
     let gasKey    = key;
     let incAmount = null;
 
@@ -648,11 +673,12 @@ function onCheck(key, isChecked) {
             collectedAmount: effectiveAmount(key, record), // 集金時点のExcel金額を記録
             cycleReset:      false, // 集金時点でリセットフラグをクリア
             gasKey,
+            routeOverride:   routeOverride || null, // 配達表でルート変更済みの場合に保存
             // 管理画面の履歴表示用スナップショット（data.js が更新されても記録が消えないよう保持）
             snapshot: record ? {
                 name:      record.name,
                 amount:    record.amount,
-                route:     record.route,
+                route:     routeOverride || record.route, // 変更後ルートをスナップショットにも反映
                 store:     record.store,
                 dataMonth: record.dataMonth,
             } : (checked[key]?.snapshot || null)
@@ -681,7 +707,8 @@ function onCheck(key, isChecked) {
         const sendAmount = incAmount !== null ? incAmount : effectiveAmount(key, record);
         postToGas(url, {
             action:      isChecked ? 'add' : 'remove',
-            record:      { ...record, key: gasKey, amount: sendAmount, checkedAt: state.checkedAt || '' },
+            record:      { ...record, key: gasKey, amount: sendAmount, checkedAt: state.checkedAt || '',
+                           route: state.routeOverride || record?.route }, // 変更後ルートをスプレッドシートにも反映
             collectDate: state.collectDate || ''
         });
 
@@ -1116,7 +1143,8 @@ function resetAll() {
     saveBankFailedKeys();
     saveTransferState();
     saveManualRecords();
-    allData = [...window.COLLECTION_DATA];
+    allData         = [...window.COLLECTION_DATA];
+    currentRouteMap = buildCurrentRouteMap();
     dirtyKeys.clear();
     renderTable();
 
@@ -1720,7 +1748,10 @@ function openDeliveryCollectDialog(groupKey) {
 
         list.querySelectorAll('.btn-collect-month').forEach(btn => {
             btn.addEventListener('click', () => {
-                onCheck(btn.dataset.key, true);
+                // 配達表でルート変更済みの場合は変更後のルート、未変更の場合は配達レコードのルートを引き継ぐ
+                // （前月データなどルートが異なる月の集金も、現在の配達ルートで管理画面に計上されるようにする）
+                const activeOverride = deliveryRouteOverrides[groupKey];
+                onCheck(btn.dataset.key, true, activeOverride?.route ?? dRec.route);
                 btn.closest('.delivery-collect-row').remove();
                 if (!list.querySelector('.delivery-collect-row')) {
                     list.innerHTML = '<div class="delivery-collect-empty">未集金レコードはありません</div>';
@@ -1798,14 +1829,14 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
         const safeId  = `${date.replace(/-/g, '')}${mo.replace(/-/g, '')}`;
         let moRowTotal = 0;
 
-        const moItems = dateItems.filter(({ record: r }) => r.dataMonth === mo && r.route > 0);
+        const moItems = dateItems.filter(({ record: rec, _effectiveRoute }) => rec.dataMonth === mo && (_effectiveRoute ?? rec.route) > 0);
 
         html += `<tr class="month-subtotal-row">`;
         html += `<th class="row-header clickable-row" data-toggle-id="${safeId}" onclick="toggleMonthDetail('${safeId}')">${moLabel} ▶</th>`;
         for (const r of routes) {
             const amt     = (routeMonthData[r]?.[mo]) || 0;
             moRowTotal   += amt;
-            const rItems  = moItems.filter(({ record }) => record.route === r);
+            const rItems  = moItems.filter(({ _effectiveRoute, record: rec }) => (_effectiveRoute ?? rec.route) === r);
             const safeRId = `${safeId}r${r}`;
             if (amt > 0 && rItems.length > 0) {
                 html += `<td class="has-value clickable-cell" data-toggle-id="${safeRId}" onclick="toggleRouteDetail('${safeRId}')">${fmt(amt)} ▶</td>`;
@@ -1816,7 +1847,7 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
         html += `<td class="total-cell">${fmt(moRowTotal)}</td></tr>`;
 
         for (const r of routes) {
-            const rItems = moItems.filter(({ record }) => record.route === r);
+            const rItems = moItems.filter(({ _effectiveRoute, record: rec }) => (_effectiveRoute ?? rec.route) === r);
             if (rItems.length === 0) continue;
             const safeRId = `${safeId}r${r}`;
             html += `<tr class="detail-row hidden" data-detail-id="${safeRId}" data-month-group="${safeId}">`;
@@ -1968,14 +1999,15 @@ function renderAdmin() {
     for (const item of checkedItems) {
         const { key, record, state } = item;
         const d  = toJSTDate(state.checkedAt) || '不明';
-        const r  = record.route > 0 ? record.route : null;
+        const effectiveRte = state.routeOverride || currentRouteMap[record.store + '|' + record.name] || record.route;
+        const r  = effectiveRte > 0 ? effectiveRte : null;
         const mo = record.dataMonth || '不明';
         if (!r) continue;
         if (!byDateRouteMonth[d]) byDateRouteMonth[d] = {};
         if (!byDateRouteMonth[d][r]) byDateRouteMonth[d][r] = {};
         byDateRouteMonth[d][r][mo] = (byDateRouteMonth[d][r][mo] || 0) + effectiveAmount(key, record);
         if (!byDate[d]) byDate[d] = [];
-        byDate[d].push(item);
+        byDate[d].push({ ...item, _effectiveRoute: r });
     }
 
     // 連絡事項を日付でグループ化
@@ -2093,6 +2125,17 @@ function saveDenomDialog() {
     const key = `${currentDenomDate}|${currentDenomRoute}`;
     storage[key] = { counts, expected, savedAt: new Date().toISOString() };
     saveDenomStorage(storage);
+
+    // GAS に送信して他端末と共有
+    const url = getGasUrl();
+    if (url) {
+        postToGas(url, {
+            action: 'saveDenom',
+            key,
+            data: { counts, expected, savedAt: storage[key].savedAt, date: currentDenomDate, route: currentDenomRoute }
+        });
+    }
+
     closeDenomDialog();
     renderAdmin();
 }
@@ -2454,6 +2497,40 @@ async function syncCheckboxes() {
                 if (currentTab === 'admin') renderAdmin();
             }
         }
+
+        // 現金精査データをリモートとマージ（新しい savedAt を優先）
+        if (json.denomData) {
+            const local = loadDenomStorage();
+            let denomChanged = false;
+            Object.entries(json.denomData).forEach(([key, remote]) => {
+                const localEntry = local[key];
+                if (!localEntry || (remote.savedAt && (!localEntry.savedAt || remote.savedAt > localEntry.savedAt))) {
+                    local[key] = remote;
+                    denomChanged = true;
+                }
+            });
+            if (denomChanged) {
+                saveDenomStorage(local);
+                if (currentTab === 'admin') renderAdmin();
+            }
+        }
+
+        // ルートオーバーライドをリモートと同期
+        if (json.routeOverrides) {
+            alert('[sync] routeOverrides受信: ' + Object.keys(json.routeOverrides).length + '件\n' + JSON.stringify(json.routeOverrides).slice(0, 200));
+            const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+            let changed = false;
+            Object.entries(json.routeOverrides).forEach(([gk, ov]) => {
+                if (ov.date === today && !deliveryRouteOverrides[gk]) {
+                    deliveryRouteOverrides[gk] = ov;
+                    changed = true;
+                }
+            });
+            if (changed) {
+                localStorage.setItem(DELIVERY_ROUTE_OVERRIDE_KEY, JSON.stringify(deliveryRouteOverrides));
+                renderDelivery();
+            }
+        }
     } catch (e) { console.error('同期失敗', e); }
 }
 
@@ -2505,7 +2582,8 @@ async function startApp() {
 
     manualRecords   = loadManualRecords();
     allData         = [...window.COLLECTION_DATA, ...manualRecords];
-    deliveryData           = window.DELIVERY_DATA || [];
+    deliveryData    = window.DELIVERY_DATA || [];
+    currentRouteMap = buildCurrentRouteMap();
     deliveryChecked        = loadDeliveryChecked();
     deliveryRouteOverrides = loadDeliveryRouteOverrides();
 

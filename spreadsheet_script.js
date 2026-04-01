@@ -50,8 +50,15 @@ const DELIVERY_SHEET   = '配達時刻';
 const DELIVERY_HEADERS = ['店舗', 'ルート', '名前', '住所', '配達日時'];
 const DELIVERY_COL_WIDTHS = [100, 60, 160, 260, 160];
 
+const ROUTE_OVERRIDE_SHEET   = 'ルート変更';
+const ROUTE_OVERRIDE_HEADERS = ['日付', 'グループキー', 'ルート番号', 'データ生成時刻'];
+
+const DENOM_SHEET   = '現金精査';
+const DENOM_HEADERS = ['日付', 'ルート', '精査データ', '保存日時', 'キー'];
+const DENOM_COL_WIDTHS = [100, 60, 500, 160, 1];
+
 // doGet でチェックデータ読み取りをスキップするシート名
-const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET]);
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET]);
 
 // ─── 診断ログ（デバッグ用）────────────────────────────
 function writeDebugLog(ss, action, note) {
@@ -234,6 +241,32 @@ function doPost(e) {
       ]);
       sortDeliverySheet(sheet);
 
+    // ── ルートオーバーライド保存 ──
+    } else if (action === 'setRouteOverrides') {
+      const overrides = payload.overrides || {};
+      const today = Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy-MM-dd');
+      const sheet = getOrCreateSheet(ss, ROUTE_OVERRIDE_SHEET, ROUTE_OVERRIDE_HEADERS, '#7c3aed', [100, 320, 80, 200], false);
+      // 既存の全行を削除して書き直す（今日分のみ保持）
+      const lastRow = sheet.getLastRow();
+      if (lastRow > 1) sheet.deleteRows(2, lastRow - 1);
+      Object.entries(overrides).forEach(([gk, ov]) => {
+        if (ov.date === today) {
+          sheet.appendRow([today, gk, ov.route, ov.dataGeneratedAt || '']);
+        }
+      });
+
+    // ── 現金精査 保存 ──
+    } else if (action === 'saveDenom') {
+      const sheet = getOrCreateSheet(ss, DENOM_SHEET, DENOM_HEADERS, '#0f766e', DENOM_COL_WIDTHS);
+      const data  = payload.data || {};
+      upsertRow(sheet, payload.key, [
+        data.date    || '',
+        data.route   || '',
+        JSON.stringify({ counts: data.counts || {}, expected: data.expected || 0 }),
+        data.savedAt || '',
+        payload.key,
+      ]);
+
     // ── 全リセット ──
     } else if (action === 'resetAll') {
       // 現金集金シート（口座振替・振込入金・連絡事項以外）のデータ行を全削除
@@ -346,8 +379,42 @@ function doGet(e) {
       }
     }
 
+    // ルートオーバーライドを読み込む（今日分のみ）
+    const today2 = Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy-MM-dd');
+    let routeOverrides = {};
+    const roSheet = ss.getSheetByName(ROUTE_OVERRIDE_SHEET);
+    if (roSheet && roSheet.getLastRow() >= 2) {
+      const roRows = roSheet.getRange(2, 1, roSheet.getLastRow() - 1, 4).getValues();
+      roRows.forEach(([date, gk, route, dataGenAt]) => {
+        if (date === today2 && gk) {
+          routeOverrides[String(gk)] = { route: Number(route), date: today2, dataGeneratedAt: String(dataGenAt) };
+        }
+      });
+    }
+
+    // 現金精査データを読み込む（キー → { counts, expected, date, route, savedAt }）
+    // DENOM_HEADERS: 日付(1) / ルート(2) / 精査データJSON(3) / 保存日時(4) / キー(5)
+    const denomSheetR = ss.getSheetByName(DENOM_SHEET);
+    const denomData = {};
+    if (denomSheetR && denomSheetR.getLastRow() >= 2) {
+      const rows = denomSheetR.getRange(2, 1, denomSheetR.getLastRow() - 1, 5).getValues();
+      for (const [date, route, jsonStr, savedAt, key] of rows) {
+        if (!key || !jsonStr) continue;
+        try {
+          const parsed = JSON.parse(String(jsonStr));
+          denomData[String(key)] = {
+            counts:   parsed.counts   || {},
+            expected: parsed.expected || 0,
+            date:     String(date),
+            route:    Number(route),
+            savedAt:  String(savedAt),
+          };
+        } catch(_) {}
+      }
+    }
+
     return ContentService
-      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages }))
+      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (err) {
