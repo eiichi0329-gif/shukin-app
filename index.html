@@ -111,12 +111,7 @@
 
         <!-- 集計 タブ -->
         <div id="tab-admin" class="hidden">
-            <div class="admin-filter-bar">
-                <label class="admin-filter-label">ルート</label>
-                <select id="admin-route-filter" class="sel-filter" onchange="filterAdminByRoute(this.value)">
-                    <option value="0">全ルート</option>
-                </select>
-            </div>
+            <div id="admin-route-btns" class="admin-route-btns"></div>
             <div class="admin-wrap">
                 <div class="admin-section">
                     <div class="admin-title">集計表（ルート × 月）</div>

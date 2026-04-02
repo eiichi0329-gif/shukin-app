@@ -163,7 +163,6 @@ let filters = { store: '', month: '', route: '', payment: 'cash', search: '', un
 let currentTab = 'delivery';
 let expandedCell = null;  // { route, month } for admin detail
 let adminRouteFilter = 0;    // 管理画面ルートフィルター（0=全ルート）
-let _adminOptionsStore = null; // オプション構築済みの店舗（再構築不要判定用）
 let deliveryData           = [];
 let deliveryChecked        = {};
 let deliveryRouteOverrides = {};
@@ -2097,18 +2096,19 @@ function renderAdmin() {
     const content  = document.getElementById('admin-content');
     const storeVal = filters.store;
 
-    // ルートフィルター選択肢：店舗が変わった時だけ再構築（それ以外は触らない）
+    // ルートフィルターボタン生成
     const srcRecords = storeVal ? allData.filter(r => r.store === storeVal) : allData;
     const allRoutes = [...new Set(srcRecords.map(r => r.route).filter(r => r > 0))].sort((a, b) => a - b);
-    const routeSel = document.getElementById('admin-route-filter');
-    if (routeSel && _adminOptionsStore !== storeVal) {
-        _adminOptionsStore = storeVal;
-        routeSel.innerHTML = '<option value="0">全ルート</option>' +
-            allRoutes.map(r => `<option value="${r}">R${r}</option>`).join('');
-        if (!allRoutes.includes(adminRouteFilter)) adminRouteFilter = 0;
-        routeSel.value = String(adminRouteFilter);
-    }
+    if (!allRoutes.includes(adminRouteFilter)) adminRouteFilter = 0;
     const routeFilter = adminRouteFilter;
+    const routeBtns = document.getElementById('admin-route-btns');
+    if (routeBtns) {
+        routeBtns.innerHTML =
+            `<button class="admin-route-btn${routeFilter === 0 ? ' active' : ''}" onclick="filterAdminByRoute(0)">全ルート</button>` +
+            allRoutes.map(r =>
+                `<button class="admin-route-btn${routeFilter === r ? ' active' : ''}" onclick="filterAdminByRoute(${r})">R${r}</button>`
+            ).join('');
+    }
     const routes = routeFilter > 0 ? [routeFilter] : allRoutes;
 
     // 集金データを日付でグループ化
@@ -2893,7 +2893,7 @@ async function startApp() {
         saveFilters();
         renderTable();
         if (currentTab === 'msg')      renderMsgTab();
-        if (currentTab === 'admin')    { adminRouteFilter = 0; _adminOptionsStore = null; renderAdmin(); }
+        if (currentTab === 'admin')    { adminRouteFilter = 0; renderAdmin(); }
         if (currentTab === 'delivery') renderDelivery();
     });
     document.getElementById('filter-month').addEventListener('change', e => {
