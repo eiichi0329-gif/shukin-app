@@ -162,6 +162,8 @@ let currentRouteMap = {};  // "store|name" → 現在のルート番号（月を
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'delivery';
 let expandedCell = null;  // { route, month } for admin detail
+let adminRouteFilter = 0;    // 管理画面ルートフィルター（0=全ルート）
+let _adminOptionsStore = null; // オプション構築済みの店舗（再構築不要判定用）
 let deliveryData           = [];
 let deliveryChecked        = {};
 let deliveryRouteOverrides = {};
@@ -1136,6 +1138,7 @@ function saveRowEdit() {
     closeRowEdit();
     renderFilters();
     renderTable();
+    if (!document.getElementById('tab-admin').classList.contains('hidden')) renderAdmin();
 }
 
 // ─── Admin Actions Toggle ────────────────────────────────────────
@@ -1965,7 +1968,7 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
                     for (const { key, record } of rItems) {
                         const effAmt = effectiveAmount(key, record);
                         const isModified = amountOverrides[key] !== undefined;
-                        html += `<div class="detail-item">`;
+                        html += `<div class="detail-item" data-key="${escHtml(key)}">`;
                         html += `<span class="detail-name">${escHtml(record.name)}</span>`;
                         html += `<span class="detail-amount editable-amount${isModified ? ' amount-modified' : ''}" data-key="${escHtml(key)}" title="タップして金額を修正" onclick="startAmountEdit(this)">${fmt(effAmt)}&#9998;</span>`;
                         html += `</div>`;
@@ -2085,9 +2088,28 @@ function startAmountEdit(span) {
     input.select();
 }
 
+function filterAdminByRoute(val) {
+    adminRouteFilter = parseInt(val) || 0;
+    renderAdmin();
+}
+
 function renderAdmin() {
     const content  = document.getElementById('admin-content');
     const storeVal = filters.store;
+
+    // ルートフィルター選択肢：店舗が変わった時だけ再構築（それ以外は触らない）
+    const srcRecords = storeVal ? allData.filter(r => r.store === storeVal) : allData;
+    const allRoutes = [...new Set(srcRecords.map(r => r.route).filter(r => r > 0))].sort((a, b) => a - b);
+    const routeSel = document.getElementById('admin-route-filter');
+    if (routeSel && _adminOptionsStore !== storeVal) {
+        _adminOptionsStore = storeVal;
+        routeSel.innerHTML = '<option value="0">全ルート</option>' +
+            allRoutes.map(r => `<option value="${r}">R${r}</option>`).join('');
+        if (!allRoutes.includes(adminRouteFilter)) adminRouteFilter = 0;
+        routeSel.value = String(adminRouteFilter);
+    }
+    const routeFilter = adminRouteFilter;
+    const routes = routeFilter > 0 ? [routeFilter] : allRoutes;
 
     // 集金データを日付でグループ化
     const checkedItems = [];
@@ -2097,11 +2119,10 @@ function renderAdmin() {
         const record = allData.find(r => getKey(r) === key) || state.snapshot || null;
         if (!record) continue;
         if (storeVal && record.store !== storeVal) continue;
+        const effectiveRte = state.routeOverride || currentRouteMap[record.store + '|' + record.name] || record.route;
+        if (routeFilter > 0 && effectiveRte !== routeFilter) continue;
         checkedItems.push({ key, record, state });
     }
-
-    const srcRecords = storeVal ? allData.filter(r => r.store === storeVal) : allData;
-    const routes = [...new Set(srcRecords.map(r => r.route).filter(r => r > 0))].sort((a, b) => a - b);
 
     const byDateRouteMonth = {};
     const byDate = {};
@@ -2121,7 +2142,8 @@ function renderAdmin() {
 
     // 連絡事項を日付でグループ化
     const allMsgs = loadAllMessages();
-    const filteredMsgs = storeVal ? allMsgs.filter(m => m.store === storeVal) : allMsgs;
+    let filteredMsgs = storeVal ? allMsgs.filter(m => m.store === storeVal) : allMsgs;
+    if (routeFilter > 0) filteredMsgs = filteredMsgs.filter(m => parseInt(m.route) === routeFilter);
     const msgsByDate = {};
     filteredMsgs.forEach(m => {
         const parsed = m.createdAt ? new Date(m.createdAt) : null;
@@ -2148,6 +2170,26 @@ function renderAdmin() {
         }
     }
     content.innerHTML = html;
+
+    // 明細行ダブルタップ → row-edit-dialog
+    let _adminLastTapKey = null, _adminLastTapTime = 0;
+    content.querySelectorAll('.detail-item[data-key]').forEach(item => {
+        item.addEventListener('dblclick', e => {
+            if (e.target.closest('input, button')) return;
+            openRowEdit(item.dataset.key);
+        });
+        item.addEventListener('click', e => {
+            if (e.target.closest('input, button, .editable-amount')) return;
+            const now = Date.now();
+            if (_adminLastTapKey === item.dataset.key && now - _adminLastTapTime < 400) {
+                openRowEdit(item.dataset.key);
+                _adminLastTapKey = null;
+            } else {
+                _adminLastTapKey = item.dataset.key;
+                _adminLastTapTime = now;
+            }
+        });
+    });
 
     // 連絡事項チェックボックス
     content.querySelectorAll('.admin-msg-check').forEach(cb => {
@@ -2851,7 +2893,7 @@ async function startApp() {
         saveFilters();
         renderTable();
         if (currentTab === 'msg')      renderMsgTab();
-        if (currentTab === 'admin')    renderAdmin();
+        if (currentTab === 'admin')    { adminRouteFilter = 0; _adminOptionsStore = null; renderAdmin(); }
         if (currentTab === 'delivery') renderDelivery();
     });
     document.getElementById('filter-month').addEventListener('change', e => {
