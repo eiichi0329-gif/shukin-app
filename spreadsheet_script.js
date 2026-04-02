@@ -178,6 +178,19 @@ function doPost(e) {
       const idx = ids.indexOf(msgId);
       if (idx >= 0) sheet.deleteRow(idx + 2);
 
+    // ── 連絡事項 編集 ──
+    } else if (action === 'updateMessage') {
+      const msgId   = payload.messageId;
+      const newText = payload.text;
+      if (!msgId || newText === undefined) return ok();
+      const sheet = ss.getSheetByName(MSG_SHEET);
+      if (!sheet) return ok();
+      const lastRow = sheet.getLastRow();
+      if (lastRow < 2) return ok();
+      const ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues().flat();
+      const idx = ids.indexOf(msgId);
+      if (idx >= 0) sheet.getRange(idx + 2, 5).setValue(newText); // 5列目がテキスト列
+
     // ── 金額修正 ──
     } else if (action === 'updateAmount') {
       const key       = payload.key;

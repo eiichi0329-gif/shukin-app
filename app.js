@@ -2177,9 +2177,12 @@ function openDenomDialog(date, route) {
     document.getElementById('denom-expected-amount').textContent = '¥' + fmt(expected);
     document.getElementById('denom-expected-val').value = expected;
 
-    // 保存済みの枚数を読み込む
-    const storage = loadDenomStorage();
-    const counts  = storage[cashKey]?.counts || {};
+    // 保存済みの枚数を読み込む（当日保存分のみ。日付が変わったらクリア）
+    const storage   = loadDenomStorage();
+    const saved     = storage[cashKey];
+    const todayStr  = new Date().toLocaleDateString('sv');   // "YYYY-MM-DD" ローカル時刻
+    const savedDate = saved?.savedAt ? new Date(saved.savedAt).toLocaleDateString('sv') : null;
+    const counts    = (saved && savedDate === todayStr) ? saved.counts : {};
 
     // 紙幣・硬貨パネルを描画
     const renderPanel = (containerId, values) => {
@@ -2475,6 +2478,53 @@ function deleteMessage(id) {
     if (typeof renderAdmin === 'function') renderAdmin();
 }
 
+// ─── 連絡事項 インライン編集 ──────────────────────────────────────
+function handleMsgTouchEnd(e, el, id) {
+    const now  = Date.now();
+    const last = parseInt(el.dataset.lastTap || 0);
+    if (now - last < 350) {
+        e.preventDefault();
+        startEditMessage(el, id);
+    }
+    el.dataset.lastTap = now;
+}
+
+function startEditMessage(el, id) {
+    if (el.querySelector('textarea')) return; // 編集中なら無視
+    const original = loadAllMessages().find(m => m.id === id)?.text || '';
+    el.dataset.origHtml = el.innerHTML;
+    el.innerHTML =
+        `<textarea class="msg-edit-textarea">${escHtml(original)}</textarea>` +
+        `<div class="msg-edit-actions">` +
+        `<button class="msg-edit-save" onclick="saveEditMessage('${id}',this)">保存</button>` +
+        `<button class="msg-edit-cancel" onclick="cancelEditMessage(this)">キャンセル</button>` +
+        `</div>`;
+    el.querySelector('textarea').focus();
+}
+
+function saveEditMessage(id, btn) {
+    const el      = btn.closest('.admin-msg-item-text');
+    const newText = el.querySelector('textarea').value.trim();
+    if (!newText) return;
+
+    const msgs = loadAllMessages();
+    const msg  = msgs.find(m => m.id === id);
+    if (!msg) return;
+    msg.text = newText;
+    saveMessages(msgs);
+
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'updateMessage', messageId: id, text: newText });
+
+    renderMsgTab();
+    if (typeof renderAdmin === 'function') renderAdmin();
+}
+
+function cancelEditMessage(btn) {
+    const el = btn.closest('.admin-msg-item-text');
+    el.innerHTML = el.dataset.origHtml || '';
+}
+
 function buildDailyMessages(date, msgs) {
     const parts = date.split('-');
     const dateLabel = (parts.length === 3 && parts[1] && parts[2])
@@ -2503,7 +2553,10 @@ function buildDailyMessages(date, msgs) {
                     <span class="admin-msg-item-date">${fmtMsgTime(m.createdAt)}</span>
                     <button class="msg-item-del" onclick="deleteMessage('${m.id}')">削除</button>
                 </div>
-                <div class="admin-msg-item-text">${escHtml(m.text)}${imgHtml}</div>
+                <div class="admin-msg-item-text" data-msg-id="${escHtml(m.id)}"
+                    ondblclick="startEditMessage(this,'${m.id}')"
+                    ontouchend="handleMsgTouchEnd(event,this,'${m.id}')"
+                >${escHtml(m.text)}${imgHtml}</div>
             </div>
         </div>`;
     });
