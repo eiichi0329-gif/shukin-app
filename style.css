@@ -187,19 +187,6 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 
 
 /* ── 管理画面 ─────────────────────────────────────────────── */
-.admin-route-btns {
-  display: flex; flex-wrap: wrap; gap: 6px;
-  padding: 8px 14px; background: var(--g50, #fafafa);
-  border-bottom: 1px solid var(--g100);
-}
-.admin-route-btn {
-  padding: 5px 12px; border-radius: 16px; border: 1px solid var(--g300);
-  background: white; font-size: 13px; font-weight: 600; color: var(--g600);
-  cursor: pointer;
-}
-.admin-route-btn.active {
-  background: var(--primary); color: white; border-color: var(--primary);
-}
 .admin-wrap { padding: 14px; }
 .admin-section { margin-bottom: 24px; }
 .admin-title {

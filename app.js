@@ -162,7 +162,6 @@ let currentRouteMap = {};  // "store|name" → 現在のルート番号（月を
 let filters = { store: '', month: '', route: '', payment: 'cash', search: '', uncollectedOnly: true };
 let currentTab = 'delivery';
 let expandedCell = null;  // { route, month } for admin detail
-let adminRouteFilter = 0;    // 管理画面ルートフィルター（0=全ルート）
 let deliveryData           = [];
 let deliveryChecked        = {};
 let deliveryRouteOverrides = {};
@@ -2087,28 +2086,14 @@ function startAmountEdit(span) {
     input.select();
 }
 
-function filterAdminByRoute(val) {
-    adminRouteFilter = parseInt(val) || 0;
-    renderAdmin();
-}
 
 function renderAdmin() {
     const content  = document.getElementById('admin-content');
     const storeVal = filters.store;
 
-    // ルートフィルターボタン生成
+    const routeFilter = parseInt(filters.route) || 0;
     const srcRecords = storeVal ? allData.filter(r => r.store === storeVal) : allData;
     const allRoutes = [...new Set(srcRecords.map(r => r.route).filter(r => r > 0))].sort((a, b) => a - b);
-    if (!allRoutes.includes(adminRouteFilter)) adminRouteFilter = 0;
-    const routeFilter = adminRouteFilter;
-    const routeBtns = document.getElementById('admin-route-btns');
-    if (routeBtns) {
-        routeBtns.innerHTML =
-            `<button class="admin-route-btn${routeFilter === 0 ? ' active' : ''}" onclick="filterAdminByRoute(0)">全ルート</button>` +
-            allRoutes.map(r =>
-                `<button class="admin-route-btn${routeFilter === r ? ' active' : ''}" onclick="filterAdminByRoute(${r})">R${r}</button>`
-            ).join('');
-    }
     const routes = routeFilter > 0 ? [routeFilter] : allRoutes;
 
     // 集金データを日付でグループ化
@@ -2893,7 +2878,7 @@ async function startApp() {
         saveFilters();
         renderTable();
         if (currentTab === 'msg')      renderMsgTab();
-        if (currentTab === 'admin')    { adminRouteFilter = 0; renderAdmin(); }
+        if (currentTab === 'admin')    renderAdmin();
         if (currentTab === 'delivery') renderDelivery();
     });
     document.getElementById('filter-month').addEventListener('change', e => {
@@ -2906,6 +2891,7 @@ async function startApp() {
         saveFilters();
         renderTable();
         if (currentTab === 'msg')      renderMsgTab();
+        if (currentTab === 'admin')    renderAdmin();
         if (currentTab === 'delivery') renderDelivery();
     });
     document.getElementById('filter-payment').addEventListener('change', e => {
