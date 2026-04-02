@@ -174,8 +174,20 @@ const MSG_READ_KEY                = 'coll-msg-read-v1';
 function loadMsgRead() { try { return new Set(JSON.parse(localStorage.getItem(MSG_READ_KEY) || '[]')); } catch { return new Set(); } }
 function saveMsgRead(s) { localStorage.setItem(MSG_READ_KEY, JSON.stringify([...s])); }
 
-function loadDeliveryChecked()  { try { return JSON.parse(localStorage.getItem(DELIVERY_CHECK_KEY) || '{}'); } catch { return {}; } }
-function saveDeliveryChecked()  { localStorage.setItem(DELIVERY_CHECK_KEY, JSON.stringify(deliveryChecked)); }
+function loadDeliveryChecked() {
+    try {
+        const dataGenAt = window.DATA_META?.generatedAt || '';
+        const stored = JSON.parse(localStorage.getItem(DELIVERY_CHECK_KEY) || '{}');
+        // _dataGeneratedAt が設定されていて現在の data.js と異なる場合はクリア（データ更新時にリセット）
+        if (stored._dataGeneratedAt && stored._dataGeneratedAt !== dataGenAt) return {};
+        const { _dataGeneratedAt, ...data } = stored;
+        return data;
+    } catch { return {}; }
+}
+function saveDeliveryChecked() {
+    const dataGenAt = window.DATA_META?.generatedAt || '';
+    localStorage.setItem(DELIVERY_CHECK_KEY, JSON.stringify({ _dataGeneratedAt: dataGenAt, ...deliveryChecked }));
+}
 function getDeliveryKey(r)      { return `${r.store}|${r.dataMonth}|${r.code}|${r.name}`; }
 
 function loadDeliveryRouteOverrides() {
