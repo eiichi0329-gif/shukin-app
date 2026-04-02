@@ -1615,17 +1615,24 @@ function onDeliveryCheck(groupKey, btnEl) {
     if (deliveryChecked[groupKey]) {
         delete deliveryChecked[groupKey];
         showToast(`${record.name} — 配達済みを取消`, 'info');
+        markDirty(groupKey);
+        const url = getGasUrl();
+        if (url) {
+            postToGas(url, { action: 'removeDelivery', groupKey });
+        }
     } else {
         const now = new Date().toISOString();
         deliveryChecked[groupKey] = { checkedAt: now };
         showToast(`✓ ${record.name} — 配達済みにしました`, 'success');
-
+        markDirty(groupKey);
         const url = getGasUrl();
         if (url) {
             postToGas(url, {
                 action:      'addDelivery',
+                groupKey:    groupKey,
                 store:       record.store,
                 route:       record.route,
+                dataMonth:   record.dataMonth,
                 name:        record.name,
                 address:     record.address,
                 deliveredAt: now,
@@ -1999,7 +2006,9 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
             let seisaStatus = '';
             if (dd) {
                 const denomTotal = calcDenomTotal(dd.counts);
-                const diff = denomTotal - cash;
+                // 保存時の目標額（dd.expected）と比較。syncCheckboxes 等で cash が再計算されても不一致にならない
+                const target = (dd.expected != null && dd.expected > 0) ? dd.expected : cash;
+                const diff = denomTotal - target;
                 if (diff === 0) {
                     seisaStatus = `<div class="seisa-status seisa-ok">合致 ✓</div>`;
                 } else {
@@ -2144,10 +2153,12 @@ function openDenomDialog(date, route) {
     currentDenomDate  = date;
     currentDenomRoute = route;
 
-    // ルートの手持ち現金を .cash-amount から取得
+    // ルートの手持ち現金を data-base 属性 + changeAmounts から計算（DOM テキストパース依存を排除）
     const cashKey  = `${date}|${route}`;
-    const amountEl = document.querySelector(`.cash-cell[data-cash-key="${cashKey}"] .cash-amount`);
-    const expected = amountEl ? (parseInt(amountEl.textContent.replace(/,/g, '')) || 0) : 0;
+    const cashCell = document.querySelector(`.cash-cell[data-cash-key="${cashKey}"]`);
+    const base     = parseInt(cashCell?.dataset.base) || 0;
+    const ca       = getChangeAmounts()[cashKey] !== undefined ? getChangeAmounts()[cashKey] : 12220;
+    const expected = base + ca;
 
     const [, m, day] = date.split('-');
     document.getElementById('denom-title').textContent = `💰 現金精査（${parseInt(m)}月${parseInt(day)}日　R${route}）`;
@@ -2632,6 +2643,30 @@ async function syncCheckboxes() {
             });
             if (changed) {
                 localStorage.setItem(DELIVERY_ROUTE_OVERRIDE_KEY, JSON.stringify(deliveryRouteOverrides));
+                if (currentTab === 'delivery') renderDelivery();
+            }
+        }
+
+        // 配達済みをリモート（今日分のみ）と同期
+        if (json.deliveryData !== undefined) {
+            const remote = json.deliveryData;
+            let changed = false;
+            Object.entries(remote).forEach(([key, val]) => {
+                if (dirtyKeys.has(key)) return; // 直後の操作は上書きしない
+                if (!deliveryChecked[key]) {
+                    deliveryChecked[key] = { checkedAt: val.checkedAt || new Date().toISOString() };
+                    changed = true;
+                }
+            });
+            // リモートにないキー（他端末で取消済み or 昨日分）を削除
+            Object.keys(deliveryChecked).forEach(key => {
+                if (!remote[key] && !dirtyKeys.has(key)) {
+                    delete deliveryChecked[key];
+                    changed = true;
+                }
+            });
+            if (changed) {
+                saveDeliveryChecked();
                 if (currentTab === 'delivery') renderDelivery();
             }
         }

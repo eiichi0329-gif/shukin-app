@@ -47,8 +47,8 @@ const ALLOWED_USERS_SHEET   = '許可ユーザー';
 const ALLOWED_USERS_HEADERS = ['店舗名', '名前', 'メールアドレス'];
 
 const DELIVERY_SHEET   = '配達時刻';
-const DELIVERY_HEADERS = ['店舗', 'ルート', '名前', '住所', '配達日時'];
-const DELIVERY_COL_WIDTHS = [100, 60, 160, 260, 160];
+const DELIVERY_HEADERS = ['店舗', 'ルート', '名前', '住所', '配達日時', 'キー'];
+const DELIVERY_COL_WIDTHS = [100, 60, 160, 260, 160, 1];
 
 const ROUTE_OVERRIDE_SHEET   = 'ルート変更';
 const ROUTE_OVERRIDE_HEADERS = ['日付', 'グループキー', 'ルート番号', 'データ生成時刻'];
@@ -224,22 +224,29 @@ function doPost(e) {
 
     // ── 配達時刻 記録 ──
     } else if (action === 'addDelivery') {
-      const sheet   = getOrCreateSheet(ss, DELIVERY_SHEET, DELIVERY_HEADERS, '#0f766e', DELIVERY_COL_WIDTHS, false);
+      const sheet   = getOrCreateSheet(ss, DELIVERY_SHEET, DELIVERY_HEADERS, '#0f766e', DELIVERY_COL_WIDTHS, true);
+      const groupKey = payload.groupKey || `${payload.store}|${payload.dataMonth || ''}|${payload.name}|${payload.address}`;
       let dateStr = '';
       try {
         dateStr = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy/MM/dd HH:mm');
       } catch(e) {
         dateStr = new Date().toISOString();
       }
-      writeDebugLog(ss, 'addDelivery', `dateStr=${dateStr} cols=${sheet.getLastColumn()}`);
-      sheet.appendRow([
+      writeDebugLog(ss, 'addDelivery', `dateStr=${dateStr}`);
+      upsertRow(sheet, groupKey, [
         payload.store   || '',
         payload.route   || '',
         payload.name    || '',
         payload.address || '',
         dateStr,
+        groupKey,
       ]);
       sortDeliverySheet(sheet);
+
+    // ── 配達済み取消 ──
+    } else if (action === 'removeDelivery') {
+      const sheet = ss.getSheetByName(DELIVERY_SHEET);
+      if (sheet && payload.groupKey) removeRow(sheet, payload.groupKey, DELIVERY_HEADERS.length);
 
     // ── ルートオーバーライド保存 ──
     } else if (action === 'setRouteOverrides') {
@@ -413,8 +420,29 @@ function doGet(e) {
       }
     }
 
+    // 配達済みデータを読み込む（今日分のみ返す）
+    const deliverySheetR2 = ss.getSheetByName(DELIVERY_SHEET);
+    const deliveryData = {};
+    const today3 = Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy/MM/dd');
+    if (deliverySheetR2 && deliverySheetR2.getLastRow() >= 2) {
+      const dRows = deliverySheetR2.getRange(2, 1, deliverySheetR2.getLastRow() - 1, 6).getValues();
+      for (const [, , , , deliveredAt, key] of dRows) {
+        if (!key) continue;
+        const dateStr = (deliveredAt instanceof Date)
+          ? Utilities.formatDate(deliveredAt, 'Asia/Tokyo', 'yyyy/MM/dd')
+          : String(deliveredAt).slice(0, 10).replace(/-/g, '/');
+        if (dateStr === today3) {
+          deliveryData[String(key)] = {
+            checkedAt: (deliveredAt instanceof Date)
+              ? Utilities.formatDate(deliveredAt, 'Asia/Tokyo', "yyyy-MM-dd'T'HH:mm:ss")
+              : String(deliveredAt),
+          };
+        }
+      }
+    }
+
     return ContentService
-      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData }))
+      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (err) {
