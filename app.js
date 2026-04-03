@@ -2540,9 +2540,13 @@ function saveEditMessage(id, btn) {
     msg.text = newText;
     saveMessages(msgs);
 
+    // 保存ボタンをすぐ消して更新後テキストを表示
+    el.innerHTML = escHtml(newText);
+
     const url = getGasUrl();
     if (url) postToGas(url, { action: 'updateMessage', messageId: id, text: newText });
 
+    showToast('連絡事項を保存しました', 'success');
     renderMsgTab();
     if (typeof renderAdmin === 'function') renderAdmin();
 }
