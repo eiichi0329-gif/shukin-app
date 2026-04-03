@@ -1346,7 +1346,7 @@ function renderDelivery() {
                                 .filter(r => { const k = getKey(r); return !isFullyCollected(k, r) && effectiveAmount(k, r) > 0; })
                                 .reduce((sum, r) => sum + effectiveAmount(getKey(r), r), 0);
                             const badge = prevAmt > 0
-                                ? `<span class="collect-prev-badge">未集金あり</span>`
+                                ? `<span class="collect-prev-badge">未</span>`
                                 : '';
                             return `<button class="btn-delivery-collect-open${prevAmt > 0 ? ' has-prev-uncollected' : ''}" data-group-key="${safeKey}">集金${badge}</button>`;
                         })()
