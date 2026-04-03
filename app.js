@@ -273,7 +273,9 @@ function markBankFailed(key) {
 }
 function unmarkBankFailed(key) {
     bankFailedKeys.delete(key);
+    delete bankState[key];
     saveBankFailedKeys();
+    saveBankState();
 }
 
 // ─── Amount Override State ────────────────────────────────────────
@@ -546,7 +548,7 @@ function renderTable() {
 
         let payBadge;
         if (isBankFailed) {
-            payBadge = '<span class="pay-badge pay-bank-failed">口振失敗</span>';
+            payBadge = `<span class="pay-badge pay-bank-failed" data-key="${key}" style="cursor:pointer" title="タップで口振失敗を解除">口振失敗</span>`;
         } else if (isBankCustomer) {
             payBadge = '<span class="pay-badge pay-bank">口振</span>';
         } else {
@@ -600,6 +602,16 @@ function renderTable() {
     // イベント登録（口振完了チェックボックス）
     tbody.querySelectorAll('input.bank-check').forEach(cb => {
         cb.addEventListener('change', () => onBankCheck(cb.dataset.key, cb.checked));
+    });
+
+    // イベント登録（口振失敗バッジ → タップで解除）
+    tbody.querySelectorAll('.pay-bank-failed[data-key]').forEach(badge => {
+        badge.addEventListener('click', () => {
+            const key = badge.dataset.key;
+            if (!confirm('口振失敗を解除して、口座振替（未処理）に戻しますか？')) return;
+            unmarkBankFailed(key);
+            renderTable();
+        });
     });
 
     // イベント登録（集金日）
@@ -2278,6 +2290,15 @@ function renderAdmin() {
             const s = loadMsgRead();
             if (cb.checked) s.add(cb.dataset.msgId); else s.delete(cb.dataset.msgId);
             saveMsgRead(s);
+            // GAS に既読状態を同期
+            const url = getGasUrl();
+            if (url) {
+                fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain' },
+                    body: JSON.stringify({ action: 'saveMsgRead', ids: [...s], savedAt: new Date().toISOString() }),
+                }).catch(() => {});
+            }
             cb.closest('.admin-msg-item').classList.toggle('admin-msg-item-read', cb.checked);
         });
     });
@@ -2712,7 +2733,8 @@ async function syncCheckboxes() {
                 if (dirtyKeys.has(key)) return; // 送信直後のキーは上書きしない
                 if (!checked[key]) {
                     // リモートから追加（スナップショットなし）
-                    checked[key] = { checkedAt: new Date().toISOString(), collectDate: val.collectDate || '', collectedAmount: val.collectedAmount || 0 };
+                    // collectDate がある場合はそれを checkedAt の基準にする（今日同期しても正しい日付に表示される）
+                    checked[key] = { checkedAt: val.collectDate || new Date().toISOString(), collectDate: val.collectDate || '', collectedAmount: val.collectedAmount || 0 };
                 } else {
                     // 既存エントリはスナップショットを保持しつつ、collectDate・collectedAmount を補完
                     if (!checked[key].collectDate && val.collectDate) {
@@ -2817,6 +2839,19 @@ async function syncCheckboxes() {
             });
             if (denomChanged) {
                 saveDenomStorage(local);
+                if (currentTab === 'admin') renderAdmin();
+            }
+        }
+
+        // 連絡事項既読をリモートとマージ（ユニオン：一度既読にしたら取り消さない）
+        if (Array.isArray(json.msgReadIds) && json.msgReadIds.length > 0) {
+            const local = loadMsgRead();
+            let msgReadChanged = false;
+            json.msgReadIds.forEach(id => {
+                if (!local.has(id)) { local.add(id); msgReadChanged = true; }
+            });
+            if (msgReadChanged) {
+                saveMsgRead(local);
                 if (currentTab === 'admin') renderAdmin();
             }
         }

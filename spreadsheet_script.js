@@ -57,8 +57,11 @@ const DENOM_SHEET   = '現金精査';
 const DENOM_HEADERS = ['日付', 'ルート', '精査データ', '保存日時', 'キー'];
 const DENOM_COL_WIDTHS = [100, 60, 500, 160, 1];
 
+const MSG_READ_SHEET   = '連絡事項既読';
+const MSG_READ_HEADERS = ['メッセージID', '保存日時'];
+
 // doGet でチェックデータ読み取りをスキップするシート名
-const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET]);
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET, MSG_READ_SHEET]);
 
 // ─── 診断ログ（デバッグ用）────────────────────────────
 function writeDebugLog(ss, action, note) {
@@ -287,6 +290,17 @@ function doPost(e) {
         payload.key,
       ]);
 
+    // ── 連絡事項 既読同期 ──
+    } else if (action === 'saveMsgRead') {
+      const sheet = getOrCreateSheet(ss, MSG_READ_SHEET, MSG_READ_HEADERS, '#1e40af', [200, 160]);
+      const ids     = payload.ids || [];
+      const savedAt = payload.savedAt || new Date().toISOString();
+      const lastRow = sheet.getLastRow();
+      if (lastRow > 1) sheet.deleteRows(2, lastRow - 1);
+      if (ids.length > 0) {
+        sheet.getRange(2, 1, ids.length, 2).setValues(ids.map(id => [String(id), savedAt]));
+      }
+
     // ── 全リセット ──
     } else if (action === 'resetAll') {
       // 現金集金シート（口座振替・振込入金・連絡事項以外）のデータ行を全削除
@@ -454,8 +468,16 @@ function doGet(e) {
       }
     }
 
+    // 連絡事項既読IDを読み込む
+    const msgReadSheetR = ss.getSheetByName(MSG_READ_SHEET);
+    const msgReadIds = [];
+    if (msgReadSheetR && msgReadSheetR.getLastRow() >= 2) {
+      const rows = msgReadSheetR.getRange(2, 1, msgReadSheetR.getLastRow() - 1, 1).getValues();
+      rows.forEach(([id]) => { if (id) msgReadIds.push(String(id)); });
+    }
+
     return ContentService
-      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData }))
+      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData, msgReadIds }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (err) {
