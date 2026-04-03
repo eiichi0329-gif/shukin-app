@@ -970,6 +970,13 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .btn-delivery-msg-open:hover    { background: var(--g200); }
 .btn-delivery-collect-open { background: #dcfce7; color: #166534; border-color: #86efac; }
 .btn-delivery-collect-open:hover { background: #bbf7d0; }
+.btn-delivery-collect-open.has-prev-uncollected { border-color: #f97316; }
+.collect-prev-badge {
+  display: inline-block; margin-left: 5px;
+  background: #ea580c; color: #fff;
+  font-size: 11px; font-weight: 700;
+  padding: 1px 6px; border-radius: 10px; vertical-align: middle;
+}
 .delivery-bank-label {
   font-size: 14px; font-weight: 600; color: #2563eb;
   background: #eff6ff; border: 1.5px solid #bfdbfe;

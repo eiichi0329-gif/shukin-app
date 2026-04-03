@@ -1266,6 +1266,8 @@ function renderDelivery() {
         return;
     }
 
+    const currentMonth = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' }).slice(0, 7);
+
     let html = '';
     data.forEach(m => {
         const isDone   = !!deliveryChecked[m.groupKey];
@@ -1338,7 +1340,16 @@ function renderDelivery() {
                     <button class="btn-delivery-msg-open" data-group-key="${safeKey}">連絡事項</button>
                     ${isBank
                         ? `<span class="delivery-bank-label">口座振替</span>`
-                        : `<button class="btn-delivery-collect-open" data-group-key="${safeKey}">集金</button>`
+                        : (() => {
+                            const prevAmt = allData
+                                .filter(r => r.name === m.name && r.store === m.store && r.dataMonth < currentMonth)
+                                .filter(r => { const k = getKey(r); return !isFullyCollected(k, r) && effectiveAmount(k, r) > 0; })
+                                .reduce((sum, r) => sum + effectiveAmount(getKey(r), r), 0);
+                            const badge = prevAmt > 0
+                                ? `<span class="collect-prev-badge">前月以前 ¥${prevAmt.toLocaleString()}</span>`
+                                : '';
+                            return `<button class="btn-delivery-collect-open${prevAmt > 0 ? ' has-prev-uncollected' : ''}" data-group-key="${safeKey}">集金${badge}</button>`;
+                        })()
                     }
                 </div>
             </div>
