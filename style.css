@@ -804,6 +804,13 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .ds-count-item {
   border-color: var(--g400); background: var(--g100); color: var(--g700);
 }
+/* その他の人の連絡事項ボタン */
+.btn-other-msg-open {
+  padding: 4px 10px; border-radius: 6px; border: 1.5px solid #93c5fd;
+  background: #eff6ff; color: #1d4ed8;
+  font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.btn-other-msg-open:hover { background: #dbeafe; }
 /* 配達進捗ポップアップ */
 #delivery-progress-popup {
   position: fixed;

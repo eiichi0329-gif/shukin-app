@@ -60,6 +60,7 @@
                         <span class="ds-item dtype-red"  >ご膳<strong id="ds-gozen">0</strong></span>
                         <span class="ds-item dtype-orange">ごはん<strong id="ds-gohan">0</strong></span>
                         <span class="ds-item ds-count-item">配達<strong id="ds-delivery-total">0</strong>件</span>
+                        <button class="btn-other-msg-open" onclick="openOtherDeliveryMsgDialog()">その他の人の連絡事項はこちら</button>
                     </div>
                 </div>
                 <button class="btn btn-admin-toggle" id="btn-admin-toggle" onclick="toggleAdminActions()">&#9881;</button>
@@ -289,6 +290,29 @@
             <div class="settings-actions">
                 <button class="btn btn-secondary" onclick="closeDeliveryMsgDialog()">キャンセル</button>
                 <button class="btn btn-primary"   onclick="submitDeliveryMsg()">送信</button>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- その他の人の連絡事項ダイアログ -->
+    <dialog id="other-msg-dialog" class="settings-dialog">
+        <div class="settings-inner">
+            <div class="settings-title">&#128172; その他の人の連絡事項</div>
+            <select id="other-msg-customer-select" class="msg-select">
+                <option value="">お客様を選択してください</option>
+            </select>
+            <select id="other-msg-type" class="msg-select">
+                <option value="">報告内容を選択してください</option>
+                <option value="注文">注文</option>
+                <option value="キャンセル">キャンセル</option>
+                <option value="変更">変更</option>
+                <option value="別紙参照">別紙参照</option>
+                <option value="口座振替依頼書提出">口座振替依頼書提出</option>
+            </select>
+            <textarea id="other-msg-text" class="msg-textarea" placeholder="自由記入（省略可）" rows="3"></textarea>
+            <div class="settings-actions">
+                <button class="btn btn-secondary" onclick="closeOtherMsgDialog()">キャンセル</button>
+                <button class="btn btn-primary"   onclick="submitOtherDeliveryMsg()">送信</button>
             </div>
         </div>
     </dialog>

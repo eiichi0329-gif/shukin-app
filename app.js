@@ -1318,8 +1318,8 @@ function renderDelivery() {
         const routeKey   = `${m.store}|${m.routes[0]}`;
         const isCompact  = deliveryCompactRoutes.has(routeKey);
         const checkBtn  = isDone
-            ? `<button class="btn-delivery-check btn-delivery-done" data-key="${safeKey}">&#10003; 配達済み${doneTime ? ' ' + doneTime : ''}（取消）</button>`
-            : `<button class="btn-delivery-check" data-key="${safeKey}">配達済み</button>`;
+            ? `<button class="btn-delivery-check btn-delivery-done" data-key="${safeKey}">&#10003; 配達完了${doneTime ? ' ' + doneTime : ''}（取消）</button>`
+            : `<button class="btn-delivery-check" data-key="${safeKey}">配達完了</button>`;
         const compactMapHtml = m.address
             ? `<a class="delivery-compact-map" href="${mapHref}" target="_blank" rel="noopener">&#128205;</a>`
             : '';
@@ -1627,7 +1627,7 @@ function onDeliveryCheck(groupKey, btnEl) {
 
     if (deliveryChecked[groupKey]) {
         delete deliveryChecked[groupKey];
-        showToast(`${record.name} — 配達済みを取消`, 'info');
+        showToast(`${record.name} — 配達完了を取消`, 'info');
         markDirty(groupKey);
         const url = getGasUrl();
         if (url) {
@@ -1636,7 +1636,7 @@ function onDeliveryCheck(groupKey, btnEl) {
     } else {
         const now = new Date().toISOString();
         deliveryChecked[groupKey] = { checkedAt: now };
-        showToast(`✓ ${record.name} — 配達済みにしました`, 'success');
+        showToast(`✓ ${record.name} — 配達完了にしました`, 'success');
         markDirty(groupKey);
         const url = getGasUrl();
         if (url) {
@@ -1820,6 +1820,91 @@ function submitDeliveryMsg() {
     const sentName = _deliveryMsgTarget.name;
     closeDeliveryMsgDialog();
     alert(`「${sentName}」の連絡事項を送信しました`);
+}
+
+// ─── Other Customer Message Dialog ───────────────────────────────
+function openOtherDeliveryMsgDialog() {
+    // 配達表に載っている人の名前セット（現在のフィルター適用）
+    const deliveryNames = new Set(
+        deliveryData
+            .filter(r => !filters.store || r.store === filters.store)
+            .filter(r => !filters.route || String(r.route) === filters.route)
+            .map(r => r.name)
+    );
+
+    // 集金リストから配達表にいないお客様を抽出
+    const seen = new Set();
+    const otherCustomers = allData.filter(r => {
+        if ((r.amount || 0) === 0) return false;
+        if (filters.store && r.store !== filters.store) return false;
+        const k = getKey(r);
+        const rte = effectiveRoute(k, r);
+        if (filters.route && String(rte) !== filters.route) return false;
+        if (deliveryNames.has(r.name)) return false;
+        const dedupeKey = `${r.store}|${rte}|${r.name}`;
+        if (seen.has(dedupeKey)) return false;
+        seen.add(dedupeKey);
+        return true;
+    }).sort((a, b) => {
+        const ka = getKey(a), kb = getKey(b);
+        const ra = effectiveRoute(ka, a), rb = effectiveRoute(kb, b);
+        if (ra !== rb) return ra - rb;
+        return (a.seq || 0) - (b.seq || 0);
+    });
+
+    if (otherCustomers.length === 0) {
+        showToast('配達表にないお客様はいません', 'info');
+        return;
+    }
+
+    const sel = document.getElementById('other-msg-customer-select');
+    sel.innerHTML = '<option value="">お客様を選択してください</option>' +
+        otherCustomers.map(r => {
+            const k = getKey(r);
+            const rte = effectiveRoute(k, r);
+            return `<option value="${escHtml(k)}" data-store="${escHtml(r.store)}" data-route="${rte}" data-name="${escHtml(r.name)}">R${rte} ${escHtml(r.name)}</option>`;
+        }).join('');
+
+    document.getElementById('other-msg-type').value = '';
+    document.getElementById('other-msg-text').value = '';
+    document.getElementById('other-msg-dialog').showModal();
+}
+
+function closeOtherMsgDialog() {
+    document.getElementById('other-msg-dialog').close();
+}
+
+function submitOtherDeliveryMsg() {
+    const sel = document.getElementById('other-msg-customer-select');
+    if (!sel.value) { alert('お客様を選択してください'); return; }
+    const opt     = sel.selectedOptions[0];
+    const typeVal = document.getElementById('other-msg-type').value;
+    const freeText = document.getElementById('other-msg-text').value.trim();
+    if (!typeVal && !freeText) { alert('報告内容を選択するか、自由入力欄に入力してください'); return; }
+
+    const parts = [];
+    if (typeVal)  parts.push(typeVal);
+    if (freeText) parts.push(freeText);
+
+    const msg = {
+        id:           Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        store:        opt.dataset.store,
+        route:        parseInt(opt.dataset.route),
+        customerKey:  sel.value,
+        customerName: opt.dataset.name,
+        text:         parts.join('\n'),
+        createdAt:    new Date().toISOString(),
+    };
+
+    const msgs = loadAllMessages();
+    msgs.push(msg);
+    saveMessages(msgs);
+
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'addMessage', message: msg });
+
+    closeOtherMsgDialog();
+    showToast(`「${opt.dataset.name}」の連絡事項を送信しました`, 'success');
 }
 
 // ─── Delivery Collect Dialog ─────────────────────────────────────
