@@ -459,7 +459,18 @@ function filteredData() {
         const effPayment = effectivePaymentType(r);
 
         if (filters.store   && r.store                                !== filters.store)   return false;
-        if (filters.month   && r.dataMonth                          !== filters.month)   return false;
+        if (filters.month === '__action_required__') {
+            // 要対応：今月の2か月前以前の未集金を表示
+            const now = new Date();
+            const thresholdYear  = now.getMonth() < 2
+                ? now.getFullYear() - 1
+                : now.getFullYear();
+            const thresholdMonth = ((now.getMonth() - 2 + 12) % 12) + 1;
+            const threshold = `${thresholdYear}-${String(thresholdMonth).padStart(2, '0')}`;
+            if (r.dataMonth > threshold) return false;
+        } else if (filters.month && r.dataMonth !== filters.month) {
+            return false;
+        }
         if (filters.route   && String(effectiveRoute(key, r))       !== filters.route)   return false;
         if (filters.payment && effPayment      !== filters.payment) return false;
         if ((r.amount || 0) === 0)                                   return false;
@@ -504,7 +515,9 @@ function renderFilters() {
         '<option value="">全店舗</option>' + stores.map(s => `<option value="${s}">${s}</option>`).join('');
 
     document.getElementById('filter-month').innerHTML =
-        '<option value="">全月</option>' + months.map(m => `<option value="${m}">${m}</option>`).join('');
+        '<option value="">全月</option>' +
+        '<option value="__action_required__">要対応</option>' +
+        months.map(m => `<option value="${m}">${m}</option>`).join('');
 
     document.getElementById('filter-route').innerHTML =
         '<option value="">全ルート</option>' + routes.map(r => `<option value="${r}">R${r}</option>`).join('');
@@ -514,7 +527,9 @@ function renderFilters() {
 function renderHeader(data) {
     const badge = document.getElementById('month-badge');
     if (badge) {
-        if (filters.month) {
+        if (filters.month === '__action_required__') {
+            badge.textContent = '要対応';
+        } else if (filters.month) {
             badge.textContent = filters.month;
         } else {
             const months = [...new Set(allData.map(r => r.dataMonth))].sort();
