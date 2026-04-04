@@ -43,6 +43,17 @@ body {
 }
 .header-top { display: flex; align-items: center; gap: 10px; margin-bottom: 0; }
 .header-top h1 { font-size: 20px; font-weight: 700; }
+
+/* ── 文字サイズ選択ボタン ────────────────────────────────── */
+.fs-selector { display: flex; gap: 3px; }
+.fs-btn {
+  background: rgba(255,255,255,0.18); color: white;
+  border: 1px solid rgba(255,255,255,0.4); border-radius: 6px;
+  padding: 2px 8px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+}
+.fs-btn:hover { background: rgba(255,255,255,0.32); }
+.fs-btn.fs-active { background: rgba(255,255,255,0.55); color: var(--primary-dark); border-color: white; }
 .month-badge {
   background: rgba(255,255,255,0.25);
   border: 1px solid rgba(255,255,255,0.45);
@@ -341,8 +352,9 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .btn-seisa:active { transform: scale(0.96); }
 .seisa-status { margin-top: 4px; font-size: 13px; font-weight: 700; line-height: 1.4; }
 .seisa-diff   { font-size: 13px; }
-.seisa-ok { color: #16a34a; }
-.seisa-ng { color: var(--red); }
+.seisa-ok   { color: #16a34a; }
+.seisa-ng   { color: var(--red); }
+.seisa-none { color: #9ca3af; }
 
 .empty-msg { text-align: center; padding: 60px 20px; color: var(--g400); font-size: 17px; }
 .no-results { text-align: center; padding: 48px 20px; color: var(--g400); font-size: 17px; background: white; }
@@ -1021,12 +1033,30 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 
 /* 集金ダイアログ */
 .delivery-collect-row {
-  display: flex; align-items: center; gap: 10px; padding: 10px 0;
+  display: flex; flex-direction: column; gap: 0; padding: 10px 0;
   border-bottom: 1px solid var(--g200);
 }
 .delivery-collect-row:last-child { border-bottom: none; }
+.dcm-main-row { display: flex; align-items: center; gap: 10px; }
 .delivery-collect-month  { font-size: 14px; font-weight: 700; min-width: 60px; }
 .delivery-collect-amount { font-size: 16px; font-weight: 700; flex: 1; }
+
+/* 計算ボタン */
+.dcm-btn-calc { background: #f1f5f9; color: #334155; border: 2px solid #cbd5e1; border-radius: 6px; padding: 6px 12px; font-weight: 700; cursor: pointer; font-size: 13px; white-space: nowrap; }
+.dcm-btn-calc:hover { background: #e2e8f0; }
+
+/* お釣り計算エリア */
+.dcm-calc-area  { margin-top: 8px; padding: 10px 12px; background: rgba(0,0,0,.04); border-radius: 8px; display: flex; flex-direction: column; gap: 8px; }
+.dcm-input-row  { display: flex; align-items: center; gap: 8px; }
+.dcm-label      { font-size: 13px; font-weight: 700; white-space: nowrap; }
+.dcm-azukari    { flex: 1; border: 2px solid var(--g300); border-radius: 6px; padding: 6px 8px; font-size: 16px; font-family: inherit; text-align: right; min-width: 0; }
+.dcm-azukari:focus { outline: none; border-color: #2563eb; }
+.dcm-yen        { font-size: 14px; font-weight: 700; }
+.dcm-otsuri-row { display: flex; align-items: center; gap: 10px; }
+.dcm-otsuri-label { font-size: 13px; font-weight: 700; }
+.dcm-otsuri-val { font-size: 18px; font-weight: 700; flex: 1; text-align: right; }
+.dcm-otsuri-ok  { color: #16a34a; }
+.dcm-otsuri-ng  { color: var(--red); }
 
 /* 月別カラー（行・金額・ボタン） */
 .dcm-row-0 { background: #eff6ff; border-left: 4px solid #2563eb; padding-left: 8px; border-radius: 6px; }
@@ -1058,6 +1088,16 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
 .dcm-btn-5 { background: #ea580c; color: #fff; border: none; border-radius: 6px; padding: 6px 12px; font-weight: 700; cursor: pointer; }
 .delivery-collect-empty  { font-size: 14px; color: var(--g400); text-align: center; padding: 16px 0; }
 
+/* お釣り計算ダイアログ */
+.dcm-calc-dlg-amount { font-size: 28px; font-weight: 700; color: var(--primary-dark); text-align: center; padding: 12px 0 4px; }
+
+/* まとめて集金エリア */
+.dcm-bulk-section  { border-top: 2px solid var(--g300); margin-top: 6px; padding-top: 10px; }
+.dcm-bulk-main     { display: flex; align-items: center; gap: 10px; }
+.dcm-bulk-label    { font-size: 14px; font-weight: 700; min-width: 60px; color: var(--g600); }
+.dcm-bulk-total    { font-size: 18px; font-weight: 700; flex: 1; color: var(--g800); }
+.dcm-btn-bulk-collect { background: #16a34a; color: #fff; border: none; border-radius: 6px; padding: 6px 12px; font-weight: 700; cursor: pointer; white-space: nowrap; font-family: inherit; }
+
 /* 配達済みチェック */
 .delivery-check-row { display: flex; justify-content: flex-end; margin-top: 2px; }
 .btn-delivery-check {
@@ -1085,3 +1125,9 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   .delivery-card { padding: 10px 12px; }
   .delivery-name { font-size: 20px; }
 }
+
+/* ══════════════════════════════════════════════
+   文字サイズ：大・小（全体ズーム）
+   ══════════════════════════════════════════════ */
+html[data-size="大"] body { zoom: 1.25; }
+html[data-size="小"] body { zoom: 0.78; }

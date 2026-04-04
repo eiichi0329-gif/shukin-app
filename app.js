@@ -1951,16 +1951,40 @@ function openDeliveryCollectDialog(groupKey) {
     } else {
         // 表示されている月だけをソートしてインデックスで色を割り当て
         const monthOrder = [...new Set(uncollected.map(r => r.dataMonth))].sort();
+        const totalAmt = uncollected.reduce((s, r) => s + effectiveAmount(getKey(r), r), 0);
         list.innerHTML = uncollected.map(r => {
             const key      = getKey(r);
             const amt      = effectiveAmount(key, r);
             const colorIdx = monthOrder.indexOf(r.dataMonth);
-            return `<div class="delivery-collect-row dcm-row-${colorIdx}" data-key="${escHtml(key)}">
-                <span class="delivery-collect-month">${escHtml(r.dataMonth)}月</span>
-                <span class="delivery-collect-amount">¥${amt.toLocaleString()}</span>
-                <button class="btn btn-collect-month dcm-btn-${colorIdx}" data-key="${escHtml(key)}">集金済みにする</button>
+            return `<div class="delivery-collect-row dcm-row-${colorIdx}" data-key="${escHtml(key)}" data-amount="${amt}">
+                <div class="dcm-main-row">
+                    <span class="delivery-collect-month">${escHtml(r.dataMonth)}月</span>
+                    <span class="delivery-collect-amount">¥${amt.toLocaleString()}</span>
+                    <button class="btn dcm-btn-calc dcm-calc-open" data-amount="${amt}" data-label="${escHtml(r.dataMonth)}月分" data-key="${escHtml(key)}">計算</button>
+                    <button class="btn btn-collect-month dcm-btn-${colorIdx}" data-key="${escHtml(key)}">集金済みにする</button>
+                </div>
             </div>`;
         }).join('');
+
+        // まとめて集金エリア（2件以上のときのみ表示）
+        if (uncollected.length >= 2) {
+            list.insertAdjacentHTML('beforeend', `
+                <div class="dcm-bulk-section">
+                    <div class="dcm-bulk-main">
+                        <span class="dcm-bulk-label">合計</span>
+                        <span class="dcm-bulk-total">¥${totalAmt.toLocaleString()}</span>
+                        <button class="btn dcm-btn-calc dcm-bulk-calc-open">計算</button>
+                        <button class="btn dcm-btn-bulk-collect">まとめて集金</button>
+                    </div>
+                </div>`);
+        }
+
+        // 計算ボタン → 計算パネルへ切り替え
+        list.querySelectorAll('.dcm-calc-open').forEach(btn => {
+            btn.addEventListener('click', () => {
+                openDcmCalcDialog(btn.dataset.label, parseInt(btn.dataset.amount) || 0, btn.dataset.key || null);
+            });
+        });
 
         list.querySelectorAll('.btn-collect-month').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -1969,19 +1993,122 @@ function openDeliveryCollectDialog(groupKey) {
                 const activeOverride = deliveryRouteOverrides[groupKey];
                 onCheck(btn.dataset.key, true, activeOverride?.route ?? dRec.route);
                 btn.closest('.delivery-collect-row').remove();
-                if (!list.querySelector('.delivery-collect-row')) {
+                // 残り1件以下になったらまとめて集金エリアを非表示
+                const remaining = list.querySelectorAll('.delivery-collect-row').length;
+                const bulkSection = list.querySelector('.dcm-bulk-section');
+                if (bulkSection) bulkSection.classList.toggle('hidden', remaining < 2);
+                if (remaining === 0) {
                     list.innerHTML = '<div class="delivery-collect-empty">未集金レコードはありません</div>';
                 }
             });
         });
+
+        // まとめて計算ボタン → ダイアログを開く
+        const bulkCalcBtn = list.querySelector('.dcm-bulk-calc-open');
+        if (bulkCalcBtn) {
+            bulkCalcBtn.addEventListener('click', () => {
+                openDcmCalcDialog('合計', totalAmt, null, true);
+            });
+        }
+
+        // まとめて集金ボタン
+        const bulkCollectBtn = list.querySelector('.dcm-btn-bulk-collect');
+        if (bulkCollectBtn) {
+            bulkCollectBtn.addEventListener('click', () => {
+                const activeOverride = deliveryRouteOverrides[groupKey];
+                list.querySelectorAll('.delivery-collect-row').forEach(row => {
+                    onCheck(row.dataset.key, true, activeOverride?.route ?? dRec.route);
+                });
+                list.innerHTML = '<div class="delivery-collect-empty">未集金レコードはありません</div>';
+            });
+        }
     }
 
+    // パネルを必ずリスト表示にリセットしてから開く
+    document.getElementById('dcm-list-panel')?.classList.remove('hidden');
+    document.getElementById('dcm-calc-panel')?.classList.add('hidden');
     document.getElementById('delivery-collect-dialog').showModal();
 }
 
 function closeDeliveryCollectDialog() {
     document.getElementById('delivery-collect-dialog').close();
 }
+
+function openDcmCalcDialog(label, amount, key, isBulk = false) {
+    document.getElementById('dcm-calc-title').textContent = `💰 計算 — ${label}`;
+    document.getElementById('dcm-calc-dlg-amount').textContent = `¥${amount.toLocaleString()}`;
+    document.getElementById('dcm-calc-dlg-expected').value = amount;
+    document.getElementById('dcm-calc-dlg-key').value = key || '';
+    document.getElementById('dcm-calc-dlg-collect').dataset.bulk = isBulk ? '1' : '';
+    const inp = document.getElementById('dcm-calc-dlg-input');
+    inp.value = '';
+    const otsuriEl = document.getElementById('dcm-calc-dlg-otsuri');
+    otsuriEl.textContent = '—';
+    otsuriEl.className = 'dcm-otsuri-val';
+    document.getElementById('dcm-list-panel').classList.add('hidden');
+    document.getElementById('dcm-calc-panel').classList.remove('hidden');
+    inp.focus();
+}
+
+function closeDcmCalcPanel() {
+    document.getElementById('dcm-calc-panel').classList.add('hidden');
+    document.getElementById('dcm-list-panel').classList.remove('hidden');
+}
+
+function collectFromCalcPanel() {
+    const collectBtn = document.getElementById('dcm-calc-dlg-collect');
+    const isBulk     = collectBtn.dataset.bulk === '1';
+    const list       = document.getElementById('delivery-collect-list');
+    if (isBulk) {
+        // まとめて集金：全行の集金済みにするボタンを順に実行
+        list.querySelector('.dcm-btn-bulk-collect')?.click();
+    } else {
+        const key = document.getElementById('dcm-calc-dlg-key').value;
+        if (!key) return;
+        const row = list.querySelector(`.delivery-collect-row[data-key="${key}"]`);
+        row?.querySelector('.btn-collect-month')?.click();
+    }
+    closeDcmCalcPanel();
+}
+
+// 計算パネル内 お釣り計算（グローバルに1回だけ登録）
+const _dcmInput = document.getElementById('dcm-calc-dlg-input');
+if (_dcmInput) {
+    _dcmInput.addEventListener('input', () => {
+        const inp     = document.getElementById('dcm-calc-dlg-input');
+        const amt     = parseInt(document.getElementById('dcm-calc-dlg-expected').value) || 0;
+        const azukari = parseInt(inp.value.replace(/[^\d]/g, '')) || 0;
+        const otsuri  = azukari - amt;
+        const valEl   = document.getElementById('dcm-calc-dlg-otsuri');
+        if (inp.value === '') {
+            valEl.textContent = '—';
+            valEl.className   = 'dcm-otsuri-val';
+        } else if (otsuri < 0) {
+            valEl.textContent = `不足 ${Math.abs(otsuri).toLocaleString()}円`;
+            valEl.className   = 'dcm-otsuri-val dcm-otsuri-ng';
+        } else {
+            valEl.textContent = `${otsuri.toLocaleString()}円`;
+            valEl.className   = 'dcm-otsuri-val dcm-otsuri-ok';
+        }
+    });
+}
+
+// ─── 文字サイズ選択 ───────────────────────────────────────────────
+const FS_KEY = 'app-font-size';
+
+function setFontSize(size) {
+    document.documentElement.setAttribute('data-size', size);
+    localStorage.setItem(FS_KEY, size);
+    document.querySelectorAll('.fs-btn').forEach(b => {
+        b.classList.toggle('fs-active', b.dataset.size === size);
+    });
+}
+
+// 起動時に保存済みサイズを適用
+(function () {
+    const saved = localStorage.getItem(FS_KEY) || '中';
+    setFontSize(saved);
+})();
 
 // ─── Admin Tab ───────────────────────────────────────────────────
 function labelClass(label) {
@@ -2114,7 +2241,8 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
 
     // 手持ち現金行（現金精査ボタン付き）
     let cashTotal = 0;
-    const denomSt = loadDenomStorage();
+    const denomSt  = loadDenomStorage();
+    const todayStr = new Date().toLocaleDateString('sv'); // "YYYY-MM-DD" ローカル時刻
     html += `<tr class="cash-row"><th class="row-header">手持ち現金</th>`;
     for (const r of routes) {
         const ck   = `${date}|${r}`;
@@ -2123,8 +2251,10 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
         cashTotal += cash;
         let seisaHtml = '';
         if ((routeTotals[r] || 0) > 0) {
-            const dd = denomSt[`${date}|${r}`];
-            let seisaStatus = '';
+            const raw        = denomSt[`${date}|${r}`];
+            const savedDate  = raw?.savedAt ? new Date(raw.savedAt).toLocaleDateString('sv') : null;
+            const dd         = (raw && savedDate === todayStr) ? raw : null; // 当日分のみ有効
+            let seisaStatus = `<div class="seisa-status seisa-none">未実施</div>`;
             if (dd) {
                 const denomTotal = calcDenomTotal(dd.counts);
                 // 保存時の目標額（dd.expected）と比較。syncCheckboxes 等で cash が再計算されても不一致にならない

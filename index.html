@@ -24,9 +24,14 @@
         <!-- ヘッダー -->
         <div class="app-header">
             <div class="header-top">
-                <h1>配達用アプリ</h1>
+
                 <span id="today-badge" style="background:rgba(255,255,255,0.25);border:1px solid rgba(255,255,255,0.45);border-radius:20px;padding:3px 12px;font-size:14px;font-weight:700"></span>
                 <span id="loading-badge" style="background:rgba(255,255,255,0.25);border-radius:20px;padding:3px 10px;font-size:13px;margin-left:auto">読込中...</span>
+                <div class="fs-selector">
+                    <button class="fs-btn" data-size="小" onclick="setFontSize('小')">小</button>
+                    <button class="fs-btn" data-size="中" onclick="setFontSize('中')">中</button>
+                    <button class="fs-btn" data-size="大" onclick="setFontSize('大')">大</button>
+                </div>
                 <div class="header-user" id="header-user">
                     <img id="user-avatar" class="user-avatar" src="" alt="">
                     <button class="btn-logout" onclick="logout()" title="ログアウト">ログアウト</button>
@@ -248,10 +253,33 @@
     <!-- 配達表 集金ダイアログ -->
     <dialog id="delivery-collect-dialog" class="settings-dialog">
         <div class="settings-inner">
-            <div class="settings-title">&#128181; 集金 — <span id="delivery-collect-name"></span></div>
-            <div id="delivery-collect-list"></div>
-            <div class="settings-actions" style="margin-top:16px">
-                <button class="btn btn-secondary" onclick="closeDeliveryCollectDialog()">閉じる</button>
+            <!-- 集金リスト画面 -->
+            <div id="dcm-list-panel">
+                <div class="settings-title">&#128181; 集金 — <span id="delivery-collect-name"></span></div>
+                <div id="delivery-collect-list"></div>
+                <div class="settings-actions" style="margin-top:16px">
+                    <button class="btn btn-secondary" onclick="closeDeliveryCollectDialog()">閉じる</button>
+                </div>
+            </div>
+            <!-- お釣り計算パネル（計算ボタンで切り替え） -->
+            <div id="dcm-calc-panel" class="hidden">
+                <div class="settings-title" id="dcm-calc-title">💰 計算</div>
+                <div class="dcm-calc-dlg-amount" id="dcm-calc-dlg-amount"></div>
+                <input type="hidden" id="dcm-calc-dlg-expected">
+                <input type="hidden" id="dcm-calc-dlg-key">
+                <div class="dcm-input-row" style="margin-top:16px">
+                    <span class="dcm-label">預かり金額</span>
+                    <input type="text" inputmode="numeric" id="dcm-calc-dlg-input" class="dcm-azukari" placeholder="0">
+                    <span class="dcm-yen">円</span>
+                </div>
+                <div class="dcm-otsuri-row" style="margin-top:10px">
+                    <span class="dcm-otsuri-label">お釣り</span>
+                    <span class="dcm-otsuri-val" id="dcm-calc-dlg-otsuri">—</span>
+                </div>
+                <div class="settings-actions" style="margin-top:16px">
+                    <button class="btn btn-secondary" onclick="closeDcmCalcPanel()">戻る</button>
+                    <button class="btn btn-primary" id="dcm-calc-dlg-collect" onclick="collectFromCalcPanel()">集金済みにする</button>
+                </div>
             </div>
         </div>
     </dialog>
@@ -348,6 +376,6 @@
     </dialog>
 
     <script src="data.js?v=2" defer></script>
-    <script src="app.js?v=3" defer></script>
+    <script src="app.js?v=4" defer></script>
 </body>
 </html>
