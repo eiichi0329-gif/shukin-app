@@ -112,6 +112,7 @@ body {
 .btn-success:hover { opacity: 0.85; }
 .btn-bulk          { background: #eff6ff; color: #1d4ed8; border: 2px solid #bfdbfe; }
 .btn-bulk-register { background: #f0fdf4; color: #15803d; border: 2px solid #86efac; }
+.btn-warning       { background: #fff7ed; color: #c2410c; border: 2px solid #fdba74; }
 
 /* ── テーブル ──────────────────────────────────────────────── */
 .table-wrap { overflow-x: auto; }
@@ -146,6 +147,35 @@ td.col-addr   { font-size: 14px; color: var(--g600); }
 td.col-amount {
   text-align: right; font-weight: 700; font-size: 16px;
   font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+td.col-amount-tap {
+  cursor: pointer;
+  text-decoration: underline dotted var(--primary);
+  color: var(--primary);
+  user-select: none;
+}
+td.col-amount-tap:active { opacity: 0.65; }
+.partial-badge {
+  display: block; font-size: 11px; font-weight: 600;
+  color: #b45309; background: #fef3c7;
+  border-radius: 4px; padding: 1px 4px; margin-top: 2px;
+  white-space: nowrap;
+}
+/* 一部集金ダイアログ */
+.partial-collect-info {
+  background: var(--g50); border-radius: 8px; padding: 10px 12px; margin-top: 4px;
+}
+.partial-info-name {
+  font-size: 16px; font-weight: 700; color: var(--g800); margin-bottom: 6px;
+}
+.partial-info-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 14px; color: var(--g600); padding: 2px 0;
+}
+.partial-info-remaining { color: var(--red); font-weight: 700; }
+.partial-collect-amount-input {
+  font-size: 22px !important; font-weight: 700; text-align: right;
+  letter-spacing: 0.5px;
 }
 td.col-month  { white-space: nowrap; font-size: 15px; color: var(--g800); font-weight: 700; text-align: center; }
 thead th.col-month { text-align: center; }

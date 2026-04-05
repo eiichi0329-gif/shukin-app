@@ -60,8 +60,16 @@ const DENOM_COL_WIDTHS = [100, 60, 500, 160, 1];
 const MSG_READ_SHEET   = '連絡事項既読';
 const MSG_READ_HEADERS = ['メッセージID', '保存日時'];
 
+const MANUAL_SHEET   = '手動追加';
+const MANUAL_HEADERS = ['店舗', 'ルート', '月', '名前', '住所', '金額', '支払区分', '登録日時', 'ID'];
+const MANUAL_COL_WIDTHS = [100, 60, 70, 160, 260, 90, 80, 160, 1];
+
+const BANK_FAILED_SHEET   = '口振失敗';
+const BANK_FAILED_HEADERS = ['キー', '登録日時'];
+const BANK_FAILED_COL_WIDTHS = [1, 160];
+
 // doGet でチェックデータ読み取りをスキップするシート名
-const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET, MSG_READ_SHEET]);
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET, MSG_READ_SHEET, MANUAL_SHEET, BANK_FAILED_SHEET]);
 
 // ─── 診断ログ（デバッグ用）────────────────────────────
 function writeDebugLog(ss, action, note) {
@@ -301,15 +309,54 @@ function doPost(e) {
         sheet.getRange(2, 1, ids.length, 2).setValues(ids.map(id => [String(id), savedAt]));
       }
 
+    // ── 手動追加レコード 保存 ──
+    } else if (action === 'saveManual') {
+      const rec = payload.record || {};
+      if (!rec.id) return ok();
+      const sheet = getOrCreateSheet(ss, MANUAL_SHEET, MANUAL_HEADERS, '#b45309', MANUAL_COL_WIDTHS);
+      const [, m] = (rec.dataMonth || '').split('-');
+      upsertRow(sheet, rec.id, [
+        rec.store       || '',
+        rec.route       || 0,
+        m ? `${parseInt(m)}月` : (rec.dataMonth || ''),
+        rec.name        || '',
+        rec.address     || '',
+        rec.amount      || 0,
+        rec.paymentType || 'cash',
+        payload.savedAt || new Date().toISOString(),
+        rec.id,
+      ]);
+
+    // ── 手動追加レコード 削除 ──
+    } else if (action === 'removeManual') {
+      const id = payload.id;
+      if (!id) return ok();
+      const sheet = ss.getSheetByName(MANUAL_SHEET);
+      if (sheet) removeRow(sheet, id, MANUAL_HEADERS.length);
+
+    // ── 口振失敗 登録 ──
+    } else if (action === 'saveBankFailed') {
+      const key = payload.key;
+      if (!key) return ok();
+      const sheet = getOrCreateSheet(ss, BANK_FAILED_SHEET, BANK_FAILED_HEADERS, '#b91c1c', BANK_FAILED_COL_WIDTHS);
+      upsertRow(sheet, key, [key, payload.savedAt || new Date().toISOString()]);
+
+    // ── 口振失敗 解除 ──
+    } else if (action === 'removeBankFailed') {
+      const key = payload.key;
+      if (!key) return ok();
+      const sheet = ss.getSheetByName(BANK_FAILED_SHEET);
+      if (sheet) removeRow(sheet, key, BANK_FAILED_HEADERS.length);
+
     // ── 住所間移動時間取得（配達所要時間計算用、記録なし） ──
     } else if (action === 'getTravelTimes') {
-      // stops形式 { address, name, isNew } または旧来の addresses 配列に対応
+      // stops形式 { address, name, isNew, isDepot?, label? } または旧来の addresses 配列に対応
       const rawStops = payload.stops || [];
       const rawAddr  = payload.addresses || [];
       const allStops = rawStops.length > 0
         ? rawStops.filter(s => s.address)
         : rawAddr.filter(Boolean).map(a => ({ address: a, name: '', isNew: false }));
-      const stops = allStops.slice(0, 100);
+      const stops = allStops.slice(0, 102); // デポ2件分多め
 
       if (stops.length < 2) {
         return ContentService.createTextOutput(JSON.stringify({ ok: true, durations: [], nearest: [] }))
@@ -326,15 +373,20 @@ function doPost(e) {
         return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
       };
 
-      const newIndices    = stops.reduce((a, s, i) => { if (s.isNew) a.push(i); return a; }, []);
-      const nonNewIndices = stops.reduce((a, s, i) => { if (!s.isNew) a.push(i); return a; }, []);
+      // デポ（出発・帰着）を分離し、中間ストップのみで新規/既存の最適化を行う
+      const depotFirst = stops.length > 0 && stops[0].isDepot   ? stops[0]               : null;
+      const depotLast  = stops.length > 1 && stops[stops.length - 1].isDepot ? stops[stops.length - 1] : null;
+      const midStops   = stops.filter(s => !s.isDepot);
+
+      const newIndices    = midStops.reduce((a, s, i) => { if (s.isNew)  a.push(i); return a; }, []);
+      const nonNewIndices = midStops.reduce((a, s, i) => { if (!s.isNew) a.push(i); return a; }, []);
       const nearestInfo   = [];
-      let orderedStops    = stops;
+      let orderedMid      = midStops;
 
       if (newIndices.length > 0 && nonNewIndices.length > 0) {
-        // 全住所をジオコーディング
+        // 中間ストップをジオコーディング
         const geocoder = Maps.newGeocoder().setLanguage('ja').setRegion('JP');
-        const coords   = stops.map(s => {
+        const coords   = midStops.map(s => {
           try {
             const r = geocoder.geocode(s.address);
             if (r.results && r.results.length > 0) {
@@ -345,11 +397,11 @@ function doPost(e) {
           return null;
         });
 
-        // 各新規に最近傍の非新規インデックスを求める
+        // 各新規・再注文に最近傍の既存顧客インデックスを求める
         const insertAfterMap = new Map(); // newIdx → nearestNonNewIdx
         newIndices.forEach(ni => {
           const nc = coords[ni];
-          let minDist   = Infinity;
+          let minDist    = Infinity;
           let nearestIdx = nonNewIndices[0];
           nonNewIndices.forEach(ji => {
             const jc = coords[ji];
@@ -359,23 +411,31 @@ function doPost(e) {
           });
           insertAfterMap.set(ni, nearestIdx);
           nearestInfo.push({
-            newName:     stops[ni].name,
-            nearestName: stops[nearestIdx].name,
+            newName:     midStops[ni].name,
+            nearestName: midStops[nearestIdx].name,
             distanceM:   Math.round(minDist),
+            label:       midStops[ni].label || '新規',
           });
         });
 
-        // 新規を取り除き、最近傍の直後へ挿入して並び替え
-        orderedStops = [];
-        for (let i = 0; i < stops.length; i++) {
-          if (!stops[i].isNew) {
-            orderedStops.push(stops[i]);
+        // 新規・再注文を取り除き、最近傍の直後へ挿入して並び替え
+        orderedMid = [];
+        for (let i = 0; i < midStops.length; i++) {
+          if (!midStops[i].isNew) {
+            orderedMid.push(midStops[i]);
             newIndices
               .filter(ni => insertAfterMap.get(ni) === i)
-              .forEach(ni => orderedStops.push(stops[ni]));
+              .forEach(ni => orderedMid.push(midStops[ni]));
           }
         }
       }
+
+      // デポを先頭・末尾に戻してルート確定
+      const orderedStops = [
+        ...(depotFirst ? [depotFirst] : []),
+        ...orderedMid,
+        ...(depotLast  ? [depotLast]  : []),
+      ];
 
       // ─ Directions で移動時間計算（25件チャンク）
       const addresses  = orderedStops.map(s => s.address);
@@ -625,8 +685,41 @@ function doGet(e) {
       rows.forEach(([id]) => { if (id) msgReadIds.push(String(id)); });
     }
 
+    // 手動追加レコードを読み込む
+    // MANUAL_HEADERS: 店舗(1)/ルート(2)/月(3)/名前(4)/住所(5)/金額(6)/支払区分(7)/登録日時(8)/ID(9)
+    const manualSheetR = ss.getSheetByName(MANUAL_SHEET);
+    const manualData = [];
+    if (manualSheetR && manualSheetR.getLastRow() >= 2) {
+      const rows = manualSheetR.getRange(2, 1, manualSheetR.getLastRow() - 1, MANUAL_HEADERS.length).getValues();
+      for (const [store, route, monthStr, name, address, amount, paymentType, , id] of rows) {
+        if (!id || !name) continue;
+        // 月文字列（例: "4月"）を dataMonth 形式に変換するのはクライアント側で行う
+        manualData.push({
+          id:          String(id),
+          store:       String(store),
+          route:       Number(route),
+          monthStr:    String(monthStr),
+          name:        String(name),
+          address:     String(address),
+          amount:      Number(amount),
+          paymentType: String(paymentType),
+        });
+      }
+    }
+
+    // 口振失敗キーを読み込む
+    // BANK_FAILED_HEADERS: キー(1)/登録日時(2)
+    const bankFailedSheetR = ss.getSheetByName(BANK_FAILED_SHEET);
+    const bankFailedKeys = [];
+    if (bankFailedSheetR && bankFailedSheetR.getLastRow() >= 2) {
+      const rows = bankFailedSheetR.getRange(2, 1, bankFailedSheetR.getLastRow() - 1, 1).getValues();
+      for (const [key] of rows) {
+        if (key) bankFailedKeys.push(String(key));
+      }
+    }
+
     return ContentService
-      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData, msgReadIds }))
+      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData, msgReadIds, manualData, bankFailedKeys }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (err) {

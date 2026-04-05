@@ -75,6 +75,7 @@
                     <button class="btn btn-bulk"          id="btn-bulk-check"    onclick="checkAllBank()">&#10003; 一括チェック</button>
                     <button class="btn btn-bulk-register hidden" id="btn-bulk-register" onclick="registerBulkBank()">登録</button>
                     <button class="btn btn-secondary" onclick="openManualAdd()">&#43; 手動追加</button>
+                    <button class="btn btn-warning"   onclick="bulkMarkBankFailed()">口振失敗 一括登録</button>
                     <button class="btn btn-secondary" onclick="openSettings()">&#9881; 連携設定</button>
                     <button class="btn btn-danger"    onclick="resetAll()">リセット</button>
                 </div>
@@ -251,6 +252,24 @@
             <div class="manual-list-section">
                 <div class="manual-list-title">登録済み手動追加レコード</div>
                 <div id="manual-list"></div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- 一部集金ダイアログ -->
+    <dialog id="partial-collect-dialog" class="settings-dialog">
+        <div class="settings-inner">
+            <div class="settings-title">&#128181; 一部集金</div>
+            <input type="hidden" id="partial-collect-key">
+            <div id="partial-collect-info" class="partial-collect-info"></div>
+            <label class="settings-label manual-form-full" style="margin-top:12px">
+                今回の集金額（円）
+                <input id="partial-collect-input" class="settings-input partial-collect-amount-input"
+                       type="number" inputmode="numeric" min="1" placeholder="0">
+            </label>
+            <div class="settings-actions" style="margin-top:16px">
+                <button class="btn btn-secondary" onclick="document.getElementById('partial-collect-dialog').close()">キャンセル</button>
+                <button class="btn btn-success"   onclick="confirmPartialCollect()">集金確定</button>
             </div>
         </div>
     </dialog>

@@ -149,6 +149,16 @@ const MANUAL_RECORDS_KEY  = 'coll-manual-v1';
 const RECORD_OVERRIDE_KEY = 'coll-record-override-v1';
 const DIRTY_GRACE_MS = 35000; // ローカル変更を守る猶予時間（ms）
 
+// ─── 店舗デポ（出発・帰着地点） ─────────────────────────────────
+const STORE_DEPOTS = {
+    '下関店':   '下関市西大坪町12-9',
+    '北九州店': '北九州市小倉北区大田町9-10',
+    '宇部店':   '宇部市床波4-3-15-11',
+    '宗像店':   '宗像市河東1055-5',
+    '飯塚店':   '飯塚市川津369-3',
+    '福岡東店': '福岡市東区和白3-27-50',
+};
+
 // ─── State ───────────────────────────────────────────────────────
 let allData         = [];
 let manualRecords   = [];   // 手動追加レコード
@@ -271,12 +281,16 @@ function markBankFailed(key) {
     bankFailedKeys.add(key);
     saveBankFailedKeys();
     saveBankState();
+    const _bUrl = getGasUrl();
+    if (_bUrl) postToGas(_bUrl, { action: 'saveBankFailed', key, savedAt: new Date().toISOString() });
 }
 function unmarkBankFailed(key) {
     bankFailedKeys.delete(key);
     delete bankState[key];
     saveBankFailedKeys();
     saveBankState();
+    const _bUrl = getGasUrl();
+    if (_bUrl) postToGas(_bUrl, { action: 'removeBankFailed', key });
 }
 
 // ─── Amount Override State ────────────────────────────────────────
@@ -604,13 +618,23 @@ function renderTable() {
             transferCellHtml = `<td class="col-transfer"><button class="btn-transfer" data-key="${key}">振込入金</button></td>`;
         }
 
+        // 現金・未集金（口振でも振込でもない）なら金額セルを一部集金タップ対応に
+        const canPartial = !isBankCustomer && !isTransferred;
+        const prevCollected = state.collectedAmount || 0;
+        const isPartiallyCollected = prevCollected > 0 && !isFullyCollected(key, r);
+        const amountCellClass = canPartial ? 'col-amount col-amount-tap' : 'col-amount';
+        const partialAttr = canPartial ? `data-partial-key="${key}"` : '';
+        const partialBadge = isPartiallyCollected
+            ? `<span class="partial-badge">一部済¥${fmt(prevCollected)}</span>`
+            : '';
+
         html += `<tr class="${rowClass}" data-key="${key}" title="ダブルタップで修正">
             <td class="col-check">${checkboxHtml}</td>
             <td class="col-route">R${effectiveRoute(key, r)}</td>
             <td class="col-month">${effectiveMonth(key, r).slice(5)}月</td>
             <td class="col-name"><div class="name-inner">${payBadge}${effectiveName(key, r)}</div></td>
             <td class="col-addr">${r.address || ''}</td>
-            <td class="col-amount">¥${fmt(displayAmount(key, r))}</td>
+            <td class="${amountCellClass}" ${partialAttr}>¥${fmt(displayAmount(key, r))}${partialBadge}</td>
             ${dateCellHtml}
             ${transferCellHtml}
         </tr>`;
@@ -636,6 +660,11 @@ function renderTable() {
             unmarkBankFailed(key);
             renderTable();
         });
+    });
+
+    // イベント登録（金額セル → 一部集金ダイアログ）
+    tbody.querySelectorAll('td.col-amount-tap[data-partial-key]').forEach(cell => {
+        cell.addEventListener('click', () => openPartialCollect(cell.dataset.partialKey));
     });
 
     // イベント登録（集金日）
@@ -696,6 +725,90 @@ function showToast(msg, type = 'success') {
     el.className = `app-toast app-toast-${type} app-toast-show`;
     clearTimeout(el._t);
     el._t = setTimeout(() => el.classList.remove('app-toast-show'), 2000);
+}
+
+// ─── 一部集金 ────────────────────────────────────────────────────
+function openPartialCollect(key) {
+    const record    = allData.find(r => getKey(r) === key);
+    if (!record) return;
+
+    const fullAmt      = effectiveAmount(key, record);
+    const prevCollected = checked[key]?.collectedAmount || 0;
+    const remaining    = displayAmount(key, record); // fullAmt - prevCollected（または fullAmt）
+
+    document.getElementById('partial-collect-key').value = key;
+
+    const infoEl = document.getElementById('partial-collect-info');
+    infoEl.innerHTML = `
+        <div class="partial-info-name">${escHtml(effectiveName(key, record))}</div>
+        <div class="partial-info-row"><span>請求額</span><strong>¥${fmt(fullAmt)}</strong></div>
+        ${prevCollected > 0 ? `<div class="partial-info-row"><span>既集金</span><strong>¥${fmt(prevCollected)}</strong></div>` : ''}
+        <div class="partial-info-row partial-info-remaining"><span>未集金（残）</span><strong>¥${fmt(remaining)}</strong></div>
+    `;
+
+    const input = document.getElementById('partial-collect-input');
+    input.value = remaining;
+    input.max   = remaining;
+
+    document.getElementById('partial-collect-dialog').showModal();
+    setTimeout(() => { input.select(); }, 80);
+}
+
+function confirmPartialCollect() {
+    const key    = document.getElementById('partial-collect-key').value;
+    const record = allData.find(r => getKey(r) === key);
+    if (!record) return;
+
+    const entered = parseInt(document.getElementById('partial-collect-input').value) || 0;
+    if (entered <= 0) { alert('集金額を入力してください'); return; }
+
+    const fullAmt      = effectiveAmount(key, record);
+    const prevCollected = checked[key]?.collectedAmount || 0;
+    const remaining    = fullAmt - prevCollected;
+
+    if (entered > remaining) {
+        alert(`集金額（¥${fmt(entered)}）が残額（¥${fmt(remaining)}）を超えています`);
+        return;
+    }
+
+    const today       = new Date();
+    const jstDate     = today.toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+    const newCollected = prevCollected + entered;
+    const isFullNow    = newCollected >= fullAmt;
+    const gasKey       = isFullNow && prevCollected === 0
+        ? key                           // 初回で全額 → 通常キー
+        : `${key}|${Date.now()}`;       // 一部または再集金 → 別行
+
+    const collectDate = checked[key]?.collectDate || jstDate;
+
+    checked[key] = {
+        checkedAt:       today.toISOString(),
+        collectDate,
+        collectedAmount: newCollected,
+        cycleReset:      false,
+        gasKey,
+        routeOverride:   checked[key]?.routeOverride || null,
+    };
+    saveChecked();
+    dirtyKeys.set(key, Date.now());
+
+    const url = getGasUrl();
+    if (url) {
+        postToGas(url, {
+            action:      'add',
+            record:      { ...record, key: gasKey, amount: entered },
+            collectDate,
+        });
+    }
+
+    document.getElementById('partial-collect-dialog').close();
+    renderTable();
+
+    if (isFullNow) {
+        showToast('集金完了 ✓', 'success');
+    } else {
+        showToast(`¥${fmt(entered)} 集金。残 ¥${fmt(fullAmt - newCollected)}`, 'success');
+    }
 }
 
 // ─── Check Action ────────────────────────────────────────────────
@@ -848,6 +961,34 @@ function editDate(key, cell) {
     }
     input.addEventListener('change', save);
     input.addEventListener('blur',   save);
+}
+
+// ─── 口振失敗 一括登録 ───────────────────────────────────────────
+function bulkMarkBankFailed() {
+    // 現在の月・店舗フィルターを適用し、未処理（完了でも失敗でもない）の口振顧客を取得
+    const targets = allData.filter(r => {
+        if (r.paymentType !== 'bank') return false;
+        if ((r.amount || 0) === 0) return false;
+        const key = getKey(r);
+        if (bankState[key]?.status === 'completed') return false;
+        if (bankState[key]?.status === 'failed' || bankFailedKeys.has(key)) return false;
+        if (filters.store && r.store !== filters.store) return false;
+        if (filters.month && filters.month !== '__action_required__' && r.dataMonth !== filters.month) return false;
+        return true;
+    });
+
+    if (targets.length === 0) {
+        alert('未処理の口座振替対象者はいません。');
+        return;
+    }
+
+    const monthLabel = filters.month ? filters.month : '全月';
+    const storeLabel = filters.store ? filters.store : '全店舗';
+    if (!confirm(`${storeLabel}・${monthLabel} の未処理口座振替 ${targets.length}件 を\n全て「口振失敗（現金集金へ変更）」に登録しますか？`)) return;
+
+    targets.forEach(r => markBankFailed(getKey(r)));
+    renderTable();
+    showToast(`${targets.length}件を口振失敗に登録しました`, 'success');
 }
 
 // ─── Bulk Bank Check ─────────────────────────────────────────────
@@ -1051,6 +1192,9 @@ function addManualRecord() {
     saveManualRecords();
     allData.push(record);
 
+    const _mUrl = getGasUrl();
+    if (_mUrl) postToGas(_mUrl, { action: 'saveManual', record, savedAt: new Date().toISOString() });
+
     // フォームリセット
     document.getElementById('manual-name').value    = '';
     document.getElementById('manual-address').value = '';
@@ -1073,6 +1217,10 @@ function deleteManualRecord(id) {
         delete checked[key];
         saveChecked();
     }
+
+    const _mUrl = getGasUrl();
+    if (_mUrl) postToGas(_mUrl, { action: 'removeManual', id });
+
     renderManualList();
     renderFilters();
     renderTable();
@@ -1236,14 +1384,33 @@ async function calcDeliveryTime() {
     const url = getGasUrl();
     if (!url) { alert('GAS URLが設定されていません'); return; }
 
-    const stops = currentDeliveryListData
+    const midStops = currentDeliveryListData
         .filter(m => m.address)
-        .map(m => ({ address: m.address, name: m.name, isNew: m.countLabel === '新規' }));
+        .map(m => {
+            const isNewStop = m.countLabel === '新規' || m.countLabel === '再注文';
+            return {
+                address: m.address,
+                name:    m.name,
+                isNew:   isNewStop,
+                label:   isNewStop ? m.countLabel : '',
+            };
+        });
 
-    if (stops.length < 2) {
+    if (midStops.length < 2) {
         alert('住所が2件以上必要です');
         return;
     }
+
+    // 店舗デポ（出発・帰着）を先頭・末尾に追加
+    const store     = currentDeliveryListData[0]?.store || filters.store || '';
+    const depotAddr = STORE_DEPOTS[store];
+    const stops     = depotAddr
+        ? [
+            { address: depotAddr, name: store, isNew: false, isDepot: true },
+            ...midStops,
+            { address: depotAddr, name: store, isNew: false, isDepot: true },
+          ]
+        : midStops;
 
     const btn      = document.getElementById('btn-calc-time');
     const resultEl = document.getElementById('delivery-time-result');
@@ -1258,7 +1425,7 @@ async function calcDeliveryTime() {
         const json = await res.json();
         if (!json.ok) throw new Error(json.error || '取得失敗');
 
-        const count     = stops.length;
+        const count     = midStops.length; // デポは件数に含めない
         const workSec   = count * 3 * 60;
         const travelSec = (json.durations || []).reduce((sum, d) => sum + (d || 0), 0);
         const totalSec  = workSec + travelSec;
@@ -1278,14 +1445,14 @@ async function calcDeliveryTime() {
 
         let html = `${count}件 | 移動 約${travelMin}分 + 作業 ${workMin}分 = <strong>合計 約${totalMin}分</strong>${finishStr}`;
 
-        // 新規の最近傍情報
+        // 新規・再注文の最近傍情報
         const nearest = json.nearest || [];
         if (nearest.length > 0) {
             const rows = nearest.map(n => {
                 const dist = n.distanceM >= 1000
                     ? (n.distanceM / 1000).toFixed(1) + 'km'
                     : n.distanceM + 'm';
-                return `<span class="nearest-hint">新規 ${escHtml(n.newName)}：${escHtml(n.nearestName)} の次（約${dist}）</span>`;
+                return `<span class="nearest-hint">${escHtml(n.label || '新規')} ${escHtml(n.newName)}：${escHtml(n.nearestName)} の次（約${dist}）</span>`;
             }).join('');
             html += `<div class="nearest-hints">${rows}</div>`;
         }
@@ -3074,6 +3241,77 @@ async function syncCheckboxes() {
             if (denomChanged) {
                 saveDenomStorage(local);
                 if (currentTab === 'admin') renderAdmin();
+            }
+        }
+
+        // 手動追加レコードをリモートとマージ（GAS を正として同期）
+        if (Array.isArray(json.manualData)) {
+            const remoteIds = new Set(json.manualData.map(r => r.id));
+            const localIds  = new Set(manualRecords.map(r => r.id));
+            let manualChanged = false;
+
+            // リモートにあってローカルにないレコードを追加
+            json.manualData.forEach(r => {
+                if (localIds.has(r.id)) return;
+                // monthStr（例: "4月"）を dataMonth（例: "2026-04"）に変換
+                let dataMonth = r.dataMonth || '';
+                if (!dataMonth && r.monthStr) {
+                    const mn = parseInt(r.monthStr);
+                    if (!isNaN(mn)) {
+                        const now = new Date();
+                        const yr  = (mn > now.getMonth() + 1) ? now.getFullYear() - 1 : now.getFullYear();
+                        dataMonth = `${yr}-${String(mn).padStart(2, '0')}`;
+                    }
+                }
+                const rec = {
+                    id: r.id, store: r.store, route: r.route, name: r.name,
+                    address: r.address, amount: r.amount, dataMonth,
+                    paymentType: r.paymentType || 'cash',
+                    code: 0, seq: 9999, isManual: true, sourceFiles: ['手動追加'],
+                };
+                manualRecords.push(rec);
+                allData.push(rec);
+                manualChanged = true;
+            });
+
+            // ローカルにあってリモートにないレコードを削除（他端末で削除済み）
+            const before = manualRecords.length;
+            manualRecords = manualRecords.filter(r => remoteIds.has(r.id));
+            allData = allData.filter(r => !r.isManual || remoteIds.has(r.id));
+            if (manualRecords.length !== before) manualChanged = true;
+
+            if (manualChanged) {
+                saveManualRecords();
+                renderFilters();
+            }
+        }
+
+        // 口振失敗キーをリモートとマージ（GAS を正として同期）
+        if (Array.isArray(json.bankFailedKeys)) {
+            const remote = new Set(json.bankFailedKeys);
+            let bfChanged = false;
+
+            // リモートにあってローカルにないキーを追加
+            remote.forEach(key => {
+                if (!bankFailedKeys.has(key)) {
+                    bankFailedKeys.add(key);
+                    bankState[key] = { status: 'failed', updatedAt: '' };
+                    bfChanged = true;
+                }
+            });
+
+            // ローカルにあってリモートにないキーを削除（他端末で解除済み）
+            [...bankFailedKeys].forEach(key => {
+                if (!remote.has(key)) {
+                    bankFailedKeys.delete(key);
+                    if (bankState[key]?.status === 'failed') delete bankState[key];
+                    bfChanged = true;
+                }
+            });
+
+            if (bfChanged) {
+                saveBankFailedKeys();
+                saveBankState();
             }
         }
 
