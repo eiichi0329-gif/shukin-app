@@ -301,6 +301,118 @@ function doPost(e) {
         sheet.getRange(2, 1, ids.length, 2).setValues(ids.map(id => [String(id), savedAt]));
       }
 
+    // ── 住所間移動時間取得（配達所要時間計算用、記録なし） ──
+    } else if (action === 'getTravelTimes') {
+      // stops形式 { address, name, isNew } または旧来の addresses 配列に対応
+      const rawStops = payload.stops || [];
+      const rawAddr  = payload.addresses || [];
+      const allStops = rawStops.length > 0
+        ? rawStops.filter(s => s.address)
+        : rawAddr.filter(Boolean).map(a => ({ address: a, name: '', isNew: false }));
+      const stops = allStops.slice(0, 100);
+
+      if (stops.length < 2) {
+        return ContentService.createTextOutput(JSON.stringify({ ok: true, durations: [], nearest: [] }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+
+      // ─ ハーバーサイン距離（メートル）
+      const haversineM = (lat1, lng1, lat2, lng2) => {
+        const R    = 6371000;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLng = (lng2 - lng1) * Math.PI / 180;
+        const a    = Math.sin(dLat / 2) ** 2
+          + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
+        return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      };
+
+      const newIndices    = stops.reduce((a, s, i) => { if (s.isNew) a.push(i); return a; }, []);
+      const nonNewIndices = stops.reduce((a, s, i) => { if (!s.isNew) a.push(i); return a; }, []);
+      const nearestInfo   = [];
+      let orderedStops    = stops;
+
+      if (newIndices.length > 0 && nonNewIndices.length > 0) {
+        // 全住所をジオコーディング
+        const geocoder = Maps.newGeocoder().setLanguage('ja').setRegion('JP');
+        const coords   = stops.map(s => {
+          try {
+            const r = geocoder.geocode(s.address);
+            if (r.results && r.results.length > 0) {
+              const loc = r.results[0].geometry.location;
+              return { lat: loc.lat, lng: loc.lng };
+            }
+          } catch (_) {}
+          return null;
+        });
+
+        // 各新規に最近傍の非新規インデックスを求める
+        const insertAfterMap = new Map(); // newIdx → nearestNonNewIdx
+        newIndices.forEach(ni => {
+          const nc = coords[ni];
+          let minDist   = Infinity;
+          let nearestIdx = nonNewIndices[0];
+          nonNewIndices.forEach(ji => {
+            const jc = coords[ji];
+            if (!nc || !jc) return;
+            const d = haversineM(nc.lat, nc.lng, jc.lat, jc.lng);
+            if (d < minDist) { minDist = d; nearestIdx = ji; }
+          });
+          insertAfterMap.set(ni, nearestIdx);
+          nearestInfo.push({
+            newName:     stops[ni].name,
+            nearestName: stops[nearestIdx].name,
+            distanceM:   Math.round(minDist),
+          });
+        });
+
+        // 新規を取り除き、最近傍の直後へ挿入して並び替え
+        orderedStops = [];
+        for (let i = 0; i < stops.length; i++) {
+          if (!stops[i].isNew) {
+            orderedStops.push(stops[i]);
+            newIndices
+              .filter(ni => insertAfterMap.get(ni) === i)
+              .forEach(ni => orderedStops.push(stops[ni]));
+          }
+        }
+      }
+
+      // ─ Directions で移動時間計算（25件チャンク）
+      const addresses  = orderedStops.map(s => s.address);
+      const MAX_CHUNK  = 25;
+      const durations  = [];
+      let i = 0;
+
+      while (i < addresses.length - 1) {
+        const end   = Math.min(i + MAX_CHUNK, addresses.length);
+        const chunk = addresses.slice(i, end);
+
+        try {
+          const finder = Maps.newDirectionFinder()
+            .setOrigin(chunk[0])
+            .setDestination(chunk[chunk.length - 1])
+            .setMode(Maps.DirectionFinder.Mode.DRIVING);
+
+          for (let j = 1; j < chunk.length - 1; j++) {
+            finder.addWaypoint(chunk[j]);
+          }
+
+          const result = finder.getDirections();
+          if (!result || !result.routes || !result.routes[0]) {
+            for (let j = 0; j < chunk.length - 1; j++) durations.push(0);
+          } else {
+            result.routes[0].legs.forEach(leg => durations.push(leg.duration.value));
+          }
+        } catch (e) {
+          for (let j = 0; j < chunk.length - 1; j++) durations.push(0);
+        }
+
+        i += chunk.length - 1;
+      }
+
+      return ContentService.createTextOutput(JSON.stringify({ ok: true, durations, nearest: nearestInfo }))
+        .setMimeType(ContentService.MimeType.JSON);
+
     // ── 全リセット ──
     } else if (action === 'resetAll') {
       // 現金集金シート（口座振替・振込入金・連絡事項以外）のデータ行を全削除
@@ -317,6 +429,43 @@ function doPost(e) {
       // 振込入金シートのデータ行を全削除
       const transferSheet = ss.getSheetByName(TRANSFER_SHEET);
       if (transferSheet && transferSheet.getLastRow() > 1) transferSheet.deleteRows(2, transferSheet.getLastRow() - 1);
+
+    // ── 移動時間取得（Google Maps Distance Matrix API）──
+    } else if (action === 'getTravelTimes') {
+      const addresses = payload.addresses || [];
+      if (addresses.length < 2) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ ok: true, durations: [] }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+      const apiKey = PropertiesService.getScriptProperties().getProperty('MAPS_API_KEY');
+      if (!apiKey) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ ok: false, error: 'MAPS_API_KEY がスクリプトプロパティに設定されていません' }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+      const requests = [];
+      for (let i = 0; i < addresses.length - 1; i++) {
+        requests.push({
+          url: 'https://maps.googleapis.com/maps/api/distancematrix/json'
+            + '?origins='      + encodeURIComponent(addresses[i])
+            + '&destinations=' + encodeURIComponent(addresses[i + 1])
+            + '&mode=driving&language=ja&key=' + apiKey,
+          method: 'get',
+          muteHttpExceptions: true
+        });
+      }
+      const responses = UrlFetchApp.fetchAll(requests);
+      const durations = responses.map(resp => {
+        try {
+          const data = JSON.parse(resp.getContentText());
+          const elem = data.rows?.[0]?.elements?.[0];
+          return (elem?.status === 'OK') ? elem.duration.value : null;
+        } catch(_) { return null; }
+      });
+      return ContentService
+        .createTextOutput(JSON.stringify({ ok: true, durations }))
+        .setMimeType(ContentService.MimeType.JSON);
     }
 
     return ok();

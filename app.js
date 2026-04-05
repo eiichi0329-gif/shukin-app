@@ -165,6 +165,7 @@ let expandedCell = null;  // { route, month } for admin detail
 let deliveryData           = [];
 let deliveryChecked        = {};
 let deliveryRouteOverrides = {};
+let currentDeliveryListData = []; // 所要時間計算用に renderDelivery() が更新する
 let deliveryCompactRoutes  = new Set(); // "store|route" keys currently in compact view
 
 const DELIVERY_CHECK_KEY          = 'coll-delivery-v1';
@@ -475,14 +476,22 @@ function filteredData() {
         if (filters.payment && effPayment      !== filters.payment) return false;
         if ((r.amount || 0) === 0)                                   return false;
 
+        // 要対応モードでは常に未集金のみ表示（uncollectedOnly トグルに関わらず）
+        const isActionRequired = filters.month === '__action_required__';
+        const effectiveUncollectedOnly = filters.uncollectedOnly || isActionRequired;
+
         // 口振完了：未集金フィルター ON のとき非表示（一括チェックモード中は取消のため表示）
-        if (!bulkMode && bankState[key]?.status === 'completed' && filters.uncollectedOnly) return false;
+        if (!bulkMode && bankState[key]?.status === 'completed' && effectiveUncollectedOnly) return false;
 
         // 振込入金済み：未集金フィルター ON のとき非表示
-        if (transferState[key] && filters.uncollectedOnly) return false;
+        if (transferState[key] && effectiveUncollectedOnly) return false;
 
         if (checked[key]) {
             if (isFullyCollected(key, r)) {
+                if (isActionRequired) {
+                    // 要対応：集金済みは日付に関わらず非表示
+                    return false;
+                }
                 // 完全集金済み：当日チェックしたものは終日リストに残す
                 if (filters.uncollectedOnly) {
                     const state      = checked[key];
@@ -1222,6 +1231,73 @@ function switchTab(tab) {
     }
 }
 
+// ─── 所要時間計算 ────────────────────────────────────────────────
+async function calcDeliveryTime() {
+    const url = getGasUrl();
+    if (!url) { alert('GAS URLが設定されていません'); return; }
+
+    const stops = currentDeliveryListData
+        .filter(m => m.address)
+        .map(m => ({ address: m.address, name: m.name, isNew: m.countLabel === '新規' }));
+
+    if (stops.length < 2) {
+        alert('住所が2件以上必要です');
+        return;
+    }
+
+    const btn      = document.getElementById('btn-calc-time');
+    const resultEl = document.getElementById('delivery-time-result');
+    btn.disabled   = true;
+    resultEl.textContent = '計算中...';
+
+    try {
+        const res  = await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({ action: 'getTravelTimes', stops })
+        });
+        const json = await res.json();
+        if (!json.ok) throw new Error(json.error || '取得失敗');
+
+        const count     = stops.length;
+        const workSec   = count * 3 * 60;
+        const travelSec = (json.durations || []).reduce((sum, d) => sum + (d || 0), 0);
+        const totalSec  = workSec + travelSec;
+        const totalMin  = Math.ceil(totalSec / 60);
+        const travelMin = Math.round(travelSec / 60);
+        const workMin   = count * 3;
+
+        let finishStr = '';
+        const startInput = document.getElementById('delivery-start-time');
+        if (startInput && startInput.value) {
+            const [h, m] = startInput.value.split(':').map(Number);
+            const endMin = h * 60 + m + totalMin;
+            const eh = Math.floor(endMin / 60) % 24;
+            const em = endMin % 60;
+            finishStr = ` → ${String(eh).padStart(2,'0')}:${String(em).padStart(2,'0')}頃`;
+        }
+
+        let html = `${count}件 | 移動 約${travelMin}分 + 作業 ${workMin}分 = <strong>合計 約${totalMin}分</strong>${finishStr}`;
+
+        // 新規の最近傍情報
+        const nearest = json.nearest || [];
+        if (nearest.length > 0) {
+            const rows = nearest.map(n => {
+                const dist = n.distanceM >= 1000
+                    ? (n.distanceM / 1000).toFixed(1) + 'km'
+                    : n.distanceM + 'm';
+                return `<span class="nearest-hint">新規 ${escHtml(n.newName)}：${escHtml(n.nearestName)} の次（約${dist}）</span>`;
+            }).join('');
+            html += `<div class="nearest-hints">${rows}</div>`;
+        }
+
+        resultEl.innerHTML = html;
+    } catch (e) {
+        resultEl.textContent = 'エラー: ' + e.message;
+    } finally {
+        btn.disabled = false;
+    }
+}
+
 // ─── Delivery Tab ────────────────────────────────────────────────
 function renderDelivery() {
     const container = document.getElementById('delivery-list');
@@ -1287,6 +1363,19 @@ function renderDelivery() {
         const bOv = deliveryRouteOverrides[b.groupKey] ? 0 : 1;
         return aOv - bOv;
     });
+
+    // 所要時間計算用にデータを保持、結果はリセット
+    currentDeliveryListData = data;
+    const timeBar = document.getElementById('delivery-time-bar');
+    const timeResult = document.getElementById('delivery-time-result');
+    if (timeBar) {
+        if (data.length >= 2 && data.some(m => m.address)) {
+            timeBar.classList.remove('hidden');
+        } else {
+            timeBar.classList.add('hidden');
+        }
+        if (timeResult) timeResult.textContent = '';
+    }
 
     if (data.length === 0) {
         container.innerHTML = '<div class="empty-msg">該当する配達先がありません</div>';
