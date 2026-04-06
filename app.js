@@ -3405,11 +3405,15 @@ async function syncCheckboxes() {
         // 配達済みをリモート（今日分のみ）と同期
         if (json.deliveryData !== undefined) {
             const remote = json.deliveryData;
+            const dataGenAt = window.DATA_META?.generatedAt || '';
             let changed = false;
             Object.entries(remote).forEach(([key, val]) => {
                 if (dirtyKeys.has(key)) return; // 直後の操作は上書きしない
+                // データ更新前に配達済みにされたレコードは取り込まない
+                const checkedAt = val.checkedAt || '';
+                if (dataGenAt && checkedAt && checkedAt < dataGenAt) return;
                 if (!deliveryChecked[key]) {
-                    deliveryChecked[key] = { checkedAt: val.checkedAt || new Date().toISOString() };
+                    deliveryChecked[key] = { checkedAt: checkedAt || new Date().toISOString() };
                     changed = true;
                 }
             });
