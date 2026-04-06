@@ -1443,21 +1443,75 @@ async function calcDeliveryTime() {
             finishStr = ` → ${String(eh).padStart(2,'0')}:${String(em).padStart(2,'0')}頃`;
         }
 
-        let html = `${count}件 | 移動 約${travelMin}分 + 作業 ${workMin}分 = <strong>合計 約${totalMin}分</strong>${finishStr}`;
-
-        // 新規・再注文の最近傍情報
-        const nearest = json.nearest || [];
-        if (nearest.length > 0) {
-            const rows = nearest.map(n => {
-                const dist = n.distanceM >= 1000
-                    ? (n.distanceM / 1000).toFixed(1) + 'km'
-                    : n.distanceM + 'm';
-                return `<span class="nearest-hint">${escHtml(n.label || '新規')} ${escHtml(n.newName)}：${escHtml(n.nearestName)} の次（約${dist}）</span>`;
-            }).join('');
-            html += `<div class="nearest-hints">${rows}</div>`;
-        }
-
+        const html = `${count}件 | 移動 約${travelMin}分 + 作業 ${workMin}分 = <strong>合計 約${totalMin}分</strong>${finishStr}`;
         resultEl.innerHTML = html;
+    } catch (e) {
+        resultEl.textContent = 'エラー: ' + e.message;
+    } finally {
+        btn.disabled = false;
+    }
+}
+
+// ─── 新規確認（最近傍） ───────────────────────────────────────────
+async function checkNewCustomers() {
+    const url = getGasUrl();
+    if (!url) { alert('GAS URLが設定されていません'); return; }
+
+    const midStops = currentDeliveryListData
+        .filter(m => m.address)
+        .map(m => {
+            const isNewStop = m.countLabel?.includes('新規') || m.countLabel?.includes('再注文');
+            const newLabel  = isNewStop
+                ? (m.countLabel?.includes('再注文') ? '再注文' : '新規')
+                : '';
+            return {
+                address: m.address,
+                name:    m.name,
+                isNew:   isNewStop,
+                label:   newLabel,
+            };
+        });
+
+    if (midStops.length < 2) {
+        alert('住所が2件以上必要です');
+        return;
+    }
+
+    const store     = currentDeliveryListData[0]?.store || filters.store || '';
+    const depotAddr = STORE_DEPOTS[store];
+    const stops     = depotAddr
+        ? [
+            { address: depotAddr, name: store, isNew: false, isDepot: true },
+            ...midStops,
+            { address: depotAddr, name: store, isNew: false, isDepot: true },
+          ]
+        : midStops;
+
+    const btn      = document.getElementById('btn-check-new');
+    const resultEl = document.getElementById('delivery-time-result');
+    btn.disabled   = true;
+    resultEl.textContent = '確認中...';
+
+    try {
+        const res  = await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({ action: 'getTravelTimes', stops })
+        });
+        const json = await res.json();
+        if (!json.ok) throw new Error(json.error || '取得失敗');
+
+        const nearest = json.nearest || [];
+        if (nearest.length === 0) {
+            resultEl.textContent = '新規・再注文なし';
+            return;
+        }
+        const rows = nearest.map(n => {
+            const dist = n.distanceM >= 1000
+                ? (n.distanceM / 1000).toFixed(1) + 'km'
+                : n.distanceM + 'm';
+            return `<span class="nearest-hint">${escHtml(n.label || '新規')} ${escHtml(n.newName)}：${escHtml(n.nearestName)} の次（約${dist}）</span>`;
+        }).join('');
+        resultEl.innerHTML = `<div class="nearest-hints">${rows}</div>`;
     } catch (e) {
         resultEl.textContent = 'エラー: ' + e.message;
     } finally {
@@ -3232,8 +3286,10 @@ async function syncCheckboxes() {
             const local = loadDenomStorage();
             let denomChanged = false;
             Object.entries(json.denomData).forEach(([key, remote]) => {
-                const localEntry = local[key];
-                if (!localEntry || (remote.savedAt && (!localEntry.savedAt || remote.savedAt > localEntry.savedAt))) {
+                const localEntry  = local[key];
+                const remoteTime  = new Date(remote.savedAt  || 0).getTime();
+                const localTime   = new Date(localEntry?.savedAt || 0).getTime();
+                if (!localEntry || isNaN(localTime) || remoteTime >= localTime) {
                     local[key] = remote;
                     denomChanged = true;
                 }

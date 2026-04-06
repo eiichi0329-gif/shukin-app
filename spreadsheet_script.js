@@ -648,9 +648,9 @@ function doGet(e) {
           denomData[String(key)] = {
             counts:   parsed.counts   || {},
             expected: parsed.expected || 0,
-            date:     String(date),
+            date:     date instanceof Date ? date.toISOString().slice(0, 10) : String(date),
             route:    Number(route),
-            savedAt:  String(savedAt),
+            savedAt:  savedAt instanceof Date ? savedAt.toISOString() : String(savedAt),
           };
         } catch(_) {}
       }
