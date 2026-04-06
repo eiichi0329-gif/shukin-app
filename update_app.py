@@ -13,7 +13,7 @@ collection-app/data.js を生成します。
     python update_app.py
 """
 
-import os, json, re
+import os, json, re, urllib.request
 from datetime import datetime
 from collections import defaultdict
 
@@ -506,6 +506,25 @@ def main():
         f.write(js_out)
 
     print(f"出力完了: {OUTPUT_FILE}")
+
+    # ── GAS の配達済みシートをクリア ──
+    if GAS_URL:
+        print()
+        print("配達済みデータをリセット中...")
+        try:
+            body = json.dumps({'action': 'clearDeliveries'}).encode('utf-8')
+            req  = urllib.request.Request(
+                GAS_URL,
+                data    = body,
+                headers = {'Content-Type': 'application/json'},
+                method  = 'POST',
+            )
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                print(f"  → リセット完了 (HTTP {resp.status})")
+        except Exception as e:
+            print(f"  [警告] 配達済みリセットに失敗しました: {e}")
+            print("  GAS を再デプロイ後、手動でリセットしてください。")
+
     print()
     print("次の手順:")
     print("  1. collection-app/index.html をブラウザで開いてください")

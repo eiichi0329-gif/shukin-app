@@ -272,6 +272,13 @@ function doPost(e) {
       const sheet = ss.getSheetByName(DELIVERY_SHEET);
       if (sheet && payload.groupKey) removeRow(sheet, payload.groupKey, DELIVERY_HEADERS.length);
 
+    // ── 配達済み全クリア（データ更新時） ──
+    } else if (action === 'clearDeliveries') {
+      const sheet = ss.getSheetByName(DELIVERY_SHEET);
+      if (sheet && sheet.getLastRow() >= 2) {
+        sheet.deleteRows(2, sheet.getLastRow() - 1);
+      }
+
     // ── ルートオーバーライド保存 ──
     } else if (action === 'setRouteOverrides') {
       const overrides = payload.overrides || {};
