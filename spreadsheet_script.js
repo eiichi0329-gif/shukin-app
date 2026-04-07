@@ -492,9 +492,10 @@ function doPost(e) {
 
       try {
         // ジオコーディングで緯度経度取得
+        const geocoder = Maps.newGeocoder().setLanguage('ja').setRegion('JP');
         function geocodeAddress(address) {
           try {
-            const result = Maps.geocode(address);
+            const result = geocoder.geocode(address);
             if (result.status === 'OK' && result.results.length > 0) {
               const loc = result.results[0].geometry.location;
               return { lat: loc.lat, lng: loc.lng };
