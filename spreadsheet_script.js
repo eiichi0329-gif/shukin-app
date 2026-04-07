@@ -480,6 +480,40 @@ function doPost(e) {
       return ContentService.createTextOutput(JSON.stringify({ ok: true, durations, nearest: nearestInfo }))
         .setMimeType(ContentService.MimeType.JSON);
 
+    // ── 最適ルート計算（TSP / optimizeWaypoints） ──
+    } else if (action === 'optimizeRoute') {
+      const rawStops = (payload.stops || []).filter(s => s.address);
+      const depot    = payload.depot || null;
+
+      if (rawStops.length < 2) {
+        return ContentService.createTextOutput(JSON.stringify({ ok: true, order: rawStops.map((_, i) => i) }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+
+      const origin      = depot || rawStops[0].address;
+      const destination = depot || rawStops[rawStops.length - 1].address;
+
+      try {
+        const finder = Maps.newDirectionFinder()
+          .setOrigin(origin)
+          .setDestination(destination)
+          .setMode(Maps.DirectionFinder.Mode.DRIVING)
+          .setOptimizeWaypoints(true);
+
+        rawStops.forEach(s => finder.addWaypoint(s.address));
+
+        const result       = finder.getDirections();
+        const waypointOrder = (result && result.routes && result.routes[0] && result.routes[0].waypoint_order)
+          ? result.routes[0].waypoint_order
+          : rawStops.map((_, i) => i);
+
+        return ContentService.createTextOutput(JSON.stringify({ ok: true, order: waypointOrder }))
+          .setMimeType(ContentService.MimeType.JSON);
+      } catch (e) {
+        return ContentService.createTextOutput(JSON.stringify({ ok: false, error: e.message }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+
     // ── 全リセット ──
     } else if (action === 'resetAll') {
       // 現金集金シート（口座振替・振込入金・連絡事項以外）のデータ行を全削除

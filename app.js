@@ -176,6 +176,7 @@ let deliveryData           = [];
 let deliveryChecked        = {};
 let deliveryRouteOverrides = {};
 let currentDeliveryListData = []; // 所要時間計算用に renderDelivery() が更新する
+let deliveryRouteOptimized  = null; // 最適ルート適用時の groupKey 順序配列（null = 未適用）
 let deliveryCompactRoutes  = new Set(); // "store|route" keys currently in compact view
 
 const DELIVERY_CHECK_KEY          = 'coll-delivery-v1';
@@ -311,10 +312,18 @@ function saveRecordOverrides() {
 
 // ─── Denom Storage ────────────────────────────────────────────────
 function loadDenomStorage() {
-    try { return JSON.parse(localStorage.getItem(DENOM_KEY) || '{}'); } catch { return {}; }
+    try {
+        const dataGenAt = window.DATA_META?.generatedAt || '';
+        const stored = JSON.parse(localStorage.getItem(DENOM_KEY) || '{}');
+        // data.js が更新されたらローカルキャッシュをクリア（GAS から再取得させる）
+        if (dataGenAt && stored._dataGeneratedAt && stored._dataGeneratedAt !== dataGenAt) return {};
+        const { _dataGeneratedAt, ...data } = stored;
+        return data;
+    } catch { return {}; }
 }
 function saveDenomStorage(data) {
-    localStorage.setItem(DENOM_KEY, JSON.stringify(data));
+    const dataGenAt = window.DATA_META?.generatedAt || '';
+    localStorage.setItem(DENOM_KEY, JSON.stringify({ _dataGeneratedAt: dataGenAt, ...data }));
 }
 function calcDenomTotal(counts) {
     return DENOMINATIONS.reduce((sum, d) => sum + d.value * (counts[d.value] || 0), 0);
@@ -1519,6 +1528,75 @@ async function checkNewCustomers() {
     }
 }
 
+// ─── 最適ルート ──────────────────────────────────────────────────
+async function optimizeDeliveryRoute() {
+    const url = getGasUrl();
+    if (!url) { alert('GAS URLが設定されていません'); return; }
+
+    const stops = currentDeliveryListData
+        .filter(m => m.address)
+        .map(m => ({ address: m.address, name: m.name, groupKey: m.groupKey }));
+
+    if (stops.length < 2) {
+        alert('住所が2件以上必要です');
+        return;
+    }
+    if (stops.length > 23) {
+        alert(`配達件数が ${stops.length} 件あります。25件を超える場合は最適化できません（現在の上限：23件）。ルートフィルターで件数を絞ってから実行してください。`);
+        return;
+    }
+
+    const store     = currentDeliveryListData[0]?.store || filters.store || '';
+    const depotAddr = STORE_DEPOTS[store] || null;
+
+    const btn      = document.getElementById('btn-optimize-route');
+    const resultEl = document.getElementById('delivery-time-result');
+    btn.disabled   = true;
+    resultEl.textContent = '最適化中...';
+
+    try {
+        const res  = await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({ action: 'optimizeRoute', stops, depot: depotAddr })
+        });
+        const json = await res.json();
+        if (!json.ok) throw new Error(json.error || '取得失敗');
+
+        // GAS から返ってきた waypointOrder（stops 配列の添え字順）を groupKey 順に変換
+        const order = json.order || stops.map((_, i) => i);
+        const optimizedGroupKeys = order.map(i => stops[i].groupKey);
+
+        // 最適ルート順を保存して再描画
+        deliveryRouteOptimized = optimizedGroupKeys;
+        renderDelivery();
+
+        // Googleマップで最適ルートを開く
+        const orderedAddresses = order.map(i => stops[i].address);
+        const origin = depotAddr || orderedAddresses[0];
+        const dest   = depotAddr || orderedAddresses[orderedAddresses.length - 1];
+        const wps    = depotAddr ? orderedAddresses : orderedAddresses.slice(1, -1);
+        const mapsUrl = 'https://www.google.com/maps/dir/?api=1'
+            + '&origin='      + encodeURIComponent(origin)
+            + '&destination=' + encodeURIComponent(dest)
+            + (wps.length ? '&waypoints=' + wps.map(a => encodeURIComponent(a)).join('%7C') : '')
+            + '&travelmode=driving';
+        window.open(mapsUrl, '_blank', 'noopener');
+
+        resultEl.textContent = `最適ルートを適用しました（${stops.length}件）`;
+    } catch (e) {
+        resultEl.textContent = 'エラー: ' + e.message;
+    } finally {
+        btn.disabled = false;
+    }
+}
+
+function revertDeliveryOrder() {
+    deliveryRouteOptimized = null;
+    renderDelivery();
+    const resultEl = document.getElementById('delivery-time-result');
+    if (resultEl) resultEl.textContent = '';
+}
+
 // ─── Delivery Tab ────────────────────────────────────────────────
 function renderDelivery() {
     const container = document.getElementById('delivery-list');
@@ -1584,6 +1662,23 @@ function renderDelivery() {
         const bOv = deliveryRouteOverrides[b.groupKey] ? 0 : 1;
         return aOv - bOv;
     });
+
+    // 最適ルートが適用されている場合は最適順で並び替え
+    if (deliveryRouteOptimized) {
+        const keyOrder = deliveryRouteOptimized;
+        data.sort((a, b) => {
+            const ai = keyOrder.indexOf(a.groupKey);
+            const bi = keyOrder.indexOf(b.groupKey);
+            if (ai === -1 && bi === -1) return 0;
+            if (ai === -1) return 1;
+            if (bi === -1) return -1;
+            return ai - bi;
+        });
+    }
+
+    // 「元の順番」ボタン表示切替
+    const revertBtn = document.getElementById('btn-revert-route');
+    if (revertBtn) revertBtn.classList.toggle('hidden', !deliveryRouteOptimized);
 
     // 所要時間計算用にデータを保持、結果はリセット
     currentDeliveryListData = data;
@@ -2566,8 +2661,7 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
 
     // 手持ち現金行（現金精査ボタン付き）
     let cashTotal = 0;
-    const denomSt  = loadDenomStorage();
-    const todayStr = new Date().toLocaleDateString('sv'); // "YYYY-MM-DD" ローカル時刻
+    const denomSt = loadDenomStorage();
     html += `<tr class="cash-row"><th class="row-header">手持ち現金</th>`;
     for (const r of routes) {
         const ck   = `${date}|${r}`;
@@ -2576,20 +2670,20 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
         cashTotal += cash;
         let seisaHtml = '';
         if ((routeTotals[r] || 0) > 0) {
-            const raw        = denomSt[`${date}|${r}`];
-            const savedDate  = raw?.savedAt ? new Date(raw.savedAt).toLocaleDateString('sv') : null;
-            const dd         = (raw && savedDate === todayStr) ? raw : null; // 当日分のみ有効
+            const dd = denomSt[`${date}|${r}`] || null; // GAS同期済みデータをそのまま使用
             let seisaStatus = `<div class="seisa-status seisa-none">未実施</div>`;
             if (dd) {
                 const denomTotal = calcDenomTotal(dd.counts);
-                // 保存時の目標額（dd.expected）と比較。syncCheckboxes 等で cash が再計算されても不一致にならない
                 const target = (dd.expected != null && dd.expected > 0) ? dd.expected : cash;
-                const diff = denomTotal - target;
+                const diff   = denomTotal - target;
+                const savedTimeStr = dd.savedAt
+                    ? new Date(dd.savedAt).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+                    : '';
                 if (diff === 0) {
-                    seisaStatus = `<div class="seisa-status seisa-ok">合致 ✓</div>`;
+                    seisaStatus = `<div class="seisa-status seisa-ok">合致 ✓<br><small class="seisa-time">${savedTimeStr}</small></div>`;
                 } else {
                     const sign = diff > 0 ? '+' : '−';
-                    seisaStatus = `<div class="seisa-status seisa-ng">合致せず<br><span class="seisa-diff">${sign}${fmt(Math.abs(diff))}円</span></div>`;
+                    seisaStatus = `<div class="seisa-status seisa-ng">合致せず<br><span class="seisa-diff">${sign}${fmt(Math.abs(diff))}円</span><br><small class="seisa-time">${savedTimeStr}</small></div>`;
                 }
             }
             seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r})">現金精査</button>${seisaStatus}`;
@@ -2776,12 +2870,10 @@ function openDenomDialog(date, route) {
     document.getElementById('denom-expected-amount').textContent = '¥' + fmt(expected);
     document.getElementById('denom-expected-val').value = expected;
 
-    // 保存済みの枚数を読み込む（当日保存分のみ。日付が変わったらクリア）
-    const storage   = loadDenomStorage();
-    const saved     = storage[cashKey];
-    const todayStr  = new Date().toLocaleDateString('sv');   // "YYYY-MM-DD" ローカル時刻
-    const savedDate = saved?.savedAt ? new Date(saved.savedAt).toLocaleDateString('sv') : null;
-    const counts    = (saved && savedDate === todayStr) ? saved.counts : {};
+    // 保存済みの枚数を読み込む（GAS同期済みデータをそのまま使用）
+    const storage = loadDenomStorage();
+    const saved   = storage[cashKey];
+    const counts  = saved?.counts || {};
 
     // 紙幣・硬貨パネルを描画
     const renderPanel = (containerId, values) => {
@@ -3281,16 +3373,25 @@ async function syncCheckboxes() {
             }
         }
 
-        // 現金精査データをリモートとマージ（新しい savedAt を優先）
+        // 現金精査データ: GAS を正として常に上書き（スマホ→GAS→PC の流れを保証）
         if (json.denomData) {
             const local = loadDenomStorage();
             let denomChanged = false;
             Object.entries(json.denomData).forEach(([key, remote]) => {
-                const localEntry  = local[key];
-                const remoteTime  = new Date(remote.savedAt  || 0).getTime();
-                const localTime   = new Date(localEntry?.savedAt || 0).getTime();
-                if (!localEntry || isNaN(localTime) || remoteTime >= localTime) {
+                const localEntry = local[key];
+                const remoteTime = new Date(remote.savedAt  || 0).getTime();
+                const localTime  = new Date(localEntry?.savedAt || 0).getTime();
+                // GASのデータで上書き（同じか新しい場合）
+                if (!localEntry || remoteTime >= localTime) {
                     local[key] = remote;
+                    denomChanged = true;
+                }
+            });
+            // GAS上に存在しないキーをローカルから削除（古いデータをクリア）
+            const remoteKeys = new Set(Object.keys(json.denomData));
+            Object.keys(local).forEach(key => {
+                if (!remoteKeys.has(key)) {
+                    delete local[key];
                     denomChanged = true;
                 }
             });
