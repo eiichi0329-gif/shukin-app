@@ -490,24 +490,64 @@ function doPost(e) {
           .setMimeType(ContentService.MimeType.JSON);
       }
 
-      const origin      = depot || rawStops[0].address;
-      const destination = depot || rawStops[rawStops.length - 1].address;
-
       try {
-        const finder = Maps.newDirectionFinder()
-          .setOrigin(origin)
-          .setDestination(destination)
-          .setMode(Maps.DirectionFinder.Mode.DRIVING)
-          .setOptimizeWaypoints(true);
+        // ジオコーディングで緯度経度取得
+        function geocodeAddress(address) {
+          try {
+            const result = Maps.geocode(address);
+            if (result.status === 'OK' && result.results.length > 0) {
+              const loc = result.results[0].geometry.location;
+              return { lat: loc.lat, lng: loc.lng };
+            }
+          } catch (e) {}
+          return null;
+        }
 
-        rawStops.forEach(s => finder.addWaypoint(s.address));
+        // ハーバーサイン距離（km）
+        function haversine(a, b) {
+          if (!a || !b) return Infinity;
+          const R = 6371;
+          const dLat = (b.lat - a.lat) * Math.PI / 180;
+          const dLng = (b.lng - a.lng) * Math.PI / 180;
+          const sinDLat = Math.sin(dLat / 2);
+          const sinDLng = Math.sin(dLng / 2);
+          const c = sinDLat * sinDLat +
+                    Math.cos(a.lat * Math.PI / 180) * Math.cos(b.lat * Math.PI / 180) *
+                    sinDLng * sinDLng;
+          return R * 2 * Math.atan2(Math.sqrt(c), Math.sqrt(1 - c));
+        }
 
-        const result       = finder.getDirections();
-        const waypointOrder = (result && result.routes && result.routes[0] && result.routes[0].waypoint_order)
-          ? result.routes[0].waypoint_order
-          : rawStops.map((_, i) => i);
+        // 全ストップをジオコーディング
+        const stopCoords = rawStops.map(s => geocodeAddress(s.address));
 
-        return ContentService.createTextOutput(JSON.stringify({ ok: true, order: waypointOrder }))
+        // 最近傍法TSP
+        const n = rawStops.length;
+        const visited = new Array(n).fill(false);
+        const order = [];
+
+        // 出発地点（デポがあればデポ、なければ最初のストップ）
+        let current = depot ? geocodeAddress(depot) : stopCoords[0];
+        if (!depot) {
+          visited[0] = true;
+          order.push(0);
+          current = stopCoords[0];
+        }
+
+        while (order.length < n) {
+          let bestIdx = -1;
+          let bestDist = Infinity;
+          for (let j = 0; j < n; j++) {
+            if (!visited[j]) {
+              const d = haversine(current, stopCoords[j]);
+              if (d < bestDist) { bestDist = d; bestIdx = j; }
+            }
+          }
+          visited[bestIdx] = true;
+          order.push(bestIdx);
+          current = stopCoords[bestIdx];
+        }
+
+        return ContentService.createTextOutput(JSON.stringify({ ok: true, order }))
           .setMimeType(ContentService.MimeType.JSON);
       } catch (e) {
         return ContentService.createTextOutput(JSON.stringify({ ok: false, error: e.message }))

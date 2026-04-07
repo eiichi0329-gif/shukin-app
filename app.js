@@ -1541,8 +1541,8 @@ async function optimizeDeliveryRoute() {
         alert('住所が2件以上必要です');
         return;
     }
-    if (stops.length > 23) {
-        alert(`配達件数が ${stops.length} 件あります。25件を超える場合は最適化できません（現在の上限：23件）。ルートフィルターで件数を絞ってから実行してください。`);
+    if (stops.length > 70) {
+        alert(`配達件数が ${stops.length} 件あります。70件を超える場合は最適化できません。ルートフィルターで件数を絞ってから実行してください。`);
         return;
     }
 
@@ -1569,18 +1569,6 @@ async function optimizeDeliveryRoute() {
         // 最適ルート順を保存して再描画
         deliveryRouteOptimized = optimizedGroupKeys;
         renderDelivery();
-
-        // Googleマップで最適ルートを開く
-        const orderedAddresses = order.map(i => stops[i].address);
-        const origin = depotAddr || orderedAddresses[0];
-        const dest   = depotAddr || orderedAddresses[orderedAddresses.length - 1];
-        const wps    = depotAddr ? orderedAddresses : orderedAddresses.slice(1, -1);
-        const mapsUrl = 'https://www.google.com/maps/dir/?api=1'
-            + '&origin='      + encodeURIComponent(origin)
-            + '&destination=' + encodeURIComponent(dest)
-            + (wps.length ? '&waypoints=' + wps.map(a => encodeURIComponent(a)).join('%7C') : '')
-            + '&travelmode=driving';
-        window.open(mapsUrl, '_blank', 'noopener');
 
         resultEl.textContent = `最適ルートを適用しました（${stops.length}件）`;
     } catch (e) {
