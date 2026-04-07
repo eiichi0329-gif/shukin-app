@@ -517,8 +517,20 @@ function doPost(e) {
           return R * 2 * Math.atan2(Math.sqrt(c), Math.sqrt(1 - c));
         }
 
-        // 全ストップをジオコーディング
-        const stopCoords = rawStops.map(s => geocodeAddress(s.address));
+        // 全ストップをジオコーディング（レート制限対策で少し間隔を空ける）
+        const stopCoords = rawStops.map(s => {
+          const coord = geocodeAddress(s.address);
+          Utilities.sleep(50);
+          return coord;
+        });
+
+        // 未訪問の中から最初のインデックスを返すフォールバック
+        function firstUnvisited(visited) {
+          for (let j = 0; j < visited.length; j++) {
+            if (!visited[j]) return j;
+          }
+          return -1;
+        }
 
         // 最近傍法TSP
         const n = rawStops.length;
@@ -526,7 +538,8 @@ function doPost(e) {
         const order = [];
 
         // 出発地点（デポがあればデポ、なければ最初のストップ）
-        let current = depot ? geocodeAddress(depot) : stopCoords[0];
+        // デポのジオコーディングが失敗した場合は stopCoords[0] で代替
+        let current = depot ? (geocodeAddress(depot) || stopCoords[0]) : stopCoords[0];
         if (!depot) {
           visited[0] = true;
           order.push(0);
@@ -542,6 +555,9 @@ function doPost(e) {
               if (d < bestDist) { bestDist = d; bestIdx = j; }
             }
           }
+          // ジオコーディング失敗等で bestIdx が -1 になった場合は先頭の未訪問を選ぶ
+          if (bestIdx === -1) bestIdx = firstUnvisited(visited);
+          if (bestIdx === -1) break;
           visited[bestIdx] = true;
           order.push(bestIdx);
           current = stopCoords[bestIdx];

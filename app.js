@@ -1563,7 +1563,10 @@ async function optimizeDeliveryRoute() {
         if (!json.ok) throw new Error(json.error || '取得失敗');
 
         // GAS から返ってきた waypointOrder（stops 配列の添え字順）を groupKey 順に変換
-        const order = json.order || stops.map((_, i) => i);
+        // 範囲外・不正なインデックスは除外してフォールバック
+        const rawOrder = json.order || stops.map((_, i) => i);
+        const validOrder = rawOrder.filter(i => i >= 0 && i < stops.length);
+        const order = validOrder.length === stops.length ? validOrder : stops.map((_, i) => i);
         const optimizedGroupKeys = order.map(i => stops[i].groupKey);
 
         // 最適ルート順を保存して再描画
