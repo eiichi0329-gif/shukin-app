@@ -974,6 +974,25 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   padding: 3px 8px; white-space: nowrap;
 }
 
+.delivery-eta {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0369a1;
+  background: #e0f2fe;
+  border: 1px solid #7dd3fc;
+  border-radius: 4px;
+  padding: 1px 6px;
+  white-space: nowrap;
+}
+.delivery-eta:empty { display: none; }
+
+.delivery-meta-item .item-count-multi {
+  font-size: 1.5em;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
 .delivery-card-contacts {
   display: flex; gap: 8px; flex-wrap: wrap;
 }

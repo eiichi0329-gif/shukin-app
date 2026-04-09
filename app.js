@@ -178,6 +178,7 @@ let deliveryRouteOverrides = {};
 let currentDeliveryListData = []; // 所要時間計算用に renderDelivery() が更新する
 let deliveryRouteOptimized  = null; // 最適ルート適用時の groupKey 順序配列（null = 未適用）
 let deliveryCompactRoutes  = new Set(); // "store|route" keys currently in compact view
+let deliveryArrivalTimes   = {}; // groupKey → "HH:MM" 推定到着時刻（所要時間計算後に設定）
 
 const DELIVERY_CHECK_KEY          = 'coll-delivery-v1';
 const DELIVERY_ROUTE_OVERRIDE_KEY = 'coll-delivery-route-v1';
@@ -1393,17 +1394,16 @@ async function calcDeliveryTime() {
     const url = getGasUrl();
     if (!url) { alert('GAS URLが設定されていません'); return; }
 
-    const midStops = currentDeliveryListData
-        .filter(m => m.address)
-        .map(m => {
-            const isNewStop = m.countLabel === '新規' || m.countLabel === '再注文';
-            return {
-                address: m.address,
-                name:    m.name,
-                isNew:   isNewStop,
-                label:   isNewStop ? m.countLabel : '',
-            };
-        });
+    const midStopsData = currentDeliveryListData.filter(m => m.address); // groupKey 保持
+    const midStops = midStopsData.map(m => {
+        const isNewStop = m.countLabel === '新規' || m.countLabel === '再注文';
+        return {
+            address: m.address,
+            name:    m.name,
+            isNew:   isNewStop,
+            label:   isNewStop ? m.countLabel : '',
+        };
+    });
 
     if (midStops.length < 2) {
         alert('住所が2件以上必要です');
@@ -1413,7 +1413,8 @@ async function calcDeliveryTime() {
     // 店舗デポ（出発・帰着）を先頭・末尾に追加
     const store     = currentDeliveryListData[0]?.store || filters.store || '';
     const depotAddr = STORE_DEPOTS[store];
-    const stops     = depotAddr
+    const hasDepot  = !!depotAddr;
+    const stops     = hasDepot
         ? [
             { address: depotAddr, name: store, isNew: false, isDepot: true },
             ...midStops,
@@ -1436,7 +1437,8 @@ async function calcDeliveryTime() {
 
         const count     = midStops.length; // デポは件数に含めない
         const workSec   = count * 3 * 60;
-        const travelSec = (json.durations || []).reduce((sum, d) => sum + (d || 0), 0);
+        const durArr    = json.durations || [];
+        const travelSec = durArr.reduce((sum, d) => sum + (d || 0), 0);
         const totalSec  = workSec + travelSec;
         const totalMin  = Math.ceil(totalSec / 60);
         const travelMin = Math.round(travelSec / 60);
@@ -1445,11 +1447,28 @@ async function calcDeliveryTime() {
         let finishStr = '';
         const startInput = document.getElementById('delivery-start-time');
         if (startInput && startInput.value) {
-            const [h, m] = startInput.value.split(':').map(Number);
-            const endMin = h * 60 + m + totalMin;
+            const [sh, sm] = startInput.value.split(':').map(Number);
+            const startMin = sh * 60 + sm;
+            const endMin   = startMin + totalMin;
             const eh = Math.floor(endMin / 60) % 24;
             const em = endMin % 60;
             finishStr = ` → ${String(eh).padStart(2,'0')}:${String(em).padStart(2,'0')}頃`;
+
+            // 各顧客の到着予定時刻を計算
+            // hasDepot: durArr[0]=depot→stop0, durArr[i]=stop(i-1)→stop(i)
+            // no depot: durArr[i-1]=stop(i-1)→stop(i), stop0 は出発点
+            deliveryArrivalTimes = {};
+            midStopsData.forEach((stop, i) => {
+                const cumulTravelSec = hasDepot
+                    ? durArr.slice(0, i + 1).reduce((s, d) => s + (d || 0), 0)
+                    : (i === 0 ? 0 : durArr.slice(0, i).reduce((s, d) => s + (d || 0), 0));
+                const arrMin = startMin + Math.round(cumulTravelSec / 60) + 3 * i;
+                const ah = Math.floor(arrMin / 60) % 24;
+                const am = arrMin % 60;
+                deliveryArrivalTimes[stop.groupKey] =
+                    `${String(ah).padStart(2,'0')}:${String(am).padStart(2,'0')}`;
+            });
+            updateArrivalTimeDisplay();
         }
 
         const html = `${count}件 | 移動 約${travelMin}分 + 作業 ${workMin}分 = <strong>合計 約${totalMin}分</strong>${finishStr}`;
@@ -1458,6 +1477,48 @@ async function calcDeliveryTime() {
         resultEl.textContent = 'エラー: ' + e.message;
     } finally {
         btn.disabled = false;
+    }
+}
+
+// ─── 到着予定時刻を各カードに反映 ────────────────────────────────
+function updateArrivalTimeDisplay() {
+    document.querySelectorAll('#delivery-list .delivery-eta[data-group-key]').forEach(el => {
+        const time = deliveryArrivalTimes[el.dataset.groupKey];
+        el.textContent = time ? `\u23F1 \u7D04${time}\u9803` : '';
+    });
+}
+
+// ─── 全ルートを Google マップで開く ──────────────────────────────
+function openAllRouteMap() {
+    const addrs = currentDeliveryListData
+        .filter(m => m.address)
+        .map(m => m.address);
+
+    if (addrs.length === 0) { alert('住所がありません'); return; }
+
+    const store     = currentDeliveryListData[0]?.store || filters.store || '';
+    const depotAddr = STORE_DEPOTS[store];
+    const allStops  = depotAddr ? [depotAddr, ...addrs] : addrs;
+
+    // Google Maps URL は1リンクあたり約10地点が上限
+    // 10件超は末尾1件を重複させてチェーン接続
+    const CHUNK = 10;
+    const chunks = [];
+    for (let i = 0; i < allStops.length; i += CHUNK - 1) {
+        const slice = allStops.slice(i, i + CHUNK);
+        if (slice.length >= 2) chunks.push(slice);
+        if (i + CHUNK >= allStops.length) break;
+    }
+
+    if (chunks.length === 1) {
+        const path = chunks[0].map(a => encodeURIComponent(a)).join('/');
+        window.open(`https://www.google.com/maps/dir/${path}`, '_blank');
+    } else {
+        chunks.forEach((chunk, idx) => {
+            const path = chunk.map(a => encodeURIComponent(a)).join('/');
+            setTimeout(() => window.open(`https://www.google.com/maps/dir/${path}`, '_blank'), idx * 400);
+        });
+        alert(`件数が多いため ${chunks.length} 個のタブに分割して開きます。`);
     }
 }
 
@@ -1571,6 +1632,7 @@ async function optimizeDeliveryRoute() {
 
         // 最適ルート順を保存して再描画
         deliveryRouteOptimized = optimizedGroupKeys;
+        deliveryArrivalTimes   = {};
         renderDelivery();
 
         resultEl.textContent = `最適ルートを適用しました（${stops.length}件）`;
@@ -1583,6 +1645,7 @@ async function optimizeDeliveryRoute() {
 
 function revertDeliveryOrder() {
     deliveryRouteOptimized = null;
+    deliveryArrivalTimes   = {};
     renderDelivery();
     const resultEl = document.getElementById('delivery-time-result');
     if (resultEl) resultEl.textContent = '';
@@ -1725,7 +1788,11 @@ function renderDelivery() {
             ? `<span class="delivery-meta-item dtype-visit">訪問</span>`
             : expandedItems.map(i => {
                 const colorClass = DELIVERY_TYPE_COLOR[i.type] || 'dtype-black';
-                return `<span class="delivery-meta-item ${colorClass}">${escHtml(i.type)}&times;${escHtml(i.count)}</span>`;
+                const countNum  = parseInt(i.count) || 0;
+                const countHtml = countNum >= 2
+                    ? `<span class="item-count-multi">${escHtml(i.count)}</span>`
+                    : escHtml(i.count);
+                return `<span class="delivery-meta-item ${colorClass}">${escHtml(i.type)}&times;${countHtml}</span>`;
             }).join('');
 
         const otherMetaParts = [
@@ -1758,6 +1825,7 @@ function renderDelivery() {
                 </div>
                 <div class="delivery-name-area">
                     <span class="delivery-name">${escHtml(m.name)}</span>
+                    <span class="delivery-eta" data-group-key="${safeKey}"></span>
                     ${m.countLabel ? `<span class="count-label count-label-${labelClass(m.countLabel)}">${escHtml(m.countLabel === '\u96C6\u91D1' ? '\u8ACB\u6C42' : m.countLabel === '\u7FCC\u9031\u6CE8\u6587\u78BA\u8A8D' ? '\u6CE8\u6587\u78BA\u8A8D' : m.countLabel)}</span>` : ''}
                     ${compactMapHtml}
                     <button class="btn-delivery-msg-open" data-group-key="${safeKey}">連絡事項</button>
@@ -1788,6 +1856,7 @@ function renderDelivery() {
     });
 
     container.innerHTML = html;
+    updateArrivalTimeDisplay();
 
     container.querySelectorAll('.btn-delivery-check').forEach(btn => {
         btn.addEventListener('click', () => onDeliveryCheck(btn.dataset.key, btn));
@@ -2664,9 +2733,10 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
             const dd = denomSt[`${date}|${r}`] || null; // GAS同期済みデータをそのまま使用
             let seisaStatus = `<div class="seisa-status seisa-none">未実施</div>`;
             if (dd) {
-                const denomTotal = calcDenomTotal(dd.counts);
-                const target = (dd.expected != null && dd.expected > 0) ? dd.expected : cash;
-                const diff   = denomTotal - target;
+                const denomTotal  = calcDenomTotal(dd.counts);
+                // 精査保存時の expected を比較基準にする（スマホ入力時の手持ち現金と一致させるため）
+                const seisaTarget = (dd.expected > 0) ? dd.expected : cash;
+                const diff        = denomTotal - seisaTarget;
                 const savedTimeStr = dd.savedAt
                     ? new Date(dd.savedAt).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })
                     : '';
@@ -2679,7 +2749,11 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
             }
             seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r})">現金精査</button>${seisaStatus}`;
         }
-        html += `<td class="cash-cell" data-cash-key="${ck}" data-base="${routeTotals[r] || 0}"><div class="cash-amount">${fmt(cash)}</div>${seisaHtml}</td>`;
+        // 精査済みの場合は保存時の expected（スマホの手持ち現金）を表示する
+        const denomSaved = denomSt[`${date}|${r}`];
+        const displayCash = (denomSaved?.expected > 0) ? denomSaved.expected : cash;
+        const savedExpectedAttr = denomSaved?.expected > 0 ? ` data-saved-expected="${denomSaved.expected}"` : '';
+        html += `<td class="cash-cell" data-cash-key="${ck}" data-base="${routeTotals[r] || 0}"${savedExpectedAttr}><div class="cash-amount">${fmt(displayCash)}</div>${seisaHtml}</td>`;
     }
     html += `<td class="total-cell grand-total" data-cash-total="${date}">${fmt(cashTotal)}</td></tr>`;
 
@@ -2849,12 +2923,13 @@ function openDenomDialog(date, route) {
     currentDenomDate  = date;
     currentDenomRoute = route;
 
-    // ルートの手持ち現金を data-base 属性 + changeAmounts から計算（DOM テキストパース依存を排除）
-    const cashKey  = `${date}|${route}`;
-    const cashCell = document.querySelector(`.cash-cell[data-cash-key="${cashKey}"]`);
-    const base     = parseInt(cashCell?.dataset.base) || 0;
-    const ca       = getChangeAmounts()[cashKey] !== undefined ? getChangeAmounts()[cashKey] : 12220;
-    const expected = base + ca;
+    // 手持ち現金の目標額を決定：精査済みなら保存時の expected を優先（スマホ入力時と一致させる）
+    const cashKey     = `${date}|${route}`;
+    const cashCell    = document.querySelector(`.cash-cell[data-cash-key="${cashKey}"]`);
+    const savedExpected = parseInt(cashCell?.dataset.savedExpected) || 0;
+    const base        = parseInt(cashCell?.dataset.base) || 0;
+    const ca          = getChangeAmounts()[cashKey] !== undefined ? getChangeAmounts()[cashKey] : 12220;
+    const expected    = savedExpected > 0 ? savedExpected : (base + ca);
 
     const [, m, day] = date.split('-');
     document.getElementById('denom-title').textContent = `💰 現金精査（${parseInt(m)}月${parseInt(day)}日　R${route}）`;
