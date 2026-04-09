@@ -1,5 +1,5 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-04-09 22:23:07
+// 自動生成: 2026-04-10 06:35:23
 // 件数: 4329 件  合計: 41,052,947円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbzaN9MnPONOoSH8DzrjxZhYBPstdmWsxnG217x8HdE0CZ9Oxckzxx55RVCqDZgMcTQ/exec";
@@ -83394,44 +83394,6 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-04",
-    "code": 3001,
-    "route": 4,
-    "name": "小林　明男",
-    "type": "小箱セット",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市花瀬２３６－５－1棟１１３",
-    "notes": "置配　インターホン鳴らさなくて良い",
-    "phone": "090-3413-8865",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-04",
-    "code": 3001,
-    "route": 4,
-    "name": "谷口　ひろみ",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市相田５７３－１ケイハイツ１－１０１",
-    "notes": "",
-    "phone": "090-3665-8252",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-04",
     "code": 3150,
     "route": 4,
     "name": "杉山　澄子",
@@ -83596,6 +83558,25 @@ window.DELIVERY_DATA = [
     "address": "飯塚市相田５０－３",
     "notes": "隣のテナント前に駐車",
     "phone": "0948-28-9745",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
+    "code": 3267,
+    "route": 4,
+    "name": "谷口　ひろみ",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市相田５７３－１ケイハイツ１－１０１",
+    "notes": "",
+    "phone": "090-3665-8252",
     "emergency": "",
     "memo": "",
     "absent": ""
@@ -83774,6 +83755,25 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-04",
+    "code": 3415,
+    "route": 4,
+    "name": "小林　明男",
+    "type": "小箱セット",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市花瀬２３６－５－1棟１１３",
+    "notes": "置配　インターホン鳴らさなくて良い",
+    "phone": "090-3413-8865",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-04",
     "code": 3420,
     "route": 4,
     "name": "木村　千雪",
@@ -83812,7 +83812,7 @@ window.DELIVERY_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-04-09T22:23:07.124590",
+  "generatedAt": "2026-04-10T06:35:23.627611",
   "stores": [
     "下関店",
     "北九州店",
@@ -83959,7 +83959,7 @@ window.DATA_META = {
       "store": "飯塚店",
       "name": "うちくる顧客管理表(2026.04)飯塚店.xlsm",
       "dataMonth": "2026-04",
-      "mtime": "2026-04-09",
+      "mtime": "2026-04-10",
       "count": 172
     }
   ],
