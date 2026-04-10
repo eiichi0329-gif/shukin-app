@@ -314,17 +314,13 @@ function saveRecordOverrides() {
 // ─── Denom Storage ────────────────────────────────────────────────
 function loadDenomStorage() {
     try {
-        const dataGenAt = window.DATA_META?.generatedAt || '';
         const stored = JSON.parse(localStorage.getItem(DENOM_KEY) || '{}');
-        // data.js が更新されたらローカルキャッシュをクリア（GAS から再取得させる）
-        if (dataGenAt && stored._dataGeneratedAt && stored._dataGeneratedAt !== dataGenAt) return {};
         const { _dataGeneratedAt, ...data } = stored;
         return data;
     } catch { return {}; }
 }
 function saveDenomStorage(data) {
-    const dataGenAt = window.DATA_META?.generatedAt || '';
-    localStorage.setItem(DENOM_KEY, JSON.stringify({ _dataGeneratedAt: dataGenAt, ...data }));
+    localStorage.setItem(DENOM_KEY, JSON.stringify(data));
 }
 function calcDenomTotal(counts) {
     return DENOMINATIONS.reduce((sum, d) => sum + d.value * (counts[d.value] || 0), 0);
@@ -1491,10 +1487,10 @@ function updateArrivalTimeDisplay() {
 // ─── 全ルートを Google マップで開く ──────────────────────────────
 function openAllRouteMap() {
     const addrs = currentDeliveryListData
-        .filter(m => m.address)
+        .filter(m => m.address && !deliveryChecked[m.groupKey])
         .map(m => m.address);
 
-    if (addrs.length === 0) { alert('住所がありません'); return; }
+    if (addrs.length === 0) { alert('未配達の住所がありません'); return; }
 
     const store     = currentDeliveryListData[0]?.store || filters.store || '';
     const depotAddr = STORE_DEPOTS[store];
@@ -2757,13 +2753,12 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
                     seisaStatus = `<div class="seisa-status seisa-ng">合致せず<br><span class="seisa-diff">${sign}${fmt(Math.abs(diff))}円</span><br><small class="seisa-time">${savedTimeStr}</small></div>`;
                 }
             }
-            seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r})">現金精査</button>${seisaStatus}`;
+            seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r}, ${routeTotals[r] || 0}, ${ca})">現金精査</button>${seisaStatus}`;
         }
         // 精査済みの場合は保存時の expected（スマホの手持ち現金）を表示する
         const denomSaved = denomSt[`${date}|${r}`];
         const displayCash = (denomSaved?.expected > 0) ? denomSaved.expected : cash;
-        const savedExpectedAttr = denomSaved?.expected > 0 ? ` data-saved-expected="${denomSaved.expected}"` : '';
-        html += `<td class="cash-cell" data-cash-key="${ck}" data-base="${routeTotals[r] || 0}"${savedExpectedAttr}><div class="cash-amount">${fmt(displayCash)}</div>${seisaHtml}</td>`;
+        html += `<td class="cash-cell" data-cash-key="${ck}"><div class="cash-amount">${fmt(displayCash)}</div>${seisaHtml}</td>`;
     }
     html += `<td class="total-cell grand-total" data-cash-total="${date}">${fmt(cashTotal)}</td></tr>`;
 
@@ -2929,27 +2924,24 @@ function renderAdmin() {
 }
 
 // ─── Denomination Check Dialog ───────────────────────────────────
-function openDenomDialog(date, route) {
+function openDenomDialog(date, route, base, ca) {
     currentDenomDate  = date;
     currentDenomRoute = route;
 
-    // 手持ち現金の目標額を決定：精査済みなら保存時の expected を優先（スマホ入力時と一致させる）
-    const cashKey     = `${date}|${route}`;
-    const cashCell    = document.querySelector(`.cash-cell[data-cash-key="${cashKey}"]`);
-    const savedExpected = parseInt(cashCell?.dataset.savedExpected) || 0;
-    const base        = parseInt(cashCell?.dataset.base) || 0;
-    const ca          = getChangeAmounts()[cashKey] !== undefined ? getChangeAmounts()[cashKey] : 12220;
-    const expected    = savedExpected > 0 ? savedExpected : (base + ca);
+    // 手持ち現金の目標額を決定
+    // ① 保存済みの expected があればそれを使用（スマホ・PC 間で一致させる）
+    // ② 未保存なら引数 base（集金合計）＋ ca（釣銭）で計算
+    const cashKey  = `${date}|${route}`;
+    const saved    = loadDenomStorage()[cashKey];
+    const _ca      = (ca !== undefined) ? ca : (getChangeAmounts()[cashKey] !== undefined ? getChangeAmounts()[cashKey] : 12220);
+    const expected = (saved?.expected > 0) ? saved.expected : ((base || 0) + _ca);
 
     const [, m, day] = date.split('-');
     document.getElementById('denom-title').textContent = `💰 現金精査（${parseInt(m)}月${parseInt(day)}日　R${route}）`;
     document.getElementById('denom-expected-amount').textContent = '¥' + fmt(expected);
     document.getElementById('denom-expected-val').value = expected;
 
-    // 保存済みの枚数を読み込む（GAS同期済みデータをそのまま使用）
-    const storage = loadDenomStorage();
-    const saved   = storage[cashKey];
-    const counts  = saved?.counts || {};
+    const counts = saved?.counts || {};
 
     // 紙幣・硬貨パネルを描画
     const renderPanel = (containerId, values) => {
@@ -3422,6 +3414,8 @@ async function syncCheckboxes() {
 
         saveChecked();
         renderTable();
+        // 集金状態が変わった場合に管理画面の集金合計・手持ち現金を最新化
+        if (currentTab === 'admin') renderAdmin();
 
         // 連絡事項をリモートと完全同期（リモートを正とする）
         if (Array.isArray(json.messages)) {
@@ -3444,12 +3438,12 @@ async function syncCheckboxes() {
 
             if (changed) {
                 saveMessages(synced);
-                if (currentTab === 'msg')   renderMsgTab();
-                if (currentTab === 'admin') renderAdmin();
+                if (currentTab === 'msg') renderMsgTab();
             }
         }
 
-        // 現金精査データ: GAS を正として常に上書き（スマホ→GAS→PC の流れを保証）
+        // 現金精査データ: GAS を正として上書き（スマホ→GAS→PC の流れを保証）
+        // ローカルにあってGASにないキーは削除しない（GAS POST 失敗時のデータ保護）
         if (json.denomData) {
             const local = loadDenomStorage();
             let denomChanged = false;
@@ -3457,24 +3451,12 @@ async function syncCheckboxes() {
                 const localEntry = local[key];
                 const remoteTime = new Date(remote.savedAt  || 0).getTime();
                 const localTime  = new Date(localEntry?.savedAt || 0).getTime();
-                // GASのデータで上書き（同じか新しい場合）
-                if (!localEntry || remoteTime >= localTime) {
+                if (!localEntry || remoteTime > localTime) {
                     local[key] = remote;
                     denomChanged = true;
                 }
             });
-            // GAS上に存在しないキーをローカルから削除（古いデータをクリア）
-            const remoteKeys = new Set(Object.keys(json.denomData));
-            Object.keys(local).forEach(key => {
-                if (!remoteKeys.has(key)) {
-                    delete local[key];
-                    denomChanged = true;
-                }
-            });
-            if (denomChanged) {
-                saveDenomStorage(local);
-                if (currentTab === 'admin') renderAdmin();
-            }
+            if (denomChanged) saveDenomStorage(local);
         }
 
         // 手動追加レコードをリモートとマージ（GAS を正として同期）
