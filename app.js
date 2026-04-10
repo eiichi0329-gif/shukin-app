@@ -1503,23 +1503,33 @@ function openAllRouteMap() {
     // Google Maps URL は1リンクあたり約10地点が上限
     // 10件超は末尾1件を重複させてチェーン接続
     const CHUNK = 10;
-    const chunks = [];
+    const urls = [];
     for (let i = 0; i < allStops.length; i += CHUNK - 1) {
         const slice = allStops.slice(i, i + CHUNK);
-        if (slice.length >= 2) chunks.push(slice);
+        if (slice.length >= 2) {
+            const path = slice.map(a => encodeURIComponent(a)).join('/');
+            urls.push(`https://www.google.com/maps/dir/${path}`);
+        }
         if (i + CHUNK >= allStops.length) break;
     }
 
-    if (chunks.length === 1) {
-        const path = chunks[0].map(a => encodeURIComponent(a)).join('/');
-        window.open(`https://www.google.com/maps/dir/${path}`, '_blank');
-    } else {
-        chunks.forEach((chunk, idx) => {
-            const path = chunk.map(a => encodeURIComponent(a)).join('/');
-            setTimeout(() => window.open(`https://www.google.com/maps/dir/${path}`, '_blank'), idx * 400);
-        });
-        alert(`件数が多いため ${chunks.length} 個のタブに分割して開きます。`);
-    }
+    if (urls.length === 0) { alert('住所が不足しています'); return; }
+
+    // window.open() はモバイルのポップアップブロッカーに引っかかるため
+    // <a> リンクをダイアログに表示してユーザーにタップしてもらう
+    const linksDiv = document.getElementById('route-map-links');
+    linksDiv.innerHTML = urls.map((url, i) =>
+        `<a class="btn btn-primary" style="display:block;text-align:center;text-decoration:none"
+            href="${url}" target="_blank" rel="noopener">
+            ${urls.length === 1 ? 'Google マップで開く' : `区間 ${i + 1}／${urls.length} を開く`}
+         </a>`
+    ).join('');
+
+    document.getElementById('route-map-dialog').showModal();
+}
+
+function closeRouteMapDialog() {
+    document.getElementById('route-map-dialog').close();
 }
 
 // ─── 新規確認（最近傍） ───────────────────────────────────────────
