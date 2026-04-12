@@ -901,6 +901,14 @@ function getOrCreateImageFolder(ss) {
   return DriveApp.createFolder(folderName);
 }
 
+// ─── DriveApp 権限確認用テスト関数（GASエディタから手動実行） ────
+// 実行後、ログに「OK: 顧客画像_〇〇」と表示されれば権限OK
+function testDriveAccess() {
+  const ss     = SpreadsheetApp.getActiveSpreadsheet();
+  const folder = getOrCreateImageFolder(ss);
+  Logger.log('OK: ' + folder.getName());
+}
+
 // ─── シート取得 or 作成 ───────────────────────────────
 function getOrCreateSheet(ss, name, headers, headerBg, colWidths, hideLastCol = true) {
   let sheet = ss.getSheetByName(name);

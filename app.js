@@ -502,34 +502,63 @@ async function onImageFileSelected(input) {
     const listEl = document.getElementById('image-dialog-list');
     if (!url) { showToast('GAS URLが設定されていません', 'error'); return; }
 
-    listEl.innerHTML = '<div class="image-loading">アップロード中...</div>';
+    listEl.innerHTML = '<div class="image-loading">画像を圧縮中...</div>';
 
     try {
-        const base64 = await new Promise((resolve, reject) => {
-            const reader = new FileReader();
-            reader.onload  = e => resolve(e.target.result.split(',')[1]);
-            reader.onerror = reject;
-            reader.readAsDataURL(file);
-        });
+        // 送信前に圧縮（最大 1024px / JPEG 0.75）でサイズを削減
+        const base64 = await compressImageToBase64(file, 1024, 0.75);
 
-        // GAS は POST でリダイレクトが発生するため no-cors（postToGas と同じ方式）
-        postToGas(url, {
+        listEl.innerHTML = '<div class="image-loading">アップロード中...</div>';
+
+        // GAS は POST でリダイレクトが発生するため no-cors で送信。
+        // リトライキューへの蓄積を避けるため postToGas は使わず直接 fetch
+        const body = JSON.stringify({
             action:     'saveImage',
             imageKey:   _currentImageKey,
             base64,
-            mimeType:   file.type || 'image/jpeg',
+            mimeType:   'image/jpeg',
             uploadedBy: currentUser?.name || '',
             uploadedAt: new Date().toISOString(),
         });
+        fetch(url, { method: 'POST', mode: 'no-cors', body }).catch(() => {});
 
-        // GAS 処理完了まで待機してから画像一覧を再取得
+        // GAS 処理完了まで待機してから再取得
         listEl.innerHTML = '<div class="image-loading">保存中... しばらくお待ちください</div>';
-        await new Promise(r => setTimeout(r, 5000));
+        await new Promise(r => setTimeout(r, 6000));
         await fetchCustomerImages(_currentImageKey);
     } catch (err) {
         listEl.innerHTML = '<div class="image-error">画像の準備に失敗しました</div>';
         console.error('[画像アップロード]', err);
     }
+}
+
+// 画像を Canvas で圧縮して base64 文字列を返す
+function compressImageToBase64(file, maxWidth, quality) {
+    return new Promise((resolve, reject) => {
+        const img    = new Image();
+        const objUrl = URL.createObjectURL(file);
+        img.onload = () => {
+            URL.revokeObjectURL(objUrl);
+            const canvas = document.createElement('canvas');
+            let { width, height } = img;
+            if (width > maxWidth) {
+                height = Math.round(height * maxWidth / width);
+                width  = maxWidth;
+            }
+            canvas.width  = width;
+            canvas.height = height;
+            canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+            canvas.toBlob(blob => {
+                if (!blob) { reject(new Error('圧縮失敗')); return; }
+                const reader  = new FileReader();
+                reader.onload  = e => resolve(e.target.result.split(',')[1]);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            }, 'image/jpeg', quality);
+        };
+        img.onerror = reject;
+        img.src = objUrl;
+    });
 }
 
 // ─── GAS リトライキュー ───────────────────────────────────────────
