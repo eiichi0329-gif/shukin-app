@@ -787,8 +787,16 @@ function doGet(e) {
     if (roSheet && roSheet.getLastRow() >= 2) {
       const roRows = roSheet.getRange(2, 1, roSheet.getLastRow() - 1, 4).getValues();
       roRows.forEach(([date, gk, route, dataGenAt]) => {
-        if (date === today2 && gk) {
-          routeOverrides[String(gk)] = { route: Number(route), date: today2, dataGeneratedAt: String(dataGenAt) };
+        // Google Sheetsが日付文字列をDateオブジェクトに自動変換するため正規化して比較
+        const dateStr = (date instanceof Date)
+          ? Utilities.formatDate(date, 'Asia/Tokyo', 'yyyy-MM-dd')
+          : String(date);
+        // dataGeneratedAt も Date化されている可能性があるため ISO 文字列に戻す
+        const dataGenAtStr = (dataGenAt instanceof Date)
+          ? dataGenAt.toISOString()
+          : String(dataGenAt);
+        if (dateStr === today2 && gk) {
+          routeOverrides[String(gk)] = { route: Number(route), date: today2, dataGeneratedAt: dataGenAtStr };
         }
       });
     }

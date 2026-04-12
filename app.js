@@ -3717,12 +3717,14 @@ async function syncCheckboxes() {
         // ルートオーバーライドをリモートと同期（GAS を正として常に上書き）
         if (json.routeOverrides) {
             const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+            const localDataGenAt = window.DATA_META?.generatedAt || '';
             let changed = false;
             Object.entries(json.routeOverrides).forEach(([gk, ov]) => {
                 if (ov.date !== today) return;
                 const local = deliveryRouteOverrides[gk];
                 if (!local || local.route !== ov.route) {
-                    deliveryRouteOverrides[gk] = ov;
+                    // dataGeneratedAt はローカルの値で保存（端末ごとのページ再読込後も有効なように）
+                    deliveryRouteOverrides[gk] = { ...ov, dataGeneratedAt: localDataGenAt };
                     changed = true;
                 }
             });
