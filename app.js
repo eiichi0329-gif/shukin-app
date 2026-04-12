@@ -502,7 +502,6 @@ async function onImageFileSelected(input) {
     const listEl = document.getElementById('image-dialog-list');
     if (!url) { showToast('GAS URLが設定されていません', 'error'); return; }
 
-    const prevHTML = listEl.innerHTML;
     listEl.innerHTML = '<div class="image-loading">アップロード中...</div>';
 
     try {
@@ -513,25 +512,22 @@ async function onImageFileSelected(input) {
             reader.readAsDataURL(file);
         });
 
-        const res  = await fetch(url, {
-            method: 'POST',
-            body: JSON.stringify({
-                action:     'saveImage',
-                imageKey:   _currentImageKey,
-                base64,
-                mimeType:   file.type || 'image/jpeg',
-                uploadedBy: currentUser?.name || '',
-                uploadedAt: new Date().toISOString(),
-            }),
+        // GAS は POST でリダイレクトが発生するため no-cors（postToGas と同じ方式）
+        postToGas(url, {
+            action:     'saveImage',
+            imageKey:   _currentImageKey,
+            base64,
+            mimeType:   file.type || 'image/jpeg',
+            uploadedBy: currentUser?.name || '',
+            uploadedAt: new Date().toISOString(),
         });
-        const json = await res.json();
-        if (!json.ok) throw new Error(json.error || 'アップロード失敗');
 
-        showToast('画像をアップロードしました', 'success');
-        fetchCustomerImages(_currentImageKey);
+        // GAS 処理完了まで待機してから画像一覧を再取得
+        listEl.innerHTML = '<div class="image-loading">保存中... しばらくお待ちください</div>';
+        await new Promise(r => setTimeout(r, 5000));
+        await fetchCustomerImages(_currentImageKey);
     } catch (err) {
-        listEl.innerHTML = prevHTML;
-        showToast('画像のアップロードに失敗しました', 'error');
+        listEl.innerHTML = '<div class="image-error">画像の準備に失敗しました</div>';
         console.error('[画像アップロード]', err);
     }
 }
