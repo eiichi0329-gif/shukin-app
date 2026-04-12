@@ -411,6 +411,131 @@ function getGasUrl() {
         : (localStorage.getItem('gas_url') || '');
 }
 
+// ─── 顧客画像 ─────────────────────────────────────────────────────
+let _currentImageKey = null;
+
+function openImageDialog(groupKey) {
+    const dRec = deliveryData.find(r =>
+        `${r.store}|${r.dataMonth}|${r.name}|${r.address}` === groupKey
+    );
+    if (!dRec) return;
+
+    _currentImageKey = `${dRec.store}|${dRec.name}`;
+    document.getElementById('image-dialog-title').textContent = `${dRec.name} の画像`;
+    document.getElementById('image-dialog-list').innerHTML = '<div class="image-loading">読み込み中...</div>';
+    document.getElementById('image-dialog').showModal();
+    fetchCustomerImages(_currentImageKey);
+}
+
+function closeImageDialog() {
+    document.getElementById('image-dialog').close();
+    _currentImageKey = null;
+}
+
+async function fetchCustomerImages(imageKey) {
+    const url   = getGasUrl();
+    const listEl = document.getElementById('image-dialog-list');
+    if (!url) {
+        listEl.innerHTML = '<div class="image-empty">GAS URLが設定されていません</div>';
+        return;
+    }
+    try {
+        const res  = await fetch(`${url}?action=getImages&imageKey=${encodeURIComponent(imageKey)}&t=${Date.now()}`);
+        const json = await res.json();
+        if (!json.ok) throw new Error(json.error || 'エラー');
+        renderImageList(imageKey, json.images || []);
+    } catch {
+        listEl.innerHTML = '<div class="image-error">画像の取得に失敗しました</div>';
+    }
+}
+
+function renderImageList(imageKey, images) {
+    const listEl = document.getElementById('image-dialog-list');
+    if (images.length === 0) {
+        listEl.innerHTML = '<div class="image-empty">まだ画像はありません</div>';
+        return;
+    }
+    listEl.innerHTML = images.map(img => {
+        const thumbUrl = `https://drive.google.com/thumbnail?id=${encodeURIComponent(img.fileId)}&sz=w300`;
+        const fullUrl  = `https://drive.google.com/file/d/${encodeURIComponent(img.fileId)}/view`;
+        const dateStr  = img.uploadedAt
+            ? new Date(img.uploadedAt).toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' })
+            : '';
+        const byStr = [img.uploadedBy, dateStr].filter(Boolean).join(' ');
+        return `<div class="image-thumb-wrap">
+            <a href="${escHtml(fullUrl)}" target="_blank" rel="noopener">
+                <img class="image-thumb" src="${escHtml(thumbUrl)}" alt="顧客画像" loading="lazy">
+            </a>
+            ${byStr ? `<div class="image-meta">${escHtml(byStr)}</div>` : ''}
+            <button class="btn btn-danger btn-sm btn-image-delete" data-file-id="${escHtml(img.fileId)}">削除</button>
+        </div>`;
+    }).join('');
+
+    listEl.querySelectorAll('.btn-image-delete').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (!confirm('この画像を削除しますか？')) return;
+            deleteCustomerImage(btn.dataset.fileId);
+        });
+    });
+}
+
+function deleteCustomerImage(fileId) {
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'deleteImage', imageKey: _currentImageKey, fileId });
+
+    // 楽観的更新: 即座に UI から除去
+    const wrap = document.querySelector(`.btn-image-delete[data-file-id="${CSS.escape(fileId)}"]`)
+        ?.closest('.image-thumb-wrap');
+    if (wrap) wrap.remove();
+    const listEl = document.getElementById('image-dialog-list');
+    if (listEl && !listEl.querySelector('.image-thumb-wrap')) {
+        listEl.innerHTML = '<div class="image-empty">まだ画像はありません</div>';
+    }
+}
+
+async function onImageFileSelected(input) {
+    const file = input.files[0];
+    input.value = '';
+    if (!file || !_currentImageKey) return;
+
+    const url    = getGasUrl();
+    const listEl = document.getElementById('image-dialog-list');
+    if (!url) { showToast('GAS URLが設定されていません', 'error'); return; }
+
+    const prevHTML = listEl.innerHTML;
+    listEl.innerHTML = '<div class="image-loading">アップロード中...</div>';
+
+    try {
+        const base64 = await new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload  = e => resolve(e.target.result.split(',')[1]);
+            reader.onerror = reject;
+            reader.readAsDataURL(file);
+        });
+
+        const res  = await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({
+                action:     'saveImage',
+                imageKey:   _currentImageKey,
+                base64,
+                mimeType:   file.type || 'image/jpeg',
+                uploadedBy: currentUser?.name || '',
+                uploadedAt: new Date().toISOString(),
+            }),
+        });
+        const json = await res.json();
+        if (!json.ok) throw new Error(json.error || 'アップロード失敗');
+
+        showToast('画像をアップロードしました', 'success');
+        fetchCustomerImages(_currentImageKey);
+    } catch (err) {
+        listEl.innerHTML = prevHTML;
+        showToast('画像のアップロードに失敗しました', 'error');
+        console.error('[画像アップロード]', err);
+    }
+}
+
 // ─── GAS リトライキュー ───────────────────────────────────────────
 const RETRY_QUEUE_KEY    = 'coll-retry-queue-v1';
 const RETRY_MAX_AGE_MS   = 24 * 60 * 60 * 1000; // 24時間以上古いものは破棄
@@ -1853,8 +1978,9 @@ function renderDelivery() {
             ${addrHtml      ? `<div class="delivery-card-row">${addrHtml}</div>`                                    : ''}
             <div class="delivery-card-items-row">
                 <div class="delivery-card-items">${itemsHtml}</div>
-                ${checkBtn}
+                <button class="btn-delivery-image-open" data-group-key="${safeKey}">&#128247; 画像</button>
             </div>
+            <div class="delivery-card-check-row">${checkBtn}</div>
             ${otherMetaParts? `<div class="delivery-card-other-meta">${otherMetaParts}</div>`                       : ''}
             ${(phoneHtml || emergencyHtml) ? `<div class="delivery-card-contacts">${phoneHtml}${emergencyHtml}</div>` : ''}
             ${notesHtml     ? `<div class="delivery-card-notes-wrap">${notesHtml}</div>`                            : ''}
@@ -1875,6 +2001,9 @@ function renderDelivery() {
     });
     container.querySelectorAll('.btn-delivery-collect-open').forEach(btn => {
         btn.addEventListener('click', () => openDeliveryCollectDialog(btn.dataset.groupKey));
+    });
+    container.querySelectorAll('.btn-delivery-image-open').forEach(btn => {
+        btn.addEventListener('click', () => openImageDialog(btn.dataset.groupKey));
     });
 
     // カード：ダブルタップ／ダブルクリックで同ルート全カードをコンパクト切替

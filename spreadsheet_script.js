@@ -68,8 +68,12 @@ const BANK_FAILED_SHEET   = '口振失敗';
 const BANK_FAILED_HEADERS = ['キー', '登録日時'];
 const BANK_FAILED_COL_WIDTHS = [1, 160];
 
+const IMAGE_SHEET   = '顧客画像';
+const IMAGE_HEADERS = ['画像キー', 'ファイルID', 'アップロード日時', 'アップロード者'];
+const IMAGE_COL_WIDTHS = [200, 200, 160, 160];
+
 // doGet でチェックデータ読み取りをスキップするシート名
-const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET, MSG_READ_SHEET, MANUAL_SHEET, BANK_FAILED_SHEET]);
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET, MSG_READ_SHEET, MANUAL_SHEET, BANK_FAILED_SHEET, IMAGE_SHEET]);
 
 // ─── 診断ログ（デバッグ用）────────────────────────────
 function writeDebugLog(ss, action, note) {
@@ -354,6 +358,38 @@ function doPost(e) {
       if (!key) return ok();
       const sheet = ss.getSheetByName(BANK_FAILED_SHEET);
       if (sheet) removeRow(sheet, key, BANK_FAILED_HEADERS.length);
+
+    // ── 顧客画像 保存（Google Drive にアップロード） ──
+    } else if (action === 'saveImage') {
+      const { imageKey, base64, mimeType, uploadedBy, uploadedAt } = payload;
+      if (!imageKey || !base64) return ok();
+      const folder   = getOrCreateImageFolder(ss);
+      const fileName = imageKey.replace(/\|/g, '_') + '_' + Date.now() + '.jpg';
+      const blob     = Utilities.newBlob(Utilities.base64Decode(base64), mimeType || 'image/jpeg', fileName);
+      const file     = folder.createFile(blob);
+      file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+      const fileId   = file.getId();
+      const sheet    = getOrCreateSheet(ss, IMAGE_SHEET, IMAGE_HEADERS, '#0f766e', IMAGE_COL_WIDTHS, false);
+      sheet.appendRow([imageKey, fileId, uploadedAt || new Date().toISOString(), uploadedBy || '']);
+      return ContentService
+        .createTextOutput(JSON.stringify({ ok: true, fileId }))
+        .setMimeType(ContentService.MimeType.JSON);
+
+    // ── 顧客画像 削除（Drive + シートから除去） ──
+    } else if (action === 'deleteImage') {
+      const { imageKey, fileId } = payload;
+      if (!fileId) return ok();
+      try { DriveApp.getFileById(fileId).setTrashed(true); } catch(_) {}
+      const sheet = ss.getSheetByName(IMAGE_SHEET);
+      if (sheet && sheet.getLastRow() >= 2) {
+        const rows = sheet.getRange(2, 1, sheet.getLastRow() - 1, 2).getValues();
+        for (let i = rows.length - 1; i >= 0; i--) {
+          if (String(rows[i][1]) === String(fileId)) {
+            sheet.deleteRow(i + 2);
+            break;
+          }
+        }
+      }
 
     // ── 住所間移動時間取得（配達所要時間計算用、記録なし） ──
     } else if (action === 'getTravelTimes') {
@@ -657,6 +693,30 @@ function doGet(e) {
         .createTextOutput(JSON.stringify({ ok: true, allowed }))
         .setMimeType(ContentService.MimeType.JSON);
     }
+
+    // ── 顧客画像一覧取得 ──
+    if (e?.parameter?.action === 'getImages') {
+      const imageKey = (e?.parameter?.imageKey || '').trim();
+      const sheet    = ss.getSheetByName(IMAGE_SHEET);
+      if (!sheet || sheet.getLastRow() < 2 || !imageKey) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ ok: true, images: [] }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+      const rows   = sheet.getRange(2, 1, sheet.getLastRow() - 1, IMAGE_HEADERS.length).getValues();
+      const images = rows
+        .filter(([key, fileId]) => String(key) === imageKey && fileId)
+        .map(([, fileId, uploadedAt, uploadedBy]) => ({
+          fileId:     String(fileId),
+          uploadedAt: uploadedAt instanceof Date
+            ? Utilities.formatDate(uploadedAt, 'Asia/Tokyo', "yyyy-MM-dd'T'HH:mm:ss")
+            : String(uploadedAt),
+          uploadedBy: String(uploadedBy),
+        }));
+      return ContentService
+        .createTextOutput(JSON.stringify({ ok: true, images }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
     const sheets = ss.getSheets();
     const checkedData = {};
 
@@ -831,6 +891,14 @@ function doGet(e) {
 // 現金集金: "{店舗}"  例: 下関店
 function formatCashSheetName(store, dataMonth) {
   return store || '不明';
+}
+
+// ─── 顧客画像フォルダ取得 or 作成 ────────────────────
+function getOrCreateImageFolder(ss) {
+  const folderName = '顧客画像_' + ss.getName();
+  const iter = DriveApp.getFoldersByName(folderName);
+  if (iter.hasNext()) return iter.next();
+  return DriveApp.createFolder(folderName);
 }
 
 // ─── シート取得 or 作成 ───────────────────────────────

@@ -414,6 +414,19 @@
         </div>
     </dialog>
 
+    <!-- 顧客画像ダイアログ -->
+    <dialog id="image-dialog" class="settings-dialog image-dialog">
+        <div class="settings-inner image-inner">
+            <div class="settings-title" id="image-dialog-title">&#128247; 画像</div>
+            <div id="image-dialog-list" class="image-list"></div>
+            <div class="settings-actions">
+                <input type="file" id="image-upload-input" accept="image/*" style="display:none" onchange="onImageFileSelected(this)">
+                <button class="btn btn-secondary" onclick="closeImageDialog()">閉じる</button>
+                <button class="btn btn-primary" onclick="document.getElementById('image-upload-input').click()">&#43; 画像を追加</button>
+            </div>
+        </div>
+    </dialog>
+
     <script src="data.js?v=2" defer></script>
     <script src="app.js?v=4" defer></script>
 </body>
