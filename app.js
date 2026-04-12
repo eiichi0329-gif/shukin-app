@@ -179,6 +179,7 @@ let currentDeliveryListData = []; // 所要時間計算用に renderDelivery() �
 let deliveryRouteOptimized  = null; // 最適ルート適用時の groupKey 順序配列（null = 未適用）
 let deliveryCompactRoutes  = new Set(); // "store|route" keys currently in compact view
 let deliveryArrivalTimes   = {}; // groupKey → "HH:MM" 推定到着時刻（所要時間計算後に設定）
+let customerImageKeys      = new Set(); // 画像登録済みの imageKey（"店舗|顧客名"）
 
 const DELIVERY_CHECK_KEY          = 'coll-delivery-v1';
 const DELIVERY_ROUTE_OVERRIDE_KEY = 'coll-delivery-route-v1';
@@ -220,13 +221,7 @@ function saveDeliveryRouteOverrides() {
     localStorage.setItem(DELIVERY_ROUTE_OVERRIDE_KEY, JSON.stringify(deliveryRouteOverrides));
     const url = getGasUrl();
     if (!url) return;
-    // no-cors ではGASのdoPostが動作しないため通常fetchを使用
-    const body = JSON.stringify({ action: 'setRouteOverrides', overrides: deliveryRouteOverrides });
-    fetch(url, { method: 'POST', body }).catch(() => {
-        const q = loadRetryQueue();
-        q.push({ url, body, savedAt: Date.now() });
-        saveRetryQueue(q);
-    });
+    postToGas(url, { action: 'setRouteOverrides', overrides: deliveryRouteOverrides });
 }
 
 // 口振一括チェックモード
@@ -523,7 +518,7 @@ async function onImageFileSelected(input) {
             listEl.innerHTML = optimisticHtml;
         }
 
-        showToast('画像を登録しました', 'success');
+        showImageDialogStatus('登録完了');
 
         // バックグラウンドで送信
         const body = JSON.stringify({
@@ -879,6 +874,16 @@ function renderTable() {
     restoreBulkVisual();
 
     renderHeader(data);
+}
+
+// ─── 画像ダイアログ内ステータス表示 ──────────────────────────────
+function showImageDialogStatus(msg) {
+    const el = document.getElementById('image-dialog-status');
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add('image-dialog-status-show');
+    clearTimeout(el._t);
+    el._t = setTimeout(() => el.classList.remove('image-dialog-status-show'), 3000);
 }
 
 // ─── Toast 通知 ──────────────────────────────────────────────────
@@ -2015,7 +2020,7 @@ function renderDelivery() {
             ${addrHtml      ? `<div class="delivery-card-row">${addrHtml}</div>`                                    : ''}
             <div class="delivery-card-items-row">
                 <div class="delivery-card-items">${itemsHtml}</div>
-                <button class="btn-delivery-image-open" data-group-key="${safeKey}">&#128247; 画像</button>
+                <button class="btn-delivery-image-open${customerImageKeys.has(m.store + '|' + m.name) ? ' has-image' : ''}" data-group-key="${safeKey}">&#128247; 画像${customerImageKeys.has(m.store + '|' + m.name) ? '<span class="image-registered-dot"></span>' : ''}</button>
             </div>
             <div class="delivery-card-check-row">${checkBtn}</div>
             ${otherMetaParts? `<div class="delivery-card-other-meta">${otherMetaParts}</div>`                       : ''}
@@ -3751,6 +3756,17 @@ async function syncCheckboxes() {
             });
             if (changed) {
                 saveDeliveryChecked();
+                if (currentTab === 'delivery') renderDelivery();
+            }
+        }
+
+        // 画像登録済み imageKey 一覧を同期
+        if (Array.isArray(json.imageKeys)) {
+            const prev = customerImageKeys.size;
+            const next = new Set(json.imageKeys);
+            let changed = next.size !== prev || [...next].some(k => !customerImageKeys.has(k));
+            if (changed) {
+                customerImageKeys = next;
                 if (currentTab === 'delivery') renderDelivery();
             }
         }

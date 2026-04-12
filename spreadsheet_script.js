@@ -876,8 +876,19 @@ function doGet(e) {
       }
     }
 
+    // 画像登録済みの imageKey 一覧（店舗|顧客名）を収集
+    const imageKeySet = new Set();
+    const imageSheetR = ss.getSheetByName(IMAGE_SHEET);
+    if (imageSheetR && imageSheetR.getLastRow() >= 2) {
+      const rows = imageSheetR.getRange(2, 1, imageSheetR.getLastRow() - 1, 1).getValues();
+      for (const [key] of rows) {
+        if (key) imageKeySet.add(String(key));
+      }
+    }
+    const imageKeys = [...imageKeySet];
+
     return ContentService
-      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData, msgReadIds, manualData, bankFailedKeys }))
+      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData, msgReadIds, manualData, bankFailedKeys, imageKeys }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (err) {
