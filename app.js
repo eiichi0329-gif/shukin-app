@@ -508,10 +508,24 @@ async function onImageFileSelected(input) {
         // 送信前に圧縮（最大 1024px / JPEG 0.75）でサイズを削減
         const base64 = await compressImageToBase64(file, 1024, 0.75);
 
-        listEl.innerHTML = '<div class="image-loading">アップロード中...</div>';
+        // 圧縮完了後、即座にローカル画像をプレビュー表示（楽観的更新）
+        const dateStr = new Date().toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
+        const byStr   = [currentUser?.name || '', dateStr].filter(Boolean).join(' ');
+        const existingThumbs = listEl.querySelectorAll('.image-thumb-wrap');
+        const optimisticHtml = `<div class="image-thumb-wrap image-thumb-optimistic">
+            <img class="image-thumb" src="data:image/jpeg;base64,${base64}" alt="顧客画像">
+            <div class="image-meta">${escHtml(byStr)}</div>
+            <div class="image-saving-badge">保存中...</div>
+        </div>`;
+        if (existingThumbs.length > 0) {
+            listEl.insertAdjacentHTML('beforeend', optimisticHtml);
+        } else {
+            listEl.innerHTML = optimisticHtml;
+        }
 
-        // GAS は POST でリダイレクトが発生するため no-cors で送信。
-        // リトライキューへの蓄積を避けるため postToGas は使わず直接 fetch
+        showToast('画像を登録しました', 'success');
+
+        // バックグラウンドで送信
         const body = JSON.stringify({
             action:     'saveImage',
             imageKey:   _currentImageKey,
@@ -522,10 +536,8 @@ async function onImageFileSelected(input) {
         });
         fetch(url, { method: 'POST', mode: 'no-cors', body }).catch(() => {});
 
-        // GAS 処理完了まで待機してから再取得
-        listEl.innerHTML = '<div class="image-loading">保存中... しばらくお待ちください</div>';
-        await new Promise(r => setTimeout(r, 6000));
-        await fetchCustomerImages(_currentImageKey);
+        // 6秒後にサイレントで再取得して Drive のサムネイルに差し替え
+        setTimeout(() => fetchCustomerImages(_currentImageKey), 6000);
     } catch (err) {
         listEl.innerHTML = '<div class="image-error">画像の準備に失敗しました</div>';
         console.error('[画像アップロード]', err);

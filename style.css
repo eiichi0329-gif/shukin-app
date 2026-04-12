@@ -1081,6 +1081,10 @@ tbody tr.row-bank-completed td.col-amount { color: #2563eb; }
   width: 100%; text-align: center; padding: 24px 0;
   font-size: 15px; color: var(--g500);
 }
+.image-saving-badge {
+  font-size: 11px; color: #fff; background: #f97316;
+  border-radius: 10px; padding: 2px 8px; font-weight: 600;
+}
 .collect-prev-badge {
   display: inline-block; margin-left: 5px;
   background: #ea580c; color: #fff;
