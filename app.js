@@ -2911,8 +2911,7 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
             let seisaStatus = `<div class="seisa-status seisa-none">未実施</div>`;
             if (dd) {
                 const denomTotal  = calcDenomTotal(dd.counts);
-                // 精査保存時の expected を比較基準にする（スマホ入力時の手持ち現金と一致させるため）
-                const seisaTarget = (dd.expected > 0) ? dd.expected : cash;
+                const seisaTarget = cash;
                 const diff        = denomTotal - seisaTarget;
                 const savedTimeStr = dd.savedAt
                     ? new Date(dd.savedAt).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })
@@ -2926,9 +2925,7 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
             }
             seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r}, ${routeTotals[r] || 0}, ${ca})">現金精査</button>${seisaStatus}`;
         }
-        // 精査済みの場合は保存時の expected（スマホの手持ち現金）を表示する
-        const denomSaved = denomSt[`${date}|${r}`];
-        const displayCash = (denomSaved?.expected > 0) ? denomSaved.expected : cash;
+        const displayCash = cash;
         html += `<td class="cash-cell" data-cash-key="${ck}"><div class="cash-amount">${fmt(displayCash)}</div>${seisaHtml}</td>`;
     }
     html += `<td class="total-cell grand-total" data-cash-total="${date}">${fmt(cashTotal)}</td></tr>`;
@@ -3099,13 +3096,11 @@ function openDenomDialog(date, route, base, ca) {
     currentDenomDate  = date;
     currentDenomRoute = route;
 
-    // 手持ち現金の目標額を決定
-    // ① 保存済みの expected があればそれを使用（スマホ・PC 間で一致させる）
-    // ② 未保存なら引数 base（集金合計）＋ ca（釣銭）で計算
+    // 手持ち現金の目標額を決定: 集金合計（base）＋釣銭持ち出し（ca）で毎回新規計算
     const cashKey  = `${date}|${route}`;
     const saved    = loadDenomStorage()[cashKey];
     const _ca      = (ca !== undefined) ? ca : (getChangeAmounts()[cashKey] !== undefined ? getChangeAmounts()[cashKey] : 12220);
-    const expected = (saved?.expected > 0) ? saved.expected : ((base || 0) + _ca);
+    const expected = (base || 0) + _ca;
 
     const [, m, day] = date.split('-');
     document.getElementById('denom-title').textContent = `💰 現金精査（${parseInt(m)}月${parseInt(day)}日　R${route}）`;
