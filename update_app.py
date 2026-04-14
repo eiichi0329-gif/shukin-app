@@ -507,6 +507,23 @@ def main():
 
     print(f"出力完了: {OUTPUT_FILE}")
 
+    # ── index.html のキャッシュバスター（?v=）を更新 ──
+    # スマホブラウザが古い data.js をキャッシュし続けるのを防ぐ
+    index_file = os.path.join(os.path.dirname(OUTPUT_FILE), 'index.html')
+    ts = datetime.now().strftime('%Y%m%d%H%M%S')
+    try:
+        with open(index_file, 'r', encoding='utf-8') as f:
+            html = f.read()
+        html_new = re.sub(r'data\.js\?v=\w+', f'data.js?v={ts}', html)
+        if html_new != html:
+            with open(index_file, 'w', encoding='utf-8') as f:
+                f.write(html_new)
+            print(f"index.html のバージョン更新: data.js?v={ts}")
+        else:
+            print("[警告] index.html の data.js?v= パターンが見つかりませんでした")
+    except Exception as e:
+        print(f"[警告] index.html の更新に失敗しました: {e}")
+
     # ── GAS の配達済みシートをクリア ──
     if GAS_URL:
         print()

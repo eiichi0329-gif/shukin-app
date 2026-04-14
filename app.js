@@ -1661,34 +1661,58 @@ function openAllRouteMap() {
 
     const store     = currentDeliveryListData[0]?.store || filters.store || '';
     const depotAddr = STORE_DEPOTS[store];
-    const allStops  = depotAddr ? [depotAddr, ...addrs] : addrs;
 
-    // Google Maps URL は1リンクあたり約10地点が上限
-    // 10件超は末尾1件を重複させてチェーン接続
-    const CHUNK = 10;
-    const urls = [];
-    for (let i = 0; i < allStops.length; i += CHUNK - 1) {
-        const slice = allStops.slice(i, i + CHUNK);
-        if (slice.length >= 2) {
-            const path = slice.map(a => encodeURIComponent(a)).join('/');
-            urls.push(`https://www.google.com/maps/dir/${path}`);
+    function buildUrls(startPoint) {
+        // 出発点（現在地 or 店舗） → 配達先 → 店舗（最終到着点）
+        const allStops = [startPoint, ...addrs, ...(depotAddr ? [depotAddr] : [])];
+
+        // Google Maps URL は1リンクあたり約10地点が上限
+        // 10件超は末尾1件を重複させてチェーン接続
+        const CHUNK = 10;
+        const urls = [];
+        for (let i = 0; i < allStops.length; i += CHUNK - 1) {
+            const slice = allStops.slice(i, i + CHUNK);
+            if (slice.length >= 2) {
+                const path = slice.map(a => encodeURIComponent(a)).join('/');
+                urls.push(`https://www.google.com/maps/dir/${path}`);
+            }
+            if (i + CHUNK >= allStops.length) break;
         }
-        if (i + CHUNK >= allStops.length) break;
+        return urls;
     }
 
-    if (urls.length === 0) { alert('住所が不足しています'); return; }
+    function showLinks(urls) {
+        if (urls.length === 0) { alert('住所が不足しています'); return; }
+        // window.open() はモバイルのポップアップブロッカーに引っかかるため
+        // <a> リンクをダイアログに表示してユーザーにタップしてもらう
+        const linksDiv = document.getElementById('route-map-links');
+        linksDiv.innerHTML = urls.map((url, i) =>
+            `<a class="btn btn-primary" style="display:block;text-align:center;text-decoration:none"
+                href="${url}" target="_blank" rel="noopener">
+                ${urls.length === 1 ? 'Google マップで開く' : `区間 ${i + 1}／${urls.length} を開く`}
+             </a>`
+        ).join('');
+        document.getElementById('route-map-dialog').showModal();
+    }
 
-    // window.open() はモバイルのポップアップブロッカーに引っかかるため
-    // <a> リンクをダイアログに表示してユーザーにタップしてもらう
-    const linksDiv = document.getElementById('route-map-links');
-    linksDiv.innerHTML = urls.map((url, i) =>
-        `<a class="btn btn-primary" style="display:block;text-align:center;text-decoration:none"
-            href="${url}" target="_blank" rel="noopener">
-            ${urls.length === 1 ? 'Google マップで開く' : `区間 ${i + 1}／${urls.length} を開く`}
-         </a>`
-    ).join('');
+    if (!navigator.geolocation) {
+        // 位置情報非対応の場合は店舗出発にフォールバック
+        showLinks(buildUrls(depotAddr || addrs[0]));
+        return;
+    }
 
-    document.getElementById('route-map-dialog').showModal();
+    navigator.geolocation.getCurrentPosition(
+        pos => {
+            const { latitude: lat, longitude: lng } = pos.coords;
+            showLinks(buildUrls(`${lat},${lng}`));
+        },
+        err => {
+            // 位置情報取得失敗（拒否など）は店舗出発にフォールバック
+            console.warn('位置情報取得失敗:', err.message);
+            showLinks(buildUrls(depotAddr || addrs[0]));
+        },
+        { timeout: 10000, maximumAge: 60000 }
+    );
 }
 
 function closeRouteMapDialog() {
@@ -3498,7 +3522,14 @@ async function syncCheckboxes() {
     const url = getGasUrl();
     if (!url) return;
     try {
-        const res  = await fetch(url + '?t=' + Date.now());
+        const controller = new AbortController();
+        const timerId = setTimeout(() => controller.abort(), 15000);
+        let res;
+        try {
+            res = await fetch(url + '?t=' + Date.now(), { signal: controller.signal });
+        } finally {
+            clearTimeout(timerId);
+        }
         const json = await res.json();
         if (json.ok === false) { console.error('GAS同期エラー', json.error); return; }
         // 新形式（checkedData）と旧形式（checkedKeys）の両方に対応
@@ -4010,14 +4041,9 @@ async function startApp() {
             ind.classList.add('ptr-loading');
             document.getElementById('ptr-icon').textContent = '↻';
             document.getElementById('ptr-text').textContent = '更新中...';
-            syncCheckboxes().finally(() => {
-                ind.style.transition = 'height 0.3s ease';
-                ind.style.height = '0px';
-                setTimeout(() => {
-                    ind.style.transition = '';
-                    ind.classList.remove('ptr-ready', 'ptr-loading');
-                }, 320);
-            });
+            // ページリロードで data.js の最新バージョンを取得しつつ
+            // 起動時の syncCheckboxes も自動実行される
+            setTimeout(() => location.reload(), 300);
         } else {
             ind.style.transition = 'height 0.3s ease';
             ind.style.height = '0px';
