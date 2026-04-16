@@ -233,6 +233,8 @@ let bulkPreviouslyCompleted = new Set(); // 一括モード開始時点で完了
 // 金種確認ダイアログ用
 let currentDenomDate  = null;
 let currentDenomRoute = null;
+// この端末で直近に保存した denom キー → savedAt（ISO文字列）。GAS反映待ち期間中はローカルを保護
+const denomRecentlySaved = new Map();
 const DENOMINATIONS = [
     { value: 10000, label: '10,000円札' },
     { value:  5000, label:  '5,000円札' },
@@ -771,12 +773,15 @@ function renderTable() {
             ? `<td class="col-date">—</td>`
             : `<td class="col-date" data-key="${key}">${fmtDate(date)}</td>`;
 
-        // 振込入金セル（口振顧客には表示しない）
+        // 振込入金セル（口振顧客・現金集金済み（一部含む）には表示しない）
         let transferCellHtml;
         if (isBankCustomer) {
             transferCellHtml = `<td class="col-transfer"></td>`;
         } else if (isTransferred) {
             transferCellHtml = `<td class="col-transfer transfer-done" data-key="${key}" title="クリックで取消">${fmtDate(transferState[key].date)} ✕</td>`;
+        } else if (isChecked || isPartiallyCollected) {
+            // 現金で集金済み（全額・一部）の場合は振込ボタンを表示しない
+            transferCellHtml = `<td class="col-transfer"></td>`;
         } else {
             transferCellHtml = `<td class="col-transfer"><button class="btn-transfer" data-key="${key}">振込入金</button></td>`;
         }
@@ -934,6 +939,13 @@ function confirmPartialCollect() {
 
     const entered = parseInt(document.getElementById('partial-collect-input').value) || 0;
     if (entered <= 0) { alert('集金額を入力してください'); return; }
+
+    // 振込入金が既に記録されている場合は一部集金を受け付けない
+    if (transferState[key]) {
+        alert('振込入金が記録されています。先に振込入金を取り消してください。');
+        document.getElementById('partial-collect-dialog').close();
+        return;
+    }
 
     const fullAmt      = effectiveAmount(key, record);
     const prevCollected = checked[key]?.collectedAmount || 0;
@@ -1266,6 +1278,11 @@ function restoreBulkVisual() {
 
 // ─── Transfer Payment ────────────────────────────────────────────
 function onTransferClick(key, cell) {
+    // 現金集金（一部・全額）が既に記録されている場合は振込入金を受け付けない
+    if (checked[key]?.collectedAmount) {
+        renderTable(); // ボタン表示を正しい状態に戻す
+        return;
+    }
     const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
     const input = document.createElement('input');
     input.type      = 'date';
@@ -3101,14 +3118,10 @@ function renderAdmin() {
             const s = loadMsgRead();
             if (cb.checked) s.add(cb.dataset.msgId); else s.delete(cb.dataset.msgId);
             saveMsgRead(s);
-            // GAS に既読状態を同期
+            // GAS に既読状態を同期（リトライキュー経由で確実に送信）
             const url = getGasUrl();
             if (url) {
-                fetch(url, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'text/plain' },
-                    body: JSON.stringify({ action: 'saveMsgRead', ids: [...s], savedAt: new Date().toISOString() }),
-                }).catch(() => {});
+                postToGas(url, { action: 'saveMsgRead', ids: [...s], savedAt: new Date().toISOString() });
             }
             cb.closest('.admin-msg-item').classList.toggle('admin-msg-item-read', cb.checked);
         });
@@ -3198,6 +3211,10 @@ function saveDenomDialog() {
     const key = `${currentDenomDate}|${currentDenomRoute}`;
     storage[key] = { counts, expected, savedAt: new Date().toISOString() };
     saveDenomStorage(storage);
+
+    // この端末が保存したキーを記録（GAS反映まで最大2分間、同期でローカルが上書きされないよう保護）
+    denomRecentlySaved.set(key, storage[key].savedAt);
+    setTimeout(() => denomRecentlySaved.delete(key), 120000);
 
     // GAS に送信して他端末と共有
     const url = getGasUrl();
@@ -3639,21 +3656,32 @@ async function syncCheckboxes() {
             }
         }
 
-        // 現金精査データ: GAS を正として上書き（スマホ→GAS→PC の流れを保証）
+        // 現金精査データ: GAS を正として常に上書き（スマホ→GAS→PC の正方向同期を保証）
+        // ただし、この端末が直近に保存したキーはGASへの反映待ち期間中ローカルを保護する。
         // ローカルにあってGASにないキーは削除しない（GAS POST 失敗時のデータ保護）
         if (json.denomData) {
             const local = loadDenomStorage();
             let denomChanged = false;
             Object.entries(json.denomData).forEach(([key, remote]) => {
                 const localEntry = local[key];
-                const remoteTime = new Date(remote.savedAt  || 0).getTime();
+                const remoteTime = new Date(remote.savedAt || 0).getTime();
                 const localTime  = new Date(localEntry?.savedAt || 0).getTime();
-                if (!localEntry || remoteTime > localTime) {
+
+                // この端末が直近に保存したキーは、GAS反映前にローカルが古いGASデータで
+                // 上書きされないよう保護する（ローカルが新しい場合のみスキップ）
+                const recentlySavedAt = denomRecentlySaved.get(key);
+                if (recentlySavedAt && localTime > remoteTime) return;
+
+                // GASを正として上書き（savedAt が一致すれば同一データとみなす）
+                if (!localEntry || localEntry.savedAt !== remote.savedAt) {
                     local[key] = remote;
                     denomChanged = true;
                 }
             });
-            if (denomChanged) saveDenomStorage(local);
+            if (denomChanged) {
+                saveDenomStorage(local);
+                if (currentTab === 'admin') renderAdmin();
+            }
         }
 
         // 手動追加レコードをリモートとマージ（GAS を正として同期）
@@ -3728,7 +3756,7 @@ async function syncCheckboxes() {
         }
 
         // 連絡事項既読をリモートとマージ（ユニオン：一度既読にしたら取り消さない）
-        if (Array.isArray(json.msgReadIds) && json.msgReadIds.length > 0) {
+        if (Array.isArray(json.msgReadIds)) {
             const local = loadMsgRead();
             let msgReadChanged = false;
             json.msgReadIds.forEach(id => {

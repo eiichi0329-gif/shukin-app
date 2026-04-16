@@ -301,6 +301,26 @@ function doPost(e) {
     } else if (action === 'saveDenom') {
       const sheet = getOrCreateSheet(ss, DENOM_SHEET, DENOM_HEADERS, '#0f766e', DENOM_COL_WIDTHS);
       const data  = payload.data || {};
+      const newSavedAt = new Date(data.savedAt || 0).getTime();
+
+      // 既存データより古い（または同時刻の）POSTは上書きしない
+      // リトライキューの再送などで古いデータが新しいデータを壊さないよう保護する
+      const lastRow = sheet.getLastRow();
+      if (lastRow >= 2) {
+        const keyCol = DENOM_HEADERS.length; // = 5
+        const rows = sheet.getRange(2, 1, lastRow - 1, keyCol).getValues();
+        for (const row of rows) {
+          if (String(row[keyCol - 1]) === String(payload.key)) {
+            const existingSavedAt = row[3]; // 保存日時列
+            const existingTime = existingSavedAt instanceof Date
+              ? existingSavedAt.getTime()
+              : new Date(String(existingSavedAt) || 0).getTime();
+            if (newSavedAt <= existingTime) return ok(); // 既存の方が新しいので無視
+            break;
+          }
+        }
+      }
+
       upsertRow(sheet, payload.key, [
         data.date    || '',
         data.route   || '',
@@ -314,10 +334,19 @@ function doPost(e) {
       const sheet = getOrCreateSheet(ss, MSG_READ_SHEET, MSG_READ_HEADERS, '#1e40af', [200, 160]);
       const ids     = payload.ids || [];
       const savedAt = payload.savedAt || new Date().toISOString();
+      // 既存IDをセット化（ユニオン方式：既存データを削除しない）
+      // 複数端末が同時にチェックしても互いのデータを消さないようにする
+      const existingIds = new Set();
       const lastRow = sheet.getLastRow();
-      if (lastRow > 1) sheet.deleteRows(2, lastRow - 1);
-      if (ids.length > 0) {
-        sheet.getRange(2, 1, ids.length, 2).setValues(ids.map(id => [String(id), savedAt]));
+      if (lastRow >= 2) {
+        sheet.getRange(2, 1, lastRow - 1, 1).getValues().forEach(([id]) => {
+          if (id) existingIds.add(String(id));
+        });
+      }
+      // まだシートにないIDのみ追記
+      const newIds = ids.filter(id => !existingIds.has(String(id)));
+      if (newIds.length > 0) {
+        newIds.forEach(id => sheet.appendRow([String(id), savedAt]));
       }
 
     // ── 手動追加レコード 保存 ──
