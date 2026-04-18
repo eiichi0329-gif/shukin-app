@@ -2,12 +2,26 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>配達用アプリ</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://accounts.google.com/gsi/client" async></script>
 </head>
 <body>
+    <!-- キャッシュ強制クリア: スクリプトバージョンが古い場合はリロード -->
+    <script>
+    (function(){
+        var APP_VER = 8;
+        var stored = sessionStorage.getItem('app_ver');
+        if (stored !== String(APP_VER)) {
+            sessionStorage.setItem('app_ver', String(APP_VER));
+            if (stored !== null) { location.reload(true); }
+        }
+    })();
+    </script>
     <!-- ログイン画面 -->
     <div id="login-screen">
         <div class="login-card">
@@ -278,6 +292,41 @@
         </div>
     </dialog>
 
+    <!-- 振込入金ダイアログ -->
+    <dialog id="transfer-dialog" class="settings-dialog">
+        <div class="settings-inner">
+            <div class="settings-title">&#128176; 振込入金を記録</div>
+            <input type="hidden" id="transfer-key">
+            <div id="transfer-info" class="partial-collect-info"></div>
+            <div style="margin-top:12px">
+                <label class="settings-label manual-form-full">
+                    振込日
+                    <input id="transfer-date-input" class="settings-input" type="date">
+                </label>
+                <div style="margin-top:10px;display:flex;gap:16px;align-items:center">
+                    <label style="display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer">
+                        <input type="radio" name="transfer-type" value="full" id="transfer-type-full" checked>
+                        全額振込
+                    </label>
+                    <label style="display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer">
+                        <input type="radio" name="transfer-type" value="partial" id="transfer-type-partial">
+                        一部振込
+                    </label>
+                </div>
+                <label class="settings-label manual-form-full" id="transfer-amount-row" style="margin-top:10px;display:none">
+                    振込金額（円）
+                    <input id="transfer-amount-input" class="settings-input partial-collect-amount-input"
+                           type="number" inputmode="numeric" min="1" placeholder="0">
+                </label>
+            </div>
+            <div class="settings-actions" style="margin-top:16px">
+                <button class="btn btn-secondary" onclick="closeTransferDialog()">キャンセル</button>
+                <button class="btn btn-danger"    id="transfer-cancel-btn" onclick="cancelTransferFromDialog()" style="display:none">振込取消</button>
+                <button class="btn btn-success"   onclick="confirmTransferDialog()">記録する</button>
+            </div>
+        </div>
+    </dialog>
+
     <!-- 配達表 集金ダイアログ -->
     <dialog id="delivery-collect-dialog" class="settings-dialog">
         <div class="settings-inner">
@@ -428,7 +477,7 @@
         </div>
     </dialog>
 
-    <script src="data.js?v=20260416190638" defer></script>
-    <script src="app.js?v=4" defer></script>
+    <script src="data.js?v=20260417180411" defer></script>
+    <script src="app_2026.js?v=20260418" defer></script>
 </body>
 </html>
