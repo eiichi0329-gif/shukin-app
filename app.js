@@ -358,8 +358,11 @@ function displayAmount(key, r) {
 // Excel金額が変わった（新規注文含む）場合は未集金として表示
 function isFullyCollected(key, r) {
     if (!checked[key]) return false;
-    const collectedAmt = checked[key].collectedAmount || 0;
-    if (collectedAmt === 0) return true; // 旧データ互換：金額未記録は集金済みとみなす
+    const collectedAmt = checked[key].collectedAmount;
+    // 旧データ互換：collectedAmount が記録されていない場合（旧形式チェック）は集金済みとみなす
+    if (collectedAmt === undefined || collectedAmt === null) return true;
+    // collectedAmount=0 は実際の金額も 0 の場合のみ集金済み（GAS から 0 が来ても非ゼロ顧客を誤判定しない）
+    if (collectedAmt === 0) return effectiveAmount(key, r) === 0;
     // リセット運用：集金後にExcelが0にリセットされた状態は集金済みとみなす
     if (checked[key].cycleReset && effectiveAmount(key, r) === 0) return true;
     return effectiveAmount(key, r) === collectedAmt;
@@ -749,6 +752,11 @@ function renderTable() {
         const isBankFailed    = bankState[key]?.status === 'failed';
         const isTransferred   = !!transferState[key];
 
+        // 一部集金状態（isPartiallyCollected）は transferCellHtml の分岐で使うため先に計算する
+        const canPartial = !isBankCustomer && !isTransferred;
+        const prevCollected = state.collectedAmount || 0;
+        const isPartiallyCollected = prevCollected > 0 && !isFullyCollected(key, r);
+
         let payBadge;
         if (isBankFailed) {
             payBadge = `<span class="pay-badge pay-bank-failed" data-key="${key}" style="cursor:pointer" title="タップで口振失敗を解除">口振失敗</span>`;
@@ -785,11 +793,6 @@ function renderTable() {
         } else {
             transferCellHtml = `<td class="col-transfer"><button class="btn-transfer" data-key="${key}">振込入金</button></td>`;
         }
-
-        // 現金・未集金（口振でも振込でもない）なら金額セルを一部集金タップ対応に
-        const canPartial = !isBankCustomer && !isTransferred;
-        const prevCollected = state.collectedAmount || 0;
-        const isPartiallyCollected = prevCollected > 0 && !isFullyCollected(key, r);
         const amountCellClass = canPartial ? 'col-amount col-amount-tap' : 'col-amount';
         const partialAttr = canPartial ? `data-partial-key="${key}"` : '';
         const partialBadge = isPartiallyCollected
@@ -1559,9 +1562,18 @@ function switchTab(tab) {
     document.querySelector('.controls-bar').classList.toggle('delivery-mode', tab === 'delivery');
     document.getElementById('delivery-summary').classList.toggle('hidden', tab !== 'delivery');
 
-    if (tab === 'admin')    renderAdmin();
+    if (tab === 'admin') {
+        renderAdmin();
+    }
+    if (tab === 'list') {
+        renderTable();
+    }
     if (tab === 'delivery') {
-        renderDelivery();
+        try {
+            renderDelivery();
+        } catch (e) {
+            console.error('renderDelivery error:', e);
+        }
         const doneCards = document.querySelectorAll('#delivery-list .delivery-card-done');
         if (doneCards.length > 0) {
             doneCards[doneCards.length - 1].scrollIntoView({ block: 'center' });
@@ -3919,6 +3931,16 @@ async function startApp() {
         filters.payment        = 'cash';
         filters.uncollectedOnly = true;
     }
+
+    // 保存済み月フィルターが現在の data.js に存在しない月を指している場合はリセット
+    // （data.js 再生成で月が変わったときに全件フィルタされるのを防ぐ）
+    if (filters.month && filters.month !== '__action_required__') {
+        const validMonths = new Set(allData.map(r => r.dataMonth));
+        if (!validMonths.has(filters.month)) {
+            filters.month = '';
+        }
+    }
+
     document.getElementById('filter-store').value        = filters.store;
     document.getElementById('filter-month').value        = filters.month;
     document.getElementById('filter-route').value        = filters.route;
@@ -3926,8 +3948,36 @@ async function startApp() {
     document.getElementById('search-input').value        = filters.search;
     document.getElementById('toggle-uncollected').checked = filters.uncollectedOnly;
 
-    renderTable();
-    switchTab('delivery');
+    // 起動時フィルターで結果が0件になる場合は全フィルターをデフォルトにリセット
+    // （古い月・店舗・ルートなどが保存されたまま結果0件になるケースをまとめて対処）
+    if (filteredData().length === 0 &&
+        (filters.month || filters.store || filters.route || filters.payment !== 'cash' || filters.search)) {
+        filters.month   = '';
+        filters.store   = '';
+        filters.route   = '';
+        filters.payment = 'cash';
+        filters.search  = '';
+        document.getElementById('filter-month').value   = '';
+        document.getElementById('filter-store').value   = '';
+        document.getElementById('filter-route').value   = '';
+        document.getElementById('filter-payment').value = 'cash';
+        document.getElementById('search-input').value   = '';
+    }
+
+    try {
+        renderTable();
+    } catch (e) {
+        console.error('renderTable error:', e);
+        const tbody = document.getElementById('tbody');
+        if (tbody) {
+            tbody.innerHTML = `<tr><td colspan="8" style="color:red;padding:16px;white-space:pre-wrap;font-size:12px">【エラー】${e.message}\n${e.stack || ''}</td></tr>`;
+        }
+    }
+    try {
+        switchTab('delivery');
+    } catch (e) {
+        console.error('switchTab delivery error:', e);
+    }
 
     document.getElementById('loading-badge').style.display = 'none';
 
