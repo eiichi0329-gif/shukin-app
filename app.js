@@ -358,12 +358,8 @@ function displayAmount(key, r) {
 // Excel金額が変わった（新規注文含む）場合は未集金として表示
 function isFullyCollected(key, r) {
     if (!checked[key]) return false;
-    const collectedAmt = checked[key].collectedAmount;
-    // 旧データ互換：collectedAmount が記録されていない場合（旧形式チェック）は集金済みとみなす
-    if (collectedAmt === undefined || collectedAmt === null) return true;
-    // collectedAmount=0 は実際の金額も 0 の場合のみ集金済み（GAS から 0 が来ても非ゼロ顧客を誤判定しない）
-    if (collectedAmt === 0) return effectiveAmount(key, r) === 0;
-    // リセット運用：集金後にExcelが0にリセットされた状態は集金済みとみなす
+    const collectedAmt = checked[key].collectedAmount || 0;
+    if (collectedAmt === 0) return true; // 旧データ互換：金額未記録は集金済みとみなす
     if (checked[key].cycleReset && effectiveAmount(key, r) === 0) return true;
     return effectiveAmount(key, r) === collectedAmt;
 }

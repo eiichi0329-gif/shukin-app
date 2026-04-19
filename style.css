@@ -191,9 +191,13 @@ th.col-transfer, td.col-transfer { white-space: nowrap; text-align: center; padd
 }
 .btn-transfer:hover  { background: #ede9fe; }
 .btn-transfer:active { transform: scale(0.95); }
-.transfer-done { font-size: 13px; color: #6d28d9; font-weight: 700; }
+.transfer-done    { font-size: 13px; color: #6d28d9; font-weight: 700; }
+/* 一部振込：オレンジ系で「残あり」を明示 */
+.transfer-partial { font-size: 12px; color: #c2410c; font-weight: 700; cursor: pointer; }
+/* 一部振込済みの追加ボタン（オレンジ枠） */
+.btn-transfer-partial { border-color: #c2410c !important; color: #c2410c !important; }
 
-/* 振込入金済み行 */
+/* 振込入金済み行（全額） */
 tbody tr.row-transfer { background: #f5f3ff; }
 tbody tr.row-transfer:hover { background: #ede9fe; }
 tbody tr.row-transfer td.col-name   { text-decoration: line-through; color: var(--g400); }
