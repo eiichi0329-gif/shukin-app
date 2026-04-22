@@ -7,7 +7,7 @@
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>配達用アプリ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <script src="https://accounts.google.com/gsi/client" async></script>
 </head>
 <body>
@@ -89,7 +89,9 @@
                     <button class="btn btn-bulk"          id="btn-bulk-check"    onclick="checkAllBank()">&#10003; 一括チェック</button>
                     <button class="btn btn-bulk-register hidden" id="btn-bulk-register" onclick="registerBulkBank()">登録</button>
                     <button class="btn btn-secondary" onclick="openManualAdd()">&#43; 手動追加</button>
-                    <button class="btn btn-warning"   onclick="bulkMarkBankFailed()">口振失敗 一括登録</button>
+                    <button class="btn btn-warning"   id="btn-bank-fail-select"   onclick="startBankFailSelect()">口振失敗 一括登録</button>
+                    <button class="btn btn-warning hidden" id="btn-bank-fail-confirm" onclick="confirmBankFailSelect()">口振失敗 確定</button>
+                    <button class="btn btn-secondary hidden" id="btn-bank-fail-cancel" onclick="cancelBankFailSelect()">キャンセル</button>
                     <button class="btn btn-secondary" onclick="openSettings()">&#9881; 連携設定</button>
                     <button class="btn btn-danger"    onclick="resetAll()">リセット</button>
                 </div>
@@ -373,6 +375,8 @@
                 <option value="変更">変更</option>
                 <option value="別紙参照">別紙参照</option>
                 <option value="口座振替依頼書提出">口座振替依頼書提出</option>
+                <option value="空箱回収済み">空箱回収済み</option>
+                <option value="空箱未回収">空箱未回収</option>
                 <option value="画像添付">画像添付</option>
             </select>
             <!-- 日付複数選択カレンダー（注文・キャンセル用） -->
@@ -413,6 +417,8 @@
                 <option value="変更">変更</option>
                 <option value="別紙参照">別紙参照</option>
                 <option value="口座振替依頼書提出">口座振替依頼書提出</option>
+                <option value="空箱回収済み">空箱回収済み</option>
+                <option value="空箱未回収">空箱未回収</option>
             </select>
             <textarea id="other-msg-text" class="msg-textarea" placeholder="自由記入（省略可）" rows="3"></textarea>
             <div class="settings-actions">
@@ -477,7 +483,7 @@
         </div>
     </dialog>
 
-    <script src="data.js?v=20260417180411" defer></script>
-    <script src="app.js?v=5" defer></script>
+    <script src="data.js?v=20260421183640" defer></script>
+    <script src="app.js?v=9" defer></script>
 </body>
 </html>

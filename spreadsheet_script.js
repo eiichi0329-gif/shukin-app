@@ -379,14 +379,27 @@ function doPost(e) {
       const key = payload.key;
       if (!key) return ok();
       const sheet = getOrCreateSheet(ss, BANK_FAILED_SHEET, BANK_FAILED_HEADERS, '#b91c1c', BANK_FAILED_COL_WIDTHS);
-      upsertRow(sheet, key, [key, payload.savedAt || new Date().toISOString()]);
+      // キーは列1にあるため列1で重複チェックして upsert する
+      const rowData = [key, payload.savedAt || new Date().toISOString()];
+      const lastRow = sheet.getLastRow();
+      let foundRow = -1;
+      if (lastRow > 1) {
+        const keys = sheet.getRange(2, 1, lastRow - 1, 1).getValues().flat();
+        const idx = keys.indexOf(key);
+        if (idx >= 0) foundRow = idx + 2;
+      }
+      if (foundRow > 0) {
+        sheet.getRange(foundRow, 1, 1, rowData.length).setValues([rowData]);
+      } else {
+        sheet.appendRow(rowData);
+      }
 
     // ── 口振失敗 解除 ──
     } else if (action === 'removeBankFailed') {
       const key = payload.key;
       if (!key) return ok();
       const sheet = ss.getSheetByName(BANK_FAILED_SHEET);
-      if (sheet) removeRow(sheet, key, BANK_FAILED_HEADERS.length);
+      if (sheet) removeRow(sheet, key, 1); // キーは列1
 
     // ── 顧客画像 保存（Google Drive にアップロード） ──
     } else if (action === 'saveImage') {

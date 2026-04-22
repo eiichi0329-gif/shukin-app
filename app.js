@@ -230,9 +230,13 @@ let bulkAffectedKeys       = new Set(); // 一括チェックで対象になっ�
 let bulkUncheckedKeys      = new Set(); // ユーザーが手動で外したキー
 let bulkPreviouslyCompleted = new Set(); // 一括モード開始時点で完了済みだったキー
 
+let bankFailSelectMode     = false;
+let bankFailSelectedKeys   = new Set(); // 口振失敗選択モードで選択されたキー
+
 // 金種確認ダイアログ用
 let currentDenomDate  = null;
 let currentDenomRoute = null;
+let currentDenomStore = null;
 // この端末で直近に保存した denom キー → savedAt（ISO文字列）。GAS反映待ち期間中はローカルを保護
 const denomRecentlySaved = new Map();
 const DENOMINATIONS = [
@@ -290,6 +294,16 @@ function unmarkBankFailed(key) {
     saveBankState();
     const _bUrl = getGasUrl();
     if (_bUrl) postToGas(_bUrl, { action: 'removeBankFailed', key });
+}
+function onBankBadgeDoubleTap(key) {
+    if (!confirm('口座振替の引き落としができませんでした。\n口振失敗として現金集金に変更しますか？')) return;
+    markBankFailed(key);
+    const url = getGasUrl();
+    if (url) {
+        const record = allData.find(r => getKey(r) === key);
+        if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
+    }
+    renderTable();
 }
 
 // ─── Amount Override State ────────────────────────────────────────
@@ -780,7 +794,16 @@ function renderTable() {
         // 振込入金セル（口振顧客・現金集金済み（一部含む）には表示しない）
         let transferCellHtml;
         if (isBankCustomer) {
-            transferCellHtml = `<td class="col-transfer"></td>`;
+            if (!isBankCompleted && !isBankFailed) {
+                if (bankFailSelectMode) {
+                    const isSelected = bankFailSelectedKeys.has(key);
+                    transferCellHtml = `<td class="col-transfer"><label class="bank-fail-select-label"><input type="checkbox" class="bank-fail-select-cb" data-key="${key}"${isSelected ? ' checked' : ''}> 失敗</label></td>`;
+                } else {
+                    transferCellHtml = `<td class="col-transfer"><button class="btn-bank-fail" data-key="${key}">口振失敗</button></td>`;
+                }
+            } else {
+                transferCellHtml = `<td class="col-transfer"></td>`;
+            }
         } else if (isTransferred) {
             transferCellHtml = `<td class="col-transfer transfer-done" data-key="${key}" title="クリックで取消">${fmtDate(transferState[key].date)} ✕</td>`;
         } else if (isChecked || isPartiallyCollected) {
@@ -829,6 +852,7 @@ function renderTable() {
         });
     });
 
+
     // イベント登録（金額セル → 一部集金ダイアログ）
     tbody.querySelectorAll('td.col-amount-tap[data-partial-key]').forEach(cell => {
         cell.addEventListener('click', () => openPartialCollect(cell.dataset.partialKey));
@@ -847,6 +871,30 @@ function renderTable() {
         });
     });
 
+    // イベント登録（口振失敗 選択モード チェックボックス）
+    tbody.querySelectorAll('input.bank-fail-select-cb').forEach(cb => {
+        cb.addEventListener('change', () => {
+            const key = cb.dataset.key;
+            if (cb.checked) bankFailSelectedKeys.add(key);
+            else bankFailSelectedKeys.delete(key);
+        });
+    });
+
+    // イベント登録（口振失敗ボタン）
+    tbody.querySelectorAll('button.btn-bank-fail').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const key = btn.dataset.key;
+            if (!confirm('口座振替の引き落としができませんでした。\n口振失敗として現金集金に変更しますか？')) return;
+            markBankFailed(key);
+            const url = getGasUrl();
+            if (url) {
+                const record = allData.find(r => getKey(r) === key);
+                if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
+            }
+            renderTable();
+        });
+    });
+
     // イベント登録（振込入金 取消）
     tbody.querySelectorAll('td.transfer-done[data-key]').forEach(cell => {
         cell.addEventListener('click', () => onTransferRevert(cell.dataset.key));
@@ -857,12 +905,12 @@ function renderTable() {
     tbody.querySelectorAll('tr[data-key]').forEach(row => {
         // PC: dblclick
         row.addEventListener('dblclick', e => {
-            if (e.target.closest('input, button, td.col-check, td.col-date, td.col-transfer')) return;
+            if (e.target.closest('input, button, td.col-check, td.col-date, td.col-transfer, .pay-bank-failed')) return;
             openRowEdit(row.dataset.key);
         });
         // スマホ: 400ms以内の2タップ
         row.addEventListener('click', e => {
-            if (e.target.closest('input, button, td.col-check, td.col-date, td.col-transfer')) return;
+            if (e.target.closest('input, button, td.col-check, td.col-date, td.col-transfer, .pay-bank-failed')) return;
             const now = Date.now();
             if (_lastTapKey === row.dataset.key && now - _lastTapTime < 400) {
                 openRowEdit(row.dataset.key);
@@ -1041,6 +1089,15 @@ function onCheck(key, isChecked, routeOverride = null) {
         if (dateCell) dateCell.textContent = fmtDate((checked[key] || {}).collectDate);
     }
 
+    // 振込入金が記録されていた場合は排他的に解除する
+    if (isChecked && transferState[key]) {
+        delete transferState[key];
+        saveTransferState();
+        const _tUrl = getGasUrl();
+        const _tRec = allData.find(r => getKey(r) === key);
+        if (_tUrl && _tRec) postToGas(_tUrl, { action: 'removeTransfer', record: { ..._tRec, key } });
+    }
+
     markDirty(key);
     saveChecked();
     renderHeader(filteredData());
@@ -1147,10 +1204,9 @@ function editDate(key, cell) {
     input.addEventListener('blur',   save);
 }
 
-// ─── 口振失敗 一括登録 ───────────────────────────────────────────
-function bulkMarkBankFailed() {
-    // 現在の月・店舗フィルターを適用し、未処理（完了でも失敗でもない）の口振顧客を取得
-    const targets = allData.filter(r => {
+// ─── 口振失敗 選択登録 ───────────────────────────────────────────
+function startBankFailSelect() {
+    const hasTargets = allData.some(r => {
         if (r.paymentType !== 'bank') return false;
         if ((r.amount || 0) === 0) return false;
         const key = getKey(r);
@@ -1160,19 +1216,46 @@ function bulkMarkBankFailed() {
         if (filters.month && filters.month !== '__action_required__' && r.dataMonth !== filters.month) return false;
         return true;
     });
-
-    if (targets.length === 0) {
+    if (!hasTargets) {
         alert('未処理の口座振替対象者はいません。');
         return;
     }
-
-    const monthLabel = filters.month ? filters.month : '全月';
-    const storeLabel = filters.store ? filters.store : '全店舗';
-    if (!confirm(`${storeLabel}・${monthLabel} の未処理口座振替 ${targets.length}件 を\n全て「口振失敗（現金集金へ変更）」に登録しますか？`)) return;
-
-    targets.forEach(r => markBankFailed(getKey(r)));
+    bankFailSelectMode = true;
+    bankFailSelectedKeys.clear();
+    document.getElementById('btn-bank-fail-select').classList.add('hidden');
+    document.getElementById('btn-bank-fail-confirm').classList.remove('hidden');
+    document.getElementById('btn-bank-fail-cancel').classList.remove('hidden');
     renderTable();
-    showToast(`${targets.length}件を口振失敗に登録しました`, 'success');
+    showToast('口振失敗にする人を選択してください', 'info');
+}
+
+function confirmBankFailSelect() {
+    if (bankFailSelectedKeys.size === 0) {
+        alert('誰も選択されていません。');
+        return;
+    }
+    if (!confirm(`選択した ${bankFailSelectedKeys.size}件 を口振失敗（現金集金へ変更）に登録しますか？`)) return;
+
+    const url = getGasUrl();
+    bankFailSelectedKeys.forEach(key => {
+        markBankFailed(key);
+        if (url) {
+            const record = allData.find(r => getKey(r) === key);
+            if (record) postToGas(url, { action: 'bankRemove', record: { ...record, key } });
+        }
+    });
+    const count = bankFailSelectedKeys.size;
+    cancelBankFailSelect();
+    showToast(`${count}件を口振失敗に登録しました`, 'success');
+}
+
+function cancelBankFailSelect() {
+    bankFailSelectMode = false;
+    bankFailSelectedKeys.clear();
+    document.getElementById('btn-bank-fail-select').classList.remove('hidden');
+    document.getElementById('btn-bank-fail-confirm').classList.add('hidden');
+    document.getElementById('btn-bank-fail-cancel').classList.add('hidden');
+    renderTable();
 }
 
 // ─── Bulk Bank Check ─────────────────────────────────────────────
@@ -1300,6 +1383,16 @@ function onTransferClick(key, cell) {
         const recordedAt = new Date().toISOString();
         transferState[key] = { date: val, recordedAt };
         saveTransferState();
+
+        // 済チェックが入っていた場合は排他的に解除する
+        if (checked[key]) {
+            const removeGasKey = checked[key]?.gasKey || key;
+            delete checked[key];
+            saveChecked();
+            const _url = getGasUrl();
+            const _rec = allData.find(r => getKey(r) === key);
+            if (_url && _rec) postToGas(_url, { action: 'remove', record: { ..._rec, key: removeGasKey } });
+        }
 
         // GAS 送信
         const url = getGasUrl();
@@ -1560,9 +1653,11 @@ function switchTab(tab) {
 
     if (tab === 'admin') {
         renderAdmin();
+        window.scrollTo(0, 0);
     }
     if (tab === 'list') {
         renderTable();
+        window.scrollTo(0, 0);
     }
     if (tab === 'delivery') {
         try {
@@ -2854,7 +2949,7 @@ function toggleRouteDetail(safeRouteId) {
     headerCell.innerHTML = headerCell.innerHTML.replace(hidden ? '▼' : '▶', hidden ? '▶' : '▼');
 }
 
-function buildDailySection(date, routes, routeMonthData, dateItems) {
+function buildDailySection(date, routes, routeMonthData, dateItems, store) {
     const [, m, day] = date.split('-');
     const dateLabel  = `${parseInt(m)}月${parseInt(day)}日`;
 
@@ -2956,7 +3051,7 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
         cashTotal += cash;
         let seisaHtml = '';
         if ((routeTotals[r] || 0) > 0) {
-            const dd = denomSt[`${date}|${r}`] || null; // GAS同期済みデータをそのまま使用
+            const dd = denomSt[`${store}|${date}|${r}`] || null; // GAS同期済みデータをそのまま使用
             let seisaStatus = `<div class="seisa-status seisa-none">未実施</div>`;
             if (dd) {
                 const denomTotal  = calcDenomTotal(dd.counts);
@@ -2972,7 +3067,7 @@ function buildDailySection(date, routes, routeMonthData, dateItems) {
                     seisaStatus = `<div class="seisa-status seisa-ng">合致せず<br><span class="seisa-diff">${sign}${fmt(Math.abs(diff))}円</span><br><small class="seisa-time">${savedTimeStr}</small></div>`;
                 }
             }
-            seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r}, ${routeTotals[r] || 0}, ${ca})">現金精査</button>${seisaStatus}`;
+            seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r}, '${store}', ${routeTotals[r] || 0}, ${ca})">現金精査</button>${seisaStatus}`;
         }
         const displayCash = cash;
         html += `<td class="cash-cell" data-cash-key="${ck}"><div class="cash-amount">${fmt(displayCash)}</div>${seisaHtml}</td>`;
@@ -3092,7 +3187,7 @@ function renderAdmin() {
     let html = '';
     for (const d of allDates) {
         if (byDate[d]) {
-            html += buildDailySection(d, routes, byDateRouteMonth[d] || {}, byDate[d]);
+            html += buildDailySection(d, routes, byDateRouteMonth[d] || {}, byDate[d], storeVal || '');
         }
         if (msgsByDate[d]) {
             html += buildDailyMessages(d, msgsByDate[d]);
@@ -3137,12 +3232,13 @@ function renderAdmin() {
 }
 
 // ─── Denomination Check Dialog ───────────────────────────────────
-function openDenomDialog(date, route, base, ca) {
+function openDenomDialog(date, route, store, base, ca) {
     currentDenomDate  = date;
     currentDenomRoute = route;
+    currentDenomStore = store || '';
 
     // 手持ち現金の目標額を決定: 集金合計（base）＋釣銭持ち出し（ca）で毎回新規計算
-    const cashKey  = `${date}|${route}`;
+    const cashKey  = `${currentDenomStore}|${date}|${route}`;
     const saved    = loadDenomStorage()[cashKey];
     const _ca      = (ca !== undefined) ? ca : (getChangeAmounts()[cashKey] !== undefined ? getChangeAmounts()[cashKey] : 12220);
     const expected = (base || 0) + _ca;
@@ -3206,6 +3302,7 @@ function closeDenomDialog() {
     document.getElementById('denom-dialog').close();
     currentDenomDate  = null;
     currentDenomRoute = null;
+    currentDenomStore = null;
 }
 
 function saveDenomDialog() {
@@ -3216,7 +3313,7 @@ function saveDenomDialog() {
     });
     const storage  = loadDenomStorage();
     const expected = parseInt(document.getElementById('denom-expected-val').value) || 0;
-    const key = `${currentDenomDate}|${currentDenomRoute}`;
+    const key = `${currentDenomStore}|${currentDenomDate}|${currentDenomRoute}`;
     storage[key] = { counts, expected, savedAt: new Date().toISOString() };
     saveDenomStorage(storage);
 
@@ -3230,7 +3327,7 @@ function saveDenomDialog() {
         postToGas(url, {
             action: 'saveDenom',
             key,
-            data: { counts, expected, savedAt: storage[key].savedAt, date: currentDenomDate, route: currentDenomRoute }
+            data: { counts, expected, savedAt: storage[key].savedAt, store: currentDenomStore, date: currentDenomDate, route: currentDenomRoute }
         });
     }
 
@@ -3573,11 +3670,11 @@ async function syncCheckboxes() {
                     // collectDate がある場合はそれを checkedAt の基準にする（今日同期しても正しい日付に表示される）
                     checked[key] = { checkedAt: val.collectDate || new Date().toISOString(), collectDate: val.collectDate || '', collectedAmount: val.collectedAmount || 0 };
                 } else {
-                    // 既存エントリはスナップショットを保持しつつ、collectDate・collectedAmount を補完
-                    if (!checked[key].collectDate && val.collectDate) {
+                    // 既存エントリはスナップショットを保持しつつ、GASを正としてcollectDate・collectedAmountを上書き
+                    if (val.collectDate) {
                         checked[key].collectDate = val.collectDate;
                     }
-                    if (val.collectedAmount && !checked[key].collectedAmount) {
+                    if (val.collectedAmount) {
                         checked[key].collectedAmount = val.collectedAmount;
                     }
                 }
