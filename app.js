@@ -1665,10 +1665,7 @@ function switchTab(tab) {
         } catch (e) {
             console.error('renderDelivery error:', e);
         }
-        const doneCards = document.querySelectorAll('#delivery-list .delivery-card-done');
-        if (doneCards.length > 0) {
-            doneCards[doneCards.length - 1].scrollIntoView({ block: 'center' });
-        }
+        window.scrollTo(0, 0);
     }
 }
 
