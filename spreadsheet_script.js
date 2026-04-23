@@ -163,7 +163,7 @@ function doPost(e) {
     // ── 振込入金 追加 ──
     } else if (action === 'addTransfer') {
       const sheet = getOrCreateSheet(ss, TRANSFER_SHEET, TRANSFER_HEADERS, '#15803d', TRANSFER_COL_WIDTHS);
-      upsertRow(sheet, record.key, buildTransferRow(record, payload.transferDate || '', payload.recordedAt || ''));
+      upsertRow(sheet, record.key, buildTransferRow(record, payload.transferDate || '', payload.recordedAt || '', payload.transferAmount ?? null));
       sortSheet(sheet);
 
     // ── 振込入金 削除 ──
@@ -776,18 +776,21 @@ function doGet(e) {
       }
     }
 
-    // 振込入金シートを読み込む（key → { date }）
-    // TRANSFER_HEADERS: 店舗/ルート/月/名前/住所/金額/振込日(col7)/記録日時(col8)/キー(col9)
+    // 振込入金シートを読み込む（key → { date, amount? }）
+    // TRANSFER_HEADERS: 店舗/ルート/月/名前/住所/振込金額(col6)/振込日(col7)/記録日時(col8)/キー(col9)
     const transferSheetR = ss.getSheetByName(TRANSFER_SHEET);
     const transferData = {};
     if (transferSheetR && transferSheetR.getLastRow() >= 2) {
-      const rows = transferSheetR.getRange(2, 7, transferSheetR.getLastRow() - 1, 3).getValues();
-      for (const [transferDate, , key] of rows) {
+      const rows = transferSheetR.getRange(2, 6, transferSheetR.getLastRow() - 1, 4).getValues();
+      for (const [transferAmount, transferDate, , key] of rows) {
         if (!key) continue;
         const dateStr = (transferDate instanceof Date)
           ? Utilities.formatDate(transferDate, 'Asia/Tokyo', 'yyyy-MM-dd')
           : String(transferDate);
-        transferData[String(key)] = { date: dateStr };
+        const entry = { date: dateStr };
+        const amt = Number(transferAmount);
+        if (amt > 0) entry.amount = amt;
+        transferData[String(key)] = entry;
       }
     }
 
@@ -1110,7 +1113,7 @@ function buildBankRow(r, completedAt) {
   ];
 }
 
-function buildTransferRow(r, transferDate, recordedAt) {
+function buildTransferRow(r, transferDate, recordedAt, transferAmount) {
   let recStr = recordedAt || '';
   if (recStr) {
     try {
@@ -1124,7 +1127,7 @@ function buildTransferRow(r, transferDate, recordedAt) {
     m ? `${parseInt(m)}月` : '',
     r.name        || '',
     r.address     || '',
-    r.amount      || 0,
+    transferAmount !== null && transferAmount !== undefined ? transferAmount : (r.amount || 0),
     transferDate  || '',
     recStr,
     r.key         || '',

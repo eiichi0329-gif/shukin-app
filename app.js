@@ -675,8 +675,11 @@ function filteredData() {
         // 口振完了：未集金フィルター ON のとき非表示（一括チェックモード中は取消のため表示）
         if (!bulkMode && bankState[key]?.status === 'completed' && effectiveUncollectedOnly) return false;
 
-        // 振込入金済み：未集金フィルター ON のとき非表示
-        if (transferState[key] && effectiveUncollectedOnly) return false;
+        // 振込入金済み：全額振込のみ非表示（一部振込は未集金扱いで表示継続）
+        if (transferState[key] && effectiveUncollectedOnly) {
+            const tAmt = transferState[key].amount;
+            if (!tAmt || tAmt >= effectiveAmount(key, r)) return false;
+        }
 
         if (checked[key]) {
             if (isFullyCollected(key, r)) {
@@ -761,6 +764,9 @@ function renderTable() {
         const isBankCompleted = isBankCustomer && bankState[key]?.status === 'completed';
         const isBankFailed    = bankState[key]?.status === 'failed';
         const isTransferred   = !!transferState[key];
+        const isPartiallyTransferred = isTransferred &&
+            transferState[key].amount !== undefined &&
+            transferState[key].amount < effectiveAmount(key, r);
 
         // 一部集金状態（isPartiallyCollected）は transferCellHtml の分岐で使うため先に計算する
         const canPartial = !isBankCustomer && !isTransferred;
@@ -777,7 +783,7 @@ function renderTable() {
         }
 
         let rowClass = '';
-        if (isTransferred)        rowClass = 'row-transfer';
+        if (isTransferred)        rowClass = isPartiallyTransferred ? 'row-transfer-partial' : 'row-transfer';
         else if (isBankCompleted) rowClass = 'row-bank-completed';
         else if (isChecked)       rowClass = 'row-checked';
         if ((r.amount || 0) === 0) rowClass += ' row-zero';
@@ -805,7 +811,11 @@ function renderTable() {
                 transferCellHtml = `<td class="col-transfer"></td>`;
             }
         } else if (isTransferred) {
-            transferCellHtml = `<td class="col-transfer transfer-done" data-key="${key}" title="クリックで取消">${fmtDate(transferState[key].date)} ✕</td>`;
+            const tBadge = isPartiallyTransferred
+                ? `<span class="partial-badge transfer-partial-badge">一部振込¥${fmt(transferState[key].amount)}</span>`
+                : '';
+            const tTitle = isPartiallyTransferred ? 'クリックで修正・取消' : 'クリックで取消';
+            transferCellHtml = `<td class="col-transfer transfer-done" data-key="${key}" title="${tTitle}">${fmtDate(transferState[key].date)}${tBadge} ✕</td>`;
         } else if (isChecked || isPartiallyCollected) {
             // 現金で集金済み（全額・一部）の場合は振込ボタンを表示しない
             transferCellHtml = `<td class="col-transfer"></td>`;
@@ -865,10 +875,7 @@ function renderTable() {
 
     // イベント登録（振込入金ボタン）
     tbody.querySelectorAll('button.btn-transfer').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const cell = btn.closest('td');
-            onTransferClick(btn.dataset.key, cell);
-        });
+        btn.addEventListener('click', () => onTransferClick(btn.dataset.key));
     });
 
     // イベント登録（口振失敗 選択モード チェックボックス）
@@ -895,9 +902,9 @@ function renderTable() {
         });
     });
 
-    // イベント登録（振込入金 取消）
+    // イベント登録（振込入金 取消／修正）
     tbody.querySelectorAll('td.transfer-done[data-key]').forEach(cell => {
-        cell.addEventListener('click', () => onTransferRevert(cell.dataset.key));
+        cell.addEventListener('click', () => openTransferDialog(cell.dataset.key));
     });
 
     // イベント登録（ダブルタップ／ダブルクリックで行編集）
@@ -1359,56 +1366,59 @@ function restoreBulkVisual() {
 }
 
 // ─── Transfer Payment ────────────────────────────────────────────
-function onTransferClick(key, cell) {
-    // 現金集金（一部・全額）が既に記録されている場合は振込入金を受け付けない
-    if (checked[key]?.collectedAmount) {
-        renderTable(); // ボタン表示を正しい状態に戻す
-        return;
-    }
-    const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
-    const input = document.createElement('input');
-    input.type      = 'date';
-    input.className = 'date-edit';
-    input.value     = today;
-    cell.innerHTML  = '';
-    cell.appendChild(input);
-    input.focus();
-
-    let saved = false;
-    function save() {
-        if (saved) return;
-        const val = input.value;
-        if (!val) { renderTable(); return; }
-        saved = true;
-        const recordedAt = new Date().toISOString();
-        transferState[key] = { date: val, recordedAt };
-        saveTransferState();
-
-        // 済チェックが入っていた場合は排他的に解除する
-        if (checked[key]) {
-            const removeGasKey = checked[key]?.gasKey || key;
-            delete checked[key];
-            saveChecked();
-            const _url = getGasUrl();
-            const _rec = allData.find(r => getKey(r) === key);
-            if (_url && _rec) postToGas(_url, { action: 'remove', record: { ..._rec, key: removeGasKey } });
-        }
-
-        // GAS 送信
-        const url = getGasUrl();
-        if (url) {
-            const record = allData.find(r => getKey(r) === key);
-            if (record) postToGas(url, { action: 'addTransfer', record: { ...record, key }, transferDate: val, recordedAt });
-        }
-
-        renderTable();
-    }
-    input.addEventListener('change', save);
-    input.addEventListener('blur',   () => setTimeout(save, 150));
+function onTransferClick(key) {
+    openTransferDialog(key);
 }
 
-// ─── Transfer Revert ─────────────────────────────────────────────
-function onTransferRevert(key) {
+function openTransferDialog(key) {
+    if (checked[key]?.collectedAmount) {
+        renderTable();
+        return;
+    }
+    const record = allData.find(r => getKey(r) === key);
+    if (!record) return;
+
+    const fullAmt  = effectiveAmount(key, record);
+    const existing = transferState[key];
+
+    document.getElementById('transfer-key').value = key;
+
+    const infoEl = document.getElementById('transfer-info');
+    infoEl.innerHTML = `
+        <div class="partial-info-name">${escHtml(effectiveName(key, record))}</div>
+        <div class="partial-info-row"><span>請求額</span><strong>¥${fmt(fullAmt)}</strong></div>
+        ${existing?.amount ? `<div class="partial-info-row"><span>既振込</span><strong>¥${fmt(existing.amount)}</strong></div>` : ''}
+    `;
+
+    const today    = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
+    const dateInp  = document.getElementById('transfer-date-input');
+    dateInp.value  = existing?.date || today;
+
+    const fullRadio    = document.getElementById('transfer-type-full');
+    const partialRadio = document.getElementById('transfer-type-partial');
+    const amountRow    = document.getElementById('transfer-amount-row');
+    const amountInp    = document.getElementById('transfer-amount-input');
+
+    const isExistingPartial = existing?.amount && existing.amount < fullAmt;
+    fullRadio.checked    = !isExistingPartial;
+    partialRadio.checked = !!isExistingPartial;
+    amountRow.style.display = isExistingPartial ? '' : 'none';
+    amountInp.value = isExistingPartial ? existing.amount : '';
+    amountInp.max   = fullAmt - 1;
+
+    document.getElementById('transfer-cancel-btn').style.display = existing ? '' : 'none';
+
+    document.getElementById('transfer-dialog').showModal();
+    if (isExistingPartial) setTimeout(() => amountInp.select(), 80);
+}
+
+function closeTransferDialog() {
+    document.getElementById('transfer-dialog').close();
+}
+
+function cancelTransferFromDialog() {
+    const key = document.getElementById('transfer-key').value;
+    if (!key) return;
     if (!confirm('振込入金の消し込みを取り消しますか？')) return;
     delete transferState[key];
     saveTransferState();
@@ -1418,7 +1428,48 @@ function onTransferRevert(key) {
         const record = allData.find(r => getKey(r) === key);
         if (record) postToGas(url, { action: 'removeTransfer', record: { ...record, key } });
     }
+    document.getElementById('transfer-dialog').close();
+    renderTable();
+}
 
+function confirmTransferDialog() {
+    const key = document.getElementById('transfer-key').value;
+    const record = allData.find(r => getKey(r) === key);
+    if (!record) return;
+
+    const dateVal = document.getElementById('transfer-date-input').value;
+    if (!dateVal) { alert('振込日を入力してください'); return; }
+
+    const isPartial = document.getElementById('transfer-type-partial').checked;
+    let transferAmount = null;
+
+    if (isPartial) {
+        const entered = parseInt(document.getElementById('transfer-amount-input').value) || 0;
+        if (entered <= 0) { alert('振込金額を入力してください'); return; }
+        const fullAmt = effectiveAmount(key, record);
+        if (entered >= fullAmt) {
+            alert(`全額（¥${fmt(fullAmt)}）以上の場合は「全額振込」を選択してください`);
+            return;
+        }
+        transferAmount = entered;
+    }
+
+    const recordedAt = new Date().toISOString();
+    transferState[key] = { date: dateVal, recordedAt, ...(transferAmount !== null ? { amount: transferAmount } : {}) };
+    saveTransferState();
+
+    if (checked[key]) {
+        const removeGasKey = checked[key]?.gasKey || key;
+        delete checked[key];
+        saveChecked();
+        const _url = getGasUrl();
+        if (_url) postToGas(_url, { action: 'remove', record: { ...record, key: removeGasKey } });
+    }
+
+    const url = getGasUrl();
+    if (url) postToGas(url, { action: 'addTransfer', record: { ...record, key }, transferDate: dateVal, recordedAt, transferAmount });
+
+    document.getElementById('transfer-dialog').close();
     renderTable();
 }
 
@@ -3697,7 +3748,7 @@ async function syncCheckboxes() {
             let changed = false;
             Object.entries(remote).forEach(([key, val]) => {
                 if (!transferState[key]) {
-                    transferState[key] = { date: val.date, recordedAt: '' };
+                    transferState[key] = { date: val.date, recordedAt: '', ...(val.amount ? { amount: val.amount } : {}) };
                     changed = true;
                 }
             });
@@ -4155,6 +4206,14 @@ async function startApp() {
         });
         const cashTotal = adminContent.querySelector(`[data-cash-total="${date}"]`);
         if (cashTotal) cashTotal.textContent = fmt(cashSum);
+    });
+
+    // 振込ダイアログ：全額/一部ラジオ切替
+    document.querySelectorAll('input[name="transfer-type"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+            const amountRow = document.getElementById('transfer-amount-row');
+            amountRow.style.display = document.getElementById('transfer-type-partial').checked ? '' : 'none';
+        });
     });
 
     // GAS 自動同期

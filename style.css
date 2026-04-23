@@ -219,6 +219,10 @@ tbody tr.row-transfer { background: #f5f3ff; }
 tbody tr.row-transfer:hover { background: #ede9fe; }
 tbody tr.row-transfer td.col-name   { text-decoration: line-through; color: var(--g400); }
 tbody tr.row-transfer td.col-amount { color: #6d28d9; }
+tbody tr.row-transfer-partial { background: #faf5ff; }
+tbody tr.row-transfer-partial:hover { background: #f3e8ff; }
+tbody tr.row-transfer-partial td.col-amount { color: #7c3aed; }
+.transfer-partial-badge { color: #6d28d9; background: #ede9fe; }
 
 /* 集金日編集インプット */
 .date-edit {
