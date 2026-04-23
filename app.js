@@ -1392,19 +1392,34 @@ function openTransferDialog(key) {
 
     const today    = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
     const dateInp  = document.getElementById('transfer-date-input');
-    dateInp.value  = existing?.date || today;
+    const dateRow  = document.getElementById('transfer-date-row');
 
     const fullRadio    = document.getElementById('transfer-type-full');
     const partialRadio = document.getElementById('transfer-type-partial');
     const amountRow    = document.getElementById('transfer-amount-row');
     const amountInp    = document.getElementById('transfer-amount-input');
 
+    amountInp.max = fullAmt - 1;
+
     const isExistingPartial = existing?.amount && existing.amount < fullAmt;
-    fullRadio.checked    = !isExistingPartial;
-    partialRadio.checked = !!isExistingPartial;
-    amountRow.style.display = isExistingPartial ? '' : 'none';
-    amountInp.value = isExistingPartial ? existing.amount : '';
-    amountInp.max   = fullAmt - 1;
+
+    if (existing) {
+        // 既存データの修正：全項目表示
+        fullRadio.checked    = !isExistingPartial;
+        partialRadio.checked = !!isExistingPartial;
+        amountRow.style.display = isExistingPartial ? '' : 'none';
+        amountInp.value = isExistingPartial ? existing.amount : '';
+        dateInp.value   = existing.date || today;
+        dateRow.style.display = '';
+    } else {
+        // 新規：ラジオ未選択、金額・日付は非表示
+        fullRadio.checked    = false;
+        partialRadio.checked = false;
+        amountRow.style.display = 'none';
+        dateRow.style.display   = 'none';
+        amountInp.value = '';
+        dateInp.value   = today;
+    }
 
     document.getElementById('transfer-cancel-btn').style.display = existing ? '' : 'none';
 
@@ -4211,8 +4226,14 @@ async function startApp() {
     // 振込ダイアログ：全額/一部ラジオ切替
     document.querySelectorAll('input[name="transfer-type"]').forEach(radio => {
         radio.addEventListener('change', () => {
+            const isPartial = document.getElementById('transfer-type-partial').checked;
             const amountRow = document.getElementById('transfer-amount-row');
-            amountRow.style.display = document.getElementById('transfer-type-partial').checked ? '' : 'none';
+            const dateRow   = document.getElementById('transfer-date-row');
+            amountRow.style.display = isPartial ? '' : 'none';
+            dateRow.style.display   = '';
+            if (isPartial) {
+                setTimeout(() => document.getElementById('transfer-amount-input').focus(), 50);
+            }
         });
     });
 

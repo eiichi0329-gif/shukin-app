@@ -301,13 +301,9 @@
             <input type="hidden" id="transfer-key">
             <div id="transfer-info" class="partial-collect-info"></div>
             <div style="margin-top:12px">
-                <label class="settings-label manual-form-full">
-                    振込日
-                    <input id="transfer-date-input" class="settings-input" type="date">
-                </label>
-                <div style="margin-top:10px;display:flex;gap:16px;align-items:center">
+                <div style="display:flex;gap:16px;align-items:center">
                     <label style="display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer">
-                        <input type="radio" name="transfer-type" value="full" id="transfer-type-full" checked>
+                        <input type="radio" name="transfer-type" value="full" id="transfer-type-full">
                         全額振込
                     </label>
                     <label style="display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer">
@@ -319,6 +315,10 @@
                     振込金額（円）
                     <input id="transfer-amount-input" class="settings-input partial-collect-amount-input"
                            type="number" inputmode="numeric" min="1" placeholder="0">
+                </label>
+                <label class="settings-label manual-form-full" id="transfer-date-row" style="margin-top:10px;display:none">
+                    振込日
+                    <input id="transfer-date-input" class="settings-input" type="date">
                 </label>
             </div>
             <div class="settings-actions" style="margin-top:16px">
