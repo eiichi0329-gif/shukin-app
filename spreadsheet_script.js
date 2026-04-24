@@ -57,6 +57,10 @@ const DENOM_SHEET   = '現金精査';
 const DENOM_HEADERS = ['日付', 'ルート', '精査データ', '保存日時', 'キー'];
 const DENOM_COL_WIDTHS = [100, 60, 500, 160, 1];
 
+const CHANGE_AMT_SHEET      = '釣銭持ち出し';
+const CHANGE_AMT_HEADERS    = ['日付', 'ルート', '金額', '保存日時', 'キー'];
+const CHANGE_AMT_COL_WIDTHS = [100, 60, 100, 160, 1];
+
 const MSG_READ_SHEET   = '連絡事項既読';
 const MSG_READ_HEADERS = ['メッセージID', '保存日時'];
 
@@ -73,7 +77,7 @@ const IMAGE_HEADERS = ['画像キー', 'ファイルID', 'アップロード日�
 const IMAGE_COL_WIDTHS = [200, 200, 160, 160];
 
 // doGet でチェックデータ読み取りをスキップするシート名
-const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET, MSG_READ_SHEET, MANUAL_SHEET, BANK_FAILED_SHEET, IMAGE_SHEET]);
+const SKIP_SHEETS = new Set([BANK_SHEET, TRANSFER_SHEET, MSG_SHEET, AMOUNT_LOG_SHEET, ALLOWED_USERS_SHEET, DELIVERY_SHEET, ROUTE_OVERRIDE_SHEET, DENOM_SHEET, MSG_READ_SHEET, MANUAL_SHEET, BANK_FAILED_SHEET, IMAGE_SHEET, CHANGE_AMT_SHEET]);
 
 // ─── 診断ログ（デバッグ用）────────────────────────────
 function writeDebugLog(ss, action, note) {
@@ -351,6 +355,29 @@ function doPost(e) {
         data.route   || '',
         JSON.stringify({ counts: data.counts || {}, expected: data.expected || 0 }),
         data.savedAt || '',
+        payload.key,
+      ]);
+
+    // ── 釣銭持ち出し額 保存 ──
+    } else if (action === 'saveChangeAmt') {
+      const sheet = getOrCreateSheet(ss, CHANGE_AMT_SHEET, CHANGE_AMT_HEADERS, '#7e22ce', CHANGE_AMT_COL_WIDTHS, false);
+      const newTime = new Date(payload.savedAt || 0).getTime();
+      const lastRow = sheet.getLastRow();
+      if (lastRow >= 2) {
+        const keys = sheet.getRange(2, 5, lastRow - 1, 1).getValues();
+        for (let i = 0; i < keys.length; i++) {
+          if (String(keys[i][0]) === String(payload.key)) {
+            const existingTime = new Date(String(sheet.getRange(i + 2, 4).getValue())).getTime();
+            if (newTime <= existingTime) return ok();
+            break;
+          }
+        }
+      }
+      upsertRow(sheet, payload.key, [
+        payload.date   || '',
+        payload.route  || '',
+        payload.amount ?? 0,
+        payload.savedAt || '',
         payload.key,
       ]);
 
@@ -965,8 +992,22 @@ function doGet(e) {
     }
     const imageKeys = [...imageKeySet];
 
+    // 釣銭持ち出し額を読み込む
+    const changeAmtSheetR = ss.getSheetByName(CHANGE_AMT_SHEET);
+    const changeAmtData = {};
+    if (changeAmtSheetR && changeAmtSheetR.getLastRow() >= 2) {
+      const caRows = changeAmtSheetR.getRange(2, 1, changeAmtSheetR.getLastRow() - 1, 5).getValues();
+      for (const [, , amount, savedAt, key] of caRows) {
+        if (!key) continue;
+        changeAmtData[String(key)] = {
+          amount: Number(amount),
+          savedAt: savedAt instanceof Date ? savedAt.toISOString() : String(savedAt),
+        };
+      }
+    }
+
     return ContentService
-      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData, msgReadIds, manualData, bankFailedKeys, imageKeys }))
+      .createTextOutput(JSON.stringify({ ok: true, checkedData, transferData, bankData, messages, routeOverrides, denomData, deliveryData, msgReadIds, manualData, bankFailedKeys, imageKeys, changeAmtData }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (err) {

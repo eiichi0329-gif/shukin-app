@@ -2995,7 +2995,8 @@ function toJSTDate(isoStr) {
     return new Date(isoStr).toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
 }
 
-const CHANGE_KEY = 'coll-change-v1';
+const CHANGE_KEY      = 'coll-change-v1';
+const CHANGE_META_KEY = 'coll-change-meta-v1';
 function getChangeAmounts() {
     try { return JSON.parse(localStorage.getItem(CHANGE_KEY) || '{}'); } catch { return {}; }
 }
@@ -3860,6 +3861,27 @@ async function syncCheckboxes() {
             }
         }
 
+        // 釣銭持ち出し額の同期（GAS 優先、タイムスタンプで新旧判定）
+        if (json.changeAmtData) {
+            const amounts = getChangeAmounts();
+            const meta    = JSON.parse(localStorage.getItem(CHANGE_META_KEY) || '{}');
+            let amtChanged = false;
+            Object.entries(json.changeAmtData).forEach(([key, remote]) => {
+                const remoteTime = new Date(remote.savedAt || 0).getTime();
+                const localTime  = new Date(meta[key] || 0).getTime();
+                if (remoteTime > localTime) {
+                    amounts[key] = remote.amount;
+                    meta[key]    = remote.savedAt;
+                    amtChanged   = true;
+                }
+            });
+            if (amtChanged) {
+                localStorage.setItem(CHANGE_KEY, JSON.stringify(amounts));
+                localStorage.setItem(CHANGE_META_KEY, JSON.stringify(meta));
+                if (currentTab === 'admin') renderAdmin();
+            }
+        }
+
         // 手動追加レコードをリモートとマージ（GAS を正として同期）
         if (Array.isArray(json.manualData)) {
             const remoteIds = new Set(json.manualData.map(r => r.id));
@@ -4202,6 +4224,16 @@ async function startApp() {
         if (!e.target.classList.contains('change-input')) return;
         const v = parseInt(e.target.value.replace(/,/g, '')) || 0;
         e.target.value = v.toLocaleString('ja-JP');
+        // 変更確定時にGAS同期
+        const date  = e.target.dataset.date;
+        const route = e.target.dataset.route;
+        const ck    = `${date}|${route}`;
+        const savedAt = new Date().toISOString();
+        const meta = JSON.parse(localStorage.getItem(CHANGE_META_KEY) || '{}');
+        meta[ck] = savedAt;
+        localStorage.setItem(CHANGE_META_KEY, JSON.stringify(meta));
+        const gasUrl = getGasUrl();
+        if (gasUrl) postToGas(gasUrl, { action: 'saveChangeAmt', key: ck, date, route: Number(route), amount: v, savedAt });
     }, true);
     adminContent.addEventListener('input', e => {
         if (!e.target.classList.contains('change-input')) return;
