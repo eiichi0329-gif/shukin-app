@@ -283,19 +283,44 @@ function doPost(e) {
         sheet.deleteRows(2, sheet.getLastRow() - 1);
       }
 
+    // ── ルートオーバーライド全クリア（データ更新時） ──
+    } else if (action === 'clearRouteOverrides') {
+      const sheet = ss.getSheetByName(ROUTE_OVERRIDE_SHEET);
+      if (sheet && sheet.getLastRow() >= 2) sheet.deleteRows(2, sheet.getLastRow() - 1);
+
     // ── ルートオーバーライド保存 ──
     } else if (action === 'setRouteOverrides') {
       const overrides = payload.overrides || {};
       const today = Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy-MM-dd');
       const sheet = getOrCreateSheet(ss, ROUTE_OVERRIDE_SHEET, ROUTE_OVERRIDE_HEADERS, '#7c3aed', [100, 320, 80, 200], false);
-      // 既存の全行を削除して書き直す（今日分のみ保持）
-      const lastRow = sheet.getLastRow();
-      if (lastRow > 1) sheet.deleteRows(2, lastRow - 1);
+      // groupKeyごとにupsert（他端末の変更を消さないため全行削除はしない）
       Object.entries(overrides).forEach(([gk, ov]) => {
-        if (ov.date === today) {
+        if (ov.date !== today) return;
+        const lastRow = sheet.getLastRow();
+        let foundRow = -1;
+        if (lastRow >= 2) {
+          const keys = sheet.getRange(2, 2, lastRow - 1, 1).getValues();
+          for (let i = 0; i < keys.length; i++) {
+            if (String(keys[i][0]) === String(gk)) { foundRow = i + 2; break; }
+          }
+        }
+        if (foundRow > 0) {
+          sheet.getRange(foundRow, 1, 1, 4).setValues([[today, gk, ov.route, ov.dataGeneratedAt || '']]);
+        } else {
           sheet.appendRow([today, gk, ov.route, ov.dataGeneratedAt || '']);
         }
       });
+      // 今日以前の古い行を削除
+      const lastRow2 = sheet.getLastRow();
+      if (lastRow2 >= 2) {
+        const dates = sheet.getRange(2, 1, lastRow2 - 1, 1).getValues();
+        for (let i = dates.length - 1; i >= 0; i--) {
+          const d = dates[i][0] instanceof Date
+            ? Utilities.formatDate(dates[i][0], 'Asia/Tokyo', 'yyyy-MM-dd')
+            : String(dates[i][0]);
+          if (d !== today) sheet.deleteRow(i + 2);
+        }
+      }
 
     // ── 現金精査 保存 ──
     } else if (action === 'saveDenom') {

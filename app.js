@@ -184,6 +184,7 @@ let customerImageKeys      = new Set(); // 画像登録済みの imageKey（"店
 const DELIVERY_CHECK_KEY          = 'coll-delivery-v1';
 const DELIVERY_ROUTE_OVERRIDE_KEY = 'coll-delivery-route-v1';
 const MSG_READ_KEY                = 'coll-msg-read-v1';
+const LAST_DATA_GEN_AT_KEY        = 'coll-last-data-gen-at-v1';
 
 function loadMsgRead() { try { return new Set(JSON.parse(localStorage.getItem(MSG_READ_KEY) || '[]')); } catch { return new Set(); } }
 function saveMsgRead(s) { localStorage.setItem(MSG_READ_KEY, JSON.stringify([...s])); }
@@ -217,11 +218,15 @@ function loadDeliveryRouteOverrides() {
         return clean;
     } catch { return {}; }
 }
-function saveDeliveryRouteOverrides() {
+function saveDeliveryRouteOverrides(changedGroupKey) {
     localStorage.setItem(DELIVERY_ROUTE_OVERRIDE_KEY, JSON.stringify(deliveryRouteOverrides));
     const url = getGasUrl();
     if (!url) return;
-    postToGas(url, { action: 'setRouteOverrides', overrides: deliveryRouteOverrides });
+    // 変更した1件だけ送信（全件送信すると他端末の変更をGASシートから消してしまうため）
+    const toSend = changedGroupKey
+        ? { [changedGroupKey]: deliveryRouteOverrides[changedGroupKey] }
+        : deliveryRouteOverrides;
+    postToGas(url, { action: 'setRouteOverrides', overrides: toSend });
 }
 
 // 口振一括チェックモード
@@ -2586,7 +2591,7 @@ function openDeliveryRouteEdit(area, groupKey) {
         const today     = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Tokyo' });
         const dataGenAt = window.DATA_META?.generatedAt || '';
         deliveryRouteOverrides[groupKey] = { route: Number(select.value), date: today, dataGeneratedAt: dataGenAt };
-        saveDeliveryRouteOverrides();
+        saveDeliveryRouteOverrides(groupKey);
         renderDelivery();
     });
 
@@ -3112,13 +3117,16 @@ function buildDailySection(date, routes, routeMonthData, dateItems, store) {
         const ca   = changeAmounts[ck] !== undefined ? changeAmounts[ck] : 12220;
         const cash = (routeTotals[r] || 0) + ca;
         cashTotal += cash;
+        // フィルターが全店舗（store=''）の場合でも正しい店舗名をキーに使う
+        const routeActualStore = store || dateItems.find(item => item._effectiveRoute === r)?.record?.store || '';
         let seisaHtml = '';
         if ((routeTotals[r] || 0) > 0) {
-            const dd = denomSt[`${store}|${date}|${r}`] || null; // GAS同期済みデータをそのまま使用
+            const dd = denomSt[`${routeActualStore}|${date}|${r}`] || null;
             let seisaStatus = `<div class="seisa-status seisa-none">未実施</div>`;
             if (dd) {
                 const denomTotal  = calcDenomTotal(dd.counts);
-                const seisaTarget = cash;
+                // 保存時の expected を比較基準にする（端末間で釣銭額が異なっても結果が変わらないよう）
+                const seisaTarget = (dd.expected > 0) ? dd.expected : cash;
                 const diff        = denomTotal - seisaTarget;
                 const savedTimeStr = dd.savedAt
                     ? new Date(dd.savedAt).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })
@@ -3130,7 +3138,7 @@ function buildDailySection(date, routes, routeMonthData, dateItems, store) {
                     seisaStatus = `<div class="seisa-status seisa-ng">合致せず<br><span class="seisa-diff">${sign}${fmt(Math.abs(diff))}円</span><br><small class="seisa-time">${savedTimeStr}</small></div>`;
                 }
             }
-            seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r}, '${store}', ${routeTotals[r] || 0}, ${ca})">現金精査</button>${seisaStatus}`;
+            seisaHtml = `<button class="btn-seisa" onclick="openDenomDialog('${date}', ${r}, '${routeActualStore}', ${routeTotals[r] || 0}, ${ca})">現金精査</button>${seisaStatus}`;
         }
         const displayCash = cash;
         html += `<td class="cash-cell" data-cash-key="${ck}"><div class="cash-amount">${fmt(displayCash)}</div>${seisaHtml}</td>`;
@@ -4049,6 +4057,15 @@ async function startApp() {
     currentRouteMap = buildCurrentRouteMap();
     deliveryChecked        = loadDeliveryChecked();
     deliveryRouteOverrides = loadDeliveryRouteOverrides();
+
+    // data.js が更新されていたら GAS のルート変更シートをクリア
+    const currentGenAt = window.DATA_META?.generatedAt || '';
+    const lastGenAt    = localStorage.getItem(LAST_DATA_GEN_AT_KEY) || '';
+    if (currentGenAt && currentGenAt !== lastGenAt) {
+        localStorage.setItem(LAST_DATA_GEN_AT_KEY, currentGenAt);
+        const gasUrl = getGasUrl();
+        if (gasUrl) postToGas(gasUrl, { action: 'clearRouteOverrides' });
+    }
 
     // 配達表タブの表示/非表示（フィーチャーフラグ）
     const navDeliveryBtn = document.getElementById('nav-delivery');
