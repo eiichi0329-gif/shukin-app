@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-04-27 17:30:47
-// 件数: 5388 件  合計: 47,053,437円
+// 自動生成: 2026-04-27 17:46:00
+// 件数: 5388 件  合計: 47,061,822円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbzaN9MnPONOoSH8DzrjxZhYBPstdmWsxnG217x8HdE0CZ9Oxckzxx55RVCqDZgMcTQ/exec";
 
@@ -65338,7 +65338,7 @@ window.COLLECTION_DATA = [
     "name": "川上　舞",
     "paymentType": "bank",
     "address": "福岡市東区美和台3-36-31-205",
-    "amount": 55421,
+    "amount": 63806,
     "dataMonth": "2026-04",
     "sourceFiles": [
       "うちくる顧客管理表(2026.4)福岡東店.xlsm"
@@ -88747,25 +88747,6 @@ window.DELIVERY_DATA = [
     "dataMonth": "2026-04",
     "code": 42,
     "route": 1,
-    "name": "山口　三夫",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "福岡市東区和白東１－５－２０－９０１号",
-    "notes": "",
-    "phone": "092-606-1701",
-    "emergency": "",
-    "memo": "",
-    "absent": "玄オートロックインターホン横"
-  },
-  {
-    "store": "福岡東店",
-    "dataMonth": "2026-04",
-    "code": 44,
-    "route": 1,
     "name": "後藤　竜彦",
     "type": "おかず",
     "count": "1",
@@ -88779,6 +88760,25 @@ window.DELIVERY_DATA = [
     "emergency": "",
     "memo": "フェスティオ和白",
     "absent": "宅配ボックスに入れる"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
+    "code": 44,
+    "route": 1,
+    "name": "山口　三夫",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福岡市東区和白東１－５－２０－９０１号",
+    "notes": "",
+    "phone": "092-606-1701",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄オートロックインターホン横"
   },
   {
     "store": "福岡東店",
@@ -89216,6 +89216,25 @@ window.DELIVERY_DATA = [
     "emergency": "自宅０９２－６０７－０７２０",
     "memo": "母→耳が遠い　父→認知症",
     "absent": "車庫側の窓をノック→奥の窓をノック→自宅へ電話"
+  },
+  {
+    "store": "福岡東店",
+    "dataMonth": "2026-04",
+    "code": 163,
+    "route": 1,
+    "name": "川上　舞",
+    "type": "おかず",
+    "count": "4",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "福岡市東区美和台3-36-31-205",
+    "notes": "置き配　保冷バッグ2個に分けて",
+    "phone": "070-8595-5529",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
   },
   {
     "store": "福岡東店",
@@ -91880,7 +91899,7 @@ window.DELIVERY_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-04-27T17:30:47.638833",
+  "generatedAt": "2026-04-27T17:46:00.112029",
   "stores": [
     "下関店",
     "北九州店",
@@ -92053,5 +92072,5 @@ window.DATA_META = {
     }
   ],
   "totalRecords": 5388,
-  "totalAmount": 47053437
+  "totalAmount": 47061822
 };
