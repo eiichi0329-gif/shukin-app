@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-05-11 07:17:35
-// 件数: 5809 件  合計: 52,601,354円
+// 自動生成: 2026-05-11 09:36:22
+// 件数: 5809 件  合計: 52,604,385円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbzaN9MnPONOoSH8DzrjxZhYBPstdmWsxnG217x8HdE0CZ9Oxckzxx55RVCqDZgMcTQ/exec";
 
@@ -49644,7 +49644,7 @@ window.COLLECTION_DATA = [
     "name": "亦野　富代",
     "paymentType": "bank",
     "address": "山口市平井９５２",
-    "amount": 15490,
+    "amount": 14752,
     "dataMonth": "2026-05",
     "sourceFiles": [
       "うちくる顧客管理表(2026 05)宇部店.xlsm"
@@ -49938,7 +49938,7 @@ window.COLLECTION_DATA = [
     "name": "田坂　智美",
     "paymentType": "bank",
     "address": "山口市吉敷上東２－４－Ⅽー３０３",
-    "amount": 0,
+    "amount": 5378,
     "dataMonth": "2026-05",
     "sourceFiles": [
       "うちくる顧客管理表(2026 05)宇部店.xlsm"
@@ -50470,7 +50470,7 @@ window.COLLECTION_DATA = [
     "name": "岩崎　悦子",
     "paymentType": "bank",
     "address": "防府市敷山町１２－１",
-    "amount": 29347,
+    "amount": 25155,
     "dataMonth": "2026-05",
     "sourceFiles": [
       "うちくる顧客管理表(2026 05)宇部店.xlsm"
@@ -79730,7 +79730,7 @@ window.COLLECTION_DATA = [
     "name": "渡辺　知恵",
     "paymentType": "bank",
     "address": "飯塚市東徳前１５－６－１０２号",
-    "amount": 1937,
+    "amount": 4520,
     "dataMonth": "2026-05",
     "sourceFiles": [
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
@@ -99427,6 +99427,25 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
+    "code": 1080,
+    "route": 2,
+    "name": "渡辺　知恵",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市東徳前１５－６－１０２号",
+    "notes": "建物と木の細い道入っていく",
+    "phone": "080-2708-4114",
+    "emergency": "",
+    "memo": "",
+    "absent": "ガスメータに置く"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
     "code": 1090,
     "route": 2,
     "name": "佐藤　フミ子",
@@ -100852,7 +100871,7 @@ window.DELIVERY_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-05-11T07:17:35.547088",
+  "generatedAt": "2026-05-11T09:36:22.786680",
   "stores": [
     "下関店",
     "北九州店",
@@ -100943,7 +100962,7 @@ window.DATA_META = {
       "store": "宇部店",
       "name": "うちくる顧客管理表(2026 05)宇部店.xlsm",
       "dataMonth": "2026-05",
-      "mtime": "2026-05-10",
+      "mtime": "2026-05-11",
       "count": 445
     },
     {
@@ -101034,10 +101053,10 @@ window.DATA_META = {
       "store": "飯塚店",
       "name": "うちくる顧客管理表(2026.05)飯塚店.xlsm",
       "dataMonth": "2026-05",
-      "mtime": "2026-05-08",
+      "mtime": "2026-05-11",
       "count": 185
     }
   ],
   "totalRecords": 5809,
-  "totalAmount": 52601354
+  "totalAmount": 52604385
 };
