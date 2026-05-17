@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-05-18 07:10:30
-// 件数: 5819 件  合計: 54,659,621円
+// 自動生成: 2026-05-18 07:19:53
+// 件数: 5817 件  合計: 52,903,088円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbzaN9MnPONOoSH8DzrjxZhYBPstdmWsxnG217x8HdE0CZ9Oxckzxx55RVCqDZgMcTQ/exec";
 
@@ -78949,7 +78949,6 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
     "seq": 5639
@@ -78964,38 +78963,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
     "seq": 5640
-  },
-  {
-    "store": "飯塚店",
-    "code": 0,
-    "route": 0,
-    "name": "島　千世子",
-    "paymentType": "cash",
-    "address": "飯塚市枝国５７４－７１",
-    "amount": 4192,
-    "dataMonth": "2026-05",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm"
-    ],
-    "seq": 5641
-  },
-  {
-    "store": "飯塚店",
-    "code": 0,
-    "route": 0,
-    "name": "栗谷　和子",
-    "paymentType": "cash",
-    "address": "飯塚市忠隈５３６－１",
-    "amount": 7376,
-    "dataMonth": "2026-05",
-    "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm"
-    ],
-    "seq": 5642
   },
   {
     "store": "飯塚店",
@@ -79004,13 +78974,12 @@ window.COLLECTION_DATA = [
     "name": "山出　洋子",
     "paymentType": "cash",
     "address": "飯塚市佐與１４２９　石丸団地　３４２号",
-    "amount": 20962,
+    "amount": 10481,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5643
+    "seq": 5641
   },
   {
     "store": "飯塚店",
@@ -79022,10 +78991,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5644
+    "seq": 5642
   },
   {
     "store": "飯塚店",
@@ -79034,13 +79002,12 @@ window.COLLECTION_DATA = [
     "name": "山根　弘子",
     "paymentType": "cash",
     "address": "飯塚市佐與１４２９－１４",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5645
+    "seq": 5643
   },
   {
     "store": "飯塚店",
@@ -79049,13 +79016,12 @@ window.COLLECTION_DATA = [
     "name": "西岡　康伸",
     "paymentType": "bank",
     "address": "飯塚市佐與１３７４－６",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5646
+    "seq": 5644
   },
   {
     "store": "飯塚店",
@@ -79064,13 +79030,12 @@ window.COLLECTION_DATA = [
     "name": "森　みちこ",
     "paymentType": "cash",
     "address": "飯塚市鯰田７４９－１　(白の二階建て、森組看板あり",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5647
+    "seq": 5645
   },
   {
     "store": "飯塚店",
@@ -79079,13 +79044,12 @@ window.COLLECTION_DATA = [
     "name": "國重　キクエ",
     "paymentType": "cash",
     "address": "飯塚市勢田２５２５－８",
-    "amount": 36334,
+    "amount": 18167,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5648
+    "seq": 5646
   },
   {
     "store": "飯塚店",
@@ -79094,13 +79058,12 @@ window.COLLECTION_DATA = [
     "name": "中倉　峯子",
     "paymentType": "bank",
     "address": "直方市上境１４１６－１",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5649
+    "seq": 5647
   },
   {
     "store": "飯塚店",
@@ -79109,13 +79072,12 @@ window.COLLECTION_DATA = [
     "name": "渡辺　登",
     "paymentType": "cash",
     "address": "直方市上境１８０４－１",
-    "amount": 21958,
+    "amount": 10979,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5650
+    "seq": 5648
   },
   {
     "store": "飯塚店",
@@ -79124,13 +79086,12 @@ window.COLLECTION_DATA = [
     "name": "福永　慶子",
     "paymentType": "bank",
     "address": "直方市頓野３５６３－２３",
-    "amount": 20962,
+    "amount": 10481,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5651
+    "seq": 5649
   },
   {
     "store": "飯塚店",
@@ -79139,13 +79100,12 @@ window.COLLECTION_DATA = [
     "name": "田中　セツ子",
     "paymentType": "bank",
     "address": "直方市頓野２１０４－７－６棟－１０１",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5652
+    "seq": 5650
   },
   {
     "store": "飯塚店",
@@ -79154,13 +79114,12 @@ window.COLLECTION_DATA = [
     "name": "田中　政之",
     "paymentType": "bank",
     "address": "直方市頓野２１０４－７－６棟－１０１",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5653
+    "seq": 5651
   },
   {
     "store": "飯塚店",
@@ -79172,10 +79131,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5654
+    "seq": 5652
   },
   {
     "store": "飯塚店",
@@ -79184,13 +79142,12 @@ window.COLLECTION_DATA = [
     "name": "鶴久　みよこ",
     "paymentType": "cash",
     "address": "直方市頓野２１０５－２－２棟－１０５",
-    "amount": 17532,
+    "amount": 8766,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5655
+    "seq": 5653
   },
   {
     "store": "飯塚店",
@@ -79199,13 +79156,12 @@ window.COLLECTION_DATA = [
     "name": "小野澤　洋",
     "paymentType": "cash",
     "address": "直方市頓野３５９１－４１－３６棟－１０３",
-    "amount": 18726,
+    "amount": 9363,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5656
+    "seq": 5654
   },
   {
     "store": "飯塚店",
@@ -79214,13 +79170,12 @@ window.COLLECTION_DATA = [
     "name": "松尾　忠義",
     "paymentType": "cash",
     "address": "直方市頓野２２４８－４",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5657
+    "seq": 5655
   },
   {
     "store": "飯塚店",
@@ -79229,13 +79184,12 @@ window.COLLECTION_DATA = [
     "name": "上田　義信",
     "paymentType": "cash",
     "address": "直方市頓野１５０７",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5658
+    "seq": 5656
   },
   {
     "store": "飯塚店",
@@ -79244,13 +79198,12 @@ window.COLLECTION_DATA = [
     "name": "上川　和美",
     "paymentType": "cash",
     "address": "直方市頓野１６２６",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5659
+    "seq": 5657
   },
   {
     "store": "飯塚店",
@@ -79259,13 +79212,12 @@ window.COLLECTION_DATA = [
     "name": "井垣　スミ子",
     "paymentType": "cash",
     "address": "直方市感田８９４－５６",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5660
+    "seq": 5658
   },
   {
     "store": "飯塚店",
@@ -79274,13 +79226,12 @@ window.COLLECTION_DATA = [
     "name": "平松　栄明",
     "paymentType": "cash",
     "address": "直方市感田８９４－４７",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5661
+    "seq": 5659
   },
   {
     "store": "飯塚店",
@@ -79289,13 +79240,12 @@ window.COLLECTION_DATA = [
     "name": "内田　隆夫",
     "paymentType": "cash",
     "address": "直方市感田１５１５－５",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5662
+    "seq": 5660
   },
   {
     "store": "飯塚店",
@@ -79307,10 +79257,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5663
+    "seq": 5661
   },
   {
     "store": "飯塚店",
@@ -79322,10 +79271,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5664
+    "seq": 5662
   },
   {
     "store": "飯塚店",
@@ -79334,13 +79282,12 @@ window.COLLECTION_DATA = [
     "name": "市場　昭寿",
     "paymentType": "bank",
     "address": "直方市感田２２３８－８",
-    "amount": 58694,
+    "amount": 29347,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5665
+    "seq": 5663
   },
   {
     "store": "飯塚店",
@@ -79349,13 +79296,12 @@ window.COLLECTION_DATA = [
     "name": "近藤　和美",
     "paymentType": "cash",
     "address": "直方市感田２２５４－２",
-    "amount": 32114,
+    "amount": 16057,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5666
+    "seq": 5664
   },
   {
     "store": "飯塚店",
@@ -79364,13 +79310,12 @@ window.COLLECTION_DATA = [
     "name": "太田　俊之",
     "paymentType": "bank",
     "address": "直方市知古１－４－４",
-    "amount": 14208,
+    "amount": 7104,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5667
+    "seq": 5665
   },
   {
     "store": "飯塚店",
@@ -79379,13 +79324,12 @@ window.COLLECTION_DATA = [
     "name": "古田　英助",
     "paymentType": "cash",
     "address": "直方市知古１－４－８",
-    "amount": 20722,
+    "amount": 10361,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5668
+    "seq": 5666
   },
   {
     "store": "飯塚店",
@@ -79394,13 +79338,12 @@ window.COLLECTION_DATA = [
     "name": "小鶴　蓉子",
     "paymentType": "bank",
     "address": "直方市須崎町１３－６",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5669
+    "seq": 5667
   },
   {
     "store": "飯塚店",
@@ -79409,13 +79352,12 @@ window.COLLECTION_DATA = [
     "name": "河村　学",
     "paymentType": "bank",
     "address": "直方市神正町３－３４－１０１号ネクストライフ",
-    "amount": 7326,
+    "amount": 3663,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5670
+    "seq": 5668
   },
   {
     "store": "飯塚店",
@@ -79424,13 +79366,12 @@ window.COLLECTION_DATA = [
     "name": "大野　美佐代",
     "paymentType": "bank",
     "address": "直方市神正町４－２３敷田ビル５－５０２",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5671
+    "seq": 5669
   },
   {
     "store": "飯塚店",
@@ -79439,13 +79380,12 @@ window.COLLECTION_DATA = [
     "name": "横畠　豊",
     "paymentType": "cash",
     "address": "直方市垣生田７２９－１０",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5672
+    "seq": 5670
   },
   {
     "store": "飯塚店",
@@ -79457,10 +79397,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5673
+    "seq": 5671
   },
   {
     "store": "飯塚店",
@@ -79469,13 +79408,12 @@ window.COLLECTION_DATA = [
     "name": "大内　香里奈",
     "paymentType": "cash",
     "address": "直方市植木１９５－５６　美容室",
-    "amount": 27098,
+    "amount": 13549,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5674
+    "seq": 5672
   },
   {
     "store": "飯塚店",
@@ -79484,13 +79422,12 @@ window.COLLECTION_DATA = [
     "name": "山内　秀信",
     "paymentType": "bank",
     "address": "直方市植木１９５－９",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5675
+    "seq": 5673
   },
   {
     "store": "飯塚店",
@@ -79499,13 +79436,12 @@ window.COLLECTION_DATA = [
     "name": "本山　修一",
     "paymentType": "cash",
     "address": "直方市植木１７１－７７",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5676
+    "seq": 5674
   },
   {
     "store": "飯塚店",
@@ -79514,13 +79450,12 @@ window.COLLECTION_DATA = [
     "name": "藤田　めぐみ",
     "paymentType": "cash",
     "address": "直方市植木１７０－３２",
-    "amount": 33474,
+    "amount": 16737,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5677
+    "seq": 5675
   },
   {
     "store": "飯塚店",
@@ -79529,13 +79464,12 @@ window.COLLECTION_DATA = [
     "name": "酒井　真澄",
     "paymentType": "bank",
     "address": "直方市植木１５３－１４４　表札は藤木",
-    "amount": 8384,
+    "amount": 4192,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5678
+    "seq": 5676
   },
   {
     "store": "飯塚店",
@@ -79544,13 +79478,12 @@ window.COLLECTION_DATA = [
     "name": "川上　利美",
     "paymentType": "cash",
     "address": "直方市植木２１４１－１",
-    "amount": 23756,
+    "amount": 11878,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5679
+    "seq": 5677
   },
   {
     "store": "飯塚店",
@@ -79559,13 +79492,12 @@ window.COLLECTION_DATA = [
     "name": "佐藤　かつと",
     "paymentType": "cash",
     "address": "直方市植木１０１９－３",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5680
+    "seq": 5678
   },
   {
     "store": "飯塚店",
@@ -79574,13 +79506,12 @@ window.COLLECTION_DATA = [
     "name": "今山　政二",
     "paymentType": "bank",
     "address": "直方市植木１０３８－５",
-    "amount": 81374,
+    "amount": 40687,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5681
+    "seq": 5679
   },
   {
     "store": "飯塚店",
@@ -79589,13 +79520,12 @@ window.COLLECTION_DATA = [
     "name": "松尾　やよい",
     "paymentType": "bank",
     "address": "直方市植木４８６－２",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5682
+    "seq": 5680
   },
   {
     "store": "飯塚店",
@@ -79607,10 +79537,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5683
+    "seq": 5681
   },
   {
     "store": "飯塚店",
@@ -79619,13 +79548,12 @@ window.COLLECTION_DATA = [
     "name": "権堂(ｺﾞﾝﾄﾞｳ)俊明",
     "paymentType": "bank",
     "address": "直方市下新入３７３－２－２０１号",
-    "amount": 13762,
+    "amount": 6881,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5684
+    "seq": 5682
   },
   {
     "store": "飯塚店",
@@ -79634,13 +79562,12 @@ window.COLLECTION_DATA = [
     "name": "金澤　毅",
     "paymentType": "cash",
     "address": "直方市下新入３６７",
-    "amount": 76930,
+    "amount": 38465,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5685
+    "seq": 5683
   },
   {
     "store": "飯塚店",
@@ -79652,10 +79579,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5686
+    "seq": 5684
   },
   {
     "store": "飯塚店",
@@ -79664,13 +79590,12 @@ window.COLLECTION_DATA = [
     "name": "小山　陸紀",
     "paymentType": "cash",
     "address": "直方市上新入２３８１－１ー５号(団地)",
-    "amount": 27124,
+    "amount": 13562,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5687
+    "seq": 5685
   },
   {
     "store": "飯塚店",
@@ -79682,10 +79607,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5688
+    "seq": 5686
   },
   {
     "store": "飯塚店",
@@ -79694,13 +79618,12 @@ window.COLLECTION_DATA = [
     "name": "奥村　かずや",
     "paymentType": "cash",
     "address": "直方市直方６７０－１１２",
-    "amount": 12576,
+    "amount": 6288,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5689
+    "seq": 5687
   },
   {
     "store": "飯塚店",
@@ -79709,13 +79632,12 @@ window.COLLECTION_DATA = [
     "name": "大庭(ｵｵﾊﾞ)芙美子",
     "paymentType": "cash",
     "address": "直方市直方６７０－１５０",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5690
+    "seq": 5688
   },
   {
     "store": "飯塚店",
@@ -79724,13 +79646,12 @@ window.COLLECTION_DATA = [
     "name": "鋤田　哲雄",
     "paymentType": "cash",
     "address": "直方市古町６－１３　アーケードの中",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5691
+    "seq": 5689
   },
   {
     "store": "飯塚店",
@@ -79739,13 +79660,12 @@ window.COLLECTION_DATA = [
     "name": "伊田　聖一",
     "paymentType": "cash",
     "address": "直方市津田町１－２９",
-    "amount": 36334,
+    "amount": 18167,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5692
+    "seq": 5690
   },
   {
     "store": "飯塚店",
@@ -79754,13 +79674,12 @@ window.COLLECTION_DATA = [
     "name": "野上　千英子",
     "paymentType": "cash",
     "address": "直方市津田町５－２２セベラルフォート１－D",
-    "amount": 3874,
+    "amount": 1937,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5693
+    "seq": 5691
   },
   {
     "store": "飯塚店",
@@ -79772,10 +79691,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5694
+    "seq": 5692
   },
   {
     "store": "飯塚店",
@@ -79784,13 +79702,12 @@ window.COLLECTION_DATA = [
     "name": "木内　勇",
     "paymentType": "cash",
     "address": "直方市新町１－３－２３トルーハート１０１",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5695
+    "seq": 5693
   },
   {
     "store": "飯塚店",
@@ -79799,13 +79716,12 @@ window.COLLECTION_DATA = [
     "name": "菊竹　繁信",
     "paymentType": "cash",
     "address": "直方市新町１－４－１７－A棟－１０３号",
-    "amount": 33474,
+    "amount": 16737,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5696
+    "seq": 5694
   },
   {
     "store": "飯塚店",
@@ -79814,13 +79730,12 @@ window.COLLECTION_DATA = [
     "name": "早川　富士子",
     "paymentType": "bank",
     "address": "直方市下境２５３２－１棟－７０１",
-    "amount": 46666,
+    "amount": 23333,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5697
+    "seq": 5695
   },
   {
     "store": "飯塚店",
@@ -79832,10 +79747,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5698
+    "seq": 5696
   },
   {
     "store": "飯塚店",
@@ -79849,7 +79763,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5699
+    "seq": 5697
   },
   {
     "store": "飯塚店",
@@ -79863,7 +79777,7 @@ window.COLLECTION_DATA = [
     "sourceFiles": [
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5700
+    "seq": 5698
   },
   {
     "store": "飯塚店",
@@ -79872,13 +79786,12 @@ window.COLLECTION_DATA = [
     "name": "園　正美",
     "paymentType": "cash",
     "address": "飯塚市西徳前１５－１２－1棟－１３５",
-    "amount": 19564,
+    "amount": 9782,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5701
+    "seq": 5699
   },
   {
     "store": "飯塚店",
@@ -79887,13 +79800,12 @@ window.COLLECTION_DATA = [
     "name": "篠原　のぶたか",
     "paymentType": "cash",
     "address": "飯塚市枝国１６９－１２",
-    "amount": 1396,
+    "amount": 698,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5702
+    "seq": 5700
   },
   {
     "store": "飯塚店",
@@ -79905,10 +79817,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5703
+    "seq": 5701
   },
   {
     "store": "飯塚店",
@@ -79917,13 +79828,12 @@ window.COLLECTION_DATA = [
     "name": "渡辺　知恵",
     "paymentType": "bank",
     "address": "飯塚市東徳前１５－６－１０２号",
-    "amount": 14208,
+    "amount": 7104,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5704
+    "seq": 5702
   },
   {
     "store": "飯塚店",
@@ -79932,13 +79842,12 @@ window.COLLECTION_DATA = [
     "name": "佐藤　フミ子",
     "paymentType": "cash",
     "address": "飯塚市東徳前３－２",
-    "amount": 54250,
+    "amount": 27125,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5705
+    "seq": 5703
   },
   {
     "store": "飯塚店",
@@ -79947,13 +79856,12 @@ window.COLLECTION_DATA = [
     "name": "國丸　敬子",
     "paymentType": "bank",
     "address": "飯塚市菰田東２－５－６２",
-    "amount": 17702,
+    "amount": 8851,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5706
+    "seq": 5704
   },
   {
     "store": "飯塚店",
@@ -79962,13 +79870,12 @@ window.COLLECTION_DATA = [
     "name": "秋本　真奈美",
     "paymentType": "bank",
     "address": "飯塚市菰田東２－７－４４",
-    "amount": 15500,
+    "amount": 7750,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5707
+    "seq": 5705
   },
   {
     "store": "飯塚店",
@@ -79980,10 +79887,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5708
+    "seq": 5706
   },
   {
     "store": "飯塚店",
@@ -79992,13 +79898,12 @@ window.COLLECTION_DATA = [
     "name": "中川　京子",
     "paymentType": "cash",
     "address": "飯塚市菰田東１－７－４６－１０３号",
-    "amount": 12576,
+    "amount": 6288,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5709
+    "seq": 5707
   },
   {
     "store": "飯塚店",
@@ -80007,13 +79912,12 @@ window.COLLECTION_DATA = [
     "name": "森山　瑠美",
     "paymentType": "cash",
     "address": "飯塚市菰田西２－１－１３",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5710
+    "seq": 5708
   },
   {
     "store": "飯塚店",
@@ -80022,13 +79926,12 @@ window.COLLECTION_DATA = [
     "name": "長野　哲男",
     "paymentType": "cash",
     "address": "飯塚市忠隈６２－２１",
-    "amount": 20722,
+    "amount": 10361,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5711
+    "seq": 5709
   },
   {
     "store": "飯塚店",
@@ -80037,13 +79940,12 @@ window.COLLECTION_DATA = [
     "name": "中嶋　政司",
     "paymentType": "cash",
     "address": "飯塚市忠隈４７２－１",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5712
+    "seq": 5710
   },
   {
     "store": "飯塚店",
@@ -80052,13 +79954,12 @@ window.COLLECTION_DATA = [
     "name": "稲冨　ヒロ子",
     "paymentType": "bank",
     "address": "飯塚市楽市２１５－１",
-    "amount": 32434,
+    "amount": 16217,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5713
+    "seq": 5711
   },
   {
     "store": "飯塚店",
@@ -80067,13 +79968,12 @@ window.COLLECTION_DATA = [
     "name": "井上　隆恵",
     "paymentType": "bank",
     "address": "飯塚市南尾１３３－３",
-    "amount": 21958,
+    "amount": 10979,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5714
+    "seq": 5712
   },
   {
     "store": "飯塚店",
@@ -80082,13 +79982,12 @@ window.COLLECTION_DATA = [
     "name": "山本　ひろき",
     "paymentType": "cash",
     "address": "飯塚市南尾１３３－５自販機ある",
-    "amount": 58694,
+    "amount": 29347,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5715
+    "seq": 5713
   },
   {
     "store": "飯塚店",
@@ -80097,13 +79996,12 @@ window.COLLECTION_DATA = [
     "name": "内藤　あゆみ",
     "paymentType": "bank",
     "address": "飯塚市南尾１－３０１",
-    "amount": 25832,
+    "amount": 12916,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5716
+    "seq": 5714
   },
   {
     "store": "飯塚店",
@@ -80112,13 +80010,12 @@ window.COLLECTION_DATA = [
     "name": "蔵満　喜一",
     "paymentType": "cash",
     "address": "飯塚市平恒１１５－６-３４号　外に洗濯機ある",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5717
+    "seq": 5715
   },
   {
     "store": "飯塚店",
@@ -80127,13 +80024,12 @@ window.COLLECTION_DATA = [
     "name": "梅村　新一",
     "paymentType": "bank",
     "address": "飯塚市平恒７８８－３－３０２号",
-    "amount": 58694,
+    "amount": 29347,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5718
+    "seq": 5716
   },
   {
     "store": "飯塚店",
@@ -80142,13 +80038,12 @@ window.COLLECTION_DATA = [
     "name": "岸　浩二",
     "paymentType": "bank",
     "address": "飯塚市平恒８３６－６",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5719
+    "seq": 5717
   },
   {
     "store": "飯塚店",
@@ -80160,10 +80055,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5720
+    "seq": 5718
   },
   {
     "store": "飯塚店",
@@ -80172,13 +80066,12 @@ window.COLLECTION_DATA = [
     "name": "伊地知　ヨシエ",
     "paymentType": "cash",
     "address": "飯塚市太郎丸７４５",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5721
+    "seq": 5719
   },
   {
     "store": "飯塚店",
@@ -80187,13 +80080,12 @@ window.COLLECTION_DATA = [
     "name": "冨永　秀和",
     "paymentType": "cash",
     "address": "飯塚市太郎丸５０２－３",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5722
+    "seq": 5720
   },
   {
     "store": "飯塚店",
@@ -80202,13 +80094,12 @@ window.COLLECTION_DATA = [
     "name": "西牟田　修利",
     "paymentType": "cash",
     "address": "飯塚市長尾２２－７０",
-    "amount": 34336,
+    "amount": 17168,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5723
+    "seq": 5721
   },
   {
     "store": "飯塚店",
@@ -80217,13 +80108,12 @@ window.COLLECTION_DATA = [
     "name": "田原　康摩",
     "paymentType": "bank",
     "address": "飯塚市長尾９６３－２２－４４",
-    "amount": 23756,
+    "amount": 11878,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5724
+    "seq": 5722
   },
   {
     "store": "飯塚店",
@@ -80232,13 +80122,12 @@ window.COLLECTION_DATA = [
     "name": "仲野　美佐子",
     "paymentType": "cash",
     "address": "飯塚市長尾１２６５－１２　表札は神﨑",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5725
+    "seq": 5723
   },
   {
     "store": "飯塚店",
@@ -80247,13 +80136,12 @@ window.COLLECTION_DATA = [
     "name": "池上　知佑",
     "paymentType": "bank",
     "address": "飯塚市筑穂元吉５９０－５",
-    "amount": 34336,
+    "amount": 17168,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5726
+    "seq": 5724
   },
   {
     "store": "飯塚店",
@@ -80262,13 +80150,12 @@ window.COLLECTION_DATA = [
     "name": "澤辺　康英",
     "paymentType": "cash",
     "address": "飯塚市筑穂元吉５６０－２８",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5727
+    "seq": 5725
   },
   {
     "store": "飯塚店",
@@ -80277,13 +80164,12 @@ window.COLLECTION_DATA = [
     "name": "竹田　博忠",
     "paymentType": "bank",
     "address": "飯塚市筑穂元吉６８６－３　門開けて砂利",
-    "amount": 68674,
+    "amount": 34337,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5728
+    "seq": 5726
   },
   {
     "store": "飯塚店",
@@ -80292,13 +80178,12 @@ window.COLLECTION_DATA = [
     "name": "渡部　紀子",
     "paymentType": "bank",
     "address": "飯塚市大分１５４－１　瑞穂の郷",
-    "amount": 34336,
+    "amount": 17168,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5729
+    "seq": 5727
   },
   {
     "store": "飯塚店",
@@ -80307,13 +80192,12 @@ window.COLLECTION_DATA = [
     "name": "末吉　康子",
     "paymentType": "bank",
     "address": "飯塚市大分１１６２",
-    "amount": 17986,
+    "amount": 8993,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5730
+    "seq": 5728
   },
   {
     "store": "飯塚店",
@@ -80322,13 +80206,12 @@ window.COLLECTION_DATA = [
     "name": "梅澤　雄二",
     "paymentType": "cash",
     "address": "飯塚市大分２１５４",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5731
+    "seq": 5729
   },
   {
     "store": "飯塚店",
@@ -80337,13 +80220,12 @@ window.COLLECTION_DATA = [
     "name": "松尾　トリ子",
     "paymentType": "cash",
     "address": "飯塚市大分１４９１－５０",
-    "amount": 27124,
+    "amount": 13562,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5732
+    "seq": 5730
   },
   {
     "store": "飯塚店",
@@ -80352,13 +80234,12 @@ window.COLLECTION_DATA = [
     "name": "片岡　建雄",
     "paymentType": "cash",
     "address": "飯塚市大分１５９９－２",
-    "amount": 21958,
+    "amount": 10979,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5733
+    "seq": 5731
   },
   {
     "store": "飯塚店",
@@ -80367,13 +80248,12 @@ window.COLLECTION_DATA = [
     "name": "平畑　悟諮",
     "paymentType": "bank",
     "address": "飯塚市久保白５４４",
-    "amount": 27124,
+    "amount": 13562,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5734
+    "seq": 5732
   },
   {
     "store": "飯塚店",
@@ -80385,10 +80265,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5735
+    "seq": 5733
   },
   {
     "store": "飯塚店",
@@ -80397,13 +80276,12 @@ window.COLLECTION_DATA = [
     "name": "辛島　賢",
     "paymentType": "cash",
     "address": "飯塚市椋本６０１－３１",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5736
+    "seq": 5734
   },
   {
     "store": "飯塚店",
@@ -80412,13 +80290,12 @@ window.COLLECTION_DATA = [
     "name": "荒川　初子",
     "paymentType": "bank",
     "address": "飯塚市弁分５４７－１１－２０６角部屋",
-    "amount": 4192,
+    "amount": 2096,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5737
+    "seq": 5735
   },
   {
     "store": "飯塚店",
@@ -80427,13 +80304,12 @@ window.COLLECTION_DATA = [
     "name": "坂本　光明",
     "paymentType": "bank",
     "address": "飯塚市弁分５９５－２０",
-    "amount": 27124,
+    "amount": 13562,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5738
+    "seq": 5736
   },
   {
     "store": "飯塚店",
@@ -80442,13 +80318,12 @@ window.COLLECTION_DATA = [
     "name": "山内　幸子",
     "paymentType": "bank",
     "address": "飯塚市明星寺２５－３ー６棟－６５１号",
-    "amount": 34336,
+    "amount": 17168,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5739
+    "seq": 5737
   },
   {
     "store": "飯塚店",
@@ -80457,13 +80332,12 @@ window.COLLECTION_DATA = [
     "name": "西園　邦彦",
     "paymentType": "cash",
     "address": "飯塚市小正４３３－３",
-    "amount": 58694,
+    "amount": 29347,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5740
+    "seq": 5738
   },
   {
     "store": "飯塚店",
@@ -80472,13 +80346,12 @@ window.COLLECTION_DATA = [
     "name": "丸尾　節子",
     "paymentType": "bank",
     "address": "飯塚市潤野９２７－１",
-    "amount": 58694,
+    "amount": 29347,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5741
+    "seq": 5739
   },
   {
     "store": "飯塚店",
@@ -80490,10 +80363,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5742
+    "seq": 5740
   },
   {
     "store": "飯塚店",
@@ -80505,10 +80377,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5743
+    "seq": 5741
   },
   {
     "store": "飯塚店",
@@ -80517,13 +80388,12 @@ window.COLLECTION_DATA = [
     "name": "和多　光晴",
     "paymentType": "cash",
     "address": "飯塚市潤野１０８２－５",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5744
+    "seq": 5742
   },
   {
     "store": "飯塚店",
@@ -80532,13 +80402,12 @@ window.COLLECTION_DATA = [
     "name": "橋本　とみこ",
     "paymentType": "cash",
     "address": "飯塚市枝国３９２",
-    "amount": 27124,
+    "amount": 13562,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5745
+    "seq": 5743
   },
   {
     "store": "飯塚店",
@@ -80550,10 +80419,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5746
+    "seq": 5744
   },
   {
     "store": "飯塚店",
@@ -80565,10 +80433,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5747
+    "seq": 5745
   },
   {
     "store": "飯塚店",
@@ -80577,13 +80444,12 @@ window.COLLECTION_DATA = [
     "name": "上田　光代",
     "paymentType": "cash",
     "address": "飯塚市鯰田２４２５－４１－１棟－１３１号",
-    "amount": 19178,
+    "amount": 9589,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5748
+    "seq": 5746
   },
   {
     "store": "飯塚店",
@@ -80592,13 +80458,12 @@ window.COLLECTION_DATA = [
     "name": "山本　京一",
     "paymentType": "cash",
     "address": "飯塚市上三緒６２９－２５棟－１１４号",
-    "amount": 38464,
+    "amount": 19232,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5749
+    "seq": 5747
   },
   {
     "store": "飯塚店",
@@ -80610,10 +80475,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5750
+    "seq": 5748
   },
   {
     "store": "飯塚店",
@@ -80622,13 +80486,12 @@ window.COLLECTION_DATA = [
     "name": "梶原　照代",
     "paymentType": "cash",
     "address": "飯塚市綱分１３０８－１２",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5751
+    "seq": 5749
   },
   {
     "store": "飯塚店",
@@ -80637,13 +80500,12 @@ window.COLLECTION_DATA = [
     "name": "白石",
     "paymentType": "cash",
     "address": "飯塚市片島２－２－１５－１２０２号",
-    "amount": 36334,
+    "amount": 18167,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5752
+    "seq": 5750
   },
   {
     "store": "飯塚店",
@@ -80655,10 +80517,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5753
+    "seq": 5751
   },
   {
     "store": "飯塚店",
@@ -80667,13 +80528,12 @@ window.COLLECTION_DATA = [
     "name": "小笠原　拓海",
     "paymentType": "bank",
     "address": "飯塚市有安９６２－１９７－２０１号",
-    "amount": 20722,
+    "amount": 10361,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5754
+    "seq": 5752
   },
   {
     "store": "飯塚店",
@@ -80685,10 +80545,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5755
+    "seq": 5753
   },
   {
     "store": "飯塚店",
@@ -80697,13 +80556,12 @@ window.COLLECTION_DATA = [
     "name": "伊藤　美香",
     "paymentType": "cash",
     "address": "飯塚市鯰田２５０８－１ピーアーク２４B棟１０１号",
-    "amount": 5900,
+    "amount": 2950,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5756
+    "seq": 5754
   },
   {
     "store": "飯塚店",
@@ -80712,13 +80570,12 @@ window.COLLECTION_DATA = [
     "name": "溝口　隆代",
     "paymentType": "cash",
     "address": "飯塚市新飯塚１９－１７-２０４エバーライフ新飯塚",
-    "amount": 5166,
+    "amount": 2583,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5757
+    "seq": 5755
   },
   {
     "store": "飯塚店",
@@ -80727,13 +80584,12 @@ window.COLLECTION_DATA = [
     "name": "永松　英子",
     "paymentType": "cash",
     "address": "飯塚市新飯塚６－６花宅ビル６０２",
-    "amount": 5590,
+    "amount": 2795,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5758
+    "seq": 5756
   },
   {
     "store": "飯塚店",
@@ -80742,13 +80598,12 @@ window.COLLECTION_DATA = [
     "name": "大塚　まさみ",
     "paymentType": "cash",
     "address": "飯塚市西町２－５９サテライト７０１",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5759
+    "seq": 5757
   },
   {
     "store": "飯塚店",
@@ -80757,13 +80612,12 @@ window.COLLECTION_DATA = [
     "name": "渡辺　キヨ",
     "paymentType": "cash",
     "address": "飯塚市本町７－２２",
-    "amount": 15500,
+    "amount": 7750,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5760
+    "seq": 5758
   },
   {
     "store": "飯塚店",
@@ -80772,13 +80626,12 @@ window.COLLECTION_DATA = [
     "name": "市橋　壽滿子",
     "paymentType": "cash",
     "address": "飯塚市飯塚３－３７　３階",
-    "amount": 19880,
+    "amount": 9940,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5761
+    "seq": 5759
   },
   {
     "store": "飯塚店",
@@ -80787,13 +80640,12 @@ window.COLLECTION_DATA = [
     "name": "山下　かずこ",
     "paymentType": "cash",
     "address": "飯塚市立岩９６４－２５－４０５アルファステイツ新飯塚駅前",
-    "amount": 30980,
+    "amount": 15490,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5762
+    "seq": 5760
   },
   {
     "store": "飯塚店",
@@ -80805,10 +80657,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5763
+    "seq": 5761
   },
   {
     "store": "飯塚店",
@@ -80817,13 +80668,12 @@ window.COLLECTION_DATA = [
     "name": "今泉　麻理子",
     "paymentType": "bank",
     "address": "飯塚市柏の森６８－１　要確認",
-    "amount": 33582,
+    "amount": 16791,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5764
+    "seq": 5762
   },
   {
     "store": "飯塚店",
@@ -80832,13 +80682,12 @@ window.COLLECTION_DATA = [
     "name": "草場　美津枝",
     "paymentType": "cash",
     "address": "飯塚市柏の森１３－１２１",
-    "amount": 15500,
+    "amount": 7750,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5765
+    "seq": 5763
   },
   {
     "store": "飯塚店",
@@ -80847,13 +80696,12 @@ window.COLLECTION_DATA = [
     "name": "加世堂　並男",
     "paymentType": "bank",
     "address": "飯塚市下三緒５１６－１５",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5766
+    "seq": 5764
   },
   {
     "store": "飯塚店",
@@ -80862,13 +80710,12 @@ window.COLLECTION_DATA = [
     "name": "やまざき",
     "paymentType": "cash",
     "address": "飯塚市下三緒９８２－５",
-    "amount": 12916,
+    "amount": 6458,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5767
+    "seq": 5765
   },
   {
     "store": "飯塚店",
@@ -80877,13 +80724,12 @@ window.COLLECTION_DATA = [
     "name": "高田　芳弘",
     "paymentType": "cash",
     "address": "飯塚市下三緒１７１－３９",
-    "amount": 15500,
+    "amount": 7750,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5768
+    "seq": 5766
   },
   {
     "store": "飯塚店",
@@ -80892,13 +80738,12 @@ window.COLLECTION_DATA = [
     "name": "久保　善秋",
     "paymentType": "cash",
     "address": "飯塚市下三緒３５－７１９三井アーバン東ヶ丘１０２",
-    "amount": 21256,
+    "amount": 10628,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5769
+    "seq": 5767
   },
   {
     "store": "飯塚店",
@@ -80907,13 +80752,12 @@ window.COLLECTION_DATA = [
     "name": "今福　国勝",
     "paymentType": "cash",
     "address": "飯塚市有安９６５－１－４棟－３０１号",
-    "amount": 38750,
+    "amount": 19375,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5770
+    "seq": 5768
   },
   {
     "store": "飯塚店",
@@ -80922,13 +80766,12 @@ window.COLLECTION_DATA = [
     "name": "冨松　輝",
     "paymentType": "bank",
     "address": "飯塚市有安９６５－９１",
-    "amount": 29718,
+    "amount": 14859,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5771
+    "seq": 5769
   },
   {
     "store": "飯塚店",
@@ -80940,10 +80783,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5772
+    "seq": 5770
   },
   {
     "store": "飯塚店",
@@ -80952,13 +80794,12 @@ window.COLLECTION_DATA = [
     "name": "鈴木　数枝",
     "paymentType": "bank",
     "address": "飯塚市上三緒４４３－６３",
-    "amount": 32114,
+    "amount": 16057,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5773
+    "seq": 5771
   },
   {
     "store": "飯塚店",
@@ -80967,13 +80808,12 @@ window.COLLECTION_DATA = [
     "name": "玉井　淑恵",
     "paymentType": "cash",
     "address": "飯塚市上三緒１９１－１５",
-    "amount": 4192,
+    "amount": 2096,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5774
+    "seq": 5772
   },
   {
     "store": "飯塚店",
@@ -80985,10 +80825,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5775
+    "seq": 5773
   },
   {
     "store": "飯塚店",
@@ -81000,10 +80839,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5776
+    "seq": 5774
   },
   {
     "store": "飯塚店",
@@ -81012,13 +80850,12 @@ window.COLLECTION_DATA = [
     "name": "中村　芳久",
     "paymentType": "cash",
     "address": "飯塚市鯰田１７６６－４－B－202",
-    "amount": 15500,
+    "amount": 7750,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5777
+    "seq": 5775
   },
   {
     "store": "飯塚店",
@@ -81027,13 +80864,12 @@ window.COLLECTION_DATA = [
     "name": "首藤　誠治",
     "paymentType": "bank",
     "address": "飯塚市鯰田１３６８－５",
-    "amount": 31902,
+    "amount": 15951,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5778
+    "seq": 5776
   },
   {
     "store": "飯塚店",
@@ -81042,13 +80878,12 @@ window.COLLECTION_DATA = [
     "name": "長谷川　彰",
     "paymentType": "cash",
     "address": "飯塚市鯰田１３３７－２",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5779
+    "seq": 5777
   },
   {
     "store": "飯塚店",
@@ -81057,13 +80892,12 @@ window.COLLECTION_DATA = [
     "name": "佐藤　和彦",
     "paymentType": "cash",
     "address": "飯塚市鯰田２１０４　砂利に駐車",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5780
+    "seq": 5778
   },
   {
     "store": "飯塚店",
@@ -81075,10 +80909,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5781
+    "seq": 5779
   },
   {
     "store": "飯塚店",
@@ -81087,13 +80920,12 @@ window.COLLECTION_DATA = [
     "name": "太田　浩",
     "paymentType": "cash",
     "address": "飯塚市吉北４２１３－７０",
-    "amount": 22360,
+    "amount": 11180,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5782
+    "seq": 5780
   },
   {
     "store": "飯塚店",
@@ -81102,13 +80934,12 @@ window.COLLECTION_DATA = [
     "name": "佐藤　洋之介",
     "paymentType": "bank",
     "address": "飯塚市吉北４２１３－８４",
-    "amount": 27124,
+    "amount": 13562,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5783
+    "seq": 5781
   },
   {
     "store": "飯塚店",
@@ -81117,13 +80948,12 @@ window.COLLECTION_DATA = [
     "name": "水上　美保",
     "paymentType": "cash",
     "address": "飯塚市川島１１－１０",
-    "amount": 20962,
+    "amount": 10481,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5784
+    "seq": 5782
   },
   {
     "store": "飯塚店",
@@ -81132,13 +80962,12 @@ window.COLLECTION_DATA = [
     "name": "田中　多賀子",
     "paymentType": "bank",
     "address": "飯塚市川島５６５ココフラワー１０３",
-    "amount": 35898,
+    "amount": 17949,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5785
+    "seq": 5783
   },
   {
     "store": "飯塚店",
@@ -81147,13 +80976,12 @@ window.COLLECTION_DATA = [
     "name": "半田　珠江",
     "paymentType": "cash",
     "address": "飯塚市幸袋２１１－１６",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5786
+    "seq": 5784
   },
   {
     "store": "飯塚店",
@@ -81162,13 +80990,12 @@ window.COLLECTION_DATA = [
     "name": "竹山　重夫",
     "paymentType": "cash",
     "address": "飯塚市片島２－１５－１９　相互不動産事務所",
-    "amount": 14716,
+    "amount": 7358,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5787
+    "seq": 5785
   },
   {
     "store": "飯塚店",
@@ -81177,13 +81004,12 @@ window.COLLECTION_DATA = [
     "name": "田川　紀子",
     "paymentType": "cash",
     "address": "飯塚市伊岐須１－２９７",
-    "amount": 15372,
+    "amount": 7686,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5788
+    "seq": 5786
   },
   {
     "store": "飯塚店",
@@ -81192,13 +81018,12 @@ window.COLLECTION_DATA = [
     "name": "首藤　順子",
     "paymentType": "cash",
     "address": "飯塚市幸袋７８１－２３７",
-    "amount": 30980,
+    "amount": 15490,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5789
+    "seq": 5787
   },
   {
     "store": "飯塚店",
@@ -81207,13 +81032,12 @@ window.COLLECTION_DATA = [
     "name": "松本　弦美",
     "paymentType": "bank",
     "address": "飯塚市中１０７７－３",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5790
+    "seq": 5788
   },
   {
     "store": "飯塚店",
@@ -81222,13 +81046,12 @@ window.COLLECTION_DATA = [
     "name": "杉山　澄子",
     "paymentType": "cash",
     "address": "飯塚市庄司２８－４",
-    "amount": 13974,
+    "amount": 6987,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5791
+    "seq": 5789
   },
   {
     "store": "飯塚店",
@@ -81237,13 +81060,12 @@ window.COLLECTION_DATA = [
     "name": "永田　章",
     "paymentType": "bank",
     "address": "飯塚市庄司１４１－１０棟－４０",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5792
+    "seq": 5790
   },
   {
     "store": "飯塚店",
@@ -81252,13 +81074,12 @@ window.COLLECTION_DATA = [
     "name": "足立　晋一郎",
     "paymentType": "cash",
     "address": "飯塚市庄司１４２－１２３",
-    "amount": 34336,
+    "amount": 17168,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5793
+    "seq": 5791
   },
   {
     "store": "飯塚店",
@@ -81270,10 +81091,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5794
+    "seq": 5792
   },
   {
     "store": "飯塚店",
@@ -81282,13 +81102,12 @@ window.COLLECTION_DATA = [
     "name": "小畑　和広",
     "paymentType": "cash",
     "address": "飯塚市建花寺６３５",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5795
+    "seq": 5793
   },
   {
     "store": "飯塚店",
@@ -81297,13 +81116,12 @@ window.COLLECTION_DATA = [
     "name": "須尭　辰眞",
     "paymentType": "bank",
     "address": "飯塚市伊川７７０－１",
-    "amount": 11180,
+    "amount": 5590,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5796
+    "seq": 5794
   },
   {
     "store": "飯塚店",
@@ -81312,13 +81130,12 @@ window.COLLECTION_DATA = [
     "name": "多賀谷　晴美",
     "paymentType": "bank",
     "address": "飯塚市伊川４１１－４",
-    "amount": 50310,
+    "amount": 25155,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5797
+    "seq": 5795
   },
   {
     "store": "飯塚店",
@@ -81327,13 +81144,12 @@ window.COLLECTION_DATA = [
     "name": "松岡　ふくみ",
     "paymentType": "cash",
     "address": "飯塚市伊川８２－７３－８棟－１０２",
-    "amount": 18166,
+    "amount": 9083,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5798
+    "seq": 5796
   },
   {
     "store": "飯塚店",
@@ -81345,10 +81161,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5799
+    "seq": 5797
   },
   {
     "store": "飯塚店",
@@ -81357,13 +81172,12 @@ window.COLLECTION_DATA = [
     "name": "武本　光",
     "paymentType": "cash",
     "address": "飯塚市伊川８２－７３－１棟－１０１",
-    "amount": 26554,
+    "amount": 13277,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5800
+    "seq": 5798
   },
   {
     "store": "飯塚店",
@@ -81372,13 +81186,12 @@ window.COLLECTION_DATA = [
     "name": "稲冨　弘子",
     "paymentType": "bank",
     "address": "飯塚市相田２７９－１－２棟－２２３",
-    "amount": 12576,
+    "amount": 6288,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5801
+    "seq": 5799
   },
   {
     "store": "飯塚店",
@@ -81387,13 +81200,12 @@ window.COLLECTION_DATA = [
     "name": "美容室プールファム",
     "paymentType": "cash",
     "address": "飯塚市相田５０－３",
-    "amount": 9040,
+    "amount": 4520,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5802
+    "seq": 5800
   },
   {
     "store": "飯塚店",
@@ -81402,13 +81214,12 @@ window.COLLECTION_DATA = [
     "name": "谷口　ひろみ",
     "paymentType": "cash",
     "address": "飯塚市相田５７３－１－１０１号",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5803
+    "seq": 5801
   },
   {
     "store": "飯塚店",
@@ -81420,10 +81231,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5804
+    "seq": 5802
   },
   {
     "store": "飯塚店",
@@ -81435,10 +81245,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5805
+    "seq": 5803
   },
   {
     "store": "飯塚店",
@@ -81447,13 +81256,12 @@ window.COLLECTION_DATA = [
     "name": "東　洋志",
     "paymentType": "bank",
     "address": "飯塚市伊岐須８６９－１２",
-    "amount": 21256,
+    "amount": 10628,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5806
+    "seq": 5804
   },
   {
     "store": "飯塚店",
@@ -81465,10 +81273,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5807
+    "seq": 5805
   },
   {
     "store": "飯塚店",
@@ -81477,13 +81284,12 @@ window.COLLECTION_DATA = [
     "name": "田中　健",
     "paymentType": "bank",
     "address": "飯塚市伊岐須２２３－１８",
-    "amount": 29346,
+    "amount": 14673,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5808
+    "seq": 5806
   },
   {
     "store": "飯塚店",
@@ -81495,10 +81301,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5809
+    "seq": 5807
   },
   {
     "store": "飯塚店",
@@ -81507,13 +81312,12 @@ window.COLLECTION_DATA = [
     "name": "渡辺　イツエ",
     "paymentType": "cash",
     "address": "飯塚市伊岐須２２４－１－１０棟－１０４",
-    "amount": 27124,
+    "amount": 13562,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5810
+    "seq": 5808
   },
   {
     "store": "飯塚店",
@@ -81525,10 +81329,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5811
+    "seq": 5809
   },
   {
     "store": "飯塚店",
@@ -81537,13 +81340,12 @@ window.COLLECTION_DATA = [
     "name": "江崎　紀子",
     "paymentType": "cash",
     "address": "飯塚市伊岐須５１０－１４-1-1ランティス",
-    "amount": 34336,
+    "amount": 17168,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5812
+    "seq": 5810
   },
   {
     "store": "飯塚店",
@@ -81552,13 +81354,12 @@ window.COLLECTION_DATA = [
     "name": "川上　博之",
     "paymentType": "bank",
     "address": "飯塚市花瀬１０２－５０",
-    "amount": 66950,
+    "amount": 33475,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5813
+    "seq": 5811
   },
   {
     "store": "飯塚店",
@@ -81570,10 +81371,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5814
+    "seq": 5812
   },
   {
     "store": "飯塚店",
@@ -81582,13 +81382,12 @@ window.COLLECTION_DATA = [
     "name": "竹内　ヒデキ",
     "paymentType": "cash",
     "address": "飯塚市花瀬２３６－５－２棟－２１１",
-    "amount": 19178,
+    "amount": 9589,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5815
+    "seq": 5813
   },
   {
     "store": "飯塚店",
@@ -81600,10 +81399,9 @@ window.COLLECTION_DATA = [
     "amount": 0,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5816
+    "seq": 5814
   },
   {
     "store": "飯塚店",
@@ -81612,13 +81410,12 @@ window.COLLECTION_DATA = [
     "name": "木村　千雪",
     "paymentType": "bank",
     "address": "飯塚市花瀬３０－３４",
-    "amount": 16790,
+    "amount": 8395,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5817
+    "seq": 5815
   },
   {
     "store": "飯塚店",
@@ -81627,13 +81424,12 @@ window.COLLECTION_DATA = [
     "name": "高木　瑞穂",
     "paymentType": "cash",
     "address": "飯塚市横田３１１－２",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5818
+    "seq": 5816
   },
   {
     "store": "飯塚店",
@@ -81642,13 +81438,12 @@ window.COLLECTION_DATA = [
     "name": "浅倉　洋",
     "paymentType": "bank",
     "address": "飯塚市川津２１６－１シャトー第２水江６０６",
-    "amount": 16770,
+    "amount": 8385,
     "dataMonth": "2026-05",
     "sourceFiles": [
-      "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
       "うちくる顧客管理表(2026.05)飯塚店.xlsm"
     ],
-    "seq": 5819
+    "seq": 5817
   }
 ];
 
@@ -99193,21 +98988,40 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 450,
+    "code": 460,
     "route": 1,
-    "name": "鶴久　みよこ",
-    "type": "小箱",
+    "name": "小野澤　洋",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 火 水 木 金",
     "paymentType": "cash",
     "vessel": "",
-    "address": "直方市頓野２１０５－２－２棟－１０５",
-    "notes": "火、木は置配",
-    "phone": "070-7658-6513",
+    "address": "直方市頓野３５９１－４１－３６棟－１０３",
+    "notes": "",
+    "phone": "080-6432-1118",
     "emergency": "",
     "memo": "",
-    "absent": "ドアノブに掛ける"
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 460,
+    "route": 1,
+    "name": "小野澤　洋",
+    "type": "ごはん",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "直方市頓野３５９１－４１－３６棟－１０３",
+    "notes": "",
+    "phone": "080-6432-1118",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
   },
   {
     "store": "飯塚店",
@@ -99231,6 +99045,25 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
+    "code": 480,
+    "route": 1,
+    "name": "上田　義信",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "直方市頓野１５０７",
+    "notes": "ベランダから声かける",
+    "phone": "娘　080-9397-3161",
+    "emergency": "",
+    "memo": "0949-26-2773",
+    "absent": "ベランダの箱"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
     "code": 490,
     "route": 1,
     "name": "上川　和美",
@@ -99244,6 +99077,25 @@ window.DELIVERY_DATA = [
     "notes": "平屋で左の玄関、声かけて玄関の中",
     "phone": "0949-26-0464",
     "emergency": "090-4994-9143",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 500,
+    "route": 1,
+    "name": "井垣　スミ子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "直方市感田８９４－５６",
+    "notes": "置配　チャイム",
+    "phone": "0949-26-0112",
+    "emergency": "",
     "memo": "",
     "absent": ""
   },
@@ -99440,25 +99292,6 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 620,
-    "route": 1,
-    "name": "山内　秀信",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "直方市植木１９５－９",
-    "notes": "",
-    "phone": "090-1971-7113",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-05",
     "code": 630,
     "route": 1,
     "name": "本山　修一",
@@ -99611,21 +99444,21 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 770,
+    "code": 780,
     "route": 1,
-    "name": "大庭(ｵｵﾊﾞ)芙美子",
-    "type": "小箱",
+    "name": "鋤田　哲雄",
+    "type": "おかず",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
+    "weekly": "月 火 木",
     "paymentType": "cash",
     "vessel": "",
-    "address": "直方市直方６７０－１５０",
-    "notes": "置き配の時は電話する",
-    "phone": "090-9482-0539",
-    "emergency": "090-8832-0443葉山知美　090-3412-7468戸畑琴枝",
+    "address": "直方市古町６－１３　アーケードの中",
+    "notes": "交差点に駐車して行く",
+    "phone": "080-1722-8428",
+    "emergency": "",
     "memo": "",
-    "absent": "保冷剤２"
+    "absent": ""
   },
   {
     "store": "飯塚店",
@@ -99691,7 +99524,7 @@ window.DELIVERY_DATA = [
     "route": 1,
     "name": "早川　富士子",
     "type": "おかず",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
     "weekly": "月 火 木 金",
     "paymentType": "bank",
@@ -99699,6 +99532,63 @@ window.DELIVERY_DATA = [
     "address": "直方市下境２５３２－１棟－７０１",
     "notes": "駐車場３６番",
     "phone": "0949-28-3779",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 830,
+    "route": 1,
+    "name": "早川　富士子",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 木 金",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "直方市下境２５３２－１棟－７０１",
+    "notes": "駐車場３６番",
+    "phone": "0949-28-3779",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 1002,
+    "route": 2,
+    "name": "島　千世子",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "再注文",
+    "weekly": "月 火 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市枝国５７４－７１",
+    "notes": "",
+    "phone": "090-8917-5834",
+    "emergency": "",
+    "memo": "",
+    "absent": "玄関先の棚"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 1002,
+    "route": 2,
+    "name": "栗谷　和子",
+    "type": "ご膳",
+    "count": "1",
+    "countLabel": "新規",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市忠隈５３６－１",
+    "notes": "",
+    "phone": "080-5790-4317",
     "emergency": "",
     "memo": "",
     "absent": ""
@@ -99725,25 +99615,6 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 1080,
-    "route": 2,
-    "name": "渡辺　知恵",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市東徳前１５－６－１０２号",
-    "notes": "建物と木の細い道入っていく",
-    "phone": "080-2708-4114",
-    "emergency": "",
-    "memo": "",
-    "absent": "ガスメータに置く"
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-05",
     "code": 1090,
     "route": 2,
     "name": "佐藤　フミ子",
@@ -99763,21 +99634,40 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 1110,
+    "code": 1100,
     "route": 2,
-    "name": "秋本　真奈美",
-    "type": "小箱",
+    "name": "國丸　敬子",
+    "type": "ご膳",
     "count": "1",
     "countLabel": "",
-    "weekly": "",
+    "weekly": "月 水 木",
     "paymentType": "bank",
     "vessel": "",
-    "address": "飯塚市菰田東２－７－４４",
-    "notes": "Yahooマップ使う　弁当の下に保冷剤",
-    "phone": "090-9583-1863",
+    "address": "飯塚市菰田東２－５－６２",
+    "notes": "",
+    "phone": "0948-22-9780",
+    "emergency": "息子さん　090-8830-7393",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 1130,
+    "route": 2,
+    "name": "森山　瑠美",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市菰田西２－１－１３",
+    "notes": "置配",
+    "phone": "080-3908-0367",
     "emergency": "",
     "memo": "",
-    "absent": "玄関先に掛ける"
+    "absent": ""
   },
   {
     "store": "飯塚店",
@@ -99915,6 +99805,25 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
+    "code": 1200,
+    "route": 2,
+    "name": "蔵満　喜一",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市平恒１１５－６-３４号　外に洗濯機ある",
+    "notes": "公衆電話が目印",
+    "phone": "090-1368-6259　固定電話からなら出る",
+    "emergency": "",
+    "memo": "",
+    "absent": "洗濯機の中"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
     "code": 1210,
     "route": 2,
     "name": "梅村　新一",
@@ -100010,25 +99919,6 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 1320,
-    "route": 2,
-    "name": "田原　康摩",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 水 木 金",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市長尾９６３－２２－４４",
-    "notes": "43棟につらなっている、「在宅でも空箱を出してる",
-    "phone": "080-3945-6910",
-    "emergency": "0948-72-1494",
-    "memo": "",
-    "absent": "ドアに掛ける"
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-05",
     "code": 1340,
     "route": 2,
     "name": "仲野　美佐子",
@@ -100061,25 +99951,6 @@ window.DELIVERY_DATA = [
     "notes": "",
     "phone": "090-7381-3377　木村さとみ",
     "emergency": "090-8663-4580　池上知子",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-05",
-    "code": 1380,
-    "route": 2,
-    "name": "澤辺　康英",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市筑穂元吉５６０－２８",
-    "notes": "",
-    "phone": "090-3016-8170",
-    "emergency": "",
     "memo": "",
     "absent": ""
   },
@@ -100129,7 +100000,7 @@ window.DELIVERY_DATA = [
     "name": "末吉　康子",
     "type": "セット",
     "count": "1",
-    "countLabel": "再注文",
+    "countLabel": "",
     "weekly": "月 火 水 木 金",
     "paymentType": "bank",
     "vessel": "",
@@ -100139,6 +100010,25 @@ window.DELIVERY_DATA = [
     "emergency": "080-4688-4276　ケアマネつの",
     "memo": "",
     "absent": "裏口玄関先"
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 1460,
+    "route": 2,
+    "name": "梅澤　雄二",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市大分２１５４",
+    "notes": "チャイム３回鳴らす",
+    "phone": "0948-72-1951",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
   },
   {
     "store": "飯塚店",
@@ -100193,25 +100083,6 @@ window.DELIVERY_DATA = [
     "address": "飯塚市久保白５４４",
     "notes": "置配　ガラス戸の中",
     "phone": "090-2397-0304",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-05",
-    "code": 1560,
-    "route": 2,
-    "name": "荒川　初子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市弁分５４７－１１－２０６角部屋",
-    "notes": "上三緒の玉井さんの姪子",
-    "phone": "090-7293-2278",
     "emergency": "",
     "memo": "",
     "absent": ""
@@ -100409,19 +100280,19 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 2003,
+    "code": 2005,
     "route": 3,
-    "name": "小笠原　拓海",
-    "type": "ダブル",
+    "name": "伊藤　美香",
+    "type": "ご膳",
     "count": "1",
     "countLabel": "",
-    "weekly": "水 木 金",
-    "paymentType": "bank",
+    "weekly": "",
+    "paymentType": "cash",
     "vessel": "",
-    "address": "飯塚市有安９６２－１９７－２０１号",
-    "notes": "置配",
-    "phone": "090-8168-5674　本人",
-    "emergency": "090-9170-6790　母",
+    "address": "飯塚市鯰田２５０８－１ピーアーク２４B棟１０１号",
+    "notes": "",
+    "phone": "090-8225-9602",
+    "emergency": "",
     "memo": "",
     "absent": ""
   },
@@ -100443,6 +100314,25 @@ window.DELIVERY_DATA = [
     "emergency": "",
     "memo": "",
     "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 2120,
+    "route": 3,
+    "name": "渡辺　キヨ",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市本町７－２２",
+    "notes": "駐車注意",
+    "phone": "0948-22-3199",
+    "emergency": "090-3732-6400",
+    "memo": "",
+    "absent": "電柱の下に置く"
   },
   {
     "store": "飯塚店",
@@ -100500,6 +100390,25 @@ window.DELIVERY_DATA = [
     "emergency": "",
     "memo": "",
     "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 2220,
+    "route": 3,
+    "name": "草場　美津枝",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市柏の森１３－１２１",
+    "notes": "裏口ノック",
+    "phone": "0948-22-0893",
+    "emergency": "090-6776-9988",
+    "memo": "",
+    "absent": "裏口"
   },
   {
     "store": "飯塚店",
@@ -100637,6 +100546,25 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
+    "code": 2420,
+    "route": 3,
+    "name": "中村　芳久",
+    "type": "小箱",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市鯰田１７６６－４－B－202",
+    "notes": "置配　保冷剤２",
+    "phone": "090-8392-1011",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
     "code": 2440,
     "route": 3,
     "name": "首藤　誠治",
@@ -100675,6 +100603,44 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
+    "code": 2530,
+    "route": 3,
+    "name": "佐藤　和彦",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 水 木",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市鯰田２１０４　砂利に駐車",
+    "notes": "",
+    "phone": "0948-28-0120",
+    "emergency": "090-5475-6763　息子さん",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 2560,
+    "route": 3,
+    "name": "太田　浩",
+    "type": "おかず",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "月 火 水 木 金",
+    "paymentType": "cash",
+    "vessel": "",
+    "address": "飯塚市吉北４２１３－７０",
+    "notes": "置配　バックごとBOX　保冷剤２",
+    "phone": "090-7475-9284",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
     "code": 2580,
     "route": 3,
     "name": "佐藤　洋之介",
@@ -100694,18 +100660,37 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 2600,
+    "code": 2620,
     "route": 3,
-    "name": "水上　美保",
+    "name": "田中　多賀子",
     "type": "おかず",
-    "count": "3",
+    "count": "1",
     "countLabel": "",
     "weekly": "",
-    "paymentType": "cash",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "飯塚市川島１１－１０",
+    "address": "飯塚市川島５６５ココフラワー１０３",
     "notes": "置配",
-    "phone": "090-1872-6445",
+    "phone": "090-2716-7875",
+    "emergency": "",
+    "memo": "",
+    "absent": ""
+  },
+  {
+    "store": "飯塚店",
+    "dataMonth": "2026-05",
+    "code": 2620,
+    "route": 3,
+    "name": "田中　多賀子",
+    "type": "ダブル",
+    "count": "1",
+    "countLabel": "",
+    "weekly": "",
+    "paymentType": "bank",
+    "vessel": "",
+    "address": "飯塚市川島５６５ココフラワー１０３",
+    "notes": "置配",
+    "phone": "090-2716-7875",
     "emergency": "",
     "memo": "",
     "absent": ""
@@ -100732,18 +100717,18 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 3001,
-    "route": 4,
-    "name": "田川　紀子",
-    "type": "おかず",
+    "code": 2700,
+    "route": 3,
+    "name": "竹山　重夫",
+    "type": "セット",
     "count": "1",
     "countLabel": "",
-    "weekly": "火 木 金",
+    "weekly": "月 火 水",
     "paymentType": "cash",
     "vessel": "",
-    "address": "飯塚市伊岐須１－２９７",
-    "notes": "",
-    "phone": "090-2089-0050",
+    "address": "飯塚市片島２－１５－１９　相互不動産事務所",
+    "notes": "保冷バッグごと渡す　保冷剤１",
+    "phone": "0948-23-3315",
     "emergency": "",
     "memo": "",
     "absent": ""
@@ -100789,25 +100774,6 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 3150,
-    "route": 4,
-    "name": "杉山　澄子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 水 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市庄司２８－４",
-    "notes": "道狭い",
-    "phone": "0948-23-3204",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-05",
     "code": 3170,
     "route": 4,
     "name": "永田　章",
@@ -100846,37 +100812,18 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-05",
-    "code": 3210,
+    "code": 3230,
     "route": 4,
-    "name": "小畑　和広",
-    "type": "小箱",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "火 水 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市建花寺６３５",
-    "notes": "マップでるけど少し奥",
-    "phone": "090-8229-7631",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-05",
-    "code": 3240,
-    "route": 4,
-    "name": "松岡　ふくみ",
+    "name": "多賀谷　晴美",
     "type": "おかず",
-    "count": "1",
+    "count": "4",
     "countLabel": "",
     "weekly": "",
-    "paymentType": "cash",
+    "paymentType": "bank",
     "vessel": "",
-    "address": "飯塚市伊川８２－７３－８棟－１０２",
-    "notes": "不在多い",
-    "phone": "080-3975-7051",
+    "address": "飯塚市伊川４１１－４",
+    "notes": "置配",
+    "phone": "090-3073-8165",
     "emergency": "",
     "memo": "",
     "absent": ""
@@ -100888,7 +100835,7 @@ window.DELIVERY_DATA = [
     "route": 4,
     "name": "武本　光",
     "type": "ご膳",
-    "count": "2",
+    "count": "1",
     "countLabel": "",
     "weekly": "月 水 金",
     "paymentType": "cash",
@@ -100896,25 +100843,6 @@ window.DELIVERY_DATA = [
     "address": "飯塚市伊川８２－７３－１棟－１０１",
     "notes": "月、水は不在多い",
     "phone": "090-2087-2472",
-    "emergency": "",
-    "memo": "",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-05",
-    "code": 3260,
-    "route": 4,
-    "name": "稲冨　弘子",
-    "type": "おかず",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "",
-    "paymentType": "bank",
-    "vessel": "",
-    "address": "飯塚市相田２７９－１－２棟－２２３",
-    "notes": "置配するときもチャイム鳴らして",
-    "phone": "090-1198-1012",
     "emergency": "",
     "memo": "",
     "absent": ""
@@ -101078,8 +101006,8 @@ window.DELIVERY_DATA = [
     "route": 4,
     "name": "高木　瑞穂",
     "type": "おかず",
-    "count": "1",
-    "countLabel": "集金",
+    "count": "0",
+    "countLabel": "",
     "weekly": "",
     "paymentType": "cash",
     "vessel": "",
@@ -101093,7 +101021,7 @@ window.DELIVERY_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-05-18T07:10:30.504045",
+  "generatedAt": "2026-05-18T07:19:53.230442",
   "stores": [
     "下関店",
     "北九州店",
@@ -101212,7 +101140,7 @@ window.DATA_META = {
       "store": "宗像店",
       "name": "うちくる顧客管理表(2026.5)宗像店.xlsm",
       "dataMonth": "2026-05",
-      "mtime": "2026-05-15",
+      "mtime": "2026-05-18",
       "count": 276
     },
     {
@@ -101273,19 +101201,12 @@ window.DATA_META = {
     },
     {
       "store": "飯塚店",
-      "name": "うちくる顧客管理表(2026.05)飯塚店 (DESKTOP-KT3HVEF の競合コピー 2026-05-15).xlsm",
-      "dataMonth": "2026-05",
-      "mtime": "2026-05-15",
-      "count": 192
-    },
-    {
-      "store": "飯塚店",
       "name": "うちくる顧客管理表(2026.05)飯塚店.xlsm",
       "dataMonth": "2026-05",
-      "mtime": "2026-05-15",
+      "mtime": "2026-05-18",
       "count": 192
     }
   ],
-  "totalRecords": 5819,
-  "totalAmount": 54659621
+  "totalRecords": 5817,
+  "totalAmount": 52903088
 };
