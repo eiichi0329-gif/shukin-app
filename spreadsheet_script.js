@@ -824,7 +824,11 @@ function doGet(e) {
       // 現金集金シート: col5=金額, col6=集金日, col7=集金時刻, col8=キー
       const data = sheet.getRange(2, 5, lastRow - 1, 4).getValues();
       for (const [amount, collectDate, , key] of data) {
-        if (key) checkedData[key] = { collectDate: collectDate || '', collectedAmount: Number(amount) || 0 };
+        if (!key) continue;
+        const collectDateStr = (collectDate instanceof Date)
+          ? Utilities.formatDate(collectDate, 'Asia/Tokyo', 'yyyy-MM-dd')
+          : String(collectDate || '');
+        checkedData[key] = { collectDate: collectDateStr, collectedAmount: Number(amount) || 0 };
       }
     }
 

@@ -10,7 +10,7 @@ if errorlevel 1 (
 )
 
 echo --- STEP 2: Sending to GitHub ---
-git add data.js
+git add data.js index.html app.js
 git commit -m "auto update: %date% %time%"
 git push origin main
 if errorlevel 1 (

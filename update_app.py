@@ -32,7 +32,7 @@ OUTPUT_FILE    = r"C:\Users\USER\collection-app\data.js"
 SHEET_NAME          = "顧客リスト"
 DELIVERY_SHEET_NAME = "配達表"
 MIN_DATA_MONTH      = "2026-02"          # 2026年2月分以降を対象
-DELIVERY_MONTH      = "2026-04"          # 配達表に使うファイルの月（毎月更新）
+DELIVERY_MONTH      = None               # 配達表に使うファイルの月。None=収集できたファイルの最新月を自動採用（毎月の手動更新が不要）。特定月に固定したいときだけ "2026-06" のように指定する
 
 # 配達表を有効にするか（False=タブ非表示, True=タブ表示）
 FEATURE_DELIVERY_ENABLED = True
@@ -431,7 +431,10 @@ def main():
         })
 
     # ── 配達表データ抽出（DELIVERY_MONTH 分のみ）──
-    current_month = DELIVERY_MONTH
+    # DELIVERY_MONTH が None の場合は収集できたファイルの最新月を自動採用する。
+    # これにより月が替わっても手動更新が不要。月初に新しい月のExcelが未配置なら
+    # 自動的に直前の月が使われるため配達表が空になることもない。
+    current_month = DELIVERY_MONTH or max((f['dataMonth'] for f in files), default=None)
     current_month_files = [f for f in files if f['dataMonth'] == current_month]
     print(f"配達表対象ファイル（{current_month}分）: {len(current_month_files)} 件")
 

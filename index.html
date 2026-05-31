@@ -14,7 +14,7 @@
     <!-- キャッシュ強制クリア: スクリプトバージョンが古い場合はリロード -->
     <script>
     (function(){
-        var APP_VER = 10;
+        var APP_VER = 14;
         var stored = sessionStorage.getItem('app_ver');
         if (stored !== String(APP_VER)) {
             sessionStorage.setItem('app_ver', String(APP_VER));
@@ -476,14 +476,16 @@
             <div id="image-dialog-status" class="image-dialog-status"></div>
             <div id="image-dialog-list" class="image-list"></div>
             <div class="settings-actions">
-                <input type="file" id="image-upload-input" accept="image/*" style="display:none" onchange="onImageFileSelected(this)">
+                <input type="file" id="image-upload-input-camera" accept="image/*" capture="environment" style="display:none" onchange="onImageFileSelected(this)">
+                <input type="file" id="image-upload-input-library" accept="image/*" style="display:none" onchange="onImageFileSelected(this)">
                 <button class="btn btn-secondary" onclick="closeImageDialog()">閉じる</button>
-                <button class="btn btn-primary" onclick="document.getElementById('image-upload-input').click()">&#43; 画像を追加</button>
+                <button class="btn btn-primary" onclick="document.getElementById('image-upload-input-library').click()">&#128247; 画像を選択</button>
+                <button class="btn btn-primary" onclick="document.getElementById('image-upload-input-camera').click()">&#128247; カメラで撮影</button>
             </div>
         </div>
     </dialog>
 
-    <script src="data.js?v=20260423210919" defer></script>
-    <script src="app.js?v=11" defer></script>
+    <script src="data.js?v=20260601071053" defer></script>
+    <script src="app.js?v=14" defer></script>
 </body>
 </html>

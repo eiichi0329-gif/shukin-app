@@ -522,6 +522,7 @@ async function onImageFileSelected(input) {
     try {
         // 送信前に圧縮（最大 1024px / JPEG 0.75）でサイズを削減
         const base64 = await compressImageToBase64(file, 1024, 0.75);
+        if (!base64) throw new Error('EMPTY_RESULT');
 
         // 圧縮完了後、即座にローカル画像をプレビュー表示（楽観的更新）
         const dateStr = new Date().toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric' });
@@ -554,36 +555,85 @@ async function onImageFileSelected(input) {
         // 6秒後にサイレントで再取得して Drive のサムネイルに差し替え
         setTimeout(() => fetchCustomerImages(_currentImageKey), 6000);
     } catch (err) {
-        listEl.innerHTML = '<div class="image-error">画像の準備に失敗しました</div>';
-        console.error('[画像アップロード]', err);
+        const code = (err && err.message) || '不明';
+        const fileInfo = file
+            ? `${file.name || '(名前なし)'} / ${file.type || '(タイプ不明)'} / ${Math.round((file.size || 0)/1024)}KB`
+            : '(ファイルなし)';
+        let msg = '画像の準備に失敗しました';
+        if (code === 'HEIC_UNSUPPORTED') {
+            msg = 'この画像形式（HEIC）はお使いのブラウザで処理できません。<br>iPhoneの場合は「設定 → カメラ → フォーマット → 互換性優先」に変更するか、別の写真をお試しください';
+        } else if (code === 'IMAGE_TOO_LARGE') {
+            msg = '画像のサイズが大きすぎて処理できませんでした。別の写真をお試しください';
+        } else if (code === 'CANVAS_FAILED') {
+            msg = '画像の圧縮に失敗しました。別の写真をお試しください';
+        } else if (code === 'NOT_AN_IMAGE') {
+            msg = '画像ファイルとして読み込めませんでした。別の写真をお試しください';
+        } else {
+            msg = `画像の準備に失敗しました<br><small style="opacity:0.7">エラー: ${escHtml(String(code))}<br>${escHtml(fileInfo)}<br>app v=14</small>`;
+        }
+        listEl.innerHTML = `<div class="image-error">${msg}</div>`;
+        console.error('[画像アップロード]', err, fileInfo);
     }
 }
 
 // 画像を Canvas で圧縮して base64 文字列を返す
 function compressImageToBase64(file, maxWidth, quality) {
     return new Promise((resolve, reject) => {
+        // HEIC/HEIF は多くのブラウザで <img> がデコードできないため、明示的に弾く
+        const name = (file.name || '').toLowerCase();
+        const type = (file.type || '').toLowerCase();
+        const looksHeic = type.includes('heic') || type.includes('heif') ||
+                          name.endsWith('.heic') || name.endsWith('.heif');
+        if (looksHeic) { reject(new Error('HEIC_UNSUPPORTED')); return; }
+
         const img    = new Image();
         const objUrl = URL.createObjectURL(file);
+        let settled = false;
+        const cleanup = () => { try { URL.revokeObjectURL(objUrl); } catch {} };
+        const done = (fn, val) => { if (settled) return; settled = true; cleanup(); fn(val); };
+
         img.onload = () => {
-            URL.revokeObjectURL(objUrl);
-            const canvas = document.createElement('canvas');
-            let { width, height } = img;
-            if (width > maxWidth) {
-                height = Math.round(height * maxWidth / width);
-                width  = maxWidth;
+            try {
+                let { width, height } = img;
+                if (!width || !height) { done(reject, new Error('NOT_AN_IMAGE')); return; }
+
+                // 段階的に縮小して toBlob 失敗（巨大画像で起きやすい）に備える
+                const targets = [maxWidth, 1024, 800, 600];
+                let attempt = 0;
+                const tryOnce = () => {
+                    const target = Math.min(targets[attempt], width);
+                    let w = width, h = height;
+                    if (w > target) { h = Math.round(h * target / w); w = target; }
+                    const canvas = document.createElement('canvas');
+                    canvas.width  = w;
+                    canvas.height = h;
+                    const ctx = canvas.getContext('2d');
+                    if (!ctx) { done(reject, new Error('CANVAS_FAILED')); return; }
+                    try {
+                        ctx.drawImage(img, 0, 0, w, h);
+                    } catch (e) {
+                        done(reject, new Error('CANVAS_FAILED'));
+                        return;
+                    }
+                    canvas.toBlob(blob => {
+                        if (!blob) {
+                            attempt++;
+                            if (attempt < targets.length) { tryOnce(); return; }
+                            done(reject, new Error('IMAGE_TOO_LARGE'));
+                            return;
+                        }
+                        const reader  = new FileReader();
+                        reader.onload  = e => done(resolve, String(e.target.result).split(',')[1] || '');
+                        reader.onerror = () => done(reject, new Error('CANVAS_FAILED'));
+                        reader.readAsDataURL(blob);
+                    }, 'image/jpeg', quality);
+                };
+                tryOnce();
+            } catch (e) {
+                done(reject, new Error('CANVAS_FAILED'));
             }
-            canvas.width  = width;
-            canvas.height = height;
-            canvas.getContext('2d').drawImage(img, 0, 0, width, height);
-            canvas.toBlob(blob => {
-                if (!blob) { reject(new Error('圧縮失敗')); return; }
-                const reader  = new FileReader();
-                reader.onload  = e => resolve(e.target.result.split(',')[1]);
-                reader.onerror = reject;
-                reader.readAsDataURL(blob);
-            }, 'image/jpeg', quality);
         };
-        img.onerror = reject;
+        img.onerror = () => done(reject, new Error('NOT_AN_IMAGE'));
         img.src = objUrl;
     });
 }
@@ -3973,6 +4023,9 @@ async function syncCheckboxes() {
             let changed = false;
             Object.entries(json.routeOverrides).forEach(([gk, ov]) => {
                 if (ov.date !== today) return;
+                // dataGeneratedAt はGoogle Sheetsの日付自動変換で書式が崩れて
+                // ローカル値と一致しないことがあるため厳格比較しない。
+                // 日付（ov.date === today）チェックで古い世代の残骸は十分に除外できる。
                 const local = deliveryRouteOverrides[gk];
                 if (!local || local.route !== ov.route) {
                     // dataGeneratedAt はローカルの値で保存（端末ごとのページ再読込後も有効なように）
@@ -4080,13 +4133,10 @@ async function startApp() {
     deliveryChecked        = loadDeliveryChecked();
     deliveryRouteOverrides = loadDeliveryRouteOverrides();
 
-    // data.js が更新されていたら GAS のルート変更シートをクリア
+    // data.js の世代を記録（古いオーバーライドは sync 側で dataGeneratedAt 不一致として無視される）
     const currentGenAt = window.DATA_META?.generatedAt || '';
-    const lastGenAt    = localStorage.getItem(LAST_DATA_GEN_AT_KEY) || '';
-    if (currentGenAt && currentGenAt !== lastGenAt) {
+    if (currentGenAt) {
         localStorage.setItem(LAST_DATA_GEN_AT_KEY, currentGenAt);
-        const gasUrl = getGasUrl();
-        if (gasUrl) postToGas(gasUrl, { action: 'clearRouteOverrides' });
     }
 
     // 配達表タブの表示/非表示（フィーチャーフラグ）
