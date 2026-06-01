@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-// 自動生成: 2026-06-01 07:10:53
-// 件数: 7311 件  合計: 69,160,670円
+// 自動生成: 2026-06-01 10:12:45
+// 件数: 7311 件  合計: 69,129,123円
 // ══════════════════════════════════════════════════════
 window.GAS_URL = "https://script.google.com/macros/s/AKfycbzaN9MnPONOoSH8DzrjxZhYBPstdmWsxnG217x8HdE0CZ9Oxckzxx55RVCqDZgMcTQ/exec";
 
@@ -100758,7 +100758,7 @@ window.COLLECTION_DATA = [
     "name": "佐藤　フミ子",
     "paymentType": "cash",
     "address": "飯塚市東徳前３－２",
-    "amount": 28416,
+    "amount": 6458,
     "dataMonth": "2026-06",
     "sourceFiles": [
       "うちくる顧客管理表(2026.06)飯塚店.xlsm"
@@ -102298,7 +102298,7 @@ window.COLLECTION_DATA = [
     "name": "竹内　ヒデキ",
     "paymentType": "cash",
     "address": "飯塚市花瀬２３６－５－２棟－２１１",
-    "amount": 9589,
+    "amount": 0,
     "dataMonth": "2026-06",
     "sourceFiles": [
       "うちくる顧客管理表(2026.06)飯塚店.xlsm"
@@ -121937,25 +121937,6 @@ window.DELIVERY_DATA = [
   {
     "store": "飯塚店",
     "dataMonth": "2026-06",
-    "code": 3414,
-    "route": 4,
-    "name": "竹内　ヒデキ",
-    "type": "ご膳",
-    "count": "1",
-    "countLabel": "",
-    "weekly": "月 水 金",
-    "paymentType": "cash",
-    "vessel": "",
-    "address": "飯塚市花瀬２３６－５－２棟－２１１",
-    "notes": "置配　玄関前に置く 　1階の端の部屋",
-    "phone": "080-1703-6920",
-    "emergency": "090-8414-8822",
-    "memo": "黒萩団地",
-    "absent": ""
-  },
-  {
-    "store": "飯塚店",
-    "dataMonth": "2026-06",
     "code": 3420,
     "route": 4,
     "name": "木村　千雪",
@@ -121975,7 +121956,7 @@ window.DELIVERY_DATA = [
 ];
 
 window.DATA_META = {
-  "generatedAt": "2026-06-01T07:10:53.090837",
+  "generatedAt": "2026-06-01T10:12:45.118335",
   "stores": [
     "下関店",
     "北九州店",
@@ -122087,7 +122068,7 @@ window.DATA_META = {
       "store": "宇部店",
       "name": "うちくる顧客管理表(2026 06)宇部店.xlsm",
       "dataMonth": "2026-06",
-      "mtime": "2026-05-29",
+      "mtime": "2026-06-01",
       "count": 466
     },
     {
@@ -122199,10 +122180,10 @@ window.DATA_META = {
       "store": "飯塚店",
       "name": "うちくる顧客管理表(2026.06)飯塚店.xlsm",
       "dataMonth": "2026-06",
-      "mtime": "2026-05-31",
+      "mtime": "2026-06-01",
       "count": 198
     }
   ],
   "totalRecords": 7311,
-  "totalAmount": 69160670
+  "totalAmount": 69129123
 };
