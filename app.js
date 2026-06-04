@@ -1,5 +1,67 @@
 // 配達用アプリ v3
 
+// ─── localStorage 書き込みの堅牢化 ────────────────────────────────
+// 端末の保存容量超過やプライベート/シークレットモードでは localStorage.setItem が
+// 例外を投げる。そのまま放置すると onCheck()/onDeliveryCheck() などのハンドラが
+// 保存処理の途中で中断し、
+//   ・配達完了ボタンの色が変わらない（saveDeliveryChecked→renderDelivery が走らない）
+//   ・集金チェックが保存されず再描画/再読込で消える
+// という「1台だけ動かない」症状になる。書き込みを非致命化して空き容量を確保のうえ
+// 再試行し、それでも失敗したら利用者へ明示警告する。
+(function hardenLocalStorage() {
+    if (window.__lsHardened) return;
+    window.__lsHardened = true;
+    let nativeSet;
+    try {
+        nativeSet = Storage.prototype.setItem.bind(localStorage);
+    } catch (e) {
+        return; // localStorage 自体が使えない環境（後段の try/catch 群で握りつぶされる）
+    }
+    let warned = false;
+    // 肥大化しやすく、失っても再送/再取得で回復できるキーだけを掃除対象にする
+    const PRUNE_KEYS = ['coll-retry-queue-v1'];
+
+    window.showStorageWarning = function () {
+        try { console.error('[storage] 保存に失敗しました（容量超過 or プライベートモード）'); } catch (_) {}
+        if (warned) return;
+        warned = true;
+        const show = function () {
+            if (document.getElementById('storage-warning-bar')) return;
+            const bar = document.createElement('div');
+            bar.id = 'storage-warning-bar';
+            bar.textContent = '⚠ この端末で保存できませんでした。ブラウザのこのサイトのデータ/キャッシュを削除して再読み込みしてください（通常モードで開いてください）。';
+            bar.style.cssText = 'position:fixed;left:0;right:0;top:0;z-index:99999;background:#dc2626;color:#fff;'
+                + 'font-size:13px;line-height:1.4;padding:8px 12px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.3)';
+            bar.addEventListener('click', () => bar.remove());
+            (document.body || document.documentElement).appendChild(bar);
+        };
+        if (document.body) show(); else document.addEventListener('DOMContentLoaded', show);
+        try {
+            alert('この端末の保存領域が不足しているため、チェックを保存できませんでした。\n'
+                + 'ブラウザ設定でこのサイトのデータ/キャッシュを削除し、通常モードで開き直してください。');
+        } catch (_) {}
+    };
+
+    // 既存コードの localStorage.setItem(...) を全て横取りして非致命化する
+    try {
+        localStorage.setItem = function (key, value) {
+            try {
+                nativeSet(key, value);
+                return;
+            } catch (e) {
+                // 空き容量を確保して 1 回だけ再試行
+                try {
+                    PRUNE_KEYS.forEach(k => { try { localStorage.removeItem(k); } catch (_) {} });
+                    nativeSet(key, value);
+                    return;
+                } catch (e2) {
+                    window.showStorageWarning();
+                }
+            }
+        };
+    } catch (_) { /* setItem を差し替えできない環境では諦める（従来通り） */ }
+})();
+
 // ─── Google OAuth 認証 ────────────────────────────────────────────
 const GOOGLE_CLIENT_ID = '774508511200-pgglmg87l7mjha2ktp4s48d30farec6p.apps.googleusercontent.com';
 const AUTH_KEY = 'coll-auth-v1';
@@ -1131,6 +1193,9 @@ function onCheck(key, isChecked, routeOverride = null) {
             collectDate:     isReCollection ? jstDate : ((checked[key] || {}).collectDate || jstDate),
             collectedAmount: effectiveAmount(key, record), // 集金時点のExcel金額を記録
             cycleReset:      false, // 集金時点でリセットフラグをクリア
+            // この端末でローカルに付けた集金。GAS 側で確認できるまでは同期処理で消さない
+            // （POST が届かない端末でチェックが消える事故を防ぐ。確認できたら syncCheckboxes でフラグ解除）
+            _localPending:   true,
             gasKey,
             routeOverride:   routeOverride || null, // 配達表でルート変更済みの場合に保存
             // 管理画面の履歴表示用スナップショット（data.js が更新されても記録が消えないよう保持）
@@ -2577,7 +2642,8 @@ function onDeliveryCheck(groupKey, btnEl) {
         }
     } else {
         const now = new Date().toISOString();
-        deliveryChecked[groupKey] = { checkedAt: now };
+        // _localPending: GAS 確認まで同期処理で消さない（POST 未達端末で完了が消える事故を防ぐ）
+        deliveryChecked[groupKey] = { checkedAt: now, _localPending: true };
         showToast(`✓ ${record.name} — 配達完了にしました`, 'success');
         markDirty(groupKey);
         const url = getGasUrl();
@@ -3765,6 +3831,9 @@ function buildDailyMessages(date, msgs) {
 async function syncCheckboxes() {
     const url = getGasUrl();
     if (!url) return;
+    // 取得前に未送信(失敗)POSTを再送。'online'イベントが発火しない常時オンライン端末でも
+    // 失敗した集金/配達完了の送信が定期的に再試行され、GAS へ反映される。
+    try { await flushRetryQueue(); } catch (_) {}
     try {
         const controller = new AbortController();
         const timerId = setTimeout(() => controller.abort(), 15000);
@@ -3799,20 +3868,23 @@ async function syncCheckboxes() {
                     if (val.collectedAmount) {
                         checked[key].collectedAmount = val.collectedAmount;
                     }
+                    // GAS 側で確認できたのでローカル保留フラグを解除（以後は通常の削除同期対象）
+                    if (checked[key]._localPending) delete checked[key]._localPending;
                 }
             });
-            // リモートにないキーを削除（dirtyキーは保護）
+            // リモートにないキーを削除（dirtyキー・GAS未確認のローカル集金は保護）
             Object.keys(checked).forEach(key => {
-                if (!remote[key] && !dirtyKeys.has(key)) delete checked[key];
+                if (!remote[key] && !dirtyKeys.has(key) && !checked[key]._localPending) delete checked[key];
             });
         } else {
             const remote = new Set(json.checkedKeys);
             remote.forEach(key => {
                 if (dirtyKeys.has(key)) return;
                 if (!checked[key]) checked[key] = { checkedAt: new Date().toISOString(), collectDate: '' };
+                else if (checked[key]._localPending) delete checked[key]._localPending; // GAS 確認済み
             });
             Object.keys(checked).forEach(key => {
-                if (!remote.has(key) && !dirtyKeys.has(key)) delete checked[key];
+                if (!remote.has(key) && !dirtyKeys.has(key) && !checked[key]._localPending) delete checked[key];
             });
         }
 
@@ -4052,11 +4124,15 @@ async function syncCheckboxes() {
                 if (!deliveryChecked[key]) {
                     deliveryChecked[key] = { checkedAt: checkedAt || new Date().toISOString() };
                     changed = true;
+                } else if (deliveryChecked[key]._localPending) {
+                    delete deliveryChecked[key]._localPending; // GAS 側で確認できたので保留解除
+                    changed = true;
                 }
             });
-            // リモートにないキー（他端末で取消済み or 昨日分）を削除
+            // リモートにないキー（他端末で取消済み or 昨日分）を削除。
+            // ただし GAS 未確認のローカル完了（_localPending）は保護して消さない。
             Object.keys(deliveryChecked).forEach(key => {
-                if (!remote[key] && !dirtyKeys.has(key)) {
+                if (!remote[key] && !dirtyKeys.has(key) && !deliveryChecked[key]._localPending) {
                     delete deliveryChecked[key];
                     changed = true;
                 }
