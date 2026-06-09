@@ -2268,7 +2268,7 @@ function renderDelivery() {
 
         const isBank = m.paymentType === 'bank';
 
-        const mapHref  = m.address ? `https://maps.google.com/?q=${encodeURIComponent(m.address)}` : '';
+        const mapHref  = m.address ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(m.address)}` : '';
         const addrHtml = m.address
             ? `<a class="delivery-address" href="${mapHref}" target="_blank" rel="noopener">&#128205; ${escHtml(m.address)}</a>`
             : '';

@@ -14,7 +14,7 @@
     <!-- キャッシュ強制クリア: スクリプトバージョンが古い場合はリロード -->
     <script>
     (function(){
-        var APP_VER = 15;
+        var APP_VER = 16;
         var stored = sessionStorage.getItem('app_ver');
         if (stored !== String(APP_VER)) {
             sessionStorage.setItem('app_ver', String(APP_VER));
@@ -486,6 +486,6 @@
     </dialog>
 
     <script src="data.js?v=20260608214633" defer></script>
-    <script src="app.js?v=15" defer></script>
+    <script src="app.js?v=16" defer></script>
 </body>
 </html>
